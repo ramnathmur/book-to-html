@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 48 Laws of Power — Flashcards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstyle.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1A1814;
+      --surface: #2A2420;
+      --ink: #F6F2EA;
+      --ink-secondary: #B8B0A0;
+      --accent: #C2410C;
+      --max-width: 800px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      border-bottom: 1px solid rgba(246,242,234,0.1);
+      padding: 20px 32px;
+      text-align: center;
+      z-index: 50;
+    }
+    header h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      margin-top: 8px;
+    }
+    
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 60px 32px;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 80px 32px;
+      color: var(--ink-secondary);
+    }
+    .empty-state h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 28px;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .empty-state p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .instructions {
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      padding: 20px;
+      border-radius: 4px;
+      font-size: 14px;
+      color: var(--ink-secondary);
+      line-height: 1.7;
+    }
+    .instructions code {
+      background: rgba(246,242,234,0.05);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      color: var(--accent);
+    }
+    
+    .flashcard {
+      background: var(--surface);
+      border: 1px solid rgba(246,242,234,0.1);
+      border-radius: 8px;
+      padding: 40px;
+      margin: 20px 0;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 200ms ease-out;
+      text-align: center;
+    }
+    .flashcard:hover {
+      border-color: var(--accent);
+      background: rgba(194,65,12,0.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The 48 Laws of Power</h1>
+    <p>Flashcard Study Set</p>
+  </header>
+  
+  <div class="container">
+    <div class="empty-state">
+      <h2>Flashcards Coming Soon</h2>
+      <p>This flashcard set is being prepared. Check back soon for study materials.</p>
+      
+      <div class="instructions">
+        <strong>To add flashcards:</strong><br>
+        Add HTML flashcard elements in the format:<br>
+        <code>&lt;div class="flashcard"&gt;Question&lt;/div&gt;</code>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

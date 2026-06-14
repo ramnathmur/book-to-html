@@ -328,6 +328,7 @@ const BOOKS = [
     title: "The 48 Laws of Power",
     author: "Robert Greene",
     reader_path: "48-Laws-Of-Power_Reader_v1.html",
+    landing_page: "book-48-laws-of-power.html",
     blurb: "A study of influence, manipulation, and the social mechanics of power, drawn from three thousand years of history. Aphoristic, ruthless, and useful in fragments.",
     cover_image: null,
     popularity: {
@@ -337,10 +338,38 @@ const BOOKS = [
     date_added: "2026-05-24"
   },
   {
+    id: "atomic-habits",
+    title: "Atomic Habits",
+    author: "James Clear",
+    reader_path: "Atomic-Habits_Reader_v1.html",
+    landing_page: "book-atomic-habits.html",
+    blurb: "Transform your habits, transform your life. A practical, science-backed guide to tiny changes that deliver remarkable results. Build good habits, break bad ones, and design your future one decision at a time.",
+    cover_image: null,
+    popularity: {
+      goodreads: { rating: 4.3, ratings_count: 2100000 },
+      editor_note: "Modern classic"
+    },
+    date_added: "2026-05-23"
+  },
+  {
+    id: "co-intelligence",
+    title: "Co-Intelligence",
+    author: "Ethan Mollick",
+    reader_path: "Co-Intelligence_Reader_v1.html",
+    landing_page: "book-co-intelligence.html",
+    blurb: "How AI and humans work together to create things neither could alone. A practical guide to living and working with artificial intelligence in everyday life.",
+    cover_image: null,
+    popularity: {
+      editor_note: "Essential reading for the AI era"
+    },
+    date_added: "2026-05-20"
+  },
+  {
     id: "boat-go-faster",
     title: "Will It Make the Boat Go Faster?",
     author: "Ben Hunt-Davis & Harriet Beveridge",
     reader_path: "Will-It-Make-The-Boat-Go-Faster_Reader_v1.html",
+    landing_page: "book-boat-go-faster.html",
     blurb: "An Olympic rower's framework for ruthless prioritization. Every decision is filtered through one question: does it make the boat go faster? Short, practical, and free of management jargon.",
     cover_image: null,
     popularity: {
@@ -419,13 +448,13 @@ function renderCarousel(books) {
     return;
   }
   track.innerHTML = books.map(b => `
-    <a class="card" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener" data-id="${escapeHtml(b.id)}">
+    <a class="card" href="${escapeHtml(b.landing_page)}" data-id="${escapeHtml(b.id)}">
       ${coverHTML(b)}
       <div class="card-title">${escapeHtml(b.title)}</div>
       <div class="card-author">by ${escapeHtml(b.author)}</div>
       <div class="card-blurb">${escapeHtml(b.blurb)}</div>
       <div class="card-pop">${popularityHTML(b.popularity)}</div>
-      <div class="card-cta">Read →</div>
+      <div class="card-cta">Explore →</div>
     </a>
   `).join('');
   renderDots(books.length);
@@ -516,7 +545,7 @@ function renderFeatured() {
       <div class="featured-author">by ${escapeHtml(b.author)}</div>
       <div class="featured-blurb">${escapeHtml(b.blurb)}</div>
       <div class="featured-pop">${popularityHTML(b.popularity)}</div>
-      <a class="cta" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener">Read →</a>
+      <a class="cta" href="${escapeHtml(b.landing_page)}">Explore →</a>
     </div>
     ${BOOKS.length > 1 ? `<button class="reroll" id="rerollBtn" aria-label="Show another featured book">↻ next</button>` : ''}
   `;
@@ -539,7 +568,7 @@ function renderRecent() {
   const sorted = [...BOOKS].sort((a, b) => b.date_added.localeCompare(a.date_added)).slice(0, 3);
   const list = document.getElementById('recentList');
   list.innerHTML = sorted.map(b => `
-    <a class="recent-row" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener">
+    <a class="recent-row" href="${escapeHtml(b.landing_page)}">
       <div class="recent-thumb" style="${tintBg(b.id)}">${escapeHtml(b.title)}</div>
       <div class="recent-title">${escapeHtml(b.title)}</div>
       <div class="recent-date">Added ${formatDate(b.date_added)}</div>
