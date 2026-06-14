@@ -1,0 +1,622 @@
+{
+  "chapter_no": 3,
+  "chapter_title": "BELIEFS",
+  "units": [
+    {
+      "unit_id": "u_03_0001",
+      "kind": "bridge",
+      "html": "<p>22–18 weeks before the Olympics. We had raced at the first World Cup regatta two days before and let ourselves down — we should have won, but we'd handed victory to the Croatians.</p>",
+      "source_ids": [
+        "ch3§1¶1",
+        "ch3§1¶2"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "scene-setting bridge to plot turn"
+    },
+    {
+      "unit_id": "u_03_0002",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶5\">As I cycled along the side of the trailer towards the front it quickly became clear that something had happened. My jaw dropped as I saw what was wrong. The bows of our boat, which had been on the foremost part of the trailer, were missing. About 18 inches of our boat had disappeared!</blockquote>",
+      "source_ids": [
+        "ch3§1¶5"
+      ],
+      "verbatim_quote": "About 18 inches of our boat had disappeared!",
+      "retention_signal": "plot turn / decision point"
+    },
+    {
+      "unit_id": "u_03_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶6\">Our boat was knackered and we didn't have a spare boat. My spirits hit the floor. How were we supposed to make up for the frustration and disappointment of Munich? Anger and disappointment surged through me.</blockquote>",
+      "source_ids": [
+        "ch3§1¶6"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "interiority at decision point"
+    },
+    {
+      "unit_id": "u_03_0004",
+      "kind": "bridge",
+      "html": "<p>At about 5 a.m. that Sunday, the tow bar on the lorry John was driving sheared off in south east London; the trailer overtook him and demolished a bus shelter. The broken boat was the only one they had to race in Vienna in three weeks' time.</p>",
+      "source_ids": [
+        "ch3§1¶8",
+        "ch3§1¶10"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "compressed backstory bridge"
+    },
+    {
+      "unit_id": "u_03_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶11\">As usual Martin gathered us together and reassured us that this wasn't a problem. Shit happens and we just had to deal with it. If we wanted to win we had to be able to deal with any problem that came along. Brock would take the boat to a British boat builder who would glue the bows back on. It would be fine. Not perfect, but fine. When we then got our new boat we would go even faster! We had to focus on the task in hand of improving and we had to get on with it.</blockquote>",
+      "source_ids": [
+        "ch3§1¶11"
+      ],
+      "verbatim_quote": "Shit happens and we just had to deal with it.",
+      "retention_signal": "signature voice / framework moment"
+    },
+    {
+      "unit_id": "u_03_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶12\">There were some things that we could control and some things that we couldn't. We had no control over what had happened to the boat. We couldn't change the fact that our boat was knackered. If we wanted to make up for losing in Munich we had to get control of what we could, and that was how we went about training. The Searle brothers' boat got damaged a few weeks before the 1992 Olympics and it didn't stop them winning so why should this have an impact on us?</blockquote>",
+      "source_ids": [
+        "ch3§1¶12"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "named principle: control the controllables"
+    },
+    {
+      "unit_id": "u_03_0007",
+      "kind": "bridge",
+      "html": "<p>On top of the broken boat, they were running out of money too. Budgets were tight, and although Martin's plan covered extra training camps and coaches like Harry, the coffers were empty and they would have to go out and find more money before the Olympics.</p>",
+      "source_ids": [
+        "ch3§1¶15",
+        "ch3§1¶17",
+        "ch3§1¶19"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "stakes bridge"
+    },
+    {
+      "unit_id": "u_03_0008",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶22\">Normally the holy grail was boat speed, it was how to get off the start faster, it was how to maintain the fastest cruising speed in the world; this time the holy grail was hard cash.</blockquote>",
+      "source_ids": [
+        "ch3§1¶22"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "signature voice / reframe"
+    },
+    {
+      "unit_id": "u_03_0009",
+      "kind": "bridge",
+      "html": "<p>Rowley and Fred took charge of fundraising. MRM Hancock, an insurance broker whose MD had rowed at school, agreed to host an evening for us in the Lloyds basement.</p>",
+      "source_ids": [
+        "ch3§1¶24",
+        "ch3§1¶26"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "plot bridge"
+    },
+    {
+      "unit_id": "u_03_0010",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶28\">It might be knackered already, but it was the only boat we had, so we tiptoed across the lobby area and to the down escalator. Despite being used to handling the boat, it was the first (and only) time I'd been on an escalator with a 40 foot section of rowing boat in my hands. With inches to spare at either end, it was inches from the ceiling above and inches from the hand rails of the escalator.</blockquote>",
+      "source_ids": [
+        "ch3§1¶28"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "signature scene / quotable"
+    },
+    {
+      "unit_id": "u_03_0011",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶30\">We had to build their belief in the same way we'd had to build our own. We spoke to them about rowing, about the fact that it's a sport that delivers results at every Olympics. We told them about why we absolutely believed we could win Gold — we were building momentum, we were on a roll, we were world Silver medallists, we were about to win our first World Cup regatta, and we were going to keep getting faster.</blockquote>",
+      "source_ids": [
+        "ch3§1¶30"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "ties scene to framework"
+    },
+    {
+      "unit_id": "u_03_0012",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶33\">We raised £36,000! It was exactly what we needed.</blockquote>",
+      "source_ids": [
+        "ch3§1¶33"
+      ],
+      "verbatim_quote": "We raised £36,000! It was exactly what we needed.",
+      "retention_signal": "plot payoff"
+    },
+    {
+      "unit_id": "u_03_0013",
+      "kind": "anchor",
+      "html": "<h2 data-source-id=\"ch3§2¶1\">Beliefs: The wheels on the bus go round and round</h2><blockquote class=\"anchor\" data-source-id=\"ch3§2¶2\">Ben: \"In 2000 I felt calm because I just knew we could do it. I had total certainty and confidence that we were fast. Very fast\".</blockquote>",
+      "source_ids": [
+        "ch3§2¶1",
+        "ch3§2¶2"
+      ],
+      "verbatim_quote": "I had total certainty and confidence that we were fast. Very fast",
+      "retention_signal": "section header + signature quote"
+    },
+    {
+      "unit_id": "u_03_0014",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶3\">Self-belief accelerates success. Most people pick up beliefs in a haphazard way, but there are plenty of simple strategies for actively cultivating useful beliefs.</blockquote>",
+      "source_ids": [
+        "ch3§2¶3"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "named principle / thesis"
+    },
+    {
+      "unit_id": "u_03_0015",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶11\">\"Whether you think you can or whether you think you can't, either way you're probably right.\"</blockquote>",
+      "source_ids": [
+        "ch3§2¶11"
+      ],
+      "verbatim_quote": "Whether you think you can or whether you think you can't, either way you're probably right.",
+      "retention_signal": "epigraph / Henry Ford"
+    },
+    {
+      "unit_id": "u_03_0016",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶16\">Firstly, the crew had four clear beliefs that helped them to achieve their goal. Secondly, they used three sources to supply those beliefs and, lastly, they used two strategies to strengthen them. We'll look at the four types of beliefs first and then explain the sources and the belief-building methods.</blockquote>",
+      "source_ids": [
+        "ch3§2¶16"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "framework spine"
+    },
+    {
+      "unit_id": "u_03_0017",
+      "kind": "anchor",
+      "html": "<h3 data-source-id=\"ch3§2¶17\">Section one: What do we need to believe?</h3><blockquote class=\"anchor\" data-source-id=\"ch3§2¶20\">An easy way to remember the four wheels is the mnemonic DICE:</blockquote>",
+      "source_ids": [
+        "ch3§2¶17",
+        "ch3§2¶20"
+      ],
+      "verbatim_quote": "DICE",
+      "retention_signal": "named framework / mnemonic"
+    },
+    {
+      "unit_id": "u_03_0018",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶21\">We need to believe we deserve success. We deserve to write that bestseller or get that promotion or close that million dollar deal. Over many years of coaching I've found it a consistent theme that many of us think we're not quite worthy enough, or worry that we'll get found out for not really knowing what we're doing. The simple way Ben pumped up this 'tyre' was to strip things back to basics:</blockquote>",
+      "source_ids": [
+        "ch3§2¶21"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "framework: D = Deserve"
+    },
+    {
+      "unit_id": "u_03_0019",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶22\">Ben: \"I never thought I deserved to win at the Olympics. God no, who deserves that? But I did deserve to win this race, because that was all it was. It was just a race between our crew and the other guys we'd been racing for years. With everything I'd put in I deserved it as much or more than them. It was just a race.\"</blockquote>",
+      "source_ids": [
+        "ch3§2¶22"
+      ],
+      "verbatim_quote": "It was just a race.",
+      "retention_signal": "signature voice / reframe"
+    },
+    {
+      "unit_id": "u_03_0020",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶24\">The goal must be important to us and link to one of our bigger values. We might want a promotion at work to unlock our potential or get more money to provide for our family. Sometimes the goal seems enough in its own right — we just feel it in our gut.</blockquote>",
+      "source_ids": [
+        "ch3§2¶24"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "framework: I = Important"
+    },
+    {
+      "unit_id": "u_03_0021",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶28\">Ben: \"In my training diary I wrote these reasons:</blockquote><ul><li data-source-id=\"ch3§2¶29\">To gain respect from oarsmen like Steve Redgrave, Matthew Pinsent, Greg Searle.</li><li data-source-id=\"ch3§2¶30\">To show that Britain is/can be good and win</li><li data-source-id=\"ch3§2¶31\">For every wedding that I've missed because I had to train — Sally, Sam, Annabel, Neil, Pete, Tiff ...</li><li data-source-id=\"ch3§2¶32\">For every ergo test that hurt like hell</li><li data-source-id=\"ch3§2¶33\">For my parents and Isabella. I owe it to them for all the pain I've put them through and the unending support they've given me.\"</li></ul>",
+      "source_ids": [
+        "ch3§2¶28",
+        "ch3§2¶29",
+        "ch3§2¶30",
+        "ch3§2¶31",
+        "ch3§2¶32",
+        "ch3§2¶33"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "step-by-step / signature artifact"
+    },
+    {
+      "unit_id": "u_03_0022",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶34\">This focus is crucial and gives us the fuel to keep going when things get tough — we are bound to encounter bumps along the way towards our goals. It's at difficult times that it's oh-so-tempting to give up, so make sure that, right at the forefront of your mind, you have superglue-strength reasons why it's important to stick at it.</blockquote>",
+      "source_ids": [
+        "ch3§2¶34"
+      ],
+      "verbatim_quote": "superglue-strength reasons",
+      "retention_signal": "signature voice"
+    },
+    {
+      "unit_id": "u_03_0023",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶35\">You need to believe you can do it. If you don't quite know how you'll achieve it, you need to believe that you will, absolutely, figure out a way.</blockquote>",
+      "source_ids": [
+        "ch3§2¶35"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "framework: C = Can"
+    },
+    {
+      "unit_id": "u_03_0024",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶38\">Notice the difference between asking 'can I do this?' and 'how am I going to do this'? Ask yourself the second question and you are much more likely to get useful answers to propel you towards your goal.</blockquote>",
+      "source_ids": [
+        "ch3§2¶38"
+      ],
+      "verbatim_quote": "'can I do this?' and 'how am I going to do this'?",
+      "retention_signal": "named rule / quotable"
+    },
+    {
+      "unit_id": "u_03_0025",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶39\">The goal needs to be enticing, something we are passionate about. There are plenty of things that we may believe to be important, but simply don't excite us. Most people would agree that global warming, injustice and poverty are important issues, but not everyone gets fire in their belly about them. It's that fire that speeds your progress forwards. Your passion doesn't have to be saintly, but it does have to be strong.</blockquote>",
+      "source_ids": [
+        "ch3§2¶39"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "framework: E = Exciting"
+    },
+    {
+      "unit_id": "u_03_0026",
+      "kind": "anchor",
+      "html": "<h3 data-source-id=\"ch3§2¶44\">Section two: Where to get beliefs from</h3><blockquote class=\"anchor\" data-source-id=\"ch3§2¶49\">There were three places in particular that proved fruitful hunting grounds for useful beliefs: their personal memories, role models and metaphors/analogies.</blockquote>",
+      "source_ids": [
+        "ch3§2¶44",
+        "ch3§2¶49"
+      ],
+      "verbatim_quote": "personal memories, role models and metaphors/analogies",
+      "retention_signal": "named framework: three sources"
+    },
+    {
+      "unit_id": "u_03_0027",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶50\">Can you think of a time when you won against the odds or did something you were proud of? When we are struggling to achieve a current goal it massively helps our self-belief to remind ourselves that we have achieved success in the past.</blockquote>",
+      "source_ids": [
+        "ch3§2¶50"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "step-by-step / source 1"
+    },
+    {
+      "unit_id": "u_03_0028",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶52\">To our total astonishment we came second. We were nobodies. But we'd beaten some of the pairs we'd watched with awe. With no experience at this level we could go fast, really fast. What else was possible? Who else could I beat?\"</blockquote>",
+      "source_ids": [
+        "ch3§2¶51",
+        "ch3§2¶52"
+      ],
+      "verbatim_quote": "What else was possible? Who else could I beat?",
+      "retention_signal": "first example of source / signature voice"
+    },
+    {
+      "unit_id": "u_03_0029",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶59\">Who has done what you want to do, or something similar? If they can do it, why can't you?</blockquote>",
+      "source_ids": [
+        "ch3§2¶59"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "step-by-step / source 2: role models"
+    },
+    {
+      "unit_id": "u_03_0030",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶60\">Ben: \"In 1992 at the Barcelona Olympics the Australian double won the Gold Medal in the men's double. Stephen Hawkins and Peter Antonie were the smallest crew by a mile. There is no way that they should have won given their size but they did. They were amazing. They inspired me because our crew wasn't the physically strongest in the world. It helped me realise that we could win Gold through technical brilliance and team work.\"</blockquote>",
+      "source_ids": [
+        "ch3§2¶60"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "first example of role-model source"
+    },
+    {
+      "unit_id": "u_03_0031",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶64\">Metaphors and analogies make pretty poetry, but they are also powerful belief-changing tools. They work like cranes in our brains lifting ideas from one mental compartment to another. They can, therefore, take an idea our minds have labelled 'scary and challenging' and transfer it to 'easy and doable'.</blockquote>",
+      "source_ids": [
+        "ch3§2¶64"
+      ],
+      "verbatim_quote": "cranes in our brains",
+      "retention_signal": "source 3 / signature image"
+    },
+    {
+      "unit_id": "u_03_0032",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶65\">The crew talked about their journey to the Sydney Olympics as being like a stone rolling downhill, gathering momentum and rolling faster and faster. Easy to picture isn't it? In fact you can almost feel it, can't you? Analogies appeal to the emotional centres in our brain and are easy to remember.</blockquote>",
+      "source_ids": [
+        "ch3§2¶65"
+      ],
+      "verbatim_quote": "a stone rolling downhill, gathering momentum",
+      "retention_signal": "first example of metaphor source"
+    },
+    {
+      "unit_id": "u_03_0033",
+      "kind": "anchor",
+      "html": "<h3 data-source-id=\"ch3§2¶70\">Section three: How to strengthen beliefs</h3><blockquote class=\"anchor\" data-source-id=\"ch3§2¶71\">The crew found the three sources of useful beliefs — personal memories, role models and metaphors/analogies incredibly powerful, but they didn't stop there. They actively grew and strengthened their beliefs using two key strategies:</blockquote>",
+      "source_ids": [
+        "ch3§2¶70",
+        "ch3§2¶71"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "framework spine: two strategies"
+    },
+    {
+      "unit_id": "u_03_0034",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶72\">The crew constantly reminded themselves of their useful beliefs in order to strengthen their conviction. For example their psychologist, Chris Shambrook, captured a written list of reasons why we are going to win.</blockquote>",
+      "source_ids": [
+        "ch3§2¶72"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "strategy 1: repetition"
+    },
+    {
+      "unit_id": "u_03_0035",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶74\">Ben: \"The day before the Olympic final, after an incredibly stressful few hours, we got together and reminded ourselves why we were going to do it. I had tears streaming down my face; I just cared about it so much.\"</blockquote>",
+      "source_ids": [
+        "ch3§2¶74"
+      ],
+      "verbatim_quote": "I had tears streaming down my face; I just cared about it so much.",
+      "retention_signal": "plot turn / interiority"
+    },
+    {
+      "unit_id": "u_03_0036",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶79\">The second method the crew used to strengthen their beliefs was to fire them up with strong emotion. Not just happy-clappy feelings like excitement and desire, but ones that, on first glance, are seemingly unhelpful like jealousy, anger, the desire to say, \"I told you so.\"</blockquote>",
+      "source_ids": [
+        "ch3§2¶79"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "strategy 2: emotional leverage"
+    },
+    {
+      "unit_id": "u_03_0037",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶80\">Ben: \"When we lost to the Aussies in the 2000 heat we were absolutely furious. I also knew that if they had only beaten us by that small amount when we were rowing really badly then they were in trouble.\"</blockquote>",
+      "source_ids": [
+        "ch3§2¶80"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "first example of strategy 2"
+    },
+    {
+      "unit_id": "u_03_0038",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶81\">Anger is energy. It would have been so easy for Ben and the crew to burn themselves up being angry for giving such a rubbish performance. Instead, they used the anger as a powerful catalyst. Rational reasons aren't enough, if they were we'd all eat our five a day and floss our teeth every night. We must cultivate emotional leverage to turn the hard lumps of rational 'I could' into a burning fire of 'I can'.</blockquote>",
+      "source_ids": [
+        "ch3§2¶81"
+      ],
+      "verbatim_quote": "Anger is energy.",
+      "retention_signal": "signature quotable / named principle"
+    },
+    {
+      "unit_id": "u_03_0039",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶83\">I didn't know when the next test was, but I wasn't going to be humiliated in front of Redgrave and everyone else. There were a few people in the club who I knew that I could beat and with that belief came the simple clarity that all I had to do was practise. Every day, for about two years, after training I'd go to the weights room and practise. While everyone else was changing and starting breakfast, I'd practise. Two years later I came second in the test with 50kg, I did 225 lifts.\"</blockquote>",
+      "source_ids": [
+        "ch3§2¶82",
+        "ch3§2¶83"
+      ],
+      "verbatim_quote": "Two years later I came second in the test with 50kg, I did 225 lifts.",
+      "retention_signal": "signature example of emotion as fuel"
+    },
+    {
+      "unit_id": "u_03_0040",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶86\">We can search through our personal memories, look for role models, review metaphors and analogies and thereby create solid evidence that we are going to succeed. Add a dash of emotion and a slug of repetition and that's a powerful mixture. Beliefs are the bedrock — without them it's pretty likely that our car will seize up when we hit the first pothole in our journey. It's too risky to leave it to chance. Remember Henry Ford's advice? When you believe that you deserve your goal, that it's important, that you can do it and that it's incredibly exciting — you are probably right.</blockquote>",
+      "source_ids": [
+        "ch3§2¶86"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "chapter recap / framework close"
+    },
+    {
+      "unit_id": "u_03_0041",
+      "kind": "bridge",
+      "html": "<p>Building strong beliefs is the positive side; the next chapter is about the bullshit filters that guard against negative ones.</p>",
+      "source_ids": [
+        "ch3§2¶87"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "foreshadow next chapter"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_no": 3,
+    "chapter_source_words": 5281,
+    "chapter_output_words": 2510,
+    "bridge_ratio": 0.034,
+    "dropped_sections": [
+      {
+        "source_ids": [
+          "ch3§1¶3",
+          "ch3§1¶4",
+          "ch3§1¶7"
+        ],
+        "reason": "descriptive padding: trailer/boat-house texture once scene is set"
+      },
+      {
+        "source_ids": [
+          "ch3§1¶9",
+          "ch3§1¶13",
+          "ch3§1¶14"
+        ],
+        "reason": "recap / scaffolding restating boat-broken stakes"
+      },
+      {
+        "source_ids": [
+          "ch3§1¶16",
+          "ch3§1¶18"
+        ],
+        "reason": "Lottery/Ely camp backstory texture, not load-bearing"
+      },
+      {
+        "source_ids": [
+          "ch3§1¶20",
+          "ch3§1¶21",
+          "ch3§1¶23",
+          "ch3§1¶25"
+        ],
+        "reason": "repetition of 'we needed money' beat"
+      },
+      {
+        "source_ids": [
+          "ch3§1¶27"
+        ],
+        "reason": "2nd example of escalator-arrival; covered by ¶28 anchor"
+      },
+      {
+        "source_ids": [
+          "ch3§1¶29",
+          "ch3§1¶31",
+          "ch3§1¶32",
+          "ch3§1¶34"
+        ],
+        "reason": "recap of fundraising payoff; ¶33 anchor carries it"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶4",
+          "ch3§2¶5",
+          "ch3§2¶6"
+        ],
+        "reason": "fragmentary list headers without content, replaced by ¶16 spine"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶7",
+          "ch3§2¶8",
+          "ch3§2¶9",
+          "ch3§2¶10"
+        ],
+        "reason": "throat-clearing rhetorical questions, generic prompts"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶12",
+          "ch3§2¶13",
+          "ch3§2¶14",
+          "ch3§2¶15"
+        ],
+        "reason": "scaffolding setup to the framework, redundant once DICE introduced"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶18",
+          "ch3§2¶19"
+        ],
+        "reason": "metaphor labour for 'wheels on a bus'; mnemonic itself is the keeper"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶23",
+          "ch3§2¶25",
+          "ch3§2¶26",
+          "ch3§2¶27"
+        ],
+        "reason": "generic exercise prompts, not load-bearing"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶36",
+          "ch3§2¶37"
+        ],
+        "reason": "2nd elaboration of 'believe you can' source; ¶35/¶38 carry the rule"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶40",
+          "ch3§2¶41",
+          "ch3§2¶42",
+          "ch3§2¶43"
+        ],
+        "reason": "Barcelona/Searle backstory texture; passion point made elsewhere"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶45",
+          "ch3§2¶46",
+          "ch3§2¶47",
+          "ch3§2¶48"
+        ],
+        "reason": "recap of DICE + Varese anecdote; redundant scaffolding"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶51"
+        ],
+        "reason": "merged into ¶52 anchor for compression"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶53",
+          "ch3§2¶54",
+          "ch3§2¶55",
+          "ch3§2¶56",
+          "ch3§2¶57",
+          "ch3§2¶58"
+        ],
+        "reason": "generic prompts and 2nd+ examples of past-success source"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶61",
+          "ch3§2¶62",
+          "ch3§2¶63",
+          "ch3§2¶66",
+          "ch3§2¶67",
+          "ch3§2¶68",
+          "ch3§2¶69"
+        ],
+        "reason": "Wordsworth/Shakespeare epigraph fragments + generic exercise prompts"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶73",
+          "ch3§2¶75",
+          "ch3§2¶76",
+          "ch3§2¶77",
+          "ch3§2¶78"
+        ],
+        "reason": "consultant-client examples and generic application prompts"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶82"
+        ],
+        "reason": "merged into ¶83 anchor (set-up only)"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶84",
+          "ch3§2¶85"
+        ],
+        "reason": "transitional throat-clearing into the recap"
+      },
+      {
+        "source_ids": [
+          "ch3§2¶88",
+          "ch3§2¶89"
+        ],
+        "reason": "marketing footer / page reference"
+      }
+    ]
+  },
+  "editor_design_hints": {
+    "chapter_no": 3,
+    "is_concept_chapter": true,
+    "concept_or_theme": "DICE — the four wheels of self-belief (Deserve, Important, Can, Exciting)",
+    "signature_quotes_for_pullquote": [
+      "Anger is energy.",
+      "Notice the difference between asking 'can I do this?' and 'how am I going to do this'?"
+    ]
+  }
+}

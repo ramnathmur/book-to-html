@@ -1,0 +1,57 @@
+{
+  "chapter_title": "LAW 20: DO NOT COMMIT TO ANYONE",
+  "law_no": 20,
+  "units": [
+    {
+      "unit_id": "u_20_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§33¶1\"><p>It is the fool who always rushes to take sides. Do not commit to any side or cause but yourself. By maintaining your independence, you become the master of others—playing people against one another, making them pursue you.</p></blockquote>",
+      "source_ids": ["ch20§33¶1"],
+      "verbatim_quote": "It is the fool who always rushes to take sides. Do not commit to any side or cause but yourself. By maintaining your independence, you become the master of others—playing people against one another, making them pursue you.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_20_0002",
+      "kind": "bridge",
+      "html": "<p>Queen Elizabeth I turned the refusal to marry into the defining instrument of her foreign policy and personal power.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_20_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§33¶4\"><p>When Queen Elizabeth I ascended the throne of England, in 1558, there was much to-do about her finding a husband. The issue was debated in Parliament, and was a main topic of conversation among Englishmen of all classes; they often disagreed as to whom she should marry, but everyone thought she should marry as soon as possible, for a queen must have a king, and must bear heirs for the kingdom. The debates raged on for years. Meanwhile the most handsome and eligible bachelors in the realm—Sir Robert Dudley, the Earl of Essex, Sir Walter Raleigh—vied for Elizabeth's hand. She did not discourage them, but she seemed to be in no hurry, and her hints as to which man might be her favorite often contradicted each other. In 1566, Parliament sent a delegation to Elizabeth urging her to marry before she was too old to bear children. She did not argue, nor did she discourage the delegation, but she remained a virgin nonetheless.</p></blockquote>",
+      "source_ids": ["ch20§33¶4"],
+      "verbatim_quote": "When Queen Elizabeth I ascended the throne of England, in 1558, there was much to-do about her finding a husband. The issue was debated in Parliament, and was a main topic of conversation among Englishmen of all classes; they often disagreed as to whom she should marry, but everyone thought she should marry as soon as possible, for a queen must have a king, and must bear heirs for the kingdom. The debates raged on for years. Meanwhile the most handsome and eligible bachelors in the realm—Sir Robert Dudley, the Earl of Essex, Sir Walter Raleigh—vied for Elizabeth's hand. She did not discourage them, but she seemed to be in no hurry, and her hints as to which man might be her favorite often contradicted each other. In 1566, Parliament sent a delegation to Elizabeth urging her to marry before she was too old to bear children. She did not argue, nor did she discourage the delegation, but she remained a virgin nonetheless.",
+      "retention_signal": "story_hook"
+    },
+    {
+      "unit_id": "u_20_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§33¶7\"><p>The great diplomatic issue of Elizabeth's day was posed by the revolt of the Flemish and Dutch Lowlands, which were then possessions of Spain. Should England break its alliance with Spain and choose France as its main ally on the Continent, thereby encouraging Flemish and Dutch independence ? By 1570 it had come to seem that an alliance with France would be England's wisest course. France had two eligible men of noble blood, the dukes of Anjou and Alençon, brothers of the French king. Would either of them marry Elizabeth? Both had advantages, and Elizabeth kept the hopes of both alive. The issue simmered for years. The duke of Anjou made several visits to England, kissed Elizabeth in public, even called her by pet names; she appeared to requite his affections. Meanwhile, as she flirted with the two brothers, a treaty was signed that sealed peace between France and England. By 1582 Elizabeth felt she could break off the courtship. In the case of the duke of Anjou in particular, she did so with great relief: For the sake of diplomacy she had allowed herself to be courted by a man whose presence she could not stand and whom she found physically repulsive. Once peace between France and England was secure, she dropped the unctuous duke as politely as she could.</p></blockquote>",
+      "source_ids": ["ch20§33¶7"],
+      "verbatim_quote": "The great diplomatic issue of Elizabeth's day was posed by the revolt of the Flemish and Dutch Lowlands, which were then possessions of Spain. Should England break its alliance with Spain and choose France as its main ally on the Continent, thereby encouraging Flemish and Dutch independence ? By 1570 it had come to seem that an alliance with France would be England's wisest course. France had two eligible men of noble blood, the dukes of Anjou and Alençon, brothers of the French king. Would either of them marry Elizabeth? Both had advantages, and Elizabeth kept the hopes of both alive. The issue simmered for years. The duke of Anjou made several visits to England, kissed Elizabeth in public, even called her by pet names; she appeared to requite his affections. Meanwhile, as she flirted with the two brothers, a treaty was signed that sealed peace between France and England. By 1582 Elizabeth felt she could break off the courtship. In the case of the duke of Anjou in particular, she did so with great relief: For the sake of diplomacy she had allowed herself to be courted by a man whose presence she could not stand and whom she found physically repulsive. Once peace between France and England was secure, she dropped the unctuous duke as politely as she could.",
+      "retention_signal": "story_payoff"
+    },
+    {
+      "unit_id": "u_20_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§33¶13\"><p>Since power depends greatly on appearances, you must learn the tricks that will enhance your image. Refusing to commit to a person or group is one of these. When you hold yourself back, you incur not anger but a kind of respect. You instantly seem powerful because you make yourself ungraspable, rather than succumbing to the group, or to the relationship, as most people do. This aura of power only grows with time: As your reputation for independence grows, more and more people will come to desire you, wanting to be the one who gets you to commit. Desire is like a virus: If we see that someone is desired by other people, we tend to find this person desirable too.</p></blockquote>",
+      "source_ids": ["ch20§33¶13"],
+      "verbatim_quote": "Since power depends greatly on appearances, you must learn the tricks that will enhance your image. Refusing to commit to a person or group is one of these. When you hold yourself back, you incur not anger but a kind of respect. You instantly seem powerful because you make yourself ungraspable, rather than succumbing to the group, or to the relationship, as most people do. This aura of power only grows with time: As your reputation for independence grows, more and more people will come to desire you, wanting to be the one who gets you to commit. Desire is like a virus: If we see that someone is desired by other people, we tend to find this person desirable too.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 20: DO NOT COMMIT TO ANYONE",
+    "chapter_source_words": 1600,
+    "chapter_output_words": 440,
+    "bridge_ratio": 0.04,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "section empty in source"},
+      {"section": "observance_partial", "reason": "ch20§33¶5-6 and §33¶8 omitted for word-count; story arc complete with ¶4 and ¶7"},
+      {"section": "keys_to_power_partial", "reason": "Alcibiades and Kissinger examples omitted; core principle captured in ¶13"}
+    ]
+  }
+}

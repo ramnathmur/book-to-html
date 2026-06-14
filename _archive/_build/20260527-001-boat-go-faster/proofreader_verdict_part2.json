@@ -1,0 +1,8 @@
+{
+  "total_bridges": 43,
+  "bridges_clean": 1,
+  "bridges_with_violations": 0,
+  "violations": [],
+  "gate_status": "pass",
+  "summary": "43 bridge entries were audited in this second-pass review. Of these, 42 entries carry empty bridge_text strings — they contain no prose to fact-check and therefore generate no violations. The single entry with substantive bridge text (u_03_0041, chapter 3) is a faithful paraphrase of its source paragraph: all concepts ('building strong beliefs', 'positive', 'bullshit filters', 'guard against negative beliefs', 'next chapter') are present in the source, and the bridge introduces no names, numbers, dates, direct quotes, causal claims, or attributions that could constitute hallucination. No violations were found across all 43 entries; the gate passes."
+}

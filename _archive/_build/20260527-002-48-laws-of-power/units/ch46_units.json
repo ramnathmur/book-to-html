@@ -1,0 +1,49 @@
+{
+  "chapter_title": "LAW 46: NEVER APPEAR TOO PERFECT",
+  "law_no": 46,
+  "units": [
+    {
+      "unit_id": "u_46_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch46§62¶1\"><p>Appearing better than others is always dangerous, but most dangerous of all is to appear to have no faults or weaknesses. Envy creates silent enemies. It is smart to occasionally display defects, and admit to harmless vices, in order to deflect envy and appear more human and approachable. Only gods and the dead can seem perfect with impunity.</p></blockquote>",
+      "source_ids": ["ch46§62¶1"],
+      "verbatim_quote": "Appearing better than others is always dangerous, but most dangerous of all is to appear to have no faults or weaknesses. Envy creates silent enemies. It is smart to occasionally display defects, and admit to harmless vices, in order to deflect envy and appear more human and approachable. Only gods and the dead can seem perfect with impunity.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_46_0002",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch46§62¶33\"><p>The human animal has a hard time dealing with feelings of inferiority. In the face of superior skill, talent, or power, we are often disturbed and ill at ease; this is because most of us have an inflated sense of ourselves, and when we meet people who surpass us they make it clear to us that we are in fact mediocre, or at least not as brilliant as we had thought. This disturbance in our self-image cannot last long without stirring up ugly emotions. At first we feel envy: If only we had the quality or skill of the superior person, we would be happy. But envy brings us neither comfort nor any closer to equality. Nor can we admit to feeling it, for it is frowned upon socially—to show envy is to admit to feeling inferior. To close friends, we may confess our secret unrealized desires, but we will never confess to feeling envy. So it goes underground. We disguise it in many ways, like finding grounds to criticize the person who makes us feel it: He may be smarter than I am, we say, but he has no morals or conscience. Or he may have more power, but that's because he cheats. If we do not slander him, perhaps we praise him excessively—another of envy's disguises.</p></blockquote>",
+      "source_ids": ["ch46§62¶33"],
+      "verbatim_quote": "The human animal has a hard time dealing with feelings of inferiority. In the face of superior skill, talent, or power, we are often disturbed and ill at ease; this is because most of us have an inflated sense of ourselves, and when we meet people who surpass us they make it clear to us that we are in fact mediocre, or at least not as brilliant as we had thought. This disturbance in our self-image cannot last long without stirring up ugly emotions. At first we feel envy: If only we had the quality or skill of the superior person, we would be happy. But envy brings us neither comfort nor any closer to equality. Nor can we admit to feeling it, for it is frowned upon socially—to show envy is to admit to feeling inferior. To close friends, we may confess our secret unrealized desires, but we will never confess to feeling envy. So it goes underground. We disguise it in many ways, like finding grounds to criticize the person who makes us feel it: He may be smarter than I am, we say, but he has no morals or conscience. Or he may have more power, but that's because he cheats. If we do not slander him, perhaps we praise him excessively—another of envy's disguises.",
+      "retention_signal": "insight"
+    },
+    {
+      "unit_id": "u_46_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch46§62¶36\"><p>Finally, expect that when people envy you they will work against you insidiously. They will put obstacles in your path that you will not foresee, or that you cannot trace to their source. It is hard to defend yourself against this kind of attack. And by the time you realize that envy is at the root of a person's feelings about you, it is often too late: Your excuses, your false humility, your defensive actions, only exacerbate the problem. Since it is far easier to avoid creating envy in the first place than to get rid of it once it is there, you should strategize to forestall it before it grows. It is often your own actions that stir up envy, your own unawareness. By becoming conscious of those actions and qualities that create envy, you can take the teeth out of it before it nibbles you to death.</p></blockquote>",
+      "source_ids": ["ch46§62¶36"],
+      "verbatim_quote": "Finally, expect that when people envy you they will work against you insidiously. They will put obstacles in your path that you will not foresee, or that you cannot trace to their source. It is hard to defend yourself against this kind of attack. And by the time you realize that envy is at the root of a person's feelings about you, it is often too late: Your excuses, your false humility, your defensive actions, only exacerbate the problem. Since it is far easier to avoid creating envy in the first place than to get rid of it once it is there, you should strategize to forestall it before it grows. It is often your own actions that stir up envy, your own unawareness. By becoming conscious of those actions and qualities that create envy, you can take the teeth out of it before it nibbles you to death.",
+      "retention_signal": "application"
+    },
+    {
+      "unit_id": "u_46_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch46§62¶59\"><p>Authority: Upon occasion, reveal a harmless defect in your character. For the envious accuse the most perfect of sinning by having no sins. They become an Argus, all eyes for finding fault with excellence—it is their only consolation. Do not let envy burst with its own venom—affect some lapse in valor or intellect, so as to disarm it beforehand. You thus wave your red cape before the Horns of Envy, in order to save your immortality. (Baltasar Gracian, 1601-1658)</p></blockquote>",
+      "source_ids": ["ch46§62¶59"],
+      "verbatim_quote": "Authority: Upon occasion, reveal a harmless defect in your character. For the envious accuse the most perfect of sinning by having no sins. They become an Argus, all eyes for finding fault with excellence—it is their only consolation. Do not let envy burst with its own venom—affect some lapse in valor or intellect, so as to disarm it beforehand. You thus wave your red cape before the Horns of Envy, in order to save your immortality. (Baltasar Gracian, 1601-1658)",
+      "retention_signal": "authority"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 46: NEVER APPEAR TOO PERFECT",
+    "chapter_source_words": 1600,
+    "chapter_output_words": 360,
+    "bridge_ratio": 0.0,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "Joe Orton/Halliwell story deprioritized; keys_to_power carries the law's insight more directly"},
+      {"section": "observance", "reason": "Cosimo de' Medici story omitted for word budget"},
+      {"section": "reversal", "reason": "word budget met"}
+    ]
+  }
+}

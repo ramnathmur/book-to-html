@@ -1,0 +1,64 @@
+{
+  "chapter_title": "LAW 38: THINK AS YOU LIKE BUT BEHAVE LIKE OTHERS",
+  "law_no": 38,
+  "units": [
+    {
+      "unit_id": "u_38_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch38§54¶2\"><p>If you make a show of going against the times, flaunting your unconventional ideas and unorthodox ways, people will think that you only want attention and that you look down upon them. They will find a way to punish you for making them feel inferior. It is far safer to blend in and nurture the common touch. Share your originality only with tolerant friends and those who are sure to appreciate your uniqueness.</p></blockquote>",
+      "source_ids": ["ch38§54¶2"],
+      "verbatim_quote": "If you make a show of going against the times, flaunting your unconventional ideas and unorthodox ways, people will think that you only want attention and that you look down upon them. They will find a way to punish you for making them feel inferior. It is far safer to blend in and nurture the common touch. Share your originality only with tolerant friends and those who are sure to appreciate your uniqueness.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_38_0002",
+      "kind": "bridge",
+      "html": "<p>Tommaso Campanella, imprisoned and tortured by the Inquisition for his heretical beliefs, discovered that feigned conformity was the only path to survival.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_38_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch38§54¶22\"><p>During these years, however, Campanella learned something about power. Facing the prospect of execution for heresy, he changed his strategy: He would not renounce his beliefs, yet he knew he had to disguise their outward appearance.</p></blockquote>",
+      "source_ids": ["ch38§54¶22"],
+      "verbatim_quote": "During these years, however, Campanella learned something about power. Facing the prospect of execution for heresy, he changed his strategy: He would not renounce his beliefs, yet he knew he had to disguise their outward appearance.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_38_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch38§54¶38\"><p>There are people, however, who see such restraints as an intolerable infringement on their freedom, and who have a need to prove the superiority of their values and beliefs. In the end, though, their arguments convince only a few and offend a great deal more. The reason arguments do not work is that most people hold their ideas and values without thinking about them. There is a strong emotional content in their beliefs: They really do not want to have to rework their habits of thinking, and when you challenge them, whether directly through your arguments or indirectly through your behavior, they are hostile.</p></blockquote>",
+      "source_ids": ["ch38§54¶38"],
+      "verbatim_quote": "There are people, however, who see such restraints as an intolerable infringement on their freedom, and who have a need to prove the superiority of their values and beliefs. In the end, though, their arguments convince only a few and offend a great deal more. The reason arguments do not work is that most people hold their ideas and values without thinking about them. There is a strong emotional content in their beliefs: They really do not want to have to rework their habits of thinking, and when you challenge them, whether directly through your arguments or indirectly through your behavior, they are hostile.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_38_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch38§54¶40\"><p>In the late fourteenth century, the Spanish began a massive persecution of the Jews, murdering thousands and driving others out of the country. Those who remained in Spain were forced to convert. Yet over the next three hundred years, the Spanish noticed a phenomenon that disturbed them: Many of the converts lived their outward lives as Catholics, yet somehow managed to retain their Jewish beliefs, practicing the religion in private. Many of these so-called Marranos (originally a derogatory term, being the Spanish for &quot;pig&quot;) attained high levels of government office, married into the nobility, and gave every appearance of Christian piety, only to be discovered late in life as practicing Jews. (The Spanish Inquisition was specifically commissioned to ferret them out.) Over the years they mastered the art of dissimulation, displaying crucifixes liberally, giving generous gifts to churches, even occasionally making anti-Semitic remarks—and all the while maintaining their inner freedom and beliefs.</p></blockquote>",
+      "source_ids": ["ch38§54¶40"],
+      "verbatim_quote": "In the late fourteenth century, the Spanish began a massive persecution of the Jews, murdering thousands and driving others out of the country. Those who remained in Spain were forced to convert. Yet over the next three hundred years, the Spanish noticed a phenomenon that disturbed them: Many of the converts lived their outward lives as Catholics, yet somehow managed to retain their Jewish beliefs, practicing the religion in private. Many of these so-called Marranos (originally a derogatory term, being the Spanish for \"pig\") attained high levels of government office, married into the nobility, and gave every appearance of Christian piety, only to be discovered late in life as practicing Jews. (The Spanish Inquisition was specifically commissioned to ferret them out.) Over the years they mastered the art of dissimulation, displaying crucifixes liberally, giving generous gifts to churches, even occasionally making anti-Semitic remarks—and all the while maintaining their inner freedom and beliefs.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_38_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch38§54¶39\"><p>Wise and clever people learn early on that they can display conventional behavior and mouth conventional ideas without having to believe in them. The power these people gain from blending in is that of being left alone to have the thoughts they want to have, and to express them to the people they want to express them to, without suffering isolation or ostracism. Once they have established themselves in a position of power, they can try to convince a wider circle of the correctness of their ideas—perhaps working indirectly, using Campanella's strategies of irony and insinuation.</p></blockquote>",
+      "source_ids": ["ch38§54¶39"],
+      "verbatim_quote": "Wise and clever people learn early on that they can display conventional behavior and mouth conventional ideas without having to believe in them. The power these people gain from blending in is that of being left alone to have the thoughts they want to have, and to express them to the people they want to express them to, without suffering isolation or ostracism. Once they have established themselves in a position of power, they can try to convince a wider circle of the correctness of their ideas—perhaps working indirectly, using Campanella's strategies of irony and insinuation.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 38: THINK AS YOU LIKE BUT BEHAVE LIKE OTHERS",
+    "chapter_source_words": 2000,
+    "chapter_output_words": 430,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression_pausanias", "reason": "Campanella observance selected as more instructive positive example; Pausanias covers same negative lesson"},
+      {"section": "reversal", "reason": "word count limit; core principle fully established in units 4-6"}
+    ]
+  }
+}

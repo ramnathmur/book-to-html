@@ -1,0 +1,182 @@
+{
+  "design_note": "This is a memoir braided with a self-help framework, and the Sydney 2000 final is the spine that earns every principle — so the navigation is strictly linear: the sequence IS the argument, and theme-clustering would collapse the build of dread, doubt, and finally release that the chronology does. We use both illustration channels because the book operates on two registers at once. Channel B openers carry the felt experience (dawn water, winter ergs, chalk on a boathouse wall) so the reader arrives in scene; Channel A diagrams externalise each chapter's framework (decision filters, 2x2s, causal chains) so the self-help half is load-bearing, not decorative. Muted watercolour — ochre, slate, paper texture — fits the tone: this is a quiet, deliberate, British rowing memoir, not a cinematic sports thriller. Wet edges and restrained line work read as recollection, which is the voice the prose is already in.",
+  "navigation_shape": "linear",
+  "navigation_rationale": "The Olympic-final narrative builds chronologically across all twelve chapters; the framework only lands because the story keeps moving forward.",
+  "toc": [
+    {"ch": 1, "title": "1. Goals", "anchor_id": "ch1", "reading_time_min": 19},
+    {"ch": 2, "title": "2. Motivation", "anchor_id": "ch2", "reading_time_min": 13},
+    {"ch": 3, "title": "3. Beliefs", "anchor_id": "ch3", "reading_time_min": 13},
+    {"ch": 4, "title": "4. Bullshit Filters", "anchor_id": "ch4", "reading_time_min": 21},
+    {"ch": 5, "title": "5. Make It Happen", "anchor_id": "ch5", "reading_time_min": 17},
+    {"ch": 6, "title": "6. Teams", "anchor_id": "ch6", "reading_time_min": 9},
+    {"ch": 7, "title": "7. Process Driven", "anchor_id": "ch7", "reading_time_min": 13},
+    {"ch": 8, "title": "8. Momentum", "anchor_id": "ch8", "reading_time_min": 25},
+    {"ch": 9, "title": "9. Change", "anchor_id": "ch9", "reading_time_min": 16},
+    {"ch": 10, "title": "10. Bouncebackability", "anchor_id": "ch10", "reading_time_min": 18},
+    {"ch": 11, "title": "11. Risks", "anchor_id": "ch11", "reading_time_min": 16},
+    {"ch": 12, "title": "12. The Final Chapter", "anchor_id": "ch12", "reading_time_min": 5}
+  ],
+  "illustration_plan": [
+    {
+      "ch": 1,
+      "channel_b_opener": {
+        "prompt": "the morning of the Sydney 2000 Olympic men's eight rowing final, calm water, dawn light, eight rowers in white singlets carrying a long racing shell to the dock, distant grandstands, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "Sydney 2000, morning of the men's eight final"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart TD\n  Dream[Crazy dream] --> Crazy{Is it crazy enough\\nto matter?}\n  Crazy -->|yes| Realistic{Is it realistic\\nenough to commit?}\n  Crazy -->|no| Bigger[Make it bigger]\n  Realistic -->|yes| Goal[Crazy-realistic goal]\n  Realistic -->|no| Refine[Find the realistic path]\n  Bigger --> Crazy\n  Refine --> Realistic",
+        "caption": "Goals framework: the crazy-realistic dream test"
+      }
+    },
+    {
+      "ch": 2,
+      "channel_b_opener": {
+        "prompt": "a lone rower on an ergometer in a dim boathouse before sunrise in winter, breath visible in cold air, single hanging bulb, frost on the windows, an open training logbook on a bench, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "Winter ergo session before dawn — the daily showing-up"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart LR\n  Trigger[Alarm at 5am] --> Friction{Friction\\nlow enough?}\n  Friction -->|no| Reduce[Lay kit out night before\\nPack bag\\nBike by door]\n  Friction -->|yes| Action[Get to the boathouse]\n  Reduce --> Action\n  Action --> Reward[Log session\\nTick the day]\n  Reward --> Identity[I am someone\\nwho shows up]\n  Identity --> Trigger",
+        "caption": "Motivation loop: lower friction, log the rep, reinforce identity"
+      }
+    },
+    {
+      "ch": 3,
+      "channel_b_opener": {
+        "prompt": "a rower sitting alone on a wooden bench in an empty boathouse, head down, hands loose, an old framed photograph of past GB crews on the wall behind, afternoon light through high windows, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "Sitting with a limiting belief in an empty boathouse"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart TD\n  Event[Event or setback] --> Belief[Belief about it]\n  Belief --> Feeling[Feeling]\n  Feeling --> Action[Action]\n  Action --> Result[Result]\n  Result -.reinforces.-> Belief\n  Belief --> Check{Is this belief\\nhelpful and true?}\n  Check -->|no| Swap[Choose a more\\nhelpful belief]\n  Swap --> Belief",
+        "caption": "Beliefs drive results — and beliefs are a choice"
+      }
+    },
+    {
+      "ch": 4,
+      "channel_b_opener": {
+        "prompt": "a coach's whiteboard in a rowing club office covered with crossed-out times and rewritten splits, a mug of tea cooling beside it, afternoon shadows, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "A whiteboard of stories being interrogated"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart TD\n  Story[The story in your head] --> Q1{Is it actually\\ntrue?}\n  Q1 -->|no| Drop[Drop it]\n  Q1 -->|yes| Q2{Is it the whole\\npicture?}\n  Q2 -->|no| Expand[Add the missing facts]\n  Q2 -->|yes| Q3{Is it useful\\nto hold right now?}\n  Q3 -->|no| Park[Park it]\n  Q3 -->|yes| Keep[Use it]\n  Expand --> Q3",
+        "caption": "Bullshit filter: three questions before a story gets to run you"
+      }
+    },
+    {
+      "ch": 5,
+      "channel_b_opener": {
+        "prompt": "a rower stepping off a dock into a single scull at first light, water glassy and still, oars resting on the rigger, a faint mist over the river, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "Choosing to push off — making it happen"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart LR\n  Wake[Wake up] --> Choose{Choose:\\nwhat kind of day\\nwill this be?}\n  Choose --> Set[Set one intention]\n  Set --> Act1[First action\\nbefore 9am]\n  Act1 --> Momentum[Small win]\n  Momentum --> Act2[Next action]\n  Act2 --> Evening[Evening:\\nwas it a good day?]\n  Evening -->|yes| Bank[Bank it]\n  Evening -->|no| Reset[Reset tomorrow]",
+        "caption": "Make-it-happen sequence: today is a choice, not a forecast"
+      }
+    },
+    {
+      "ch": 6,
+      "channel_b_opener": {
+        "prompt": "an eight-person racing shell on a river seen from above, all eight rowers and the cox in perfect rhythm, oars catching the water as one, wake fanning out symmetrically, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "An eight in rhythm — a team performing as one"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "quadrantChart\n  title Team roles: clarity vs trust\n  x-axis Low clarity --> High clarity\n  y-axis Low trust --> High trust\n  quadrant-1 High-performing crew\n  quadrant-2 Friendly but confused\n  quadrant-3 Dysfunctional\n  quadrant-4 Efficient but brittle\n  Bow pair: [0.85, 0.8]\n  Engine room: [0.9, 0.9]\n  Stroke and cox: [0.95, 0.85]\n  New recruit: [0.4, 0.5]",
+        "caption": "Teams: clarity of role × trust in each other"
+      }
+    },
+    {
+      "ch": 7,
+      "channel_b_opener": {
+        "prompt": "the inside of a boathouse wall with the phrase 'will it make the boat go faster?' written in white chalk, a single oar leaning beneath it, late afternoon light, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "The title question, in chalk on the boathouse wall"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart TD\n  Option[Any decision\\nor invitation] --> Filter{Will it make\\nthe boat go faster?}\n  Filter -->|yes| Do[Do it]\n  Filter -->|no| Drop[Don't do it]\n  Filter -->|unclear| Test[Run a small test\\nthis week]\n  Test --> Filter\n  Do --> Review[Review at end of week:\\ndid it actually?]\n  Review --> Filter",
+        "caption": "The one filter: every decision passes through the same question"
+      }
+    },
+    {
+      "ch": 8,
+      "channel_b_opener": {
+        "prompt": "a long racing shell already underway on open water, bow wave curling cleanly, oars mid-drive, a sense of accumulated speed, low sun behind, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "A boat carrying speed — momentum already paid for"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart LR\n  Push[Hard work in] --> Speed[Boat speed]\n  Speed --> Glide[Glide between strokes]\n  Glide --> Next[Next stroke is easier]\n  Next --> Push\n  Drag[Drag: skipped sessions\\nadmin\\ndrama] -.removes.-> Speed\n  Catch[Catch: protect the run\\nbetween strokes] -.preserves.-> Glide",
+        "caption": "Momentum: the glide between strokes is where the boat lives"
+      }
+    },
+    {
+      "ch": 9,
+      "channel_b_opener": {
+        "prompt": "a rowing crew on a lake under fast-moving grey clouds, wind beginning to ripple the surface, a coach on the bank pointing toward shelter, kit bags being repacked, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "Conditions changing on the water"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart TD\n  Signal[New signal:\\ncondition has changed] --> Pause[Pause briefly]\n  Pause --> Reread{What's still true?\\nWhat just stopped\\nbeing true?}\n  Reread --> Goal{Does the goal\\nstill stand?}\n  Goal -->|yes| Replan[Same goal,\\nnew plan]\n  Goal -->|no| Restate[New goal,\\nnew plan]\n  Replan --> Move[Move]\n  Restate --> Move",
+        "caption": "Change protocol: goal first, plan second"
+      }
+    },
+    {
+      "ch": 10,
+      "channel_b_opener": {
+        "prompt": "a single rower walking back along a dock in the rain after a lost race, oar over one shoulder, head up, a teammate waiting at the end of the dock with a towel, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "After a loss — the walk back"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart LR\n  Setback[Setback] --> Feel[Feel it\\n24 hours max]\n  Feel --> Facts[Separate facts\\nfrom story]\n  Facts --> Learn[One lesson worth\\nkeeping]\n  Learn --> Next[Next concrete action\\nthis week]\n  Next --> Back[Back in the boat]\n  Back --> Stronger[Stronger crew]",
+        "caption": "Bouncebackability: a bounded loop, not a spiral"
+      }
+    },
+    {
+      "ch": 11,
+      "channel_b_opener": {
+        "prompt": "a coach and a rower studying a course map spread on a wooden table outside a boathouse, weighted at the corners by stones, a mug of tea and a stopwatch nearby, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "Weighing risks over a course map"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "quadrantChart\n  title Three risk categories\n  x-axis Low cost of acting --> High cost of acting\n  y-axis Low cost of NOT acting --> High cost of NOT acting\n  quadrant-1 Can't afford NOT to take\n  quadrant-2 Afford NOT to take\n  quadrant-3 Ignore\n  quadrant-4 Can't afford to take\n  Change stroke rate mid-race: [0.7, 0.85]\n  Try a new training block: [0.3, 0.7]\n  Skip recovery to train more: [0.8, 0.25]\n  Argue with the cox in the final: [0.9, 0.15]",
+        "caption": "Risk grid: cost of acting vs cost of not acting"
+      }
+    },
+    {
+      "ch": 12,
+      "channel_b_opener": {
+        "prompt": "the finish line at Penrith Lakes, Sydney 2000, the British men's eight crossing first, oars raised, exhausted faces, gold light on the water, a single GB flag in the crowd, STYLE: watercolor, muted ochre and slate palette, soft wet edges, restrained line work, paper texture visible",
+        "seed": 4321,
+        "alt": "Gold — the British men's eight across the line at Sydney 2000"
+      },
+      "channel_a_diagram": {
+        "kind": "mermaid",
+        "content": "flowchart TD\n  Goal[1. Crazy-realistic goal] --> Motiv[2. Motivation]\n  Motiv --> Belief[3. Helpful beliefs]\n  Belief --> Filter[4. Bullshit filters]\n  Filter --> Make[5. Make it happen]\n  Make --> Team[6. Team]\n  Team --> Process[7. Will it make\\nthe boat go faster?]\n  Process --> Mom[8. Momentum]\n  Mom --> Change[9. Change]\n  Change --> Bounce[10. Bounceback]\n  Bounce --> Risk[11. Risk]\n  Risk --> Gold[12. Cross the line]\n  Gold -.next goal.-> Goal",
+        "caption": "The whole framework, in the order the race needs it"
+      }
+    }
+  ],
+  "characters_json": {
+    "Ben Hunt-Davis": "GB rower in his 30s, lean rowing build, short brown hair, white singlet with GB lion crest, calm focused expression",
+    "the crew": "eight British rowers plus cox, white singlets with GB lion crest, racing shell on calm water, synchronised posture",
+    "Sydney_2000": "Penrith Lakes regatta course, Australian morning light, low grandstands along the bank, eucalyptus in the distance, calm water"
+  }
+}

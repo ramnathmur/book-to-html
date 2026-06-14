@@ -1,0 +1,57 @@
+{
+  "chapter_title": "LAW 35: MASTER THE ART OF TIMING",
+  "law_no": 35,
+  "units": [
+    {
+      "unit_id": "u_35_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch35§51¶1\"><p>Never seem to be in a hurry-hurrying betrays a lack of control over yourself, and over time. Always seem patient, as if you know that everything will come to you eventually. Become a detective of the right moment; sniff out the spirit of the times, the trends that will carry you to power. Learn to stand back when the time is not yet ripe, and to strike fiercely when it has reached fruition.</p></blockquote>",
+      "source_ids": ["ch35§51¶1"],
+      "verbatim_quote": "Never seem to be in a hurry-hurrying betrays a lack of control over yourself, and over time. Always seem patient, as if you know that everything will come to you eventually. Become a detective of the right moment; sniff out the spirit of the times, the trends that will carry you to power. Learn to stand back when the time is not yet ripe, and to strike fiercely when it has reached fruition.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_35_0002",
+      "kind": "bridge",
+      "html": "<p>The career of Joseph Fouché — from obscure seminary teacher to Napoleon's minister of police — is the supreme case study in political timing across a decade of revolution.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_35_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch35§51¶6\"><p>When Fouché arrived in Paris to take his seat at the convention, a violent rift had broken out between the moderates and the radical Jacobins. Fouché sensed that in the long run neither side would emerge victorious. Power rarely ends up in the hands of those who start a revolution, or even of those who further it; power sticks to those who bring it to a conclusion. That was the side Fouche wanted to be on.</p></blockquote>",
+      "source_ids": ["ch35§51¶6"],
+      "verbatim_quote": "When Fouché arrived in Paris to take his seat at the convention, a violent rift had broken out between the moderates and the radical Jacobins. Fouché sensed that in the long run neither side would emerge victorious. Power rarely ends up in the hands of those who start a revolution, or even of those who further it; power sticks to those who bring it to a conclusion. That was the side Fouche wanted to be on.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_35_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch35§51¶8\"><p>So far Fouché had played his cards brilliantly, but in 1794 his old friend Robespierre recalled him to Paris to account for his actions in Lyons. Robespierre had been the driving force behind the Terror. He had sent heads on both the right and the left rolling, and Fouché, whom he no longer trusted, seemed destined to provide the next head. Over the next few weeks, a tense struggle ensued: While Robespierre railed openly against Fouché, accusing of him dangerous ambitions and calling for his arrest, the crafty Fouché worked more indirectly, quietly gaining support among those who were beginning to tire of Robespierre's dictatorial control. Fouche was playing for time. He knew that the longer he survived, the more disaffected citizens he could rally against Robespierre. He had to have broad support before he moved against the powerful leader. He rallied support among both the moderates and the Jacobins, playing on the widespread fear of Robespierre-everyone was afraid of being the next to go to the guillotine. It all came to fruition on July 27: The convention turned against Robespierre, shouting down his usual lengthy speech. He was quickly arrested, and a few days later it was Robespierre's head, not Fouché's, that fell into the basket.</p></blockquote>",
+      "source_ids": ["ch35§51¶8"],
+      "verbatim_quote": "So far Fouché had played his cards brilliantly, but in 1794 his old friend Robespierre recalled him to Paris to account for his actions in Lyons. Robespierre had been the driving force behind the Terror. He had sent heads on both the right and the left rolling, and Fouché, whom he no longer trusted, seemed destined to provide the next head. Over the next few weeks, a tense struggle ensued: While Robespierre railed openly against Fouché, accusing of him dangerous ambitions and calling for his arrest, the crafty Fouché worked more indirectly, quietly gaining support among those who were beginning to tire of Robespierre's dictatorial control. Fouche was playing for time. He knew that the longer he survived, the more disaffected citizens he could rally against Robespierre. He had to have broad support before he moved against the powerful leader. He rallied support among both the moderates and the Jacobins, playing on the widespread fear of Robespierre-everyone was afraid of being the next to go to the guillotine. It all came to fruition on July 27: The convention turned against Robespierre, shouting down his usual lengthy speech. He was quickly arrested, and a few days later it was Robespierre's head, not Fouché's, that fell into the basket.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_35_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch35§51¶22\"><p>Time is an artificial concept that we ourselves have created to make the limitlessness of eternity and the universe more bearable, more human. Since we have constructed the concept of time, we are also able to mold it to some degree, to play tricks with it. The time of a child is long and slow, with vast expanses; the time of an adult whizzes by frighteningly fast. Time, then, depends on perception, which, we know, can be willfully altered. This is the first thing to understand in mastering the art of timing. If the inner turmoil caused by our emotions tends to make time move faster, it follows that once we control our emotional responses to events, time will move much more slowly. This altered way of dealing with things tends to lengthen our perception of future time, opens up possibilities that fear and anger close off, and allows us the patience that is the principal requirement in the art of timing.</p></blockquote>",
+      "source_ids": ["ch35§51¶22"],
+      "verbatim_quote": "Time is an artificial concept that we ourselves have created to make the limitlessness of eternity and the universe more bearable, more human. Since we have constructed the concept of time, we are also able to mold it to some degree, to play tricks with it. The time of a child is long and slow, with vast expanses; the time of an adult whizzes by frighteningly fast. Time, then, depends on perception, which, we know, can be willfully altered. This is the first thing to understand in mastering the art of timing. If the inner turmoil caused by our emotions tends to make time move faster, it follows that once we control our emotional responses to events, time will move much more slowly. This altered way of dealing with things tends to lengthen our perception of future time, opens up possibilities that fear and anger close off, and allows us the patience that is the principal requirement in the art of timing.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 35: MASTER THE ART OF TIMING",
+    "chapter_source_words": 2100,
+    "chapter_output_words": 474,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "section empty in source"},
+      {"section": "observance_paragraphs_5_7_9", "reason": "paragraphs 6, 8 selected as the most pivotal moments; total word count met"},
+      {"section": "reversal", "reason": "states no reversal exists — no content to represent"}
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "iteration": 2,
+  "scores": {"visual_pleasure": 4, "navigation": 5, "comprehension": 5, "illustration": 4, "books_finished_rate": 4},
+  "comprehension_test_results": [
+    {
+      "q_id": 1,
+      "question": "The book describes a four-layer model for crafting effective goals. What are the four layers, and what job does each one do?",
+      "my_answer_from_html": "Crazy (emotionally significant dream goal that fires imagination but is too big/unmeasurable on its own), Concrete (measurable expression — e.g. row 2,000m in 5:18 — answers 'how will I know I've done it?'), Control (targets inside our own control like ergo times and bench-press weights, grounding the crazy goal in something reachable), and Everyday (the daily methods/processes that can go in a diary). Each layer supports the others — without passion a goal becomes a chore, without specificity it's a pipe-dream.",
+      "expected_sketch": "Four layers crazy/concrete/control/everyday, each supporting the others.",
+      "match": "full",
+      "points": 1.0
+    },
+    {
+      "q_id": 2,
+      "question": "Chapter 2 opens on a Christmas Eve sculling time trial. What specific rumour about the Romanian crew did Ben use as a motivational lever, and what broader principle about motivation does this illustrate?",
+      "my_answer_from_html": "The HTML conveys 'do it for the Romanians' — Ben would curse them as the team he had to beat. The broader principle is in the chapter as 'make yourself hungry' / 'the pain of the status quo can be as motivating as the promise of achieving your goal'. The specific house/family-security rumour about the Romanians is not surfaced in the HTML; only the generic 'beat the Romanians' lever is present.",
+      "expected_sketch": "Rumour about house/family security if Romanians won; pain of status quo as motivation.",
+      "match": "partial",
+      "points": 0.5
+    },
+    {
+      "q_id": 3,
+      "question": "Chapter 3 introduces the DICE mnemonic for beliefs. What do each of the four letters stand for, and why does the book use a 'four wheels on a bus' metaphor for them?",
+      "my_answer_from_html": "DICE = Deserving (Ben stripped it to 'I deserve to win this race against guys I've raced for years'), Important (the goal links to a deeper value — Ben's training-diary list of reasons), Can do it (belief you'll figure out how — ask 'how am I going to do this' not 'can I do this'), Exciting (passion/fire in the belly that speeds progress). The chapter frames beliefs as 'four wheels' that all need to be inflated — if one tyre is flat the vehicle stops.",
+      "expected_sketch": "DICE = Deserving/Important/Can-do/Exciting; bus-wheel analogy — all four required.",
+      "match": "full",
+      "points": 1.0
+    },
+    {
+      "q_id": 4,
+      "question": "Chapter 4's key tool is the 'bullshit filter'. What does the phrase 'don't talk bollocks to Basil' mean in practice, and which crewman introduced it to the group?",
+      "my_answer_from_html": "Fred brought the phrase from Oxford Brookes (the original Basil was unknown even to Fred). In practice it means: don't share stuff with people who can't help you with the goal — focus only on people and inputs that move the boat. The crew applied it to family who didn't believe, to press conferences (lulling the Aussies rather than venting), and to the doubting voice in their own heads.",
+      "expected_sketch": "Don't share with people who can't help; focus only on relevant inputs; introduced by Fred from Oxford Brookes.",
+      "match": "full",
+      "points": 1.0
+    },
+    {
+      "q_id": 5,
+      "question": "The mantra 'Today is going to be a good day, because I am going to make it a good day' opens chapter 1 and is explained in chapter 5. Where did the crew get it, and what three things does the sentence actually claim?",
+      "my_answer_from_html": "Coach Martin introduced it after the 1998 Worlds, from Kiwi single sculler Rob Waddell. The three claims spelled out in the HTML: (1) I don't have to hang around hoping someone else makes it a good day — I can; (2) I am going to choose to make it a good day — no one is forcing me, it's my active choice; (3) I am going to get off my backside and take action to make the good day happen.",
+      "expected_sketch": "From Rob Waddell via Martin; three claims about agency, choice, action.",
+      "match": "full",
+      "points": 1.0
+    },
+    {
+      "q_id": 6,
+      "question": "In the Sarnen training-camp incident (chapter 6 narrative), the crew fell apart 69 days before the Olympic final. What did the crew agree on in the long conversation that pulled them back together, and what two requirements does the book say a team's shared goal must meet?",
+      "my_answer_from_html": "After Martin's fuel-tank rant bollocked the crew indiscriminately, Louis was particularly livid because he'd been bollocked for something he hadn't done. The crew agreed Martin couldn't treat them all the same, and that what had happened had to make them faster as a unit. The two requirements for a team's shared goal stated in the chapter: (a) it must be measurable AND rely on everyone, (b) everyone must genuinely want to achieve it — each crew member had a different personal reason (pride, money, proving people wrong) but all wanted Gold badly.",
+      "expected_sketch": "Refocus on shared goal and agreed treatment of each other; goal must be measurable+everyone-relies-on-everyone AND everyone wants it (personal WIIFM).",
+      "match": "full",
+      "points": 1.0
+    },
+    {
+      "q_id": 7,
+      "question": "Chapter 7 ('Process Driven') states that wanting to win is not enough — you must 'forget about winning' to win. What does this mean, and who introduced this idea to the crew?",
+      "my_answer_from_html": "Coach Martin, from his engineering background, introduced it. The meaning: you don't win Gold by concentrating on winning Gold — you win by concentrating on the methods that produce Gold (perfect strokes, devastating rhythm, power, strong mindset, strong team). A bonus benefit: if you win by focusing on the result, you don't know why; if you focus on the process you can repeat and improve it. The crew started measuring success in how good they were getting at the process, not regattas won.",
+      "expected_sketch": "Martin introduced from engineering; focus on methods/rhythm not the outcome; result is a fluke if you don't know how it was produced.",
+      "match": "full",
+      "points": 1.0
+    },
+    {
+      "q_id": 8,
+      "question": "Chapter 8 ('Momentum') is subtitled 'how to eat an elephant'. After coming 7th at the 1998 World Championships, what big structural changes did the crew make, and what was the underlying principle they applied from that point forward?",
+      "my_answer_from_html": "After the soul-crushing 7th place in 1998 (beaten by US, Germans, Romanians, Russians, Italians, Australians — losing by nine seconds), the crew made three big structural changes: (1) changed the training day from 8-3 to 8-11 then 4-7, so quality training happened on fed/rested bodies; (2) stopped circuit training, a cornerstone of the previous programme; (3) stopped using the chief coach Jürgen's programme and wrote their own. The underlying principle: how do you eat an elephant? One spoonful at a time — small improvements daily compound into massive gains. David Brailsford's 'aggregation of marginal gains' is the corporate analogue.",
+      "expected_sketch": "Working-day change, no circuit training, own programme; eat the elephant one spoonful at a time.",
+      "match": "full",
+      "points": 1.0
+    },
+    {
+      "q_id": 9,
+      "question": "Chapter 9 ('Change') takes its title from a line heard on a survival TV show. What is the line, what does it mean as a change strategy, and what are the three groups of strategies for handling change that the chapter outlines?",
+      "my_answer_from_html": "'The key thing about crocodiles is to get them before they get you.' Applied to change: don't wait for change to bite you — instigate it on your own terms, work backwards from the goal (Martin's approach: not tweaking the current programme, designing the right one for the goal). The three strategy groups: (1) instigating change — mindset to be in the driving seat rather than a victim; (2) communicating change — persuading yourself and others to make the transition; (3) putting change into practice — repetition, exaggerated changes you can scale back, accepting discomfort as a signal not a stop sign.",
+      "expected_sketch": "Crocodile line; three groups: instigating / communicating / putting into practice.",
+      "match": "full",
+      "points": 1.0
+    },
+    {
+      "q_id": 10,
+      "question": "Chapter 10 introduces the 'launch PAD' for bouncing back from setbacks. What do the three letters of PAD stand for, and what does the book say distinguishes successful people's relationship with setbacks from everyone else's?",
+      "my_answer_from_html": "PAD = Prepare in advance (know your vulnerable points — the crew pre-discussed how they'd respond if Redgrave's four lost), Accept the setback when it comes (don't deny or wallow), Do something — control the controllables, learn from the experience. What distinguishes successful people: they do NOT get fewer setbacks; they just deal with them better. They've got what Crystal Palace manager Ian Dowie called 'bouncebackability' when his team came back to beat Wimbledon 3-1 in 2004.",
+      "expected_sketch": "P=Prepare, A=Accept, D=Do; successful people don't get fewer setbacks, they handle them better.",
+      "match": "full",
+      "points": 1.0
+    }
+  ],
+  "comprehension_total_points": 9.5,
+  "verdict": {
+    "visual_pleasure": "The Stripe Press / Distill stack lands cleanly: muted bg, serif body type (Iowan / Source Serif), a 66ch measure, generous leading at 1.65, drop caps at chapter openers, accent-orange pull-quotes with rules above and below, and a subtle progress bar at the top edge. The anchor blockquote pattern (left rule, source-id tag in muted italic) makes verbatim material read as primary not decorative, which is the right call for a memoir condensation. The one drag on visual pleasure is density: chapters 4 and 8 in particular are anchor-heavy walls of blockquotes with thin connective prose between them, which after a while feels like a quote board rather than a read. I would keep scrolling, but I'd want more bridge prose to vary the rhythm. Four, not five.",
+    "navigation": "Frictionless. The sticky left TOC lists all 12 chapters with reading-time estimates, the active link highlights via scroll-spy, the top progress bar gives steady completion feedback, and the meta box shows '~176 min' and a live '% read' counter. Chapter IDs (ch1-ch12) are stable anchors. Citation labels appear in muted italics after each anchor block (e.g. 'ch3§2¶21'), which I appreciate as a senior reader because I know exactly which paragraph of source any claim maps to. The TOC was a known iter-1 failure and is now fully populated. Five.",
+    "comprehension": "I answered 9 of 10 questions fully and 1 partially from the HTML alone — 9.5/10 points. The only gap was Q2's specific Romanian house/security rumour, which the HTML does not surface (only the generic 'do it for the Romanians' lever and the broader 'pain of the status quo' principle). Everything else — four-layer goals, DICE, 'don't talk bollocks to Basil' attributed to Fred from Oxford Brookes, the Rob Waddell mantra via Martin, the Sarnen fuel-tank breakdown plus the two team-goal requirements, 'forget about winning' from Martin's engineering background, the 1998 7th-place structural changes plus eat-the-elephant, the crocodile line and three change strategy groups, and PAD plus Ian Dowie — all present in primary source-anchored form. Five.",
+    "illustration": "Channel A diagrams are genuinely load-bearing: the goals decision tree, the motivation loop with friction → identity feedback, the bullshit-filter three-question gate, the team clarity-vs-trust quadrant, the one-filter process flow, the momentum push/glide/catch loop, the risk-cost 2x2, the bouncebackability bounded loop, and the chapter-12 'whole framework in race order' synthesis are all crisp and actually carry argument. The Channel B Pollinations openers are tonally well-aimed — dawn water, winter erg, chalk on a boathouse wall, the eight in rhythm from above, the walk back in the rain — and the watercolor / muted ochre / slate brief reads in the prompts. I can't render the network images in my tool, but the figure structure with onerror fallback to '(illustration unavailable)' is the right safety net. The minor nit is that having an opener AND a diagram on every chapter front-loads the visual budget; some chapters would breathe better with just one. Four.",
+    "books_finished_rate": "Yes — this measurably increases throughput. 176 minutes vs 290 for the original is a real saving, and the condensed artifact is dense with verbatim Ben/Harriet voice rather than paraphrase, which is what I actually want from a memoir-style book (the prose IS the asset; I'd be furious if it were sanded down to bullet points). The framework is recoverable in a single re-read of chapter 12's synthesis diagram. I would skip the original and feel confident — I could discuss DICE, the four-layer goals model, 'will it make the boat go faster', the 1998-to-2000 turnaround structure, the Sarnen breakdown, the risk 2x2, PAD, and the Sydney 24-hour-before strategy pivot. The one caveat is that heavy anchor density in some chapters means I occasionally skimmed when I should have been reading; if I were optimising for retention I'd want slightly more bridge prose. Four."
+  },
+  "lowest_dimension": "visual_pleasure",
+  "would_skip_original": true,
+  "gate_status": "pass",
+  "gate_reasoning": "All four non-terminal dimensions are at or above 4, and the terminal books_finished_rate sits at 4 — gate is pass. The iter-1 failure (empty prose bodies in chapters 4, 8 and 12, plus an empty TOC) is fully resolved: ch4 now opens with the Vienna heat / Croatian crab / Martin's 'you've won shit' post-race scene as verbatim anchors and continues with the bullshit-filter framework including the Fred/Basil attribution; ch8 has the full Gold Coast camp arc, the percentage-game contrast, the 1998-7th-place structural changes and eat-the-elephant; ch12 has both verbatim race-by-race anchors AND a bridging prose paragraph ('The plan was laid down with every drop of passion...') plus the closing six-principle synthesis. The TOC is populated with all 12 chapters and reading-time estimates, scroll-spy works, and the footer build label confirms this is the 20260527-001-boat-go-faster build."
+}

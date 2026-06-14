@@ -1,0 +1,64 @@
+{
+  "chapter_title": "LAW 3: CONCEAL YOUR INTENTIONS",
+  "law_no": 3,
+  "units": [
+    {
+      "unit_id": "u_03_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§12¶1\"><p>Keep people off-balance and in the dark by never revealing the purpose behind your actions. If they have no clue what you are up to, they cannot prepare a defense. Guide them far enough down the wrong path, envelop them in enough smoke, and by the time they realize your intentions, it will be too late.</p></blockquote>",
+      "source_ids": ["ch3§12¶1"],
+      "verbatim_quote": "Keep people off-balance and in the dark by never revealing the purpose behind your actions. If they have no clue what you are up to, they cannot prepare a defense. Guide them far enough down the wrong path, envelop them in enough smoke, and by the time they realize your intentions, it will be too late.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_03_0002",
+      "kind": "bridge",
+      "html": "<p>Bismarck used a shocking public reversal of his known principles to maneuver his way into power.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_03_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§13¶17\"><p>Passionate patriot and lover of military glory, Bismarck nevertheless gave a speech in parliament at the height of the war fever that astonished all who heard it. \"Woe unto the statesman,\" he said, \"who makes war without a reason that will still be valid when the war is over! After the war, you will all look differently at these questions. Will you then have the courage to turn to the peasant contemplating the ashes of his farm, to the man who has been crippled, to the father who has lost his children?\" Not only did Bismarck go on to talk of the madness of this war, but, strangest of all, he praised Austria and defended her actions. This went against everything he had stood for. The consequences were immediate. Bismarck was against the war—what could this possibly mean? Other deputies were confused, and several of them changed their votes. Eventually the king and his ministers won out, and war was averted.</p></blockquote>",
+      "source_ids": ["ch3§13¶17"],
+      "verbatim_quote": "Passionate patriot and lover of military glory, Bismarck nevertheless gave a speech in parliament at the height of the war fever that astonished all who heard it. \"Woe unto the statesman,\" he said, \"who makes war without a reason that will still be valid when the war is over! After the war, you will all look differently at these questions. Will you then have the courage to turn to the peasant contemplating the ashes of his farm, to the man who has been crippled, to the father who has lost his children?\" Not only did Bismarck go on to talk of the madness of this war, but, strangest of all, he praised Austria and defended her actions. This went against everything he had stood for. The consequences were immediate. Bismarck was against the war—what could this possibly mean? Other deputies were confused, and several of them changed their votes. Eventually the king and his ministers won out, and war was averted.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_03_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§13¶18\"><p>A few weeks after Bismarck's infamous speech, the king, grateful that he had spoken for peace, made him a cabinet minister. A few years later he became the Prussian premier. In this role he eventually led his country and a peace-loving king into a war against Austria, crushing the former empire and establishing a mighty German state, with Prussia at its head.</p></blockquote>",
+      "source_ids": ["ch3§13¶18"],
+      "verbatim_quote": "A few weeks after Bismarck's infamous speech, the king, grateful that he had spoken for peace, made him a cabinet minister. A few years later he became the Prussian premier. In this role he eventually led his country and a peace-loving king into a war against Austria, crushing the former empire and establishing a mighty German state, with Prussia at its head.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_03_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§13¶22\"><p>Most people are open books. They say what they feel, blurt out their opinions at every opportunity, and constantly reveal their plans and intentions. They do this for several reasons. First, it is easy and natural to always want to talk about one's feelings and plans for the future. It takes effort to control your tongue and monitor what you reveal. Second, many believe that by being honest and open they are winning people's hearts and showing their good nature. They are greatly deluded. Honesty is actually a blunt instrument, which bloodies more than it cuts. Your honesty is likely to offend people; it is much more prudent to tailor your words, telling people what they want to hear rather than the coarse and ugly truth of what you feel or think. More important, by being unabashedly open you make yourself so predictable and familiar that it is almost impossible to respect or fear you, and power will not accrue to a person who cannot inspire such emotions.</p></blockquote>",
+      "source_ids": ["ch3§13¶22"],
+      "verbatim_quote": "Most people are open books. They say what they feel, blurt out their opinions at every opportunity, and constantly reveal their plans and intentions. They do this for several reasons. First, it is easy and natural to always want to talk about one's feelings and plans for the future. It takes effort to control your tongue and monitor what you reveal. Second, many believe that by being honest and open they are winning people's hearts and showing their good nature. They are greatly deluded. Honesty is actually a blunt instrument, which bloodies more than it cuts. Your honesty is likely to offend people; it is much more prudent to tailor your words, telling people what they want to hear rather than the coarse and ugly truth of what you feel or think. More important, by being unabashedly open you make yourself so predictable and familiar that it is almost impossible to respect or fear you, and power will not accrue to a person who cannot inspire such emotions.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_03_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§13¶23\"><p>If you yearn for power, quickly lay honesty aside, and train yourself in the art of concealing your intentions. Master the art and you will always have the upper hand. Basic to an ability to conceal one's intentions is a simple truth about human nature: Our first instinct is to always trust appearances. We cannot go around doubting the reality of what we see and hear—constantly imagining that appearances concealed something else would exhaust and terrify us. This fact makes it relatively easy to conceal one's intentions. Simply dangle an object you seem to desire, a goal you seem to aim for, in front of people's eyes and they will take the appearance for reality. Once their eyes focus on the decoy, they will fail to notice what you are really up to. In seduction, set up conflicting signals, such as desire and indifference, and you not only throw them off the scent, you inflame their desire to possess you.</p></blockquote>",
+      "source_ids": ["ch3§13¶23"],
+      "verbatim_quote": "If you yearn for power, quickly lay honesty aside, and train yourself in the art of concealing your intentions. Master the art and you will always have the upper hand. Basic to an ability to conceal one's intentions is a simple truth about human nature: Our first instinct is to always trust appearances. We cannot go around doubting the reality of what we see and hear—constantly imagining that appearances concealed something else would exhaust and terrify us. This fact makes it relatively easy to conceal one's intentions. Simply dangle an object you seem to desire, a goal you seem to aim for, in front of people's eyes and they will take the appearance for reality. Once their eyes focus on the decoy, they will fail to notice what you are really up to. In seduction, set up conflicting signals, such as desire and indifference, and you not only throw them off the scent, you inflame their desire to possess you.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 3: CONCEAL YOUR INTENTIONS",
+    "chapter_source_words": 2100,
+    "chapter_output_words": 455,
+    "bridge_ratio": 0.04,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "Ninon/Marquis seduction story omitted for word budget; Bismarck observance is more politically vivid"},
+      {"section": "keys_to_power ¶24-27", "reason": "Marlborough and false sincerity examples cut; core mechanism covered by ¶22-23"}
+    ]
+  }
+}

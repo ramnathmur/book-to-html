@@ -1,0 +1,74 @@
+{
+  "questions": [
+    {
+      "q_id": 1,
+      "chapter": 1,
+      "question": "The book describes a four-layer model for crafting effective goals. What are the four layers, and what job does each one do?",
+      "expected_targets_source_ids": ["ch1§2¶54", "ch1§2¶59", "ch1§2¶61", "ch1§2¶63", "ch1§2¶65", "ch1§2¶67"],
+      "expected_answer_sketch": "The four layers are: (1) Crazy — an emotionally charged dream goal that fires imagination; (2) Concrete — a measurable expression that answers 'how will I know when I've achieved it?'; (3) Control — targets inside our own control (e.g. rowing-machine times); (4) Everyday — the daily methods and processes that can be put in a diary. Each layer supports the others; if one is missing the structure collapses."
+    },
+    {
+      "q_id": 2,
+      "chapter": 2,
+      "question": "Chapter 2 opens on a Christmas Eve sculling time trial. What specific rumour about the Romanian crew did Ben use as a motivational lever, and what broader principle about motivation does this illustrate?",
+      "expected_targets_source_ids": ["ch2§2¶48", "ch2§2¶49"],
+      "expected_answer_sketch": "Rumour had it that if the Romanians won they received a house and family security; if they lost they got nothing. Ben used this to fuel his own hunger. The broader principle is that 'the pain of the status quo can be as motivating as the promise of achieving your goal' — making yourself uncomfortable/hungry about the present situation drives action."
+    },
+    {
+      "q_id": 3,
+      "chapter": 3,
+      "question": "Chapter 3 introduces the DICE mnemonic for beliefs. What do each of the four letters stand for, and why does the book use a 'four wheels on a bus' metaphor for them?",
+      "expected_targets_source_ids": ["ch3§2¶20", "ch3§2¶18", "ch3§2¶19", "ch3§2¶21", "ch3§2¶24", "ch3§2¶35", "ch3§2¶39"],
+      "expected_answer_sketch": "DICE = Deserving (you have earned the right to succeed), Important (the goal links to a core value), Can do it (belief that you will find a way), Exciting (genuine passion and fire in the belly). The bus metaphor: each wheel works independently but all must work together; if a tyre is flat or a wheel is missing the vehicle comes to a halt — missing any one of the four beliefs derails progress."
+    },
+    {
+      "q_id": 4,
+      "chapter": 4,
+      "question": "Chapter 4's key tool is the 'bullshit filter'. What does the phrase 'don't talk bollocks to Basil' mean in practice, and which crewman introduced it to the group?",
+      "expected_targets_source_ids": ["ch4§2¶36", "ch4§2¶35"],
+      "expected_answer_sketch": "'Don't talk bollocks to Basil' means: don't waste energy sharing information or worries with people who can't help you, or who will feed you unhelpful noise. Focus only on people and inputs that are relevant to making the boat go faster. The phrase was brought to the crew by Fred (from Oxford Brookes), though the original source of the phrase was unknown even to him."
+    },
+    {
+      "q_id": 5,
+      "chapter": 5,
+      "question": "The mantra 'Today is going to be a good day, because I am going to make it a good day' opens chapter 1 and is explained in chapter 5. Where did the crew get it, and what three things does the sentence actually claim?",
+      "expected_targets_source_ids": ["ch5§2¶8", "ch5§2¶9", "ch5§2¶11", "ch5§2¶12", "ch5§2¶13"],
+      "expected_answer_sketch": "Coach Martin introduced it from New Zealand single sculler Rob Waddell. The three claims: (1) I have the power to make a good day — I am not at the mercy of others or fate; (2) it is my active choice, not something forced on me; (3) I will take concrete action to make the good day happen. It is a statement of personal responsibility and agency."
+    },
+    {
+      "q_id": 6,
+      "chapter": 6,
+      "question": "In the Sarnen training-camp incident (chapter 6 narrative), the crew fell apart 69 days before the Olympic final. What did the crew agree on in the long conversation that pulled them back together, and what two requirements does the book say a team's shared goal must meet?",
+      "expected_targets_source_ids": ["ch6§1¶26", "ch6§2¶4", "ch6§2¶28", "ch6§2¶31"],
+      "expected_answer_sketch": "At Sarnen, coach Martin criticised individuals in ways that felt unfair, the session fell apart, and the team had to hold a long meeting to re-establish trust and rules. In the conversation they refocused on their shared goal and agreed on how to treat each other. The book states the shared goal must (a) be measurable and rely on everyone's contribution and (b) be something that everyone genuinely wants to achieve — each person must see their own personal benefit (WIIFM)."
+    },
+    {
+      "q_id": 7,
+      "chapter": 7,
+      "question": "Chapter 7 ('Process Driven') states that wanting to win is not enough — you must 'forget about winning' to win. What does this mean, and who introduced this idea to the crew?",
+      "expected_targets_source_ids": ["ch7§2¶2", "ch7§2¶3", "ch7§2¶7", "ch7§2¶8", "ch7§2¶9"],
+      "expected_answer_sketch": "Coach Martin (from his engineering background) argued that the crew would not win Gold by concentrating on winning Gold. They would win it by concentrating hard on using the best methods — perfect strokes, rhythm, power, mindset, and team. Focusing on the process also accelerates learning: a successful outcome is a fluke unless you know how you produced it. 'Forget about winning' means redirect your daily attention from the result to the process that produces the result."
+    },
+    {
+      "q_id": 8,
+      "chapter": 8,
+      "question": "Chapter 8 ('Momentum') is subtitled 'how to eat an elephant'. After coming 7th at the 1998 World Championships, what big structural changes did the crew make, and what was the underlying principle they applied from that point forward?",
+      "expected_targets_source_ids": ["ch8§2¶9", "ch8§2¶10", "ch8§2¶3"],
+      "expected_answer_sketch": "After coming 7th (last) at the 1998 Worlds the crew changed their training day structure (from 8-3 to 8-11 then 4-7), dropped circuit training, and broke away from the chief coach's programme to write their own. The underlying principle: small improvements made continuously, day by day, compound into massive gains — 'how do you eat an elephant? One spoonful at a time.' Building momentum through incremental progress is more reliable than hoping for a single dramatic transformation."
+    },
+    {
+      "q_id": 9,
+      "chapter": 9,
+      "question": "Chapter 9 ('Change') takes its title from a line heard on a survival TV show. What is the line, what does it mean as a change strategy, and what are the three groups of strategies for handling change that the chapter outlines?",
+      "expected_targets_source_ids": ["ch9§2¶26", "ch9§2¶28", "ch9§2¶29", "ch9§2¶22", "ch9§2¶23", "ch9§2¶24"],
+      "expected_answer_sketch": "'The key thing about crocodiles is to get them before they get you.' Applied to change: don't wait passively for change to be forced on you — anticipate it, make changes proactively on your own terms, keep your radar up. The three strategy groups are: (1) instigating change — taking the driving seat rather than being a victim; (2) communicating change — persuading yourself and others to make the transition; (3) putting change into practice — practical implementation tactics."
+    },
+    {
+      "q_id": 10,
+      "chapter": 10,
+      "question": "Chapter 10 introduces the 'launch PAD' for bouncing back from setbacks. What do the three letters of PAD stand for, and what does the book say distinguishes successful people's relationship with setbacks from everyone else's?",
+      "expected_targets_source_ids": ["ch10§2¶3", "ch10§2¶13", "ch10§2¶14", "ch10§2¶15", "ch10§2¶7"],
+      "expected_answer_sketch": "PAD = Prepare in advance (identify your vulnerable points before setbacks hit), Accept the setback when it happens (don't deny or catastrophise), Do something — take concrete action to turn the situation around. The book states that successful people do not get fewer setbacks than everyone else; they simply deal with them better. 'Bouncebackability' (a word coined by Crystal Palace manager Ian Dowie) is a muscle that can be trained."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "chapter_title": "LAW 30: MAKE YOUR ACCOMPLISHMENTS SEEM EFFORTLESS",
+  "law_no": 30,
+  "units": [
+    {
+      "unit_id": "u_30_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch30§46¶2\"><p>Your actions must seem natural and executed with ease. All the toil and practice that go into them, and also all the clever tricks, must be concealed. When you act, act effortlessly, as if you could do much more. Avoid the temptation of revealing how hard you work—it only raises questions. Teach no one your tricks or they will be used against you.</p></blockquote>",
+      "source_ids": ["ch30§46¶2"],
+      "verbatim_quote": "Your actions must seem natural and executed with ease. All the toil and practice that go into them, and also all the clever tricks, must be concealed. When you act, act effortlessly, as if you could do much more. Avoid the temptation of revealing how hard you work—it only raises questions. Teach no one your tricks or they will be used against you.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_30_0002",
+      "kind": "bridge",
+      "html": "<p>The Renaissance concept of <em>sprezzatura</em> — making the difficult seem easy — is the oldest and clearest formulation of this principle.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_30_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch30§46¶35\"><p>One of the first European writers to expound on this principle came from that most unnatural of environments, the Renaissance court. In The Book of the Courtier, published in 1528, Baldassare Castiglione describes the highly elaborate and codified manners of the perfect court citizen. And yet, Castiglione explains, the courtier must execute these gestures with what he calls sprezzatura, the capacity to make the difficult seem easy. He urges the courtier to &quot;practice in all things a certain nonchalance which conceals all artistry and makes whatever one says or does seem uncontrived and effortless.&quot; We all admire the achievement of some unusual feat, but if it is accomplished naturally and gracefully, our admiration increases tenfold—&quot;whereas ... to labor at what one is doing and ... to make bones over it, shows an extreme lack of grace and causes everything, whatever its worth, to be discounted.&quot;</p></blockquote>",
+      "source_ids": ["ch30§46¶35"],
+      "verbatim_quote": "One of the first European writers to expound on this principle came from that most unnatural of environments, the Renaissance court. In The Book of the Courtier, published in 1528, Baldassare Castiglione describes the highly elaborate and codified manners of the perfect court citizen. And yet, Castiglione explains, the courtier must execute these gestures with what he calls sprezzatura, the capacity to make the difficult seem easy. He urges the courtier to \"practice in all things a certain nonchalance which conceals all artistry and makes whatever one says or does seem uncontrived and effortless.\" We all admire the achievement of some unusual feat, but if it is accomplished naturally and gracefully, our admiration increases tenfold—\"whereas ... to labor at what one is doing and ... to make bones over it, shows an extreme lack of grace and causes everything, whatever its worth, to be discounted.\"",
+      "retention_signal": "principle"
+    },
+    {
+      "unit_id": "u_30_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch30§46¶38\"><p>The idea of sprezzatura is relevant to all forms of power, for power depends vitally on appearances and the illusions you create. Your public actions are like artworks: They must have visual appeal, must create anticipation, even entertain. When you reveal the inner workings of your creation, you become just one more mortal among others. What is understandable is not awe-inspiring—we tell ourselves we could do as well if we had the money and time. Avoid the temptation of showing how clever you are—it is far more clever to conceal the mechanisms of your cleverness.</p></blockquote>",
+      "source_ids": ["ch30§46¶38"],
+      "verbatim_quote": "The idea of sprezzatura is relevant to all forms of power, for power depends vitally on appearances and the illusions you create. Your public actions are like artworks: They must have visual appeal, must create anticipation, even entertain. When you reveal the inner workings of your creation, you become just one more mortal among others. What is understandable is not awe-inspiring—we tell ourselves we could do as well if we had the money and time. Avoid the temptation of showing how clever you are—it is far more clever to conceal the mechanisms of your cleverness.",
+      "retention_signal": "principle"
+    },
+    {
+      "unit_id": "u_30_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch30§46¶39\"><p>Talleyrand's application of this concept to his daily life greatly enhanced the aura of power that surrounded him. He never liked to work too hard, so he made others do the work for him—the spying, the research, the detailed analyses. With all this labor at his disposal, he himself never seemed to strain. When his spies revealed that a certain event was about to take place, he would talk in social conversation as if he sensed its imminence. The result was that people thought he was clairvoyant. His short pithy statements and witticisms always seemed to summarize a situation perfectly, but they were based on much research and thought. To those in government, including Napoleon himself, Talleyrand gave the impression of immense power—an effect entirely dependent on the apparent ease with which he accomplished his feats.</p></blockquote>",
+      "source_ids": ["ch30§46¶39"],
+      "verbatim_quote": "Talleyrand's application of this concept to his daily life greatly enhanced the aura of power that surrounded him. He never liked to work too hard, so he made others do the work for him—the spying, the research, the detailed analyses. With all this labor at his disposal, he himself never seemed to strain. When his spies revealed that a certain event was about to take place, he would talk in social conversation as if he sensed its imminence. The result was that people thought he was clairvoyant. His short pithy statements and witticisms always seemed to summarize a situation perfectly, but they were based on much research and thought. To those in government, including Napoleon himself, Talleyrand gave the impression of immense power—an effect entirely dependent on the apparent ease with which he accomplished his feats.",
+      "retention_signal": "story"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 30: MAKE YOUR ACCOMPLISHMENTS SEEM EFFORTLESS",
+    "chapter_source_words": 780,
+    "chapter_output_words": 390,
+    "bridge_ratio": 0.04,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "section empty in source"},
+      {"section": "observance", "reason": "section empty in source"},
+      {"section": "keys_to_power_partial", "reason": "Uccello, Michelangelo studio detail omitted to stay within word budget; sprezzatura principle fully captured"}
+    ]
+  }
+}

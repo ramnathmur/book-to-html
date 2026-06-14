@@ -1,0 +1,56 @@
+{
+  "chapter_title": "LAW 23: CONCENTRATE YOUR FORCES",
+  "law_no": 23,
+  "units": [
+    {
+      "unit_id": "u_23_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch23§37¶1\"><p>Conserve your forces and energies by keeping them concentrated at their strongest point. You gain more by finding a rich mine and mining it deeper, than by flitting from one shallow mine to another — intensity defeats extensity every time. When looking for sources of power to elevate you, find the one key patron, the fat cow who will give you milk for a long time to come.</p></blockquote>",
+      "source_ids": ["ch23§37¶1"],
+      "verbatim_quote": "Conserve your forces and energies by keeping them concentrated at their strongest point. You gain more by finding a rich mine and mining it deeper, than by flitting from one shallow mine to another — intensity defeats extensity every time. When looking for sources of power to elevate you, find the one key patron, the fat cow who will give you milk for a long time to come.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_23_0002",
+      "kind": "bridge",
+      "html": "<p>The Rothschild banking dynasty built European financial dominance by concentrating every advantage—patronage, family, information—rather than dispersing resources.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_23_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch23§37¶11\"><p>The Rothschild banking family had humble beginnings in the Jewish ghetto of Frankfurt, Germany. The city's harsh laws made it impossible for Jews to mingle outside the ghetto, but the Jews had turned this into a virtue—it made them self-reliant, and zealous to preserve their culture at all costs. Mayer Amschel, the first of the Rothschilds to accumulate wealth by lending money, in the late eighteenth century, well understood the power that comes from this kind of concentration and cohesion.</p></blockquote>",
+      "source_ids": ["ch23§37¶11"],
+      "verbatim_quote": "The Rothschild banking family had humble beginnings in the Jewish ghetto of Frankfurt, Germany. The city's harsh laws made it impossible for Jews to mingle outside the ghetto, but the Jews had turned this into a virtue—it made them self-reliant, and zealous to preserve their culture at all costs. Mayer Amschel, the first of the Rothschilds to accumulate wealth by lending money, in the late eighteenth century, well understood the power that comes from this kind of concentration and cohesion.",
+      "retention_signal": "story_hook"
+    },
+    {
+      "unit_id": "u_23_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch23§37¶15\"><p>This widespread network, of course, opened the Rothschilds to the very danger of which their father had warned them: diffusion, division, dissension. They avoided this danger, and established themselves as the most powerful force in European finance and politics, by once again resorting to the strategy of the ghetto—excluding outsiders, concentrating their forces. The Rothschilds established the fastest courier system in Europe, allowing them to get news of events before all their competitors. They held a virtual monopoly on information. And their internal communications and correspondence were written in Frankfurt Yiddish, and in a code that only the brothers could decipher. There was no point in stealing this information—no one could understand it. &quot;Even the shewdest bankers cannot find their way through the Rothschild maze,&quot; admitted a financier who had tried to infiltrate the clan.</p></blockquote>",
+      "source_ids": ["ch23§37¶15"],
+      "verbatim_quote": "This widespread network, of course, opened the Rothschilds to the very danger of which their father had warned them: diffusion, division, dissension. They avoided this danger, and established themselves as the most powerful force in European finance and politics, by once again resorting to the strategy of the ghetto—excluding outsiders, concentrating their forces. The Rothschilds established the fastest courier system in Europe, allowing them to get news of events before all their competitors. They held a virtual monopoly on information. And their internal communications and correspondence were written in Frankfurt Yiddish, and in a code that only the brothers could decipher. There was no point in stealing this information—no one could understand it. \"Even the shewdest bankers cannot find their way through the Rothschild maze,\" admitted a financier who had tried to infiltrate the clan.",
+      "retention_signal": "story_payoff"
+    },
+    {
+      "unit_id": "u_23_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch23§37¶23\"><p>The solution is a form of retreat inside ourselves, to the past, to more concentrated forms of thought and action. As Schopenhauer wrote, &quot;Intellect is a magnitude of intensity, not a magnitude of extensity.&quot; Napoleon knew the value of concentrating your forces at the enemy's weakest spot— it was the secret of his success on the battlefield. But his willpower and his mind were equally modeled on this notion. Single-mindedness of purpose, total concentration on the goal, and the use of these qualities against people less focused, people in a state of distraction—such an arrow will find its mark every time and overwhelm the enemy.</p></blockquote>",
+      "source_ids": ["ch23§37¶23"],
+      "verbatim_quote": "The solution is a form of retreat inside ourselves, to the past, to more concentrated forms of thought and action. As Schopenhauer wrote, \"Intellect is a magnitude of intensity, not a magnitude of extensity.\" Napoleon knew the value of concentrating your forces at the enemy's weakest spot— it was the secret of his success on the battlefield. But his willpower and his mind were equally modeled on this notion. Single-mindedness of purpose, total concentration on the goal, and the use of these qualities against people less focused, people in a state of distraction—such an arrow will find its mark every time and overwhelm the enemy.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 23: CONCENTRATE YOUR FORCES",
+    "chapter_source_words": 1700,
+    "chapter_output_words": 390,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression_partial", "reason": "Wu kingdom war narrative (¶2-3) and goose/horse fable (¶4-6) omitted; Rothschild observance is richer and more directly instructive"},
+      {"section": "keys_to_power_partial", "reason": "Casanova (¶24), Tesla/Aretino (¶25-26), and Richelieu (¶27) examples omitted for length; Napoleon paragraph captures the principle"}
+    ]
+  }
+}

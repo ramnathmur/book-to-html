@@ -1,0 +1,56 @@
+{
+  "chapter_title": "LAW 45: PREACH THE NEED FOR CHANGE, BUT NEVER REFORM TOO MUCH AT ONCE",
+  "law_no": 45,
+  "units": [
+    {
+      "unit_id": "u_45_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch45§61¶2\"><p>Everyone understands the need for change in the abstract, but on the day-to-day level people are creatures of habit. Too much innovation is traumatic, and will lead to revolt. If you are new to a position of power, or an outsider trying to build a power base, make a show of respecting the old way of doing things. If change is necessary, make it feel like a gentle improvement on the past.</p></blockquote>",
+      "source_ids": ["ch45§61¶2"],
+      "verbatim_quote": "Everyone understands the need for change in the abstract, but on the day-to-day level people are creatures of habit. Too much innovation is traumatic, and will lead to revolt. If you are new to a position of power, or an outsider trying to build a power base, make a show of respecting the old way of doing things. If change is necessary, make it feel like a gentle improvement on the past.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_45_0002",
+      "kind": "bridge",
+      "html": "<p>Mao Tse-tung faced the hardest version of this problem—convincing the world's most tradition-bound peasantry to accept revolution—and solved it by cloaking the new in the clothing of the old.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_45_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch45§61¶18\"><p>The solution, as Mao saw it, involved a simple deception: Cloak the revolution in the clothing of the past, making it comforting and legitimate in people's eyes. One of Mao's favorite books was the very popular medieval Chinese novel The Water Margin, which recounts the exploits of a Chinese Robin Hood and his robber band as they struggle against a corrupt and evil monarch. In China in Mao's time, family ties dominated over any other kind, for the Confucian hierarchy of father and oldest son remained firmly in place; but The Water Margin preached a superior value—the fraternal ties of the band of robbers, the nobility of the cause that unites people beyond blood. The novel had great emotional resonance for Chinese people, who love to root for the underdog. Time and again, then, Mao would present his revolutionary army as an extension of the robber band in The Water Margin, likening his struggle to the timeless conflict between the oppressed peasantry and an evil emperor. He made the past seem to envelop and legitimize the Communist cause; the peasantry could feel comfortable with and even support a group with such roots in the past.</p></blockquote>",
+      "source_ids": ["ch45§61¶18"],
+      "verbatim_quote": "The solution, as Mao saw it, involved a simple deception: Cloak the revolution in the clothing of the past, making it comforting and legitimate in people's eyes. One of Mao's favorite books was the very popular medieval Chinese novel The Water Margin, which recounts the exploits of a Chinese Robin Hood and his robber band as they struggle against a corrupt and evil monarch. In China in Mao's time, family ties dominated over any other kind, for the Confucian hierarchy of father and oldest son remained firmly in place; but The Water Margin preached a superior value—the fraternal ties of the band of robbers, the nobility of the cause that unites people beyond blood. The novel had great emotional resonance for Chinese people, who love to root for the underdog. Time and again, then, Mao would present his revolutionary army as an extension of the robber band in The Water Margin, likening his struggle to the timeless conflict between the oppressed peasantry and an evil emperor. He made the past seem to envelop and legitimize the Communist cause; the peasantry could feel comfortable with and even support a group with such roots in the past.",
+      "retention_signal": "story_hook"
+    },
+    {
+      "unit_id": "u_45_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch45§61¶28\"><p>For Machiavelli, the prophet who preaches and brings change can only survive by taking up arms: When the masses inevitably yearn for the past, he must be ready to use force. But the armed prophet cannot last long unless he quickly creates a new set of values and rituals to replace the old ones, and to soothe the anxieties of those who dread change. It is far easier, and less bloody, to play a kind of con game. Preach change as much as you like, and even enact your reforms, but give them the comforting appearance of older events and traditions.</p></blockquote>",
+      "source_ids": ["ch45§61¶28"],
+      "verbatim_quote": "For Machiavelli, the prophet who preaches and brings change can only survive by taking up arms: When the masses inevitably yearn for the past, he must be ready to use force. But the armed prophet cannot last long unless he quickly creates a new set of values and rituals to replace the old ones, and to soothe the anxieties of those who dread change. It is far easier, and less bloody, to play a kind of con game. Preach change as much as you like, and even enact your reforms, but give them the comforting appearance of older events and traditions.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_45_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch45§61¶30\"><p>Understand: The fact that the past is dead and buried gives you the freedom to reinterpret it. To support your cause, tinker with the facts. The past is a text in which you can safely insert your own lines.</p></blockquote>",
+      "source_ids": ["ch45§61¶30"],
+      "verbatim_quote": "Understand: The fact that the past is dead and buried gives you the freedom to reinterpret it. To support your cause, tinker with the facts. The past is a text in which you can safely insert your own lines.",
+      "retention_signal": "aphorism"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 45: PREACH THE NEED FOR CHANGE, BUT NEVER REFORM TOO MUCH AT ONCE",
+    "chapter_source_words": 1800,
+    "chapter_output_words": 390,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "Thomas Cromwell story deprioritized in favor of Mao's positive observance which better demonstrates the law"},
+      {"section": "reversal", "reason": "word budget met"}
+    ]
+  }
+}

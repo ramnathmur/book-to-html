@@ -1,0 +1,57 @@
+{
+  "chapter_title": "LAW 21: PLAY A SUCKER TO CATCH A SUCKER—SEEM DUMBER THAN YOUR MARK",
+  "law_no": 21,
+  "units": [
+    {
+      "unit_id": "u_21_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§35¶2\"><p>No one likes feeling stupider than the next person. The trick, then, is to make your victims feel smart—and not just smart, but smarter than you are. Once convinced of this, they will never suspect that you may have ulterior motives.</p></blockquote>",
+      "source_ids": ["ch21§35¶2"],
+      "verbatim_quote": "No one likes feeling stupider than the next person. The trick, then, is to make your victims feel smart—and not just smart, but smarter than you are. Once convinced of this, they will never suspect that you may have ulterior motives.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_21_0002",
+      "kind": "bridge",
+      "html": "<p>Bismarck used a single card game to make Austria's negotiator believe he was dealing with a reckless fool—then sprung a treaty trap.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_21_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§35¶22\"><p>The night before the negotiations were to begin, Bismarck innocently engaged Blome in a game of quinze. The Prussian would later write, &quot;That was the very last time I ever played quinze. I played so recklessly that everyone was astonished. I lost several thousand talers [the currency of the time], but I succeeded in fooling [Blome], for he believed me to be more venturesome than I am and I gave way.&quot; Besides appearing reckless, Bismarck also played the witless fool, saying ridiculous things and bumbling about with a surplus of nervous energy.</p></blockquote>",
+      "source_ids": ["ch21§35¶22"],
+      "verbatim_quote": "The night before the negotiations were to begin, Bismarck innocently engaged Blome in a game of quinze. The Prussian would later write, \"That was the very last time I ever played quinze. I played so recklessly that everyone was astonished. I lost several thousand talers [the currency of the time], but I succeeded in fooling [Blome], for he believed me to be more venturesome than I am and I gave way.\" Besides appearing reckless, Bismarck also played the witless fool, saying ridiculous things and bumbling about with a surplus of nervous energy.",
+      "retention_signal": "story_hook"
+    },
+    {
+      "unit_id": "u_21_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§35¶23\"><p>All this made Blome feel he had gathered valuable information. He knew that Bismarck was aggressive—the Prussian already had that reputation, and the way he played had confirmed it. And aggressive men, Blome knew, can be foolish and rash. Accordingly, when the time came to sign the treaty, Blome thought he had the advantage. A heedless fool like Bismarck, he thought, is incapable of cold-blooded calculation and deception, so he only glanced at the treaty before signing it—he failed to read the fine print. As soon as the ink was dry, a joyous Bismarck exclaimed in his face, &quot;Well, I could never have believed that I should find an Austrian diplomat willing to sign that document!&quot;</p></blockquote>",
+      "source_ids": ["ch21§35¶23"],
+      "verbatim_quote": "All this made Blome feel he had gathered valuable information. He knew that Bismarck was aggressive—the Prussian already had that reputation, and the way he played had confirmed it. And aggressive men, Blome knew, can be foolish and rash. Accordingly, when the time came to sign the treaty, Blome thought he had the advantage. A heedless fool like Bismarck, he thought, is incapable of cold-blooded calculation and deception, so he only glanced at the treaty before signing it—he failed to read the fine print. As soon as the ink was dry, a joyous Bismarck exclaimed in his face, \"Well, I could never have believed that I should find an Austrian diplomat willing to sign that document!\"",
+      "retention_signal": "story_payoff"
+    },
+    {
+      "unit_id": "u_21_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§35¶20\"><p>Given how important the idea of intelligence is to most people's vanity, it is critical never inadvertently to insult or impugn a person's brain power. That is an unforgivable sin. But if you can make this iron rule work for you, it opens up all sorts of avenues of deception. Subliminally reassure people that they are more intelligent than you are, or even that you are a bit of a moron, and you can run rings around them. The feeling of intellectual superiority you give them will disarm their suspicion-muscles.</p></blockquote>",
+      "source_ids": ["ch21§35¶20"],
+      "verbatim_quote": "Given how important the idea of intelligence is to most people's vanity, it is critical never inadvertently to insult or impugn a person's brain power. That is an unforgivable sin. But if you can make this iron rule work for you, it opens up all sorts of avenues of deception. Subliminally reassure people that they are more intelligent than you are, or even that you are a bit of a moron, and you can run rings around them. The feeling of intellectual superiority you give them will disarm their suspicion-muscles.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 21: PLAY A SUCKER TO CATCH A SUCKER—SEEM DUMBER THAN YOUR MARK",
+    "chapter_source_words": 1000,
+    "chapter_output_words": 320,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "section empty in source"},
+      {"section": "observance", "reason": "section empty in source"},
+      {"section": "keys_to_power_partial", "reason": "ch21§35¶19 (vanity rationalizations) and ¶24 (swine/tiger parable) omitted for length; core principle captured in ¶20"}
+    ]
+  }
+}

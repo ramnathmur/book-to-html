@@ -1,0 +1,57 @@
+{
+  "chapter_title": "LAW 42: STRIKE THE SHEPHERD AND THE SHEEP WILL SCATTER",
+  "law_no": 42,
+  "units": [
+    {
+      "unit_id": "u_42_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch42§58¶2\"><p>Trouble can often be traced to a single strong individual — the stirrer, the arrogant underling, the poisoner of goodwill. If you allow such people room to operate, others will succumb to their influence. Do not wait for the troubles they cause to multiply, do not try to negotiate with them — they are irredeemable. Neutralize their influence by isolating or banishing them. Strike at the source of the trouble and the sheep will scatter.</p></blockquote>",
+      "source_ids": ["ch42§58¶2"],
+      "verbatim_quote": "Trouble can often be traced to a single strong individual — the stirrer, the arrogant underling, the poisoner of goodwill. If you allow such people room to operate, others will succumb to their influence. Do not wait for the troubles they cause to multiply, do not try to negotiate with them — they are irredeemable. Neutralize their influence by isolating or banishing them. Strike at the source of the trouble and the sheep will scatter.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_42_0002",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch42§58¶30\"><p>In the past, an entire nation would be ruled by a king and his handful of ministers. Only the elite had any power to play with. Over the centuries, power has gradually become more and more diffused and democratized. This has created, however, a common misperception that groups no longer have centers of power—that power is spread out and scattered among many people. Actually, however, power has changed in its numbers but not in its essence. There may be fewer mighty tyrants commanding the power of life and death over millions, but there remain thousands of petty tyrants ruling smaller realms, and enforcing their will through indirect power games, charisma, and so on. In every group, power is concentrated in the hands of one or two people, for this is one area in which human nature will never change: People will congregate around a single strong personality like planets orbiting a sun.</p></blockquote>",
+      "source_ids": ["ch42§58¶30"],
+      "verbatim_quote": "In the past, an entire nation would be ruled by a king and his handful of ministers. Only the elite had any power to play with. Over the centuries, power has gradually become more and more diffused and democratized. This has created, however, a common misperception that groups no longer have centers of power—that power is spread out and scattered among many people. Actually, however, power has changed in its numbers but not in its essence. There may be fewer mighty tyrants commanding the power of life and death over millions, but there remain thousands of petty tyrants ruling smaller realms, and enforcing their will through indirect power games, charisma, and so on. In every group, power is concentrated in the hands of one or two people, for this is one area in which human nature will never change: People will congregate around a single strong personality like planets orbiting a sun.",
+      "retention_signal": "insight"
+    },
+    {
+      "unit_id": "u_42_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch42§58¶32\"><p>In his family-therapy practice, Dr. Milton H. Erickson found that if the family dynamic was unsettled and dysfunctional there was inevitably one person who was the stirrer, the troublemaker. In his sessions he would symbolically isolate this rotten apple by seating him or her apart from the others, if only by a few feet. Slowly the other family members would see the physically separate person as the source of their difficulty. Once you recognize who the stirrer is, pointing it out to other people will accomplish a great deal. Understanding who controls the group dynamic is a critical realization. Remember: Stirrers thrive by hiding in the group, disguising their actions among the reactions of others. Render their actions visible and they lose their power to upset.</p></blockquote>",
+      "source_ids": ["ch42§58¶32"],
+      "verbatim_quote": "In his family-therapy practice, Dr. Milton H. Erickson found that if the family dynamic was unsettled and dysfunctional there was inevitably one person who was the stirrer, the troublemaker. In his sessions he would symbolically isolate this rotten apple by seating him or her apart from the others, if only by a few feet. Slowly the other family members would see the physically separate person as the source of their difficulty. Once you recognize who the stirrer is, pointing it out to other people will accomplish a great deal. Understanding who controls the group dynamic is a critical realization. Remember: Stirrers thrive by hiding in the group, disguising their actions among the reactions of others. Render their actions visible and they lose their power to upset.",
+      "retention_signal": "application"
+    },
+    {
+      "unit_id": "u_42_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch42§58¶34\"><p>The most effective form of isolation is somehow to separate your victims from their power base. When Mao Tse-tung wanted to eliminate an enemy in the ruling elite, he did not confront the person directly; he silently and stealthily worked to isolate the man, divide his allies and turn them away from him, shrink his support. Soon the man would vanish on his own.</p></blockquote>",
+      "source_ids": ["ch42§58¶34"],
+      "verbatim_quote": "The most effective form of isolation is somehow to separate your victims from their power base. When Mao Tse-tung wanted to eliminate an enemy in the ruling elite, he did not confront the person directly; he silently and stealthily worked to isolate the man, divide his allies and turn them away from him, shrink his support. Soon the man would vanish on his own.",
+      "retention_signal": "application"
+    },
+    {
+      "unit_id": "u_42_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch42§58¶33\"><p>A key element in games of strategy is isolating the enemy's power. In chess you try to corner the king. In the Chinese game of go you try to isolate the enemy's forces in small pockets, rendering them immobile and ineffectual. It is often better to isolate your enemies than to destroy them—you seem less brutal. The result, though, is the same, for in the game of power, isolation spells death.</p></blockquote>",
+      "source_ids": ["ch42§58¶33"],
+      "verbatim_quote": "A key element in games of strategy is isolating the enemy's power. In chess you try to corner the king. In the Chinese game of go you try to isolate the enemy's forces in small pockets, rendering them immobile and ineffectual. It is often better to isolate your enemies than to destroy them—you seem less brutal. The result, though, is the same, for in the game of power, isolation spells death.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 42: STRIKE THE SHEPHERD AND THE SHEEP WILL SCATTER",
+    "chapter_source_words": 900,
+    "chapter_output_words": 370,
+    "bridge_ratio": 0.0,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "section empty in source"},
+      {"section": "observance", "reason": "section empty in source"},
+      {"section": "reversal", "reason": "word budget met; core principle fully covered"}
+    ]
+  }
+}

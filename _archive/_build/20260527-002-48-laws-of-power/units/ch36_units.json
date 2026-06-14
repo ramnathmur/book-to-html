@@ -1,0 +1,64 @@
+{
+  "chapter_title": "LAW 36: DISDAIN THINGS YOU CANNOT HAVE: IGNORING THEM IS THE BEST REVENGE",
+  "law_no": 36,
+  "units": [
+    {
+      "unit_id": "u_36_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch36§52¶2\"><p>By acknowledging a petty problem you give it existence and credibility. The more attention you pay an enemy, the stronger you make him; and a small mistake is often made worse and more visible when you try to fix it. It is sometimes best to leave things alone. If there is something you want but cannot have, show contempt for it. The less interest you reveal, the more superior you seem.</p></blockquote>",
+      "source_ids": ["ch36§52¶2"],
+      "verbatim_quote": "By acknowledging a petty problem you give it existence and credibility. The more attention you pay an enemy, the stronger you make him; and a small mistake is often made worse and more visible when you try to fix it. It is sometimes best to leave things alone. If there is something you want but cannot have, show contempt for it. The less interest you reveal, the more superior you seem.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_36_0002",
+      "kind": "bridge",
+      "html": "<p>President Wilson's pursuit of Pancho Villa with ten thousand troops is the textbook example of how overreaction elevates a small enemy into a legend.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_36_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch36§52¶7\"><p>In the first few months, the troops split up into small units to comb the wilds of northern Mexico. The Americans offered a $50,000 reward for information leading to Villa's capture. But the Mexican people, who had been disillusioned with Villa when he had returned to banditry, now idolized him for facing this mighty American army. They began to give Pershing false leads: Villa had been seen in this village, or in that mountain hideaway, airplanes would be dispatched, troops would scurry after them, and no one would ever see him. The wily bandit seemed to be always one step ahead of the American military.</p></blockquote>",
+      "source_ids": ["ch36§52¶7"],
+      "verbatim_quote": "In the first few months, the troops split up into small units to comb the wilds of northern Mexico. The Americans offered a $50,000 reward for information leading to Villa's capture. But the Mexican people, who had been disillusioned with Villa when he had returned to banditry, now idolized him for facing this mighty American army. They began to give Pershing false leads: Villa had been seen in this village, or in that mountain hideaway, airplanes would be dispatched, troops would scurry after them, and no one would ever see him. The wily bandit seemed to be always one step ahead of the American military.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_36_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch36§52¶41\"><p>Desire often creates paradoxical effects: The more you want something, the more you chase after it, the more it eludes you. The more interest you show, the more you repel the object of your desire. This is because your interest is too strong—it makes people awkward, even fearful. Uncontrollable desire makes you seem weak, unworthy, pathetic.</p></blockquote>",
+      "source_ids": ["ch36§52¶41"],
+      "verbatim_quote": "Desire often creates paradoxical effects: The more you want something, the more you chase after it, the more it eludes you. The more interest you show, the more you repel the object of your desire. This is because your interest is too strong—it makes people awkward, even fearful. Uncontrollable desire makes you seem weak, unworthy, pathetic.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_36_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch36§52¶43\"><p>Contempt is the prerogative of the king. Where his eyes turn, what he decides to see, is what has reality; what he ignores and turns his back on is as good as dead. That was the weapon of King Louis XIV—if he did not like you, he acted as if you were not there, maintaining his superiority by cutting off the dynamic of interaction. This is the power you have when you play the card of contempt, periodically showing people that you can do without them.</p></blockquote>",
+      "source_ids": ["ch36§52¶43"],
+      "verbatim_quote": "Contempt is the prerogative of the king. Where his eyes turn, what he decides to see, is what has reality; what he ignores and turns his back on is as good as dead. That was the weapon of King Louis XIV—if he did not like you, he acted as if you were not there, maintaining his superiority by cutting off the dynamic of interaction. This is the power you have when you play the card of contempt, periodically showing people that you can do without them.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_36_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch36§52¶59\"><p>You must play the card of contempt with care and delicacy. Most small troubles will vanish on their own if you leave them be; but some will grow and fester unless you attend to them. Ignore a person of inferior stature and the next time you look he has become a serious rival, and your contempt has made him vengeful as well. The great princes of Renaissance Italy chose to ignore Cesare Borgia at the outset of his career as a young general in the army of his father, Pope Alexander VI. By the time they paid attention it was too late—the cub was now a lion, gobbling up chunks of Italy. Often, then, while you show contempt publicly you will also need to keep an eye on the problem privately, monitoring its status and making sure it goes away. Do not let it become a cancerous cell.</p></blockquote>",
+      "source_ids": ["ch36§52¶59"],
+      "verbatim_quote": "You must play the card of contempt with care and delicacy. Most small troubles will vanish on their own if you leave them be; but some will grow and fester unless you attend to them. Ignore a person of inferior stature and the next time you look he has become a serious rival, and your contempt has made him vengeful as well. The great princes of Renaissance Italy chose to ignore Cesare Borgia at the outset of his career as a young general in the army of his father, Pope Alexander VI. By the time they paid attention it was too late—the cub was now a lion, gobbling up chunks of Italy. Often, then, while you show contempt publicly you will also need to keep an eye on the problem privately, monitoring its status and making sure it goes away. Do not let it become a cancerous cell.",
+      "retention_signal": "caution"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 36: DISDAIN THINGS YOU CANNOT HAVE: IGNORING THEM IS THE BEST REVENGE",
+    "chapter_source_words": 2300,
+    "chapter_output_words": 420,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "observance_henry_viii", "reason": "Pancho Villa transgression selected as more vivid and concise; Henry VIII observance overlaps thematically"},
+      {"section": "keys_to_power_44_46", "reason": "word count limit; core principle captured in units 4 and 5"}
+    ]
+  }
+}

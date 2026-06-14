@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ncx version="2005-1" xml:lang="en-US" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+<meta name="dtb:uid" content="9781848767157" />
+<meta name="dtb:depth" content="1" />
+<meta name="dtb:totalPageCount" content="276" />
+<meta name="dtb:maxPageNumber" content="276" />
+</head>
+<docTitle>
+<text>Will It Make The Boat Go Faster?</text>
+</docTitle>
+<docAuthor>
+<text>Ben Hunt-Davis; Harriet Beveridge</text>
+</docAuthor>
+<navMap>
+<navPoint id="nav1" playOrder="1"><navLabel><text>Cover</text></navLabel><content src="xhtml/00_Cover_Page.html" /></navPoint>
+<navPoint id="nav2" playOrder="2"><navLabel><text>Title Page</text></navLabel><content src="xhtml/02_Title_Page.html" /></navPoint>
+<navPoint id="nav3" playOrder="3"><navLabel><text>Copyright</text></navLabel><content src="xhtml/03_Copyright_Page.html" /></navPoint>
+<navPoint id="nav4" playOrder="4"><navLabel><text>Dedication</text></navLabel><content src="xhtml/04_Dedication.html" /></navPoint>
+<navPoint id="nav5" playOrder="5"><navLabel><text>About the Author</text></navLabel><content src="xhtml/05_About_the_Author.html" /></navPoint>
+<navPoint id="nav6" playOrder="6"><navLabel><text>Introduction</text></navLabel><content src="xhtml/06_Introduction.html" /></navPoint>
+<navPoint id="nav7" playOrder="7"><navLabel><text>Contents</text></navLabel><content src="xhtml/Contents.html" /></navPoint>
+<navPoint id="nav8" playOrder="8"><navLabel><text>Chapter 1: Goals</text></navLabel><content src="xhtml/07_CHAPTER_1__GOALS.html" />
+<navPoint id="nav9" playOrder="9"><navLabel><text>The Morning of the Men’s Eight Rowing Final</text></navLabel><content src="xhtml/08_The_Morning_of_the_Men_s_Eight_R.html" /></navPoint>
+<navPoint id="nav10" playOrder="10"><navLabel><text>Goals: The crazy, realistic dream</text></navLabel><content src="xhtml/09_Goals__The_crazy__realistic_drea.html" /></navPoint></navPoint>
+<navPoint id="nav11" playOrder="11"><navLabel><text>Chapter 2: Motivation</text></navLabel><content src="xhtml/10_CHAPTER_2__MOTIVATION.html" />
+<navPoint id="nav12" playOrder="12"><navLabel><text>Christmas Eve</text></navLabel><content src="xhtml/11_Christmas_Eve.html" /></navPoint>
+<navPoint id="nav13" playOrder="13"><navLabel><text>Motivation: Let’s do it for the Romanians</text></navLabel><content src="xhtml/12_Motivation__Let_s_do_it_for_the.html" /></navPoint></navPoint>
+<navPoint id="nav14" playOrder="14"><navLabel><text>Chapter 3: Beliefs</text></navLabel><content src="xhtml/13_CHAPTER_3__BELIEFS.html" />
+<navPoint id="nav15" playOrder="15"><navLabel><text>May-June 2000</text></navLabel><content src="xhtml/14_May_June_2000.html" /></navPoint>
+<navPoint id="nav16" playOrder="16"><navLabel><text>Beliefs: The wheels on the bus go round and round</text></navLabel><content src="xhtml/15_Beliefs__The_wheels_on_the_bus_g.html" /></navPoint></navPoint>
+<navPoint id="nav17" playOrder="17"><navLabel><text>Chapter 4: Bullshit Filters</text></navLabel><content src="xhtml/16_CHAPTER_4__BULLSHIT_FILTERS.html" />
+<navPoint id="nav18" playOrder="18"><navLabel><text>Vienna Regatta</text></navLabel><content src="xhtml/17_Vienna_Regatta.html" /></navPoint>
+<navPoint id="nav19" playOrder="19"><navLabel><text>Bullshit filters: ignoring unhelpful information</text></navLabel><content src="xhtml/18_Bullshit_filters__ignoring_unhel.html" /></navPoint></navPoint>
+<navPoint id="nav20" playOrder="20"><navLabel><text>Chapter 5: Make It Happen</text></navLabel><content src="xhtml/19_CHAPTER_5__MAKE_IT_HAPPEN.html" />
+<navPoint id="nav21" playOrder="21"><navLabel><text>Henley Regatta</text></navLabel><content src="xhtml/20_Henley_Regatta.html" /></navPoint>
+<navPoint id="nav22" playOrder="22"><navLabel><text>Make it happen: Today is going to be a good day</text></navLabel><content src="xhtml/21_Make_it_happen__Today_is_going_t.html" /></navPoint></navPoint>
+<navPoint id="nav23" playOrder="23"><navLabel><text>Chapter 6: Teams</text></navLabel><content src="xhtml/22_CHAPTER_6__TEAMS.html" />
+<navPoint id="nav24" playOrder="24"><navLabel><text>Sarnen Training Camp</text></navLabel><content src="xhtml/23_Sarnen_Training_Camp.html" /></navPoint>
+<navPoint id="nav25" playOrder="25"><navLabel><text>Teams: Having a Shambles Sheet</text></navLabel><content src="xhtml/24_Teams__Having_a_Shambles_Sheet.html" /></navPoint></navPoint>
+<navPoint id="nav26" playOrder="26"><navLabel><text>Chapter 7: Process Driven</text></navLabel><content src="xhtml/25_CHAPTER_7__PROCESS_DRIVEN.html" />
+<navPoint id="nav27" playOrder="27"><navLabel><text>Lucerne Regatta</text></navLabel><content src="xhtml/26_Lucerne_Regatta.html" /></navPoint>
+<navPoint id="nav28" playOrder="28"><navLabel><text>Process driven: Rice Krispies or Shreddies?</text></navLabel><content src="xhtml/27_Process_driven__Rice_Krispies_or.html" /></navPoint></navPoint>
+<navPoint id="nav29" playOrder="29"><navLabel><text>Chapter 8: Momentum</text></navLabel><content src="xhtml/28_CHAPTER_8__MOMENTUM.html" />
+<navPoint id="nav30" playOrder="30"><navLabel><text>The Gold Coast</text></navLabel><content src="xhtml/29_The_Gold_Coast.html" /></navPoint>
+<navPoint id="nav31" playOrder="31"><navLabel><text>Momentum: How to eat an elephant</text></navLabel><content src="xhtml/30_Momentum__How_to_eat_an_elephant.html" /></navPoint></navPoint>
+<navPoint id="nav32" playOrder="32"><navLabel><text>Chapter 9: Change</text></navLabel><content src="xhtml/31_CHAPTER_9__CHANGE.html" />
+<navPoint id="nav33" playOrder="33"><navLabel><text>The Olympic Heat</text></navLabel><content src="xhtml/32_The_Olympic_Heat.html" /></navPoint>
+<navPoint id="nav34" playOrder="34"><navLabel><text>Change: Get the crocodiles before they get you</text></navLabel><content src="xhtml/33_Change__Get_the_crocodiles_befor.html" /></navPoint></navPoint>
+<navPoint id="nav35" playOrder="35"><navLabel><text>Chapter 10: Bouncebackability</text></navLabel><content src="xhtml/34_CHAPTER_10__BOUNCEBACKABILITY.html" />
+<navPoint id="nav36" playOrder="36"><navLabel><text>The Rep</text></navLabel><content src="xhtml/35_The_Rep.html" /></navPoint>
+<navPoint id="nav37" playOrder="37"><navLabel><text>Bouncebackability: when Fate vomits on our duvet</text></navLabel><content src="xhtml/36_Bouncebackability__when_Fate_vom.html" /></navPoint></navPoint>
+<navPoint id="nav38" playOrder="38"><navLabel><text>Chapter 11: Risks</text></navLabel><content src="xhtml/37_CHAPTER_11__RISKS.html" />
+<navPoint id="nav39" playOrder="39"><navLabel><text>25 hours to the Olympic Final of the 2000 Sydney Games</text></navLabel><content src="xhtml/38_25_hours_to_the_Olympic_Final_of.html" /></navPoint>
+<navPoint id="nav40" playOrder="40"><navLabel><text>Risks: bars of soap and sandwiches</text></navLabel><content src="xhtml/39_Risks__bars_of_soap_and_sandwich.html" /></navPoint></navPoint>
+<navPoint id="nav41" playOrder="41"><navLabel><text>Chapter 12: The Final Chapter</text></navLabel><content src="xhtml/40_CHAPTER_12__THE_FINAL_CHAPTER.html" />
+<navPoint id="nav42" playOrder="42"><navLabel><text>The Olympic final</text></navLabel><content src="xhtml/41_The_Olympic_final.html" /></navPoint>
+<navPoint id="nav43" playOrder="43"><navLabel><text>The Final Chapter: Now what?</text></navLabel><content src="xhtml/42_The_Final_Chapter__Now_what.html" /></navPoint>
+<navPoint id="nav44" playOrder="44"><navLabel><text>The Cast List</text></navLabel><content src="xhtml/43_The_Cast_List.html" /></navPoint></navPoint>
+<navPoint id="nav45" playOrder="45"><navLabel><text>Chronology</text></navLabel><content src="xhtml/44_Chronology.html" /></navPoint>
+<navPoint id="nav46" playOrder="46"><navLabel><text>About the authors</text></navLabel><content src="xhtml/45_About_the_authors.html" /></navPoint>
+<navPoint id="nav47" playOrder="47"><navLabel><text>Acknowledgements</text></navLabel><content src="xhtml/46_Acknowledgements.html" /></navPoint>
+</navMap></ncx>

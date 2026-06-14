@@ -1,0 +1,64 @@
+{
+  "chapter_title": "LAW 48: ASSUME FORMLESSNESS",
+  "law_no": 48,
+  "units": [
+    {
+      "unit_id": "u_48_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch48§64¶1\"><p>By taking a shape, by having a visible plan, you open yourself to attack. Instead of taking a form for your enemy to grasp, keep yourself adaptable and on the move. Accept the fact that nothing is certain and no law is fixed. The best way to protect yourself is to be as fluid and formless as water; never bet on stability or lasting order. Everything changes.</p></blockquote>",
+      "source_ids": ["ch48§64¶1"],
+      "verbatim_quote": "By taking a shape, by having a visible plan, you open yourself to attack. Instead of taking a form for your enemy to grasp, keep yourself adaptable and on the move. Accept the fact that nothing is certain and no law is fixed. The best way to protect yourself is to be as fluid and formless as water; never bet on stability or lasting order. Everything changes.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_48_0002",
+      "kind": "bridge",
+      "html": "<p>In the Chinese civil war, Mao's Communists bewildered the Nationalist armies by refusing to hold any fixed form — moving like mercury, never where the enemy expected them.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_48_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch48§64¶20\"><p>In 1945 and '46 the plan worked perfectly: The Nationalists easily took the major Manchurian cities. Puzzlingly, though, in the face of this critical campaign, the Communist strategy made no sense. When the Nationalists began their push, the Communists dispersed to Manchuria's most out-of-the-way comers. Their small units harassed the Nationalist armies, ambushing them here, retreating unexpectedly there, but these dispersed units never linked up, making them hard to attack. They would seize a town only to give it up a few weeks later. Forming neither rear guards nor vanguards, they moved like mercury, never staying in one place, elusive and formless.</p></blockquote>",
+      "source_ids": ["ch48§64¶20"],
+      "verbatim_quote": "In 1945 and '46 the plan worked perfectly: The Nationalists easily took the major Manchurian cities. Puzzlingly, though, in the face of this critical campaign, the Communist strategy made no sense. When the Nationalists began their push, the Communists dispersed to Manchuria's most out-of-the-way comers. Their small units harassed the Nationalist armies, ambushing them here, retreating unexpectedly there, but these dispersed units never linked up, making them hard to attack. They would seize a town only to give it up a few weeks later. Forming neither rear guards nor vanguards, they moved like mercury, never staying in one place, elusive and formless.",
+      "retention_signal": "story_hook"
+    },
+    {
+      "unit_id": "u_48_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch48§64¶40\"><p>Power can only thrive if it is flexible in its forms. To be formless is not to be amorphous; everything has a form—it is impossible to avoid. The formlessness of power is more like that of water, or mercury, taking the form of whatever is around it. Changing constantly, it is never predictable. The powerful are constantly creating form, and their power comes from the rapidity with which they can change. Their formlessness is in the eye of the enemy who cannot see what they are up to and so has nothing solid to attack. This is the premier pose of power: ungraspable, as elusive and swift as the god Mercury, who could take any form he pleased and used this ability to wreak havoc on Mount Olympus.</p></blockquote>",
+      "source_ids": ["ch48§64¶40"],
+      "verbatim_quote": "Power can only thrive if it is flexible in its forms. To be formless is not to be amorphous; everything has a form—it is impossible to avoid. The formlessness of power is more like that of water, or mercury, taking the form of whatever is around it. Changing constantly, it is never predictable. The powerful are constantly creating form, and their power comes from the rapidity with which they can change. Their formlessness is in the eye of the enemy who cannot see what they are up to and so has nothing solid to attack. This is the premier pose of power: ungraspable, as elusive and swift as the god Mercury, who could take any form he pleased and used this ability to wreak havoc on Mount Olympus.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_48_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch48§64¶39\"><p>The powerful are often people who in their youth have shown immense creativity in expressing something new through a new form. Society grants them power because it hungers for and rewards this sort of newness. The problem comes later, when they often grow conservative and possessive. They no longer dream of creating new forms; their identities are set, their habits congeal, and their rigidity makes them easy targets. Everyone knows their next move. Instead of demanding respect they elicit boredom: Get off the stage! we say, let someone else, someone younger, entertain us. When locked in the past, the powerful look comical—they are overripe fruit, waiting to fall from the tree.</p></blockquote>",
+      "source_ids": ["ch48§64¶39"],
+      "verbatim_quote": "The powerful are often people who in their youth have shown immense creativity in expressing something new through a new form. Society grants them power because it hungers for and rewards this sort of newness. The problem comes later, when they often grow conservative and possessive. They no longer dream of creating new forms; their identities are set, their habits congeal, and their rigidity makes them easy targets. Everyone knows their next move. Instead of demanding respect they elicit boredom: Get off the stage! we say, let someone else, someone younger, entertain us. When locked in the past, the powerful look comical—they are overripe fruit, waiting to fall from the tree.",
+      "retention_signal": "insight"
+    },
+    {
+      "unit_id": "u_48_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch48§64¶62\"><p>Authority: Therefore the consummation of forming an army is to arrive at formlessness. Victory in war is not repetitious, but adapts its form endlessly.... A military force has no constant formation, water has no constant shape: The ability to gain victory by changing and adapting according to the opponent is called genius. (Sun-tzu, fourth century B.C.)</p></blockquote>",
+      "source_ids": ["ch48§64¶62"],
+      "verbatim_quote": "Authority: Therefore the consummation of forming an army is to arrive at formlessness. Victory in war is not repetitious, but adapts its form endlessly.... A military force has no constant formation, water has no constant shape: The ability to gain victory by changing and adapting according to the opponent is called genius. (Sun-tzu, fourth century B.C.)",
+      "retention_signal": "authority"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 48: ASSUME FORMLESSNESS",
+    "chapter_source_words": 1700,
+    "chapter_output_words": 430,
+    "bridge_ratio": 0.04,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "Sparta story and fable omitted; Manchuria observance demonstrates the law with greater clarity and narrative drive"},
+      {"section": "reversal", "reason": "word budget met; core principle covered by u_48_0004"}
+    ]
+  }
+}

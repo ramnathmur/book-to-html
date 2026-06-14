@@ -1,0 +1,36 @@
+{
+  "gate_status": "fail",
+  "sampled_anchor_count": 119,
+  "anchor_violations": [
+    {
+      "unit_id": "u_0019",
+      "kind": "anchor_not_verbatim",
+      "verbatim_quote_start": "Your identity emerges out of your habits. Every action you take is a vote...",
+      "evidence": "Non-contiguous stitch. In the raw source text (ch3), 'Your identity emerges out of your habits.' appears at position ~53762 and is immediately followed by 'You are not born with preset beliefs. Every belief, including those about yourself, is learned and conditioned through experience...' The sentence 'Every action you take is a vote for the type of person you wish to become. No single instance will transform your beliefs, but as the votes build up, so does the evidence of your new identity.' does not appear until ~2903 characters later. The verbatim_quote fabricates adjacency between two sentences that are separated by multiple paragraphs in the source. The phrase 'Your identity emerges out of your habits. Every action you take is a vote' is NOT a contiguous substring of the source text."
+    },
+    {
+      "unit_id": "u_0079",
+      "kind": "anchor_not_verbatim",
+      "verbatim_quote_start": "Habits form based on frequency, not time. There is nothing magical about time passing...",
+      "evidence": "Non-contiguous stitch. In the raw source text (ch12), 'habits form based on frequency, not time.' appears at position ~197804 and is immediately followed by a figure caption 'WALKING 10 MINUTES PER DAY FIGURE 12: This graph shows someone who built the habit of walking...' and then a separate paragraph about how long it takes to build a habit. The phrase 'There is nothing magical about time passing with regard to habit formation.' does not appear until ~548 characters later at position ~198352. The verbatim_quote joins these two non-adjacent sentences as if they were a single continuous passage. 'Habits form based on frequency, not time. There is nothing magical' is NOT a contiguous substring of the source text."
+    },
+    {
+      "unit_id": "u_0090",
+      "kind": "anchor_not_verbatim",
+      "verbatim_quote_start": "People often think it's weird to get hyped about reading one page or meditating for one minute...",
+      "evidence": "Two-part violation. (1) Omission: The source text reads 'The truth is, a habit must be established before it can be improved.' — the corpus verbatim_quote omits 'The truth is, ' from the start of the sentence, making 'A habit must be established before it can be improved.' appear to be a standalone sentence when it is actually a dependent clause continuation. (2) Non-contiguous stitch: Between 'A habit must be established before it can be improved.' and 'You have to standardize before you can optimize.' the source text contains the following intervening sentence that is silently dropped: 'If you can't learn the basic skill of showing up, then you have little hope of mastering the finer details. Instead of trying to engineer a perfect habit from the start, do the easy thing on a more consistent basis.' The exact corpus verbatim_quote as a whole is NOT a contiguous substring of the source text."
+    },
+    {
+      "unit_id": "u_0119",
+      "kind": "anchor_not_verbatim",
+      "verbatim_quote_start": "The most proven scientific analysis of personality traits is known as the \"Big Five,\" which breaks them down into five spectrums of behavior: Openness to experience, Conscientiousness, Extroversion, Agreeableness, and Neuroticism.",
+      "evidence": "Fabricated compact list format. The source text (ch19) reads: '...known as the \"Big Five,\" which breaks them down into five spectrums of behavior. Openness to experience: from curious and inventive on one end to cautious and consistent on the other. Conscientiousness: organized and efficient to easygoing and spontaneous. Extroversion: outgoing and energetic to solitary and reserved (you likely know them as extroverts vs. introverts). Agreeableness: friendly and compassionate to challenging and detached. Neuroticism: anxious and sensitive to confident, calm, and stable.' The verbatim_quote collapses these five separately described traits into a comma-delimited list 'Openness to experience, Conscientiousness, Extroversion, Agreeableness, and Neuroticism' that does not exist anywhere in the source text. The source uses a period after 'five spectrums of behavior' (not a colon) and expands each trait over multiple sentences. The claimed verbatim_quote is a paraphrase, not a verbatim excerpt."
+    }
+  ],
+  "bridge_violations": [],
+  "bridge_ratio_claimed": 0.014,
+  "bridge_ratio_computed": 0.0136,
+  "bridge_ratio_note": "Computed bridge_ratio = 59 bridge words / 4351 total words = 0.0136. Claimed value 0.014 is a rounding of this figure to 3 decimal places. Acceptable.",
+  "chapter_count": 22,
+  "proofreader_notes": "VERDICT: FAIL. Four anchor units (u_0019, u_0079, u_0090, u_0119) contain verbatim_quote strings that are not exact contiguous substrings of the cited source paragraphs. Three violations (u_0019, u_0079, u_0090) are non-contiguous stitches — sentences from different paragraphs have been joined to form a quote that does not appear as written anywhere in the source. One violation (u_0119) is a fabricated compact format — the text has been condensed into a comma-list that does not exist in the source. All six bridge units are clean: the only bridge with a factual claim (u_0012, 'four problems with a goals-first mentality') is directly supported by the four explicitly labeled 'Problem #1' through 'Problem #4' paragraphs in ch2. Numerous quote differences throughout the corpus (smart quotes rendered as replacement characters, capitalization at sentence starts, minor spacing) are recognized epub encoding artifacts and are NOT flagged as violations per task instructions. Bridge ratio (0.0136 ≈ 0.014) and chapter count (22) verify correctly."
+}

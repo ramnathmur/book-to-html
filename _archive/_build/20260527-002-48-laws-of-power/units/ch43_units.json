@@ -1,0 +1,56 @@
+{
+  "chapter_title": "LAW 43: WORK ON THE HEARTS AND MINDS OF OTHERS",
+  "law_no": 43,
+  "units": [
+    {
+      "unit_id": "u_43_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch43§59¶2\"><p>Coercion creates a reaction that will eventually work against you. You must seduce others into wanting to move in your direction. A person you have seduced becomes your loyal pawn. And the way to seduce others is to operate on their individual psychologies and weaknesses. Soften up the resistant by working on their emotions, playing on what they hold dear and what they fear. Ignore the hearts and minds of others and they will grow to hate you.</p></blockquote>",
+      "source_ids": ["ch43§59¶2"],
+      "verbatim_quote": "Coercion creates a reaction that will eventually work against you. You must seduce others into wanting to move in your direction. A person you have seduced becomes your loyal pawn. And the way to seduce others is to operate on their individual psychologies and weaknesses. Soften up the resistant by working on their emotions, playing on what they hold dear and what they fear. Ignore the hearts and minds of others and they will grow to hate you.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_43_0002",
+      "kind": "bridge",
+      "html": "<p>Chuko Liang, China's master strategist, turned this principle into a campaign that outlasted every military victory he could have won by force.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_43_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch43§59¶17\"><p>As Chuko Liang prepared to march south against the barbarians, a wise man in his camp offered him advice. It would be impossible, this man said, to pacify the region by force. Liang would probably beat Menghuo, but as soon as he headed north again to deal with Wei, Menghuo would reinvade. &quot;It is better to win hearts,&quot; said the wise man, &quot;than cities; better to battle with hearts than with weapons. I hope you will succeed in winning the hearts of these people.&quot; &quot;You read my thoughts,&quot; responded Chuko Liang.</p></blockquote>",
+      "source_ids": ["ch43§59¶17"],
+      "verbatim_quote": "As Chuko Liang prepared to march south against the barbarians, a wise man in his camp offered him advice. It would be impossible, this man said, to pacify the region by force. Liang would probably beat Menghuo, but as soon as he headed north again to deal with Wei, Menghuo would reinvade. \"It is better to win hearts,\" said the wise man, \"than cities; better to battle with hearts than with weapons. I hope you will succeed in winning the hearts of these people.\" \"You read my thoughts,\" responded Chuko Liang.",
+      "retention_signal": "story_hook"
+    },
+    {
+      "unit_id": "u_43_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch43§59¶20\"><p>As Liang expected, Menghuo launched a powerful attack. But Liang laid a trap and managed to capture a large part of Menghuo's army, including the king himself. Instead of punishing or executing his prisoners, however, he separated the soldiers from their king, had their shackles removed, regaled them with food and wine, and then addressed them. &quot;You are all upright men,&quot; he said. &quot;I believe you all have parents, wives, and children waiting for you at home. They are doubtless shedding bitter tears at your fate. I am going to release you, so that you can return home to your loved ones and comfort them.&quot; The men thanked Liang with tears in their eyes; then he sent for Menghuo. &quot;If I release you,&quot; asked Liang, &quot;what will you do?&quot; &quot;I will pull my army together again,&quot; answered the king, &quot;and lead it against you to a decisive battle. But if you capture me a second time, I will bow to your superiority.&quot; Not only did Liang order Menghuo released, he gave him a gift of a horse and saddle. When angry lieutenants wondered why he did this, Liang told them, &quot;I can capture that man as easily as I can take something out of my pocket. I am trying to win his heart. When I do, peace will come of itself here in the south.&quot;</p></blockquote>",
+      "source_ids": ["ch43§59¶20"],
+      "verbatim_quote": "As Liang expected, Menghuo launched a powerful attack. But Liang laid a trap and managed to capture a large part of Menghuo's army, including the king himself. Instead of punishing or executing his prisoners, however, he separated the soldiers from their king, had their shackles removed, regaled them with food and wine, and then addressed them. \"You are all upright men,\" he said. \"I believe you all have parents, wives, and children waiting for you at home. They are doubtless shedding bitter tears at your fate. I am going to release you, so that you can return home to your loved ones and comfort them.\" The men thanked Liang with tears in their eyes; then he sent for Menghuo. \"If I release you,\" asked Liang, \"what will you do?\" \"I will pull my army together again,\" answered the king, \"and lead it against you to a decisive battle. But if you capture me a second time, I will bow to your superiority.\" Not only did Liang order Menghuo released, he gave him a gift of a horse and saddle. When angry lieutenants wondered why he did this, Liang told them, \"I can capture that man as easily as I can take something out of my pocket. I am trying to win his heart. When I do, peace will come of itself here in the south.\"",
+      "retention_signal": "story_resolution"
+    },
+    {
+      "unit_id": "u_43_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch43§59¶35\"><p>Remember: The key to persuasion is softening people up and breaking them down, gently. Seduce them with a two-pronged approach: Work on their emotions and play on their intellectual weaknesses. Be alert to both what separates them from everyone else (their individual psychology) and what they share with everyone else (their basic emotional responses). Aim at the primary emotions—love, hate, jealousy. Once you move their emotions you have reduced their control, making them more vulnerable to persuasion.</p></blockquote>",
+      "source_ids": ["ch43§59¶35"],
+      "verbatim_quote": "Remember: The key to persuasion is softening people up and breaking them down, gently. Seduce them with a two-pronged approach: Work on their emotions and play on their intellectual weaknesses. Be alert to both what separates them from everyone else (their individual psychology) and what they share with everyone else (their basic emotional responses). Aim at the primary emotions—love, hate, jealousy. Once you move their emotions you have reduced their control, making them more vulnerable to persuasion.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 43: WORK ON THE HEARTS AND MINDS OF OTHERS",
+    "chapter_source_words": 1700,
+    "chapter_output_words": 400,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "Marie-Antoinette story deprioritized; Chuko Liang observance better illustrates the law's positive application"},
+      {"section": "reversal", "reason": "source states no reversal exists"}
+    ]
+  }
+}

@@ -1,0 +1,2035 @@
+{
+  "build_id": "20260527-001-atomic-habits",
+  "book_metadata": {
+    "title": "Atomic Habits: Tiny Changes, Remarkable Results",
+    "author": "James Clear",
+    "total_words": 60261,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "Introduction: My Story",
+        "words": 2900
+      },
+      {
+        "no": 2,
+        "title": "The Surprising Power of Atomic Habits",
+        "words": 2900
+      },
+      {
+        "no": 3,
+        "title": "How Your Habits Shape Your Identity (and Vice Versa)",
+        "words": 2700
+      },
+      {
+        "no": 4,
+        "title": "How to Build Better Habits in 4 Simple Steps",
+        "words": 2700
+      },
+      {
+        "no": 5,
+        "title": "The Man Who Didn't Look Right",
+        "words": 2200
+      },
+      {
+        "no": 6,
+        "title": "The Best Way to Start a New Habit",
+        "words": 2100
+      },
+      {
+        "no": 7,
+        "title": "Motivation Is Overrated; Environment Often Matters More",
+        "words": 2300
+      },
+      {
+        "no": 8,
+        "title": "The Secret to Self-Control",
+        "words": 1600
+      },
+      {
+        "no": 9,
+        "title": "How to Make a Habit Irresistible",
+        "words": 2300
+      },
+      {
+        "no": 10,
+        "title": "The Role of Family and Friends in Shaping Your Habits",
+        "words": 2200
+      },
+      {
+        "no": 11,
+        "title": "How to Find and Fix the Causes of Your Bad Habits",
+        "words": 2200
+      },
+      {
+        "no": 12,
+        "title": "Walk Slowly, but Never Backward",
+        "words": 1900
+      },
+      {
+        "no": 13,
+        "title": "The Law of Least Effort",
+        "words": 2300
+      },
+      {
+        "no": 14,
+        "title": "How to Stop Procrastinating by Using the Two-Minute Rule",
+        "words": 2100
+      },
+      {
+        "no": 15,
+        "title": "How to Make Good Habits Inevitable and Bad Habits Impossible",
+        "words": 2400
+      },
+      {
+        "no": 16,
+        "title": "The Cardinal Rule of Behavior Change",
+        "words": 2400
+      },
+      {
+        "no": 17,
+        "title": "How to Stick with Good Habits Every Day",
+        "words": 2300
+      },
+      {
+        "no": 18,
+        "title": "How an Accountability Partner Can Change Everything",
+        "words": 2000
+      },
+      {
+        "no": 19,
+        "title": "The Truth About Talent (When Genes Matter and When They Don't)",
+        "words": 2500
+      },
+      {
+        "no": 20,
+        "title": "The Goldilocks Rule: How to Stay Motivated in Life and Work",
+        "words": 2100
+      },
+      {
+        "no": 21,
+        "title": "The Downside of Creating Good Habits",
+        "words": 2200
+      },
+      {
+        "no": 22,
+        "title": "Conclusion: The Secret to Results That Last",
+        "words": 700
+      }
+    ]
+  },
+  "units": [
+    {
+      "unit_id": "u_0002",
+      "kind": "anchor",
+      "chapter_no": 1,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶2\">We all face challenges in life. This injury was one of mine, and the experience taught me a critical lesson: changes that seem small and unimportant at first will compound into remarkable results if you're willing to stick with them for years. We all deal with setbacks but in the long run, the quality of our lives often depends on the quality of our habits. With the same habits, you'll end up with the same results. But with better habits, anything is possible.</blockquote>",
+      "source_ids": [
+        "ch1§2¶2"
+      ],
+      "verbatim_quote": "We all face challenges in life. This injury was one of mine, and the experience taught me a critical lesson: changes that seem small and unimportant at first will compound into remarkable results if you're willing to stick with them for years. We all deal with setbacks but in the long run, the quality of our lives often depends on the quality of our habits. With the same habits, you'll end up with the same results. But with better habits, anything is possible.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0003",
+      "kind": "anchor",
+      "chapter_no": 1,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§3¶1\">The backbone of this book is my four-step model of habits—cue, craving, response, and reward—and the four laws of behavior change that evolve out of these steps.</blockquote>",
+      "source_ids": [
+        "ch1§3¶1"
+      ],
+      "verbatim_quote": "The backbone of this book is my four-step model of habits—cue, craving, response, and reward—and the four laws of behavior change that evolve out of these steps.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0005",
+      "kind": "anchor",
+      "chapter_no": 2,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch2§2¶1\">Here's how the math works out: if you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done. Conversely, if you get 1 percent worse each day for one year, you'll decline nearly down to zero.</blockquote>",
+      "source_ids": [
+        "ch2§2¶1"
+      ],
+      "verbatim_quote": "Here's how the math works out: if you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done. Conversely, if you get 1 percent worse each day for one year, you'll decline nearly down to zero.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0006",
+      "kind": "anchor",
+      "chapter_no": 2,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch2§2¶2\">Habits are the compound interest of self-improvement. The same way that money multiplies through compound interest, the effects of your habits multiply as you repeat them.</blockquote>",
+      "source_ids": [
+        "ch2§2¶2"
+      ],
+      "verbatim_quote": "Habits are the compound interest of self-improvement. The same way that money multiplies through compound interest, the effects of your habits multiply as you repeat them.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0007",
+      "kind": "anchor",
+      "chapter_no": 2,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch2§2¶3\">Success is the product of daily habits—not once-in-a-lifetime transformations. That said, it doesn't matter how successful or unsuccessful you are right now. What matters is whether your habits are putting you on the path toward success. You should be far more concerned with your current trajectory than with your current results.</blockquote>",
+      "source_ids": [
+        "ch2§2¶3"
+      ],
+      "verbatim_quote": "Success is the product of daily habits—not once-in-a-lifetime transformations. That said, it doesn't matter how successful or unsuccessful you are right now. What matters is whether your habits are putting you on the path toward success. You should be far more concerned with your current trajectory than with your current results.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0008",
+      "kind": "anchor",
+      "chapter_no": 2,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch2§2¶4\">Your outcomes are a lagging measure of your habits. Your net worth is a lagging measure of your financial habits. Your weight is a lagging measure of your eating habits. Your knowledge is a lagging measure of your learning habits. Your clutter is a lagging measure of your cleaning habits. You get what you repeat.</blockquote>",
+      "source_ids": [
+        "ch2§2¶4"
+      ],
+      "verbatim_quote": "Your outcomes are a lagging measure of your habits. Your net worth is a lagging measure of your financial habits. Your weight is a lagging measure of your eating habits. Your knowledge is a lagging measure of your learning habits. Your clutter is a lagging measure of your cleaning habits. You get what you repeat.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0009",
+      "kind": "anchor",
+      "chapter_no": 2,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch2§3¶1\">Breakthrough moments are often the result of many previous actions, which build up the potential required to unleash a major change.</blockquote>",
+      "source_ids": [
+        "ch2§3¶1"
+      ],
+      "verbatim_quote": "Breakthrough moments are often the result of many previous actions, which build up the potential required to unleash a major change.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0010",
+      "kind": "anchor",
+      "chapter_no": 2,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch2§3¶2\">If you find yourself struggling to build a good habit or break a bad one, it is not because you have lost your ability to improve. It is often because you have not yet crossed the Plateau of Latent Potential. Complaining about not achieving success despite working hard is like complaining about an ice cube not melting when you heated it from twenty-five to thirty-one degrees. Your work was not wasted; it is just being stored. All the action happens at thirty-two degrees.</blockquote>",
+      "source_ids": [
+        "ch2§3¶2"
+      ],
+      "verbatim_quote": "If you find yourself struggling to build a good habit or break a bad one, it is not because you have lost your ability to improve. It is often because you have not yet crossed the Plateau of Latent Potential. Complaining about not achieving success despite working hard is like complaining about an ice cube not melting when you heated it from twenty-five to thirty-one degrees. Your work was not wasted; it is just being stored. All the action happens at thirty-two degrees.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0011",
+      "kind": "anchor",
+      "chapter_no": 2,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch2§4¶1\">Goals are about the results you want to achieve. Systems are about the processes that lead to those results.</blockquote>",
+      "source_ids": [
+        "ch2§4¶1"
+      ],
+      "verbatim_quote": "Goals are about the results you want to achieve. Systems are about the processes that lead to those results.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0012",
+      "kind": "bridge",
+      "chapter_no": 2,
+      "html": "<p>Clear identifies four problems with a goals-first mentality.</p>",
+      "source_ids": [
+        "ch2§4¶2",
+        "ch2§4¶3",
+        "ch2§4¶4",
+        "ch2§4¶5"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only",
+      "retention_score": null
+    },
+    {
+      "unit_id": "u_0013",
+      "kind": "anchor",
+      "chapter_no": 2,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch2§5¶1\">You do not rise to the level of your goals. You fall to the level of your systems.</blockquote>",
+      "source_ids": [
+        "ch2§5¶1"
+      ],
+      "verbatim_quote": "You do not rise to the level of your goals. You fall to the level of your systems.",
+      "retention_signal": "voice",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0014",
+      "kind": "anchor",
+      "chapter_no": 2,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch2§5¶2\">An atomic habit refers to a tiny change, a marginal gain, a 1 percent improvement. But atomic habits are not just any old habits, however small. They are little habits that are part of a larger system. Just as atoms are the building blocks of molecules, atomic habits are the building blocks of remarkable results.</blockquote>",
+      "source_ids": [
+        "ch2§5¶2"
+      ],
+      "verbatim_quote": "An atomic habit refers to a tiny change, a marginal gain, a 1 percent improvement. But atomic habits are not just any old habits, however small. They are little habits that are part of a larger system. Just as atoms are the building blocks of molecules, atomic habits are the building blocks of remarkable results.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0015",
+      "kind": "anchor",
+      "chapter_no": 3,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶1\">There are three levels at which change can occur. You can imagine them like the layers of an onion. The first layer is changing your outcomes. The second layer is changing your process. The third and deepest layer is changing your identity. Outcomes are about what you get. Processes are about what you do. Identity is about what you believe.</blockquote>",
+      "source_ids": [
+        "ch3§1¶1"
+      ],
+      "verbatim_quote": "There are three levels at which change can occur. You can imagine them like the layers of an onion. The first layer is changing your outcomes. The second layer is changing your process. The third and deepest layer is changing your identity. Outcomes are about what you get. Processes are about what you do. Identity is about what you believe.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0016",
+      "kind": "anchor",
+      "chapter_no": 3,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶2\">Imagine two people resisting a cigarette. When offered a smoke, the first person says, \"No thanks. I'm trying to quit.\" It sounds like a reasonable response, but this person still believes they are a smoker who is trying to be something else. The second person declines by saying, \"No thanks. I'm not a smoker.\" It's a small difference, but this statement signals a shift in identity.</blockquote>",
+      "source_ids": [
+        "ch3§1¶2"
+      ],
+      "verbatim_quote": "Imagine two people resisting a cigarette. When offered a smoke, the first person says, \"No thanks. I'm trying to quit.\" It sounds like a reasonable response, but this person still believes they are a smoker who is trying to be something else. The second person declines by saying, \"No thanks. I'm not a smoker.\" It's a small difference, but this statement signals a shift in identity.",
+      "retention_signal": "first_example",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0017",
+      "kind": "anchor",
+      "chapter_no": 3,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶3\">The ultimate form of intrinsic motivation is when a habit becomes part of your identity. It's one thing to say I'm the type of person who wants this. It's something very different to say I'm the type of person who is this.</blockquote>",
+      "source_ids": [
+        "ch3§1¶3"
+      ],
+      "verbatim_quote": "The ultimate form of intrinsic motivation is when a habit becomes part of your identity. It's one thing to say I'm the type of person who wants this. It's something very different to say I'm the type of person who is this.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0018",
+      "kind": "anchor",
+      "chapter_no": 3,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§1¶4\">The goal is not to read a book, the goal is to become a reader. The goal is not to run a marathon, the goal is to become a runner. The goal is not to learn an instrument, the goal is to become a musician.</blockquote>",
+      "source_ids": [
+        "ch3§1¶4"
+      ],
+      "verbatim_quote": "The goal is not to read a book, the goal is to become a reader. The goal is not to run a marathon, the goal is to become a runner. The goal is not to learn an instrument, the goal is to become a musician.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0019",
+      "kind": "anchor",
+      "chapter_no": 3,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶1\">Your identity emerges out of your habits. Every action you take is a vote for the type of person you wish to become. No single instance will transform your beliefs, but as the votes build up, so does the evidence of your new identity.</blockquote>",
+      "source_ids": [
+        "ch3§2¶1"
+      ],
+      "verbatim_quote": "Your identity emerges out of your habits. Every action is a vote for the type of person you wish to become.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0020",
+      "kind": "anchor",
+      "chapter_no": 3,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§2¶2\">It is a simple two-step process: Decide the type of person you want to be. Prove it to yourself with small wins.</blockquote>",
+      "source_ids": [
+        "ch3§2¶2"
+      ],
+      "verbatim_quote": "It is a simple two-step process: Decide the type of person you want to be. Prove it to yourself with small wins.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0021",
+      "kind": "anchor",
+      "chapter_no": 3,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch3§3¶1\">Quite literally, you become your habits.</blockquote>",
+      "source_ids": [
+        "ch3§3¶1"
+      ],
+      "verbatim_quote": "Quite literally, you become your habits.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0023",
+      "kind": "anchor",
+      "chapter_no": 4,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§2¶1\">A habit is a behavior that has been repeated enough times to become automatic.</blockquote>",
+      "source_ids": [
+        "ch4§2¶1"
+      ],
+      "verbatim_quote": "A habit is a behavior that has been repeated enough times to become automatic.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0024",
+      "kind": "anchor",
+      "chapter_no": 4,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§2¶2\">Habits do not restrict freedom. They create it. In fact, the people who don't have their habits handled are often the ones with the least amount of freedom.</blockquote>",
+      "source_ids": [
+        "ch4§2¶2"
+      ],
+      "verbatim_quote": "Habits do not restrict freedom. They create it. In fact, the people who don't have their habits handled are often the ones with the least amount of freedom.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0025",
+      "kind": "anchor",
+      "chapter_no": 4,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§3¶1\">The process of building a habit can be divided into four simple steps: cue, craving, response, and reward.</blockquote>",
+      "source_ids": [
+        "ch4§3¶1"
+      ],
+      "verbatim_quote": "The process of building a habit can be divided into four simple steps: cue, craving, response, and reward.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0026",
+      "kind": "anchor",
+      "chapter_no": 4,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§3¶2\">In summary, the cue triggers a craving, which motivates a response, which provides a reward, which satisfies the craving and, ultimately, becomes associated with the cue. Together, these four steps form a neurological feedback loop—cue, craving, response, reward; cue, craving, response, reward—that ultimately allows you to create automatic habits. This cycle is known as the habit loop.</blockquote>",
+      "source_ids": [
+        "ch4§3¶2"
+      ],
+      "verbatim_quote": "In summary, the cue triggers a craving, which motivates a response, which provides a reward, which satisfies the craving and, ultimately, becomes associated with the cue. Together, these four steps form a neurological feedback loop—cue, craving, response, reward; cue, craving, response, reward—that ultimately allows you to create automatic habits. This cycle is known as the habit loop.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0027",
+      "kind": "anchor",
+      "chapter_no": 4,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§4¶1\">I refer to this framework as the Four Laws of Behavior Change, and it provides a simple set of rules for creating good habits and breaking bad ones. How to Create a Good Habit: The 1st law (Cue): Make it obvious. The 2nd law (Craving): Make it attractive. The 3rd law (Response): Make it easy. The 4th law (Reward): Make it satisfying. We can invert these laws to learn how to break a bad habit: Make it invisible. Make it unattractive. Make it difficult. Make it unsatisfying.</blockquote>",
+      "source_ids": [
+        "ch4§4¶1"
+      ],
+      "verbatim_quote": "I refer to this framework as the Four Laws of Behavior Change, and it provides a simple set of rules for creating good habits and breaking bad ones. How to Create a Good Habit: The 1st law (Cue): Make it obvious. The 2nd law (Craving): Make it attractive. The 3rd law (Response): Make it easy. The 4th law (Reward): Make it satisfying. We can invert these laws to learn how to break a bad habit: Make it invisible. Make it unattractive. Make it difficult. Make it unsatisfying.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0028",
+      "kind": "bridge",
+      "chapter_no": 4,
+      "html": "<p>Ask: How can I make it obvious, attractive, easy, and satisfying?</p>",
+      "source_ids": [
+        "ch4§4¶2"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only",
+      "retention_score": null
+    },
+    {
+      "unit_id": "u_0029",
+      "kind": "bridge",
+      "chapter_no": 5,
+      "html": "<p>The 1st Law of Behavior Change is Make It Obvious.</p>",
+      "source_ids": [
+        "ch5§1¶1",
+        "ch5§1¶2"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only",
+      "retention_score": null
+    },
+    {
+      "unit_id": "u_0030",
+      "kind": "anchor",
+      "chapter_no": 5,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch5§1¶3\">With enough practice, you can pick up on the cues that predict certain outcomes without consciously thinking about it. Automatically, your brain encodes the lessons learned through experience.</blockquote>",
+      "source_ids": [
+        "ch5§1¶3"
+      ],
+      "verbatim_quote": "With enough practice, you can pick up on the cues that predict certain outcomes without consciously thinking about it. Automatically, your brain encodes the lessons learned through experience.",
+      "retention_signal": "voice",
+      "retention_score": 7
+    },
+    {
+      "unit_id": "u_0031",
+      "kind": "anchor",
+      "chapter_no": 5,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch5§1¶4\">As the psychologist Carl Jung said, \"Until you make the unconscious conscious, it will direct your life and you will call it fate.\"</blockquote>",
+      "source_ids": [
+        "ch5§1¶4"
+      ],
+      "verbatim_quote": "As the psychologist Carl Jung said, \"Until you make the unconscious conscious, it will direct your life and you will call it fate.\"",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0032",
+      "kind": "anchor",
+      "chapter_no": 5,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch5§2¶1\">This process, known as Pointing-and-Calling, is a safety system designed to reduce mistakes. It seems silly, but it works incredibly well. Pointing-and-Calling reduces errors by up to 85 percent and cuts accidents by 30 percent.</blockquote>",
+      "source_ids": [
+        "ch5§2¶1"
+      ],
+      "verbatim_quote": "This process, known as Pointing-and-Calling, is a safety system designed to reduce mistakes. It seems silly, but it works incredibly well. Pointing-and-Calling reduces errors by up to 85 percent and cuts accidents by 30 percent.",
+      "retention_signal": "first_example",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0033",
+      "kind": "anchor",
+      "chapter_no": 5,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch5§2¶2\">To create your own, make a list of your daily habits. Once you have a full list, look at each behavior, and ask yourself, \"Is this a good habit, a bad habit, or a neutral habit?\" If it is a good habit, write \"+\" next to it. If it is a bad habit, write \"–\". If it is a neutral habit, write \"=\".</blockquote>",
+      "source_ids": [
+        "ch5§2¶2"
+      ],
+      "verbatim_quote": "To create your own, make a list of your daily habits. Once you have a full list, look at each behavior, and ask yourself, \"Is this a good habit, a bad habit, or a neutral habit?\" If it is a good habit, write \"+\" next to it. If it is a bad habit, write \"–\". If it is a neutral habit, write \"=\".",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0034",
+      "kind": "anchor",
+      "chapter_no": 5,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch5§2¶3\">If you're still having trouble determining how to rate a particular habit, here is a question I like to use: \"Does this behavior help me become the type of person I wish to be? Does this habit cast a vote for or against my desired identity?\"</blockquote>",
+      "source_ids": [
+        "ch5§2¶3"
+      ],
+      "verbatim_quote": "If you're still having trouble determining how to rate a particular habit, here is a question I like to use: \"Does this behavior help me become the type of person I wish to be? Does this habit cast a vote for or against my desired identity?\"",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0036",
+      "kind": "anchor",
+      "chapter_no": 6,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch6§1¶3\">The sentence they filled out is what researchers refer to as an implementation intention, which is a plan you make beforehand about when and where to act. That is, how you intend to implement a particular habit.</blockquote>",
+      "source_ids": [
+        "ch6§1¶3"
+      ],
+      "verbatim_quote": "The sentence they filled out is what researchers refer to as an implementation intention, which is a plan you make beforehand about when and where to act. That is, how you intend to implement a particular habit.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0037",
+      "kind": "anchor",
+      "chapter_no": 6,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch6§1¶4\">Broadly speaking, the format for creating an implementation intention is: \"When situation X arises, I will perform response Y.\"</blockquote>",
+      "source_ids": [
+        "ch6§1¶4"
+      ],
+      "verbatim_quote": "Broadly speaking, the format for creating an implementation intention is: \"When situation X arises, I will perform response Y.\"",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0038",
+      "kind": "anchor",
+      "chapter_no": 6,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch6§1¶5\">Many people think they lack motivation when what they really lack is clarity.</blockquote>",
+      "source_ids": [
+        "ch6§1¶5"
+      ],
+      "verbatim_quote": "Many people think they lack motivation when what they really lack is clarity.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0039",
+      "kind": "anchor",
+      "chapter_no": 6,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch6§1¶6\">The simple way to apply this strategy to your habits is to fill out this sentence: I will [BEHAVIOR] at [TIME] in [LOCATION].</blockquote>",
+      "source_ids": [
+        "ch6§1¶6"
+      ],
+      "verbatim_quote": "The simple way to apply this strategy to your habits is to fill out this sentence: I will [BEHAVIOR] at [TIME] in [LOCATION].",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0040",
+      "kind": "anchor",
+      "chapter_no": 6,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch6§2¶1\">One of the best ways to build a new habit is to identify a current habit you already do each day and then stack your new behavior on top. This is called habit stacking. The habit stacking formula is: \"After [CURRENT HABIT], I will [NEW HABIT].\"</blockquote>",
+      "source_ids": [
+        "ch6§2¶1"
+      ],
+      "verbatim_quote": "One of the best ways to build a new habit is to identify a current habit you already do each day and then stack your new behavior on top. This is called habit stacking. The habit stacking formula is: \"After [CURRENT HABIT], I will [NEW HABIT].\"",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0041",
+      "kind": "anchor",
+      "chapter_no": 6,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch6§2¶2\">Habit stacking works best when the cue is highly specific and immediately actionable. Many people select cues that are too vague. I made this mistake myself. When I wanted to start a push-up habit, my habit stack was \"When I take a break for lunch, I will do ten push-ups.\" At first glance, this sounded reasonable. But soon, I realized the trigger was unclear. After a few inconsistent days, I changed my habit stack to: \"When I close my laptop for lunch, I will do ten push-ups next to my desk.\" Ambiguity gone.</blockquote>",
+      "source_ids": [
+        "ch6§2¶2"
+      ],
+      "verbatim_quote": "Habit stacking works best when the cue is highly specific and immediately actionable. Many people select cues that are too vague. I made this mistake myself. When I wanted to start a push-up habit, my habit stack was \"When I take a break for lunch, I will do ten push-ups.\" At first glance, this sounded reasonable. But soon, I realized the trigger was unclear. After a few inconsistent days, I changed my habit stack to: \"When I close my laptop for lunch, I will do ten push-ups next to my desk.\" Ambiguity gone.",
+      "retention_signal": "first_example",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0043",
+      "kind": "anchor",
+      "chapter_no": 7,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§1¶3\">People often choose products not because of what they are, but because of where they are.</blockquote>",
+      "source_ids": [
+        "ch7§1¶3"
+      ],
+      "verbatim_quote": "People often choose products not because of what they are, but because of where they are.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0044",
+      "kind": "anchor",
+      "chapter_no": 7,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§1¶4\">Environment is the invisible hand that shapes human behavior.</blockquote>",
+      "source_ids": [
+        "ch7§1¶4"
+      ],
+      "verbatim_quote": "Environment is the invisible hand that shapes human behavior.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0045",
+      "kind": "anchor",
+      "chapter_no": 7,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§1¶5\">Given that we are more dependent on vision than on any other sense, it should come as no surprise that visual cues are the greatest catalyst of our behavior. For this reason, a small change in what you see can lead to a big shift in what you do.</blockquote>",
+      "source_ids": [
+        "ch7§1¶5"
+      ],
+      "verbatim_quote": "Given that we are more dependent on vision than on any other sense, it should come as no surprise that visual cues are the greatest catalyst of our behavior. For this reason, a small change in what you see can lead to a big shift in what you do.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0046",
+      "kind": "anchor",
+      "chapter_no": 7,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§2¶1\">If you want to make a habit a big part of your life, make the cue a big part of your environment. The most persistent behaviors usually have multiple cues.</blockquote>",
+      "source_ids": [
+        "ch7§2¶1"
+      ],
+      "verbatim_quote": "If you want to make a habit a big part of your life, make the cue a big part of your environment. The most persistent behaviors usually have multiple cues.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0047",
+      "kind": "anchor",
+      "chapter_no": 7,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§2¶2\">Be the designer of your world and not merely the consumer of it.</blockquote>",
+      "source_ids": [
+        "ch7§2¶2"
+      ],
+      "verbatim_quote": "Be the designer of your world and not merely the consumer of it.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0048",
+      "kind": "anchor",
+      "chapter_no": 7,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§3¶1\">The power of context also reveals an important strategy: habits can be easier to change in a new environment. It helps to escape the subtle triggers and cues that nudge you toward your current habits.</blockquote>",
+      "source_ids": [
+        "ch7§3¶1"
+      ],
+      "verbatim_quote": "The power of context also reveals an important strategy: habits can be easier to change in a new environment. It helps to escape the subtle triggers and cues that nudge you toward your current habits.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0049",
+      "kind": "anchor",
+      "chapter_no": 7,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§3¶2\">The mantra I find useful is \"One space, one use.\"</blockquote>",
+      "source_ids": [
+        "ch7§3¶2"
+      ],
+      "verbatim_quote": "The mantra I find useful is \"One space, one use.\"",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0051",
+      "kind": "anchor",
+      "chapter_no": 8,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch8§1¶3\">\"Disciplined\" people are better at structuring their lives in a way that does not require heroic willpower and self-control. In other words, they spend less time in tempting situations. The people with the best self-control are typically the ones who need to use it the least.</blockquote>",
+      "source_ids": [
+        "ch8§1¶3"
+      ],
+      "verbatim_quote": "\"Disciplined\" people are better at structuring their lives in a way that does not require heroic willpower and self-control. In other words, they spend less time in tempting situations. The people with the best self-control are typically the ones who need to use it the least.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0052",
+      "kind": "anchor",
+      "chapter_no": 8,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch8§2¶1\">Here's the punch line: You can break a habit, but you're unlikely to forget it. Once the mental grooves of habit have been carved into your brain, they are nearly impossible to remove entirely—even if they go unused for quite a while.</blockquote>",
+      "source_ids": [
+        "ch8§2¶1"
+      ],
+      "verbatim_quote": "Here's the punch line: You can break a habit, but you're unlikely to forget it. Once the mental grooves of habit have been carved into your brain, they are nearly impossible to remove entirely—even if they go unused for quite a while.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0053",
+      "kind": "anchor",
+      "chapter_no": 8,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch8§2¶2\">Self-control is a short-term strategy, not a long-term one. You may be able to resist temptation once or twice, but it's unlikely you can muster the willpower to override your desires every time. Instead of summoning a new dose of willpower whenever you want to do the right thing, your energy would be better spent optimizing your environment.</blockquote>",
+      "source_ids": [
+        "ch8§2¶2"
+      ],
+      "verbatim_quote": "Self-control is a short-term strategy, not a long-term one. You may be able to resist temptation once or twice, but it's unlikely you can muster the willpower to override your desires every time. Instead of summoning a new dose of willpower whenever you want to do the right thing, your energy would be better spent optimizing your environment.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0054",
+      "kind": "anchor",
+      "chapter_no": 8,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch8§2¶3\">This is the secret to self-control. Make the cues of your good habits obvious and the cues of your bad habits invisible.</blockquote>",
+      "source_ids": [
+        "ch8§2¶3"
+      ],
+      "verbatim_quote": "This is the secret to self-control. Make the cues of your good habits obvious and the cues of your bad habits invisible.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0055",
+      "kind": "bridge",
+      "chapter_no": 9,
+      "html": "<p>The 2nd Law of Behavior Change is Make It Attractive.</p>",
+      "source_ids": [
+        "ch9§1¶1",
+        "ch9§1¶2"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only",
+      "retention_score": null
+    },
+    {
+      "unit_id": "u_0056",
+      "kind": "anchor",
+      "chapter_no": 9,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch9§1¶3\">We have the brains of our ancestors but temptations they never had to face.</blockquote>",
+      "source_ids": [
+        "ch9§1¶3"
+      ],
+      "verbatim_quote": "We have the brains of our ancestors but temptations they never had to face.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0057",
+      "kind": "anchor",
+      "chapter_no": 9,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch9§2¶1\">Habits are a dopamine-driven feedback loop. Every behavior that is highly habit-forming—taking drugs, eating junk food, playing video games, browsing social media—is associated with higher levels of dopamine.</blockquote>",
+      "source_ids": [
+        "ch9§2¶1"
+      ],
+      "verbatim_quote": "Habits are a dopamine-driven feedback loop. Every behavior that is highly habit-forming—taking drugs, eating junk food, playing video games, browsing social media—is associated with higher levels of dopamine.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0058",
+      "kind": "anchor",
+      "chapter_no": 9,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch9§2¶2\">When it comes to habits, the key takeaway is this: dopamine is released not only when you experience pleasure, but also when you anticipate it. It is the anticipation of a reward—not the fulfillment of it—that gets us to take action.</blockquote>",
+      "source_ids": [
+        "ch9§2¶2"
+      ],
+      "verbatim_quote": "When it comes to habits, the key takeaway is this: dopamine is released not only when you experience pleasure, but also when you anticipate it. It is the anticipation of a reward—not the fulfillment of it—that gets us to take action.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0059",
+      "kind": "anchor",
+      "chapter_no": 9,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch9§2¶3\">Desire is the engine that drives behavior. Every action is taken because of the anticipation that precedes it. It is the craving that leads to the response.</blockquote>",
+      "source_ids": [
+        "ch9§2¶3"
+      ],
+      "verbatim_quote": "Desire is the engine that drives behavior. Every action is taken because of the anticipation that precedes it. It is the craving that leads to the response.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0060",
+      "kind": "anchor",
+      "chapter_no": 9,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch9§3¶1\">Temptation bundling works by linking an action you want to do with an action you need to do.</blockquote>",
+      "source_ids": [
+        "ch9§3¶1"
+      ],
+      "verbatim_quote": "Temptation bundling works by linking an action you want to do with an action you need to do.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0061",
+      "kind": "anchor",
+      "chapter_no": 9,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch9§3¶2\">The habit stacking + temptation bundling formula is: After [CURRENT HABIT], I will [HABIT I NEED]. After [HABIT I NEED], I will [HABIT I WANT].</blockquote>",
+      "source_ids": [
+        "ch9§3¶2"
+      ],
+      "verbatim_quote": "The habit stacking + temptation bundling formula is: After [CURRENT HABIT], I will [HABIT I NEED]. After [HABIT I NEED], I will [HABIT I WANT].",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0063",
+      "kind": "anchor",
+      "chapter_no": 10,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch10§1¶3\">Whatever habits are normal in your culture are among the most attractive behaviors you'll find.</blockquote>",
+      "source_ids": [
+        "ch10§1¶3"
+      ],
+      "verbatim_quote": "Whatever habits are normal in your culture are among the most attractive behaviors you'll find.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0064",
+      "kind": "anchor",
+      "chapter_no": 10,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch10§2¶1\">We don't choose our earliest habits, we imitate them. We imitate the habits of three groups in particular: The close. The many. The powerful.</blockquote>",
+      "source_ids": [
+        "ch10§2¶1"
+      ],
+      "verbatim_quote": "We don't choose our earliest habits, we imitate them. We imitate the habits of three groups in particular: The close. The many. The powerful.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0065",
+      "kind": "anchor",
+      "chapter_no": 10,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch10§2¶2\">One of the most effective things you can do to build better habits is to join a culture where your desired behavior is the normal behavior. New habits seem achievable when you see others doing them every day.</blockquote>",
+      "source_ids": [
+        "ch10§2¶2"
+      ],
+      "verbatim_quote": "One of the most effective things you can do to build better habits is to join a culture where your desired behavior is the normal behavior. New habits seem achievable when you see others doing them every day.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0066",
+      "kind": "anchor",
+      "chapter_no": 10,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch10§2¶3\">Nothing sustains motivation better than belonging to the tribe. It transforms a personal quest into a shared one.</blockquote>",
+      "source_ids": [
+        "ch10§2¶3"
+      ],
+      "verbatim_quote": "Nothing sustains motivation better than belonging to the tribe. It transforms a personal quest into a shared one.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0067",
+      "kind": "anchor",
+      "chapter_no": 10,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch10§2¶4\">The normal behavior of the tribe often overpowers the desired behavior of the individual. Most days, we'd rather be wrong with the crowd than be right by ourselves.</blockquote>",
+      "source_ids": [
+        "ch10§2¶4"
+      ],
+      "verbatim_quote": "The normal behavior of the tribe often overpowers the desired behavior of the individual. Most days, we'd rather be wrong with the crowd than be right by ourselves.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0068",
+      "kind": "anchor",
+      "chapter_no": 10,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch10§2¶5\">We imitate people we envy. High-status people enjoy the approval, respect, and praise of others. And that means if a behavior can get us approval, respect, and praise, we find it attractive.</blockquote>",
+      "source_ids": [
+        "ch10§2¶5"
+      ],
+      "verbatim_quote": "We imitate people we envy. High-status people enjoy the approval, respect, and praise of others. And that means if a behavior can get us approval, respect, and praise, we find it attractive.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0070",
+      "kind": "anchor",
+      "chapter_no": 11,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch11§2¶1\">Every behavior has a surface level craving and a deeper, underlying motive. A craving is just a specific manifestation of a deeper underlying motive. Your habits are modern-day solutions to ancient desires. New versions of old vices. The underlying motives behind human behavior remain the same.</blockquote>",
+      "source_ids": [
+        "ch11§2¶1"
+      ],
+      "verbatim_quote": "Every behavior has a surface level craving and a deeper, underlying motive. A craving is just a specific manifestation of a deeper underlying motive. Your habits are modern-day solutions to ancient desires. New versions of old vices. The underlying motives behind human behavior remain the same.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0071",
+      "kind": "anchor",
+      "chapter_no": 11,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch11§2¶2\">Life feels reactive, but it is actually predictive. The cause of your habits is actually the prediction that precedes them. These predictions lead to feelings, which is how we typically describe a craving—a feeling, a desire, an urge.</blockquote>",
+      "source_ids": [
+        "ch11§2¶2"
+      ],
+      "verbatim_quote": "Life feels reactive, but it is actually predictive. The cause of your habits is actually the prediction that precedes them. These predictions lead to feelings, which is how we typically describe a craving—a feeling, a desire, an urge.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0072",
+      "kind": "anchor",
+      "chapter_no": 11,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch11§2¶3\">A craving is the sense that something is missing. It is the desire to change your internal state. Desire is the difference between where you are now and where you want to be in the future. Even the tiniest action is tinged with the motivation to feel differently than you do in the moment.</blockquote>",
+      "source_ids": [
+        "ch11§2¶3"
+      ],
+      "verbatim_quote": "A craving is the sense that something is missing. It is the desire to change your internal state. Desire is the difference between where you are now and where you want to be in the future. Even the tiniest action is tinged with the motivation to feel differently than you do in the moment.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0073",
+      "kind": "anchor",
+      "chapter_no": 11,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch11§3¶1\">You can make hard habits more attractive if you can learn to associate them with a positive experience. Sometimes, all you need is a slight mind-set shift. You don't \"have\" to. You \"get\" to.</blockquote>",
+      "source_ids": [
+        "ch11§3¶1"
+      ],
+      "verbatim_quote": "You can make hard habits more attractive if you can learn to associate them with a positive experience. Sometimes, all you need is a slight mind-set shift. You don't \"have\" to. You \"get\" to.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0074",
+      "kind": "anchor",
+      "chapter_no": 11,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch11§3¶2\">If you want to take it a step further, you can create a motivation ritual. You simply practice associating your habits with something you enjoy, then you can use that cue whenever you need a bit of motivation.</blockquote>",
+      "source_ids": [
+        "ch11§3¶2"
+      ],
+      "verbatim_quote": "If you want to take it a step further, you can create a motivation ritual. You simply practice associating your habits with something you enjoy, then you can use that cue whenever you need a bit of motivation.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0075",
+      "kind": "bridge",
+      "chapter_no": 12,
+      "html": "<p>The 3rd Law of Behavior Change is Make It Easy.</p>",
+      "source_ids": [
+        "ch12§1¶1",
+        "ch12§1¶2"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only",
+      "retention_score": null
+    },
+    {
+      "unit_id": "u_0076",
+      "kind": "anchor",
+      "chapter_no": 12,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch12§1¶3\">I refer to this as the difference between being in motion and taking action. When you're in motion, you're planning and strategizing and learning. Those are all good things, but they don't produce a result. Action, on the other hand, is the type of behavior that will deliver an outcome.</blockquote>",
+      "source_ids": [
+        "ch12§1¶3"
+      ],
+      "verbatim_quote": "I refer to this as the difference between being in motion and taking action. When you're in motion, you're planning and strategizing and learning. Those are all good things, but they don't produce a result. Action, on the other hand, is the type of behavior that will deliver an outcome.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0077",
+      "kind": "anchor",
+      "chapter_no": 12,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch12§1¶4\">If you want to master a habit, the key is to start with repetition, not perfection. You don't need to map out every feature of a new habit. You just need to practice it.</blockquote>",
+      "source_ids": [
+        "ch12§1¶4"
+      ],
+      "verbatim_quote": "If you want to master a habit, the key is to start with repetition, not perfection. You don't need to map out every feature of a new habit. You just need to practice it.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0078",
+      "kind": "anchor",
+      "chapter_no": 12,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch12§2¶1\">Habit formation is the process by which a behavior becomes progressively more automatic through repetition.</blockquote>",
+      "source_ids": [
+        "ch12§2¶1"
+      ],
+      "verbatim_quote": "Habit formation is the process by which a behavior becomes progressively more automatic through repetition.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0079",
+      "kind": "anchor",
+      "chapter_no": 12,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch12§2¶2\">Habits form based on frequency, not time. There is nothing magical about time passing with regard to habit formation. It doesn't matter if it's been twenty-one days or thirty days or three hundred days. What matters is the rate at which you perform the behavior.</blockquote>",
+      "source_ids": [
+        "ch12§2¶2"
+      ],
+      "verbatim_quote": "There is nothing magical about time passing with regard to habit formation. It doesn’t matter if it’s been twenty-one days or thirty days or three hundred days. What matters is the rate at which you perform the behavior.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0080",
+      "kind": "anchor",
+      "chapter_no": 13,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch13§1¶1\">It is human nature to follow the Law of Least Effort, which states that when deciding between two similar options, people will naturally gravitate toward the option that requires the least amount of work.</blockquote>",
+      "source_ids": [
+        "ch13§1¶1"
+      ],
+      "verbatim_quote": "It is human nature to follow the Law of Least Effort, which states that when deciding between two similar options, people will naturally gravitate toward the option that requires the least amount of work.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0081",
+      "kind": "anchor",
+      "chapter_no": 13,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch13§1¶2\">In a sense, every habit is just an obstacle to getting what you really want. Dieting is an obstacle to getting fit. Meditation is an obstacle to feeling calm. Journaling is an obstacle to thinking clearly. You don't actually want the habit itself. What you really want is the outcome the habit delivers.</blockquote>",
+      "source_ids": [
+        "ch13§1¶2"
+      ],
+      "verbatim_quote": "In a sense, every habit is just an obstacle to getting what you really want. Dieting is an obstacle to getting fit. Meditation is an obstacle to feeling calm. Journaling is an obstacle to thinking clearly. You don't actually want the habit itself. What you really want is the outcome the habit delivers.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0082",
+      "kind": "anchor",
+      "chapter_no": 13,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch13§1¶3\">The idea behind make it easy is not to only do easy things. The idea is to make it as easy as possible in the moment to do things that payoff in the long run.</blockquote>",
+      "source_ids": [
+        "ch13§1¶3"
+      ],
+      "verbatim_quote": "The idea behind make it easy is not to only do easy things. The idea is to make it as easy as possible in the moment to do things that payoff in the long run.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0083",
+      "kind": "anchor",
+      "chapter_no": 13,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch13§2¶1\">One of the most effective ways to reduce the friction associated with your habits is to practice environment design. Much of the battle of building better habits comes down to finding ways to reduce the friction associated with our good habits and increase the friction associated with our bad ones.</blockquote>",
+      "source_ids": [
+        "ch13§2¶1"
+      ],
+      "verbatim_quote": "One of the most effective ways to reduce the friction associated with your habits is to practice environment design. Much of the battle of building better habits comes down to finding ways to reduce the friction associated with our good habits and increase the friction associated with our bad ones.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0084",
+      "kind": "anchor",
+      "chapter_no": 13,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch13§3¶1\">Whenever you organize a space for its intended purpose, you are priming it to make the next action easy. The greater the friction, the less likely the habit.</blockquote>",
+      "source_ids": [
+        "ch13§3¶1"
+      ],
+      "verbatim_quote": "Whenever you organize a space for its intended purpose, you are priming it to make the next action easy. The greater the friction, the less likely the habit.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0085",
+      "kind": "anchor",
+      "chapter_no": 13,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch13§3¶2\">Redesign your life so the actions that matter most are also the actions that are easiest to do.</blockquote>",
+      "source_ids": [
+        "ch13§3¶2"
+      ],
+      "verbatim_quote": "Redesign your life so the actions that matter most are also the actions that are easiest to do.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0087",
+      "kind": "anchor",
+      "chapter_no": 14,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch14§1¶3\">Every day, there are a handful of moments that deliver an outsized impact. I refer to these little choices as decisive moments. Decisive moments set the options available to your future self. Habits are the entry point, not the end point.</blockquote>",
+      "source_ids": [
+        "ch14§1¶3"
+      ],
+      "verbatim_quote": "Every day, there are a handful of moments that deliver an outsized impact. I refer to these little choices as decisive moments. Decisive moments set the options available to your future self. Habits are the entry point, not the end point.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0088",
+      "kind": "anchor",
+      "chapter_no": 14,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch14§2¶1\">The most effective way I know to counteract this tendency is to use the Two-Minute Rule, which states, \"When you start a new habit, it should take less than two minutes to do.\"</blockquote>",
+      "source_ids": [
+        "ch14§2¶1"
+      ],
+      "verbatim_quote": "The most effective way I know to counteract this tendency is to use the Two-Minute Rule, which states, \"When you start a new habit, it should take less than two minutes to do.\"",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0089",
+      "kind": "anchor",
+      "chapter_no": 14,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch14§2¶2\">You'll find that nearly any habit can be scaled down into a two-minute version: \"Read before bed each night\" becomes \"Read one page.\" \"Do thirty minutes of yoga\" becomes \"Take out my yoga mat.\" \"Study for class\" becomes \"Open my notes.\" \"Fold the laundry\" becomes \"Fold one pair of socks.\" \"Run three miles\" becomes \"Tie my running shoes.\"</blockquote>",
+      "source_ids": [
+        "ch14§2¶2"
+      ],
+      "verbatim_quote": "You'll find that nearly any habit can be scaled down into a two-minute version: \"Read before bed each night\" becomes \"Read one page.\" \"Do thirty minutes of yoga\" becomes \"Take out my yoga mat.\" \"Study for class\" becomes \"Open my notes.\" \"Fold the laundry\" becomes \"Fold one pair of socks.\" \"Run three miles\" becomes \"Tie my running shoes.\"",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0090",
+      "kind": "anchor",
+      "chapter_no": 14,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch14§2¶3\">People often think it's weird to get hyped about reading one page or meditating for one minute or making one sales call. But the point is not to do one thing. The point is to master the habit of showing up. A habit must be established before it can be improved. You have to standardize before you can optimize.</blockquote>",
+      "source_ids": [
+        "ch14§2¶3"
+      ],
+      "verbatim_quote": "People often think it’s weird to get hyped about reading one page or meditating for one minute or making one sales call. But the point is not to do one thing. The point is to master the habit of showing up. The truth is, a habit must be established before it can be improved. If you can’t learn the basic skill of showing up, then you have little hope of mastering the finer details. Instead of trying to engineer a perfect habit from the start, do the easy thing on a more consistent basis. You have to standardize before you can optimize.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0092",
+      "kind": "anchor",
+      "chapter_no": 15,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch15§1¶3\">A commitment device is a choice you make in the present that controls your actions in the future. It is a way to lock in future behavior, bind you to good habits, and restrict you from bad ones.</blockquote>",
+      "source_ids": [
+        "ch15§1¶3"
+      ],
+      "verbatim_quote": "A commitment device is a choice you make in the present that controls your actions in the future. It is a way to lock in future behavior, bind you to good habits, and restrict you from bad ones.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0093",
+      "kind": "anchor",
+      "chapter_no": 15,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch15§1¶4\">The key is to change the task such that it requires more work to get out of the good habit than to get started on it.</blockquote>",
+      "source_ids": [
+        "ch15§1¶4"
+      ],
+      "verbatim_quote": "The key is to change the task such that it requires more work to get out of the good habit than to get started on it.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0094",
+      "kind": "anchor",
+      "chapter_no": 15,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch15§2¶1\">The best way to break a bad habit is to make it impractical to do. Increase the friction until you don't even have the option to act.</blockquote>",
+      "source_ids": [
+        "ch15§2¶1"
+      ],
+      "verbatim_quote": "The best way to break a bad habit is to make it impractical to do. Increase the friction until you don't even have the option to act.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0095",
+      "kind": "anchor",
+      "chapter_no": 15,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch15§2¶2\">When working in your favor, automation can make your good habits inevitable and your bad habits impossible. It is the ultimate way to lock in future behavior rather than relying on willpower in the moment.</blockquote>",
+      "source_ids": [
+        "ch15§2¶2"
+      ],
+      "verbatim_quote": "When working in your favor, automation can make your good habits inevitable and your bad habits impossible. It is the ultimate way to lock in future behavior rather than relying on willpower in the moment.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0096",
+      "kind": "bridge",
+      "chapter_no": 16,
+      "html": "<p>The 4th Law of Behavior Change is Make It Satisfying.</p>",
+      "source_ids": [
+        "ch16§1¶1",
+        "ch16§1¶2"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only",
+      "retention_score": null
+    },
+    {
+      "unit_id": "u_0097",
+      "kind": "anchor",
+      "chapter_no": 16,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch16§1¶3\">We are more likely to repeat a behavior when the experience is satisfying. Pleasure teaches your brain that a behavior is worth remembering and repeating.</blockquote>",
+      "source_ids": [
+        "ch16§1¶3"
+      ],
+      "verbatim_quote": "We are more likely to repeat a behavior when the experience is satisfying. Pleasure teaches your brain that a behavior is worth remembering and repeating.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0098",
+      "kind": "anchor",
+      "chapter_no": 16,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch16§1¶4\">The Cardinal Rule of Behavior Change: What is rewarded is repeated. What is punished is avoided.</blockquote>",
+      "source_ids": [
+        "ch16§1¶4"
+      ],
+      "verbatim_quote": "The Cardinal Rule of Behavior Change: What is rewarded is repeated. What is punished is avoided.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0099",
+      "kind": "anchor",
+      "chapter_no": 16,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch16§2¶1\">You live in what scientists call a delayed-return environment because you can work for years before your actions deliver the intended payoff. The human brain did not evolve for life in a delayed-return environment.</blockquote>",
+      "source_ids": [
+        "ch16§2¶1"
+      ],
+      "verbatim_quote": "You live in what scientists call a delayed-return environment because you can work for years before your actions deliver the intended payoff. The human brain did not evolve for life in a delayed-return environment.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0100",
+      "kind": "anchor",
+      "chapter_no": 16,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch16§2¶2\">With our bad habits, the immediate outcome usually feels good, but the ultimate outcome feels bad. With good habits, it is the reverse: the immediate outcome is unenjoyable, but the ultimate outcome feels good. Put another way, the costs of your good habits are in the present. The costs of your bad habits are in the future.</blockquote>",
+      "source_ids": [
+        "ch16§2¶2"
+      ],
+      "verbatim_quote": "With our bad habits, the immediate outcome usually feels good, but the ultimate outcome feels bad. With good habits, it is the reverse: the immediate outcome is unenjoyable, but the ultimate outcome feels good. Put another way, the costs of your good habits are in the present. The costs of your bad habits are in the future.",
+      "retention_signal": "voice",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0101",
+      "kind": "anchor",
+      "chapter_no": 16,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch16§2¶3\">Let's update the Cardinal Rule of Behavior Change: What is immediately rewarded is repeated. What is immediately punished is avoided.</blockquote>",
+      "source_ids": [
+        "ch16§2¶3"
+      ],
+      "verbatim_quote": "Let's update the Cardinal Rule of Behavior Change: What is immediately rewarded is repeated. What is immediately punished is avoided.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0102",
+      "kind": "anchor",
+      "chapter_no": 16,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch16§3¶1\">The best approach is to use reinforcement, which refers to the process of using an immediate reward to increase the rate of a behavior. Habit stacking ties your habit to an immediate cue, which makes it obvious when to start. Reinforcement ties your habit to an immediate reward, which makes it satisfying when you finish.</blockquote>",
+      "source_ids": [
+        "ch16§3¶1"
+      ],
+      "verbatim_quote": "The best approach is to use reinforcement, which refers to the process of using an immediate reward to increase the rate of a behavior. Habit stacking ties your habit to an immediate cue, which makes it obvious when to start. Reinforcement ties your habit to an immediate reward, which makes it satisfying when you finish.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0103",
+      "kind": "anchor",
+      "chapter_no": 16,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch16§3¶2\">Incentives can start a habit. Identity sustains a habit.</blockquote>",
+      "source_ids": [
+        "ch16§3¶2"
+      ],
+      "verbatim_quote": "Incentives can start a habit. Identity sustains a habit.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0105",
+      "kind": "anchor",
+      "chapter_no": 17,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch17§1¶3\">A habit tracker is a simple way to measure whether you did a habit. The most basic format is to get a calendar and cross off each day you stick with your routine.</blockquote>",
+      "source_ids": [
+        "ch17§1¶3"
+      ],
+      "verbatim_quote": "A habit tracker is a simple way to measure whether you did a habit. The most basic format is to get a calendar and cross off each day you stick with your routine.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0106",
+      "kind": "anchor",
+      "chapter_no": 17,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch17§1¶4\">\"Don't break the chain\" is a powerful mantra. Don't break the chain of sales calls and you'll build a successful book of business. Don't break the chain of workouts and you'll get fit faster than you'd expect. Don't break the chain of creating every day and you will end up with an impressive portfolio.</blockquote>",
+      "source_ids": [
+        "ch17§1¶4"
+      ],
+      "verbatim_quote": "\"Don't break the chain\" is a powerful mantra. Don't break the chain of sales calls and you'll build a successful book of business. Don't break the chain of workouts and you'll get fit faster than you'd expect. Don't break the chain of creating every day and you will end up with an impressive portfolio.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0107",
+      "kind": "anchor",
+      "chapter_no": 17,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch17§1¶5\">Habit tracking is powerful because it leverages multiple Laws of Behavior Change. It simultaneously makes a behavior obvious, attractive, and satisfying.</blockquote>",
+      "source_ids": [
+        "ch17§1¶5"
+      ],
+      "verbatim_quote": "Habit tracking is powerful because it leverages multiple Laws of Behavior Change. It simultaneously makes a behavior obvious, attractive, and satisfying.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0108",
+      "kind": "anchor",
+      "chapter_no": 17,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch17§2¶1\">Whenever this happens to me, I try to remind myself of a simple rule: never miss twice. If I miss one day, I try to get back into it as quickly as possible. The first mistake is never the one that ruins you. It is the spiral of repeated mistakes that follows. Missing once is an accident. Missing twice is the start of a new habit.</blockquote>",
+      "source_ids": [
+        "ch17§2¶1"
+      ],
+      "verbatim_quote": "Whenever this happens to me, I try to remind myself of a simple rule: never miss twice. If I miss one day, I try to get back into it as quickly as possible. The first mistake is never the one that ruins you. It is the spiral of repeated mistakes that follows. Missing once is an accident. Missing twice is the start of a new habit.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0109",
+      "kind": "anchor",
+      "chapter_no": 17,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch17§2¶2\">It's easy to train when you feel good, but it's crucial to show up when you don't feel like it—even if you do less than you hope. Going to the gym for five minutes may not improve your performance, but it reaffirms your identity.</blockquote>",
+      "source_ids": [
+        "ch17§2¶2"
+      ],
+      "verbatim_quote": "It's easy to train when you feel good, but it's crucial to show up when you don't feel like it—even if you do less than you hope. Going to the gym for five minutes may not improve your performance, but it reaffirms your identity.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0110",
+      "kind": "anchor",
+      "chapter_no": 17,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch17§3¶1\">This is sometimes referred to as Goodhart's Law. Named after the economist Charles Goodhart, the principle states, \"When a measure becomes a target, it ceases to be a good measure.\" Just because you can measure something doesn't mean it's the most important thing.</blockquote>",
+      "source_ids": [
+        "ch17§3¶1"
+      ],
+      "verbatim_quote": "This is sometimes referred to as Goodhart's Law. Named after the economist Charles Goodhart, the principle states, \"When a measure becomes a target, it ceases to be a good measure.\" Just because you can measure something doesn't mean it's the most important thing.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0112",
+      "kind": "anchor",
+      "chapter_no": 18,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch18§1¶3\">Just as we are more likely to repeat an experience when the ending is satisfying, we are also more likely to avoid an experience when the ending is painful. The more immediate the pain, the less likely the behavior.</blockquote>",
+      "source_ids": [
+        "ch18§1¶3"
+      ],
+      "verbatim_quote": "Just as we are more likely to repeat an experience when the ending is satisfying, we are also more likely to avoid an experience when the ending is painful. The more immediate the pain, the less likely the behavior.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0113",
+      "kind": "anchor",
+      "chapter_no": 18,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch18§1¶4\">In general, the more local, tangible, concrete, and immediate the consequence, the more likely it is to influence individual behavior. The more global, intangible, vague, and delayed the consequence, the less likely it is to influence individual behavior.</blockquote>",
+      "source_ids": [
+        "ch18§1¶4"
+      ],
+      "verbatim_quote": "In general, the more local, tangible, concrete, and immediate the consequence, the more likely it is to influence individual behavior. The more global, intangible, vague, and delayed the consequence, the less likely it is to influence individual behavior.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0114",
+      "kind": "anchor",
+      "chapter_no": 18,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch18§2¶1\">A habit contract is a verbal or written agreement in which you state your commitment to a particular habit and the punishment that will occur if you don't follow through. Then you find one or two people to act as your accountability partners and sign off on the contract with you.</blockquote>",
+      "source_ids": [
+        "ch18§2¶1"
+      ],
+      "verbatim_quote": "A habit contract is a verbal or written agreement in which you state your commitment to a particular habit and the punishment that will occur if you don't follow through. Then you find one or two people to act as your accountability partners and sign off on the contract with you.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0115",
+      "kind": "anchor",
+      "chapter_no": 18,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch18§2¶2\">Knowing that someone is watching can be a powerful motivator. You are less likely to procrastinate or give up because there is an immediate cost.</blockquote>",
+      "source_ids": [
+        "ch18§2¶2"
+      ],
+      "verbatim_quote": "Knowing that someone is watching can be a powerful motivator. You are less likely to procrastinate or give up because there is an immediate cost.",
+      "retention_signal": "voice",
+      "retention_score": 7
+    },
+    {
+      "unit_id": "u_0117",
+      "kind": "anchor",
+      "chapter_no": 19,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch19§1¶3\">The secret to maximizing your odds of success is to choose the right field of competition. Habits are easier to perform, and more satisfying to stick with, when they align with your natural inclinations and abilities.</blockquote>",
+      "source_ids": [
+        "ch19§1¶3"
+      ],
+      "verbatim_quote": "The secret to maximizing your odds of success is to choose the right field of competition. Habits are easier to perform, and more satisfying to stick with, when they align with your natural inclinations and abilities.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0118",
+      "kind": "anchor",
+      "chapter_no": 19,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch19§1¶4\">In short: genes do not determine your destiny. They determine your areas of opportunity.</blockquote>",
+      "source_ids": [
+        "ch19§1¶4"
+      ],
+      "verbatim_quote": "In short: genes do not determine your destiny. They determine your areas of opportunity.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0119",
+      "kind": "anchor",
+      "chapter_no": 19,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch19§2¶1\">The most proven scientific analysis of personality traits is known as the \"Big Five,\" which breaks them down into five spectrums of behavior: Openness to experience, Conscientiousness, Extroversion, Agreeableness, and Neuroticism.</blockquote>",
+      "source_ids": [
+        "ch19§2¶1"
+      ],
+      "verbatim_quote": "The most proven scientific analysis of personality traits is known as the “Big Five,” which breaks them down into five spectrums of behavior.",
+      "retention_signal": "framework",
+      "retention_score": 7
+    },
+    {
+      "unit_id": "u_0120",
+      "kind": "anchor",
+      "chapter_no": 19,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch19§2¶2\">Choose the habit that best suits you, not the one that is most popular. There is a version of every habit that can bring you joy and satisfaction. Find it.</blockquote>",
+      "source_ids": [
+        "ch19§2¶2"
+      ],
+      "verbatim_quote": "Choose the habit that best suits you, not the one that is most popular. There is a version of every habit that can bring you joy and satisfaction. Find it.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0121",
+      "kind": "anchor",
+      "chapter_no": 19,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch19§3¶1\">There is an effective way to manage this conundrum, and it is known as the explore/exploit trade-off. In the beginning of a new activity, there should be a period of exploration. After this initial period of exploration, shift your focus to the best solution you've found—but keep experimenting occasionally.</blockquote>",
+      "source_ids": [
+        "ch19§3¶1"
+      ],
+      "verbatim_quote": "There is an effective way to manage this conundrum, and it is known as the explore/exploit trade-off. In the beginning of a new activity, there should be a period of exploration. After this initial period of exploration, shift your focus to the best solution you've found—but keep experimenting occasionally.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0122",
+      "kind": "anchor",
+      "chapter_no": 19,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch19§3¶2\">When you can't win by being better, you can win by being different. By combining your skills, you reduce the level of competition, which makes it easier to stand out. A good player works hard to win the game everyone else is playing. A great player creates a new game that favors their strengths and avoids their weaknesses.</blockquote>",
+      "source_ids": [
+        "ch19§3¶2"
+      ],
+      "verbatim_quote": "When you can't win by being better, you can win by being different. By combining your skills, you reduce the level of competition, which makes it easier to stand out. A good player works hard to win the game everyone else is playing. A great player creates a new game that favors their strengths and avoids their weaknesses.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0123",
+      "kind": "anchor",
+      "chapter_no": 19,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch19§4¶1\">Our genes do not eliminate the need for hard work. They clarify it. They tell us what to work hard on.</blockquote>",
+      "source_ids": [
+        "ch19§4¶1"
+      ],
+      "verbatim_quote": "Our genes do not eliminate the need for hard work. They clarify it. They tell us what to work hard on.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0125",
+      "kind": "anchor",
+      "chapter_no": 20,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§1¶3\">The Goldilocks Rule states that humans experience peak motivation when working on tasks that are right on the edge of their current abilities. Not too hard. Not too easy. Just right.</blockquote>",
+      "source_ids": [
+        "ch20§1¶3"
+      ],
+      "verbatim_quote": "The Goldilocks Rule states that humans experience peak motivation when working on tasks that are right on the edge of their current abilities. Not too hard. Not too easy. Just right.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0126",
+      "kind": "anchor",
+      "chapter_no": 20,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§1¶4\">Behaviors need to remain novel in order for them to stay attractive and satisfying. Without variety, we get bored. And boredom is perhaps the greatest villain on the quest for self-improvement.</blockquote>",
+      "source_ids": [
+        "ch20§1¶4"
+      ],
+      "verbatim_quote": "Behaviors need to remain novel in order for them to stay attractive and satisfying. Without variety, we get bored. And boredom is perhaps the greatest villain on the quest for self-improvement.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0127",
+      "kind": "anchor",
+      "chapter_no": 20,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§2¶1\">At some point it comes down to who can handle the boredom of training every day, doing the same lifts over and over and over. Really successful people feel the same lack of motivation as everyone else. The difference is that they still find a way to show up despite the feelings of boredom.</blockquote>",
+      "source_ids": [
+        "ch20§2¶1"
+      ],
+      "verbatim_quote": "At some point it comes down to who can handle the boredom of training every day, doing the same lifts over and over and over. Really successful people feel the same lack of motivation as everyone else. The difference is that they still find a way to show up despite the feelings of boredom.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0128",
+      "kind": "anchor",
+      "chapter_no": 20,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§2¶2\">The greatest threat to success is not failure but boredom.</blockquote>",
+      "source_ids": [
+        "ch20§2¶2"
+      ],
+      "verbatim_quote": "The greatest threat to success is not failure but boredom.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0129",
+      "kind": "anchor",
+      "chapter_no": 20,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§2¶3\">Professionals stick to the schedule; amateurs let life get in the way. Professionals know what is important to them and work toward it with purpose; amateurs get pulled off course by the urgencies of life.</blockquote>",
+      "source_ids": [
+        "ch20§2¶3"
+      ],
+      "verbatim_quote": "Professionals stick to the schedule; amateurs let life get in the way. Professionals know what is important to them and work toward it with purpose; amateurs get pulled off course by the urgencies of life.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0130",
+      "kind": "anchor",
+      "chapter_no": 20,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch20§2¶4\">The only way to become excellent is to be endlessly fascinated by doing the same thing over and over. You have to fall in love with boredom.</blockquote>",
+      "source_ids": [
+        "ch20§2¶4"
+      ],
+      "verbatim_quote": "The only way to become excellent is to be endlessly fascinated by doing the same thing over and over. You have to fall in love with boredom.",
+      "retention_signal": "voice",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0131",
+      "kind": "anchor",
+      "chapter_no": 21,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§1¶1\">The upside of habits is that we can do things without thinking. The downside of habits is that you get used to doing things a certain way and stop paying attention to little errors.</blockquote>",
+      "source_ids": [
+        "ch21§1¶1"
+      ],
+      "verbatim_quote": "The upside of habits is that we can do things without thinking. The downside of habits is that you get used to doing things a certain way and stop paying attention to little errors.",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0132",
+      "kind": "anchor",
+      "chapter_no": 21,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§1¶2\">Habits + Deliberate Practice = Mastery. Mastery is the process of narrowing your focus to a tiny element of success, repeating it until you have internalized the skill, and then using this new habit as the foundation to advance to the next frontier of your development.</blockquote>",
+      "source_ids": [
+        "ch21§1¶2"
+      ],
+      "verbatim_quote": "Habits + Deliberate Practice = Mastery. Mastery is the process of narrowing your focus to a tiny element of success, repeating it until you have internalized the skill, and then using this new habit as the foundation to advance to the next frontier of your development.",
+      "retention_signal": "framework",
+      "retention_score": 10
+    },
+    {
+      "unit_id": "u_0134",
+      "kind": "anchor",
+      "chapter_no": 21,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§2¶3\">Reflection and review enables the long-term improvement of all habits because it makes you aware of your mistakes and helps you consider possible paths for improvement. Without reflection, we can make excuses, create rationalizations, and lie to ourselves.</blockquote>",
+      "source_ids": [
+        "ch21§2¶3"
+      ],
+      "verbatim_quote": "Reflection and review enables the long-term improvement of all habits because it makes you aware of your mistakes and helps you consider possible paths for improvement. Without reflection, we can make excuses, create rationalizations, and lie to ourselves.",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0135",
+      "kind": "anchor",
+      "chapter_no": 21,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§2¶4\">Each December, I perform an Annual Review, in which I reflect on the previous year. Then, I reflect on my progress (or lack thereof) by answering three questions: What went well this year? What didn't go so well this year? What did I learn?</blockquote>",
+      "source_ids": [
+        "ch21§2¶4"
+      ],
+      "verbatim_quote": "Each December, I perform an Annual Review, in which I reflect on the previous year. Then, I reflect on my progress (or lack thereof) by answering three questions: What went well this year? What didn't go so well this year? What did I learn?",
+      "retention_signal": "framework",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0136",
+      "kind": "anchor",
+      "chapter_no": 21,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§3¶1\">The tighter we cling to an identity, the harder it becomes to grow beyond it. One solution is to avoid making any single aspect of your identity an overwhelming portion of who you are. In the words of investor Paul Graham, \"keep your identity small.\"</blockquote>",
+      "source_ids": [
+        "ch21§3¶1"
+      ],
+      "verbatim_quote": "The tighter we cling to an identity, the harder it becomes to grow beyond it. One solution is to avoid making any single aspect of your identity an overwhelming portion of who you are. In the words of investor Paul Graham, \"keep your identity small.\"",
+      "retention_signal": "framework",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0137",
+      "kind": "anchor",
+      "chapter_no": 21,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch21§3¶2\">A lack of self-awareness is poison. Reflection and review is the antidote.</blockquote>",
+      "source_ids": [
+        "ch21§3¶2"
+      ],
+      "verbatim_quote": "A lack of self-awareness is poison. Reflection and review is the antidote.",
+      "retention_signal": "voice",
+      "retention_score": 8
+    },
+    {
+      "unit_id": "u_0138",
+      "kind": "anchor",
+      "chapter_no": 22,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch22§1¶1\">The holy grail of habit change is not a single 1 percent improvement, but a thousand of them. It's a bunch of atomic habits stacking up, each one a fundamental unit of the overall system.</blockquote>",
+      "source_ids": [
+        "ch22§1¶1"
+      ],
+      "verbatim_quote": "The holy grail of habit change is not a single 1 percent improvement, but a thousand of them. It's a bunch of atomic habits stacking up, each one a fundamental unit of the overall system.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0139",
+      "kind": "anchor",
+      "chapter_no": 22,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch22§1¶2\">Success is not a goal to reach or a finish line to cross. It is a system to improve, an endless process to refine.</blockquote>",
+      "source_ids": [
+        "ch22§1¶2"
+      ],
+      "verbatim_quote": "Success is not a goal to reach or a finish line to cross. It is a system to improve, an endless process to refine.",
+      "retention_signal": "voice",
+      "retention_score": 9
+    },
+    {
+      "unit_id": "u_0140",
+      "kind": "anchor",
+      "chapter_no": 22,
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch22§1¶3\">The secret to getting results that last is to never stop making improvements. Small habits don't add up. They compound. That's the power of atomic habits. Tiny changes. Remarkable results.</blockquote>",
+      "source_ids": [
+        "ch22§1¶3"
+      ],
+      "verbatim_quote": "The secret to getting results that last is to never stop making improvements. Small habits don't add up. They compound. That's the power of atomic habits. Tiny changes. Remarkable results.",
+      "retention_signal": "voice",
+      "retention_score": 10
+    }
+  ],
+  "coverage_intent": {
+    "source_coverage_pct": 0.16,
+    "bridge_ratio": 0.014,
+    "per_chapter_contribution": [
+      {
+        "ch": 1,
+        "title": "Introduction",
+        "source_words": 2900,
+        "output_words": 230,
+        "share_pct": 0.79,
+        "status": "pass"
+      },
+      {
+        "ch": 2,
+        "title": "The Surprising Power of Atomic Habits",
+        "source_words": 2900,
+        "output_words": 480,
+        "share_pct": 1.05,
+        "status": "pass"
+      },
+      {
+        "ch": 3,
+        "title": "How Your Habits Shape Your Identity",
+        "source_words": 2700,
+        "output_words": 320,
+        "share_pct": 0.99,
+        "status": "pass"
+      },
+      {
+        "ch": 4,
+        "title": "How to Build Better Habits in 4 Simple Steps",
+        "source_words": 2700,
+        "output_words": 320,
+        "share_pct": 0.99,
+        "status": "pass"
+      },
+      {
+        "ch": 5,
+        "title": "The Man Who Didn't Look Right",
+        "source_words": 2200,
+        "output_words": 240,
+        "share_pct": 0.95,
+        "status": "pass"
+      },
+      {
+        "ch": 6,
+        "title": "The Best Way to Start a New Habit",
+        "source_words": 2100,
+        "output_words": 280,
+        "share_pct": 1.18,
+        "status": "pass"
+      },
+      {
+        "ch": 7,
+        "title": "Motivation Is Overrated",
+        "source_words": 2300,
+        "output_words": 220,
+        "share_pct": 0.86,
+        "status": "pass"
+      },
+      {
+        "ch": 8,
+        "title": "The Secret to Self-Control",
+        "source_words": 1600,
+        "output_words": 180,
+        "share_pct": 1.02,
+        "status": "pass"
+      },
+      {
+        "ch": 9,
+        "title": "How to Make a Habit Irresistible",
+        "source_words": 2300,
+        "output_words": 200,
+        "share_pct": 0.78,
+        "status": "pass"
+      },
+      {
+        "ch": 10,
+        "title": "The Role of Family and Friends",
+        "source_words": 2200,
+        "output_words": 220,
+        "share_pct": 0.91,
+        "status": "pass"
+      },
+      {
+        "ch": 11,
+        "title": "How to Find and Fix the Causes of Your Bad Habits",
+        "source_words": 2200,
+        "output_words": 220,
+        "share_pct": 0.91,
+        "status": "pass"
+      },
+      {
+        "ch": 12,
+        "title": "Walk Slowly, but Never Backward",
+        "source_words": 1900,
+        "output_words": 180,
+        "share_pct": 0.86,
+        "status": "pass"
+      },
+      {
+        "ch": 13,
+        "title": "The Law of Least Effort",
+        "source_words": 2300,
+        "output_words": 240,
+        "share_pct": 0.95,
+        "status": "pass"
+      },
+      {
+        "ch": 14,
+        "title": "How to Stop Procrastinating",
+        "source_words": 2100,
+        "output_words": 230,
+        "share_pct": 1.0,
+        "status": "pass"
+      },
+      {
+        "ch": 15,
+        "title": "How to Make Good Habits Inevitable",
+        "source_words": 2400,
+        "output_words": 180,
+        "share_pct": 0.68,
+        "status": "pass"
+      },
+      {
+        "ch": 16,
+        "title": "The Cardinal Rule of Behavior Change",
+        "source_words": 2400,
+        "output_words": 280,
+        "share_pct": 1.06,
+        "status": "pass"
+      },
+      {
+        "ch": 17,
+        "title": "How to Stick with Good Habits Every Day",
+        "source_words": 2300,
+        "output_words": 280,
+        "share_pct": 1.11,
+        "status": "pass"
+      },
+      {
+        "ch": 18,
+        "title": "How an Accountability Partner Can Change Everything",
+        "source_words": 2000,
+        "output_words": 180,
+        "share_pct": 0.82,
+        "status": "pass"
+      },
+      {
+        "ch": 19,
+        "title": "The Truth About Talent",
+        "source_words": 2500,
+        "output_words": 320,
+        "share_pct": 1.16,
+        "status": "pass"
+      },
+      {
+        "ch": 20,
+        "title": "The Goldilocks Rule",
+        "source_words": 2100,
+        "output_words": 260,
+        "share_pct": 1.13,
+        "status": "pass"
+      },
+      {
+        "ch": 21,
+        "title": "The Downside of Creating Good Habits",
+        "source_words": 2200,
+        "output_words": 280,
+        "share_pct": 1.16,
+        "status": "pass"
+      },
+      {
+        "ch": 22,
+        "title": "Conclusion",
+        "source_words": 700,
+        "output_words": 120,
+        "share_pct": 1.56,
+        "status": "pass"
+      }
+    ],
+    "dropped_sections": [
+      {
+        "source_id_range": "ch1§1¶3-12",
+        "reason": "Extended hospital narrative — kept the headline injury and the recovery thesis as bridge; cut detailed minute-by-minute hospital scenes."
+      },
+      {
+        "source_id_range": "ch1§3¶2-5",
+        "reason": "Author's bio / business growth history (article frequency, subscriber counts, speaking) — supporting only, not framework."
+      },
+      {
+        "source_id_range": "ch2§1¶4-8",
+        "reason": "Extended British Cycling marginal-gains examples beyond the first illustrative use (massage gels, hand-washing surgeon, pillow types, white truck interiors)."
+      },
+      {
+        "source_id_range": "ch2§2¶5-8",
+        "reason": "Positive/Negative compounding sub-lists (productivity, knowledge, relationships, stress, negative thoughts, outrage) — repeated illustrations of single compounding concept."
+      },
+      {
+        "source_id_range": "ch2§3¶3-6",
+        "reason": "Cancer/bamboo/tectonic plates analogies and San Antonio Spurs locker-room quote — second through fourth examples of the latent-potential concept."
+      },
+      {
+        "source_id_range": "ch2§4¶2-5",
+        "reason": "Detailed expansion of each of the four problems with goals — already named as a framework anchor, illustrative bloat."
+      },
+      {
+        "source_id_range": "ch3§1¶5-8",
+        "reason": "Brian Clark fingernails story and democracy/dictatorship analogy — second and third illustrations of the identity concept."
+      },
+      {
+        "source_id_range": "ch3§2¶3-6",
+        "reason": "Latin etymology of identity, repeated 'votes' examples, and the 'I'm not a writer' personal recap — recap and redundant illustration."
+      },
+      {
+        "source_id_range": "ch4§1¶3-4",
+        "reason": "Extended Thorndike cat trial data and Cat 12 timing list — second example of trial-and-error learning."
+      },
+      {
+        "source_id_range": "ch4§2¶3-6",
+        "reason": "Brain-as-prediction-machine elaboration, freedom-vs-restriction repetition, dark-room light-switch and other rapid habit-loop micro-examples (texting, biting nails, coffee, doughnut)."
+      },
+      {
+        "source_id_range": "ch4§3¶3-5",
+        "reason": "Problem-phase/solution-phase split and table of seven worked habit-loop examples — repeated illustration of the framework already anchored."
+      },
+      {
+        "source_id_range": "ch5§1¶5-9",
+        "reason": "Repeated 'invisible cue' anecdotes (gift-card scissors clerk, preschool teacher, lifeguard) — second through fourth examples of automaticity."
+      },
+      {
+        "source_id_range": "ch5§2¶4-6",
+        "reason": "Sample habits scorecard worksheet and detailed point-and-call examples — exercise scaffolding, not framework."
+      },
+      {
+        "source_id_range": "ch6§2¶3-8",
+        "reason": "Extended habit stacking morning/evening sample stacks, two-column current-habits brainstorm worksheet — exercise scaffolding."
+      },
+      {
+        "source_id_range": "ch7§1¶6-10",
+        "reason": "Lewin equation business examples, eye-level shelf placement, end-cap Coca-Cola statistic, sensory system biology (eagles, snakes, sharks) — second through fourth supporting illustrations."
+      },
+      {
+        "source_id_range": "ch7§2¶3-7",
+        "reason": "Dutch electricity-meter study, Schiphol urinal fly sticker, apple bowl personal anecdote, list of obvious-cue redesign tips — repeated illustrations of environment design."
+      },
+      {
+        "source_id_range": "ch7§3¶3-6",
+        "reason": "Insomnia-bed study, work-from-couch personal anecdote, NYC small-apartment activity zones — second through fourth examples of context-as-cue."
+      },
+      {
+        "source_id_range": "ch8§1¶4-6",
+        "reason": "Patty Olwell horseback-smoking anecdote, autocatalytic spiral examples (TV, anxiety, smoking), cocaine 33-millisecond study — repeated illustrations of cue-induced wanting."
+      },
+      {
+        "source_id_range": "ch8§2¶4-6",
+        "reason": "Long list of reduce-exposure tips (phone, social media, TV, electronics reviews, video games) — repeated practical examples."
+      },
+      {
+        "source_id_range": "ch9§1¶3-6",
+        "reason": "Greylag goose volleyball egg, food-science orosensation/dynamic-contrast/bliss-point illustrations, list of modern supernormal stimuli (mannequins, porn, ads) — second through fourth examples."
+      },
+      {
+        "source_id_range": "ch9§2¶4-7",
+        "reason": "Olds/Milner rat experiments, nose-poke mice study, dopamine spike diagram description, wanting-vs-liking nucleus-accumbens neuroanatomy — repeated mechanistic detail."
+      },
+      {
+        "source_id_range": "ch9§3¶3-6",
+        "reason": "Ronan Byrne Netflix bike, ABC TGIT Shonda Rhimes campaign, Premack's Principle elaboration, multi-example temptation-bundling list — second through fourth examples."
+      },
+      {
+        "source_id_range": "ch10§1¶4-7",
+        "reason": "Polgar sisters extended bio (Susan/Sofia/Judit chess records, bathroom anecdote) and Charles Darwin/Montaigne quotes — repeated supporting detail."
+      },
+      {
+        "source_id_range": "ch10§2¶6-12",
+        "reason": "Mike Massimino MIT robotics class, friend's-IQ study, Nerd Fitness Star Wars community, Solomon Asch line-length experiments in detail, chimpanzee nut-cracking — second through fifth examples."
+      },
+      {
+        "source_id_range": "ch11§1¶3-6",
+        "reason": "Istanbul dinner scene, Allen Carr reframing-list quoted in full, taco underlying-motive worked example, table of seven habit-as-modern-vice pairings — repeated illustrations."
+      },
+      {
+        "source_id_range": "ch11§3¶3-8",
+        "reason": "Wheelchair-as-liberation anecdote, exercise/finance/meditation/pregame reframing list, Ed Latimore headphones story, pregame ritual personal anecdote, breathe-and-smile dog-petting routine — second through sixth examples."
+      },
+      {
+        "source_id_range": "ch12§1¶5-8",
+        "reason": "Detailed motion-vs-action examples (article-outline, diet plan, personal trainer) and 'preparation as procrastination' elaboration — repeated illustrations."
+      },
+      {
+        "source_id_range": "ch12§2¶3-8",
+        "reason": "Hebb's Law / Donald Hebb biographical note, musician cerebellum / mathematician parietal lobe / London taxi driver hippocampus studies, George H. Lewes quote, automaticity habit-line graph description — repeated supporting science."
+      },
+      {
+        "source_id_range": "ch13§1¶4-6",
+        "reason": "Jared Diamond Guns Germs and Steel agriculture-axis explanation extended over multiple paragraphs — single long supporting illustration of Law of Least Effort."
+      },
+      {
+        "source_id_range": "ch13§2¶2-6",
+        "reason": "Garden-hose analogy, Japanese lean-production Suroweicki quote, addition-by-subtraction examples (meal delivery, dating apps, ride-sharing, voice speakers, UK tax-form study) — second through sixth illustrations of friction reduction."
+      },
+      {
+        "source_id_range": "ch13§3¶3-8",
+        "reason": "Oswald Nuckols 'reset the room' detailed routine, wife's greeting-card box anecdote, breakfast/drawing/exercise/diet priming lists, unplug-TV gradient examples, phone-in-other-room personal habit — second through seventh examples."
+      },
+      {
+        "source_id_range": "ch14§1¶4-7",
+        "reason": "Twyla Tharp extended cab-ritual quote, 5:15 pm workout-clothes personal anecdote, decisive moments restaurant-menu illustration — repeated illustrations."
+      },
+      {
+        "source_id_range": "ch14§2¶4-10",
+        "reason": "Two-Minute Rule worked examples (gateway habits ladder, running shoes story, journaling Greg McKeown, gym five-minute reader, Hemingway quote, habit-shaping phases for early riser/vegan/exercise) — second through seventh illustrations and exercise scaffolding."
+      },
+      {
+        "source_id_range": "ch15§1¶5-8",
+        "reason": "Victor Hugo Hunchback story extended, individual-package overeating, casino ban list, athlete weigh-in wallet, Nir Eyal outlet timer, split-the-meal restaurant tactic — second through sixth examples of commitment device."
+      },
+      {
+        "source_id_range": "ch15§2¶3-9",
+        "reason": "John Henry Patterson NCR cash-register history, full table of onetime actions (nutrition/sleep/productivity/happiness/health/finance), Alfred North Whitehead quote, Netflix autoplay binge-watching dark side, social-media password-reset assistant story — extended supporting illustrations."
+      },
+      {
+        "source_id_range": "ch16§1¶5-9",
+        "reason": "Karachi Safeguard soap full study narrative, Wrigley chewing gum history, toothpaste mint-flavor story, Sensodyne personal anecdote, narcissistic-relative story — second through fifth examples of make-it-satisfying."
+      },
+      {
+        "source_id_range": "ch16§2¶4-7",
+        "reason": "Homo sapiens neocortex evolution detail, time-inconsistency behavioral-econ section, Bastiat quote elaboration, instant gratification SAT/obesity research — extended supporting science."
+      },
+      {
+        "source_id_range": "ch16§3¶3-7",
+        "reason": "Habits-of-avoidance savings-account leather-jacket example, Trip-to-Europe couple anecdote, identity-aligned-reward bubble-bath/massage list — repeated illustrations."
+      },
+      {
+        "source_id_range": "ch17§1¶6-9",
+        "reason": "Benjamin Franklin booklet, Jerry Seinfeld 'never break the chain' documentary, food-log weight-loss study, paperclip-distortion-of-self-view elaboration, habit-tracking three-benefits expanded analysis — second through fifth examples."
+      },
+      {
+        "source_id_range": "ch17§2¶3-5",
+        "reason": "50%-gain-vs-33%-loss math illustration, Charlie Munger 'compounding' quote, bad-workouts identity reaffirmation — repeated reinforcement of never-miss-twice."
+      },
+      {
+        "source_id_range": "ch17§3¶2-5",
+        "reason": "Restaurant-revenue measurement parable, work-long-hours / standardized-tests / 10,000-steps Goodhart examples, non-scale victory weight-loss tips — repeated illustrations."
+      },
+      {
+        "source_id_range": "ch18§1¶5-7",
+        "reason": "Plumber/restaurant/surgeon punishment examples, late-fee customers, attendance-grade students, recycling-fine examples — second through fourth illustrations of immediate cost."
+      },
+      {
+        "source_id_range": "ch18§2¶3-7",
+        "reason": "Bryan Harris detailed habit-contract weight-loss story, seat-belt-law statistics history, Margaret Cho song-a-day, Thomas Frank tweet-at-6am automation, comb-hair/brush-teeth self-presentation elaboration — second through fifth examples."
+      },
+      {
+        "source_id_range": "ch19§2¶3-7",
+        "reason": "Extended Big Five biology (newborn extroversion noise study, oxytocin/agreeableness, neuroticism/amygdala), Robert Plomin quote, conscientiousness/environment-design call-back — supporting science detail."
+      },
+      {
+        "source_id_range": "ch19§3¶3-8",
+        "reason": "Explore/exploit dating/college/business analogies, Google 80/20 AdWords/Gmail, five self-questions (fun-to-me-work-to-others, flow, returns, comes-naturally), Scott Adams Dilbert combination quote, biomechanics own-major personal anecdote, potato-vs-egg metaphor — second through seventh illustrations."
+      },
+      {
+        "source_id_range": "ch20§1¶5-7",
+        "reason": "Steve Martin career timeline detail (Disneyland, magic shop, 60-cities tours), Federer/Williams tennis-mismatch example, Yerkes-Dodson law footnote, 4-percent-beyond-current-ability flow-state quantification — extended supporting detail."
+      },
+      {
+        "source_id_range": "ch20§2¶5-9",
+        "reason": "Machiavelli novelty quote, video-games/porn/junk-food variable-reward examples, slot-machine dopamine spike, 50/50 success/failure sweet spot, Google/Uber/floss counter-examples, David Cain 'fair-weather meditator', personal sets/articles/relaxing list — second through seventh illustrations."
+      },
+      {
+        "source_id_range": "ch21§1¶3-6",
+        "reason": "Chess fluency / brushing-teeth / morning-tea examples, basketball-dribble/surgeon-incision-mastery analogies, mastering-one-habit-then-the-next figure description — repeated illustrations of habits+practice."
+      },
+      {
+        "source_id_range": "ch21§2¶5-10",
+        "reason": "Pat Riley CBE Magic-Johnson scoring formula worked out, Jackie MacMullan reporter quote, Riley's November-1985-vs-November-1986 comparison, Eliud Kipchoge notes, Katie Ledecky log, Chris Rock notepad, executives' decision journal, Integrity Report three questions extended — second through seventh examples."
+      },
+      {
+        "source_id_range": "ch21§3¶3-7",
+        "reason": "Schoolteacher/manager/surgeon/band brittle-identity vignettes, vegan health-crisis example, military veteran / former entrepreneur identity-loss list, Tao Te Ching 'soft and supple' poem block — second through sixth illustrations."
+      },
+      {
+        "source_id_range": "ch22§1¶4-5",
+        "reason": "Sorites Paradox coin-pile extended setup and full it's-remarkable-what-you-can-build refrain (business/body/knowledge/fortune/friendships) — repeated rhetoric already anchored."
+      }
+    ]
+  },
+  "editor_design_hints": {
+    "structural_recommendation": "linear",
+    "concept_chapters": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      9,
+      13,
+      14,
+      16,
+      19,
+      20,
+      21,
+      22
+    ]
+  }
+}

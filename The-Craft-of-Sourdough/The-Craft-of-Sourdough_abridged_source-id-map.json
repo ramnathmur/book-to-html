@@ -1,0 +1,105 @@
+{
+  "schema_version": "book-to-html-source-id-map/1.0",
+  "build_id": "20260602-001-the-craft-of-sourdough",
+  "source_md_path": "C:\\Users\\ramna\\AppData\\Local\\Temp\\book-to-html\\The-Craft-of-Sourdough\\The-Craft-of-Sourdough_abridged.md",
+  "anchors": [
+    {
+      "unit_id": "u_0002",
+      "verbatim_quote": "A sourdough starter is a small jar of flour and water that has been colonized by wild yeasts and lactic-acid bacteria. The yeasts produce carbon dioxide, which leavens the bread. The bacteria produce lactic and acetic acid, which give sourdough its characteristic tang and extend the loaf's shelf life.",
+      "source_ids": [
+        "ch1§1¶1"
+      ]
+    },
+    {
+      "unit_id": "u_0003",
+      "verbatim_quote": "You build a starter from scratch in about a week. Mix fifty grams of whole-wheat flour with fifty grams of room-temperature water in a clean glass jar. Cover loosely and leave on the counter. After twenty-four hours, discard half the mixture and feed the remainder another fifty grams of flour and fifty grams of water. Repeat once a day. By day five or six the mixture should double in volume within four to six hours of feeding. That is the signal that the culture is mature.",
+      "source_ids": [
+        "ch1§1¶2"
+      ]
+    },
+    {
+      "unit_id": "u_0004",
+      "verbatim_quote": "The single most common mistake is feeding the starter too rarely. A neglected starter does not die; it goes dormant and turns acidic. The acid eventually inhibits the yeast, and the dormant culture will not leaven bread. Feed twice daily once the starter is mature, or refrigerate between feedings if twice-daily feeding is impractical.",
+      "source_ids": [
+        "ch1§1¶3"
+      ]
+    },
+    {
+      "unit_id": "u_0005",
+      "verbatim_quote": "A mature starter has a faintly sweet, faintly sour smell, somewhere between yogurt and ripe fruit. A starter that smells like nail polish remover has been overfermented and needs several feedings to recover. A starter that smells putrid should be discarded and rebuilt.",
+      "source_ids": [
+        "ch1§1¶4"
+      ]
+    },
+    {
+      "unit_id": "u_0007",
+      "verbatim_quote": "Sourdough bread is built on four ingredients: flour, water, salt, and starter. The classic ratio for a single loaf is five hundred grams of bread flour, three hundred and seventy-five grams of water, ten grams of salt, and one hundred grams of mature starter. That is a seventy-five percent hydration dough, which is forgiving for first-time bakers but slack enough to develop an open crumb.",
+      "source_ids": [
+        "ch2§1¶1"
+      ]
+    },
+    {
+      "unit_id": "u_0008",
+      "verbatim_quote": "Mix the flour and water first and let them rest for thirty minutes before adding starter and salt. This rest, called the autolyse, lets the flour fully hydrate and begins gluten development before the fermentation clock starts. Bakers who skip the autolyse get tighter, drier loaves.",
+      "source_ids": [
+        "ch2§1¶2"
+      ]
+    },
+    {
+      "unit_id": "u_0009",
+      "verbatim_quote": "After the autolyse, add the starter and salt. Pinch the salt through the dough with wet fingers until it is fully incorporated. The dough will feel shaggy and rough at this stage; this is normal. Cover the bowl and let it ferment at room temperature for four to six hours, performing a set of folds every forty-five minutes for the first three hours.",
+      "source_ids": [
+        "ch2§1¶3"
+      ]
+    },
+    {
+      "unit_id": "u_0010",
+      "verbatim_quote": "A fold is not a knead. To fold, wet one hand, reach under the dough, lift a corner, and stretch it up and over the rest of the mass. Rotate the bowl ninety degrees and repeat. Four pulls is one set of folds. Folding builds gluten structure without degassing the dough; kneading degasses it and undoes the work of fermentation.",
+      "source_ids": [
+        "ch2§1¶4"
+      ]
+    },
+    {
+      "unit_id": "u_0011",
+      "verbatim_quote": "The dough is ready to shape when it has risen by roughly fifty percent in volume, feels alive and slightly jiggly, and shows a few large bubbles on the surface. Underfermented dough is dense and stubborn; overfermented dough is slack, sticky, and tears when shaped. Most home bakers underferment because they are afraid of overfermenting.",
+      "source_ids": [
+        "ch2§1¶5"
+      ]
+    },
+    {
+      "unit_id": "u_0013",
+      "verbatim_quote": "Shape the dough on a lightly floured counter into a tight round. The goal of shaping is to build surface tension on the outside of the loaf so it holds its form during the final rise and the bake. A loaf that spreads sideways in the oven was shaped too loosely.",
+      "source_ids": [
+        "ch3§1¶1"
+      ]
+    },
+    {
+      "unit_id": "u_0014",
+      "verbatim_quote": "Place the shaped loaf seam-side-up in a flour-dusted banneton or a kitchen bowl lined with a floured tea towel. Cover and refrigerate overnight, between eight and sixteen hours. This cold retard slows fermentation, deepens flavor through extended lactic-acid production, and firms the dough enough to score cleanly.",
+      "source_ids": [
+        "ch3§1¶2"
+      ]
+    },
+    {
+      "unit_id": "u_0015",
+      "verbatim_quote": "The next morning, heat a Dutch oven inside the oven at two hundred and fifty degrees Celsius for at least forty-five minutes. The Dutch oven must be screaming hot for the bake to work. A cold or lukewarm Dutch oven produces a pale crust and a tight crumb.",
+      "source_ids": [
+        "ch3§1¶3"
+      ]
+    },
+    {
+      "unit_id": "u_0016",
+      "verbatim_quote": "Turn the cold loaf out onto a square of parchment paper. Score the top with a single deep slash from one edge to the other, holding the blade at a shallow angle so the cut creates an ear of crust during the bake. Lower the loaf into the hot Dutch oven by the parchment paper. Replace the lid and bake for twenty minutes, then remove the lid and bake another twenty to twenty-five minutes uncovered, until the crust is deep mahogany brown.",
+      "source_ids": [
+        "ch3§1¶4"
+      ]
+    },
+    {
+      "unit_id": "u_0017",
+      "verbatim_quote": "Let the loaf cool on a wire rack for at least one hour before cutting. Cutting a hot sourdough loaf releases the steam still trapped in the crumb and produces a gummy texture; the bread is not finished baking until it has finished cooling. Patience at this stage is the difference between a good loaf and a memorable one.",
+      "source_ids": [
+        "ch3§1¶5"
+      ]
+    }
+  ]
+}

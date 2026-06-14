@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6F2EA;
+    --surface: #FBF8F2;
+    --ink: #1A1814;
+    --ink-secondary: #6B6660;
+    --accent-ember: #C2410C;
+    --accent-moss: #3F6B4A;
+    --accent-indigo: #3B4C7A;
+    --max-width: 1280px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-variant-numeric: tabular-nums;
+  }
+  a { color: inherit; }
+
+  /* Skip link */
+  .skip-link {
+    position: absolute; left: -9999px; top: 12px;
+    background: var(--ink); color: var(--surface);
+    padding: 8px 16px; text-decoration: none; z-index: 100; border-radius: 4px;
+  }
+  .skip-link:focus { left: 16px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; height: 72px;
+    background: var(--surface); z-index: 50;
+    border-bottom: 1px solid transparent;
+    transition: border-color 200ms ease-out;
+  }
+  header.scrolled { border-bottom-color: rgba(26,24,20,0.08); }
+  .header-inner {
+    max-width: var(--max-width); margin: 0 auto; height: 100%;
+    padding: 0 32px; display: flex; align-items: center; gap: 32px;
+  }
+  .wordmark {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: 22px; letter-spacing: -0.01em; text-decoration: none;
+  }
+  .book-count { flex: 1; color: var(--ink-secondary); font-size: 14px; }
+  .search-input {
+    width: 240px; padding: 10px 14px;
+    background: var(--bg); border: 1px solid rgba(26,24,20,0.10);
+    border-radius: 8px; font-family: inherit; font-size: 14px; color: var(--ink);
+  }
+  .search-input::placeholder { color: var(--ink-secondary); }
+  .search-input:focus { outline: 2px solid var(--accent-ember); outline-offset: 2px; border-color: transparent; }
+
+  /* Hero */
+  .hero { background: var(--surface); min-height: 480px; display: flex; align-items: center; padding: 64px 0; }
+  .hero-inner {
+    max-width: var(--max-width); margin: 0 auto; padding: 0 32px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; width: 100%;
+  }
+  .hero-tagline {
+    font-family: 'Fraunces', serif; font-weight: 500;
+    font-size: 48px; line-height: 1.08; letter-spacing: -0.02em; text-wrap: balance;
+  }
+  .featured { position: relative; display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: start; }
+  .featured .cover { width: 200px; height: 240px; }
+  .featured-meta { padding-top: 4px; }
+  .featured-eyebrow {
+    font-size: 11px; font-weight: 500; text-transform: uppercase;
+    letter-spacing: 0.10em; color: var(--accent-ember); margin-bottom: 12px;
+  }
+  .featured-title {
+    font-family: 'Fraunces', serif; font-weight: 600; font-size: 28px;
+    line-height: 1.15; margin-bottom: 6px; text-wrap: balance;
+  }
+  .featured-author { color: var(--ink-secondary); font-size: 15px; margin-bottom: 16px; }
+  .featured-blurb { font-size: 15px; line-height: 1.55; margin-bottom: 18px; }
+  .featured-pop { margin-bottom: 20px; }
+  .cta {
+    display: inline-block; font-weight: 500; font-size: 14px; text-decoration: none;
+    color: var(--ink); padding-bottom: 2px; border-bottom: 1px solid transparent;
+    transition: border-color 200ms ease-out;
+  }
+  .cta:hover, .cta:focus-visible { border-color: var(--ink); outline: none; }
+  .reroll {
+    position: absolute; bottom: -8px; right: 0;
+    background: none; border: none; color: var(--ink-secondary);
+    font-family: inherit; font-size: 13px; cursor: pointer; padding: 4px 8px;
+    transition: color 200ms ease-out, transform 240ms ease-out;
+  }
+  .reroll:hover { color: var(--ink); }
+  .reroll:focus-visible { outline: 2px solid var(--accent-ember); outline-offset: 2px; border-radius: 4px; }
+
+  /* Carousel */
+  .carousel-section { padding: 80px 0 64px; position: relative; }
+  .carousel-wrap { position: relative; }
+  .carousel-track {
+    display: flex; gap: 32px; padding: 4px 80px 32px 80px;
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel-track::-webkit-scrollbar { display: none; }
+
+  .card {
+    flex: 0 0 320px; height: 560px;
+    background: var(--surface); border: 1px solid rgba(26,24,20,0.06);
+    border-radius: 12px; padding: 20px;
+    scroll-snap-align: start;
+    display: flex; flex-direction: column;
+    text-decoration: none; color: var(--ink);
+    transition: transform 180ms ease-out, box-shadow 180ms ease-out, border-color 180ms ease-out;
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(26,24,20,0.08); }
+  .card:focus-visible { outline: 2px solid var(--accent-ember); outline-offset: 2px; }
+
+  .cover {
+    width: 100%; height: 320px; border-radius: 6px;
+    border: 1px solid rgba(26,24,20,0.08);
+    padding: 24px; position: relative; overflow: hidden;
+    display: flex; align-items: flex-start;
+  }
+  .cover-title {
+    font-family: 'Fraunces', serif; font-weight: 500;
+    font-size: 28px; line-height: 1.15;
+    color: var(--ink); text-wrap: balance;
+    max-height: calc(1.15em * 4); overflow: hidden; word-break: break-word;
+  }
+  .featured .cover-title { font-size: 24px; }
+  .cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+  .card-title {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: 22px; line-height: 1.2; margin-top: 16px;
+    text-wrap: balance; display: -webkit-box;
+    -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .card-author { color: var(--ink-secondary); font-size: 14px; margin-top: 4px; }
+  .card-blurb {
+    font-size: 15px; line-height: 1.55; margin-top: 16px; flex: 1;
+    overflow: hidden;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    -webkit-mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
+  }
+  .card-pop { margin-top: 16px; }
+  .card-cta { margin-top: 12px; font-size: 14px; font-weight: 500; }
+
+  /* Popularity pills */
+  .pill {
+    display: inline-block; padding: 5px 10px; border-radius: 4px;
+    font-size: 12px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    background: rgba(26,24,20,0.08); color: var(--ink);
+  }
+  .pill-hot { background: var(--accent-ember); color: var(--surface); }
+  .pill-grhigh { background: rgba(194,65,12,0.12); color: var(--ink); }
+  .pill-grhigh .star, .pill-hot .star { color: inherit; }
+  .untracked {
+    font-size: 11px; font-weight: 500; text-transform: uppercase;
+    letter-spacing: 0.06em; color: rgba(26,24,20,0.32);
+  }
+
+  /* Arrows */
+  .arrow {
+    position: absolute; top: calc(50% - 16px); transform: translateY(-50%);
+    width: 48px; height: 48px; border-radius: 50%;
+    border: 1px solid rgba(26,24,20,0.12); background: var(--surface);
+    color: var(--ink); cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; line-height: 1;
+    transition: opacity 160ms ease-out, background 160ms ease-out;
+    z-index: 5;
+  }
+  .arrow:hover { background: var(--bg); }
+  .arrow:focus-visible { outline: 2px solid var(--accent-ember); outline-offset: 2px; }
+  .arrow.prev { left: 16px; }
+  .arrow.next { right: 16px; }
+  .arrow[aria-disabled="true"] { opacity: 0.3; cursor: not-allowed; pointer-events: none; }
+
+  /* Dots */
+  .dots { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
+  .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--ink); opacity: 0.25; border: none; padding: 0;
+    cursor: pointer; transition: all 200ms ease-out;
+  }
+  .dot.active { width: 24px; border-radius: 3px; opacity: 1; }
+
+  /* Recently added */
+  .recent {
+    max-width: var(--max-width); margin: 0 auto;
+    padding: 32px; border-top: 1px solid rgba(26,24,20,0.08);
+  }
+  .recent h2 {
+    font-family: 'Inter', sans-serif; font-weight: 500; font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-secondary); margin-bottom: 20px;
+  }
+  .recent-row {
+    display: grid; grid-template-columns: 48px 1fr auto;
+    gap: 24px; align-items: center; padding: 12px 8px;
+    text-decoration: none; color: var(--ink);
+    border-bottom: 1px solid rgba(26,24,20,0.04);
+    transition: background 160ms ease-out;
+  }
+  .recent-row:hover { background: var(--surface); }
+  .recent-thumb {
+    width: 48px; height: 72px; border-radius: 3px;
+    padding: 6px; overflow: hidden;
+    font-family: 'Fraunces', serif; font-size: 9px; line-height: 1.1;
+    border: 1px solid rgba(26,24,20,0.08);
+    display: flex; align-items: flex-start;
+  }
+  .recent-title { font-size: 15px; }
+  .recent-date { font-size: 13px; color: var(--ink-secondary); }
+
+  /* Footer */
+  footer {
+    max-width: var(--max-width); margin: 0 auto;
+    padding: 32px; height: 96px;
+    display: flex; align-items: center; gap: 24px;
+    border-top: 1px solid rgba(26,24,20,0.08);
+    font-size: 13px; color: var(--ink-secondary);
+  }
+  footer .wordmark { font-size: 16px; color: var(--ink); }
+  footer .spacer { flex: 1; }
+  footer a { text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 200ms ease-out; }
+  footer a:hover { border-color: var(--ink-secondary); }
+
+  .empty-state {
+    padding: 40px 80px; color: var(--ink-secondary); font-size: 15px;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+    .hero-tagline { font-size: 36px; }
+  }
+  @media (max-width: 768px) {
+    .header-inner { padding: 0 20px; gap: 16px; }
+    .search-input { width: 160px; }
+    .hero-inner { padding: 0 20px; }
+    .featured { grid-template-columns: 140px 1fr; gap: 20px; }
+    .featured .cover { width: 140px; height: 168px; padding: 16px; }
+    .featured .cover-title { font-size: 18px; }
+    .card { flex: 0 0 280px; height: 540px; }
+    .carousel-track { padding: 4px 20px 32px 20px; gap: 20px; }
+    .arrow { display: none; }
+    .recent, footer { padding-left: 20px; padding-right: 20px; }
+  }
+  @media (max-width: 375px) {
+    .card { flex: 0 0 88vw; }
+    .hero-tagline { font-size: 28px; }
+    .book-count { display: none; }
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html, .carousel-track { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+    .card:hover { transform: none; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#carousel">Skip to library</a>
+
+<header id="siteHeader">
+  <div class="header-inner">
+    <a href="#" class="wordmark">Library</a>
+    <span class="book-count" id="bookCount"></span>
+    <input type="search" class="search-input" placeholder="Search title or author…" id="searchInput" aria-label="Search library">
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tagline">Self-help, slowly.<br>A private shelf of long-reads.</div>
+    <div class="featured" id="featured"></div>
+  </div>
+</section>
+
+<section class="carousel-section" id="carousel" aria-label="Library carousel">
+  <div class="carousel-wrap">
+    <button class="arrow prev" id="prevBtn" aria-label="Previous">&lsaquo;</button>
+    <div class="carousel-track" id="track" role="region" aria-roledescription="carousel" aria-label="Books" tabindex="0"></div>
+    <button class="arrow next" id="nextBtn" aria-label="Next">&rsaquo;</button>
+  </div>
+  <div class="dots" id="dots" aria-hidden="true"></div>
+</section>
+
+<section class="recent" id="recentSection" hidden>
+  <h2>Recently added</h2>
+  <div id="recentList"></div>
+</section>
+
+<footer>
+  <span class="wordmark">Library</span>
+  <span>Updated <span id="updatedDate"></span></span>
+  <span class="spacer"></span>
+  <a href="#" id="aboutLink" title="A private shelf of self-help long-reads, rendered as HTML for slow careful reading.">About this library</a>
+</footer>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════════════
+// BOOKS — single source of truth. Add new entries to this array.
+// See BOOK-INDEX.md (in this folder) for schema + how to invoke Claude to
+// auto-append new books with researched popularity data.
+// ═══════════════════════════════════════════════════════════════════════════
+const BOOKS = [
+  {
+    id: "48-laws-of-power",
+    title: "The 48 Laws of Power",
+    author: "Robert Greene",
+    reader_path: "48-Laws-Of-Power_Reader_v1.html",
+    blurb: "A study of influence, manipulation, and the social mechanics of power, drawn from three thousand years of history. Aphoristic, ruthless, and useful in fragments.",
+    cover_image: null,
+    popularity: {
+      nyt: { rank: 2, weeks_on_list: 312 },
+      goodreads: { rating: 4.0, ratings_count: 142000 }
+    },
+    date_added: "2026-05-24"
+  },
+  {
+    id: "boat-go-faster",
+    title: "Will It Make the Boat Go Faster?",
+    author: "Ben Hunt-Davis & Harriet Beveridge",
+    reader_path: "Will-It-Make-The-Boat-Go-Faster_Reader_v1.html",
+    blurb: "An Olympic rower's framework for ruthless prioritization. Every decision is filtered through one question: does it make the boat go faster? Short, practical, and free of management jargon.",
+    cover_image: null,
+    popularity: {
+      goodreads: { rating: 4.2, ratings_count: 1900 },
+      editor_note: "Cult favorite"
+    },
+    date_added: "2026-05-22"
+  }
+];
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Helpers
+// ═══════════════════════════════════════════════════════════════════════════
+const ACCENT_TOKENS = ['--accent-moss', '--accent-indigo'];
+const ROOT_STYLES = getComputedStyle(document.documentElement);
+function accentHex(id) {
+  let h = 0;
+  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) | 0;
+  const token = ACCENT_TOKENS[Math.abs(h) % ACCENT_TOKENS.length];
+  return ROOT_STYLES.getPropertyValue(token).trim();
+}
+function tintBg(id) {
+  const c = accentHex(id);
+  // Use color-mix for warm tint at 14% — fallback handled by browser
+  return `background: color-mix(in srgb, ${c} 14%, var(--surface));`;
+}
+function abbrev(n) {
+  if (n < 1000) return String(n);
+  if (n < 1_000_000) return (n / 1000).toFixed(n < 10000 ? 1 : 0).replace(/\.0$/, '') + 'K';
+  return (n / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
+}
+function formatDate(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function popularityHTML(pop) {
+  if (!pop || Object.keys(pop).length === 0) return '<div class="untracked">Untracked</div>';
+  if (pop.nyt) {
+    const hot = pop.nyt.rank <= 10;
+    return `<span class="pill ${hot ? 'pill-hot' : ''}">NYT #${pop.nyt.rank} · ${pop.nyt.weeks_on_list} wks</span>`;
+  }
+  if (pop.goodreads) {
+    const cls = pop.goodreads.rating >= 4.3 ? 'pill-grhigh' : '';
+    return `<span class="pill ${cls}"><span class="star">★</span> ${pop.goodreads.rating.toFixed(1)} · ${abbrev(pop.goodreads.ratings_count)} ratings</span>`;
+  }
+  if (pop.editor_note) {
+    return `<span class="pill">Editor's pick · ${escapeHtml(pop.editor_note)}</span>`;
+  }
+  return '<div class="untracked">Untracked</div>';
+}
+function coverHTML(book) {
+  const img = book.cover_image
+    ? `<img src="${escapeHtml(book.cover_image)}" alt="" onerror="this.remove()">`
+    : '';
+  return `<div class="cover" style="${tintBg(book.id)}"><span class="cover-title">${escapeHtml(book.title)}</span>${img}</div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Carousel
+// ═══════════════════════════════════════════════════════════════════════════
+const track = document.getElementById('track');
+const dots = document.getElementById('dots');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let visibleBooks = [...BOOKS];
+
+function renderCarousel(books) {
+  if (books.length === 0) {
+    track.innerHTML = `<div class="empty-state">Nothing matches your search.</div>`;
+    dots.innerHTML = '';
+    updateArrowState();
+    return;
+  }
+  track.innerHTML = books.map(b => `
+    <a class="card" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener" data-id="${escapeHtml(b.id)}">
+      ${coverHTML(b)}
+      <div class="card-title">${escapeHtml(b.title)}</div>
+      <div class="card-author">by ${escapeHtml(b.author)}</div>
+      <div class="card-blurb">${escapeHtml(b.blurb)}</div>
+      <div class="card-pop">${popularityHTML(b.popularity)}</div>
+      <div class="card-cta">Read →</div>
+    </a>
+  `).join('');
+  renderDots(books.length);
+  updateArrowState();
+}
+
+function renderDots(n) {
+  if (n <= 1) { dots.innerHTML = ''; return; }
+  // Above 20 books, switch to a scrubber. With <=20 use dots.
+  if (n > 20) {
+    dots.innerHTML = '<div style="width:240px;height:2px;background:rgba(26,24,20,0.12);position:relative;"><div id="scrub" style="position:absolute;left:0;top:-2px;width:48px;height:6px;background:var(--ink);border-radius:3px;transition:left 200ms ease-out;"></div></div>';
+    return;
+  }
+  let html = '';
+  for (let i = 0; i < n; i++) {
+    html += `<button class="dot${i === 0 ? ' active' : ''}" data-idx="${i}" aria-label="Go to book ${i + 1}"></button>`;
+  }
+  dots.innerHTML = html;
+  dots.querySelectorAll('.dot').forEach(d => {
+    d.addEventListener('click', () => {
+      const idx = parseInt(d.dataset.idx, 10);
+      scrollToCard(idx);
+    });
+  });
+}
+
+function cardWidth() {
+  const first = track.querySelector('.card');
+  if (!first) return 320;
+  const next = first.nextElementSibling;
+  if (next) return next.getBoundingClientRect().left - first.getBoundingClientRect().left;
+  return first.offsetWidth + 32;
+}
+
+function scrollToCard(idx) {
+  const padLeft = parseFloat(getComputedStyle(track).paddingLeft) || 0;
+  track.scrollTo({ left: idx * cardWidth(), behavior: 'smooth' });
+}
+
+function activeIndex() {
+  return Math.round(track.scrollLeft / cardWidth());
+}
+
+function updateArrowState() {
+  const maxScroll = track.scrollWidth - track.clientWidth;
+  const atStart = track.scrollLeft <= 1;
+  const atEnd = track.scrollLeft >= maxScroll - 1;
+  const noScroll = maxScroll <= 1;
+  prevBtn.setAttribute('aria-disabled', (atStart || noScroll) ? 'true' : 'false');
+  nextBtn.setAttribute('aria-disabled', (atEnd || noScroll) ? 'true' : 'false');
+  // Update dots
+  const idx = activeIndex();
+  dots.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+  const scrub = document.getElementById('scrub');
+  if (scrub && maxScroll > 0) {
+    const pct = track.scrollLeft / maxScroll;
+    scrub.style.left = `${pct * (240 - 48)}px`;
+  }
+}
+
+track.addEventListener('scroll', () => requestAnimationFrame(updateArrowState));
+prevBtn.addEventListener('click', () => scrollToCard(Math.max(0, activeIndex() - 1)));
+nextBtn.addEventListener('click', () => scrollToCard(activeIndex() + 1));
+
+track.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') { e.preventDefault(); scrollToCard(activeIndex() + 1); }
+  if (e.key === 'ArrowLeft')  { e.preventDefault(); scrollToCard(Math.max(0, activeIndex() - 1)); }
+  if (e.key === 'Home')       { e.preventDefault(); scrollToCard(0); }
+  if (e.key === 'End')        { e.preventDefault(); scrollToCard(visibleBooks.length - 1); }
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Featured (hero)
+// ═══════════════════════════════════════════════════════════════════════════
+let featuredIdx = Math.floor(Math.random() * BOOKS.length);
+function renderFeatured() {
+  const b = BOOKS[featuredIdx];
+  const el = document.getElementById('featured');
+  if (!b) {
+    el.innerHTML = `<div style="color:var(--ink-secondary)">Empty shelf. Add a book.</div>`;
+    return;
+  }
+  el.innerHTML = `
+    ${coverHTML(b)}
+    <div class="featured-meta">
+      <div class="featured-eyebrow">Featured</div>
+      <div class="featured-title">${escapeHtml(b.title)}</div>
+      <div class="featured-author">by ${escapeHtml(b.author)}</div>
+      <div class="featured-blurb">${escapeHtml(b.blurb)}</div>
+      <div class="featured-pop">${popularityHTML(b.popularity)}</div>
+      <a class="cta" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener">Read →</a>
+    </div>
+    ${BOOKS.length > 1 ? `<button class="reroll" id="rerollBtn" aria-label="Show another featured book">↻ next</button>` : ''}
+  `;
+  const reroll = document.getElementById('rerollBtn');
+  if (reroll) {
+    reroll.addEventListener('click', () => {
+      let n;
+      do { n = Math.floor(Math.random() * BOOKS.length); } while (n === featuredIdx);
+      featuredIdx = n;
+      renderFeatured();
+    });
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Recently added (only shown when 4+ books)
+// ═══════════════════════════════════════════════════════════════════════════
+function renderRecent() {
+  if (BOOKS.length < 4) return;
+  const sorted = [...BOOKS].sort((a, b) => b.date_added.localeCompare(a.date_added)).slice(0, 3);
+  const list = document.getElementById('recentList');
+  list.innerHTML = sorted.map(b => `
+    <a class="recent-row" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener">
+      <div class="recent-thumb" style="${tintBg(b.id)}">${escapeHtml(b.title)}</div>
+      <div class="recent-title">${escapeHtml(b.title)}</div>
+      <div class="recent-date">Added ${formatDate(b.date_added)}</div>
+    </a>
+  `).join('');
+  document.getElementById('recentSection').hidden = false;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Search
+// ═══════════════════════════════════════════════════════════════════════════
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.trim().toLowerCase();
+  visibleBooks = q
+    ? BOOKS.filter(b => b.title.toLowerCase().includes(q) || b.author.toLowerCase().includes(q))
+    : [...BOOKS];
+  renderCarousel(visibleBooks);
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Sticky header hairline
+// ═══════════════════════════════════════════════════════════════════════════
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 24);
+}, { passive: true });
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Footer + count + boot
+// ═══════════════════════════════════════════════════════════════════════════
+function boot() {
+  document.getElementById('bookCount').textContent =
+    `${BOOKS.length} ${BOOKS.length === 1 ? 'book' : 'books'}`;
+  const latest = BOOKS.map(b => b.date_added).sort().pop();
+  document.getElementById('updatedDate').textContent = latest ? formatDate(latest) : '—';
+  renderFeatured();
+  renderCarousel(visibleBooks);
+  renderRecent();
+  // Arrow disabled state on resize
+  window.addEventListener('resize', () => requestAnimationFrame(updateArrowState));
+}
+boot();
+</script>
+</body>
+</html>

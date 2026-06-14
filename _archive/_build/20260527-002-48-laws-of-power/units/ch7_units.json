@@ -1,0 +1,57 @@
+{
+  "chapter_title": "LAW 7: GET OTHERS TO DO THE WORK FOR YOU, BUT ALWAYS TAKE THE CREDIT",
+  "law_no": 7,
+  "units": [
+    {
+      "unit_id": "u_07_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§20¶2\"><p>Use the wisdom, knowledge, and legwork of other people to further your own cause. Not only will such assistance save you valuable time and energy, it will give you a godlike aura of efficiency and speed. In the end your helpers will be forgotten and you will be remembered. Never do yourself what others can do for you.</p></blockquote>",
+      "source_ids": ["ch7§20¶2"],
+      "verbatim_quote": "Use the wisdom, knowledge, and legwork of other people to further your own cause. Not only will such assistance save you valuable time and energy, it will give you a godlike aura of efficiency and speed. In the end your helpers will be forgotten and you will be remembered. Never do yourself what others can do for you.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_07_0002",
+      "kind": "bridge",
+      "html": "<p>Nikola Tesla's relationship with Thomas Edison is the defining cautionary tale of brilliant labor harvested without credit.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_07_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§20¶7\"><p>When Tesla met Edison in New York, the famous inventor hired him on the spot. Tesla worked eighteen-hour days, finding ways to improve the primitive Edison dynamos. Finally he offered to redesign them completely. To Edison this seemed a monumental task that could last years without paying off, but he told Tesla, \"There's fifty thousand dollars in it for you— if you can do it.\" Tesla labored day and night on the project and after only a year he produced a greatly improved version of the dynamo, complete with automatic controls. He went to Edison to break the good news and receive his $50,000. Edison was pleased with the improvement, for which he and his company would take credit, but when it came to the issue of the money he told the young Serb, \"Tesla, you don't understand our American humor!\", and offered a small raise instead.</p></blockquote>",
+      "source_ids": ["ch7§20¶7"],
+      "verbatim_quote": "When Tesla met Edison in New York, the famous inventor hired him on the spot. Tesla worked eighteen-hour days, finding ways to improve the primitive Edison dynamos. Finally he offered to redesign them completely. To Edison this seemed a monumental task that could last years without paying off, but he told Tesla, \"There's fifty thousand dollars in it for you— if you can do it.\" Tesla labored day and night on the project and after only a year he produced a greatly improved version of the dynamo, complete with automatic controls. He went to Edison to break the good news and receive his $50,000. Edison was pleased with the improvement, for which he and his company would take credit, but when it came to the issue of the money he told the young Serb, \"Tesla, you don't understand our American humor!\", and offered a small raise instead.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_07_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§20¶8\"><p>Tesla's obsession was to create an alternating-current system (AC) of electricity. Edison believed in the direct-current system (DC), and not only refused to support Tesla's research but later did all he could to sabotage him. Tesla turned to the great Pittsburgh magnate George Westinghouse, who had started his own electricity company. Westinghouse completely funded Tesla's research and offered him a generous royalty agreement on future profits. The AC system Tesla developed is still the standard today—but after patents were filed in his name, other scientists came forward to take credit for the invention, claiming that they had laid the groundwork for him. His name was lost in the shuffle, and the public came to associate the invention with Westinghouse himself.</p></blockquote>",
+      "source_ids": ["ch7§20¶8"],
+      "verbatim_quote": "Tesla's obsession was to create an alternating-current system (AC) of electricity. Edison believed in the direct-current system (DC), and not only refused to support Tesla's research but later did all he could to sabotage him. Tesla turned to the great Pittsburgh magnate George Westinghouse, who had started his own electricity company. Westinghouse completely funded Tesla's research and offered him a generous royalty agreement on future profits. The AC system Tesla developed is still the standard today—but after patents were filed in his name, other scientists came forward to take credit for the invention, claiming that they had laid the groundwork for him. His name was lost in the shuffle, and the public came to associate the invention with Westinghouse himself.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_07_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch7§20¶19\"><p>The world of power has the dynamics of the jungle: There are those who live by hunting and killing, and there are also vast numbers of creatures (hyenas, vultures) who live off the hunting of others. These latter, less imaginative types are often incapable of doing the work that is essential for the creation of power. They understand early on, though, that if they wait long enough, they can always find another animal to do the work for them. Do not be naive: At this very moment, while you are slaving away on some project, there are vultures circling above trying to figure out a way to survive and even thrive off your creativity. It is useless to complain about this, or to wear yourself ragged with bitterness, as Tesla did. Better to protect yourself and join the game. Once you have established a power base, become a vulture yourself, and save yourself a lot of time and energy.</p></blockquote>",
+      "source_ids": ["ch7§20¶19"],
+      "verbatim_quote": "The world of power has the dynamics of the jungle: There are those who live by hunting and killing, and there are also vast numbers of creatures (hyenas, vultures) who live off the hunting of others. These latter, less imaginative types are often incapable of doing the work that is essential for the creation of power. They understand early on, though, that if they wait long enough, they can always find another animal to do the work for them. Do not be naive: At this very moment, while you are slaving away on some project, there are vultures circling above trying to figure out a way to survive and even thrive off your creativity. It is useless to complain about this, or to wear yourself ragged with bitterness, as Tesla did. Better to protect yourself and join the game. Once you have established a power base, become a vulture yourself, and save yourself a lot of time and energy.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 7: GET OTHERS TO DO THE WORK FOR YOU, BUT ALWAYS TAKE THE CREDIT",
+    "chapter_source_words": 1400,
+    "chapter_output_words": 395,
+    "bridge_ratio": 0.04,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "empty in source"},
+      {"section": "keys_to_power ¶22-24", "reason": "Balboa/Pizarro and Rubens examples cut; Tesla story more compelling and word budget met"},
+      {"section": "reversal", "reason": "Kissinger nuance interesting but non-essential; dropped to stay within word target"}
+    ]
+  }
+}

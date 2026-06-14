@@ -1,0 +1,64 @@
+{
+  "chapter_title": "LAW 32: PLAY TO PEOPLE'S FANTASIES",
+  "law_no": 32,
+  "units": [
+    {
+      "unit_id": "u_32_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch32§48¶1\"><p>The truth is often avoided because it is ugly and unpleasant. Never appeal to truth and reality unless you are prepared for the anger that comes from disenchantment. Life is so harsh and distressing that people who can manufacture romance or conjure up fantasy are like oases in the desert: Everyone flocks to them. There is great power in tapping into the fantasies of the masses.</p></blockquote>",
+      "source_ids": ["ch32§48¶1"],
+      "verbatim_quote": "The truth is often avoided because it is ugly and unpleasant. Never appeal to truth and reality unless you are prepared for the anger that comes from disenchantment. Life is so harsh and distressing that people who can manufacture romance or conjure up fantasy are like oases in the desert: Everyone flocks to them. There is great power in tapping into the fantasies of the masses.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_32_0002",
+      "kind": "bridge",
+      "html": "<p>Sixteenth-century Venice — a city in decline desperately seeking its lost glory — provided the perfect audience for an alchemist's fiction.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_32_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch32§48¶7\"><p>In 1589 rumors began to swirl around Venice of the arrival not far away of a mysterious man called &quot;Il Bragadino,&quot; a master of alchemy, a man who had won incredible wealth through his ability, it was said, to multiply gold through the use of a secret substance. The rumor spread quickly because a few years earlier, a Venetian nobleman passing through Poland had heard a learned man prophesy that Venice would recover her past glory and power if she could find a man who understood the alchemic art of manufacturing gold. And so, as word reached Venice of the gold this Bragadino possessed—he clinked gold coins continuously in his hands, and golden objects filled his palace—some began to dream: Through him, their city would prosper again.</p></blockquote>",
+      "source_ids": ["ch32§48¶7"],
+      "verbatim_quote": "In 1589 rumors began to swirl around Venice of the arrival not far away of a mysterious man called \"Il Bragadino,\" a master of alchemy, a man who had won incredible wealth through his ability, it was said, to multiply gold through the use of a secret substance. The rumor spread quickly because a few years earlier, a Venetian nobleman passing through Poland had heard a learned man prophesy that Venice would recover her past glory and power if she could find a man who understood the alchemic art of manufacturing gold. And so, as word reached Venice of the gold this Bragadino possessed—he clinked gold coins continuously in his hands, and golden objects filled his palace—some began to dream: Through him, their city would prosper again.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_32_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch32§48¶20\"><p>Fantasy can never operate alone. It requires the backdrop of the humdrum and the mundane. It is the oppressiveness of reality that allows fantasy to take root and bloom. In sixteenth-century Venice, the reality was one of decline and loss of prestige. The corresponding fantasy described a sudden recovery of past glories through the miracle of alchemy. While the reality only got worse, the Venetians inhabited a happy dream world in which their city restored its fabulous wealth and power overnight, turning dust into gold.</p></blockquote>",
+      "source_ids": ["ch32§48¶20"],
+      "verbatim_quote": "Fantasy can never operate alone. It requires the backdrop of the humdrum and the mundane. It is the oppressiveness of reality that allows fantasy to take root and bloom. In sixteenth-century Venice, the reality was one of decline and loss of prestige. The corresponding fantasy described a sudden recovery of past glories through the miracle of alchemy. While the reality only got worse, the Venetians inhabited a happy dream world in which their city restored its fabulous wealth and power overnight, turning dust into gold.",
+      "retention_signal": "principle"
+    },
+    {
+      "unit_id": "u_32_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch32§48¶21\"><p>The person who can spin a fantasy out of an oppressive reality has access to untold power. As you search for the fantasy that will take hold of the masses, then, keep your eye on the banal truths that weigh heavily on us all. Never be distracted by people's glamorous portraits of themselves and their lives; search and dig for what really imprisons them. Once you find that, you have the magical key that will put great power in your hands.</p></blockquote>",
+      "source_ids": ["ch32§48¶21"],
+      "verbatim_quote": "The person who can spin a fantasy out of an oppressive reality has access to untold power. As you search for the fantasy that will take hold of the masses, then, keep your eye on the banal truths that weigh heavily on us all. Never be distracted by people's glamorous portraits of themselves and their lives; search and dig for what really imprisons them. Once you find that, you have the magical key that will put great power in your hands.",
+      "retention_signal": "principle"
+    },
+    {
+      "unit_id": "u_32_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch32§48¶43\"><p>If there is power in tapping into the fantasies of the masses, there is also danger. Fantasy usually contains an element of play—the public half realizes it is being duped, but it keeps the dream alive anyway, relishing the entertainment and the temporary diversion from the everyday that you are providing. So keep it light—never come too close to the place where you are actually expected to produce results. That place may prove extremely hazardous.</p></blockquote>",
+      "source_ids": ["ch32§48¶43"],
+      "verbatim_quote": "If there is power in tapping into the fantasies of the masses, there is also danger. Fantasy usually contains an element of play—the public half realizes it is being duped, but it keeps the dream alive anyway, relishing the entertainment and the temporary diversion from the everyday that you are providing. So keep it light—never come too close to the place where you are actually expected to produce results. That place may prove extremely hazardous.",
+      "retention_signal": "reversal"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 32: PLAY TO PEOPLE'S FANTASIES",
+    "chapter_source_words": 840,
+    "chapter_output_words": 410,
+    "bridge_ratio": 0.04,
+    "dropped_sections": [
+      {"section": "observance_partial", "reason": "Venice backstory paragraphs ch32§48¶5-6 condensed; Bragadino arrival scene (§48¶8-9) omitted to stay within word budget"},
+      {"section": "keys_to_power_partial", "reason": "Detailed Reality/Fantasy taxonomy (§48¶22-25) omitted; core fantasy-from-oppression principle captured in §48¶20-21"}
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "chapter_title": "LAW 18: DO NOT BUILD FORTRESSES TO PROTECT YOURSELF—ISOLATION IS DANGEROUS",
+  "law_no": 18,
+  "units": [
+    {
+      "unit_id": "u_18_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch18§31¶2\"><p>The world is dangerous and enemies are everywhere — everyone has to protect themselves. A fortress seems the safest. But isolation exposes you to more dangers than it Protects you from—it cuts you off from valuable information, it makes you conspicuous and an easy target. Better to circulate among people, find allies, mingle. You are shielded from your enemies by the crowd.</p></blockquote>",
+      "source_ids": ["ch18§31¶2"],
+      "verbatim_quote": "The world is dangerous and enemies are everywhere — everyone has to protect themselves. A fortress seems the safest. But isolation exposes you to more dangers than it Protects you from—it cuts you off from valuable information, it makes you conspicuous and an easy target. Better to circulate among people, find allies, mingle. You are shielded from your enemies by the crowd.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_18_0002",
+      "kind": "bridge",
+      "html": "<p>China's first emperor retreated behind absolute secrecy—and died alone, his death hidden from the empire.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_18_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch18§31¶3\"><p>Ch'in Shih Huang Ti, the first emperor of China (221-210 B.C.), was the mightiest man of his day. His empire was vaster and more powerful than that of Alexander the Great. He had conquered all of the kingdoms surrounding his own kingdom of Ch'in and unified them into one massive realm called China. But in the last years of his life, few, if anyone, saw him.</p></blockquote>",
+      "source_ids": ["ch18§31¶3"],
+      "verbatim_quote": "Ch'in Shih Huang Ti, the first emperor of China (221-210 B.C.), was the mightiest man of his day. His empire was vaster and more powerful than that of Alexander the Great. He had conquered all of the kingdoms surrounding his own kingdom of Ch'in and unified them into one massive realm called China. But in the last years of his life, few, if anyone, saw him.",
+      "retention_signal": "story_hook"
+    },
+    {
+      "unit_id": "u_18_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch18§31¶5\"><p>The first emperor had grown so terrified of human contact that when he had to leave the palace he traveled incognito, disguising himself carefully. On one such trip through the provinces, he suddenly died. His body was borne back to the capital in the emperor's carriage, with a cart packed with salted fish trailing behind it to cover up the smell of the rotting corpse—no one was to know of his death. He died alone, far from his wives, his family, his friends, and his courtiers, accompanied only by a minister and a handful of eunuchs.</p></blockquote>",
+      "source_ids": ["ch18§31¶5"],
+      "verbatim_quote": "The first emperor had grown so terrified of human contact that when he had to leave the palace he traveled incognito, disguising himself carefully. On one such trip through the provinces, he suddenly died. His body was borne back to the capital in the emperor's carriage, with a cart packed with salted fish trailing behind it to cover up the smell of the rotting corpse—no one was to know of his death. He died alone, far from his wives, his family, his friends, and his courtiers, accompanied only by a minister and a handful of eunuchs.",
+      "retention_signal": "story_payoff"
+    },
+    {
+      "unit_id": "u_18_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch18§31¶22\"><p>Because humans are social creatures by nature, power depends on social interaction and circulation. To make yourself powerful you must place yourself at the center of things, as Louis XIV did at Versailles. All activity should revolve around you, and you should be aware of everything happening on the street, and of anyone who might be hatching plots against you. The danger for most people comes when they feel threatened. In such times they tend to retreat and close ranks, to find security in a kind of fortress. In doing so, however, they come to rely for information on a smaller and smaller circle, and lose perspective on events around them. They lose maneuverability and become easy targets, and their isolation makes them paranoid. As in warfare and most games of strategy, isolation often precedes defeat and death.</p></blockquote>",
+      "source_ids": ["ch18§31¶22"],
+      "verbatim_quote": "Because humans are social creatures by nature, power depends on social interaction and circulation. To make yourself powerful you must place yourself at the center of things, as Louis XIV did at Versailles. All activity should revolve around you, and you should be aware of everything happening on the street, and of anyone who might be hatching plots against you. The danger for most people comes when they feel threatened. In such times they tend to retreat and close ranks, to find security in a kind of fortress. In doing so, however, they come to rely for information on a smaller and smaller circle, and lose perspective on events around them. They lose maneuverability and become easy targets, and their isolation makes them paranoid. As in warfare and most games of strategy, isolation often precedes defeat and death.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_18_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch18§31¶35\"><p>It is hardly ever right and propitious to choose isolation. Without keeping an ear on what is happening in the streets, you will be unable to protect yourself. About the only thing that constant human contact cannot facilitate is thought. The weight of society's pressure to conform, and the lack of distance from other people, can make it impossible to think clearly about what is going on around you. As a temporary recourse, then, isolation can help you to gain perspective. Many a serious thinker has been produced in prisons, where we have nothing to do but think. Machiavelli could write The Prince only once he found himself in exile and isolated on a farm far from the political intrigues of Florence.</p></blockquote>",
+      "source_ids": ["ch18§31¶35"],
+      "verbatim_quote": "It is hardly ever right and propitious to choose isolation. Without keeping an ear on what is happening in the streets, you will be unable to protect yourself. About the only thing that constant human contact cannot facilitate is thought. The weight of society's pressure to conform, and the lack of distance from other people, can make it impossible to think clearly about what is going on around you. As a temporary recourse, then, isolation can help you to gain perspective. Many a serious thinker has been produced in prisons, where we have nothing to do but think. Machiavelli could write The Prince only once he found himself in exile and isolated on a farm far from the political intrigues of Florence.",
+      "retention_signal": "reversal"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 18: DO NOT BUILD FORTRESSES TO PROTECT YOURSELF—ISOLATION IS DANGEROUS",
+    "chapter_source_words": 1900,
+    "chapter_output_words": 430,
+    "bridge_ratio": 0.04,
+    "dropped_sections": [
+      {"section": "transgression_partial", "reason": "Poe excerpt (ch18§31¶7) omitted—literary insertion, not core argument"},
+      {"section": "observance_partial", "reason": "Louis XIV lever ceremony detail omitted for length; principle captured in keys_to_power anchor"}
+    ]
+  }
+}

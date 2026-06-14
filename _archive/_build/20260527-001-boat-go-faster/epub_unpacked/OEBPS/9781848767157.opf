@@ -1,0 +1,149 @@
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" unique-identifier="p9781848767157" version="2.0">
+  <metadata>
+    <dc:title>Will It Make The Boat Go Faster?</dc:title>
+    <dc:date>2011</dc:date>
+    <dc:identifier id="p9781848767157">9781848767157</dc:identifier>
+    <dc:format>276 pages</dc:format>
+    <dc:type>Text</dc:type>
+    <dc:rights>All rights reserved</dc:rights>
+    <dc:publisher>Troubador Publishing Ltd</dc:publisher>
+    <dc:source>9781848767157</dc:source>
+    <dc:language>en</dc:language>
+    <dc:creator id="creator1">Harriet Beveridge</dc:creator>
+<meta content="cover-image" name="cover"/>
+  <description xmlns="http://purl.org/dc/elements/1.1/">&lt;p&gt;Ben Hunt-Davis won Olympic Gold at the Sydney Olympics in 2000 as part of the Men&amp;#x2019;s Rowing Eight. He and Executive Coach&amp;#8200;Harriet Beveridge have teamed up to show you how to use similar strategies to improve your own life. The pair have been road-testing these methods for 10 years, with clients from all walks of life; managers, leaders, call centre staff, sales reps, athletes and shop assistants; whatever your challenges, whatever your goals, there are ideas that will help everyone. Will It Make&amp;#8200;The Boat Go Faster? is divided into 11 chapters, each of which is split into 2 halves.&amp;#8200;Firstly, Ben provides a narrative, recounting an episode from the eight&amp;#x2019;s journey to Gold, and shows the team using the methods in action.&amp;#8200;Then comes the analysis, explaining why and how the crew did what they did. Simple and chatty, the book is a warts-and-all authentic account of a journey to success that will show you how you can succeed in whatever you want to...</description>
+</metadata>
+  <manifest>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="css/epub.css" id="css" media-type="text/css"/>
+    <item href="xhtml/00_Cover_Page.html" id="nav_00" media-type="application/xhtml+xml"/>
+    <item href="xhtml/01_Series_Page.html" id="nav_01" media-type="application/xhtml+xml"/>
+    <item href="xhtml/02_Title_Page.html" id="nav_02" media-type="application/xhtml+xml"/>
+    <item href="xhtml/03_Copyright_Page.html" id="nav_03" media-type="application/xhtml+xml"/>
+    <item href="xhtml/04_Dedication.html" id="nav_04" media-type="application/xhtml+xml"/>
+    <item href="xhtml/05_About_the_Author.html" id="nav_05" media-type="application/xhtml+xml"/>
+    <item href="xhtml/06_Introduction.html" id="nav_06" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Contents.html" id="nav_06a" media-type="application/xhtml+xml"/>
+    <item href="xhtml/07_CHAPTER_1__GOALS.html" id="nav_07" media-type="application/xhtml+xml"/>
+    <item href="xhtml/08_The_Morning_of_the_Men_s_Eight_R.html" id="nav_08" media-type="application/xhtml+xml"/>
+    <item href="xhtml/09_Goals__The_crazy__realistic_drea.html" id="nav_09" media-type="application/xhtml+xml"/>
+    <item href="xhtml/10_CHAPTER_2__MOTIVATION.html" id="nav_10" media-type="application/xhtml+xml"/>
+    <item href="xhtml/11_Christmas_Eve.html" id="nav_11" media-type="application/xhtml+xml"/>
+    <item href="xhtml/12_Motivation__Let_s_do_it_for_the.html" id="nav_12" media-type="application/xhtml+xml"/>
+    <item href="xhtml/13_CHAPTER_3__BELIEFS.html" id="nav_13" media-type="application/xhtml+xml"/>
+    <item href="xhtml/14_May_June_2000.html" id="nav_14" media-type="application/xhtml+xml"/>
+    <item href="xhtml/15_Beliefs__The_wheels_on_the_bus_g.html" id="nav_15" media-type="application/xhtml+xml"/>
+    <item href="xhtml/16_CHAPTER_4__BULLSHIT_FILTERS.html" id="nav_16" media-type="application/xhtml+xml"/>
+    <item href="xhtml/17_Vienna_Regatta.html" id="nav_17" media-type="application/xhtml+xml"/>
+    <item href="xhtml/18_Bullshit_filters__ignoring_unhel.html" id="nav_18" media-type="application/xhtml+xml"/>
+    <item href="xhtml/19_CHAPTER_5__MAKE_IT_HAPPEN.html" id="nav_19" media-type="application/xhtml+xml"/>
+    <item href="xhtml/20_Henley_Regatta.html" id="nav_20" media-type="application/xhtml+xml"/>
+    <item href="xhtml/21_Make_it_happen__Today_is_going_t.html" id="nav_21" media-type="application/xhtml+xml"/>
+    <item href="xhtml/22_CHAPTER_6__TEAMS.html" id="nav_22" media-type="application/xhtml+xml"/>
+    <item href="xhtml/23_Sarnen_Training_Camp.html" id="nav_23" media-type="application/xhtml+xml"/>
+    <item href="xhtml/24_Teams__Having_a_Shambles_Sheet.html" id="nav_24" media-type="application/xhtml+xml"/>
+    <item href="xhtml/25_CHAPTER_7__PROCESS_DRIVEN.html" id="nav_25" media-type="application/xhtml+xml"/>
+    <item href="xhtml/26_Lucerne_Regatta.html" id="nav_26" media-type="application/xhtml+xml"/>
+    <item href="xhtml/27_Process_driven__Rice_Krispies_or.html" id="nav_27" media-type="application/xhtml+xml"/>
+    <item href="xhtml/28_CHAPTER_8__MOMENTUM.html" id="nav_28" media-type="application/xhtml+xml"/>
+    <item href="xhtml/29_The_Gold_Coast.html" id="nav_29" media-type="application/xhtml+xml"/>
+    <item href="xhtml/30_Momentum__How_to_eat_an_elephant.html" id="nav_30" media-type="application/xhtml+xml"/>
+    <item href="xhtml/31_CHAPTER_9__CHANGE.html" id="nav_31" media-type="application/xhtml+xml"/>
+    <item href="xhtml/32_The_Olympic_Heat.html" id="nav_32" media-type="application/xhtml+xml"/>
+    <item href="xhtml/33_Change__Get_the_crocodiles_befor.html" id="nav_33" media-type="application/xhtml+xml"/>
+    <item href="xhtml/34_CHAPTER_10__BOUNCEBACKABILITY.html" id="nav_34" media-type="application/xhtml+xml"/>
+    <item href="xhtml/35_The_Rep.html" id="nav_35" media-type="application/xhtml+xml"/>
+    <item href="xhtml/36_Bouncebackability__when_Fate_vom.html" id="nav_36" media-type="application/xhtml+xml"/>
+    <item href="xhtml/37_CHAPTER_11__RISKS.html" id="nav_37" media-type="application/xhtml+xml"/>
+    <item href="xhtml/38_25_hours_to_the_Olympic_Final_of.html" id="nav_38" media-type="application/xhtml+xml"/>
+    <item href="xhtml/39_Risks__bars_of_soap_and_sandwich.html" id="nav_39" media-type="application/xhtml+xml"/>
+    <item href="xhtml/40_CHAPTER_12__THE_FINAL_CHAPTER.html" id="nav_40" media-type="application/xhtml+xml"/>
+    <item href="xhtml/41_The_Olympic_final.html" id="nav_41" media-type="application/xhtml+xml"/>
+    <item href="xhtml/42_The_Final_Chapter__Now_what.html" id="nav_42" media-type="application/xhtml+xml"/>
+    <item href="xhtml/43_The_Cast_List.html" id="nav_43" media-type="application/xhtml+xml"/>
+    <item href="xhtml/44_Chronology.html" id="nav_44" media-type="application/xhtml+xml"/>
+    <item href="xhtml/45_About_the_authors.html" id="nav_45" media-type="application/xhtml+xml"/>
+    <item href="xhtml/46_Acknowledgements.html" id="nav_46" media-type="application/xhtml+xml"/>
+    <item href="img/138_1.png" id="a138_1" media-type="image/png"/>
+    <item href="img/138_2.png" id="a138_2" media-type="image/png"/>
+    <item href="img/138_3.png" id="a138_3" media-type="image/png"/>
+    <item href="img/139_1.png" id="a139_1" media-type="image/png"/>
+    <item href="img/139_2.png" id="a139_2" media-type="image/png"/>
+    <item href="img/140_1.png" id="a140_1" media-type="image/png"/>
+    <item href="img/140_2.png" id="a140_2" media-type="image/png"/>
+    <item href="img/141_1.png" id="a141_1" media-type="image/png"/>
+    <item href="img/141_2.png" id="a141_2" media-type="image/png"/>
+    <item href="img/142_1.png" id="a142_1" media-type="image/png"/>
+    <item href="img/142_2.png" id="a142_2" media-type="image/png"/>
+    <item href="img/143_1.png" id="a143_1" media-type="image/png"/>
+    <item href="img/143_2.png" id="a143_2" media-type="image/png"/>
+    <item href="img/144_1.png" id="a144_1" media-type="image/png"/>
+    <item href="img/144_2.png" id="a144_2" media-type="image/png"/>
+    <item href="img/145_1.png" id="a145_1" media-type="image/png"/>
+    <item href="img/145_2.png" id="a145_2" media-type="image/png"/>
+    <item href="img/146_1.png" id="a146_1" media-type="image/png"/>
+    <item href="img/273_1.png" id="a273_1" media-type="image/png"/>
+    <item href="img/274_1.png" id="a274_1" media-type="image/png"/>
+    <item href="img/5_1.png" id="a5_1" media-type="image/png"/>
+    <item href="img/5_2.png" id="a5_2" media-type="image/png"/>
+    <item href="img/74_1.png" id="a74_1" media-type="image/png"/>
+    <item href="img/86_1.png" id="a86_1" media-type="image/png"/>
+    <item href="img/91_1.png" id="a91_1" media-type="image/png"/>
+    <item href="img/cover.png" id="cover-image" media-type="image/png"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="nav_00"/>
+    <itemref idref="nav_01"/>
+    <itemref idref="nav_02"/>
+    <itemref idref="nav_03"/>
+    <itemref idref="nav_04"/>
+    <itemref idref="nav_05"/>
+    <itemref idref="nav_06"/>
+    <itemref idref="nav_06a"/>
+    <itemref idref="nav_07"/>
+    <itemref idref="nav_08"/>
+    <itemref idref="nav_09"/>
+    <itemref idref="nav_10"/>
+    <itemref idref="nav_11"/>
+    <itemref idref="nav_12"/>
+    <itemref idref="nav_13"/>
+    <itemref idref="nav_14"/>
+    <itemref idref="nav_15"/>
+    <itemref idref="nav_16"/>
+    <itemref idref="nav_17"/>
+    <itemref idref="nav_18"/>
+    <itemref idref="nav_19"/>
+    <itemref idref="nav_20"/>
+    <itemref idref="nav_21"/>
+    <itemref idref="nav_22"/>
+    <itemref idref="nav_23"/>
+    <itemref idref="nav_24"/>
+    <itemref idref="nav_25"/>
+    <itemref idref="nav_26"/>
+    <itemref idref="nav_27"/>
+    <itemref idref="nav_28"/>
+    <itemref idref="nav_29"/>
+    <itemref idref="nav_30"/>
+    <itemref idref="nav_31"/>
+    <itemref idref="nav_32"/>
+    <itemref idref="nav_33"/>
+    <itemref idref="nav_34"/>
+    <itemref idref="nav_35"/>
+    <itemref idref="nav_36"/>
+    <itemref idref="nav_37"/>
+    <itemref idref="nav_38"/>
+    <itemref idref="nav_39"/>
+    <itemref idref="nav_40"/>
+    <itemref idref="nav_41"/>
+    <itemref idref="nav_42"/>
+    <itemref idref="nav_43"/>
+    <itemref idref="nav_44"/>
+    <itemref idref="nav_45"/>
+    <itemref idref="nav_46"/>
+  </spine>
+<guide>
+<reference href="xhtml/00_Cover_Page.html" title="Cover" type="text"/>
+<reference href="xhtml/02_Title_Page.html" title="Title Page" type="title"/>
+<reference href="xhtml/Contents.html" title="Contents" type="toc"/>
+</guide>
+</package>

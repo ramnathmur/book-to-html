@@ -1,0 +1,570 @@
+{
+  "chapter_no": 1,
+  "chapter_title": "GOALS",
+  "units": [
+    {
+      "unit_id": "u_01_0001",
+      "kind": "bridge",
+      "html": "<p>Sydney Olympics, 24th September 2000. The morning of the men's eight rowing final.</p>",
+      "source_ids": [
+        "ch1§1¶1",
+        "ch1§1¶2"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_01_0002",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶3\">It was 5 a.m., but I was alert as soon as the alarm went off; I knew exactly where I was and I knew exactly what I had to do: “Today’s going to be a good day, because I am going to make it a good day,” I told myself. If ever there was a day when it had to count, it was today.</blockquote>",
+      "source_ids": [
+        "ch1§1¶3"
+      ],
+      "verbatim_quote": "It was 5 a.m., but I was alert as soon as the alarm went off; I knew exactly where I was and I knew exactly what I had to do: “Today’s going to be a good day, because I am going to make it a good day,” I told myself. If ever there was a day when it had to count, it was today.",
+      "retention_signal": "voice"
+    },
+    {
+      "unit_id": "u_01_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶4\">Today was the day when Steve, Fred, Kieran, Luka, Louis, Simon, Andrew and myself, coxed by Rowley and coached by Martin and Harry, were going to win the Olympic Gold for Great Britain in the men’s coxed eight (8+) rowing event.</blockquote>",
+      "source_ids": [
+        "ch1§1¶4"
+      ],
+      "verbatim_quote": "Today was the day when Steve, Fred, Kieran, Luka, Louis, Simon, Andrew and myself, coxed by Rowley and coached by Martin and Harry, were going to win the Olympic Gold for Great Britain in the men’s coxed eight (8+) rowing event.",
+      "retention_signal": "plot_turn"
+    },
+    {
+      "unit_id": "u_01_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶6\">Most of the big rowing countries put their best people in the 8+: Russia, Romania, Holland, Germany, USA, Croatia. For the 2000 Sydney Olympics – as in most years – GB’s selection was done differently. The top four guys went in the coxless four (4-); Redgrave, Cracknell, Pinsent and Foster. The next two guys went in the coxless pair (2-), Greg Searle and Ed Coode. Those of us left over went into the 8+. We were the guys who weren’t good enough to win. Apparently.</blockquote>",
+      "source_ids": [
+        "ch1§1¶6"
+      ],
+      "verbatim_quote": "Most of the big rowing countries put their best people in the 8+: Russia, Romania, Holland, Germany, USA, Croatia. For the 2000 Sydney Olympics – as in most years – GB’s selection was done differently. The top four guys went in the coxless four (4-); Redgrave, Cracknell, Pinsent and Foster. The next two guys went in the coxless pair (2-), Greg Searle and Ed Coode. Those of us left over went into the 8+. We were the guys who weren’t good enough to win. Apparently.",
+      "retention_signal": "voice"
+    },
+    {
+      "unit_id": "u_01_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶7\">The previous ten years had been full of so much disappointment; I’d lost race after race. In ten years of racing I’d only won two proper international Regattas. I’d come 6 th and 8 th at the previous two Olympics, I’d finished 5 th , 8 th , 6 th , 5 th , 7 th at the World Championships I’d competed in. All around me my friends were winning medals and the only thing that kept me going was the goal; the dream of Olympic Gold.</blockquote>",
+      "source_ids": [
+        "ch1§1¶7"
+      ],
+      "verbatim_quote": "The previous ten years had been full of so much disappointment; I’d lost race after race. In ten years of racing I’d only won two proper international Regattas. I’d come 6 th and 8 th at the previous two Olympics, I’d finished 5 th , 8 th , 6 th , 5 th , 7 th at the World Championships I’d competed in. All around me my friends were winning medals and the only thing that kept me going was the goal; the dream of Olympic Gold.",
+      "retention_signal": "decision_interiority"
+    },
+    {
+      "unit_id": "u_01_0006",
+      "kind": "bridge",
+      "html": "<p>The previous 24 months had broken the pattern: a Silver at the World Championships and two World Cup wins. Things were different now. The crew dressed, shaved, and filed out into the cold Australian pre-dawn toward the dining hall.</p>",
+      "source_ids": [
+        "ch1§1¶8",
+        "ch1§1¶9",
+        "ch1§1¶10",
+        "ch1§1¶11"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_01_0007",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶16\">The nine of us sat in a tense, angry silence all thinking the same thing. I wanted to win so much it hurt. I hadn’t been counting but there were probably only 50 nights out the previous ten years when I hadn’t dreamed about it. We had to make it happen. We had to show those bastards who was in charge, whose lake it was. We’d let ourselves down in the heat and we weren’t going to make the same mistake again. We’d show them.</blockquote>",
+      "source_ids": [
+        "ch1§1¶16"
+      ],
+      "verbatim_quote": "The nine of us sat in a tense, angry silence all thinking the same thing. I wanted to win so much it hurt. I hadn’t been counting but there were probably only 50 nights out the previous ten years when I hadn’t dreamed about it. We had to make it happen. We had to show those bastards who was in charge, whose lake it was. We’d let ourselves down in the heat and we weren’t going to make the same mistake again. We’d show them.",
+      "retention_signal": "decision_interiority"
+    },
+    {
+      "unit_id": "u_01_0008",
+      "kind": "bridge",
+      "html": "<p>An off-duty judo player joined them at breakfast, reeking of booze, but he broke the tension. Outside, Ben puked into the bushes while the boys ribbed him about being pregnant, then passed through the airport-style security where he wondered whether next time his medal would set off the metal detectors.</p>",
+      "source_ids": [
+        "ch1§1¶18",
+        "ch1§1¶19",
+        "ch1§1¶20",
+        "ch1§1¶21",
+        "ch1§1¶22"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_01_0009",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶38\">What we had to was simple, it wasn’t about the Olympics. Of course, that was our dream, but all we had to do was win a race, beat people we’d beaten before and to do that we had to focus on the process, one stroke a time.</blockquote>",
+      "source_ids": [
+        "ch1§1¶38"
+      ],
+      "verbatim_quote": "What we had to was simple, it wasn’t about the Olympics. Of course, that was our dream, but all we had to do was win a race, beat people we’d beaten before and to do that we had to focus on the process, one stroke a time.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0010",
+      "kind": "bridge",
+      "html": "<p>They warmed up on the water — tense, nervous, and rushed, as expected — then came back to the British tent with 90 minutes to kill. Stretching, rowing machines, panic, rage, moments of strength.</p>",
+      "source_ids": [
+        "ch1§1¶41",
+        "ch1§1¶42",
+        "ch1§1¶43",
+        "ch1§1¶44",
+        "ch1§1¶45",
+        "ch1§1¶46",
+        "ch1§1¶47",
+        "ch1§1¶48"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_01_0011",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶54\">“We're going to f***ing make it happen.”</blockquote>",
+      "source_ids": [
+        "ch1§1¶52",
+        "ch1§1¶53",
+        "ch1§1¶54"
+      ],
+      "verbatim_quote": "“We're going to f***ing make it happen.”",
+      "retention_signal": "voice"
+    },
+    {
+      "unit_id": "u_01_0012",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶55\">Yes that was it. We had to make it happen. The aggression, and anger and rage were back. A few boys gave me a slap and eyeballed me. Our eyes bore into each other. This was it, today was going to be a good day because we were going to f***ing make it a good day. The anger, the passion flared red hot. We needed cold clinical minds and skipfuls of passion and desire.</blockquote>",
+      "source_ids": [
+        "ch1§1¶55"
+      ],
+      "verbatim_quote": "Yes that was it. We had to make it happen. The aggression, and anger and rage were back. A few boys gave me a slap and eyeballed me. Our eyes bore into each other. This was it, today was going to be a good day because we were going to f***ing make it a good day. The anger, the passion flared red hot. We needed cold clinical minds and skipfuls of passion and desire.",
+      "retention_signal": "decision_interiority"
+    },
+    {
+      "unit_id": "u_01_0013",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶60\">Harry stood beside him. Harry. Harry was dying of cancer. In ‘97, Harry had been diagnosed and operated on; he'd been given months. In those three and a half years Harry had run his first marathon. He’d coached Greg Searle to a Bronze medal in the single sculls at the world champs and he had started coaching us.</blockquote>",
+      "source_ids": [
+        "ch1§1¶60"
+      ],
+      "verbatim_quote": "Harry stood beside him. Harry. Harry was dying of cancer. In ‘97, Harry had been diagnosed and operated on; he'd been given months. In those three and a half years Harry had run his first marathon. He’d coached Greg Searle to a Bronze medal in the single sculls at the world champs and he had started coaching us.",
+      "retention_signal": "plot_turn"
+    },
+    {
+      "unit_id": "u_01_0014",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶62\">Harry had coached crews to be World Champions. He’d coached a crew to an Olympic Silver, but not to Gold. This was his last chance. For Harry, time was running out. It seemed unlikely that he would live to see another games; he didn't, he died in May 2001.</blockquote>",
+      "source_ids": [
+        "ch1§1¶62"
+      ],
+      "verbatim_quote": "Harry had coached crews to be World Champions. He’d coached a crew to an Olympic Silver, but not to Gold. This was his last chance. For Harry, time was running out. It seemed unlikely that he would live to see another games; he didn't, he died in May 2001.",
+      "retention_signal": "plot_turn"
+    },
+    {
+      "unit_id": "u_01_0015",
+      "kind": "bridge",
+      "html": "<p>The warm-up felt strong and fast; the boat skimmed. The grandstand radiated heat. Gladiator had been at the cinema all summer and they were walking into the arena.</p>",
+      "source_ids": [
+        "ch1§1¶64",
+        "ch1§1¶65",
+        "ch1§1¶66"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_01_0016",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§1¶69\">After years of work we were on the start. We were ready.</blockquote>",
+      "source_ids": [
+        "ch1§1¶69"
+      ],
+      "verbatim_quote": "After years of work we were on the start. We were ready.",
+      "retention_signal": "plot_turn"
+    },
+    {
+      "unit_id": "u_01_0017",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶2\">Ben: “Being really clear on what we wanted to achieve meant we could always figure out the way ahead by asking ‘will it make the boat go faster?’”</blockquote>",
+      "source_ids": [
+        "ch1§2¶2"
+      ],
+      "verbatim_quote": "Ben: “Being really clear on what we wanted to achieve meant we could always figure out the way ahead by asking ‘will it make the boat go faster?’”",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0018",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶3\">We are all heading somewhere whether we like it or not, so create enthralling goals to achieve the kind of happy, successful life you want.</blockquote>",
+      "source_ids": [
+        "ch1§2¶3"
+      ],
+      "verbatim_quote": "We are all heading somewhere whether we like it or not, so create enthralling goals to achieve the kind of happy, successful life you want.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0019",
+      "kind": "bridge",
+      "html": "<p>Ben's goal was extreme: achievable only at 10.30 a.m. on 24th September 2000, and only if he nailed it in under five and a half minutes. So should the rest of us bother with goals at all?</p>",
+      "source_ids": [
+        "ch1§2¶7",
+        "ch1§2¶8"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_01_0020",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶12\">I was still sceptical about goal-setting, though. Wasn’t it a bit over-egged? For example, isn’t turning ‘be happy’ into a goal a bit clinical? The dictionary definition of a goal is the ‘object of effort, destination’. So stripping it back to its core, a goal is simply where you are going.</blockquote>",
+      "source_ids": [
+        "ch1§2¶12"
+      ],
+      "verbatim_quote": "I was still sceptical about goal-setting, though. Wasn’t it a bit over-egged? For example, isn’t turning ‘be happy’ into a goal a bit clinical? The dictionary definition of a goal is the ‘object of effort, destination’. So stripping it back to its core, a goal is simply where you are going.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0021",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶14\">• Firstly, we’re all heading in some direction. For example, someone who smokes 40 a day has a likely ‘goal’ of a hospital bed. So surely it’s useful to think about what goals we want rather than ending up somewhere we don’t want to be?</blockquote>",
+      "source_ids": [
+        "ch1§2¶14"
+      ],
+      "verbatim_quote": "• Firstly, we’re all heading in some direction. For example, someone who smokes 40 a day has a likely ‘goal’ of a hospital bed. So surely it’s useful to think about what goals we want rather than ending up somewhere we don’t want to be?",
+      "retention_signal": "first_example"
+    },
+    {
+      "unit_id": "u_01_0022",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶16\">Ben: “A goal might be to earn £40k a year or to have a good day, or to have a happy marriage, or to sell more widgets, or to swim the channel. Whatever it is, if we are aware of what we want then it is much easier to work towards achieving it.”</blockquote>",
+      "source_ids": [
+        "ch1§2¶16"
+      ],
+      "verbatim_quote": "Ben: “A goal might be to earn £40k a year or to have a good day, or to have a happy marriage, or to sell more widgets, or to swim the channel. Whatever it is, if we are aware of what we want then it is much easier to work towards achieving it.”",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0023",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶17\">Yes, Ben’s goal was pretty extreme, but there are two key strategies from the rowing eight’s Olympic journey that we can use in our everyday lives to help make them happier and easier:</blockquote>",
+      "source_ids": [
+        "ch1§2¶17",
+        "ch1§2¶18",
+        "ch1§2¶19"
+      ],
+      "verbatim_quote": "Yes, Ben’s goal was pretty extreme, but there are two key strategies from the rowing eight’s Olympic journey that we can use in our everyday lives to help make them happier and easier:",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0024",
+      "kind": "bridge",
+      "html": "<p>The two strategies: appreciate that clear goals are useful, and know how to craft effective goals. There are three core benefits, the first being that goals give you a sense of achievement.</p>",
+      "source_ids": [
+        "ch1§2¶21",
+        "ch1§2¶22"
+      ],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_01_0025",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶30\">Whatever the experiences were, wouldn’t it be good to enjoy those feelings again? Sadly most people wait for the experiences to happen to them – they rely on chance – which is heartbreaking, because it is so easy to set goals in order feel that sense of achievement more often, more deeply.</blockquote>",
+      "source_ids": [
+        "ch1§2¶30"
+      ],
+      "verbatim_quote": "Whatever the experiences were, wouldn’t it be good to enjoy those feelings again? Sadly most people wait for the experiences to happen to them – they rely on chance – which is heartbreaking, because it is so easy to set goals in order feel that sense of achievement more often, more deeply.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0026",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶34\">When we have a clear goal it acts like a magnet drawing us forwards. For example: getting up at 5 a.m. to drive to a sales meeting we can’t be bothered about is a major pain in the backside, but getting up at 5 a.m. to hit a sales target and earn an impressive bonus is a different matter.</blockquote>",
+      "source_ids": [
+        "ch1§2¶34"
+      ],
+      "verbatim_quote": "When we have a clear goal it acts like a magnet drawing us forwards. For example: getting up at 5 a.m. to drive to a sales meeting we can’t be bothered about is a major pain in the backside, but getting up at 5 a.m. to hit a sales target and earn an impressive bonus is a different matter.",
+      "retention_signal": "first_example"
+    },
+    {
+      "unit_id": "u_01_0027",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶36\">Ben: “People often ask me if the early mornings were really hard and I have to say not really, because I got out of bed knowing what I wanted to do and why I wanted to do it. The same is true today – when I set my alarm I need to know exactly what I’m going to do tomorrow – what my specific goal is – because if I just think I have loads of stuff to do I will hit snooze.”</blockquote>",
+      "source_ids": [
+        "ch1§2¶36"
+      ],
+      "verbatim_quote": "Ben: “People often ask me if the early mornings were really hard and I have to say not really, because I got out of bed knowing what I wanted to do and why I wanted to do it. The same is true today – when I set my alarm I need to know exactly what I’m going to do tomorrow – what my specific goal is – because if I just think I have loads of stuff to do I will hit snooze.”",
+      "retention_signal": "voice"
+    },
+    {
+      "unit_id": "u_01_0028",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶41\">It’s almost impossible not to focus on these negative distractions, because the mind isn’t very good at not thinking. Try it now – don’t, whatever you do, think about a purple hedgehog.</blockquote>",
+      "source_ids": [
+        "ch1§2¶41"
+      ],
+      "verbatim_quote": "It’s almost impossible not to focus on these negative distractions, because the mind isn’t very good at not thinking. Try it now – don’t, whatever you do, think about a purple hedgehog.",
+      "retention_signal": "voice"
+    },
+    {
+      "unit_id": "u_01_0029",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶43\">It’s really hard unless you’ve got something else to take its place. Replace that purple hedgehog with an orange armadillo and you’ve got a fighting chance, similarly if you’ve got a goal of earning £100 commission, it’s much easier to tune out the stroppy customer, the piped music and your whinging colleague.</blockquote>",
+      "source_ids": [
+        "ch1§2¶43"
+      ],
+      "verbatim_quote": "It’s really hard unless you’ve got something else to take its place. Replace that purple hedgehog with an orange armadillo and you’ve got a fighting chance, similarly if you’ve got a goal of earning £100 commission, it’s much easier to tune out the stroppy customer, the piped music and your whinging colleague.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0030",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶44\">Because the Olympic crew were so clear on their goal, simply asking “will it make the boat go faster?” helped them figure out what to do when they felt uncertain, resolve differences when the team fell out and bounce back from difficult times. It’s a question you’ll find recurring in many of the chapters ahead.</blockquote>",
+      "source_ids": [
+        "ch1§2¶44"
+      ],
+      "verbatim_quote": "Because the Olympic crew were so clear on their goal, simply asking “will it make the boat go faster?” helped them figure out what to do when they felt uncertain, resolve differences when the team fell out and bounce back from difficult times. It’s a question you’ll find recurring in many of the chapters ahead.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0031",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶46\">Research suggests that we tend to regret what we haven’t done much more than what we have done – even if we screwed up in doing it. The psychologist Richard Wiseman suggests this may be because our imagination runs riot about the goals we didn’t set and go for – we keep thinking ‘if only’ and imagine the best possible outcome that might have happened. There’s a tendency to create a fairytale land in our heads where frolicking unicorns bring us success and champagne by the poolside.</blockquote>",
+      "source_ids": [
+        "ch1§2¶46"
+      ],
+      "verbatim_quote": "Research suggests that we tend to regret what we haven’t done much more than what we have done – even if we screwed up in doing it. The psychologist Richard Wiseman suggests this may be because our imagination runs riot about the goals we didn’t set and go for – we keep thinking ‘if only’ and imagine the best possible outcome that might have happened. There’s a tendency to create a fairytale land in our heads where frolicking unicorns bring us success and champagne by the poolside.",
+      "retention_signal": "voice"
+    },
+    {
+      "unit_id": "u_01_0032",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶49\">Ben: “Being in the Olympic crew I learnt a huge amount about mental toughness, resilience, and bouncebackability which has stood me in very good stead for – basically – everything else in my life! When I became a corporate coach in 2001, one of the first training sessions I ever ran was so bad the client said they never wanted to see me again. Not pretty, but I’d had worse disasters in my rowing career and went on to get Gold, so it was much easier to dust myself off and move on – and make sure I really learnt from the setback.”</blockquote>",
+      "source_ids": [
+        "ch1§2¶49"
+      ],
+      "verbatim_quote": "Ben: “Being in the Olympic crew I learnt a huge amount about mental toughness, resilience, and bouncebackability which has stood me in very good stead for – basically – everything else in my life! When I became a corporate coach in 2001, one of the first training sessions I ever ran was so bad the client said they never wanted to see me again. Not pretty, but I’d had worse disasters in my rowing career and went on to get Gold, so it was much easier to dust myself off and move on – and make sure I really learnt from the setback.”",
+      "retention_signal": "voice"
+    },
+    {
+      "unit_id": "u_01_0033",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶54\">As well as appreciating the value of goals, the other big learning the crew had was around how to formulate them. The crew discovered that the key to a ‘good’ goal is that it is layered: there is the crazy layer, the concrete layer, the layer you can control and finally the everyday layer.</blockquote>",
+      "source_ids": [
+        "ch1§2¶54"
+      ],
+      "verbatim_quote": "As well as appreciating the value of goals, the other big learning the crew had was around how to formulate them. The crew discovered that the key to a ‘good’ goal is that it is layered: there is the crazy layer, the concrete layer, the layer you can control and finally the everyday layer.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0034",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶55\">Ben: “For me to win gold at the Olympics was a crazy goal. There was no way I could do that. Or running my own business – my parents were amazed when I set myself that goal.”</blockquote>",
+      "source_ids": [
+        "ch1§2¶55"
+      ],
+      "verbatim_quote": "Ben: “For me to win gold at the Olympics was a crazy goal. There was no way I could do that. Or running my own business – my parents were amazed when I set myself that goal.”",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0035",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶58\">Ben: “No, ‘significant’ is a better word. A crazy goal needs to have emotional attachment. For example, ‘I want to have a good day’ might not seem spectacular, but multiply it over weeks and months and it is huge.”</blockquote>",
+      "source_ids": [
+        "ch1§2¶58"
+      ],
+      "verbatim_quote": "Ben: “No, ‘significant’ is a better word. A crazy goal needs to have emotional attachment. For example, ‘I want to have a good day’ might not seem spectacular, but multiply it over weeks and months and it is huge.”",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0036",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶59\">The trouble with crazy goals is that they often seem stupid, naïve or simply overwhelming so we never pursue them. Most of the people that I’ve coached who have dream goals initially dismissed their ideas because they didn’t want to be silly. The other problem with crazy goals is that you can’t put them on your to-do list: Monday do laundry, Tuesday take car in for a service, Wednesday achieve work life balance. They are too big and they aren’t measurable, so they never get done.</blockquote>",
+      "source_ids": [
+        "ch1§2¶59"
+      ],
+      "verbatim_quote": "The trouble with crazy goals is that they often seem stupid, naïve or simply overwhelming so we never pursue them. Most of the people that I’ve coached who have dream goals initially dismissed their ideas because they didn’t want to be silly. The other problem with crazy goals is that you can’t put them on your to-do list: Monday do laundry, Tuesday take car in for a service, Wednesday achieve work life balance. They are too big and they aren’t measurable, so they never get done.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0037",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶61\">We need to turn our crazy goals into something measurable. For example, ‘Spend quality time with my kids everyday’ might be a tangible expression of ‘achieve work/life balance’. The concrete layer answers the question, ‘how will I know when I’ve achieved my dream?’ The crew’s concrete goal was to row 2,000 metres in five minutes and eighteen seconds. This was faster than World Record pace, so it would give them a pretty good chance of winning Gold at Sydney.</blockquote>",
+      "source_ids": [
+        "ch1§2¶61"
+      ],
+      "verbatim_quote": "We need to turn our crazy goals into something measurable. For example, ‘Spend quality time with my kids everyday’ might be a tangible expression of ‘achieve work/life balance’. The concrete layer answers the question, ‘how will I know when I’ve achieved my dream?’ The crew’s concrete goal was to row 2,000 metres in five minutes and eighteen seconds. This was faster than World Record pace, so it would give them a pretty good chance of winning Gold at Sydney.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0038",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶62\">The trouble about concrete goals is that they might be outside our control. For example the water and weather conditions had an impact on how fast the crew could row. ‘Spending quality time with the kids’ suggests the kids have to be in a good mood and as any parent knows, that might be a bit of a challenge.</blockquote>",
+      "source_ids": [
+        "ch1§2¶62"
+      ],
+      "verbatim_quote": "The trouble about concrete goals is that they might be outside our control. For example the water and weather conditions had an impact on how fast the crew could row. ‘Spending quality time with the kids’ suggests the kids have to be in a good mood and as any parent knows, that might be a bit of a challenge.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0039",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶63\">This layer focuses on something that is inside our control to achieve. The crew had plenty of goals in the control layer – times to achieve on the rowing machines, weights to lift on bench presses and so on. This meant the crazy Olympic goal became grounded in realistic targets.</blockquote>",
+      "source_ids": [
+        "ch1§2¶63"
+      ],
+      "verbatim_quote": "This layer focuses on something that is inside our control to achieve. The crew had plenty of goals in the control layer – times to achieve on the rowing machines, weights to lift on bench presses and so on. This meant the crazy Olympic goal became grounded in realistic targets.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0040",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶65\">This layer includes the methods or processes needed to achieve the layers above. Now we’ve reached a level where just as we might plan Monday: do laundry, Tuesday: take car in for a service the crew could think in terms of Monday: do x bench presses in x minutes, Tuesday: achieve x strokes per minute over x metres.</blockquote>",
+      "source_ids": [
+        "ch1§2¶65"
+      ],
+      "verbatim_quote": "This layer includes the methods or processes needed to achieve the layers above. Now we’ve reached a level where just as we might plan Monday: do laundry, Tuesday: take car in for a service the crew could think in terms of Monday: do x bench presses in x minutes, Tuesday: achieve x strokes per minute over x metres.",
+      "retention_signal": "step_by_step"
+    },
+    {
+      "unit_id": "u_01_0041",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶67\">Each layer does a different job; each layer supports the others. The crazy layer is exciting, but it needs to be grounded in something concrete and something inside our control. Everyday goals are things we can put in the diary and improve incrementally day by day – but, on their own, they aren’t massively motivational. For example, out of context, time management sounds pretty dull, doesn’t it? But if it’s going to get us work/life balance then, suddenly, it’s interesting. If one of the layers is missing, the whole structure could collapse. Without passion a goal becomes a chore, without specificity a goal is simply a pipe-dream.</blockquote>",
+      "source_ids": [
+        "ch1§2¶67"
+      ],
+      "verbatim_quote": "Each layer does a different job; each layer supports the others. The crazy layer is exciting, but it needs to be grounded in something concrete and something inside our control. Everyday goals are things we can put in the diary and improve incrementally day by day – but, on their own, they aren’t massively motivational. For example, out of context, time management sounds pretty dull, doesn’t it? But if it’s going to get us work/life balance then, suddenly, it’s interesting. If one of the layers is missing, the whole structure could collapse. Without passion a goal becomes a chore, without specificity a goal is simply a pipe-dream.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0042",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§2¶68\">We can’t help but have goals. Goals are just destinations and, whatever we’re doing with our lives right now, our actions are taking us somewhere. Having conscious goals puts us in the driving seat to go for outcomes that we truly want and goals also give us all kinds of benefits, such as making it easier to enjoy the journey and giving ourselves the chance to grow. A layered approach to goal-setting helps create a rounded goal that is both motivating and practical.</blockquote>",
+      "source_ids": [
+        "ch1§2¶68"
+      ],
+      "verbatim_quote": "We can’t help but have goals. Goals are just destinations and, whatever we’re doing with our lives right now, our actions are taking us somewhere. Having conscious goals puts us in the driving seat to go for outcomes that we truly want and goals also give us all kinds of benefits, such as making it easier to enjoy the journey and giving ourselves the chance to grow. A layered approach to goal-setting helps create a rounded goal that is both motivating and practical.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_no": 1,
+    "chapter_source_words": 6288,
+    "chapter_output_words": 3850,
+    "bridge_ratio": 0.055,
+    "dropped_sections": [
+      {
+        "source_id_range": "ch1§1¶5",
+        "reason": "descriptive padding about boat dimensions; once setting established does not advance plot or framework"
+      },
+      {
+        "source_id_range": "ch1§1¶12-15",
+        "reason": "dining hall texture and Barcelona 1992 flashback; backstory padding after setting established"
+      },
+      {
+        "source_id_range": "ch1§1¶17",
+        "reason": "interior thoughts repeated more powerfully in ¶16 and ¶46"
+      },
+      {
+        "source_id_range": "ch1§1¶23-37",
+        "reason": "extended bus-ride montage; signature mood captured by ¶16 and ¶38, dropping repeats and descriptive padding"
+      },
+      {
+        "source_id_range": "ch1§1¶39-40",
+        "reason": "scene-setting at lake; arrival texture already implied"
+      },
+      {
+        "source_id_range": "ch1§1¶49-51",
+        "reason": "kit and briefing logistics; recap of preparation"
+      },
+      {
+        "source_id_range": "ch1§1¶56-58",
+        "reason": "boat-launching mechanics; procedural padding"
+      },
+      {
+        "source_id_range": "ch1§1¶59",
+        "reason": "long Martin profile; emotional beat is covered by ¶60 and ¶63"
+      },
+      {
+        "source_id_range": "ch1§1¶61",
+        "reason": "second descriptive pass on Harry; ¶60 and ¶62 carry the stakes"
+      },
+      {
+        "source_id_range": "ch1§1¶63",
+        "reason": "restates the handoff already conveyed in ¶60 and ¶62"
+      },
+      {
+        "source_id_range": "ch1§1¶67-68",
+        "reason": "start-pontoon mechanics; ¶69 closes the scene"
+      },
+      {
+        "source_id_range": "ch1§2¶1, ¶4-6",
+        "reason": "section headings and rhetorical-question scaffolding"
+      },
+      {
+        "source_id_range": "ch1§2¶9-11",
+        "reason": "Harriet's marathon backstory; first example of personal goal but doubled later in ¶35"
+      },
+      {
+        "source_id_range": "ch1§2¶13, ¶15",
+        "reason": "list scaffolding; payload captured in ¶14 and ¶16"
+      },
+      {
+        "source_id_range": "ch1§2¶18-20",
+        "reason": "section headings absorbed into anchor ¶17"
+      },
+      {
+        "source_id_range": "ch1§2¶23-29",
+        "reason": "list of example achievements; second/third illustrative pass on a single point"
+      },
+      {
+        "source_id_range": "ch1§2¶31-33",
+        "reason": "coaching anecdote and values aside; repeats point already made about goals as values"
+      },
+      {
+        "source_id_range": "ch1§2¶35",
+        "reason": "third marathon mention; repeats the magnet-of-goal point covered by ¶34"
+      },
+      {
+        "source_id_range": "ch1§2¶37-40",
+        "reason": "sales-floor distractions list; setup absorbed into ¶41 and ¶43"
+      },
+      {
+        "source_id_range": "ch1§2¶42",
+        "reason": "rhetorical follow-up to the purple-hedgehog test"
+      },
+      {
+        "source_id_range": "ch1§2¶45, ¶47-48",
+        "reason": "section heading and driving-test example; learning-and-grow point carried by ¶46 and ¶49"
+      },
+      {
+        "source_id_range": "ch1§2¶50-53",
+        "reason": "course plug and section heading; not framework content"
+      },
+      {
+        "source_id_range": "ch1§2¶56-57",
+        "reason": "list of dream-goal examples and rhetorical question; redundant with ¶55 and ¶58"
+      },
+      {
+        "source_id_range": "ch1§2¶60",
+        "reason": "single transitional line"
+      },
+      {
+        "source_id_range": "ch1§2¶64, ¶66",
+        "reason": "third-example pass on the work-life-balance illustration; carried by ¶61-63"
+      },
+      {
+        "source_id_range": "ch1§2¶69-77",
+        "reason": "chapter-closing recap, what's-next signposting, and URL plug; recap material per rubric"
+      }
+    ]
+  },
+  "editor_design_hints": {
+    "chapter_no": 1,
+    "is_concept_chapter": true,
+    "concept_or_theme": "Why goals matter and the four-layer model: crazy, concrete, control, everyday",
+    "signature_quotes_for_pullquote": [
+      "ch1§2¶2",
+      "ch1§1¶54"
+    ]
+  }
+}

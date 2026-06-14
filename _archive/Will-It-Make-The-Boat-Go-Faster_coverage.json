@@ -1,0 +1,942 @@
+{
+  "build_id": "20260527-001-boat-go-faster",
+  "book_title": "Will It Make The Boat Go Faster?",
+  "book_author": "Ben Hunt-Davis & Harriet Beveridge",
+  "source_words": 64352,
+  "output_words": 38643,
+  "retention_pct": 60.0,
+  "bridge_ratio": 0.038,
+  "total_units": 509.0,
+  "per_chapter": [
+    {
+      "ch": 1,
+      "title": "GOALS",
+      "source_words": 6288,
+      "output_words": 3850,
+      "bridge_ratio": 0.055,
+      "units": 42
+    },
+    {
+      "ch": 2,
+      "title": "MOTIVATION",
+      "source_words": 5080,
+      "output_words": 2520,
+      "bridge_ratio": 0.038,
+      "units": 38
+    },
+    {
+      "ch": 3,
+      "title": "BELIEFS",
+      "source_words": 5281,
+      "output_words": 2510,
+      "bridge_ratio": 0.034,
+      "units": 41
+    },
+    {
+      "ch": 4,
+      "title": "BULLSHIT FILTERS",
+      "source_words": 4655,
+      "output_words": 4205,
+      "bridge_ratio": 0.094,
+      "units": 30
+    },
+    {
+      "ch": 5,
+      "title": "MAKE IT HAPPEN",
+      "source_words": 4339,
+      "output_words": 3387,
+      "bridge_ratio": 0.008,
+      "units": 53
+    },
+    {
+      "ch": 6,
+      "title": "TEAMS",
+      "source_words": 6713,
+      "output_words": 1881,
+      "bridge_ratio": 0.057,
+      "units": 34
+    },
+    {
+      "ch": 7,
+      "title": "PROCESS DRIVEN",
+      "source_words": 4602,
+      "output_words": 2548,
+      "bridge_ratio": 0.03,
+      "units": 32
+    },
+    {
+      "ch": 8,
+      "title": "MOMENTUM",
+      "source_words": 5428,
+      "output_words": 5072,
+      "bridge_ratio": 0.018,
+      "units": 35
+    },
+    {
+      "ch": 9,
+      "title": "CHANGE",
+      "source_words": 5921,
+      "output_words": 3115,
+      "bridge_ratio": 0.034,
+      "units": 38
+    },
+    {
+      "ch": 10,
+      "title": "BOUNCEBACKABILITY",
+      "source_words": 5270,
+      "output_words": 3580,
+      "bridge_ratio": 0.029,
+      "units": 72
+    },
+    {
+      "ch": 11,
+      "title": "RISKS",
+      "source_words": 4996,
+      "output_words": 3186,
+      "bridge_ratio": 0.046,
+      "units": 50
+    },
+    {
+      "ch": 12,
+      "title": "THE FINAL CHAPTER",
+      "source_words": 5246,
+      "output_words": 2789,
+      "bridge_ratio": 0.01,
+      "units": 44
+    }
+  ],
+  "dropped_sections": [
+    {
+      "source_id_range": "ch1§1¶5",
+      "reason": "descriptive padding about boat dimensions; once setting established does not advance plot or framework"
+    },
+    {
+      "source_id_range": "ch1§1¶12-15",
+      "reason": "dining hall texture and Barcelona 1992 flashback; backstory padding after setting established"
+    },
+    {
+      "source_id_range": "ch1§1¶17",
+      "reason": "interior thoughts repeated more powerfully in ¶16 and ¶46"
+    },
+    {
+      "source_id_range": "ch1§1¶23-37",
+      "reason": "extended bus-ride montage; signature mood captured by ¶16 and ¶38, dropping repeats and descriptive padding"
+    },
+    {
+      "source_id_range": "ch1§1¶39-40",
+      "reason": "scene-setting at lake; arrival texture already implied"
+    },
+    {
+      "source_id_range": "ch1§1¶49-51",
+      "reason": "kit and briefing logistics; recap of preparation"
+    },
+    {
+      "source_id_range": "ch1§1¶56-58",
+      "reason": "boat-launching mechanics; procedural padding"
+    },
+    {
+      "source_id_range": "ch1§1¶59",
+      "reason": "long Martin profile; emotional beat is covered by ¶60 and ¶63"
+    },
+    {
+      "source_id_range": "ch1§1¶61",
+      "reason": "second descriptive pass on Harry; ¶60 and ¶62 carry the stakes"
+    },
+    {
+      "source_id_range": "ch1§1¶63",
+      "reason": "restates the handoff already conveyed in ¶60 and ¶62"
+    },
+    {
+      "source_id_range": "ch1§1¶67-68",
+      "reason": "start-pontoon mechanics; ¶69 closes the scene"
+    },
+    {
+      "source_id_range": "ch1§2¶1, ¶4-6",
+      "reason": "section headings and rhetorical-question scaffolding"
+    },
+    {
+      "source_id_range": "ch1§2¶9-11",
+      "reason": "Harriet's marathon backstory; first example of personal goal but doubled later in ¶35"
+    },
+    {
+      "source_id_range": "ch1§2¶13, ¶15",
+      "reason": "list scaffolding; payload captured in ¶14 and ¶16"
+    },
+    {
+      "source_id_range": "ch1§2¶18-20",
+      "reason": "section headings absorbed into anchor ¶17"
+    },
+    {
+      "source_id_range": "ch1§2¶23-29",
+      "reason": "list of example achievements; second/third illustrative pass on a single point"
+    },
+    {
+      "source_id_range": "ch1§2¶31-33",
+      "reason": "coaching anecdote and values aside; repeats point already made about goals as values"
+    },
+    {
+      "source_id_range": "ch1§2¶35",
+      "reason": "third marathon mention; repeats the magnet-of-goal point covered by ¶34"
+    },
+    {
+      "source_id_range": "ch1§2¶37-40",
+      "reason": "sales-floor distractions list; setup absorbed into ¶41 and ¶43"
+    },
+    {
+      "source_id_range": "ch1§2¶42",
+      "reason": "rhetorical follow-up to the purple-hedgehog test"
+    },
+    {
+      "source_id_range": "ch1§2¶45, ¶47-48",
+      "reason": "section heading and driving-test example; learning-and-grow point carried by ¶46 and ¶49"
+    },
+    {
+      "source_id_range": "ch1§2¶50-53",
+      "reason": "course plug and section heading; not framework content"
+    },
+    {
+      "source_id_range": "ch1§2¶56-57",
+      "reason": "list of dream-goal examples and rhetorical question; redundant with ¶55 and ¶58"
+    },
+    {
+      "source_id_range": "ch1§2¶60",
+      "reason": "single transitional line"
+    },
+    {
+      "source_id_range": "ch1§2¶64, ¶66",
+      "reason": "third-example pass on the work-life-balance illustration; carried by ¶61-63"
+    },
+    {
+      "source_id_range": "ch1§2¶69-77",
+      "reason": "chapter-closing recap, what's-next signposting, and URL plug; recap material per rubric"
+    },
+    {
+      "source_id": "ch2§1¶2",
+      "reason": "descriptive padding - trial logistics"
+    },
+    {
+      "source_id": "ch2§1¶3",
+      "reason": "descriptive padding - boat description"
+    },
+    {
+      "source_id": "ch2§1¶7",
+      "reason": "descriptive padding - sequencing of race day"
+    },
+    {
+      "source_id": "ch2§1¶8",
+      "reason": "descriptive padding - landscape"
+    },
+    {
+      "source_id": "ch2§1¶9",
+      "reason": "descriptive padding - scene"
+    },
+    {
+      "source_id": "ch2§1¶10",
+      "reason": "descriptive padding - finish line"
+    },
+    {
+      "source_id": "ch2§1¶11",
+      "reason": "transition padding, low retention"
+    },
+    {
+      "source_id": "ch2§1¶12",
+      "reason": "merged into bridge"
+    },
+    {
+      "source_id": "ch2§1¶14",
+      "reason": "second illustrative example - Weetabix/coffee anecdote"
+    },
+    {
+      "source_id": "ch2§1¶15",
+      "reason": "transition padding"
+    },
+    {
+      "source_id": "ch2§1¶17",
+      "reason": "merged into bridge - car/sandwich anecdote padding"
+    },
+    {
+      "source_id": "ch2§1¶18",
+      "reason": "transit padding"
+    },
+    {
+      "source_id": "ch2§1¶19",
+      "reason": "repeats motivation already established"
+    },
+    {
+      "source_id": "ch2§1¶20",
+      "reason": "Daley Thompson reference - secondary example"
+    },
+    {
+      "source_id": "ch2§1¶21",
+      "reason": "scenic padding"
+    },
+    {
+      "source_id": "ch2§1¶22",
+      "reason": "scenic padding - frost description"
+    },
+    {
+      "source_id": "ch2§1¶23",
+      "reason": "atmospheric line"
+    },
+    {
+      "source_id": "ch2§1¶24",
+      "reason": "scenic padding"
+    },
+    {
+      "source_id": "ch2§1¶25",
+      "reason": "scene wrap, redundant"
+    },
+    {
+      "source_id": "ch2§1¶27",
+      "reason": "second example of skipping training"
+    },
+    {
+      "source_id": "ch2§1¶28",
+      "reason": "extended ergo monologue, redundant"
+    },
+    {
+      "source_id": "ch2§1¶29",
+      "reason": "repetition of skipping pattern"
+    },
+    {
+      "source_id": "ch2§1¶31",
+      "reason": "repetition"
+    },
+    {
+      "source_id": "ch2§1¶32",
+      "reason": "recap of week's pattern"
+    },
+    {
+      "source_id": "ch2§1¶34",
+      "reason": "transitional closing"
+    },
+    {
+      "source_id": "ch2§2¶2",
+      "reason": "framing, absorbed elsewhere"
+    },
+    {
+      "source_id": "ch2§2¶4",
+      "reason": "menu listing partial"
+    },
+    {
+      "source_id": "ch2§2¶5",
+      "reason": "list item header repeated later"
+    },
+    {
+      "source_id": "ch2§2¶6",
+      "reason": "list item header repeated later"
+    },
+    {
+      "source_id": "ch2§2¶7",
+      "reason": "rhetoric padding"
+    },
+    {
+      "source_id": "ch2§2¶8",
+      "reason": "bullet padding"
+    },
+    {
+      "source_id": "ch2§2¶9",
+      "reason": "bullet padding"
+    },
+    {
+      "source_id": "ch2§2¶10",
+      "reason": "bullet padding"
+    },
+    {
+      "source_id": "ch2§2¶13",
+      "reason": "transition"
+    },
+    {
+      "source_id": "ch2§2¶14",
+      "reason": "rhetorical bullet"
+    },
+    {
+      "source_id": "ch2§2¶15",
+      "reason": "rhetorical bullet"
+    },
+    {
+      "source_id": "ch2§2¶16",
+      "reason": "rhetorical bullet"
+    },
+    {
+      "source_id": "ch2§2¶17",
+      "reason": "rhetorical bullet"
+    },
+    {
+      "source_id": "ch2§2¶19",
+      "reason": "secondary example - Italian/Highlander"
+    },
+    {
+      "source_id": "ch2§2¶21",
+      "reason": "throat-clearing"
+    },
+    {
+      "source_id": "ch2§2¶23",
+      "reason": "list header repetition"
+    },
+    {
+      "source_id": "ch2§2¶24",
+      "reason": "list header repetition"
+    },
+    {
+      "source_id": "ch2§2¶25",
+      "reason": "gas fitter example - secondary"
+    },
+    {
+      "source_id": "ch2§2¶26",
+      "reason": "London Marathon - secondary example"
+    },
+    {
+      "source_id": "ch2§2¶29",
+      "reason": "bullet example"
+    },
+    {
+      "source_id": "ch2§2¶30",
+      "reason": "bullet example"
+    },
+    {
+      "source_id": "ch2§2¶31",
+      "reason": "bullet example"
+    },
+    {
+      "source_id": "ch2§2¶32",
+      "reason": "what-we'll-cover recap"
+    },
+    {
+      "source_id": "ch2§2¶36",
+      "reason": "trivial rhetorical example"
+    },
+    {
+      "source_id": "ch2§2¶37",
+      "reason": "pole dancing secondary example"
+    },
+    {
+      "source_id": "ch2§2¶38",
+      "reason": "corporate examples - tertiary"
+    },
+    {
+      "source_id": "ch2§2¶39",
+      "reason": "absorbed into bridge"
+    },
+    {
+      "source_id": "ch2§2¶41",
+      "reason": "filler"
+    },
+    {
+      "source_id": "ch2§2¶42",
+      "reason": "rhetorical bullet"
+    },
+    {
+      "source_id": "ch2§2¶43",
+      "reason": "rhetorical bullet"
+    },
+    {
+      "source_id": "ch2§2¶44",
+      "reason": "rhetorical bullet"
+    },
+    {
+      "source_id": "ch2§2¶45",
+      "reason": "EasyJet aside"
+    },
+    {
+      "source_id": "ch2§2¶46",
+      "reason": "absorbed into bridge"
+    },
+    {
+      "source_id": "ch2§2¶47",
+      "reason": "long Ben-MG anecdote - secondary illustrative example"
+    },
+    {
+      "source_id": "ch2§2¶48",
+      "reason": "Romanian rumour - already covered via 'do it for Romanians'"
+    },
+    {
+      "source_id": "ch2§2¶50",
+      "reason": "list header"
+    },
+    {
+      "source_id": "ch2§2¶51",
+      "reason": "bullet example"
+    },
+    {
+      "source_id": "ch2§2¶53",
+      "reason": "IKEA bullet example"
+    },
+    {
+      "source_id": "ch2§2¶54",
+      "reason": "salesperson bullet example"
+    },
+    {
+      "source_id": "ch2§2¶55",
+      "reason": "transition padding"
+    },
+    {
+      "source_id": "ch2§2¶56",
+      "reason": "Leander gym anecdote - second example of make-yourself-hungry"
+    },
+    {
+      "source_id": "ch2§2¶57",
+      "reason": "framing of quote"
+    },
+    {
+      "source_id": "ch2§2¶59",
+      "reason": "attribution line"
+    },
+    {
+      "source_id": "ch2§2¶61",
+      "reason": "Economics anecdote - secondary example"
+    },
+    {
+      "source_id": "ch2§2¶62",
+      "reason": "rhetorical question"
+    },
+    {
+      "source_id": "ch2§2¶64",
+      "reason": "secondary example"
+    },
+    {
+      "source_id": "ch2§2¶67",
+      "reason": "team accountability - secondary example"
+    },
+    {
+      "source_id": "ch2§2¶68",
+      "reason": "list header"
+    },
+    {
+      "source_id": "ch2§2¶69",
+      "reason": "20km anecdote - secondary"
+    },
+    {
+      "source_id": "ch2§2¶70",
+      "reason": "rhetorical question"
+    },
+    {
+      "source_id": "ch2§2¶72",
+      "reason": "elaboration on milestones, repeats point"
+    },
+    {
+      "source_id": "ch2§2¶74",
+      "reason": "why-ten-minute-rule-works elaboration"
+    },
+    {
+      "source_id": "ch2§2¶75",
+      "reason": "recap"
+    },
+    {
+      "source_id": "ch2§2¶77",
+      "reason": "what's-next teaser"
+    },
+    {
+      "source_ids": [
+        "ch3§1¶3",
+        "ch3§1¶4",
+        "ch3§1¶7"
+      ],
+      "reason": "descriptive padding: trailer/boat-house texture once scene is set"
+    },
+    {
+      "source_ids": [
+        "ch3§1¶9",
+        "ch3§1¶13",
+        "ch3§1¶14"
+      ],
+      "reason": "recap / scaffolding restating boat-broken stakes"
+    },
+    {
+      "source_ids": [
+        "ch3§1¶16",
+        "ch3§1¶18"
+      ],
+      "reason": "Lottery/Ely camp backstory texture, not load-bearing"
+    },
+    {
+      "source_ids": [
+        "ch3§1¶20",
+        "ch3§1¶21",
+        "ch3§1¶23",
+        "ch3§1¶25"
+      ],
+      "reason": "repetition of 'we needed money' beat"
+    },
+    {
+      "source_ids": [
+        "ch3§1¶27"
+      ],
+      "reason": "2nd example of escalator-arrival; covered by ¶28 anchor"
+    },
+    {
+      "source_ids": [
+        "ch3§1¶29",
+        "ch3§1¶31",
+        "ch3§1¶32",
+        "ch3§1¶34"
+      ],
+      "reason": "recap of fundraising payoff; ¶33 anchor carries it"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶4",
+        "ch3§2¶5",
+        "ch3§2¶6"
+      ],
+      "reason": "fragmentary list headers without content, replaced by ¶16 spine"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶7",
+        "ch3§2¶8",
+        "ch3§2¶9",
+        "ch3§2¶10"
+      ],
+      "reason": "throat-clearing rhetorical questions, generic prompts"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶12",
+        "ch3§2¶13",
+        "ch3§2¶14",
+        "ch3§2¶15"
+      ],
+      "reason": "scaffolding setup to the framework, redundant once DICE introduced"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶18",
+        "ch3§2¶19"
+      ],
+      "reason": "metaphor labour for 'wheels on a bus'; mnemonic itself is the keeper"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶23",
+        "ch3§2¶25",
+        "ch3§2¶26",
+        "ch3§2¶27"
+      ],
+      "reason": "generic exercise prompts, not load-bearing"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶36",
+        "ch3§2¶37"
+      ],
+      "reason": "2nd elaboration of 'believe you can' source; ¶35/¶38 carry the rule"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶40",
+        "ch3§2¶41",
+        "ch3§2¶42",
+        "ch3§2¶43"
+      ],
+      "reason": "Barcelona/Searle backstory texture; passion point made elsewhere"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶45",
+        "ch3§2¶46",
+        "ch3§2¶47",
+        "ch3§2¶48"
+      ],
+      "reason": "recap of DICE + Varese anecdote; redundant scaffolding"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶51"
+      ],
+      "reason": "merged into ¶52 anchor for compression"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶53",
+        "ch3§2¶54",
+        "ch3§2¶55",
+        "ch3§2¶56",
+        "ch3§2¶57",
+        "ch3§2¶58"
+      ],
+      "reason": "generic prompts and 2nd+ examples of past-success source"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶61",
+        "ch3§2¶62",
+        "ch3§2¶63",
+        "ch3§2¶66",
+        "ch3§2¶67",
+        "ch3§2¶68",
+        "ch3§2¶69"
+      ],
+      "reason": "Wordsworth/Shakespeare epigraph fragments + generic exercise prompts"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶73",
+        "ch3§2¶75",
+        "ch3§2¶76",
+        "ch3§2¶77",
+        "ch3§2¶78"
+      ],
+      "reason": "consultant-client examples and generic application prompts"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶82"
+      ],
+      "reason": "merged into ¶83 anchor (set-up only)"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶84",
+        "ch3§2¶85"
+      ],
+      "reason": "transitional throat-clearing into the recap"
+    },
+    {
+      "source_ids": [
+        "ch3§2¶88",
+        "ch3§2¶89"
+      ],
+      "reason": "marketing footer / page reference"
+    },
+    {
+      "source_ids": [
+        "ch4§1¶5",
+        "ch4§1¶10",
+        "ch4§1¶20",
+        "ch4§1¶31",
+        "ch4§1¶32",
+        "ch4§1¶34",
+        "ch4§1¶37"
+      ],
+      "reason": "throat-clearing, transitional, or redundant texture already covered by adjacent anchors"
+    },
+    {
+      "source_ids": [
+        "ch4§2¶1",
+        "ch4§2¶12",
+        "ch4§2¶13",
+        "ch4§2¶14",
+        "ch4§2¶15",
+        "ch4§2¶16",
+        "ch4§2¶17",
+        "ch4§2¶18",
+        "ch4§2¶19",
+        "ch4§2¶20",
+        "ch4§2¶24",
+        "ch4§2¶26",
+        "ch4§2¶27",
+        "ch4§2¶28",
+        "ch4§2¶29",
+        "ch4§2¶30",
+        "ch4§2¶31",
+        "ch4§2¶32",
+        "ch4§2¶33",
+        "ch4§2¶34",
+        "ch4§2¶35",
+        "ch4§2¶37",
+        "ch4§2¶39",
+        "ch4§2¶42",
+        "ch4§2¶44",
+        "ch4§2¶48",
+        "ch4§2¶49",
+        "ch4§2¶50",
+        "ch4§2¶51",
+        "ch4§2¶53",
+        "ch4§2¶54",
+        "ch4§2¶57",
+        "ch4§2¶59",
+        "ch4§2¶61"
+      ],
+      "reason": "section headings, recap of framework points already captured by single framework bridge, 2nd+ examples (literacy students, repercharge re-explained, X Factor list), reader-prompt questions, and forward-link to next chapter"
+    },
+    "ch5§1¶1 (merged into bridge)",
+    "ch5§1¶4-7 (descriptive padding: umpire launch, lane geography)",
+    "ch5§1¶9-11 (descriptive padding: crew names, stake boat)",
+    "ch5§1¶15 (recap of loss feelings)",
+    "ch5§1¶17-18 (intra-chapter repeat of rhythm question)",
+    "ch5§2¶4-7 (generic 'maybe you' examples)",
+    "ch5§2¶10 (throat-clearing)",
+    "ch5§2¶16-18 (2nd example: coaching woman backstory)",
+    "ch5§2¶19 (Seligman setup — kept ¶20 payoff)",
+    "ch5§2¶22 (Stephen hotel anecdote — kept ¶23 lesson)",
+    "ch5§2¶29 (list intro fragment)",
+    "ch5§2¶32 (recap)",
+    "ch5§2¶36-37 (Carlos setup — kept ¶38 lesson)",
+    "ch5§2¶39-47 (rainbow options list — illustrative repeat)",
+    "ch5§2¶51 (iguana extension)",
+    "ch5§2¶54-58 (washing-up list — kept ¶59 takeaway)",
+    "ch5§2¶62 (supermarket bread aside)",
+    "ch5§2¶65 (swimming pool metaphor)",
+    "ch5§2¶69-70 (2nd+ examples: German crews medal)",
+    "ch5§2¶73 (friend's redundancy 2nd example)",
+    "ch5§2¶77 (marketing CTA)",
+    "Sarnen scene-setting and rowing-camp texture (§1¶1-5, ¶7, ¶9-15)",
+    "Aftermath plodding/dinner texture (§1¶21-22, ¶24-26)",
+    "Second/third corporate examples (sales teams, retail Employee of the Month, High Street chain, call centre, Ernst & Young, BOA open-plan, HSBC manager, car parts client, coached individual)",
+    "Section headers, table-of-contents lists, and recap restatements (§2¶3,6-15, ¶24, ¶46, ¶51-53, ¶60-62, ¶66-67, ¶86, ¶88-92, ¶126-128)",
+    "Descriptive padding on team value (§2¶16, ¶18-21, ¶23, ¶25, ¶27-30, ¶33-37, ¶39-43, ¶45, ¶47-48, ¶55-59, ¶63-65, ¶68, ¶70-77, ¶79-80, ¶84-85, ¶87, ¶93-95, ¶97-98, ¶100, ¶102, ¶105-111, ¶113-116, ¶118-119, ¶122-123, ¶125, ¶130)",
+    "Marketing outro and photo captions (§2¶131-150)",
+    "ch7§1¶1-2 (scene-setting trailer-packing texture)",
+    "ch7§1¶4 (Rotsee descriptive padding)",
+    "ch7§1¶8-13 (Grand Hotel + window-climbing comic aside — entertaining but not process-relevant)",
+    "ch7§1¶14-15 (boating texture)",
+    "ch7§1¶18-19 (interior repeat of stakes)",
+    "ch7§1¶21,23,25-26,29-31,33,35,37-41,43,45 (race play-by-play minutiae, toilet queues, warmup beats — kept key turns only)",
+    "ch7§2¶1,4,5,10-22,25-29,32-33,38-40,44-46,48-49,51,53-54 (rhetorical questions, second+ examples like Rice Krispies/Shreddies, kids-to-school, sales rapport, management trainer, corporate presentation, e-course CTA)",
+    "ch8§1¶1",
+    "ch8§1¶2",
+    "ch8§1¶5",
+    "ch8§1¶6",
+    "ch8§1¶7",
+    "ch8§1¶8",
+    "ch8§1¶9",
+    "ch8§1¶14",
+    "ch8§1¶15",
+    "ch8§1¶17",
+    "ch8§1¶18",
+    "ch8§1¶22",
+    "ch8§1¶23",
+    "ch8§1¶24",
+    "ch8§1¶25",
+    "ch8§1¶26",
+    "ch8§2¶1",
+    "ch8§2¶4",
+    "ch8§2¶5",
+    "ch8§2¶6",
+    "ch8§2¶7",
+    "ch8§2¶8",
+    "ch8§2¶13",
+    "ch8§2¶14",
+    "ch8§2¶15",
+    "ch8§2¶16",
+    "ch8§2¶17",
+    "ch8§2¶18",
+    "ch8§2¶19",
+    "ch8§2¶21",
+    "ch8§2¶22",
+    "ch8§2¶23",
+    "ch8§2¶24",
+    "ch8§2¶25",
+    "ch8§2¶26",
+    "ch8§2¶27",
+    "ch8§2¶28",
+    "ch8§2¶29",
+    "ch8§2¶32",
+    "ch8§2¶34",
+    "ch8§2¶36",
+    "ch8§2¶39",
+    "ch8§2¶41",
+    "ch8§2¶42",
+    "ch8§2¶43",
+    "ch8§2¶45",
+    "ch8§2¶47",
+    "ch8§2¶48",
+    "ch8§2¶50",
+    "ch8§2¶51",
+    "ch8§2¶52",
+    "ch8§2¶53",
+    "ch8§2¶55",
+    "ch8§2¶56",
+    "ch8§2¶57",
+    "ch8§2¶58",
+    "ch8§2¶59",
+    "ch8§2¶60",
+    "ch8§2¶61",
+    "ch8§2¶62",
+    "ch8§2¶64",
+    "ch8§2¶66",
+    "ch8§2¶68",
+    "ch8§2¶69",
+    "ch8§2¶72",
+    "ch8§2¶74",
+    "ch8§2¶75",
+    "ch9§1¶1-2 (throat-clearing intro)",
+    "ch9§1¶4-7,9 (descriptive padding after the loss)",
+    "ch9§1¶12-14,16-23,25-31 (press conference texture, family scene, lunch, US heat recap)",
+    "ch9§1¶34-35,37,39,41-43 (power-stroke session texture, second examples)",
+    "ch9§2¶1,4-21 (sub-heading scaffolding and intro framing duplication)",
+    "ch9§2¶25,27-31,34,37-38,40-41,43,45-52,54,56-58,60-63,65-66,68-71,74,76,78-82,84-86,89-90 (2nd+ examples, recap, intra-chapter repeats, marketing tail)",
+    "ch10§1¶2 (1992 backstory texture — driving-tired anecdote)",
+    "ch10§1¶5-7 (year-by-year setback recap, condensed in bridge)",
+    "ch10§1¶17,19,21,23-28,30,33 (race-day micro-procedure and start-sequence detail — second example of build-up already covered in ch9-style starts)",
+    "ch10§2¶4-5 (cross-ref bullets to other chapters)",
+    "ch10§2¶8-9,11 (throat-clearing transitions)",
+    "ch10§2¶18,20,27-28 (second examples of preparation/support)",
+    "ch10§2¶33,35,37-42 (excuse/reason dictionary digression — recap of point)",
+    "ch10§2¶45-48 (Spanish-verb examples and Christmas swim 2nd example)",
+    "ch10§2¶51 (1998 recap — covered in main narrative)",
+    "ch10§2¶55-56,60 (restaurant/traffic-jam 2nd examples)",
+    "ch10§2¶62-64 (Dutch tailwind 2nd example)",
+    "ch10§2¶69-73 (printer-jam 2nd example)",
+    "ch10§2¶75,79-80,82,84-86 (Duisburg setup detail and sales-target 2nd example)",
+    "ch10§2¶93,96 (recap)",
+    "ch10§2¶99 (marketing CTA)",
+    "ch11§1¶2",
+    "ch11§1¶3",
+    "ch11§1¶6",
+    "ch11§1¶8",
+    "ch11§1¶9",
+    "ch11§1¶14",
+    "ch11§1¶15",
+    "ch11§1¶16",
+    "ch11§1¶17",
+    "ch11§1¶18",
+    "ch11§1¶19",
+    "ch11§1¶20",
+    "ch11§1¶21",
+    "ch11§1¶23",
+    "ch11§1¶31",
+    "ch11§1¶33",
+    "ch11§1¶34",
+    "ch11§1¶35",
+    "ch11§2¶12",
+    "ch11§2¶13",
+    "ch11§2¶14",
+    "ch11§2¶15",
+    "ch11§2¶16",
+    "ch11§2¶18",
+    "ch11§2¶19",
+    "ch11§2¶21",
+    "ch11§2¶22",
+    "ch11§2¶23",
+    "ch11§2¶24",
+    "ch11§2¶30",
+    "ch11§2¶34",
+    "ch11§2¶36",
+    "ch11§2¶40",
+    "ch11§2¶41",
+    "ch11§2¶45",
+    "ch11§2¶47",
+    "ch11§2¶50",
+    "ch11§2¶51",
+    "ch11§2¶52",
+    "ch11§2¶55",
+    "ch11§2¶57",
+    "ch11§2¶60",
+    "ch11§2¶63",
+    "ch11§2¶64",
+    "ch11§2¶76",
+    "ch11§2¶80",
+    "ch11§2¶84",
+    "ch11§2¶89",
+    "ch11§2¶90",
+    "ch11§2¶93",
+    {
+      "source_id_range": "ch12§1¶5, ¶8-9, ¶12-14, ¶23-24, ¶29-31, ¶34-36, ¶38-40, ¶48, ¶50",
+      "reason": "Pre-race plan recap, mid-race counting fragments, and minor aftermath beats — covered by adjacent anchors carrying the same arc."
+    },
+    {
+      "source_id_range": "ch12§2¶1, ¶3-16, ¶18-19, ¶21, ¶23-24, ¶26-27, ¶29-30, ¶32-34",
+      "reason": "Reflection scaffolding, reader-prompt bullet questions, and meta-commentary that recaps earlier chapter frameworks."
+    },
+    {
+      "source_id_range": "ch12§3¶1-28",
+      "reason": "Cast list reference appendix — biographical thumbnails not part of narrative arc."
+    },
+    {
+      "source_id_range": "ch12§4¶1, ch12§5¶1-13",
+      "reason": "Chronology notation and contents-page section headings — navigation metadata, not chapter content."
+    }
+  ]
+}

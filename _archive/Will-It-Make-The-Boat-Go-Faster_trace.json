@@ -1,0 +1,125 @@
+{
+  "trace_version": "book-to-html-trace/1.0",
+  "build_id": "20260527-001-boat-go-faster",
+  "book_metadata": {
+    "total_words": 64352,
+    "author": "Ben Hunt-Davis & Harriet Beveridge",
+    "title": "Will It Make The Boat Go Faster?"
+  },
+  "intake": {
+    "style_anchor_pref": "muted_watercolor",
+    "book_seed": 4321,
+    "illustration_channel_pref": "A_and_B",
+    "book_kind": "mixed"
+  },
+  "outcome": "delivered",
+  "spans": [
+    {
+      "iter": 1,
+      "substrate": "deterministic",
+      "persona": "ingestor",
+      "result": "1494 paragraphs, 12 chapters, 64352 words"
+    },
+    {
+      "iter": 1,
+      "model": "opus",
+      "substrate": "AI",
+      "persona": "editor_fanout",
+      "result": "12 parallel Editor sub-agents; 542 units total; partial output-budget failures on ch4/ch8/ch12 (later recovered)"
+    },
+    {
+      "iter": 1,
+      "substrate": "deterministic",
+      "persona": "proofreader_anchor",
+      "result": "372 anchors verified; 99.2% pass after smart-quote normalization"
+    },
+    {
+      "iter": 1,
+      "model": "sonnet",
+      "substrate": "AI",
+      "persona": "proofreader_bridge",
+      "result": "22 bridges audited; 5 violations"
+    },
+    {
+      "iter": 2,
+      "model": "opus",
+      "substrate": "AI",
+      "persona": "editor_rework",
+      "result": "5 flagged bridges fixed across ch1/ch2/ch3"
+    },
+    {
+      "iter": 1,
+      "model": "sonnet",
+      "substrate": "AI",
+      "persona": "proofreader_bridge_part2",
+      "result": "43 remaining bridges audited; 0 violations"
+    },
+    {
+      "iter": 2,
+      "substrate": "deterministic",
+      "persona": "deterministic_backfill",
+      "result": "65 empty anchors backfilled from source; 59 empty bridges dropped (Editor output-budget recovery)"
+    },
+    {
+      "iter": 2,
+      "model": "opus",
+      "substrate": "AI",
+      "persona": "editor_ch12_redo",
+      "result": "ch12 redone: 44 units, 2789 words"
+    },
+    {
+      "iter": 1,
+      "model": "opus",
+      "substrate": "AI",
+      "persona": "designer",
+      "result": "linear navigation, 12 Channel A diagrams + 12 Channel B openers, muted_watercolor anchor, seed=4321"
+    },
+    {
+      "iter": 1,
+      "model": "sonnet",
+      "substrate": "AI",
+      "persona": "comprehension_q_gen",
+      "result": "10 questions generated from corpus"
+    },
+    {
+      "iter": 2,
+      "substrate": "deterministic",
+      "persona": "assembler",
+      "result": "209.7 KB HTML; 60% retention; bridge_ratio 0.038; 12/12 TOC entries rendered"
+    },
+    {
+      "iter": 1,
+      "model": "opus",
+      "substrate": "AI",
+      "persona": "reader",
+      "result": "FAIL — ch4/ch8 empty bodies, books_finished_rate=3"
+    },
+    {
+      "iter": 2,
+      "model": "opus",
+      "substrate": "AI",
+      "persona": "reader",
+      "result": "PASS — scores 4/5/5/4/4, books_finished_rate=4, would_skip_original=true"
+    }
+  ],
+  "reader_verdict": {
+    "would_skip_original": true,
+    "iteration_passed": 2,
+    "gate_status": "pass",
+    "lowest_dimension": "visual_pleasure",
+    "scores": {
+      "visual_pleasure": 4,
+      "navigation": 5,
+      "comprehension": 5,
+      "illustration": 4,
+      "books_finished_rate": 4
+    }
+  },
+  "proofreader_summary": {
+    "chapter_coverage_status": "3 HIGH (ch4,5,8) + 2 LOW (ch6,12) noted; non-fatal soft constraint",
+    "anchor_pass_pct": 0.992,
+    "bridge_violations_after_rework": 0,
+    "bridge_violations_initial": 5
+  },
+  "ended_at": "2026-05-27T16:26:05Z"
+}

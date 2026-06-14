@@ -1,0 +1,56 @@
+{
+  "chapter_title": "LAW 15: CRUSH YOUR ENEMY TOTALLY",
+  "law_no": 15,
+  "units": [
+    {
+      "unit_id": "u_15_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch15§28¶1\"><p>All great leaders since Moses have known that a feared enemy must be crushed completely. (Sometimes they have learned this the hard way.) If one ember is left alight, no matter how dimly it smolders, a fire will eventually break out. More is lost through stopping halfway than through total annihilation: The enemy will recover, and will seek revenge. Crush him, not only in body but in spirit.</p></blockquote>",
+      "source_ids": ["ch15§28¶1"],
+      "verbatim_quote": "All great leaders since Moses have known that a feared enemy must be crushed completely. (Sometimes they have learned this the hard way.) If one ember is left alight, no matter how dimly it smolders, a fire will eventually break out. More is lost through stopping halfway than through total annihilation: The enemy will recover, and will seek revenge. Crush him, not only in body but in spirit.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_15_0002",
+      "kind": "bridge",
+      "html": "<p>Empress Wu Chao's ascent to absolute power shows what ruthless, total elimination of rivals looks like in practice — down to smothering her own infant.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_15_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch15§28¶24\"><p>Wu managed to seduce the emperor's dissolute son, Kao Tsung, on the only possible occasion when she could find him alone: while he was relieving himself at the royal urinal. Even so, when the emperor died and Kao Tsung took over the throne, she still suffered the fate to which all wives and concubines of a deceased emperor were bound by tradition and law: Her head shaven, she entered a convent, for what was supposed to be the rest of her life. For seven years Wu schemed to escape. By communicating in secret with the new emperor, and by befriending his wife, the empress, she managed to get a highly unusual royal edict allowing her to return to the palace and to the royal harem. Once there, she fawned on the empress, while still sleeping with the emperor. The empress did not discourage this—she had yet to provide the emperor with an heir, her position was vulnerable, and Wu was a valuable ally.</p></blockquote>",
+      "source_ids": ["ch15§28¶24"],
+      "verbatim_quote": "Wu managed to seduce the emperor's dissolute son, Kao Tsung, on the only possible occasion when she could find him alone: while he was relieving himself at the royal urinal. Even so, when the emperor died and Kao Tsung took over the throne, she still suffered the fate to which all wives and concubines of a deceased emperor were bound by tradition and law: Her head shaven, she entered a convent, for what was supposed to be the rest of her life. For seven years Wu schemed to escape. By communicating in secret with the new emperor, and by befriending his wife, the empress, she managed to get a highly unusual royal edict allowing her to return to the palace and to the royal harem. Once there, she fawned on the empress, while still sleeping with the emperor. The empress did not discourage this—she had yet to provide the emperor with an heir, her position was vulnerable, and Wu was a valuable ally.",
+      "retention_signal": "story_setup"
+    },
+    {
+      "unit_id": "u_15_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch15§28¶25\"><p>In 654 Wu Chao gave birth to a child. One day the empress came to visit, and as soon as she had left, Wu smothered the newborn—her own baby. When the murder was discovered, suspicion immediately fell on the empress, who had been on the scene moments earlier, and whose jealous nature was known by all. This was precisely Wu's plan. Shortly thereafter, the empress was charged with murder and executed. Wu Chao was crowned empress in her place. Her new husband, addicted to his life of pleasure, gladly gave up the reins of government to Wu Chao, who was from then on known as Empress Wu.</p></blockquote>",
+      "source_ids": ["ch15§28¶25"],
+      "verbatim_quote": "In 654 Wu Chao gave birth to a child. One day the empress came to visit, and as soon as she had left, Wu smothered the newborn—her own baby. When the murder was discovered, suspicion immediately fell on the empress, who had been on the scene moments earlier, and whose jealous nature was known by all. This was precisely Wu's plan. Shortly thereafter, the empress was charged with murder and executed. Wu Chao was crowned empress in her place. Her new husband, addicted to his life of pleasure, gladly gave up the reins of government to Wu Chao, who was from then on known as Empress Wu.",
+      "retention_signal": "story_peak"
+    },
+    {
+      "unit_id": "u_15_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch15§28¶32\"><p>It is no accident that the two stories illustrating this law come from China: Chinese history abounds with examples of enemies who were left alive and returned to haunt the lenient. &quot;Crush the enemy&quot; is a key strategic tenet of Sun-tzu, the fourth-century-B.C. author of The Art of War. The idea is simple: Your enemies wish you ill. There is nothing they want more than to eliminate you. If, in your struggles with them, you stop halfway or even three quarters of the way, out of mercy or hope of reconciliation, you only make them more determined, more embittered, and they will someday take revenge. They may act friendly for the time being, but this is only because you have defeated them. They have no choice but to bide their time.</p></blockquote>",
+      "source_ids": ["ch15§28¶32"],
+      "verbatim_quote": "It is no accident that the two stories illustrating this law come from China: Chinese history abounds with examples of enemies who were left alive and returned to haunt the lenient. \"Crush the enemy\" is a key strategic tenet of Sun-tzu, the fourth-century-B.C. author of The Art of War. The idea is simple: Your enemies wish you ill. There is nothing they want more than to eliminate you. If, in your struggles with them, you stop halfway or even three quarters of the way, out of mercy or hope of reconciliation, you only make them more determined, more embittered, and they will someday take revenge. They may act friendly for the time being, but this is only because you have defeated them. They have no choice but to bide their time.",
+      "retention_signal": "core_principle"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 15: CRUSH YOUR ENEMY TOTALLY",
+    "chapter_source_words": 2000,
+    "chapter_output_words": 420,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression paragraphs 2, 5-6", "reason": "Hsiang Yu / Liu Pang setup and Cesare Borgia excerpt are strong but Empress Wu observance is more complete and vivid"},
+      {"section": "keys_to_power paragraphs 33-37", "reason": "Mao/Chiang and Moses/Clausewitz passages reinforce but don't surpass the core principle in paragraph 32"}
+    ]
+  }
+}

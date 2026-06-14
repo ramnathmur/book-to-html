@@ -1,0 +1,454 @@
+<!doctype html>
+<!--
+  book-to-html — Reading UX Template (Stripe Press × Distill × Gwern stack)
+  The Visual Designer copies this file, fills <article>, and inlines the
+  illustration_plan content. The chrome contract is non-negotiable.
+  Owned by: references/persona-designer.md
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atomic Habits: Tiny Changes, Remarkable Results — Reader</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --fg: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #b54300;
+      --rule: #d8d8d8;
+      --measure: 66ch;
+      --leading: 1.65;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1a1a1a; --fg: #e6e6e6; --muted: #9a9a9a; --rule: #333; }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Iowan Old Style", "Source Serif Pro", Charter, Cambria, Georgia, serif;
+      font-size: clamp(1rem, 0.5rem + 1vw, 1.25rem);
+      line-height: var(--leading);
+    }
+    /* Top progress bar */
+    #progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0;
+      background: var(--accent); z-index: 100; transition: width 80ms linear;
+    }
+    /* Layout: side TOC | article | side margin for sidenotes */
+    .page {
+      display: grid;
+      grid-template-columns: minmax(200px, 1fr) minmax(0, var(--measure)) minmax(180px, 1fr);
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1400px; margin: 0 auto;
+    }
+    @media (max-width: 1080px) {
+      .page { grid-template-columns: 1fr; padding: 1.5rem 1rem; }
+      #toc { position: static; max-height: none; border-right: 0; padding-right: 0; }
+    }
+    /* TOC */
+    #toc {
+      position: sticky; top: 2rem; align-self: start;
+      max-height: calc(100vh - 4rem); overflow-y: auto;
+      font-size: 0.85rem; line-height: 1.4;
+      border-right: 1px solid var(--rule); padding-right: 1rem;
+    }
+    #toc h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 0.5rem; }
+    #toc ol { list-style: none; padding: 0; margin: 0; }
+    #toc li { margin: 0.25rem 0; }
+    #toc a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; }
+    #toc a.current { color: var(--fg); border-bottom-color: var(--accent); }
+    #meta { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--rule); }
+    /* Article */
+    article { max-width: var(--measure); }
+    article h1 { font-size: 2.4rem; line-height: 1.2; margin: 0 0 0.25em; }
+    article h1 + .byline { color: var(--muted); font-style: italic; margin-bottom: 2rem; }
+    article h2 { font-size: 1.6rem; line-height: 1.25; margin-top: 3rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+    article h2 .reading-time { font-size: 0.75rem; color: var(--muted); font-weight: normal; float: right; }
+    article h2:first-of-type { border-top: 0; padding-top: 0; }
+    article h3 { font-size: 1.15rem; margin-top: 2rem; }
+    article p { margin: 1em 0; }
+    /* Drop cap at chapter opener */
+    article h2 + p::first-letter {
+      float: left; font-size: 3.6em; line-height: 0.85; padding: 0.1em 0.1em 0 0;
+      font-family: inherit; color: var(--accent);
+    }
+    /* Anchor blockquote — verbatim source */
+    blockquote.anchor {
+      margin: 1.5em 0; padding: 0.25em 1em; border-left: 3px solid var(--accent);
+      color: var(--fg); font-style: normal;
+    }
+    blockquote.anchor[data-source-id]::after {
+      content: " (" attr(data-source-id) ")";
+      font-size: 0.7em; color: var(--muted); font-style: italic;
+    }
+    /* Pull-quote */
+    aside.pullquote {
+      font-size: 1.5em; line-height: 1.35; font-style: italic; color: var(--accent);
+      border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+      padding: 1rem 0; margin: 2.5rem 0;
+    }
+    /* Sidenote (Tufte pattern) */
+    .sidenote {
+      grid-column: 3; float: right; clear: right;
+      width: 180px; margin-right: -200px; font-size: 0.78rem; color: var(--muted);
+      line-height: 1.4;
+    }
+    @media (max-width: 1080px) {
+      .sidenote { float: none; width: auto; margin: 0.5rem 0; padding: 0.5rem; background: rgba(127,127,127,0.05); display: block; }
+    }
+    /* Hover popover for internal links */
+    .xref { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); position: relative; }
+    .xref:hover .preview, .xref:focus .preview { display: block; }
+    .xref .preview {
+      display: none; position: absolute; bottom: 100%; left: 0;
+      background: var(--bg); border: 1px solid var(--rule); padding: 0.5rem 0.75rem;
+      width: 320px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 0.85rem; line-height: 1.4; z-index: 50;
+    }
+    /* Illustration containers */
+    figure { margin: 2rem 0; }
+    figure img { max-width: 100%; height: auto; display: block; border-radius: 2px; }
+    figure figcaption { font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; font-style: italic; }
+    figure.diagram { background: rgba(127,127,127,0.04); padding: 1rem; border-radius: 2px; }
+    /* Design Note */
+    #design-note {
+      background: rgba(181,67,0,0.06); border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem; margin-bottom: 2rem; font-size: 0.9rem; line-height: 1.5;
+    }
+    #design-note h2 { margin: 0 0 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); border: 0; padding: 0; }
+    /* Footer */
+    footer { margin-top: 6rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div id="progress"></div>
+  <div class="page">
+    <nav id="toc">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#ch-1">1. Introduction: My Story</a></li>
+        <li><a href="#ch-2">2. The Surprising Power of Atomic Habits</a></li>
+        <li><a href="#ch-3">3. How Your Habits Shape Your Identity (and Vice Versa)</a></li>
+        <li><a href="#ch-4">4. How to Build Better Habits in 4 Simple Steps</a></li>
+        <li><a href="#ch-5">5. The Man Who Didn&#x27;t Look Right</a></li>
+        <li><a href="#ch-6">6. The Best Way to Start a New Habit</a></li>
+        <li><a href="#ch-7">7. Motivation Is Overrated; Environment Often Matters More</a></li>
+        <li><a href="#ch-8">8. The Secret to Self-Control</a></li>
+        <li><a href="#ch-9">9. How to Make a Habit Irresistible</a></li>
+        <li><a href="#ch-10">10. The Role of Family and Friends in Shaping Your Habits</a></li>
+        <li><a href="#ch-11">11. How to Find and Fix the Causes of Your Bad Habits</a></li>
+        <li><a href="#ch-12">12. Walk Slowly, but Never Backward</a></li>
+        <li><a href="#ch-13">13. The Law of Least Effort</a></li>
+        <li><a href="#ch-14">14. How to Stop Procrastinating by Using the Two-Minute Rule</a></li>
+        <li><a href="#ch-15">15. How to Make Good Habits Inevitable and Bad Habits Impossible</a></li>
+        <li><a href="#ch-16">16. The Cardinal Rule of Behavior Change</a></li>
+        <li><a href="#ch-17">17. How to Stick with Good Habits Every Day</a></li>
+        <li><a href="#ch-18">18. How an Accountability Partner Can Change Everything</a></li>
+        <li><a href="#ch-19">19. The Truth About Talent (When Genes Matter and When They Don&#x27;t)</a></li>
+        <li><a href="#ch-20">20. The Goldilocks Rule: How to Stay Motivated in Life and Work</a></li>
+        <li><a href="#ch-21">21. The Downside of Creating Good Habits</a></li>
+        <li><a href="#ch-22">22. Conclusion: The Secret to Results That Last</a></li>
+      </ol>
+      <div id="meta">
+        <div id="reading-time-doc">~22 min · 4451 words</div>
+        <div id="progress-text">0% read</div>
+      </div>
+    </nav>
+
+    <article>
+      <h1>Atomic Habits: Tiny Changes, Remarkable Results</h1>
+      <p class="byline">by James Clear · Condensed AI reader · 2026-05-27</p>
+
+      <div id="design-note">
+        <h2>Design Note</h2>
+        <p>Linear navigation because in Atomic Habits sequence IS the argument: the Four Laws stack on the Habit Loop, and each chapter assumes the prior one. The TOC mirrors chapter order rather than clustering by theme. Diagrams are Mermaid only (Channel A) and appear only where a concept has a relationship worth externalizing — compounding math, the habit loop, the Goldilocks zone, the Two-Minute Rule. Pull-quotes break the page every 3–5 chapters and are drawn from the highest-retention anchor in that band, so the reader's eye is rewarded with Clear's own voice, not editorial summary. Tufte-style sidenotes carry one cue per chapter; drop caps mark chapter openers; a 3px progress bar plus scroll-spy TOC give a constant sense of where you are in a 22-chapter argument. The body measure is locked at 66ch to keep saccades short — this is a book to finish, not skim.</p>
+      </div>
+
+      <h2 id="ch-1">1. Introduction: My Story <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch1§2¶2">We all face challenges in life. This injury was one of mine, and the experience taught me a critical lesson: changes that seem small and unimportant at first will compound into remarkable results if you're willing to stick with them for years. We all deal with setbacks but in the long run, the quality of our lives often depends on the quality of our habits. With the same habits, you'll end up with the same results. But with better habits, anything is possible.</blockquote>
+<blockquote class="anchor" data-source-id="ch1§3¶1">The backbone of this book is my four-step model of habits—cue, craving, response, and reward—and the four laws of behavior change that evolve out of these steps.</blockquote>
+<h2 id="ch-2">2. The Surprising Power of Atomic Habits <span class="reading-time">~2 min</span></h2>
+<aside class="sidenote">Voice cue: <em>habits are the compound interest of self-improvement.</em></aside>
+<blockquote class="anchor" data-source-id="ch2§2¶1">Here's how the math works out: if you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done. Conversely, if you get 1 percent worse each day for one year, you'll decline nearly down to zero.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart LR
+  A["Day 0 baseline (1.00)"] -->|+1% daily x 365| B["37.78x better"]
+  A -->|-1% daily x 365| C["0.03x — near zero"]
+  B --- D["Plateau of Latent Potential:<br/>work is stored before<br/>the breakthrough"]
+  C --- D</div><figcaption>Diagram — Compounding 1% gains vs losses over a year, and the Plateau of Latent Potential where stored effort precedes visible results. <span style="opacity:0.7">(source: ch2§2¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch2§2¶2">Habits are the compound interest of self-improvement. The same way that money multiplies through compound interest, the effects of your habits multiply as you repeat them.</blockquote>
+<blockquote class="anchor" data-source-id="ch2§2¶3">Success is the product of daily habits—not once-in-a-lifetime transformations. That said, it doesn't matter how successful or unsuccessful you are right now. What matters is whether your habits are putting you on the path toward success. You should be far more concerned with your current trajectory than with your current results.</blockquote>
+<blockquote class="anchor" data-source-id="ch2§2¶4">Your outcomes are a lagging measure of your habits. Your net worth is a lagging measure of your financial habits. Your weight is a lagging measure of your eating habits. Your knowledge is a lagging measure of your learning habits. Your clutter is a lagging measure of your cleaning habits. You get what you repeat.</blockquote>
+<blockquote class="anchor" data-source-id="ch2§3¶1">Breakthrough moments are often the result of many previous actions, which build up the potential required to unleash a major change.</blockquote>
+<blockquote class="anchor" data-source-id="ch2§3¶2">If you find yourself struggling to build a good habit or break a bad one, it is not because you have lost your ability to improve. It is often because you have not yet crossed the Plateau of Latent Potential. Complaining about not achieving success despite working hard is like complaining about an ice cube not melting when you heated it from twenty-five to thirty-one degrees. Your work was not wasted; it is just being stored. All the action happens at thirty-two degrees.</blockquote>
+<blockquote class="anchor" data-source-id="ch2§4¶1">Goals are about the results you want to achieve. Systems are about the processes that lead to those results.</blockquote>
+<p>Clear identifies four problems with a goals-first mentality.</p>
+<blockquote class="anchor" data-source-id="ch2§5¶1">You do not rise to the level of your goals. You fall to the level of your systems.</blockquote>
+<blockquote class="anchor" data-source-id="ch2§5¶2">An atomic habit refers to a tiny change, a marginal gain, a 1 percent improvement. But atomic habits are not just any old habits, however small. They are little habits that are part of a larger system. Just as atoms are the building blocks of molecules, atomic habits are the building blocks of remarkable results.</blockquote>
+<h2 id="ch-3">3. How Your Habits Shape Your Identity (and Vice Versa) <span class="reading-time">~1 min</span></h2>
+<aside class="sidenote">The onion: outcomes → process → identity. Deeper layers, harder to change, more durable.</aside>
+<blockquote class="anchor" data-source-id="ch3§1¶1">There are three levels at which change can occur. You can imagine them like the layers of an onion. The first layer is changing your outcomes. The second layer is changing your process. The third and deepest layer is changing your identity. Outcomes are about what you get. Processes are about what you do. Identity is about what you believe.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart TB
+  O["Outcomes (what you get)"] --> P["Process (what you do)"]
+  P --> I["Identity (what you believe)"]
+  I -->|every action is a vote| H["Habits"]
+  H -->|build evidence| I
+  classDef core fill:#fff3e6,stroke:#b54300;
+  class I core;</div><figcaption>Diagram — Three layers of change. Identity-based habits form a reinforcing loop: each action is a vote that thickens belief. <span style="opacity:0.7">(source: ch3§2¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch3§1¶2">Imagine two people resisting a cigarette. When offered a smoke, the first person says, "No thanks. I'm trying to quit." It sounds like a reasonable response, but this person still believes they are a smoker who is trying to be something else. The second person declines by saying, "No thanks. I'm not a smoker." It's a small difference, but this statement signals a shift in identity.</blockquote>
+<blockquote class="anchor" data-source-id="ch3§1¶3">The ultimate form of intrinsic motivation is when a habit becomes part of your identity. It's one thing to say I'm the type of person who wants this. It's something very different to say I'm the type of person who is this.</blockquote>
+<blockquote class="anchor" data-source-id="ch3§1¶4">The goal is not to read a book, the goal is to become a reader. The goal is not to run a marathon, the goal is to become a runner. The goal is not to learn an instrument, the goal is to become a musician.</blockquote>
+<blockquote class="anchor" data-source-id="ch3§2¶1">Your identity emerges out of your habits. Every action you take is a vote for the type of person you wish to become. No single instance will transform your beliefs, but as the votes build up, so does the evidence of your new identity.</blockquote>
+<blockquote class="anchor" data-source-id="ch3§2¶2">It is a simple two-step process: Decide the type of person you want to be. Prove it to yourself with small wins.</blockquote>
+<blockquote class="anchor" data-source-id="ch3§3¶1">Quite literally, you become your habits.</blockquote>
+<h2 id="ch-4">4. How to Build Better Habits in 4 Simple Steps <span class="reading-time">~1 min</span></h2>
+<aside class="sidenote">The Four Laws map 1:1 onto the Habit Loop — cue, craving, response, reward.</aside>
+<blockquote class="anchor" data-source-id="ch4§2¶1">A habit is a behavior that has been repeated enough times to become automatic.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart LR
+  C["Cue"] -->|1st Law: Make it Obvious| Cr["Craving"]
+  Cr -->|2nd Law: Make it Attractive| R["Response"]
+  R -->|3rd Law: Make it Easy| Rw["Reward"]
+  Rw -->|4th Law: Make it Satisfying| C</div><figcaption>Diagram — The habit loop — cue, craving, response, reward — with each of the Four Laws of Behavior Change attached to its corresponding step. <span style="opacity:0.7">(source: ch4§3¶2)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch4§2¶2">Habits do not restrict freedom. They create it. In fact, the people who don't have their habits handled are often the ones with the least amount of freedom.</blockquote>
+<blockquote class="anchor" data-source-id="ch4§3¶1">The process of building a habit can be divided into four simple steps: cue, craving, response, and reward.</blockquote>
+<blockquote class="anchor" data-source-id="ch4§3¶2">In summary, the cue triggers a craving, which motivates a response, which provides a reward, which satisfies the craving and, ultimately, becomes associated with the cue. Together, these four steps form a neurological feedback loop—cue, craving, response, reward; cue, craving, response, reward—that ultimately allows you to create automatic habits. This cycle is known as the habit loop.</blockquote>
+<blockquote class="anchor" data-source-id="ch4§4¶1">I refer to this framework as the Four Laws of Behavior Change, and it provides a simple set of rules for creating good habits and breaking bad ones. How to Create a Good Habit: The 1st law (Cue): Make it obvious. The 2nd law (Craving): Make it attractive. The 3rd law (Response): Make it easy. The 4th law (Reward): Make it satisfying. We can invert these laws to learn how to break a bad habit: Make it invisible. Make it unattractive. Make it difficult. Make it unsatisfying.</blockquote>
+<p>Ask: How can I make it obvious, attractive, easy, and satisfying?</p>
+<aside class="pullquote">&ldquo;The backbone of this book is my four-step model of habits—cue, craving, response, and reward—and the four laws of behavior change that evolve out of these steps.&rdquo; <span style="font-size:0.55em;font-style:normal;display:block;margin-top:0.5rem;opacity:0.7">— ch1§3¶1</span></aside>
+<h2 id="ch-5">5. The Man Who Didn&#x27;t Look Right <span class="reading-time">~1 min</span></h2>
+<p>The 1st Law of Behavior Change is Make It Obvious.</p>
+<blockquote class="anchor" data-source-id="ch5§1¶3">With enough practice, you can pick up on the cues that predict certain outcomes without consciously thinking about it. Automatically, your brain encodes the lessons learned through experience.</blockquote>
+<blockquote class="anchor" data-source-id="ch5§1¶4">As the psychologist Carl Jung said, "Until you make the unconscious conscious, it will direct your life and you will call it fate."</blockquote>
+<blockquote class="anchor" data-source-id="ch5§2¶1">This process, known as Pointing-and-Calling, is a safety system designed to reduce mistakes. It seems silly, but it works incredibly well. Pointing-and-Calling reduces errors by up to 85 percent and cuts accidents by 30 percent.</blockquote>
+<blockquote class="anchor" data-source-id="ch5§2¶2">To create your own, make a list of your daily habits. Once you have a full list, look at each behavior, and ask yourself, "Is this a good habit, a bad habit, or a neutral habit?" If it is a good habit, write "+" next to it. If it is a bad habit, write "–". If it is a neutral habit, write "=".</blockquote>
+<blockquote class="anchor" data-source-id="ch5§2¶3">If you're still having trouble determining how to rate a particular habit, here is a question I like to use: "Does this behavior help me become the type of person I wish to be? Does this habit cast a vote for or against my desired identity?"</blockquote>
+<h2 id="ch-6">6. The Best Way to Start a New Habit <span class="reading-time">~1 min</span></h2>
+<aside class="sidenote">If-Then: <em>When situation X arises, I will perform response Y.</em></aside>
+<blockquote class="anchor" data-source-id="ch6§1¶3">The sentence they filled out is what researchers refer to as an implementation intention, which is a plan you make beforehand about when and where to act. That is, how you intend to implement a particular habit.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart LR
+  A["Vague intention:<br/>'I will exercise more'"] -.weak.-> X["Often skipped"]
+  B["Implementation intention:<br/>I will [BEHAVIOR] at [TIME]<br/>in [LOCATION]"] ==strong==> Y["Executed automatically"]
+  B --> S["Habit stacking:<br/>After [CURRENT HABIT],<br/>I will [NEW HABIT]"]</div><figcaption>Diagram — Implementation intentions and habit stacking — tying a new behavior to a specific time, location, or existing cue. <span style="opacity:0.7">(source: ch6§1¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch6§1¶4">Broadly speaking, the format for creating an implementation intention is: "When situation X arises, I will perform response Y."</blockquote>
+<blockquote class="anchor" data-source-id="ch6§1¶5">Many people think they lack motivation when what they really lack is clarity.</blockquote>
+<blockquote class="anchor" data-source-id="ch6§1¶6">The simple way to apply this strategy to your habits is to fill out this sentence: I will [BEHAVIOR] at [TIME] in [LOCATION].</blockquote>
+<blockquote class="anchor" data-source-id="ch6§2¶1">One of the best ways to build a new habit is to identify a current habit you already do each day and then stack your new behavior on top. This is called habit stacking. The habit stacking formula is: "After [CURRENT HABIT], I will [NEW HABIT]."</blockquote>
+<blockquote class="anchor" data-source-id="ch6§2¶2">Habit stacking works best when the cue is highly specific and immediately actionable. Many people select cues that are too vague. I made this mistake myself. When I wanted to start a push-up habit, my habit stack was "When I take a break for lunch, I will do ten push-ups." At first glance, this sounded reasonable. But soon, I realized the trigger was unclear. After a few inconsistent days, I changed my habit stack to: "When I close my laptop for lunch, I will do ten push-ups next to my desk." Ambiguity gone.</blockquote>
+<h2 id="ch-7">7. Motivation Is Overrated; Environment Often Matters More <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch7§1¶3">People often choose products not because of what they are, but because of where they are.</blockquote>
+<blockquote class="anchor" data-source-id="ch7§1¶4">Environment is the invisible hand that shapes human behavior.</blockquote>
+<blockquote class="anchor" data-source-id="ch7§1¶5">Given that we are more dependent on vision than on any other sense, it should come as no surprise that visual cues are the greatest catalyst of our behavior. For this reason, a small change in what you see can lead to a big shift in what you do.</blockquote>
+<blockquote class="anchor" data-source-id="ch7§2¶1">If you want to make a habit a big part of your life, make the cue a big part of your environment. The most persistent behaviors usually have multiple cues.</blockquote>
+<blockquote class="anchor" data-source-id="ch7§2¶2">Be the designer of your world and not merely the consumer of it.</blockquote>
+<blockquote class="anchor" data-source-id="ch7§3¶1">The power of context also reveals an important strategy: habits can be easier to change in a new environment. It helps to escape the subtle triggers and cues that nudge you toward your current habits.</blockquote>
+<blockquote class="anchor" data-source-id="ch7§3¶2">The mantra I find useful is "One space, one use."</blockquote>
+<h2 id="ch-8">8. The Secret to Self-Control <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch8§1¶3">"Disciplined" people are better at structuring their lives in a way that does not require heroic willpower and self-control. In other words, they spend less time in tempting situations. The people with the best self-control are typically the ones who need to use it the least.</blockquote>
+<blockquote class="anchor" data-source-id="ch8§2¶1">Here's the punch line: You can break a habit, but you're unlikely to forget it. Once the mental grooves of habit have been carved into your brain, they are nearly impossible to remove entirely—even if they go unused for quite a while.</blockquote>
+<blockquote class="anchor" data-source-id="ch8§2¶2">Self-control is a short-term strategy, not a long-term one. You may be able to resist temptation once or twice, but it's unlikely you can muster the willpower to override your desires every time. Instead of summoning a new dose of willpower whenever you want to do the right thing, your energy would be better spent optimizing your environment.</blockquote>
+<blockquote class="anchor" data-source-id="ch8§2¶3">This is the secret to self-control. Make the cues of your good habits obvious and the cues of your bad habits invisible.</blockquote>
+<h2 id="ch-9">9. How to Make a Habit Irresistible <span class="reading-time">~1 min</span></h2>
+<aside class="sidenote">Dopamine fires on anticipation, not on reward — that's the lever.</aside>
+<p>The 2nd Law of Behavior Change is Make It Attractive.</p>
+<blockquote class="anchor" data-source-id="ch9§1¶3">We have the brains of our ancestors but temptations they never had to face.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart LR
+  D["Dopamine spike on<br/>ANTICIPATION (not reward)"] --> Cr["Craving"]
+  Cr --> R["Response"]
+  T["Temptation bundling:<br/>pair WANT with NEED"] --> Cr
+  R --> Rw["Reward"]</div><figcaption>Diagram — Dopamine fires on the anticipation of reward, not its receipt; temptation bundling pairs a want with a need to hijack that anticipation. <span style="opacity:0.7">(source: ch9§1¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch9§2¶1">Habits are a dopamine-driven feedback loop. Every behavior that is highly habit-forming—taking drugs, eating junk food, playing video games, browsing social media—is associated with higher levels of dopamine.</blockquote>
+<blockquote class="anchor" data-source-id="ch9§2¶2">When it comes to habits, the key takeaway is this: dopamine is released not only when you experience pleasure, but also when you anticipate it. It is the anticipation of a reward—not the fulfillment of it—that gets us to take action.</blockquote>
+<blockquote class="anchor" data-source-id="ch9§2¶3">Desire is the engine that drives behavior. Every action is taken because of the anticipation that precedes it. It is the craving that leads to the response.</blockquote>
+<blockquote class="anchor" data-source-id="ch9§3¶1">Temptation bundling works by linking an action you want to do with an action you need to do.</blockquote>
+<blockquote class="anchor" data-source-id="ch9§3¶2">The habit stacking + temptation bundling formula is: After [CURRENT HABIT], I will [HABIT I NEED]. After [HABIT I NEED], I will [HABIT I WANT].</blockquote>
+<aside class="pullquote">&ldquo;The sentence they filled out is what researchers refer to as an implementation intention, which is a plan you make beforehand about when and where to act. That is, how you intend to implement a particular habit.&rdquo; <span style="font-size:0.55em;font-style:normal;display:block;margin-top:0.5rem;opacity:0.7">— ch6§1¶3</span></aside>
+<h2 id="ch-10">10. The Role of Family and Friends in Shaping Your Habits <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch10§1¶3">Whatever habits are normal in your culture are among the most attractive behaviors you'll find.</blockquote>
+<blockquote class="anchor" data-source-id="ch10§2¶1">We don't choose our earliest habits, we imitate them. We imitate the habits of three groups in particular: The close. The many. The powerful.</blockquote>
+<blockquote class="anchor" data-source-id="ch10§2¶2">One of the most effective things you can do to build better habits is to join a culture where your desired behavior is the normal behavior. New habits seem achievable when you see others doing them every day.</blockquote>
+<blockquote class="anchor" data-source-id="ch10§2¶3">Nothing sustains motivation better than belonging to the tribe. It transforms a personal quest into a shared one.</blockquote>
+<blockquote class="anchor" data-source-id="ch10§2¶4">The normal behavior of the tribe often overpowers the desired behavior of the individual. Most days, we'd rather be wrong with the crowd than be right by ourselves.</blockquote>
+<blockquote class="anchor" data-source-id="ch10§2¶5">We imitate people we envy. High-status people enjoy the approval, respect, and praise of others. And that means if a behavior can get us approval, respect, and praise, we find it attractive.</blockquote>
+<h2 id="ch-11">11. How to Find and Fix the Causes of Your Bad Habits <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch11§2¶1">Every behavior has a surface level craving and a deeper, underlying motive. A craving is just a specific manifestation of a deeper underlying motive. Your habits are modern-day solutions to ancient desires. New versions of old vices. The underlying motives behind human behavior remain the same.</blockquote>
+<blockquote class="anchor" data-source-id="ch11§2¶2">Life feels reactive, but it is actually predictive. The cause of your habits is actually the prediction that precedes them. These predictions lead to feelings, which is how we typically describe a craving—a feeling, a desire, an urge.</blockquote>
+<blockquote class="anchor" data-source-id="ch11§2¶3">A craving is the sense that something is missing. It is the desire to change your internal state. Desire is the difference between where you are now and where you want to be in the future. Even the tiniest action is tinged with the motivation to feel differently than you do in the moment.</blockquote>
+<blockquote class="anchor" data-source-id="ch11§3¶1">You can make hard habits more attractive if you can learn to associate them with a positive experience. Sometimes, all you need is a slight mind-set shift. You don't "have" to. You "get" to.</blockquote>
+<blockquote class="anchor" data-source-id="ch11§3¶2">If you want to take it a step further, you can create a motivation ritual. You simply practice associating your habits with something you enjoy, then you can use that cue whenever you need a bit of motivation.</blockquote>
+<h2 id="ch-12">12. Walk Slowly, but Never Backward <span class="reading-time">~1 min</span></h2>
+<p>The 3rd Law of Behavior Change is Make It Easy.</p>
+<blockquote class="anchor" data-source-id="ch12§1¶3">I refer to this as the difference between being in motion and taking action. When you're in motion, you're planning and strategizing and learning. Those are all good things, but they don't produce a result. Action, on the other hand, is the type of behavior that will deliver an outcome.</blockquote>
+<blockquote class="anchor" data-source-id="ch12§1¶4">If you want to master a habit, the key is to start with repetition, not perfection. You don't need to map out every feature of a new habit. You just need to practice it.</blockquote>
+<blockquote class="anchor" data-source-id="ch12§2¶1">Habit formation is the process by which a behavior becomes progressively more automatic through repetition.</blockquote>
+<blockquote class="anchor" data-source-id="ch12§2¶2">Habits form based on frequency, not time. There is nothing magical about time passing with regard to habit formation. It doesn't matter if it's been twenty-one days or thirty days or three hundred days. What matters is the rate at which you perform the behavior.</blockquote>
+<h2 id="ch-13">13. The Law of Least Effort <span class="reading-time">~1 min</span></h2>
+<aside class="sidenote">Friction is a force you can engineer in either direction.</aside>
+<blockquote class="anchor" data-source-id="ch13§1¶1">It is human nature to follow the Law of Least Effort, which states that when deciding between two similar options, people will naturally gravitate toward the option that requires the least amount of work.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart TB
+  H["Desired habit"] --> E{"Friction in<br/>environment?"}
+  E -->|High friction| Skip["Skipped"]
+  E -->|Low friction| Do["Performed"]
+  ED["Environment design:<br/>reduce steps,<br/>prime the space"] --> E
+  classDef good fill:#e8f5e8,stroke:#2a7a2a;
+  class Do good;</div><figcaption>Diagram — The Law of Least Effort: behavior follows the path of lowest friction; environment design lowers the activation cost of good habits. <span style="opacity:0.7">(source: ch13§1¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch13§1¶2">In a sense, every habit is just an obstacle to getting what you really want. Dieting is an obstacle to getting fit. Meditation is an obstacle to feeling calm. Journaling is an obstacle to thinking clearly. You don't actually want the habit itself. What you really want is the outcome the habit delivers.</blockquote>
+<blockquote class="anchor" data-source-id="ch13§1¶3">The idea behind make it easy is not to only do easy things. The idea is to make it as easy as possible in the moment to do things that payoff in the long run.</blockquote>
+<blockquote class="anchor" data-source-id="ch13§2¶1">One of the most effective ways to reduce the friction associated with your habits is to practice environment design. Much of the battle of building better habits comes down to finding ways to reduce the friction associated with our good habits and increase the friction associated with our bad ones.</blockquote>
+<blockquote class="anchor" data-source-id="ch13§3¶1">Whenever you organize a space for its intended purpose, you are priming it to make the next action easy. The greater the friction, the less likely the habit.</blockquote>
+<blockquote class="anchor" data-source-id="ch13§3¶2">Redesign your life so the actions that matter most are also the actions that are easiest to do.</blockquote>
+<h2 id="ch-14">14. How to Stop Procrastinating by Using the Two-Minute Rule <span class="reading-time">~1 min</span></h2>
+<aside class="sidenote">Standardize before you optimize.</aside>
+<blockquote class="anchor" data-source-id="ch14§1¶3">Every day, there are a handful of moments that deliver an outsized impact. I refer to these little choices as decisive moments. Decisive moments set the options available to your future self. Habits are the entry point, not the end point.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart TB
+  H["New habit"] --> Q{"Takes more<br/>than 2 minutes?"}
+  Q -->|Yes| S["Scale DOWN to<br/>a 2-minute version"]
+  Q -->|No| D["Do it"]
+  S --> D
+  D --> M["Master showing up<br/>before optimizing"]</div><figcaption>Diagram — The Two-Minute Rule: shrink any new habit to under two minutes, standardize before you optimize. <span style="opacity:0.7">(source: ch14§1¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch14§2¶1">The most effective way I know to counteract this tendency is to use the Two-Minute Rule, which states, "When you start a new habit, it should take less than two minutes to do."</blockquote>
+<blockquote class="anchor" data-source-id="ch14§2¶2">You'll find that nearly any habit can be scaled down into a two-minute version: "Read before bed each night" becomes "Read one page." "Do thirty minutes of yoga" becomes "Take out my yoga mat." "Study for class" becomes "Open my notes." "Fold the laundry" becomes "Fold one pair of socks." "Run three miles" becomes "Tie my running shoes."</blockquote>
+<blockquote class="anchor" data-source-id="ch14§2¶3">People often think it's weird to get hyped about reading one page or meditating for one minute or making one sales call. But the point is not to do one thing. The point is to master the habit of showing up. A habit must be established before it can be improved. You have to standardize before you can optimize.</blockquote>
+<aside class="pullquote">&ldquo;We don&#x27;t choose our earliest habits, we imitate them. We imitate the habits of three groups in particular: The close. The many. The powerful.&rdquo; <span style="font-size:0.55em;font-style:normal;display:block;margin-top:0.5rem;opacity:0.7">— ch10§2¶1</span></aside>
+<h2 id="ch-15">15. How to Make Good Habits Inevitable and Bad Habits Impossible <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch15§1¶3">A commitment device is a choice you make in the present that controls your actions in the future. It is a way to lock in future behavior, bind you to good habits, and restrict you from bad ones.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart LR
+  N["Now: present self"] -->|commitment device| L["Locked-in future choice"]
+  L --> F["Future self forced<br/>into good behavior"]
+  N --> A["One-time automation<br/>(auto-deposit, unsubscribe,<br/>remove app)"]
+  A --> F</div><figcaption>Diagram — Commitment devices and one-time automations: use present-you to lock future-you into the better path. <span style="opacity:0.7">(source: ch15§1¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch15§1¶4">The key is to change the task such that it requires more work to get out of the good habit than to get started on it.</blockquote>
+<blockquote class="anchor" data-source-id="ch15§2¶1">The best way to break a bad habit is to make it impractical to do. Increase the friction until you don't even have the option to act.</blockquote>
+<blockquote class="anchor" data-source-id="ch15§2¶2">When working in your favor, automation can make your good habits inevitable and your bad habits impossible. It is the ultimate way to lock in future behavior rather than relying on willpower in the moment.</blockquote>
+<h2 id="ch-16">16. The Cardinal Rule of Behavior Change <span class="reading-time">~1 min</span></h2>
+<aside class="sidenote">Never miss twice. One miss is an accident; two is the start of a new habit.</aside>
+<p>The 4th Law of Behavior Change is Make It Satisfying.</p>
+<blockquote class="anchor" data-source-id="ch16§1¶3">We are more likely to repeat a behavior when the experience is satisfying. Pleasure teaches your brain that a behavior is worth remembering and repeating.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart LR
+  Do["Do the habit"] --> Tr["Track it<br/>(checkbox / streak)"]
+  Tr --> See["Visible evidence<br/>of progress"]
+  See --> Sat["Satisfying"]
+  Sat --> Do
+  Miss{"Missed a day?"} -.->|never miss twice| Do</div><figcaption>Diagram — Habit tracking closes the loop by making progress visible and satisfying; the rule is &#x27;never miss twice.&#x27; <span style="opacity:0.7">(source: ch16§1¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch16§1¶4">The Cardinal Rule of Behavior Change: What is rewarded is repeated. What is punished is avoided.</blockquote>
+<blockquote class="anchor" data-source-id="ch16§2¶1">You live in what scientists call a delayed-return environment because you can work for years before your actions deliver the intended payoff. The human brain did not evolve for life in a delayed-return environment.</blockquote>
+<blockquote class="anchor" data-source-id="ch16§2¶2">With our bad habits, the immediate outcome usually feels good, but the ultimate outcome feels bad. With good habits, it is the reverse: the immediate outcome is unenjoyable, but the ultimate outcome feels good. Put another way, the costs of your good habits are in the present. The costs of your bad habits are in the future.</blockquote>
+<blockquote class="anchor" data-source-id="ch16§2¶3">Let's update the Cardinal Rule of Behavior Change: What is immediately rewarded is repeated. What is immediately punished is avoided.</blockquote>
+<blockquote class="anchor" data-source-id="ch16§3¶1">The best approach is to use reinforcement, which refers to the process of using an immediate reward to increase the rate of a behavior. Habit stacking ties your habit to an immediate cue, which makes it obvious when to start. Reinforcement ties your habit to an immediate reward, which makes it satisfying when you finish.</blockquote>
+<blockquote class="anchor" data-source-id="ch16§3¶2">Incentives can start a habit. Identity sustains a habit.</blockquote>
+<h2 id="ch-17">17. How to Stick with Good Habits Every Day <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch17§1¶3">A habit tracker is a simple way to measure whether you did a habit. The most basic format is to get a calendar and cross off each day you stick with your routine.</blockquote>
+<blockquote class="anchor" data-source-id="ch17§1¶4">"Don't break the chain" is a powerful mantra. Don't break the chain of sales calls and you'll build a successful book of business. Don't break the chain of workouts and you'll get fit faster than you'd expect. Don't break the chain of creating every day and you will end up with an impressive portfolio.</blockquote>
+<blockquote class="anchor" data-source-id="ch17§1¶5">Habit tracking is powerful because it leverages multiple Laws of Behavior Change. It simultaneously makes a behavior obvious, attractive, and satisfying.</blockquote>
+<blockquote class="anchor" data-source-id="ch17§2¶1">Whenever this happens to me, I try to remind myself of a simple rule: never miss twice. If I miss one day, I try to get back into it as quickly as possible. The first mistake is never the one that ruins you. It is the spiral of repeated mistakes that follows. Missing once is an accident. Missing twice is the start of a new habit.</blockquote>
+<blockquote class="anchor" data-source-id="ch17§2¶2">It's easy to train when you feel good, but it's crucial to show up when you don't feel like it—even if you do less than you hope. Going to the gym for five minutes may not improve your performance, but it reaffirms your identity.</blockquote>
+<blockquote class="anchor" data-source-id="ch17§3¶1">This is sometimes referred to as Goodhart's Law. Named after the economist Charles Goodhart, the principle states, "When a measure becomes a target, it ceases to be a good measure." Just because you can measure something doesn't mean it's the most important thing.</blockquote>
+<h2 id="ch-18">18. How an Accountability Partner Can Change Everything <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch18§1¶3">Just as we are more likely to repeat an experience when the ending is satisfying, we are also more likely to avoid an experience when the ending is painful. The more immediate the pain, the less likely the behavior.</blockquote>
+<blockquote class="anchor" data-source-id="ch18§1¶4">In general, the more local, tangible, concrete, and immediate the consequence, the more likely it is to influence individual behavior. The more global, intangible, vague, and delayed the consequence, the less likely it is to influence individual behavior.</blockquote>
+<blockquote class="anchor" data-source-id="ch18§2¶1">A habit contract is a verbal or written agreement in which you state your commitment to a particular habit and the punishment that will occur if you don't follow through. Then you find one or two people to act as your accountability partners and sign off on the contract with you.</blockquote>
+<blockquote class="anchor" data-source-id="ch18§2¶2">Knowing that someone is watching can be a powerful motivator. You are less likely to procrastinate or give up because there is an immediate cost.</blockquote>
+<aside class="pullquote">&ldquo;The Cardinal Rule of Behavior Change: What is rewarded is repeated. What is punished is avoided.&rdquo; <span style="font-size:0.55em;font-style:normal;display:block;margin-top:0.5rem;opacity:0.7">— ch16§1¶4</span></aside>
+<h2 id="ch-19">19. The Truth About Talent (When Genes Matter and When They Don&#x27;t) <span class="reading-time">~1 min</span></h2>
+<aside class="sidenote">Just-manageable difficulty is where motivation lives.</aside>
+<blockquote class="anchor" data-source-id="ch19§1¶3">The secret to maximizing your odds of success is to choose the right field of competition. Habits are easier to perform, and more satisfying to stick with, when they align with your natural inclinations and abilities.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart LR
+  Easy["Too easy<br/>(boredom)"] -.-> Drop["Disengage"]
+  Hard["Too hard<br/>(anxiety)"] -.-> Drop
+  G["Goldilocks zone:<br/>~4% beyond ability"] ==>|peak motivation| Flow["Sustained effort"]</div><figcaption>Diagram — The Goldilocks Rule: motivation peaks when a task sits just beyond current ability — challenging but achievable. <span style="opacity:0.7">(source: ch19§1¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch19§1¶4">In short: genes do not determine your destiny. They determine your areas of opportunity.</blockquote>
+<blockquote class="anchor" data-source-id="ch19§2¶1">The most proven scientific analysis of personality traits is known as the "Big Five," which breaks them down into five spectrums of behavior: Openness to experience, Conscientiousness, Extroversion, Agreeableness, and Neuroticism.</blockquote>
+<blockquote class="anchor" data-source-id="ch19§2¶2">Choose the habit that best suits you, not the one that is most popular. There is a version of every habit that can bring you joy and satisfaction. Find it.</blockquote>
+<blockquote class="anchor" data-source-id="ch19§3¶1">There is an effective way to manage this conundrum, and it is known as the explore/exploit trade-off. In the beginning of a new activity, there should be a period of exploration. After this initial period of exploration, shift your focus to the best solution you've found—but keep experimenting occasionally.</blockquote>
+<blockquote class="anchor" data-source-id="ch19§3¶2">When you can't win by being better, you can win by being different. By combining your skills, you reduce the level of competition, which makes it easier to stand out. A good player works hard to win the game everyone else is playing. A great player creates a new game that favors their strengths and avoids their weaknesses.</blockquote>
+<blockquote class="anchor" data-source-id="ch19§4¶1">Our genes do not eliminate the need for hard work. They clarify it. They tell us what to work hard on.</blockquote>
+<h2 id="ch-20">20. The Goldilocks Rule: How to Stay Motivated in Life and Work <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch20§1¶3">The Goldilocks Rule states that humans experience peak motivation when working on tasks that are right on the edge of their current abilities. Not too hard. Not too easy. Just right.</blockquote>
+<blockquote class="anchor" data-source-id="ch20§1¶4">Behaviors need to remain novel in order for them to stay attractive and satisfying. Without variety, we get bored. And boredom is perhaps the greatest villain on the quest for self-improvement.</blockquote>
+<blockquote class="anchor" data-source-id="ch20§2¶1">At some point it comes down to who can handle the boredom of training every day, doing the same lifts over and over and over. Really successful people feel the same lack of motivation as everyone else. The difference is that they still find a way to show up despite the feelings of boredom.</blockquote>
+<blockquote class="anchor" data-source-id="ch20§2¶2">The greatest threat to success is not failure but boredom.</blockquote>
+<blockquote class="anchor" data-source-id="ch20§2¶3">Professionals stick to the schedule; amateurs let life get in the way. Professionals know what is important to them and work toward it with purpose; amateurs get pulled off course by the urgencies of life.</blockquote>
+<blockquote class="anchor" data-source-id="ch20§2¶4">The only way to become excellent is to be endlessly fascinated by doing the same thing over and over. You have to fall in love with boredom.</blockquote>
+<h2 id="ch-21">21. The Downside of Creating Good Habits <span class="reading-time">~1 min</span></h2>
+<aside class="sidenote">Without reflection, habits ossify.</aside>
+<blockquote class="anchor" data-source-id="ch21§1¶1">The upside of habits is that we can do things without thinking. The downside of habits is that you get used to doing things a certain way and stop paying attention to little errors.</blockquote>
+<figure class="diagram"><div class="mermaid">flowchart LR
+  H["Habits<br/>(automatic baseline)"] --> P["Deliberate practice<br/>(effortful refinement)"]
+  P --> Re["Reflection &<br/>review"]
+  Re --> H
+  classDef auto fill:#eef,stroke:#446;
+  classDef effort fill:#fee,stroke:#a33;
+  class H auto;
+  class P effort;</div><figcaption>Diagram — Habits handle the baseline so attention is freed for deliberate practice; reflection feeds improvements back into the habit layer. <span style="opacity:0.7">(source: ch21§1¶1)</span></figcaption></figure>
+<blockquote class="anchor" data-source-id="ch21§1¶2">Habits + Deliberate Practice = Mastery. Mastery is the process of narrowing your focus to a tiny element of success, repeating it until you have internalized the skill, and then using this new habit as the foundation to advance to the next frontier of your development.</blockquote>
+<blockquote class="anchor" data-source-id="ch21§2¶3">Reflection and review enables the long-term improvement of all habits because it makes you aware of your mistakes and helps you consider possible paths for improvement. Without reflection, we can make excuses, create rationalizations, and lie to ourselves.</blockquote>
+<blockquote class="anchor" data-source-id="ch21§2¶4">Each December, I perform an Annual Review, in which I reflect on the previous year. Then, I reflect on my progress (or lack thereof) by answering three questions: What went well this year? What didn't go so well this year? What did I learn?</blockquote>
+<blockquote class="anchor" data-source-id="ch21§3¶1">The tighter we cling to an identity, the harder it becomes to grow beyond it. One solution is to avoid making any single aspect of your identity an overwhelming portion of who you are. In the words of investor Paul Graham, "keep your identity small."</blockquote>
+<blockquote class="anchor" data-source-id="ch21§3¶2">A lack of self-awareness is poison. Reflection and review is the antidote.</blockquote>
+<h2 id="ch-22">22. Conclusion: The Secret to Results That Last <span class="reading-time">~1 min</span></h2>
+<blockquote class="anchor" data-source-id="ch22§1¶1">The holy grail of habit change is not a single 1 percent improvement, but a thousand of them. It's a bunch of atomic habits stacking up, each one a fundamental unit of the overall system.</blockquote>
+<blockquote class="anchor" data-source-id="ch22§1¶2">Success is not a goal to reach or a finish line to cross. It is a system to improve, an endless process to refine.</blockquote>
+<blockquote class="anchor" data-source-id="ch22§1¶3">The secret to getting results that last is to never stop making improvements. Small habits don't add up. They compound. That's the power of atomic habits. Tiny changes. Remarkable results.</blockquote>
+<aside class="pullquote">&ldquo;The Goldilocks Rule states that humans experience peak motivation when working on tasks that are right on the edge of their current abilities. Not too hard. Not too easy. Just right.&rdquo; <span style="font-size:0.55em;font-style:normal;display:block;margin-top:0.5rem;opacity:0.7">— ch20§1¶3</span></aside>
+
+      <footer>
+        Coverage: 16% of source · Bridge ratio: 0.014 · Build: 20260527-001-atomic-habits<br>
+        Companion sidecars: <code>Atomic Habits: Tiny Changes, Remarkable Results_coverage.json</code> · <code>Atomic Habits: Tiny Changes, Remarkable Results_trace.json</code> · <code>Atomic Habits: Tiny Changes, Remarkable Results_reader_verdict.json</code>
+      </footer>
+    </article>
+  </div>
+
+  <script>
+    // Progress bar
+    (function() {
+      var bar = document.getElementById('progress');
+      var pct = document.getElementById('progress-text');
+      function update() {
+        var h = document.documentElement;
+        var max = h.scrollHeight - h.clientHeight;
+        var p = max > 0 ? (h.scrollTop / max) : 0;
+        bar.style.width = (p * 100).toFixed(1) + '%';
+        if (pct) pct.textContent = Math.round(p * 100) + '% read';
+      }
+      document.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+
+    // Scroll-spy on h2
+    (function() {
+      var heads = document.querySelectorAll('article h2');
+      var links = document.querySelectorAll('#toc a');
+      if (!heads.length || !links.length) return;
+      var byId = {};
+      links.forEach(function(a) { byId[a.getAttribute('href').slice(1)] = a; });
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            links.forEach(function(a) { a.classList.remove('current'); });
+            var link = byId[e.target.id];
+            if (link) link.classList.add('current');
+          }
+        });
+      }, { rootMargin: '-30% 0% -65% 0%' });
+      heads.forEach(function(h) { io.observe(h); });
+    })();
+
+    // Long-press popover for mobile xref
+    (function() {
+      var timer;
+      document.addEventListener('touchstart', function(e) {
+        var x = e.target.closest('.xref');
+        if (!x) return;
+        timer = setTimeout(function() { x.focus(); }, 400);
+      });
+      document.addEventListener('touchend', function() { clearTimeout(timer); });
+    })();
+  </script>
+  <!-- Mermaid (Channel A) — Designer inlines the script tag only if mermaid blocks are present -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true, theme:'neutral'});</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+  "chapter_title": "LAW 4: ALWAYS SAY LESS THAN NECESSARY",
+  "law_no": 4,
+  "units": [
+    {
+      "unit_id": "u_04_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§15¶2\"><p>When you are trying to impress people with words, the more you say, the more common you appear, and the less in control. Even if you are saying something banal, it will seem original if you make it vague, open-ended, and sphinxlike. Powerful people impress and intimidate by saying less. The more you say, the more likely you are to say something foolish.</p></blockquote>",
+      "source_ids": ["ch4§15¶2"],
+      "verbatim_quote": "When you are trying to impress people with words, the more you say, the more common you appear, and the less in control. Even if you are saying something banal, it will seem original if you make it vague, open-ended, and sphinxlike. Powerful people impress and intimidate by saying less. The more you say, the more likely you are to say something foolish.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_04_0002",
+      "kind": "bridge",
+      "html": "<p>Louis XIV mastered the power of the three-word non-answer at Versailles.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_04_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§15¶22\"><p>Finally, after all this was settled, the fateful moment would finally arrive. The two men would approach Louis—always a delicate matter—and when they finally had his ear, they would talk about the issue at hand, spelling out the options in detail.</p></blockquote>",
+      "source_ids": ["ch4§15¶22"],
+      "verbatim_quote": "Finally, after all this was settled, the fateful moment would finally arrive. The two men would approach Louis—always a delicate matter—and when they finally had his ear, they would talk about the issue at hand, spelling out the options in detail.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_04_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§15¶23\"><p>Louis would listen in silence, a most enigmatic look on his face. Finally, when each had finished his presentation and had asked for the king's opinion, he would look at them both and say, \"I shall see.\" Then he would walk away.</p></blockquote>",
+      "source_ids": ["ch4§15¶23"],
+      "verbatim_quote": "Louis would listen in silence, a most enigmatic look on his face. Finally, when each had finished his presentation and had asked for the king's opinion, he would look at them both and say, \"I shall see.\" Then he would walk away.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_04_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§15¶30\"><p>Power is in many ways a game of appearances, and when you say less than necessary, you inevitably appear greater and more powerful than you are. Your silence will make other people uncomfortable. Humans are machines of interpretation and explanation; they have to know what you are thinking. When you carefully control what you reveal, they cannot pierce your intentions or your meaning.</p></blockquote>",
+      "source_ids": ["ch4§15¶30"],
+      "verbatim_quote": "Power is in many ways a game of appearances, and when you say less than necessary, you inevitably appear greater and more powerful than you are. Your silence will make other people uncomfortable. Humans are machines of interpretation and explanation; they have to know what you are thinking. When you carefully control what you reveal, they cannot pierce your intentions or your meaning.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_04_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch4§15¶34\"><p>By saying less than necessary you create the appearance of meaning and power. Also, the less you say, the less risk you run of saying something foolish, even dangerous. In 1825 a new czar, Nicholas I, ascended the throne of Russia. A rebellion immediately broke out, led by liberals demanding that the country modernize—that its industries and civil structures catch up with the rest of Europe. Brutally crushing this rebellion (the Decembrist Uprising), Nicholas I sentenced one of its leaders, Kondraty Ryleyev, to death. On the day of the execution Ryleyev stood on the gallows, the noose around his neck. The trapdoor opened—but as Ryleyev dangled, the rope broke, dashing him to the ground. At the time, events like this were considered signs of providence or heavenly will, and a man saved from execution this way was usually pardoned. As Ryleyev got to his feet, bruised and dirtied but believing his neck had been saved, he called out to the crowd, \"You see, in Russia they don't know how to do anything properly, not even how to make rope!\"</p></blockquote>",
+      "source_ids": ["ch4§15¶34"],
+      "verbatim_quote": "By saying less than necessary you create the appearance of meaning and power. Also, the less you say, the less risk you run of saying something foolish, even dangerous. In 1825 a new czar, Nicholas I, ascended the throne of Russia. A rebellion immediately broke out, led by liberals demanding that the country modernize—that its industries and civil structures catch up with the rest of Europe. Brutally crushing this rebellion (the Decembrist Uprising), Nicholas I sentenced one of its leaders, Kondraty Ryleyev, to death. On the day of the execution Ryleyev stood on the gallows, the noose around his neck. The trapdoor opened—but as Ryleyev dangled, the rope broke, dashing him to the ground. At the time, events like this were considered signs of providence or heavenly will, and a man saved from execution this way was usually pardoned. As Ryleyev got to his feet, bruised and dirtied but believing his neck had been saved, he called out to the crowd, \"You see, in Russia they don't know how to do anything properly, not even how to make rope!\"",
+      "retention_signal": "story"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 4: ALWAYS SAY LESS THAN NECESSARY",
+    "chapter_source_words": 1700,
+    "chapter_output_words": 380,
+    "bridge_ratio": 0.04,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "Coriolanus story omitted; Louis XIV observance more cleanly illustrates silence as power"},
+      {"section": "keys_to_power ¶31-33", "reason": "Warhol/Duchamp examples cut for word budget; Ryleyev anecdote is a stronger closing cautionary"},
+      {"section": "reversal", "reason": "nuance minor; dropped to stay within word budget"}
+    ]
+  }
+}

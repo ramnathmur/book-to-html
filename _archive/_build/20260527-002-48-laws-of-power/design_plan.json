@@ -1,0 +1,343 @@
+{
+  "build_id": "20260527-002-48-laws-of-power",
+  "mode": "lite",
+  "total_laws": 48,
+  "toc": [
+    {
+      "law_no": 1,
+      "chapter_title": "LAW 1: NEVER OUTSHINE THE MASTER",
+      "anchor": "law-1",
+      "output_words": 430,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 2,
+      "chapter_title": "LAW 2: NEVER PUT TOO MUCH TRUST IN FRIENDS, LEARN HOW TO USE ENEMIES",
+      "anchor": "law-2",
+      "output_words": 420,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 3,
+      "chapter_title": "LAW 3: CONCEAL YOUR INTENTIONS",
+      "anchor": "law-3",
+      "output_words": 455,
+      "read_minutes": 3
+    },
+    {
+      "law_no": 4,
+      "chapter_title": "LAW 4: ALWAYS SAY LESS THAN NECESSARY",
+      "anchor": "law-4",
+      "output_words": 380,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 5,
+      "chapter_title": "LAW 5: SO MUCH DEPENDS ON REPUTATION—GUARD IT WITH YOUR LIFE",
+      "anchor": "law-5",
+      "output_words": 360,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 6,
+      "chapter_title": "LAW 6: COURT ATTENTION AT ALL COST",
+      "anchor": "law-6",
+      "output_words": 400,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 7,
+      "chapter_title": "LAW 7: GET OTHERS TO DO THE WORK FOR YOU, BUT ALWAYS TAKE THE CREDIT",
+      "anchor": "law-7",
+      "output_words": 395,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 8,
+      "chapter_title": "LAW 8: MAKE OTHER PEOPLE COME TO YOU—USE BAIT IF NECESSARY",
+      "anchor": "law-8",
+      "output_words": 410,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 9,
+      "chapter_title": "LAW 9: WIN THROUGH YOUR ACTIONS, NEVER THROUGH ARGUMENT",
+      "anchor": "law-9",
+      "output_words": 390,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 10,
+      "chapter_title": "LAW 10: INFECTION: AVOID THE UNHAPPY AND UNLUCKY",
+      "anchor": "law-10",
+      "output_words": 370,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 11,
+      "chapter_title": "LAW 11: LEARN TO KEEP PEOPLE DEPENDENT ON YOU",
+      "anchor": "law-11",
+      "output_words": 400,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 12,
+      "chapter_title": "LAW 12: USE SELECTIVE HONESTY AND GENEROSITY TO DISARM YOUR VICTIM",
+      "anchor": "law-12",
+      "output_words": 370,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 13,
+      "chapter_title": "LAW 13: WHEN ASKING FOR HELP, APPEAL TO PEOPLE'S SELF-INTEREST, NEVER TO THEIR MERCY OR GRATITUDE",
+      "anchor": "law-13",
+      "output_words": 360,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 14,
+      "chapter_title": "LAW 14: POSE AS A FRIEND, WORK AS A SPY",
+      "anchor": "law-14",
+      "output_words": 340,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 15,
+      "chapter_title": "LAW 15: CRUSH YOUR ENEMY TOTALLY",
+      "anchor": "law-15",
+      "output_words": 420,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 16,
+      "chapter_title": "LAW 16: USE ABSENCE TO INCREASE RESPECT AND HONOR",
+      "anchor": "law-16",
+      "output_words": 360,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 17,
+      "chapter_title": "LAW 17: KEEP OTHERS IN SUSPENDED TERROR: CULTIVATE AN AIR OF UNPREDICTABILITY",
+      "anchor": "law-17",
+      "output_words": 420,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 18,
+      "chapter_title": "LAW 18: DO NOT BUILD FORTRESSES TO PROTECT YOURSELF—ISOLATION IS DANGEROUS",
+      "anchor": "law-18",
+      "output_words": 430,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 19,
+      "chapter_title": "LAW 19: KNOW WHO YOU'RE DEALING WITH—DO NOT OFFEND THE WRONG PERSON",
+      "anchor": "law-19",
+      "output_words": 310,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 20,
+      "chapter_title": "LAW 20: DO NOT COMMIT TO ANYONE",
+      "anchor": "law-20",
+      "output_words": 440,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 21,
+      "chapter_title": "LAW 21: PLAY A SUCKER TO CATCH A SUCKER—SEEM DUMBER THAN YOUR MARK",
+      "anchor": "law-21",
+      "output_words": 320,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 22,
+      "chapter_title": "LAW 22: USE THE SURRENDER TACTIC: TRANSFORM WEAKNESS INTO POWER",
+      "anchor": "law-22",
+      "output_words": 490,
+      "read_minutes": 3
+    },
+    {
+      "law_no": 23,
+      "chapter_title": "LAW 23: CONCENTRATE YOUR FORCES",
+      "anchor": "law-23",
+      "output_words": 390,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 24,
+      "chapter_title": "LAW 24: PLAY THE PERFECT COURTIER",
+      "anchor": "law-24",
+      "output_words": 130,
+      "read_minutes": 1
+    },
+    {
+      "law_no": 25,
+      "chapter_title": "LAW 25: RE-CREATE YOURSELF",
+      "anchor": "law-25",
+      "output_words": 340,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 26,
+      "chapter_title": "LAW 26: KEEP YOUR HANDS CLEAN",
+      "anchor": "law-26",
+      "output_words": 370,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 27,
+      "chapter_title": "LAW 27: PLAY ON PEOPLE'S NEED TO BELIEVE TO CREATE A CULTLIKE FOLLOWING",
+      "anchor": "law-27",
+      "output_words": 330,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 28,
+      "chapter_title": "LAW 28: ENTER ACTION WITH BOLDNESS",
+      "anchor": "law-28",
+      "output_words": 390,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 29,
+      "chapter_title": "LAW 29: PLAN ALL THE WAY TO THE END",
+      "anchor": "law-29",
+      "output_words": 420,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 30,
+      "chapter_title": "LAW 30: MAKE YOUR ACCOMPLISHMENTS SEEM EFFORTLESS",
+      "anchor": "law-30",
+      "output_words": 390,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 31,
+      "chapter_title": "LAW 31: CONTROL THE OPTIONS: GET OTHERS TO PLAY WITH THE CARDS YOU DEAL",
+      "anchor": "law-31",
+      "output_words": 350,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 32,
+      "chapter_title": "LAW 32: PLAY TO PEOPLE'S FANTASIES",
+      "anchor": "law-32",
+      "output_words": 410,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 33,
+      "chapter_title": "LAW 33: DISCOVER EACH MAN'S THUMBSCREW",
+      "anchor": "law-33",
+      "output_words": 212,
+      "read_minutes": 1
+    },
+    {
+      "law_no": 34,
+      "chapter_title": "LAW 34: BE ROYAL IN YOUR OWN FASHION: ACT LIKE A KING TO BE TREATED LIKE ONE",
+      "anchor": "law-34",
+      "output_words": 436,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 35,
+      "chapter_title": "LAW 35: MASTER THE ART OF TIMING",
+      "anchor": "law-35",
+      "output_words": 474,
+      "read_minutes": 3
+    },
+    {
+      "law_no": 36,
+      "chapter_title": "LAW 36: DISDAIN THINGS YOU CANNOT HAVE: IGNORING THEM IS THE BEST REVENGE",
+      "anchor": "law-36",
+      "output_words": 420,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 37,
+      "chapter_title": "LAW 37: CREATE COMPELLING SPECTACLES",
+      "anchor": "law-37",
+      "output_words": 400,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 38,
+      "chapter_title": "LAW 38: THINK AS YOU LIKE BUT BEHAVE LIKE OTHERS",
+      "anchor": "law-38",
+      "output_words": 430,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 39,
+      "chapter_title": "LAW 39: STIR UP WATERS TO CATCH FISH",
+      "anchor": "law-39",
+      "output_words": 402,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 40,
+      "chapter_title": "LAW 40: DESPISE THE FREE LUNCH",
+      "anchor": "law-40",
+      "output_words": 330,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 41,
+      "chapter_title": "LAW 41: AVOID STEPPING INTO A GREAT MAN'S SHOES",
+      "anchor": "law-41",
+      "output_words": 430,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 42,
+      "chapter_title": "LAW 42: STRIKE THE SHEPHERD AND THE SHEEP WILL SCATTER",
+      "anchor": "law-42",
+      "output_words": 370,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 43,
+      "chapter_title": "LAW 43: WORK ON THE HEARTS AND MINDS OF OTHERS",
+      "anchor": "law-43",
+      "output_words": 400,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 44,
+      "chapter_title": "LAW 44: DISARM AND INFURIATE WITH THE MIRROR EFFECT",
+      "anchor": "law-44",
+      "output_words": 115,
+      "read_minutes": 1
+    },
+    {
+      "law_no": 45,
+      "chapter_title": "LAW 45: PREACH THE NEED FOR CHANGE, BUT NEVER REFORM TOO MUCH AT ONCE",
+      "anchor": "law-45",
+      "output_words": 390,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 46,
+      "chapter_title": "LAW 46: NEVER APPEAR TOO PERFECT",
+      "anchor": "law-46",
+      "output_words": 360,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 47,
+      "chapter_title": "LAW 47: DO NOT GO PAST THE MARK YOU AIMED FOR; IN VICTORY, LEARN WHEN TO STOP",
+      "anchor": "law-47",
+      "output_words": 370,
+      "read_minutes": 2
+    },
+    {
+      "law_no": 48,
+      "chapter_title": "LAW 48: ASSUME FORMLESSNESS",
+      "anchor": "law-48",
+      "output_words": 430,
+      "read_minutes": 2
+    }
+  ]
+}

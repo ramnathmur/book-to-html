@@ -1,0 +1,57 @@
+{
+  "chapter_title": "LAW 27: PLAY ON PEOPLE'S NEED TO BELIEVE TO CREATE A CULTLIKE FOLLOWING",
+  "law_no": 27,
+  "units": [
+    {
+      "unit_id": "u_27_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch27§43¶2\"><p>People have an overwhelming desire to believe in something. Become the focal point of such desire by offering them a cause, a new faith to follow. Keep your words vague but full of promise ; emphasize enthusiasm over rationality and clear thinking. Give your new disciples rituals to perform, ask them to make sacrifices on your behalf. In the absence of organized religion and grand causes, your new belief system will bring you untold power.</p></blockquote>",
+      "source_ids": ["ch27§43¶2"],
+      "verbatim_quote": "People have an overwhelming desire to believe in something. Become the focal point of such desire by offering them a cause, a new faith to follow. Keep your words vague but full of promise ; emphasize enthusiasm over rationality and clear thinking. Give your new disciples rituals to perform, ask them to make sacrifices on your behalf. In the absence of organized religion and grand causes, your new belief system will bring you untold power.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_27_0002",
+      "kind": "bridge",
+      "html": "<p>The authority on this dynamic is clear: the charlatan's power flows directly from the believer's willingness to surrender.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_27_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch27§43¶70\"><p>The charlatan achieves his great power by simply opening a possibility for men to believe what they already want to believe.... The credulous cannot keep at a distance; they crowd around the wonder worker, entering his personal aura, surrendering themselves to illusion with a heavy solemnity, like cattle. (Grete de Francesco)</p></blockquote>",
+      "source_ids": ["ch27§43¶70"],
+      "verbatim_quote": "The charlatan achieves his great power by simply opening a possibility for men to believe what they already want to believe.... The credulous cannot keep at a distance; they crowd around the wonder worker, entering his personal aura, surrendering themselves to illusion with a heavy solemnity, like cattle. (Grete de Francesco)",
+      "retention_signal": "principle"
+    },
+    {
+      "unit_id": "u_27_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch27§43¶71\"><p>One reason to create a following is that a group is often easier to deceive than an individual, and turns over to you that much more power. This comes, however, with a danger: If at any moment the group sees through you, you will find yourself facing not one deceived soul but an angry crowd that will tear you to pieces as avidly as it once followed you. The charlatans constantly faced this danger, and were always ready to move out of town as it inevitably became clear that their elixirs did not work and their ideas were sham. Too slow and they paid with their lives. In playing with the crowd, you are playing with fire, and must constantly keep an eye out for any sparks of doubt, any enemies who will turn the crowd against you. When you play with the emotions of a crowd, you have to know how to adapt, attuning yourself instantaneously to all of the moods and desires that a group will produce. Use spies, be on top of everything, and keep your bags packed.</p></blockquote>",
+      "source_ids": ["ch27§43¶71"],
+      "verbatim_quote": "One reason to create a following is that a group is often easier to deceive than an individual, and turns over to you that much more power. This comes, however, with a danger: If at any moment the group sees through you, you will find yourself facing not one deceived soul but an angry crowd that will tear you to pieces as avidly as it once followed you. The charlatans constantly faced this danger, and were always ready to move out of town as it inevitably became clear that their elixirs did not work and their ideas were sham. Too slow and they paid with their lives. In playing with the crowd, you are playing with fire, and must constantly keep an eye out for any sparks of doubt, any enemies who will turn the crowd against you. When you play with the emotions of a crowd, you have to know how to adapt, attuning yourself instantaneously to all of the moods and desires that a group will produce. Use spies, be on top of everything, and keep your bags packed.",
+      "retention_signal": "reversal"
+    },
+    {
+      "unit_id": "u_27_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch27§43¶72\"><p>For this reason you may often prefer to deal with people one by one. Isolating them from their normal milieu can have the same effect as putting them in a group—it makes them more prone to suggestion and intimidation. Choose the right sucker and if he eventually sees through you he may prove easier to escape than a crowd.</p></blockquote>",
+      "source_ids": ["ch27§43¶72"],
+      "verbatim_quote": "For this reason you may often prefer to deal with people one by one. Isolating them from their normal milieu can have the same effect as putting them in a group—it makes them more prone to suggestion and intimidation. Choose the right sucker and if he eventually sees through you he may prove easier to escape than a crowd.",
+      "retention_signal": "principle"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 27: PLAY ON PEOPLE'S NEED TO BELIEVE TO CREATE A CULTLIKE FOLLOWING",
+    "chapter_source_words": 380,
+    "chapter_output_words": 330,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "section empty in source"},
+      {"section": "observance", "reason": "section empty in source"},
+      {"section": "keys_to_power", "reason": "section empty in source — reversal and authority content used instead"}
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "chapter_title": "LAW 12: USE SELECTIVE HONESTY AND GENEROSITY TO DISARM YOUR VICTIM",
+  "law_no": 12,
+  "units": [
+    {
+      "unit_id": "u_12_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch12§25¶2\"><p>One sincere and honest move will cover over dozens of dishonest ones. Open-hearted gestures of honesty and generosity bring down the guard of even the most suspicious people. Once your selective honesty opens a hole in their armor, you can deceive and manipulate them at will. A timely gift—a Trojan horse—will serve the same purpose.</p></blockquote>",
+      "source_ids": ["ch12§25¶2"],
+      "verbatim_quote": "One sincere and honest move will cover over dozens of dishonest ones. Open-hearted gestures of honesty and generosity bring down the guard of even the most suspicious people. Once your selective honesty opens a hole in their armor, you can deceive and manipulate them at will. A timely gift—a Trojan horse—will serve the same purpose.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_12_0002",
+      "kind": "bridge",
+      "html": "<p>Con artist Count Victor Lustig demonstrated the principle perfectly by returning Al Capone's money — and walking away richer for it.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_12_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch12§25¶4\"><p>The $50,000 remained in the bank box untouched. Lustig made no effort to double it. Two months later he returned to Chicago, took the money from the box, and paid Capone another visit. He looked at the gangster's stony-faced bodyguards, smiled apologetically, and said, &quot;Please accept my profound regrets, Mr. Capone. I'm sorry to report that the plan failed... I failed.&quot;</p></blockquote>",
+      "source_ids": ["ch12§25¶4"],
+      "verbatim_quote": "The $50,000 remained in the bank box untouched. Lustig made no effort to double it. Two months later he returned to Chicago, took the money from the box, and paid Capone another visit. He looked at the gangster's stony-faced bodyguards, smiled apologetically, and said, \"Please accept my profound regrets, Mr. Capone. I'm sorry to report that the plan failed... I failed.\"",
+      "retention_signal": "story_setup"
+    },
+    {
+      "unit_id": "u_12_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch12§25¶5\"><p>Capone slowly stood up. He glowered at Lustig, debating which part of the river to throw him in. But the count reached into his coat pocket, withdrew the $50,000, and placed it on the desk. &quot;Here, sir, is your money, to the penny. Again, my sincere apologies. This is most embarrassing. Things didn't work out the way I thought they would. I would have loved to have doubled your money for you and for myself—Lord knows I need it—but the plan just didn't materialize.&quot;</p></blockquote>",
+      "source_ids": ["ch12§25¶5"],
+      "verbatim_quote": "Capone slowly stood up. He glowered at Lustig, debating which part of the river to throw him in. But the count reached into his coat pocket, withdrew the $50,000, and placed it on the desk. \"Here, sir, is your money, to the penny. Again, my sincere apologies. This is most embarrassing. Things didn't work out the way I thought they would. I would have loved to have doubled your money for you and for myself—Lord knows I need it—but the plan just didn't materialize.\"",
+      "retention_signal": "story_peak"
+    },
+    {
+      "unit_id": "u_12_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch12§25¶6\"><p>Capone sagged back into his chair, confused. &quot;I know you're a con man, Count,&quot; said Capone. &quot;I knew it the moment you walked in here. I expected either one hundred thousand dollars or nothing. But this... getting my money back ... well.&quot; &quot;Again my apologies, Mr. Capone,&quot; said Lustig, as he picked up his hat and began to leave. &quot;My God! You're honest!&quot; yelled Capone. &quot;If you're on the spot, here's five to help you along.&quot; He counted out five one-thousand-dollar bills out of the $50,000. The count seemed stunned, bowed deeply, mumbled his thanks, and left, taking the money.</p></blockquote>",
+      "source_ids": ["ch12§25¶6"],
+      "verbatim_quote": "Capone sagged back into his chair, confused. \"I know you're a con man, Count,\" said Capone. \"I knew it the moment you walked in here. I expected either one hundred thousand dollars or nothing. But this... getting my money back ... well.\" \"Again my apologies, Mr. Capone,\" said Lustig, as he picked up his hat and began to leave. \"My God! You're honest!\" yelled Capone. \"If you're on the spot, here's five to help you along.\" He counted out five one-thousand-dollar bills out of the $50,000. The count seemed stunned, bowed deeply, mumbled his thanks, and left, taking the money.",
+      "retention_signal": "story_peak"
+    },
+    {
+      "unit_id": "u_12_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch12§25¶17\"><p>The essence of deception is distraction. Distracting the people you want to deceive gives you the time and space to do something they won't notice. An act of kindness, generosity, or honesty is often the most powerful form of distraction because it disarms other people's suspicions. It turns them into children, eagerly lapping up any kind of affectionate gesture.</p></blockquote>",
+      "source_ids": ["ch12§25¶17"],
+      "verbatim_quote": "The essence of deception is distraction. Distracting the people you want to deceive gives you the time and space to do something they won't notice. An act of kindness, generosity, or honesty is often the most powerful form of distraction because it disarms other people's suspicions. It turns them into children, eagerly lapping up any kind of affectionate gesture.",
+      "retention_signal": "core_principle"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 12: USE SELECTIVE HONESTY AND GENEROSITY TO DISARM YOUR VICTIM",
+    "chapter_source_words": 1600,
+    "chapter_output_words": 370,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "section is empty"},
+      {"section": "keys_to_power paragraphs 18-22", "reason": "Jay Gould / Gordon-Gordon story is supplementary; core principle captured in paragraph 17"},
+      {"section": "reversal", "reason": "edge case (known deceivers) adds nuance but not essential to core law"}
+    ]
+  }
+}

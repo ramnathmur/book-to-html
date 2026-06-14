@@ -1,0 +1,64 @@
+{
+  "chapter_title": "LAW 1: NEVER OUTSHINE THE MASTER",
+  "law_no": 1,
+  "units": [
+    {
+      "unit_id": "u_01_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§10¶1\"><p>Always make those above you feel comfortably superior. In your desire to please and impress them, do not go too far in displaying your talents or you might accomplish the opposite—inspire fear and insecurity. Make your masters appear more brilliant than they are and you will attain the heights of power.</p></blockquote>",
+      "source_ids": ["ch1§10¶1"],
+      "verbatim_quote": "Always make those above you feel comfortably superior. In your desire to please and impress them, do not go too far in displaying your talents or you might accomplish the opposite—inspire fear and insecurity. Make your masters appear more brilliant than they are and you will attain the heights of power.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0002",
+      "kind": "bridge",
+      "html": "<p>The ruin of Nicolas Fouquet shows what happens when a subordinate forgets this law.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_01_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§10¶2\"><p>Nicolas Fouquet, Louis XIV's finance minister in the first years of his reign, was a generous man who loved lavish parties, pretty women, and poetry. He also loved money, for he led an extravagant lifestyle. Fouquet was clever and very much indispensable to the king, so when the prime minister, Jules Mazarin, died, in 1661, the finance minister expected to be named the successor. Instead, the king decided to abolish the position. This and other signs made Fouquet suspect that he was falling out of favor, and so he decided to ingratiate himself with the king by staging the most spectacular party the world had ever seen. The party's ostensible purpose would be to commemorate the completion of Fouquet's château, Vaux-le-Vicomte, but its real function was to pay tribute to the king, the guest of honor.</p></blockquote>",
+      "source_ids": ["ch1§10¶2"],
+      "verbatim_quote": "Nicolas Fouquet, Louis XIV's finance minister in the first years of his reign, was a generous man who loved lavish parties, pretty women, and poetry. He also loved money, for he led an extravagant lifestyle. Fouquet was clever and very much indispensable to the king, so when the prime minister, Jules Mazarin, died, in 1661, the finance minister expected to be named the successor. Instead, the king decided to abolish the position. This and other signs made Fouquet suspect that he was falling out of favor, and so he decided to ingratiate himself with the king by staging the most spectacular party the world had ever seen. The party's ostensible purpose would be to commemorate the completion of Fouquet's château, Vaux-le-Vicomte, but its real function was to pay tribute to the king, the guest of honor.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_01_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§10¶6\"><p>The next day, Fouquet was arrested by the king's head musketeer, D'Artagnan. Three months later he went on trial for stealing from the country's treasury. (Actually, most of the stealing he was accused of he had done on the king's behalf and with the king's permission.) Fouquet was found guilty and sent to the most isolated prison in France, high in the Pyrenees Mountains, where he spent the last twenty years of his life in solitary confinement.</p></blockquote>",
+      "source_ids": ["ch1§10¶6"],
+      "verbatim_quote": "The next day, Fouquet was arrested by the king's head musketeer, D'Artagnan. Three months later he went on trial for stealing from the country's treasury. (Actually, most of the stealing he was accused of he had done on the king's behalf and with the king's permission.) Fouquet was found guilty and sent to the most isolated prison in France, high in the Pyrenees Mountains, where he spent the last twenty years of his life in solitary confinement.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_01_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§10¶19\"><p>Do not fool yourself into thinking that life has changed much since the days of Louis XIV and the Medicis. Those who attain high standing in life are like kings and queens: They want to feel secure in their positions, and superior to those around them in intelligence, wit, and charm. It is a deadly but common misperception to believe that by displaying and vaunting your gifts and talents, you are winning the master's affection. He may feign appreciation, but at his first opportunity he will replace you with someone less intelligent, less attractive, less threatening, just as Louis XIV replaced the sparkling Fouquet with the bland Colbert. And as with Louis, he will not admit the truth, but will find an excuse to rid himself of your presence.</p></blockquote>",
+      "source_ids": ["ch1§10¶19"],
+      "verbatim_quote": "Do not fool yourself into thinking that life has changed much since the days of Louis XIV and the Medicis. Those who attain high standing in life are like kings and queens: They want to feel secure in their positions, and superior to those around them in intelligence, wit, and charm. It is a deadly but common misperception to believe that by displaying and vaunting your gifts and talents, you are winning the master's affection. He may feign appreciation, but at his first opportunity he will replace you with someone less intelligent, less attractive, less threatening, just as Louis XIV replaced the sparkling Fouquet with the bland Colbert. And as with Louis, he will not admit the truth, but will find an excuse to rid himself of your presence.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_01_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch1§10¶31\"><p>You cannot worry about upsetting every person you come across, but you must be selectively cruel. If your superior is a falling star, there is nothing to fear from outshining him. Do not be merciful—your master had no such scruples in his own cold-blooded climb to the top. Gauge his strength. If he is weak, discreetly hasten his downfall: Outdo, outcharm, outsmart him at key moments. If he is very weak and ready to fall, let nature take its course. Do not risk outshining a feeble superior—it might appear cruel or spiteful. But if your master is firm in his position, yet you know yourself to be the more capable, bide your time and be patient. It is the natural course of things that power eventually fades and weakens. Your master will fall someday, and if you play it right, you will outlive and someday outshine him.</p></blockquote>",
+      "source_ids": ["ch1§10¶31"],
+      "verbatim_quote": "You cannot worry about upsetting every person you come across, but you must be selectively cruel. If your superior is a falling star, there is nothing to fear from outshining him. Do not be merciful—your master had no such scruples in his own cold-blooded climb to the top. Gauge his strength. If he is weak, discreetly hasten his downfall: Outdo, outcharm, outsmart him at key moments. If he is very weak and ready to fall, let nature take its course. Do not risk outshining a feeble superior—it might appear cruel or spiteful. But if your master is firm in his position, yet you know yourself to be the more capable, bide your time and be patient. It is the natural course of things that power eventually fades and weakens. Your master will fall someday, and if you play it right, you will outlive and someday outshine him.",
+      "retention_signal": "nuance"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 1: NEVER OUTSHINE THE MASTER",
+    "chapter_source_words": 1850,
+    "chapter_output_words": 430,
+    "bridge_ratio": 0.04,
+    "dropped_sections": [
+      {"section": "observance", "reason": "Galileo story omitted; transgression (Fouquet) is more vivid and concise"},
+      {"section": "keys_to_power paragraphs 20-23", "reason": "Manfredi/Borgia sub-story cut for word budget; core principle conveyed by ¶19"}
+    ]
+  }
+}

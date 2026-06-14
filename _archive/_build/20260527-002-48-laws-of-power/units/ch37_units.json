@@ -1,0 +1,57 @@
+{
+  "chapter_title": "LAW 37: CREATE COMPELLING SPECTACLES",
+  "law_no": 37,
+  "units": [
+    {
+      "unit_id": "u_37_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch37§53¶1\"><p>Striking imagery and grand symbolic gestures create the aura of power—everyone responds to them. Stage spectacles for those around you, then, full of arresting visuals and radiant symbols that heighten your presence. Dazzled by appearances, no one will notice what you are really doing.</p></blockquote>",
+      "source_ids": ["ch37§53¶1"],
+      "verbatim_quote": "Striking imagery and grand symbolic gestures create the aura of power—everyone responds to them. Stage spectacles for those around you, then, full of arresting visuals and radiant symbols that heighten your presence. Dazzled by appearances, no one will notice what you are really doing.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_37_0002",
+      "kind": "bridge",
+      "html": "<p>Cleopatra's arrival on the river Cydnus to meet Mark Antony remains history's most studied lesson in spectacle as power.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_37_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch37§53¶2\"><p>She relied above all upon her physical presence and the spell and enchantment which it could create.... She came sailing up the river Cydnus in a barge with a poop of gold, its purple sails billowing in the wind, while her rowers caressed the water with oars of silver which dipped in time to the music of the flute, accompanied by pipes and lutes. Cleopatra herself reclined beneath a canopy of cloth of gold, dressed in the character of Aphrodite, as we see her in paintings, while on either side to complete the picture stood boys costumed as Cupids who cooled her with their fans. Instead of a crew the barge was lined with the most beautiful of her waiting-women attired as Nereids and Graces, some at the rudders, others at the tackle of the sails, and all the while an indescribably rich perfume, exhaled from innumerable censers, was wafted from the vessel to the riverbanks. Great multitudes accompanied this royal progress, some of them following the queen on both sides of the river from its very mouth, while others hurried down from the city of Tarsus to gaze at the sight. Gradually the crowds drifted away from the marketplace, where Antony awaited the queen enthroned on his tribunal, until at last he was left sitting quite alone. And the word spread on every side that Aphrodite had come to revel with Dionysus for the happiness of Asia.</p></blockquote>",
+      "source_ids": ["ch37§53¶2"],
+      "verbatim_quote": "She relied above all upon her physical presence and the spell and enchantment which it could create.... She came sailing up the river Cydnus in a barge with a poop of gold, its purple sails billowing in the wind, while her rowers caressed the water with oars of silver which dipped in time to the music of the flute, accompanied by pipes and lutes. Cleopatra herself reclined beneath a canopy of cloth of gold, dressed in the character of Aphrodite, as we see her in paintings, while on either side to complete the picture stood boys costumed as Cupids who cooled her with their fans. Instead of a crew the barge was lined with the most beautiful of her waiting-women attired as Nereids and Graces, some at the rudders, others at the tackle of the sails, and all the while an indescribably rich perfume, exhaled from innumerable censers, was wafted from the vessel to the riverbanks. Great multitudes accompanied this royal progress, some of them following the queen on both sides of the river from its very mouth, while others hurried down from the city of Tarsus to gaze at the sight. Gradually the crowds drifted away from the marketplace, where Antony awaited the queen enthroned on his tribunal, until at last he was left sitting quite alone. And the word spread on every side that Aphrodite had come to revel with Dionysus for the happiness of Asia.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_37_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch37§53¶25\"><p>The visual, on the other hand, short-circuits the labyrinth of words. It strikes with an emotional power and immediacy that leave no gaps for reflection and doubt. Like music, it leaps right over rational, reasonable thoughts. Imagine the Moon Doctor trying to make a case for his medical practice, trying to convince the unconverted by telling them about the healing powers of the moon, and about his own special connection to a distant object in the sky. Fortunately for him, he was able to create a compelling spectacle that made words unnecessary. The moment his patients entered the beer hall, the image of the moon spoke eloquently enough.</p></blockquote>",
+      "source_ids": ["ch37§53¶25"],
+      "verbatim_quote": "The visual, on the other hand, short-circuits the labyrinth of words. It strikes with an emotional power and immediacy that leave no gaps for reflection and doubt. Like music, it leaps right over rational, reasonable thoughts. Imagine the Moon Doctor trying to make a case for his medical practice, trying to convince the unconverted by telling them about the healing powers of the moon, and about his own special connection to a distant object in the sky. Fortunately for him, he was able to create a compelling spectacle that made words unnecessary. The moment his patients entered the beer hall, the image of the moon spoke eloquently enough.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_37_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch37§53¶26\"><p>Understand: Words put you on the defensive. If you have to explain yourself your power is already in question. The image, on the other hand, imposes itself as a given. It discourages questions, creates forceful associations, resists unintended interpretations, communicates instantly, and forges bonds that transcend social differences. Words stir up arguments and divisions; images bring people together. They are the quintessential instruments of power.</p></blockquote>",
+      "source_ids": ["ch37§53¶26"],
+      "verbatim_quote": "Understand: Words put you on the defensive. If you have to explain yourself your power is already in question. The image, on the other hand, imposes itself as a given. It discourages questions, creates forceful associations, resists unintended interpretations, communicates instantly, and forges bonds that transcend social differences. Words stir up arguments and divisions; images bring people together. They are the quintessential instruments of power.",
+      "retention_signal": "framework"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 37: CREATE COMPELLING SPECTACLES",
+    "chapter_source_words": 1600,
+    "chapter_output_words": 400,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "section empty in source"},
+      {"section": "observance", "reason": "section empty in source"},
+      {"section": "keys_to_power_27_29", "reason": "word count limit; core visual-vs-words argument captured in units 4 and 5"}
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "chapter_title": "LAW 34: BE ROYAL IN YOUR OWN FASHION: ACT LIKE A KING TO BE TREATED LIKE ONE",
+  "law_no": 34,
+  "units": [
+    {
+      "unit_id": "u_34_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch34§50¶2\"><p>The way you carry yourself will often determine how you are treated: In the long run, appearing vulgar or common will make people disrespect you. For a king respects himself and inspires the same sentiment in others. By acting regally and confident of your powers, you make yourself seem destined to wear a crown.</p></blockquote>",
+      "source_ids": ["ch34§50¶2"],
+      "verbatim_quote": "The way you carry yourself will often determine how you are treated: In the long run, appearing vulgar or common will make people disrespect you. For a king respects himself and inspires the same sentiment in others. By acting regally and confident of your powers, you make yourself seem destined to wear a crown.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_34_0002",
+      "kind": "bridge",
+      "html": "<p>The &quot;bourgeois king&quot; Louis-Philippe showed what happens when a ruler renounces regal bearing and tries to blend in with his subjects.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_34_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch34§50¶5\"><p>As the reign of the &quot;bourgeois king&quot; plodded on, people came to despise him. The aristocracy could not endure the sight of an unkingly king, and within a few years they turned on him. Meanwhile the growing class of the poor, including the radicals who had chased out Charles X, found no satisfaction in a ruler who neither acted as a king nor governed as a man of the people. The bankers to whom Louis-Philippe was the most beholden soon realized that it was they who controlled the country, not he, and they treated him with growing contempt. One day, at the start of a train trip organized for the royal family, James Rothschild actually berated him—and in public—for being late. Once the king had made news by treating the banker as an equal; now the banker treated the king as an inferior.</p></blockquote>",
+      "source_ids": ["ch34§50¶5"],
+      "verbatim_quote": "As the reign of the \"bourgeois king\" plodded on, people came to despise him. The aristocracy could not endure the sight of an unkingly king, and within a few years they turned on him. Meanwhile the growing class of the poor, including the radicals who had chased out Charles X, found no satisfaction in a ruler who neither acted as a king nor governed as a man of the people. The bankers to whom Louis-Philippe was the most beholden soon realized that it was they who controlled the country, not he, and they treated him with growing contempt. One day, at the start of a train trip organized for the royal family, James Rothschild actually berated him—and in public—for being late. Once the king had made news by treating the banker as an equal; now the banker treated the king as an inferior.",
+      "retention_signal": "story"
+    },
+    {
+      "unit_id": "u_34_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch34§50¶28\"><p>As children, we start our lives with great exuberance, expecting and demanding everything from the world. This generally carries over into our first forays into society, as we begin our careers. But as we grow older the rebuffs and failures we experience set up boundaries that only get firmer with time. Coming to expect less from the world, we accept limitations that are really self-imposed. We start to bow and scrape and apologize for even the simplest of requests. The solution to such a shrinking of horizons is to deliberately force ourselves in the opposite direction—to downplay the failures and ignore the limitations, to make ourselves demand and expect as much as the child. To accomplish this, we must use a particular strategy upon ourselves. Call it the Strategy of the Crown.</p></blockquote>",
+      "source_ids": ["ch34§50¶28"],
+      "verbatim_quote": "As children, we start our lives with great exuberance, expecting and demanding everything from the world. This generally carries over into our first forays into society, as we begin our careers. But as we grow older the rebuffs and failures we experience set up boundaries that only get firmer with time. Coming to expect less from the world, we accept limitations that are really self-imposed. We start to bow and scrape and apologize for even the simplest of requests. The solution to such a shrinking of horizons is to deliberately force ourselves in the opposite direction—to downplay the failures and ignore the limitations, to make ourselves demand and expect as much as the child. To accomplish this, we must use a particular strategy upon ourselves. Call it the Strategy of the Crown.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_34_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch34§50¶29\"><p>The Strategy of the Crown is based on a simple chain of cause and effect: If we believe we are destined for great things, our belief will radiate outward, just as a crown creates an aura around a king. This outward radiance will infect the people around us, who will think we must have reasons to feel so confident. People who wear crowns seem to feel no inner sense of the limits to what they can ask for or what they can accomplish. This too radiates outward. Limits and boundaries disappear. Use the Strategy of the Crown and you will be surprised how often it bears fruit. Take as an example those happy children who ask for whatever they want, and get it. Their high expectations are their charm. Adults enjoy granting their wishes—just as Isabella enjoyed granting the wishes of Columbus.</p></blockquote>",
+      "source_ids": ["ch34§50¶29"],
+      "verbatim_quote": "The Strategy of the Crown is based on a simple chain of cause and effect: If we believe we are destined for great things, our belief will radiate outward, just as a crown creates an aura around a king. This outward radiance will infect the people around us, who will think we must have reasons to feel so confident. People who wear crowns seem to feel no inner sense of the limits to what they can ask for or what they can accomplish. This too radiates outward. Limits and boundaries disappear. Use the Strategy of the Crown and you will be surprised how often it bears fruit. Take as an example those happy children who ask for whatever they want, and get it. Their high expectations are their charm. Adults enjoy granting their wishes—just as Isabella enjoyed granting the wishes of Columbus.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_34_0006",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch34§50¶42\"><p>The idea behind the assumption of regal confidence is to set yourself apart from other people, but if you take this too far it will be your undoing. Never make the mistake of thinking that you elevate yourself by humiliating people. Also, it is never a good idea to loom too high above the crowd—you make an easy target. And there are times when an aristocratic pose is eminently dangerous.</p></blockquote>",
+      "source_ids": ["ch34§50¶42"],
+      "verbatim_quote": "The idea behind the assumption of regal confidence is to set yourself apart from other people, but if you take this too far it will be your undoing. Never make the mistake of thinking that you elevate yourself by humiliating people. Also, it is never a good idea to loom too high above the crowd—you make an easy target. And there are times when an aristocratic pose is eminently dangerous.",
+      "retention_signal": "caution"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 34: BE ROYAL IN YOUR OWN FASHION: ACT LIKE A KING TO BE TREATED LIKE ONE",
+    "chapter_source_words": 1820,
+    "chapter_output_words": 436,
+    "bridge_ratio": 0.05,
+    "dropped_sections": [
+      {"section": "observance_full", "reason": "Columbus story covered by keys_to_power reference; Louis-Philippe transgression selected as more vivid"},
+      {"section": "reversal_second_paragraph", "reason": "word count limit; main reversal caution captured in unit 6"}
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "chapter_title": "LAW 14: POSE AS A FRIEND, WORK AS A SPY",
+  "law_no": 14,
+  "units": [
+    {
+      "unit_id": "u_14_0001",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch14§27¶2\"><p>Knowing about your rival is critical. Use spies to gather valuable information that will keep you a step ahead. Better still: Play the spy yourself. In polite social encounters, learn to probe. Ask indirect questions to get people to reveal their weaknesses and intentions. There is no occasion that is not an opportunity for artful spying.</p></blockquote>",
+      "source_ids": ["ch14§27¶2"],
+      "verbatim_quote": "Knowing about your rival is critical. Use spies to gather valuable information that will keep you a step ahead. Better still: Play the spy yourself. In polite social encounters, learn to probe. Ask indirect questions to get people to reveal their weaknesses and intentions. There is no occasion that is not an opportunity for artful spying.",
+      "retention_signal": "framework"
+    },
+    {
+      "unit_id": "u_14_0002",
+      "kind": "bridge",
+      "html": "<p>Art dealer Joseph Duveen spent years secretly studying Andrew Mellon before engineering what looked like a chance encounter — and closed the sale of a lifetime.</p>",
+      "source_ids": [],
+      "verbatim_quote": null,
+      "retention_signal": "bridge_only"
+    },
+    {
+      "unit_id": "u_14_0003",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch14§27¶5\"><p>In 1921 Mellon was visiting London, and staying in a palatial suite on the third floor of Claridge's Hotel. Duveen booked himself into the suite just below Mellon's, on the second floor. He had arranged for his valet to befriend Mellon's valet, and on the fateful day he had chosen to make his move, Mellon's valet told Duveen's valet, who told Duveen, that he had just helped Mellon on with his overcoat, and that the industrialist was making his way down the corridor to ring for the lift.</p></blockquote>",
+      "source_ids": ["ch14§27¶5"],
+      "verbatim_quote": "In 1921 Mellon was visiting London, and staying in a palatial suite on the third floor of Claridge's Hotel. Duveen booked himself into the suite just below Mellon's, on the second floor. He had arranged for his valet to befriend Mellon's valet, and on the fateful day he had chosen to make his move, Mellon's valet told Duveen's valet, who told Duveen, that he had just helped Mellon on with his overcoat, and that the industrialist was making his way down the corridor to ring for the lift.",
+      "retention_signal": "story_setup"
+    },
+    {
+      "unit_id": "u_14_0004",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch14§27¶6\"><p>Duveen's valet hurriedly helped Duveen with his own overcoat. Seconds later, Duveen entered the lift, and lo and behold, there was Mellon. &quot;How do you do, Mr. Mellon?&quot; said Duveen, introducing himself. &quot;I am on my way to the National Gallery to look at some pictures.&quot; How uncanny—that was precisely where Mellon was headed. And so Duveen was able to accompany his prey to the one location that would ensure his success. He knew Mellon's taste inside and out, and while the two men wandered through the museum, he dazzled the magnate with his knowledge. Once again quite uncannily, they seemed to have remarkably similar tastes.</p></blockquote>",
+      "source_ids": ["ch14§27¶6"],
+      "verbatim_quote": "Duveen's valet hurriedly helped Duveen with his own overcoat. Seconds later, Duveen entered the lift, and lo and behold, there was Mellon. \"How do you do, Mr. Mellon?\" said Duveen, introducing himself. \"I am on my way to the National Gallery to look at some pictures.\" How uncanny—that was precisely where Mellon was headed. And so Duveen was able to accompany his prey to the one location that would ensure his success. He knew Mellon's taste inside and out, and while the two men wandered through the museum, he dazzled the magnate with his knowledge. Once again quite uncannily, they seemed to have remarkably similar tastes.",
+      "retention_signal": "story_peak"
+    },
+    {
+      "unit_id": "u_14_0005",
+      "kind": "anchor",
+      "html": "<blockquote class=\"anchor\" data-source-id=\"ch14§27¶16\"><p>The French politician Talleyrand was one of the greatest practitioners of this art. He had an uncanny ability to worm secrets out of people in polite conversation. A contemporary of his, Baron de Vitrolles, wrote, &quot;Wit and grace marked his conversation. He possessed the art of concealing his thoughts or his malice beneath a transparent veil of insinuations, words that imply something more than they express. Only when necessary did he inject his own personality.&quot; The key here is Talleyrand's ability to suppress himself in the conversation, to make others talk endlessly about themselves and inadvertently reveal their intentions and plans.</p></blockquote>",
+      "source_ids": ["ch14§27¶16"],
+      "verbatim_quote": "The French politician Talleyrand was one of the greatest practitioners of this art. He had an uncanny ability to worm secrets out of people in polite conversation. A contemporary of his, Baron de Vitrolles, wrote, \"Wit and grace marked his conversation. He possessed the art of concealing his thoughts or his malice beneath a transparent veil of insinuations, words that imply something more than they express. Only when necessary did he inject his own personality.\" The key here is Talleyrand's ability to suppress himself in the conversation, to make others talk endlessly about themselves and inadvertently reveal their intentions and plans.",
+      "retention_signal": "core_principle"
+    }
+  ],
+  "coverage_intent": {
+    "chapter_title": "LAW 14: POSE AS A FRIEND, WORK AS A SPY",
+    "chapter_source_words": 1700,
+    "chapter_output_words": 340,
+    "bridge_ratio": 0.06,
+    "dropped_sections": [
+      {"section": "transgression", "reason": "section is empty"},
+      {"section": "observance paragraphs 3-4", "reason": "background on Duveen and Mellon trimmed; action sequence in paragraphs 5-7 is more vivid"},
+      {"section": "keys_to_power paragraphs 13-15, 17-18", "reason": "Talleyrand paragraph 16 captures the master technique; flanking paragraphs are supplementary"}
+    ]
+  }
+}
