@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- htmler v0.7.0 | personas: 4 | navigation_shape: sticky-top -->
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Craft of Sourdough</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"><style>
+    :root {
+      --paper: #F2EDE4; --warm-white: #FAF8F4; --ink: #1B1916; --ink-mid: #3D3935;
+      --ink-lt: #6B655E; --border: #C8BFB2; --border-hover: #A89E8E;
+      --accent-primary: #C8633A; --accent-t1: #D9A23B; --accent-t2: #7A8A4F;
+      --accent-primary-tint: #F1DDD3;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink);
+      font-family: 'DM Sans', Inter, system-ui, sans-serif; line-height: 1.6; }
+    main { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    h1, h2, h3, h4 { font-family: 'Fraunces', 'DM Serif Display', Georgia, serif;
+      color: var(--ink); line-height: 1.2; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); }
+    h1 em { color: var(--accent-primary); font-style: italic; }
+    .eyebrow { font-family: 'JetBrains Mono', 'DM Mono', ui-monospace, monospace;
+      text-transform: uppercase; letter-spacing: 0.16em; font-size: 11px;
+      color: var(--ink-lt); display: block; margin-bottom: 0.4rem; }
+    .hairline { border: 0; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+    p { color: var(--ink-mid); }
+    a { color: var(--accent-primary); }
+    code, pre { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+    pre { background: var(--ink); color: var(--warm-white); padding: 1rem; border-radius: 6px;
+      overflow-x: auto; }
+    .tldr { background: var(--warm-white); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent-primary); padding: 1rem 1.25rem; border-radius: 4px; }
+    .pullquote { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-size: 1.3rem;
+      border-left: 2.5px solid var(--accent-primary); padding-left: 1rem; margin: 2rem 0;
+      color: var(--ink); }
+    .callout { background: var(--warm-white); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent-t1, var(--accent-primary)); padding: 0.9rem 1.1rem;
+      border-radius: 4px; margin: 1.5rem 0; }
+    .htmler-figure { margin: 2.25rem 0; }
+    .htmler-figure figcaption { font-family: 'JetBrains Mono', monospace; font-size: 11px;
+      text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-lt); margin-bottom: 0.6rem; }
+    .htmler-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem; }
+    .htmler-card { background: var(--warm-white); border: 1px solid var(--border);
+      border-radius: 6px; padding: 1rem; transition: transform .15s ease, border-color .15s ease; }
+    .htmler-card:hover { transform: translateY(-3px); border-color: var(--border-hover); }
+    .htmler-card h4 { margin: 0.5rem 0 0.3rem; }
+    .card-icon, .motif, .dgm { display: block; }
+    .dgm-node { fill: var(--warm-white); stroke: var(--ink-mid); stroke-width: 1.2; }
+    .dgm-edge { stroke: var(--accent-primary); stroke-width: 1.2; stroke-dasharray: 4 3; }
+    .dgm-label { fill: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 13px; }
+    .icon-stroke { fill: none; stroke: var(--accent-primary); stroke-width: 1.3; }
+    .htmler-kpi-cluster { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem; }
+    .htmler-kpi { background: var(--warm-white); border: 1px solid var(--border);
+      border-radius: 6px; padding: 1rem; text-align: center; }
+    .kpi-value { display: block; font-family: 'Fraunces', serif; font-size: 2rem;
+      color: var(--accent-primary); }
+    .kpi-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-lt);
+      text-transform: uppercase; letter-spacing: 0.08em; }
+    .htmler-classifier { border: 1px solid var(--border); border-radius: 6px; padding: 1rem;
+      background: var(--warm-white); }
+    .htmler-classifier label { display: block; padding: 0.4rem 0; cursor: pointer; }
+    .htmler-classifier .clf-desc { display: none; color: var(--ink-mid); font-size: 0.95rem;
+      padding-left: 1.5rem; }
+    .htmler-classifier input:checked ~ .clf-desc { display: block; }
+    .htmler-faq { border-bottom: 1px solid var(--border); padding: 0.6rem 0; }
+    .htmler-faq summary { cursor: pointer; font-weight: 500; }
+    .htmler-diagram-card { background: var(--warm-white); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent-primary); border-radius: 6px; padding: 1.25rem; }
+    .tag { font-family: 'JetBrains Mono', monospace; text-transform: uppercase;
+      letter-spacing: 0.06em; font-size: 10px; border: 1px solid var(--border); border-radius: 3px;
+      padding: 1px 6px; color: var(--ink-lt); }
+    /* navigation variants */
+    .nav-sticky-top { position: sticky; top: 0; background: var(--paper);
+      border-bottom: 1px solid var(--border); padding: 0.75rem 1.25rem; z-index: 10;
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+    .nav-sticky-top a, .nav-inline-toc a, .nav-left-rail a { margin-right: 1rem; }
+    .nav-inline-toc { border: 1px solid var(--border); border-radius: 6px; padding: 1rem 1.25rem;
+      margin: 1.5rem auto; max-width: 760px; }
+    .nav-floating-mini { position: fixed; bottom: 1.25rem; right: 1.25rem; background: var(--warm-white);
+      border: 1px solid var(--border); border-radius: 8px; padding: 0.5rem 0.75rem; z-index: 20;
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; max-width: 240px; }
+    .layout-left-rail main { margin-left: 240px; }
+    .nav-left-rail { position: fixed; top: 0; left: 0; width: 220px; height: 100vh; overflow-y: auto;
+      border-right: 1px solid var(--border); padding: 1.5rem 1rem;
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+    .nav-left-rail a { display: block; margin: 0.35rem 0; }
+    .colophon { background: var(--ink); color: var(--warm-white);
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 2rem 1.25rem; text-align: center; }
+    .htmler-rationale { max-width: 760px; margin: 0 auto 3rem; padding: 1rem 1.25rem;
+      border: 1px dashed var(--border); border-radius: 6px; font-size: 0.9rem; color: var(--ink-mid); }
+    .htmler-rationale summary { font-family: 'JetBrains Mono', monospace; cursor: pointer; }
+    @media (max-width: 720px) { .layout-left-rail main { margin-left: 0; }
+      .nav-left-rail { position: static; width: auto; height: auto; border-right: 0;
+        border-bottom: 1px solid var(--border); } }
+    
+    .emoji-chip { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:10px; font-size:20px; background:var(--accent-primary-tint); margin-bottom:8px; }
+    .hero-metaphor { font-style:italic; color:var(--ink-lt); margin-top:0.5rem; font-family:'Fraunces',Georgia,serif; }
+    @keyframes htmlerFadeUp { from {opacity:0; transform:translateY(10px);} to {opacity:1; transform:translateY(0);} }
+    .motion-on .htmler-figure, .motion-on .tldr { animation: htmlerFadeUp .6s ease both; }
+    </style></head>
+<body class="motion-on">
+<nav class="nav-sticky-top"><a href="#sec-b0002">Front matter</a><a href="#sec-b0004">The Starter</a><a href="#sec-b0010">The Dough</a><a href="#sec-b0017">The Bake</a></nav>
+<main><header class="hero"><h1>The Craft of Sourdough</h1></header><div class="tldr"><span class="eyebrow">TLDR</span><p>A three-chapter field guide for first-time sourdough bakers: build and maintain a wild-yeast starter, mix and ferment a 75 percent hydration dough with folds rather than kneading, then cold-retard overnight and bake in a screaming-hot Dutch oven until the crust is deep mahogany. The book's spine is mechanism plus ratio plus timing — every step explains why, not just what.</p></div><section><span class="eyebrow">§</span><h2 id="sec-b0002">Front matter</h2></section><p>The book opens by grounding sourdough in its living culture.</p><figure class="htmler-figure"><figcaption>From flour to loaf — the sourdough timeline</figcaption><svg class="dgm" viewBox="0 0 1550 120" width="100%" height="220" role="img" aria-label="From flour to loaf — the sourdough timeline"><defs><marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" class="dgm-edge" fill="none"/></marker></defs><rect class="dgm-node" x="0" y="20" width="150" height="80" rx="6"/><text class="dgm-label" x="75.0" y="60.0" text-anchor="middle" dominant-baseline="middle">Build starter (5–6 days)</text><rect class="dgm-node" x="200" y="20" width="150" height="80" rx="6"/><text class="dgm-label" x="275.0" y="60.0" text-anchor="middle" dominant-baseline="middle">Autolyse (30 min)</text><line class="dgm-edge" x1="150" y1="60.0" x2="196" y2="60.0" marker-end="url(#ah)"/><rect class="dgm-node" x="400" y="20" width="150" height="80" rx="6"/><text class="dgm-label" x="475.0" y="60.0" text-anchor="middle" dominant-baseline="middle">Bulk ferment + folds (4–6 hr)</text><line class="dgm-edge" x1="350" y1="60.0" x2="396" y2="60.0" marker-end="url(#ah)"/><rect class="dgm-node" x="600" y="20" width="150" height="80" rx="6"/><text class="dgm-label" x="675.0" y="60.0" text-anchor="middle" dominant-baseline="middle">Shape</text><line class="dgm-edge" x1="550" y1="60.0" x2="596" y2="60.0" marker-end="url(#ah)"/><rect class="dgm-node" x="800" y="20" width="150" height="80" rx="6"/><text class="dgm-label" x="875.0" y="60.0" text-anchor="middle" dominant-baseline="middle">Cold retard (8–16 hr)</text><line class="dgm-edge" x1="750" y1="60.0" x2="796" y2="60.0" marker-end="url(#ah)"/><rect class="dgm-node" x="1000" y="20" width="150" height="80" rx="6"/><text class="dgm-label" x="1075.0" y="60.0" text-anchor="middle" dominant-baseline="middle">Bake covered 20 min</text><line class="dgm-edge" x1="950" y1="60.0" x2="996" y2="60.0" marker-end="url(#ah)"/><rect class="dgm-node" x="1200" y="20" width="150" height="80" rx="6"/><text class="dgm-label" x="1275.0" y="60.0" text-anchor="middle" dominant-baseline="middle">Bake uncovered 20–25 min</text><line class="dgm-edge" x1="1150" y1="60.0" x2="1196" y2="60.0" marker-end="url(#ah)"/><rect class="dgm-node" x="1400" y="20" width="150" height="80" rx="6"/><text class="dgm-label" x="1475.0" y="60.0" text-anchor="middle" dominant-baseline="middle">Cool ≥ 1 hr</text><line class="dgm-edge" x1="1350" y1="60.0" x2="1396" y2="60.0" marker-end="url(#ah)"/></svg></figure><section><span class="eyebrow">§</span><h2 id="sec-b0004">The Starter</h2></section><p>&gt; A sourdough starter is a small jar of flour and water that has been colonized by wild yeasts and lactic-acid bacteria. The yeasts produce carbon dioxide, which leavens the bread. The bacteria produce lactic and acetic acid, which give sourdough its characteristic tang and extend the loaf's shelf life.</p><p>&gt; You build a starter from scratch in about a week. Mix fifty grams of whole-wheat flour with fifty grams of room-temperature water in a clean glass jar. Cover loosely and leave on the counter. After twenty-four hours, discard half the mixture and feed the remainder another fifty grams of flour and fifty grams of water. Repeat once a day. By day five or six the mixture should double in volume within four to six hours of feeding. That is the signal that the culture is mature.</p><aside class="callout">Feed twice daily once mature; by day five or six the starter should double in volume within four to six hours.</aside><p>&gt; The single most common mistake is feeding the starter too rarely. A neglected starter does not die; it goes dormant and turns acidic. The acid eventually inhibits the yeast, and the dormant culture will not leaven bread. Feed twice daily once the starter is mature, or refrigerate between feedings if twice-daily feeding is impractical.</p><blockquote class="pullquote">A neglected starter does not die; it goes dormant and turns acidic.</blockquote><p>&gt; A mature starter has a faintly sweet, faintly sour smell, somewhere between yogurt and ripe fruit. A starter that smells like nail polish remover has been overfermented and needs several feedings to recover. A starter that smells putrid should be discarded and rebuilt.</p><p>With a mature culture in hand, the work shifts from biology to dough.</p><figure class="htmler-figure"><figcaption>The four ingredients</figcaption><div class="htmler-card-grid"><div class="htmler-card"><svg class="card-icon" width="28" height="28" viewBox="0 0 24 24"><circle class="icon-stroke" cx="12" cy="12" r="9"/><path class="icon-stroke" d="M8 12 l3 3 l5 -6"/></svg><h4>Bread flour</h4><p>500 g — the structural backbone; high-protein flour develops the gluten that traps fermentation gas.</p></div><div class="htmler-card"><svg class="card-icon" width="28" height="28" viewBox="0 0 24 24"><circle class="icon-stroke" cx="12" cy="12" r="9"/><path class="icon-stroke" d="M8 12 l3 3 l5 -6"/></svg><h4>Water</h4><p>375 g — a 75% hydration dough, slack enough for an open crumb yet forgiving for first-time bakers.</p></div><div class="htmler-card"><svg class="card-icon" width="28" height="28" viewBox="0 0 24 24"><circle class="icon-stroke" cx="12" cy="12" r="9"/><path class="icon-stroke" d="M8 12 l3 3 l5 -6"/></svg><h4>Salt</h4><p>10 g — pinched in after the autolyse; controls fermentation rate and seasons the crumb.</p></div><div class="htmler-card"><svg class="card-icon" width="28" height="28" viewBox="0 0 24 24"><circle class="icon-stroke" cx="12" cy="12" r="9"/><path class="icon-stroke" d="M8 12 l3 3 l5 -6"/></svg><h4>Mature starter</h4><p>100 g — the live wild-yeast culture that does all the leavening.</p></div></div></figure><section><span class="eyebrow">§</span><h2 id="sec-b0010">The Dough</h2></section><p>&gt; Sourdough bread is built on four ingredients: flour, water, salt, and starter. The classic ratio for a single loaf is five hundred grams of bread flour, three hundred and seventy-five grams of water, ten grams of salt, and one hundred grams of mature starter. That is a seventy-five percent hydration dough, which is forgiving for first-time bakers but slack enough to develop an open crumb.</p><aside class="callout">Classic ratio per loaf: 500 g bread flour, 375 g water, 10 g salt, 100 g mature starter (75% hydration).</aside><p>&gt; Mix the flour and water first and let them rest for thirty minutes before adding starter and salt. This rest, called the autolyse, lets the flour fully hydrate and begins gluten development before the fermentation clock starts. Bakers who skip the autolyse get tighter, drier loaves.</p><p>&gt; After the autolyse, add the starter and salt. Pinch the salt through the dough with wet fingers until it is fully incorporated. The dough will feel shaggy and rough at this stage; this is normal. Cover the bowl and let it ferment at room temperature for four to six hours, performing a set of folds every forty-five minutes for the first three hours.</p><p>&gt; A fold is not a knead. To fold, wet one hand, reach under the dough, lift a corner, and stretch it up and over the rest of the mass. Rotate the bowl ninety degrees and repeat. Four pulls is one set of folds. Folding builds gluten structure without degassing the dough; kneading degasses it and undoes the work of fermentation.</p><blockquote class="pullquote">A fold is not a knead. Folding builds gluten structure without degassing the dough; kneading degasses it and undoes the work of fermentation.</blockquote><p>&gt; The dough is ready to shape when it has risen by roughly fifty percent in volume, feels alive and slightly jiggly, and shows a few large bubbles on the surface. Underfermented dough is dense and stubborn; overfermented dough is slack, sticky, and tears when shaped. Most home bakers underferment because they are afraid of overfermenting.</p><blockquote class="pullquote">Most home bakers underferment because they are afraid of overfermenting.</blockquote><p>A well-fermented dough is only half the loaf; the bake decides the rest.</p><figure class="htmler-figure"><figcaption>Reading your starter (and your dough)</figcaption><div class="htmler-accordion"><details class="htmler-faq"><summary>What should a healthy mature starter smell like?</summary><p>Faintly sweet, faintly sour — somewhere between yogurt and ripe fruit.</p></details><details class="htmler-faq"><summary>It smells like nail polish remover. What happened?</summary><p>It has overfermented. Give it several feedings on a regular schedule to recover.</p></details><details class="htmler-faq"><summary>It smells putrid. Can I save it?</summary><p>No — discard and rebuild from scratch.</p></details><details class="htmler-faq"><summary>How do I know the bulk ferment is done?</summary><p>The dough has risen by roughly 50% in volume, feels alive and slightly jiggly, and shows a few large bubbles on the surface.</p></details><details class="htmler-faq"><summary>Why did my loaf spread sideways in the oven?</summary><p>It was shaped too loosely — the goal of shaping is to build surface tension that holds the loaf's form through the bake.</p></details></div></figure><section><span class="eyebrow">§</span><h2 id="sec-b0017">The Bake</h2></section><p>&gt; Shape the dough on a lightly floured counter into a tight round. The goal of shaping is to build surface tension on the outside of the loaf so it holds its form during the final rise and the bake. A loaf that spreads sideways in the oven was shaped too loosely.</p><p>&gt; Place the shaped loaf seam-side-up in a flour-dusted banneton or a kitchen bowl lined with a floured tea towel. Cover and refrigerate overnight, between eight and sixteen hours. This cold retard slows fermentation, deepens flavor through extended lactic-acid production, and firms the dough enough to score cleanly.</p><p>&gt; The next morning, heat a Dutch oven inside the oven at two hundred and fifty degrees Celsius for at least forty-five minutes. The Dutch oven must be screaming hot for the bake to work. A cold or lukewarm Dutch oven produces a pale crust and a tight crumb.</p><aside class="callout">Preheat the Dutch oven at 250 °C for at least 45 minutes — a cold or lukewarm pot produces a pale crust and a tight crumb.</aside><p>&gt; Turn the cold loaf out onto a square of parchment paper. Score the top with a single deep slash from one edge to the other, holding the blade at a shallow angle so the cut creates an ear of crust during the bake. Lower the loaf into the hot Dutch oven by the parchment paper. Replace the lid and bake for twenty minutes, then remove the lid and bake another twenty to twenty-five minutes uncovered, until the crust is deep mahogany brown.</p><p>&gt; Let the loaf cool on a wire rack for at least one hour before cutting. Cutting a hot sourdough loaf releases the steam still trapped in the crumb and produces a gummy texture; the bread is not finished baking until it has finished cooling. Patience at this stage is the difference between a good loaf and a memorable one.</p><blockquote class="pullquote">The bread is not finished baking until it has finished cooling.</blockquote></main>
+<footer class="colophon">The Craft of Sourdough · rendered by htmler</footer>
+<details class="htmler-rationale"><summary>Rationale</summary><p><strong>Navigation:</strong> sticky-top — Four top-level chapter sections under the title — sticky-top horizontal nav with scroll-spy is the cleanest jump-access for a linear how-to under 8 sections.</p><p><strong>Accents:</strong> primary terracotta; tertiaries amber, olive</p><p><strong>Hero:</strong> hero-banner</p><p><strong>Visual Density</strong> (illustrations / words / kinds): 3 / 870 / 3</p><p><strong>Source block map:</strong> b0002, b0004, b0010, b0017</p><p>Offline note: if Google Fonts are unreachable, the page falls back to system serif/sans/mono.</p></details>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leadership and the One Minute Manager — A Reading Experience</title>
+<style>
+:root {
+  --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --accent: #b54300;
+  --rule: #d8d8d8; --measure: 66ch; --leading: 1.65;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1a1a1a; --fg: #e6e6e6; --muted: #9a9a9a; --rule: #333; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font-family: "Iowan Old Style","Source Serif Pro",Charter,Cambria,Georgia,serif;
+  font-size: clamp(1rem, 0.5rem + 1vw, 1.25rem); line-height: var(--leading);
+}
+#progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--accent); z-index: 100; transition: width 80ms linear; }
+.page { display: grid; grid-template-columns: minmax(200px,1fr) minmax(0,var(--measure)) minmax(180px,1fr); gap: 2rem; padding: 3rem 2rem; max-width: 1400px; margin: 0 auto; }
+@media (max-width: 1080px) { .page { grid-template-columns: 1fr; padding: 1.5rem 1rem; } #toc { position: static; max-height: none; border-right: 0; padding-right: 0; } }
+#toc { position: sticky; top: 2rem; align-self: start; max-height: calc(100vh - 4rem); overflow-y: auto; font-size: 0.85rem; line-height: 1.4; border-right: 1px solid var(--rule); padding-right: 1rem; }
+#toc h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 0.5rem; }
+#toc ol { list-style: none; padding: 0; margin: 0; }
+#toc li { margin: 0.25rem 0; }
+#toc a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; }
+#toc a.current { color: var(--fg); border-bottom-color: var(--accent); }
+#meta { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--rule); }
+article { max-width: var(--measure); }
+article h1 { font-size: 2.4rem; line-height: 1.2; margin: 0 0 0.25em; }
+article h1 + .byline { color: var(--muted); font-style: italic; margin-bottom: 2rem; }
+article h2 { font-size: 1.6rem; line-height: 1.25; margin-top: 3rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+article h2 .reading-time { font-size: 0.75rem; color: var(--muted); font-weight: normal; float: right; }
+article h2:first-of-type { border-top: 0; padding-top: 0; }
+article h3 { font-size: 1.15rem; margin-top: 2rem; }
+article p { margin: 1em 0; }
+article h2 + p::first-letter { float: left; font-size: 3.6em; line-height: 0.85; padding: 0.1em 0.1em 0 0; font-family: inherit; color: var(--accent); }
+blockquote.anchor { margin: 1.5em 0; padding: 0.25em 1em; border-left: 3px solid var(--accent); color: var(--fg); font-style: normal; }
+blockquote.anchor[data-source-id]::after { content: " (" attr(data-source-id) ")"; font-size: 0.7em; color: var(--muted); font-style: italic; }
+p.bridge { color: var(--muted); font-style: italic; margin: 0.75em 0; }
+aside.pullquote { font-size: 1.5em; line-height: 1.35; font-style: italic; color: var(--accent); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 1rem 0; margin: 2.5rem 0; }
+.sidenote { float: right; clear: right; width: 180px; margin-right: -200px; font-size: 0.78rem; color: var(--muted); line-height: 1.4; }
+@media (max-width: 1080px) { .sidenote { float: none; width: auto; margin: 0.5rem 0; padding: 0.5rem; background: rgba(127,127,127,0.05); display: block; } }
+.xref { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); position: relative; }
+.xref:hover .preview, .xref:focus .preview { display: block; }
+.xref .preview { display: none; position: absolute; bottom: 100%; left: 0; background: var(--bg); border: 1px solid var(--rule); padding: 0.5rem 0.75rem; width: 320px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-size: 0.85rem; line-height: 1.4; z-index: 50; }
+figure { margin: 2rem 0; }
+figure figcaption { font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; font-style: italic; }
+figure.diagram { background: rgba(127,127,127,0.04); padding: 1rem; border-radius: 2px; }
+#design-note { background: rgba(181,67,0,0.06); border-left: 3px solid var(--accent); padding: 1rem 1.25rem; margin-bottom: 2rem; font-size: 0.9rem; line-height: 1.5; }
+#design-note h2 { margin: 0 0 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); border: 0; padding: 0; }
+footer { margin-top: 6rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.85rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div class="page">
+
+<nav id="toc">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#sec-1">1 · A Visit from an Entrepreneur <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-2">2 · Being Successful <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-3">3 · Thinking Differently About Leadership <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-4">4 · Different Strokes for Different Folks <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-5">5 · Leadership Style: Perceptions of Others <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-6">6 · Three Skills of a Situational Leader <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-7">7 · Managing the Performance of Others <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-8">8 · Goal Setting <span class="reading-time">~2 min</span></a></li>
+    <li><a href="#sec-9">9 · Diagnosing Development Level <span class="reading-time">~3 min</span></a></li>
+    <li><a href="#sec-10">10 · Leadership Style Flexibility <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-11">11 · The Four Basic Leadership Styles <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-12">12 · Matching Style to Development <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-13">13 · Think Before You Act <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-14">14 · Different Strokes, Same Folks <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-15">15 · Developing Competence &amp; Commitment <span class="reading-time">~2 min</span></a></li>
+    <li><a href="#sec-16">16 · Turning Around Performance <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-17">17 · Sharing What You're Doing <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-18">18 · Understanding the Six Conversations <span class="reading-time">~2 min</span></a></li>
+    <li><a href="#sec-19">19 · Positive Assumptions About People <span class="reading-time">~1 min</span></a></li>
+    <li><a href="#sec-20">20 · Becoming a Situational Leader <span class="reading-time">~1 min</span></a></li>
+  </ol>
+  <div id="meta">
+    <div id="progress-text">0% read</div>
+    <div>Condensed reader · ~24 min</div>
+    <div>Build 20260615-001</div>
+  </div>
+</nav>
+
+<article>
+  <h1>Leadership and the One Minute Manager</h1>
+  <div class="byline">Ken Blanchard, Patricia Zigarmi &amp; Drea Zigarmi — a condensed reading experience</div>
+
+  <div id="design-note">
+    <h2>Design Note</h2>
+    <p>This is a business <em>parable</em>, and in a parable the sequence <em>is</em> the argument: the entrepreneur cannot understand matching until she has met the people, learned to diagnose development levels, and watched a single style fail in the wrong place. So navigation is strictly <strong>chapter-linear</strong>—a sticky scroll-spy TOC that tracks position rather than invites jumping, because skipping ahead breaks the inductive logic the authors built deliberately. Illustration is <strong>Channel A only</strong> (Mermaid/SVG): the Situational Leadership II model is a system of crisp 2×2 relationships—competence/commitment, directive/supportive, D1→D4 mapped onto S1→S4—that diagrams externalize far more honestly than decorative imagery would; photographs or stock art would add polish without adding comprehension, so they are excluded. Graphic intensity is <strong>standard</strong>: one diagram at each of the eight concept chapters, placed before the anchors so the reader holds the framework in mind while reading the source language, with pull-quotes every few chapters to give the eye a landing and the memory a hook.</p>
+  </div>
+
+  <p>Written as a parable, this is the story of an overworked entrepreneur who learns to stop doing everything herself—and to lead each person differently, according to what that person actually needs.</p>
+  <blockquote class="anchor" data-source-id="front:introduction">Written as a parable, it tells the story of an overworked entrepreneur who learns from the One Minute Manager how to get the most out of a diverse team by becoming a situational leader.</blockquote>
+
+  <h2 id="sec-1">1 · A Visit from an Entrepreneur <span class="reading-time">~1 min</span></h2>
+  <p>The story opens with a familiar trap: the founder who believes the work only gets done if she does it.</p>
+  <p class="bridge">An overworked entrepreneur, certain she must do everything herself, calls the One Minute Manager, who invites her over.</p>
+
+  <h2 id="sec-2">2 · Being Successful <span class="reading-time">~1 min</span></h2>
+  <p>His first correction is about effort versus leverage.</p>
+  <blockquote class="anchor" data-source-id="ch2§1¶13-17">Don't Work Harder— Work Smarter</blockquote>
+
+  <aside class="pullquote">"Don't Work Harder — Work Smarter."</aside>
+
+  <h2 id="sec-3">3 · Thinking Differently About Leadership <span class="reading-time">~1 min</span></h2>
+  <p>Working smarter starts with a shift in stance—from boss who directs to leader who serves.</p>
+  <blockquote class="anchor" data-source-id="ch3§1¶19">"When it comes to implementation, if you think your people are responsible and that your job is to be responsive to them, you really work hard to provide them with the resources they need to accomplish the goals you've agreed to.</blockquote>
+  <blockquote class="anchor" data-source-id="ch3§1¶29-31">Different Strokes For Different Folks</blockquote>
+
+  <h2 id="sec-4">4 · Different Strokes for Different Folks <span class="reading-time">~1 min</span></h2>
+  <p>If you are going to lead each person differently, you first need a working definition of what a leadership style actually is.</p>
+  <blockquote class="anchor" data-source-id="ch4§1¶7-8">"Your leadership style is the way you work with someone," said the One Minute Manager. "It's how you behave, over time, when you're trying to influence the performance of others, as perceived by them.</blockquote>
+
+  <h2 id="sec-5">5 · Leadership Style: Perceptions of Others <span class="reading-time">~1 min</span></h2>
+  <p>To make this concrete, he sends her out to see how his own people experience him.</p>
+  <p class="bridge">He sends her to interview his people: Larry, new to his role, is led directively; Cindy, a seasoned finance director, as an equal.</p>
+  <blockquote class="anchor" data-source-id="ch5§1¶138-139">"A situational leader," said John. "He changes his style, depending on the person he is working with and on the situation."</blockquote>
+
+  <h2 id="sec-6">6 · Three Skills of a Situational Leader <span class="reading-time">~1 min</span></h2>
+  <p>Situational leadership is not a personality—it is three repeatable skills that feed each other.</p>
+  <figure class="diagram">
+    <pre class="mermaid">
+flowchart LR
+  A[Goal Setting] --> B[Diagnosis]
+  B --> C[Matching]
+  C --> D[Better Performance]
+  D -.->|next goal| A
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class A,B,C hl;
+    </pre>
+    <figcaption>The three skills of a situational leader form a loop: set the goal, diagnose the person's development level, match the style—then performance improves and the cycle restarts on the next goal.</figcaption>
+  </figure>
+  <blockquote class="anchor" data-source-id="ch6§1¶12-17">So, the three skills are: goal setting, diagnosis, and matching.</blockquote>
+
+  <h2 id="sec-7">7 · Managing the Performance of Others <span class="reading-time">~1 min</span></h2>
+  <p>Those skills live inside a larger performance-management loop that runs all year, not just at review time.</p>
+  <figure class="diagram">
+    <pre class="mermaid">
+flowchart LR
+  P[Performance Planning] --> C[Day-to-Day Coaching]
+  C --> E[Performance Evaluation]
+  E -.->|sets up| P
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class P,C,E hl;
+    </pre>
+    <figcaption>Performance management is a continuous loop—plan the goals, coach day to day, then evaluate—where evaluation feeds straight back into the next round of planning.</figcaption>
+  </figure>
+  <blockquote class="anchor" data-source-id="ch7§1¶5-11">We talk about three parts to performance management: 1. Performance Planning 2. Day-to-Day Coaching 3. Performance Evaluation</blockquote>
+  <blockquote class="anchor" data-source-id="ch7§1¶40">Once your people are clear on their goals—they have the final exam questions—it's your job to do everything you can to help them accomplish those goals—learn the answers—so that when it comes to performance evaluation—the final examination—they get high ratings—As."</blockquote>
+
+  <h2 id="sec-8">8 · Goal Setting <span class="reading-time">~2 min</span></h2>
+  <p>The loop begins with goals—and good goals are SMART.</p>
+  <figure class="diagram">
+    <pre class="mermaid">
+flowchart TD
+  S["S — Specific: What exactly is the goal? When is it due?"]
+  M["M — Motivating: Is it meaningful for the individual?"]
+  A["A — Attainable: Is it realistic and achievable?"]
+  R["R — Relevant: Is it meaningful work for the organization?"]
+  T["T — Trackable: How is progress measured?"]
+  S --> M --> A --> R --> T
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class S,M,A,R,T hl;
+    </pre>
+    <figcaption>The five tests a goal must pass to be SMART: Specific, Motivating, Attainable, Relevant, and Trackable.</figcaption>
+  </figure>
+  <blockquote class="anchor" data-source-id="ch8§1¶53-70">SMART goals answer these questions: Specific—What exactly is the goal or task? When does it need to be accomplished? Motivating—Is the goal meaningful for the individual? Attainable—Is the goal realistic, reasonable, and achievable? Relevant—Is it meaningful work for the organization? Trackable—How will progress and results be measured and tracked?</blockquote>
+  <blockquote class="anchor" data-source-id="ch8§1¶96-98">"The One Minute Manager now calls it 'seagull management.' After goal setting, seagull managers are never around until you make a mistake. Then they fly in, make a lot of noise, dump on everybody, and fly out."</blockquote>
+
+  <h2 id="sec-9">9 · Diagnosing Development Level <span class="reading-time">~3 min</span></h2>
+  <p>Once goals are set, the second skill is diagnosis: reading where each person sits on two axes.</p>
+  <figure class="diagram">
+    <pre class="mermaid">
+flowchart LR
+  D1["D1 — Enthusiastic Beginner<br/>Low competence · High commitment"]
+  D2["D2 — Disillusioned Learner<br/>Some competence · Low commitment"]
+  D3["D3 — Capable but Cautious<br/>High competence · Variable commitment"]
+  D4["D4 — Self-Reliant Achiever<br/>High competence · High commitment"]
+  D1 --> D2 --> D3 --> D4
+  D2 -.->|regression| D1
+  D3 -.->|regression| D2
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class D1,D2,D3,D4 hl;
+    </pre>
+    <figcaption>Development level is read on two factors—competence and commitment—and progresses D1→D4 as someone grows, though regression is always possible.</figcaption>
+  </figure>
+  <blockquote class="anchor" data-source-id="ch9§1¶11">"You need to look at two factors to determine a person's development level: competence and commitment.</blockquote>
+  <blockquote class="anchor" data-source-id="ch9§1¶32-33">Confidence is a measure of a person's self-assuredness—a feeling of being able to do a task well without much direction—whereas motivation is a person's interest in and enthusiasm for doing a task well."</blockquote>
+  <blockquote class="anchor" data-source-id="ch9§1¶54-58">"When you are D1 on a particular goal or task, you are known as an enthusiastic beginner," said Kathy. "Though you have high commitment, you are inexperienced.</blockquote>
+  <blockquote class="anchor" data-source-id="ch9§1¶65">"Don't be surprised if you soon become a D2—or what we call a disillusioned learner," said Kathy with a laugh.</blockquote>
+  <blockquote class="anchor" data-source-id="ch9§1¶80-81">"We call D3s capable but cautious contributors. They have demonstrated some competence and experience in doing the task, but they lack confidence in doing that task by themselves.</blockquote>
+  <blockquote class="anchor" data-source-id="ch9§1¶86-87">"If you become a D4 in your learning to be a situational leader you'll be a self-reliant achiever.</blockquote>
+
+  <aside class="pullquote">Diagnosis comes before direction: you cannot match a style to a person you have not yet read.</aside>
+
+  <h2 id="sec-10">10 · Leadership Style Flexibility <span class="reading-time">~1 min</span></h2>
+  <p>The third skill is flexibility—having four distinct styles plotted on the directive and supportive axes.</p>
+  <figure class="diagram">
+    <pre class="mermaid">
+quadrantChart
+  title The Four Leadership Styles
+  x-axis Low Directive --> High Directive
+  y-axis Low Supportive --> High Supportive
+  quadrant-1 S2 Coaching
+  quadrant-2 S3 Supporting
+  quadrant-3 S4 Delegating
+  quadrant-4 S1 Directing
+    </pre>
+    <figcaption>The four styles mapped on two axes—directive behavior and supportive behavior: S1 Directing (high directive, low supportive), S2 Coaching (high both), S3 Supporting (low directive, high supportive), S4 Delegating (low both).</figcaption>
+  </figure>
+  <blockquote class="anchor" data-source-id="ch10§1¶23-36">The leader provides specific direction about goals, shows and tells how, and closely monitors the individual's performance in order to provide frequent feedback on results.</blockquote>
+
+  <h2 id="sec-11">11 · The Four Basic Leadership Styles <span class="reading-time">~1 min</span></h2>
+  <p>Each axis has its own vocabulary of behaviors.</p>
+  <blockquote class="anchor" data-source-id="ch11§1¶3-4">Four words can be used to define directive behavior: decide, teach, observe, and provide frequent feedback. Different words are used to describe supportive behavior: listen, involve, facilitate, and encourage."</blockquote>
+
+  <h2 id="sec-12">12 · Matching Leadership Style to Development Level <span class="reading-time">~1 min</span></h2>
+  <p>Now the two halves of the model meet: a style is right only relative to a person's development level.</p>
+  <blockquote class="anchor" data-source-id="ch12§1¶14">"So an S1 directing style is a good match when a decision has to be made quickly and the stakes are high," said the One Minute Manager.</blockquote>
+  <blockquote class="anchor" data-source-id="ch12§1¶38">I think people lose their commitment only after they realize that good performance doesn't make a difference."</blockquote>
+  <p class="bridge">Coaching fits the disillusioned learner, supporting the cautious performer, delegating the self-reliant achiever; a purely supportive style fails where direction is needed.</p>
+
+  <h2 id="sec-13">13 · Think Before You Act <span class="reading-time">~1 min</span></h2>
+  <p>The matching rule pairs each development level with exactly one style.</p>
+  <figure class="diagram">
+    <pre class="mermaid">
+flowchart LR
+  D1["D1"] --> S1["S1 Directing"]
+  D2["D2"] --> S2["S2 Coaching"]
+  D3["D3"] --> S3["S3 Supporting"]
+  D4["D4"] --> S4["S4 Delegating"]
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class S1,S2,S3,S4 hl;
+    </pre>
+    <figcaption>The matching pairs: D1→S1 Directing, D2→S2 Coaching, D3→S3 Supporting, D4→S4 Delegating.</figcaption>
+  </figure>
+  <blockquote class="anchor" data-source-id="ch13§1¶29-37">Delegating (Style 4) is for self-reliant achievers who have both competence and commitment (D4)</blockquote>
+  <blockquote class="anchor" data-source-id="ch13§1¶12">They must have an internal critic who keeps telling them, 'Don't Just Sit There—Do Something!'</blockquote>
+
+  <h2 id="sec-14">14 · Different Strokes for the Same Folks <span class="reading-time">~1 min</span></h2>
+  <p>Development level is task-specific—so the same person can need two different styles at once.</p>
+  <p class="bridge">The same person can need different styles: his son Tom was a D4 in reading but a D2 in math, needing directive coaching.</p>
+  <blockquote class="anchor" data-source-id="ch14§1¶95-96">"People do not learn skills by love alone."</blockquote>
+
+  <aside class="pullquote">"People do not learn skills by love alone."</aside>
+
+  <h2 id="sec-15">15 · Developing Competence and Commitment <span class="reading-time">~2 min</span></h2>
+  <p>The leader's job is to move people forward—shifting style as competence and confidence grow.</p>
+  <figure class="diagram">
+    <pre class="mermaid">
+flowchart LR
+  subgraph Growth
+    direction LR
+    G1["D1 → S1 Directing"] --> G2["D2 → S2 Coaching"]
+    G2 --> G3["D3 → S3 Supporting"]
+    G3 --> G4["D4 → S4 Delegating"]
+  end
+  G2 -.->|regression| G1
+  G3 -.->|regression| G2
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class G1,G2,G3,G4 hl;
+    </pre>
+    <figcaption>The development arc: as a person grows D1→D4, the leader moves S1→S4 toward less time-consuming styles—but must be ready to step back if commitment regresses.</figcaption>
+  </figure>
+  <blockquote class="anchor" data-source-id="ch15§1¶5">Your goal as a manager should be to gradually increase the competence and confidence of your people so that you can begin to use less time-consuming styles—supporting and delegating—and still get high quality results."</blockquote>
+  <blockquote class="anchor" data-source-id="ch15§1¶15">Since a D1 has commitment but lacks competence, the leader needs to provide direction (S1-Directing) to help build competence; since a D2 lacks both competence and commitment, the leader has to provide both direction and support (S2-Coaching) to reenergize and re-teach; since a D3 has competence but variable commitment, the leader needs to provide support (S3-Supporting) to build confidence in competence; and since a D4 has both competence and commitment, the leader values their contribution by permitting them to provide their own direction or support (S4-Delegating)."</blockquote>
+  <blockquote class="anchor" data-source-id="ch15§1¶60">If You Want to Develop People, Catch Them Doing Things Right, Not Wrong.</blockquote>
+
+  <aside class="pullquote">"If You Want to Develop People, Catch Them Doing Things Right, Not Wrong."</aside>
+
+  <h2 id="sec-16">16 · Turning Around Performance Problems <span class="reading-time">~1 min</span></h2>
+  <p>When performance slips, the leader steps back in—adding direction rather than withdrawing it.</p>
+  <blockquote class="anchor" data-source-id="ch16§1¶24-29">If you still don't get results," the One Minute Manager continued, "you should move to a coaching style, where you provide some direction, closer supervision, and shorter timelines.</blockquote>
+
+  <h2 id="sec-17">17 · Sharing What You're Doing <span class="reading-time">~1 min</span></h2>
+  <p>The model works best in the open—as something done with people, not to them.</p>
+  <blockquote class="anchor" data-source-id="ch17§1¶6-12">Situational Leadership Is Not Something You Do To People It's Something You Do With People</blockquote>
+
+  <aside class="pullquote">"Situational Leadership Is Not Something You Do To People — It's Something You Do With People."</aside>
+
+  <h2 id="sec-18">18 · Understanding the Six Conversations <span class="reading-time">~2 min</span></h2>
+  <p>Doing it <em>with</em> people means a shared language of structured conversations.</p>
+  <figure class="diagram">
+    <pre class="mermaid">
+flowchart TD
+  AL["Alignment Conversation"] --> SC["Four Style Conversations"]
+  SC --> C1["S1"]
+  SC --> C2["S2"]
+  SC --> C3["S3"]
+  SC --> C4["S4"]
+  C1 --> O["One-on-One Meeting"]
+  C2 --> O
+  C3 --> O
+  C4 --> O
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class AL,SC,O hl;
+    </pre>
+    <figcaption>The six conversations: an alignment conversation, four style conversations (S1–S4), and the recurring one-on-one meeting that ties them together.</figcaption>
+  </figure>
+  <blockquote class="anchor" data-source-id="ch18§1¶2-10">"Next are the four types of style conversations—S1, S2, S3, and S4.</blockquote>
+  <blockquote class="anchor" data-source-id="ch18§1¶98-100">"With development level analysis, the nod goes to my direct report.</blockquote>
+  <blockquote class="anchor" data-source-id="ch18§1¶185-189">"The One Minute Manager and I have virtual one-on-one meetings once every two weeks for fifteen to thirty minutes. He schedules these meetings, but I set the agenda.</blockquote>
+
+  <h2 id="sec-19">19 · Positive Assumptions About People <span class="reading-time">~1 min</span></h2>
+  <p>Underneath every style lies one constant belief about people.</p>
+  <blockquote class="anchor" data-source-id="ch19§1¶18-19">positive assumptions about people are a given; you believe people have the potential to become high performers. What fluctuates is the leader's behavior, depending on their people's needs for direction and support."</blockquote>
+  <blockquote class="anchor" data-source-id="ch19§1¶29-37">Everyone Is A Potential High Performer. Some People Just Need A Little Help Along The Way</blockquote>
+
+  <aside class="pullquote">"Everyone Is A Potential High Performer. Some People Just Need A Little Help Along The Way."</aside>
+
+  <h2 id="sec-20">20 · Becoming a Situational Leader <span class="reading-time">~1 min</span></h2>
+  <p>The parable closes where it began—with the entrepreneur, now changed not by what she thinks but by what she does.</p>
+  <blockquote class="anchor" data-source-id="ch20§1¶8-10">To Know And Not To Use Is Not Yet To Know!</blockquote>
+  <blockquote class="anchor" data-source-id="ch20§1¶16">She became a situational leader not because she thought like one or talked like one but because she behaved like one.</blockquote>
+
+  <footer>
+    <p>Coverage: 18% of source · Bridge ratio: 0.08 · Build 20260615-001-Leadership-and-the-One-Minute-Manager</p>
+    <p>A condensed long-scroll reading experience. Anchor quotations are verbatim from the source and cited by span ID. Bridges (italic) are connective summary, not source text.</p>
+  </footer>
+</article>
+
+</div>
+
+<script>
+(function() {
+  var bar = document.getElementById('progress');
+  var pct = document.getElementById('progress-text');
+  function update() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var p = max > 0 ? (h.scrollTop / max) : 0;
+    bar.style.width = (p * 100).toFixed(1) + '%';
+    if (pct) pct.textContent = Math.round(p * 100) + '% read';
+  }
+  document.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+(function() {
+  var heads = document.querySelectorAll('article h2');
+  var links = document.querySelectorAll('#toc a');
+  if (!heads.length || !links.length) return;
+  var byId = {};
+  links.forEach(function(a) { byId[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        links.forEach(function(a) { a.classList.remove('current'); });
+        var link = byId[e.target.id];
+        if (link) link.classList.add('current');
+      }
+    });
+  }, { rootMargin: '-30% 0% -65% 0%' });
+  heads.forEach(function(h) { io.observe(h); });
+})();
+(function() {
+  var timer;
+  document.addEventListener('touchstart', function(e) {
+    var x = e.target.closest('.xref');
+    if (!x) return;
+    timer = setTimeout(function() { x.focus(); }, 400);
+  });
+  document.addEventListener('touchend', function() { clearTimeout(timer); });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true, theme:'neutral'});</script>
+</body>
+</html>

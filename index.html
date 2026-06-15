@@ -324,10 +324,108 @@
 // ═══════════════════════════════════════════════════════════════════════════
 const BOOKS = [
   {
+    id: "why-machines-learn",
+    title: "Why Machines Learn: The Elegant Maths Behind Modern AI",
+    author: "Anil Ananthaswamy",
+    reader_path: "books/Why-Machines-Learn_Reader_v1.html",
+    blurb: "The hidden mathematics behind every major ML algorithm — from the perceptron convergence proof to the double-descent curve — told through the physicists, theorists, and engineers who invented them.",
+    cover_image: null,
+    popularity: {
+      goodreads: { rating: 4.4, ratings_count: 2800 },
+      editor_note: "Best mathematical introduction to ML for the technically literate non-specialist"
+    },
+    date_added: "2026-06-15"
+  },
+  {
+    id: "leadership-one-minute-manager",
+    title: "Leadership and the One Minute Manager",
+    author: "Ken Blanchard, Patricia Zigarmi & Drea Zigarmi",
+    reader_path: "books/Leadership-and-the-One-Minute-Manager_Reader_v1.html",
+    blurb: "The definitive guide to Situational Leadership II. Diagnose where someone is on a task, match your style to their development level, and stop managing everyone the same way.",
+    cover_image: null,
+    popularity: {
+      goodreads: { rating: 4.0, ratings_count: 60000 },
+      editor_note: "Management canon"
+    },
+    date_added: "2026-06-15"
+  },
+  {
+    id: "thinking-fast-and-slow",
+    title: "Thinking, Fast and Slow",
+    author: "Daniel Kahneman",
+    reader_path: "books/Thinking-Fast-and-Slow_Reader_v1.html",
+    blurb: "The definitive map of the mind's two systems — the fast, intuitive System 1 and the slow, deliberate System 2. Kahneman unpacks why we make irrational decisions and how to think more clearly.",
+    cover_image: null,
+    popularity: {
+      goodreads: { rating: 4.2, ratings_count: 700000 }
+    },
+    date_added: "2026-06-02"
+  },
+  {
+    id: "nineteen-eighty-four",
+    title: "Nineteen Eighty-Four",
+    author: "George Orwell",
+    reader_path: "books/Nineteen-Eighty-Four_Reader_v1.html",
+    blurb: "Winston Smith's doomed resistance against a totalitarian state that controls language, memory, and truth itself. The novel that gave us Big Brother, doublethink, and the memory hole.",
+    cover_image: null,
+    popularity: {
+      goodreads: { rating: 4.2, ratings_count: 3800000 }
+    },
+    date_added: "2026-06-02"
+  },
+  {
+    id: "subtle-art",
+    title: "The Subtle Art of Not Giving a F*ck",
+    author: "Mark Manson",
+    reader_path: "books/The-Subtle-Art-of-Not-Giving-a-Fuck_Reader_v1.html",
+    blurb: "A counterintuitive approach to living a good life. Manson argues that improving our lives hinges not on the positivity we embrace but on the problems we choose to endure and the values we choose to struggle for.",
+    cover_image: null,
+    popularity: {
+      goodreads: { rating: 3.9, ratings_count: 1400000 }
+    },
+    date_added: "2026-06-02"
+  },
+  {
+    id: "power-of-now",
+    title: "The Power of Now",
+    author: "Eckhart Tolle",
+    reader_path: "books/The-Power-of-Now_Reader_v1.html",
+    blurb: "A guide to spiritual enlightenment through present-moment awareness. Tolle argues that most human pain is self-created by living in the past or future — and shows how to break free.",
+    cover_image: null,
+    popularity: {
+      goodreads: { rating: 4.1, ratings_count: 450000 }
+    },
+    date_added: "2026-06-02"
+  },
+  {
+    id: "psychology-of-money",
+    title: "The Psychology of Money",
+    author: "Morgan Housel",
+    reader_path: "books/Psychology-of-Money_Reader_v1.html",
+    blurb: "Timeless lessons on wealth, greed, and happiness. Housel argues that financial success is less about what you know and more about how you behave — and why the softest skills in finance matter more than the technical ones.",
+    cover_image: null,
+    popularity: {
+      goodreads: { rating: 4.3, ratings_count: 800000 }
+    },
+    date_added: "2026-06-01"
+  },
+  {
+    id: "agentic-ai-for-dummies",
+    title: "Agentic AI For Dummies",
+    author: "Pam Baker",
+    reader_path: "books/Agentic-AI-For-Dummies_Reader_v1.html",
+    blurb: "A practical primer on AI agents — what they are, how they work, and how to deploy them. Covers the full stack from prompt chaining to multi-agent orchestration without assuming prior ML knowledge.",
+    cover_image: null,
+    popularity: {
+      editor_note: "Essential for the agentic AI era"
+    },
+    date_added: "2026-05-31"
+  },
+  {
     id: "48-laws-of-power",
     title: "The 48 Laws of Power",
     author: "Robert Greene",
-    reader_path: "48-Laws-Of-Power_Reader_v1.html",
+    reader_path: "books/48-Laws-Of-Power_Reader_v1.html",
     blurb: "A study of influence, manipulation, and the social mechanics of power, drawn from three thousand years of history. Aphoristic, ruthless, and useful in fragments.",
     cover_image: null,
     popularity: {
@@ -340,7 +438,7 @@ const BOOKS = [
     id: "atomic-habits",
     title: "Atomic Habits",
     author: "James Clear",
-    reader_path: "Atomic-Habits_Reader_v1.html",
+    reader_path: "books/Atomic-Habits_Reader_v1.html",
     blurb: "Transform your habits, transform your life. A practical, science-backed guide to tiny changes that deliver remarkable results. Build good habits, break bad ones, and design your future one decision at a time.",
     cover_image: null,
     popularity: {
@@ -353,7 +451,7 @@ const BOOKS = [
     id: "co-intelligence",
     title: "Co-Intelligence",
     author: "Ethan Mollick",
-    reader_path: "Co-Intelligence_Reader_v1.html",
+    reader_path: "books/Co-Intelligence_Reader_v1.html",
     blurb: "How AI and humans work together to create things neither could alone. A practical guide to living and working with artificial intelligence in everyday life.",
     cover_image: null,
     popularity: {
@@ -365,7 +463,7 @@ const BOOKS = [
     id: "boat-go-faster",
     title: "Will It Make the Boat Go Faster?",
     author: "Ben Hunt-Davis & Harriet Beveridge",
-    reader_path: "Will-It-Make-The-Boat-Go-Faster_Reader_v1.html",
+    reader_path: "books/Will-It-Make-The-Boat-Go-Faster_Reader_v1.html",
     blurb: "An Olympic rower's framework for ruthless prioritization. Every decision is filtered through one question: does it make the boat go faster? Short, practical, and free of management jargon.",
     cover_image: null,
     popularity: {
@@ -373,6 +471,18 @@ const BOOKS = [
       editor_note: "Cult favorite"
     },
     date_added: "2026-05-22"
+  },
+  {
+    id: "craft-of-sourdough",
+    title: "The Craft of Sourdough",
+    author: "Unknown",
+    reader_path: "books/The-Craft-of-Sourdough_HTML_v1.html",
+    blurb: "A deep dive into the science and craft of sourdough baking — fermentation, flour, hydration, and the slow alchemy of wild yeast.",
+    cover_image: null,
+    popularity: {
+      editor_note: "Craft baking deep-dive"
+    },
+    date_added: "2026-05-20"
   }
 ];
 
