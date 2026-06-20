@@ -31,7 +31,6 @@
   }
   a { color: inherit; }
 
-  /* Skip link */
   .skip-link {
     position: absolute; left: -9999px; top: 12px;
     background: var(--ink); color: var(--surface);
@@ -49,291 +48,373 @@
   header.scrolled { border-bottom-color: rgba(26,24,20,0.08); }
   .header-inner {
     max-width: var(--max-width); margin: 0 auto; height: 100%;
-    padding: 0 32px; display: flex; align-items: center; gap: 32px;
+    padding: 0 32px; display: flex; align-items: center; gap: 24px;
   }
   .wordmark {
     font-family: 'Fraunces', serif; font-weight: 600;
     font-size: 22px; letter-spacing: -0.01em; text-decoration: none;
   }
-  .book-count { flex: 1; color: var(--ink-secondary); font-size: 14px; }
+  .tagline {
+    font-size: 14px; color: var(--ink-secondary);
+    font-style: italic; white-space: nowrap;
+  }
+  .header-spacer { flex: 1; }
+  .book-count { color: var(--ink-secondary); font-size: 14px; }
   .search-input {
-    width: 240px; padding: 10px 14px;
+    width: 260px; padding: 10px 14px 10px 36px;
     background: var(--bg); border: 1px solid rgba(26,24,20,0.10);
     border-radius: 8px; font-family: inherit; font-size: 14px; color: var(--ink);
   }
   .search-input::placeholder { color: var(--ink-secondary); }
   .search-input:focus { outline: 2px solid var(--accent-ember); outline-offset: 2px; border-color: transparent; }
-
-  /* Hero */
-  .hero { background: var(--surface); min-height: 480px; display: flex; align-items: center; padding: 64px 0; }
-  .hero-inner {
-    max-width: var(--max-width); margin: 0 auto; padding: 0 32px;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; width: 100%;
+  .search-wrap {
+    position: relative;
   }
-  .hero-tagline {
+  .search-icon {
+    position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+    color: var(--ink-secondary); pointer-events: none; font-size: 14px;
+  }
+
+  /* Toolbar */
+  .toolbar {
+    max-width: var(--max-width); margin: 0 auto;
+    padding: 20px 32px 12px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .view-toggle {
+    display: flex; background: var(--surface);
+    border: 1px solid rgba(26,24,20,0.10); border-radius: 8px;
+    overflow: hidden;
+  }
+  .view-btn {
+    padding: 8px 16px; border: none; background: none;
+    font-family: inherit; font-size: 13px; font-weight: 500;
+    color: var(--ink-secondary); cursor: pointer;
+    transition: all 160ms ease-out;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .view-btn + .view-btn { border-left: 1px solid rgba(26,24,20,0.08); }
+  .view-btn:hover { color: var(--ink); background: rgba(26,24,20,0.03); }
+  .view-btn.active {
+    background: var(--ink); color: var(--surface);
+  }
+  .view-btn svg { width: 16px; height: 16px; }
+
+  .sort-select {
+    padding: 8px 32px 8px 12px; border: 1px solid rgba(26,24,20,0.10);
+    border-radius: 8px; background: var(--surface);
+    font-family: inherit; font-size: 13px; color: var(--ink);
+    cursor: pointer; appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%236B6660' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+  .sort-select:focus { outline: 2px solid var(--accent-ember); outline-offset: 2px; }
+  .toolbar-spacer { flex: 1; }
+  .result-count { font-size: 13px; color: var(--ink-secondary); }
+
+  /* Grid view */
+  .library-grid {
+    max-width: var(--max-width); margin: 0 auto; padding: 12px 32px 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+  }
+  .grid-card {
+    background: var(--surface); border: 1px solid rgba(26,24,20,0.06);
+    border-radius: 12px; overflow: hidden;
+    text-decoration: none; color: var(--ink);
+    transition: transform 180ms ease-out, box-shadow 180ms ease-out;
+    display: flex; flex-direction: column;
+  }
+  .grid-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(26,24,20,0.08); }
+  .grid-card:focus-visible { outline: 2px solid var(--accent-ember); outline-offset: 2px; }
+  .grid-cover {
+    width: 100%; aspect-ratio: 3/4;
+    position: relative; overflow: hidden;
+    display: flex; align-items: flex-start; padding: 16px;
+  }
+  .grid-cover img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  }
+  .grid-cover-title {
     font-family: 'Fraunces', serif; font-weight: 500;
-    font-size: 48px; line-height: 1.08; letter-spacing: -0.02em; text-wrap: balance;
+    font-size: 18px; line-height: 1.15; color: var(--ink);
+    position: relative; z-index: 1; text-wrap: balance;
+    max-height: calc(1.15em * 4); overflow: hidden; word-break: break-word;
   }
-  .featured { position: relative; display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: start; }
-  .featured .cover { width: 200px; height: 240px; }
-  .featured-meta { padding-top: 4px; }
-  .featured-eyebrow {
-    font-size: 11px; font-weight: 500; text-transform: uppercase;
-    letter-spacing: 0.10em; color: var(--accent-ember); margin-bottom: 12px;
+  .grid-info { padding: 14px 16px 16px; flex: 1; display: flex; flex-direction: column; }
+  .grid-title {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: 16px; line-height: 1.25;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
   }
-  .featured-title {
-    font-family: 'Fraunces', serif; font-weight: 600; font-size: 28px;
-    line-height: 1.15; margin-bottom: 6px; text-wrap: balance;
+  .grid-author {
+    color: var(--ink-secondary); font-size: 13px; margin-top: 4px;
   }
-  .featured-author { color: var(--ink-secondary); font-size: 15px; margin-bottom: 16px; }
-  .featured-blurb { font-size: 15px; line-height: 1.55; margin-bottom: 18px; }
-  .featured-pop { margin-bottom: 20px; }
-  .cta {
-    display: inline-block; font-weight: 500; font-size: 14px; text-decoration: none;
-    color: var(--ink); padding-bottom: 2px; border-bottom: 1px solid transparent;
-    transition: border-color 200ms ease-out;
+  .grid-meta {
+    margin-top: auto; padding-top: 10px;
+    font-size: 12px; color: var(--ink-secondary);
   }
-  .cta:hover, .cta:focus-visible { border-color: var(--ink); outline: none; }
-  .reroll {
-    position: absolute; bottom: -8px; right: 0;
-    background: none; border: none; color: var(--ink-secondary);
-    font-family: inherit; font-size: 13px; cursor: pointer; padding: 4px 8px;
-    transition: color 200ms ease-out, transform 240ms ease-out;
-  }
-  .reroll:hover { color: var(--ink); }
-  .reroll:focus-visible { outline: 2px solid var(--accent-ember); outline-offset: 2px; border-radius: 4px; }
 
-  /* Carousel */
-  .carousel-section { padding: 80px 0 64px; position: relative; }
+  /* List view */
+  .library-list {
+    max-width: var(--max-width); margin: 0 auto; padding: 12px 32px 64px;
+    display: none; flex-direction: column; gap: 2px;
+  }
+  .list-row {
+    display: grid; grid-template-columns: 56px 1fr auto;
+    gap: 20px; align-items: center; padding: 14px 16px;
+    text-decoration: none; color: var(--ink);
+    background: var(--surface); border-radius: 8px;
+    transition: background 160ms ease-out;
+  }
+  .list-row:hover { background: rgba(26,24,20,0.03); }
+  .list-row:focus-visible { outline: 2px solid var(--accent-ember); outline-offset: 2px; }
+  .list-thumb {
+    width: 56px; height: 72px; border-radius: 4px;
+    overflow: hidden; position: relative;
+    display: flex; align-items: flex-start; padding: 6px;
+    border: 1px solid rgba(26,24,20,0.08);
+  }
+  .list-thumb img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  }
+  .list-thumb-title {
+    font-family: 'Fraunces', serif; font-size: 8px; line-height: 1.1;
+    position: relative; z-index: 1;
+  }
+  .list-body { min-width: 0; }
+  .list-title { font-size: 15px; font-weight: 500; }
+  .list-author { font-size: 13px; color: var(--ink-secondary); margin-top: 2px; }
+  .list-blurb {
+    font-size: 13px; color: var(--ink-secondary); margin-top: 6px; line-height: 1.45;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .list-date { font-size: 13px; color: var(--ink-secondary); white-space: nowrap; }
+
+  /* Carousel view */
+  .carousel-section {
+    max-width: var(--max-width); margin: 0 auto;
+    padding: 12px 0 64px; position: relative; display: none;
+  }
   .carousel-wrap { position: relative; }
   .carousel-track {
-    display: flex; gap: 32px; padding: 4px 80px 32px 80px;
+    display: flex; gap: 24px; padding: 4px 32px 24px 32px;
     overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
     scrollbar-width: none;
   }
   .carousel-track::-webkit-scrollbar { display: none; }
-
-  .card {
-    flex: 0 0 320px; height: 560px;
+  .c-card {
+    flex: 0 0 300px; height: 520px;
     background: var(--surface); border: 1px solid rgba(26,24,20,0.06);
-    border-radius: 12px; padding: 20px;
+    border-radius: 12px; padding: 18px;
     scroll-snap-align: start;
     display: flex; flex-direction: column;
     text-decoration: none; color: var(--ink);
-    transition: transform 180ms ease-out, box-shadow 180ms ease-out, border-color 180ms ease-out;
+    transition: transform 180ms ease-out, box-shadow 180ms ease-out;
   }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(26,24,20,0.08); }
-  .card:focus-visible { outline: 2px solid var(--accent-ember); outline-offset: 2px; }
-
-  .cover {
-    width: 100%; height: 320px; border-radius: 6px;
+  .c-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(26,24,20,0.08); }
+  .c-card:focus-visible { outline: 2px solid var(--accent-ember); outline-offset: 2px; }
+  .c-cover {
+    width: 100%; height: 280px; border-radius: 6px;
     border: 1px solid rgba(26,24,20,0.08);
-    padding: 24px; position: relative; overflow: hidden;
+    padding: 20px; position: relative; overflow: hidden;
     display: flex; align-items: flex-start;
   }
-  .cover-title {
+  .c-cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .c-cover-title {
     font-family: 'Fraunces', serif; font-weight: 500;
-    font-size: 28px; line-height: 1.15;
-    color: var(--ink); text-wrap: balance;
+    font-size: 24px; line-height: 1.15; color: var(--ink);
+    position: relative; z-index: 1; text-wrap: balance;
     max-height: calc(1.15em * 4); overflow: hidden; word-break: break-word;
   }
-  .featured .cover-title { font-size: 24px; }
-  .cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-
-  .card-title {
+  .c-card-title {
     font-family: 'Fraunces', serif; font-weight: 600;
-    font-size: 22px; line-height: 1.2; margin-top: 16px;
-    text-wrap: balance; display: -webkit-box;
-    -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    font-size: 20px; line-height: 1.2; margin-top: 14px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
   }
-  .card-author { color: var(--ink-secondary); font-size: 14px; margin-top: 4px; }
-  .card-blurb {
-    font-size: 15px; line-height: 1.55; margin-top: 16px; flex: 1;
-    overflow: hidden;
+  .c-card-author { color: var(--ink-secondary); font-size: 14px; margin-top: 4px; }
+  .c-card-blurb {
+    font-size: 14px; line-height: 1.5; margin-top: 12px; flex: 1; overflow: hidden;
     display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
-    -webkit-mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
   }
-  .card-pop { margin-top: 16px; }
-  .card-cta { margin-top: 12px; font-size: 14px; font-weight: 500; }
+  .c-card-cta { margin-top: 12px; font-size: 14px; font-weight: 500; }
 
-  /* Popularity pills */
-  .pill {
-    display: inline-block; padding: 5px 10px; border-radius: 4px;
-    font-size: 12px; font-weight: 500;
-    text-transform: uppercase; letter-spacing: 0.04em;
-    background: rgba(26,24,20,0.08); color: var(--ink);
-  }
-  .pill-hot { background: var(--accent-ember); color: var(--surface); }
-  .pill-grhigh { background: rgba(194,65,12,0.12); color: var(--ink); }
-  .pill-grhigh .star, .pill-hot .star { color: inherit; }
-  .untracked {
-    font-size: 11px; font-weight: 500; text-transform: uppercase;
-    letter-spacing: 0.06em; color: rgba(26,24,20,0.32);
-  }
-
-  /* Arrows */
   .arrow {
-    position: absolute; top: calc(50% - 16px); transform: translateY(-50%);
-    width: 48px; height: 48px; border-radius: 50%;
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 44px; height: 44px; border-radius: 50%;
     border: 1px solid rgba(26,24,20,0.12); background: var(--surface);
     color: var(--ink); cursor: pointer;
     display: flex; align-items: center; justify-content: center;
-    font-size: 22px; line-height: 1;
+    font-size: 20px; line-height: 1;
     transition: opacity 160ms ease-out, background 160ms ease-out;
     z-index: 5;
   }
   .arrow:hover { background: var(--bg); }
   .arrow:focus-visible { outline: 2px solid var(--accent-ember); outline-offset: 2px; }
-  .arrow.prev { left: 16px; }
-  .arrow.next { right: 16px; }
+  .arrow.prev { left: 4px; }
+  .arrow.next { right: 4px; }
   .arrow[aria-disabled="true"] { opacity: 0.3; cursor: not-allowed; pointer-events: none; }
 
-  /* Dots */
-  .dots { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
-  .dot {
-    width: 6px; height: 6px; border-radius: 50%;
-    background: var(--ink); opacity: 0.25; border: none; padding: 0;
-    cursor: pointer; transition: all 200ms ease-out;
+  /* Popularity pills */
+  .pill {
+    display: inline-block; padding: 4px 8px; border-radius: 4px;
+    font-size: 11px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    background: rgba(26,24,20,0.08); color: var(--ink);
   }
-  .dot.active { width: 24px; border-radius: 3px; opacity: 1; }
+  .pill-hot { background: var(--accent-ember); color: var(--surface); }
+  .pill-grhigh { background: rgba(194,65,12,0.12); color: var(--ink); }
 
-  /* Recently added */
-  .recent {
-    max-width: var(--max-width); margin: 0 auto;
-    padding: 32px; border-top: 1px solid rgba(26,24,20,0.08);
+  /* Empty state */
+  .empty-state {
+    grid-column: 1 / -1;
+    padding: 48px 24px; text-align: center;
+    color: var(--ink-secondary); font-size: 15px;
   }
-  .recent h2 {
-    font-family: 'Inter', sans-serif; font-weight: 500; font-size: 12px;
-    text-transform: uppercase; letter-spacing: 0.08em;
-    color: var(--ink-secondary); margin-bottom: 20px;
-  }
-  .recent-row {
-    display: grid; grid-template-columns: 48px 1fr auto;
-    gap: 24px; align-items: center; padding: 12px 8px;
-    text-decoration: none; color: var(--ink);
-    border-bottom: 1px solid rgba(26,24,20,0.04);
-    transition: background 160ms ease-out;
-  }
-  .recent-row:hover { background: var(--surface); }
-  .recent-thumb {
-    width: 48px; height: 72px; border-radius: 3px;
-    padding: 6px; overflow: hidden;
-    font-family: 'Fraunces', serif; font-size: 9px; line-height: 1.1;
-    border: 1px solid rgba(26,24,20,0.08);
-    display: flex; align-items: flex-start;
-  }
-  .recent-title { font-size: 15px; }
-  .recent-date { font-size: 13px; color: var(--ink-secondary); }
 
   /* Footer */
   footer {
     max-width: var(--max-width); margin: 0 auto;
-    padding: 32px; height: 96px;
+    padding: 24px 32px; height: 80px;
     display: flex; align-items: center; gap: 24px;
     border-top: 1px solid rgba(26,24,20,0.08);
     font-size: 13px; color: var(--ink-secondary);
   }
   footer .wordmark { font-size: 16px; color: var(--ink); }
   footer .spacer { flex: 1; }
-  footer a { text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 200ms ease-out; }
-  footer a:hover { border-color: var(--ink-secondary); }
-
-  .empty-state {
-    padding: 40px 80px; color: var(--ink-secondary); font-size: 15px;
-  }
 
   /* Responsive */
   @media (max-width: 1024px) {
-    .hero-inner { grid-template-columns: 1fr; gap: 48px; }
-    .hero-tagline { font-size: 36px; }
+    .library-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
   }
   @media (max-width: 768px) {
-    .header-inner { padding: 0 20px; gap: 16px; }
-    .search-input { width: 160px; }
-    .hero-inner { padding: 0 20px; }
-    .featured { grid-template-columns: 140px 1fr; gap: 20px; }
-    .featured .cover { width: 140px; height: 168px; padding: 16px; }
-    .featured .cover-title { font-size: 18px; }
-    .card { flex: 0 0 280px; height: 540px; }
-    .carousel-track { padding: 4px 20px 32px 20px; gap: 20px; }
+    .header-inner { padding: 0 20px; gap: 12px; }
+    .tagline { display: none; }
+    .search-input { width: 180px; }
+    .toolbar { padding: 16px 20px 8px; }
+    .library-grid { padding: 12px 20px 48px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+    .library-list { padding: 12px 20px 48px; }
+    .carousel-section { padding: 12px 0 48px; }
+    .carousel-track { padding: 4px 20px 24px 20px; gap: 16px; }
+    .c-card { flex: 0 0 270px; height: 480px; }
     .arrow { display: none; }
-    .recent, footer { padding-left: 20px; padding-right: 20px; }
+    .list-row { grid-template-columns: 48px 1fr auto; gap: 12px; padding: 12px; }
+    .list-thumb { width: 48px; height: 62px; }
+    .list-blurb { display: none; }
+    footer { padding-left: 20px; padding-right: 20px; }
   }
-  @media (max-width: 375px) {
-    .card { flex: 0 0 88vw; }
-    .hero-tagline { font-size: 28px; }
+  @media (max-width: 480px) {
+    .library-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .c-card { flex: 0 0 85vw; }
     .book-count { display: none; }
+    .view-btn span { display: none; }
+    .view-btn { padding: 8px 12px; }
   }
 
-  /* Reduced motion */
   @media (prefers-reduced-motion: reduce) {
     html, .carousel-track { scroll-behavior: auto; }
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
       transition-duration: 0.01ms !important;
     }
-    .card:hover { transform: none; box-shadow: none; }
+    .grid-card:hover, .c-card:hover { transform: none; box-shadow: none; }
   }
 </style>
 </head>
 <body>
-<a class="skip-link" href="#carousel">Skip to library</a>
+<a class="skip-link" href="#library">Skip to library</a>
 
 <header id="siteHeader">
   <div class="header-inner">
     <a href="#" class="wordmark">Library</a>
+    <span class="tagline">A private shelf of long-reads</span>
+    <span class="header-spacer"></span>
     <span class="book-count" id="bookCount"></span>
-    <input type="search" class="search-input" placeholder="Search title or author…" id="searchInput" aria-label="Search library">
+    <div class="search-wrap">
+      <span class="search-icon">&#x1F50D;</span>
+      <input type="search" class="search-input" placeholder="Search title or author…" id="searchInput" aria-label="Search library">
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-tagline">Self-help, slowly.<br>A private shelf of long-reads.</div>
-    <div class="featured" id="featured"></div>
+<div class="toolbar">
+  <div class="view-toggle" role="radiogroup" aria-label="View mode">
+    <button class="view-btn active" data-view="grid" role="radio" aria-checked="true" aria-label="Grid view">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
+      <span>Grid</span>
+    </button>
+    <button class="view-btn" data-view="list" role="radio" aria-checked="false" aria-label="List view">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="1" y1="3" x2="15" y2="3"/><line x1="1" y1="8" x2="15" y2="8"/><line x1="1" y1="13" x2="15" y2="13"/></svg>
+      <span>List</span>
+    </button>
+    <button class="view-btn" data-view="carousel" role="radio" aria-checked="false" aria-label="Carousel view">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="8" height="12" rx="1.5"/><line x1="1" y1="5" x2="1" y2="11"/><line x1="15" y1="5" x2="15" y2="11"/></svg>
+      <span>Carousel</span>
+    </button>
   </div>
-</section>
 
-<section class="carousel-section" id="carousel" aria-label="Library carousel">
-  <div class="carousel-wrap">
-    <button class="arrow prev" id="prevBtn" aria-label="Previous">&lsaquo;</button>
-    <div class="carousel-track" id="track" role="region" aria-roledescription="carousel" aria-label="Books" tabindex="0"></div>
-    <button class="arrow next" id="nextBtn" aria-label="Next">&rsaquo;</button>
-  </div>
-  <div class="dots" id="dots" aria-hidden="true"></div>
-</section>
+  <select class="sort-select" id="sortSelect" aria-label="Sort books">
+    <option value="date-desc">Date added (newest)</option>
+    <option value="date-asc">Date added (oldest)</option>
+    <option value="title-asc">Title A → Z</option>
+    <option value="title-desc">Title Z → A</option>
+    <option value="author-asc">Author A → Z</option>
+  </select>
 
-<section class="recent" id="recentSection" hidden>
-  <h2>Recently added</h2>
-  <div id="recentList"></div>
-</section>
+  <span class="toolbar-spacer"></span>
+  <span class="result-count" id="resultCount"></span>
+</div>
+
+<main id="library">
+  <div class="library-grid" id="gridView"></div>
+  <div class="library-list" id="listView"></div>
+  <section class="carousel-section" id="carouselView" aria-label="Library carousel">
+    <div class="carousel-wrap">
+      <button class="arrow prev" id="prevBtn" aria-label="Previous">&lsaquo;</button>
+      <div class="carousel-track" id="track" role="region" aria-roledescription="carousel" aria-label="Books" tabindex="0"></div>
+      <button class="arrow next" id="nextBtn" aria-label="Next">&rsaquo;</button>
+    </div>
+  </section>
+</main>
 
 <footer>
   <span class="wordmark">Library</span>
   <span>Updated <span id="updatedDate"></span></span>
   <span class="spacer"></span>
-  <a href="#" id="aboutLink" title="A private shelf of self-help long-reads, rendered as HTML for slow careful reading.">About this library</a>
 </footer>
 
 <script>
-// ═══════════════════════════════════════════════════════════════════════════
-// BOOKS — single source of truth. Add new entries to this array.
-// See BOOK-INDEX.md (in this folder) for schema + how to invoke Claude to
-// auto-append new books with researched popularity data.
-// ═══════════════════════════════════════════════════════════════════════════
 const BOOKS = [
+  {
+    id: "awaken-the-giant-within",
+    title: "Awaken the Giant Within",
+    author: "Anthony Robbins",
+    reader_path: "books/Awaken-the-Giant-Within_Reader_v1.html",
+    blurb: "Anthony Robbins' blueprint for lasting personal transformation, structured around the Neuro-Associative Conditioning system and the Master System — a five-component architecture of values, rules, beliefs, references, and global identity.",
+    cover_image: "https://covers.openlibrary.org/b/isbn/9780671727420-L.jpg",
+    popularity: { editor_note: "Robbins' personal change system" },
+    date_added: "2026-06-19"
+  },
+  {
+    id: "how-to-know-a-person",
+    title: "How to Know a Person",
+    author: "David Brooks",
+    reader_path: "books/How-to-Know-a-Person_Reader_v1.html",
+    blurb: "David Brooks on the social skill beneath all others: truly seeing another person and making them feel understood. He contrasts Diminishers with Illuminators, then walks the craft of deep conversation and empathy.",
+    cover_image: "https://covers.openlibrary.org/b/isbn/9780593230084-L.jpg",
+    popularity: { editor_note: "NYT bestseller on seeing others" },
+    date_added: "2026-06-19"
+  },
   {
     id: "strengthening-soft-skills",
     title: "HBR's 10 Must Reads on Strengthening Your Soft Skills",
     author: "Harvard Business Review",
     reader_path: "books/Strengthening-Your-Soft-Skills_Reader_v1.html",
-    blurb: "Ten HBR essays on the interpersonal capabilities that separate good managers from great ones — communication, emotional intelligence, influence, and self-awareness. Practitioner-focused and immediately applicable.",
+    blurb: "Ten HBR essays on the interpersonal capabilities that separate good managers from great ones — communication, emotional intelligence, influence, and self-awareness.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9781647826048-L.jpg",
-    popularity: {
-      goodreads: { rating: 4.0, ratings_count: 1200 },
-      editor_note: "HBR's curated best on soft skills — useful in fragments"
-    },
+    popularity: { goodreads: { rating: 4.0, ratings_count: 1200 }, editor_note: "HBR's curated best on soft skills" },
     date_added: "2026-06-15"
   },
   {
@@ -343,10 +424,7 @@ const BOOKS = [
     reader_path: "books/Why-Machines-Learn_Reader_v1.html",
     blurb: "The hidden mathematics behind every major ML algorithm — from the perceptron convergence proof to the double-descent curve — told through the physicists, theorists, and engineers who invented them.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9780593185001-L.jpg",
-    popularity: {
-      goodreads: { rating: 4.4, ratings_count: 2800 },
-      editor_note: "Best mathematical introduction to ML for the technically literate non-specialist"
-    },
+    popularity: { goodreads: { rating: 4.4, ratings_count: 2800 }, editor_note: "Best mathematical introduction to ML" },
     date_added: "2026-06-15"
   },
   {
@@ -356,10 +434,7 @@ const BOOKS = [
     reader_path: "books/Leadership-and-the-One-Minute-Manager_Reader_v1.html",
     blurb: "The definitive guide to Situational Leadership II. Diagnose where someone is on a task, match your style to their development level, and stop managing everyone the same way.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9780688103255-L.jpg",
-    popularity: {
-      goodreads: { rating: 4.0, ratings_count: 60000 },
-      editor_note: "Management canon"
-    },
+    popularity: { goodreads: { rating: 4.0, ratings_count: 60000 }, editor_note: "Management canon" },
     date_added: "2026-06-15"
   },
   {
@@ -369,9 +444,7 @@ const BOOKS = [
     reader_path: "books/Thinking-Fast-and-Slow_Reader_v1.html",
     blurb: "The definitive map of the mind's two systems — the fast, intuitive System 1 and the slow, deliberate System 2. Kahneman unpacks why we make irrational decisions and how to think more clearly.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9780374533557-L.jpg",
-    popularity: {
-      goodreads: { rating: 4.2, ratings_count: 700000 }
-    },
+    popularity: { goodreads: { rating: 4.2, ratings_count: 700000 } },
     date_added: "2026-06-02"
   },
   {
@@ -381,9 +454,7 @@ const BOOKS = [
     reader_path: "books/Nineteen-Eighty-Four_Reader_v1.html",
     blurb: "Winston Smith's doomed resistance against a totalitarian state that controls language, memory, and truth itself. The novel that gave us Big Brother, doublethink, and the memory hole.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
-    popularity: {
-      goodreads: { rating: 4.2, ratings_count: 3800000 }
-    },
+    popularity: { goodreads: { rating: 4.2, ratings_count: 3800000 } },
     date_added: "2026-06-02"
   },
   {
@@ -391,11 +462,9 @@ const BOOKS = [
     title: "The Subtle Art of Not Giving a F*ck",
     author: "Mark Manson",
     reader_path: "books/The-Subtle-Art-of-Not-Giving-a-Fuck_Reader_v1.html",
-    blurb: "A counterintuitive approach to living a good life. Manson argues that improving our lives hinges not on the positivity we embrace but on the problems we choose to endure and the values we choose to struggle for.",
+    blurb: "A counterintuitive approach to living a good life. Manson argues that improving our lives hinges not on the positivity we embrace but on the problems we choose to endure.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9780062457714-L.jpg",
-    popularity: {
-      goodreads: { rating: 3.9, ratings_count: 1400000 }
-    },
+    popularity: { goodreads: { rating: 3.9, ratings_count: 1400000 } },
     date_added: "2026-06-02"
   },
   {
@@ -403,11 +472,9 @@ const BOOKS = [
     title: "The Power of Now",
     author: "Eckhart Tolle",
     reader_path: "books/The-Power-of-Now_Reader_v1.html",
-    blurb: "A guide to spiritual enlightenment through present-moment awareness. Tolle argues that most human pain is self-created by living in the past or future — and shows how to break free.",
+    blurb: "A guide to spiritual enlightenment through present-moment awareness. Tolle argues that most human pain is self-created by living in the past or future.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9781577314806-L.jpg",
-    popularity: {
-      goodreads: { rating: 4.1, ratings_count: 450000 }
-    },
+    popularity: { goodreads: { rating: 4.1, ratings_count: 450000 } },
     date_added: "2026-06-02"
   },
   {
@@ -415,11 +482,9 @@ const BOOKS = [
     title: "The Psychology of Money",
     author: "Morgan Housel",
     reader_path: "books/Psychology-of-Money_Reader_v1.html",
-    blurb: "Timeless lessons on wealth, greed, and happiness. Housel argues that financial success is less about what you know and more about how you behave — and why the softest skills in finance matter more than the technical ones.",
+    blurb: "Timeless lessons on wealth, greed, and happiness. Housel argues that financial success is less about what you know and more about how you behave.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg",
-    popularity: {
-      goodreads: { rating: 4.3, ratings_count: 800000 }
-    },
+    popularity: { goodreads: { rating: 4.3, ratings_count: 800000 } },
     date_added: "2026-06-01"
   },
   {
@@ -427,11 +492,9 @@ const BOOKS = [
     title: "Agentic AI For Dummies",
     author: "Pam Baker",
     reader_path: "books/Agentic-AI-For-Dummies_Reader_v1.html",
-    blurb: "A practical primer on AI agents — what they are, how they work, and how to deploy them. Covers the full stack from prompt chaining to multi-agent orchestration without assuming prior ML knowledge.",
+    blurb: "A practical primer on AI agents — what they are, how they work, and how to deploy them. Covers the full stack from prompt chaining to multi-agent orchestration.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9781394379606-L.jpg",
-    popularity: {
-      editor_note: "Essential for the agentic AI era"
-    },
+    popularity: { editor_note: "Essential for the agentic AI era" },
     date_added: "2026-05-31"
   },
   {
@@ -441,10 +504,7 @@ const BOOKS = [
     reader_path: "books/48-Laws-Of-Power_Reader_v1.html",
     blurb: "A study of influence, manipulation, and the social mechanics of power, drawn from three thousand years of history. Aphoristic, ruthless, and useful in fragments.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9780140280197-L.jpg",
-    popularity: {
-      nyt: { rank: 2, weeks_on_list: 312 },
-      goodreads: { rating: 4.0, ratings_count: 142000 }
-    },
+    popularity: { nyt: { rank: 2, weeks_on_list: 312 }, goodreads: { rating: 4.0, ratings_count: 142000 } },
     date_added: "2026-05-24"
   },
   {
@@ -452,12 +512,9 @@ const BOOKS = [
     title: "Atomic Habits",
     author: "James Clear",
     reader_path: "books/Atomic-Habits_Reader_v1.html",
-    blurb: "Transform your habits, transform your life. A practical, science-backed guide to tiny changes that deliver remarkable results. Build good habits, break bad ones, and design your future one decision at a time.",
+    blurb: "Transform your habits, transform your life. A practical, science-backed guide to tiny changes that deliver remarkable results.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg",
-    popularity: {
-      goodreads: { rating: 4.3, ratings_count: 2100000 },
-      editor_note: "Modern classic"
-    },
+    popularity: { goodreads: { rating: 4.3, ratings_count: 2100000 }, editor_note: "Modern classic" },
     date_added: "2026-05-23"
   },
   {
@@ -465,11 +522,9 @@ const BOOKS = [
     title: "Co-Intelligence",
     author: "Ethan Mollick",
     reader_path: "books/Co-Intelligence_Reader_v1.html",
-    blurb: "How AI and humans work together to create things neither could alone. A practical guide to living and working with artificial intelligence in everyday life.",
+    blurb: "How AI and humans work together to create things neither could alone. A practical guide to living and working with artificial intelligence.",
     cover_image: "https://covers.openlibrary.org/b/isbn/9780593716717-L.jpg",
-    popularity: {
-      editor_note: "Essential reading for the AI era"
-    },
+    popularity: { editor_note: "Essential reading for the AI era" },
     date_added: "2026-05-20"
   },
   {
@@ -477,30 +532,22 @@ const BOOKS = [
     title: "Will It Make the Boat Go Faster?",
     author: "Ben Hunt-Davis & Harriet Beveridge",
     reader_path: "books/Will-It-Make-The-Boat-Go-Faster_Reader_v1.html",
-    blurb: "An Olympic rower's framework for ruthless prioritization. Every decision is filtered through one question: does it make the boat go faster? Short, practical, and free of management jargon.",
+    blurb: "An Olympic rower's framework for ruthless prioritization. Every decision is filtered through one question: does it make the boat go faster?",
     cover_image: "https://covers.openlibrary.org/b/isbn/9781910547571-L.jpg",
-    popularity: {
-      goodreads: { rating: 4.2, ratings_count: 1900 },
-      editor_note: "Cult favorite"
-    },
+    popularity: { goodreads: { rating: 4.2, ratings_count: 1900 }, editor_note: "Cult favorite" },
     date_added: "2026-05-22"
   }
 ];
 
-// ═══════════════════════════════════════════════════════════════════════════
-// Helpers
-// ═══════════════════════════════════════════════════════════════════════════
 const ACCENT_TOKENS = ['--accent-moss', '--accent-indigo'];
 const ROOT_STYLES = getComputedStyle(document.documentElement);
 function accentHex(id) {
   let h = 0;
   for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) | 0;
-  const token = ACCENT_TOKENS[Math.abs(h) % ACCENT_TOKENS.length];
-  return ROOT_STYLES.getPropertyValue(token).trim();
+  return ROOT_STYLES.getPropertyValue(ACCENT_TOKENS[Math.abs(h) % ACCENT_TOKENS.length]).trim();
 }
 function tintBg(id) {
   const c = accentHex(id);
-  // Use color-mix for warm tint at 14% — fallback handled by browser
   return `background: color-mix(in srgb, ${c} 14%, var(--surface));`;
 }
 function abbrev(n) {
@@ -510,122 +557,184 @@ function abbrev(n) {
 }
 function formatDate(iso) {
   const d = new Date(iso + 'T00:00:00');
-  return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 }
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 function popularityHTML(pop) {
-  if (!pop || Object.keys(pop).length === 0) return '<div class="untracked">Untracked</div>';
+  if (!pop || Object.keys(pop).length === 0) return '';
   if (pop.nyt) {
     const hot = pop.nyt.rank <= 10;
     return `<span class="pill ${hot ? 'pill-hot' : ''}">NYT #${pop.nyt.rank} · ${pop.nyt.weeks_on_list} wks</span>`;
   }
   if (pop.goodreads) {
     const cls = pop.goodreads.rating >= 4.3 ? 'pill-grhigh' : '';
-    return `<span class="pill ${cls}"><span class="star">★</span> ${pop.goodreads.rating.toFixed(1)} · ${abbrev(pop.goodreads.ratings_count)} ratings</span>`;
+    return `<span class="pill ${cls}">★ ${pop.goodreads.rating.toFixed(1)} · ${abbrev(pop.goodreads.ratings_count)}</span>`;
   }
   if (pop.editor_note) {
-    return `<span class="pill">Editor's pick · ${escapeHtml(pop.editor_note)}</span>`;
+    return `<span class="pill">${escapeHtml(pop.editor_note)}</span>`;
   }
-  return '<div class="untracked">Untracked</div>';
+  return '';
 }
-function coverHTML(book) {
-  const img = book.cover_image
-    ? `<img src="${escapeHtml(book.cover_image)}" alt="" onerror="this.remove()">`
-    : '';
-  return `<div class="cover" style="${tintBg(book.id)}"><span class="cover-title">${escapeHtml(book.title)}</span>${img}</div>`;
+function coverImg(book) {
+  return book.cover_image ? `<img src="${escapeHtml(book.cover_image)}" alt="" loading="lazy" onerror="this.remove()">` : '';
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
-// Carousel
-// ═══════════════════════════════════════════════════════════════════════════
+let currentView = localStorage.getItem('lib-view') || 'grid';
+let currentSort = localStorage.getItem('lib-sort') || 'date-desc';
+let visibleBooks = [];
+
+const gridView = document.getElementById('gridView');
+const listView = document.getElementById('listView');
+const carouselView = document.getElementById('carouselView');
 const track = document.getElementById('track');
-const dots = document.getElementById('dots');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+const searchInput = document.getElementById('searchInput');
+const sortSelect = document.getElementById('sortSelect');
 
-let visibleBooks = [...BOOKS];
+function sortBooks(books, key) {
+  const sorted = [...books];
+  switch (key) {
+    case 'date-desc': return sorted.sort((a, b) => b.date_added.localeCompare(a.date_added));
+    case 'date-asc': return sorted.sort((a, b) => a.date_added.localeCompare(b.date_added));
+    case 'title-asc': return sorted.sort((a, b) => a.title.localeCompare(b.title));
+    case 'title-desc': return sorted.sort((a, b) => b.title.localeCompare(a.title));
+    case 'author-asc': return sorted.sort((a, b) => a.author.localeCompare(b.author));
+    default: return sorted;
+  }
+}
+
+function filterBooks() {
+  const q = searchInput.value.trim().toLowerCase();
+  let books = q
+    ? BOOKS.filter(b => b.title.toLowerCase().includes(q) || b.author.toLowerCase().includes(q))
+    : [...BOOKS];
+  return sortBooks(books, currentSort);
+}
+
+function renderGrid(books) {
+  if (books.length === 0) {
+    gridView.innerHTML = '<div class="empty-state">No books match your search.</div>';
+    return;
+  }
+  gridView.innerHTML = books.map(b => `
+    <a class="grid-card" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener noreferrer">
+      <div class="grid-cover" style="${tintBg(b.id)}">
+        <span class="grid-cover-title">${escapeHtml(b.title)}</span>
+        ${coverImg(b)}
+      </div>
+      <div class="grid-info">
+        <div class="grid-title">${escapeHtml(b.title)}</div>
+        <div class="grid-author">${escapeHtml(b.author)}</div>
+        <div class="grid-meta">${popularityHTML(b.popularity)}</div>
+      </div>
+    </a>
+  `).join('');
+}
+
+function renderList(books) {
+  if (books.length === 0) {
+    listView.innerHTML = '<div class="empty-state">No books match your search.</div>';
+    return;
+  }
+  listView.innerHTML = books.map(b => `
+    <a class="list-row" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener noreferrer">
+      <div class="list-thumb" style="${tintBg(b.id)}">
+        <span class="list-thumb-title">${escapeHtml(b.title)}</span>
+        ${coverImg(b)}
+      </div>
+      <div class="list-body">
+        <div class="list-title">${escapeHtml(b.title)}</div>
+        <div class="list-author">${escapeHtml(b.author)}</div>
+        <div class="list-blurb">${escapeHtml(b.blurb)}</div>
+      </div>
+      <div class="list-date">${formatDate(b.date_added)}</div>
+    </a>
+  `).join('');
+}
 
 function renderCarousel(books) {
   if (books.length === 0) {
-    track.innerHTML = `<div class="empty-state">Nothing matches your search.</div>`;
-    dots.innerHTML = '';
+    track.innerHTML = '<div class="empty-state">No books match your search.</div>';
     updateArrowState();
     return;
   }
   track.innerHTML = books.map(b => `
-    <a class="card" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener noreferrer" data-id="${escapeHtml(b.id)}">
-      ${coverHTML(b)}
-      <div class="card-title">${escapeHtml(b.title)}</div>
-      <div class="card-author">by ${escapeHtml(b.author)}</div>
-      <div class="card-blurb">${escapeHtml(b.blurb)}</div>
-      <div class="card-pop">${popularityHTML(b.popularity)}</div>
-      <div class="card-cta">Read →</div>
+    <a class="c-card" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener noreferrer">
+      <div class="c-cover" style="${tintBg(b.id)}">
+        <span class="c-cover-title">${escapeHtml(b.title)}</span>
+        ${coverImg(b)}
+      </div>
+      <div class="c-card-title">${escapeHtml(b.title)}</div>
+      <div class="c-card-author">by ${escapeHtml(b.author)}</div>
+      <div class="c-card-blurb">${escapeHtml(b.blurb)}</div>
+      <div class="c-card-cta">Read →</div>
     </a>
   `).join('');
-  renderDots(books.length);
   updateArrowState();
 }
 
-function renderDots(n) {
-  if (n <= 1) { dots.innerHTML = ''; return; }
-  // Above 20 books, switch to a scrubber. With <=20 use dots.
-  if (n > 20) {
-    dots.innerHTML = '<div style="width:240px;height:2px;background:rgba(26,24,20,0.12);position:relative;"><div id="scrub" style="position:absolute;left:0;top:-2px;width:48px;height:6px;background:var(--ink);border-radius:3px;transition:left 200ms ease-out;"></div></div>';
-    return;
-  }
-  let html = '';
-  for (let i = 0; i < n; i++) {
-    html += `<button class="dot${i === 0 ? ' active' : ''}" data-idx="${i}" aria-label="Go to book ${i + 1}"></button>`;
-  }
-  dots.innerHTML = html;
-  dots.querySelectorAll('.dot').forEach(d => {
-    d.addEventListener('click', () => {
-      const idx = parseInt(d.dataset.idx, 10);
-      scrollToCard(idx);
-    });
+function setView(view) {
+  currentView = view;
+  localStorage.setItem('lib-view', view);
+  document.querySelectorAll('.view-btn').forEach(btn => {
+    const active = btn.dataset.view === view;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-checked', active);
   });
+  gridView.style.display = view === 'grid' ? 'grid' : 'none';
+  listView.style.display = view === 'list' ? 'flex' : 'none';
+  carouselView.style.display = view === 'carousel' ? 'block' : 'none';
 }
+
+function render() {
+  visibleBooks = filterBooks();
+  renderGrid(visibleBooks);
+  renderList(visibleBooks);
+  renderCarousel(visibleBooks);
+  document.getElementById('resultCount').textContent =
+    visibleBooks.length === BOOKS.length ? '' : `${visibleBooks.length} of ${BOOKS.length}`;
+}
+
+document.querySelectorAll('.view-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    setView(btn.dataset.view);
+    render();
+  });
+});
+
+sortSelect.value = currentSort;
+sortSelect.addEventListener('change', () => {
+  currentSort = sortSelect.value;
+  localStorage.setItem('lib-sort', currentSort);
+  render();
+});
+
+searchInput.addEventListener('input', () => render());
 
 function cardWidth() {
-  const first = track.querySelector('.card');
-  if (!first) return 320;
+  const first = track.querySelector('.c-card');
+  if (!first) return 300;
   const next = first.nextElementSibling;
   if (next) return next.getBoundingClientRect().left - first.getBoundingClientRect().left;
-  return first.offsetWidth + 32;
+  return first.offsetWidth + 24;
 }
-
 function scrollToCard(idx) {
-  const padLeft = parseFloat(getComputedStyle(track).paddingLeft) || 0;
   track.scrollTo({ left: idx * cardWidth(), behavior: 'smooth' });
 }
-
 function activeIndex() {
   return Math.round(track.scrollLeft / cardWidth());
 }
-
 function updateArrowState() {
   const maxScroll = track.scrollWidth - track.clientWidth;
-  const atStart = track.scrollLeft <= 1;
-  const atEnd = track.scrollLeft >= maxScroll - 1;
-  const noScroll = maxScroll <= 1;
-  prevBtn.setAttribute('aria-disabled', (atStart || noScroll) ? 'true' : 'false');
-  nextBtn.setAttribute('aria-disabled', (atEnd || noScroll) ? 'true' : 'false');
-  // Update dots
-  const idx = activeIndex();
-  dots.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === idx));
-  const scrub = document.getElementById('scrub');
-  if (scrub && maxScroll > 0) {
-    const pct = track.scrollLeft / maxScroll;
-    scrub.style.left = `${pct * (240 - 48)}px`;
-  }
+  prevBtn.setAttribute('aria-disabled', (track.scrollLeft <= 1 || maxScroll <= 1) ? 'true' : 'false');
+  nextBtn.setAttribute('aria-disabled', (track.scrollLeft >= maxScroll - 1 || maxScroll <= 1) ? 'true' : 'false');
 }
-
 track.addEventListener('scroll', () => requestAnimationFrame(updateArrowState));
 prevBtn.addEventListener('click', () => scrollToCard(Math.max(0, activeIndex() - 1)));
 nextBtn.addEventListener('click', () => scrollToCard(activeIndex() + 1));
-
 track.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') { e.preventDefault(); scrollToCard(activeIndex() + 1); }
   if (e.key === 'ArrowLeft')  { e.preventDefault(); scrollToCard(Math.max(0, activeIndex() - 1)); }
@@ -633,89 +742,18 @@ track.addEventListener('keydown', e => {
   if (e.key === 'End')        { e.preventDefault(); scrollToCard(visibleBooks.length - 1); }
 });
 
-// ═══════════════════════════════════════════════════════════════════════════
-// Featured (hero)
-// ═══════════════════════════════════════════════════════════════════════════
-let featuredIdx = Math.floor(Math.random() * BOOKS.length);
-function renderFeatured() {
-  const b = BOOKS[featuredIdx];
-  const el = document.getElementById('featured');
-  if (!b) {
-    el.innerHTML = `<div style="color:var(--ink-secondary)">Empty shelf. Add a book.</div>`;
-    return;
-  }
-  el.innerHTML = `
-    ${coverHTML(b)}
-    <div class="featured-meta">
-      <div class="featured-eyebrow">Featured</div>
-      <div class="featured-title">${escapeHtml(b.title)}</div>
-      <div class="featured-author">by ${escapeHtml(b.author)}</div>
-      <div class="featured-blurb">${escapeHtml(b.blurb)}</div>
-      <div class="featured-pop">${popularityHTML(b.popularity)}</div>
-      <a class="cta" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener noreferrer">Read →</a>
-    </div>
-    ${BOOKS.length > 1 ? `<button class="reroll" id="rerollBtn" aria-label="Show another featured book">↻ next</button>` : ''}
-  `;
-  const reroll = document.getElementById('rerollBtn');
-  if (reroll) {
-    reroll.addEventListener('click', () => {
-      let n;
-      do { n = Math.floor(Math.random() * BOOKS.length); } while (n === featuredIdx);
-      featuredIdx = n;
-      renderFeatured();
-    });
-  }
-}
-
-// ═══════════════════════════════════════════════════════════════════════════
-// Recently added (only shown when 4+ books)
-// ═══════════════════════════════════════════════════════════════════════════
-function renderRecent() {
-  if (BOOKS.length < 4) return;
-  const sorted = [...BOOKS].sort((a, b) => b.date_added.localeCompare(a.date_added)).slice(0, 3);
-  const list = document.getElementById('recentList');
-  list.innerHTML = sorted.map(b => `
-    <a class="recent-row" href="${escapeHtml(b.reader_path)}" target="_blank" rel="noopener noreferrer">
-      <div class="recent-thumb" style="${tintBg(b.id)}">${escapeHtml(b.title)}</div>
-      <div class="recent-title">${escapeHtml(b.title)}</div>
-      <div class="recent-date">Added ${formatDate(b.date_added)}</div>
-    </a>
-  `).join('');
-  document.getElementById('recentSection').hidden = false;
-}
-
-// ═══════════════════════════════════════════════════════════════════════════
-// Search
-// ═══════════════════════════════════════════════════════════════════════════
-const searchInput = document.getElementById('searchInput');
-searchInput.addEventListener('input', () => {
-  const q = searchInput.value.trim().toLowerCase();
-  visibleBooks = q
-    ? BOOKS.filter(b => b.title.toLowerCase().includes(q) || b.author.toLowerCase().includes(q))
-    : [...BOOKS];
-  renderCarousel(visibleBooks);
-});
-
-// ═══════════════════════════════════════════════════════════════════════════
-// Sticky header hairline
-// ═══════════════════════════════════════════════════════════════════════════
 const header = document.getElementById('siteHeader');
 window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 24);
 }, { passive: true });
 
-// ═══════════════════════════════════════════════════════════════════════════
-// Footer + count + boot
-// ═══════════════════════════════════════════════════════════════════════════
 function boot() {
   document.getElementById('bookCount').textContent =
     `${BOOKS.length} ${BOOKS.length === 1 ? 'book' : 'books'}`;
   const latest = BOOKS.map(b => b.date_added).sort().pop();
   document.getElementById('updatedDate').textContent = latest ? formatDate(latest) : '—';
-  renderFeatured();
-  renderCarousel(visibleBooks);
-  renderRecent();
-  // Arrow disabled state on resize
+  setView(currentView);
+  render();
   window.addEventListener('resize', () => requestAnimationFrame(updateArrowState));
 }
 boot();
