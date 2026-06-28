@@ -1,0 +1,305 @@
+{
+  "envelope": "book-to-html-handoff/1.0",
+  "book_title": "Nineteen Eighty-Four",
+  "build_id": "20260621-001-nineteen-eighty-four",
+  "build_date": "2026-06-21",
+  "source_words": 104150,
+  "output_words": 33995,
+  "source_coverage_pct": 0.3264,
+  "anchors": 422,
+  "bridges": 76,
+  "bridge_words_pct": 0.0606,
+  "reader_views": 14,
+  "per_chapter_contribution": [
+    {
+      "ch": 1,
+      "pct": 0.0728
+    },
+    {
+      "ch": 2,
+      "pct": 0.0312
+    },
+    {
+      "ch": 3,
+      "pct": 0.0307
+    },
+    {
+      "ch": 4,
+      "pct": 0.0275
+    },
+    {
+      "ch": 5,
+      "pct": 0.0353
+    },
+    {
+      "ch": 6,
+      "pct": 0.0171
+    },
+    {
+      "ch": 7,
+      "pct": 0.0468
+    },
+    {
+      "ch": 8,
+      "pct": 0.0726
+    },
+    {
+      "ch": 9,
+      "pct": 0.0378
+    },
+    {
+      "ch": 10,
+      "pct": 0.0288
+    },
+    {
+      "ch": 11,
+      "pct": 0.028
+    },
+    {
+      "ch": 12,
+      "pct": 0.034
+    },
+    {
+      "ch": 13,
+      "pct": 0.0345
+    },
+    {
+      "ch": 14,
+      "pct": 0.0107
+    },
+    {
+      "ch": 15,
+      "pct": 0.032
+    },
+    {
+      "ch": 16,
+      "pct": 0.0372
+    },
+    {
+      "ch": 17,
+      "pct": 0.1072
+    },
+    {
+      "ch": 18,
+      "pct": 0.0164
+    },
+    {
+      "ch": 19,
+      "pct": 0.0422
+    },
+    {
+      "ch": 20,
+      "pct": 0.0717
+    },
+    {
+      "ch": 21,
+      "pct": 0.0497
+    },
+    {
+      "ch": 22,
+      "pct": 0.0199
+    },
+    {
+      "ch": 23,
+      "pct": 0.0135
+    },
+    {
+      "ch": 24,
+      "pct": 0.0267
+    },
+    {
+      "ch": 25,
+      "pct": 0.0374
+    }
+  ],
+  "dropped_sections": [
+    {
+      "source_id_range": "ch1§1¶22-25",
+      "reason": "war-film diary scrawl restated by bridge; transitional beats"
+    },
+    {
+      "source_id_range": "ch1§1¶45-50",
+      "reason": "repeated DOWN WITH BIG BROTHER lines and twinge-of-panic beat condensed"
+    },
+    {
+      "source_id_range": "ch2§1¶2-9",
+      "reason": "Mrs Parsons sink-repair domestic texture once setting established"
+    },
+    {
+      "source_id_range": "ch2§1¶32-40",
+      "reason": "telescreen/coin descriptive padding after surveillance theme established"
+    },
+    {
+      "source_id_range": "ch3§1¶7-15",
+      "reason": "Physical Jerks staging and Tube-station memory texture trimmed"
+    },
+    {
+      "source_id_range": "ch4§1¶3-8",
+      "reason": "Newspeak memo slips and routine job setup summarized in bridge"
+    },
+    {
+      "source_id_range": "ch4§1¶26-28",
+      "reason": "Ogilvy biography elaboration after the invention point is made"
+    },
+    {
+      "source_id_range": "ch5§1¶4-20",
+      "reason": "razor-blade / hanging small talk and queue staging trimmed"
+    },
+    {
+      "source_id_range": "ch5§1¶36-53",
+      "reason": "Parsons sub-collection and Spies anecdotes condensed to one bridge"
+    },
+    {
+      "source_id_range": "ch6§1¶3-6",
+      "reason": "twitch-in-the-street digression and intercut diary fragments trimmed"
+    },
+    {
+      "source_id_range": "ch7§1¶7-9",
+      "reason": "children's-history-book capitalist passage; gist retained via later prole material"
+    },
+    {
+      "source_id_range": "ch8§1¶21-51",
+      "reason": "extended pub dialogue at cross-purposes condensed to representative beats"
+    },
+    {
+      "source_id_range": "ch8§1¶85-99",
+      "reason": "church-dating digression and repeated rhyme fragments trimmed"
+    },
+    {
+      "source_id_range": "ch9§1¶19-ch9§1¶24",
+      "reason": "Repetitive canteen-approach attempts and Hate Week/Parsons texture restating tension already established; bridged."
+    },
+    {
+      "source_id_range": "ch9§1¶39-ch9§1¶46",
+      "reason": "Victory Square staging and short logistics dialogue; the convoy beat and route are kept verbatim, the approach choreography bridged."
+    },
+    {
+      "source_id_range": "ch10§1¶5-ch10§1¶14",
+      "reason": "Preliminary mike-safety chatter and self-deprecation dialogue; the embrace and naming kept."
+    },
+    {
+      "source_id_range": "ch10§1¶23-ch10§1¶33",
+      "reason": "Chocolate/black-market exchange and disguise small-talk; flavor restated by retained beats."
+    },
+    {
+      "source_id_range": "ch11§1¶3-ch11§1¶5",
+      "reason": "Meeting-logistics texture; subsumed by retained practical-cunning paragraph."
+    },
+    {
+      "source_id_range": "ch11§1¶10-ch11§1¶24",
+      "reason": "Julia's biography (Pornosec, schooling) and Katharine setup; strongest political insight retained, biography compressed."
+    },
+    {
+      "source_id_range": "ch11§1¶28-ch11§1¶39",
+      "reason": "Chalk-quarry anecdote narrated in full; bridged to its meaning and the 'we are the dead' exchange."
+    },
+    {
+      "source_id_range": "ch12§1¶5-ch12§1¶15",
+      "reason": "Versificator song verses and off-meeting logistics; the prole-woman image and singing kept once."
+    },
+    {
+      "source_id_range": "ch12§1¶17-ch12§1¶20",
+      "reason": "Tool-bag reveal staging; compressed to a bridge before the luxuries list."
+    },
+    {
+      "source_id_range": "ch12§1¶40-ch12§1¶48",
+      "reason": "Bed/bug/make-up small-talk and clock logistics; restated by retained beats."
+    },
+    {
+      "source_id_range": "ch13§1¶2-ch13§1¶4",
+      "reason": "Hate Week preparation montage (posters, bombs, Parsons); world-texture padding after the war-fever is established."
+    },
+    {
+      "source_id_range": "ch13§1¶10-ch13§1¶19",
+      "reason": "Jones/Aaronson/Rutherford recap dialogue; the falsified-past argument kept verbatim, the recap bridged out."
+    },
+    {
+      "source_id_range": "ch13§1¶22",
+      "reason": "Restatement of Julia's incuriosity about doctrine; already shown."
+    },
+    {
+      "source_id_range": "ch14§1¶3-ch14§1¶15",
+      "reason": "Newspeak-Dictionary pretext dialogue with O'Brien; the signal and its meaning kept, the cover-conversation bridged."
+    },
+    {
+      "source_id_range": "ch15§1¶1-ch15§1¶2,ch15§1¶7-ch15§1¶10",
+      "reason": "Frame and hunger-childhood texture; bridged to preserve the chocolate-theft turn."
+    },
+    {
+      "source_id_range": "ch15§1¶15-ch15§1¶18,ch15§1¶21-ch15§1¶27,ch15§1¶31",
+      "reason": "Connective dream-recall and confession dialogue; the 'they can't get inside you' core retained."
+    },
+    {
+      "source_id_range": "ch16§1¶2,ch16§1¶4-ch16§1¶5,ch16§1¶10-ch16§1¶15",
+      "reason": "Arrival staging, Newspeak speakwrite jargon, and approach dialogue; intimidation and the declaration kept."
+    },
+    {
+      "source_id_range": "ch16§1¶17-ch16§1¶24,ch16§1¶26-ch16§1¶27,ch16§1¶32-ch16§1¶35,ch16§1¶40-ch16§1¶43",
+      "reason": "Martin/wine staging and middle catechism rungs; representative rungs and the wine toast retained."
+    },
+    {
+      "source_id_range": "ch16§1¶48-ch16§1¶56,ch16§1¶58-ch16§1¶65,ch16§1¶67-ch16§1¶71,ch16§1¶75-ch16§1¶83",
+      "reason": "Surgeon/Martin texture, brief-case handover mechanics, and rhyme repetition; the Brotherhood speech, book promise, and 'no darkness' exchange kept."
+    },
+    {
+      "source_id_range": "ch17§1¶2,¶4,¶7",
+      "reason": "Hate Week / records-rectification padding and atrocity catalogue compressed to bridges; iconic mid-sentence switch retained."
+    },
+    {
+      "source_id_range": "ch17§1¶24-25,¶31-33,¶36",
+      "reason": "War-is-Peace reiterations (labour-power detail, weapons catalogue, atomic stalemate, military-necessity restatement) compressed; first full statement of each idea kept verbatim."
+    },
+    {
+      "source_id_range": "ch17§1¶17-21,¶38-50",
+      "reason": "Duplicate re-reading: Orwell repeats the chapter headings and the High/Middle/Low and 'aims' paragraphs verbatim when Winston reads aloud to Julia; kept a single canonical instance."
+    },
+    {
+      "source_id_range": "ch17§1¶52-54,¶57,¶59-61,¶63,¶66-67",
+      "reason": "Ignorance-is-Strength historical exposition and doublethink elaboration compressed; crimestop/blackwhite, doublethink definition, mutability of the past, four-ways-to-fall and the Ministries reversal retained."
+    },
+    {
+      "source_id_range": "ch18§1¶2-15,¶17-21,¶19(reverie prose),¶26-37,¶40-41,¶43",
+      "reason": "Over-retention contraction (~1,461 → target band). Dropped the long prole-woman reverie prose (¶19), the candle/chopper telescreen taunt (¶37), Julia being struck and carried out plus the coral-fragment beat (¶40), and the clock interiority (¶41). The proles' vitality reflection is now carried by a bridge plus the verbatim 'you were the dead; theirs was the future' passage. Retained verbatim: 'She's beautiful'; 'We are the dead' (Winston and Julia) and the iron voice 'You are the dead'; the boots-on-the-stairs raid; the glass paperweight smashed on the hearth-stone; Mr Charrington's entrance and his Thought-Police transformation."
+    },
+    {
+      "source_id_range": "ch19§1¶3-4,¶7-15,¶20-37,¶41-44,¶46,¶48,¶50,¶52-57,¶60,¶62-66,¶68,¶70-71,¶73,¶75,¶77-78,¶81,¶85",
+      "reason": "Drunk-woman vignette and connective cell-procedure beats compressed; Ampleforth, Parsons, the skull-faced starvation climax, Room 101 dread and O'Brien's entrance retained."
+    },
+    {
+      "source_id_range": "ch20§1¶2–ch20§1¶10",
+      "reason": "Interrogation/beating montage and dream-corridor imagery; representative beats kept verbatim (¶3), rest compressed to a bridge to avoid repetition."
+    },
+    {
+      "source_id_range": "ch20§1¶42–ch20§1¶72",
+      "reason": "Extended metaphysical sparring and the repeated 'how many fingers' exchange; the iconic dial/2+2 logic is anchored at ¶51/¶53/¶75/¶76, remaining call-and-response cut as repetition."
+    },
+    {
+      "source_id_range": "ch20§1¶101–ch20§1¶148",
+      "reason": "Martyrdom digression and Q&A on Big Brother's existence compressed; thesis lines (¶100,¶104,¶106) and Room 101 turn retained."
+    },
+    {
+      "source_id_range": "ch21§1¶2–ch21§1¶32",
+      "reason": "Solipsism/astronomy debate; rhetorically repetitive. Power thesis (¶14,¶18) kept; metaphysical volley reduced to bridge."
+    },
+    {
+      "source_id_range": "ch21§1¶38–ch21§1¶78",
+      "reason": "Mirror-scene build-up and degradation catalogue compressed; the visual climax (¶66,¶71) and 'not betrayed Julia' beat retained."
+    },
+    {
+      "source_id_range": "ch22§1¶2–ch22§1¶6, ch22§1¶15–ch22§1¶20",
+      "reason": "Recovery routine, crimestop drills, and shooting-from-behind musing; capitulation slogans and Julia outburst retained, padding cut."
+    },
+    {
+      "source_id_range": "ch23§1¶5–ch23§1¶19",
+      "reason": "Cage staging and rat lore; the worst-thing thesis, lever speech, and 'Do it to Julia' climax retained, intermediate description compressed."
+    },
+    {
+      "source_id_range": "ch24§1¶3–ch24§1¶37",
+      "reason": "War-bulletin brooding, chess-problem mysticism, Snakes-and-Ladders memory; thinned to bridges so the café frame, Julia reunion, and ending land cleanly."
+    },
+    {
+      "source_id_range": "ch25§1¶5–ch25§1¶8, ch25§1¶10–ch25§1¶11, ch25§1¶20–ch25§1¶22",
+      "reason": "Granular grammar mechanics and worked examples (inflections, compound formation, Declaration of Independence text); principles kept verbatim, illustrative detail compressed per DEEP-appendix guidance."
+    }
+  ]
+}

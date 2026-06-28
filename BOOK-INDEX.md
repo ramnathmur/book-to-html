@@ -31,7 +31,22 @@ Render priority for the card pill: `nyt` → `goodreads` → `editor_note` → `
 
 | ID | Title | Author | Added |
 |---|---|---|---|
+| `the-body-keeps-the-score` | The Body Keeps the Score | Bessel van der Kolk | 2026-06-21 |
+| `1929` | 1929 | Andrew Ross Sorkin | 2026-06-20 |
+| `awaken-the-giant-within` | Awaken the Giant Within | Anthony Robbins | 2026-06-19 |
+| `how-to-know-a-person` | How to Know a Person | David Brooks | 2026-06-19 |
+| `strengthening-soft-skills` | HBR's 10 Must Reads on Strengthening Your Soft Skills | Harvard Business Review | 2026-06-15 |
+| `why-machines-learn` | Why Machines Learn: The Elegant Maths Behind Modern AI | Anil Ananthaswamy | 2026-06-15 |
+| `leadership-one-minute-manager` | Leadership and the One Minute Manager | Ken Blanchard, Patricia Zigarmi & Drea Zigarmi | 2026-06-15 |
+| `thinking-fast-and-slow` | Thinking, Fast and Slow | Daniel Kahneman | 2026-06-02 |
+| `nineteen-eighty-four` | Nineteen Eighty-Four | George Orwell | 2026-06-02 |
+| `subtle-art` | The Subtle Art of Not Giving a F*ck | Mark Manson | 2026-06-02 |
+| `power-of-now` | The Power of Now | Eckhart Tolle | 2026-06-02 |
+| `psychology-of-money` | The Psychology of Money | Morgan Housel | 2026-06-01 |
+| `agentic-ai-for-dummies` | Agentic AI For Dummies | Pam Baker | 2026-05-31 |
 | `48-laws-of-power` | The 48 Laws of Power | Robert Greene | 2026-05-24 |
+| `atomic-habits` | Atomic Habits | James Clear | 2026-05-23 |
+| `co-intelligence` | Co-Intelligence | Ethan Mollick | 2026-05-20 |
 | `boat-go-faster` | Will It Make the Boat Go Faster? | Ben Hunt-Davis & Harriet Beveridge | 2026-05-22 |
 
 **The Librarian updates this table on every invocation that mutates `BOOKS`.**

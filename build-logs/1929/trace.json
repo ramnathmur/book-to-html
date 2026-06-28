@@ -1,0 +1,113 @@
+{
+  "envelope": "book-to-html-trace/1.0",
+  "build_id": "20260620-001-1929",
+  "book_title": "1929",
+  "note": "Build completed across two sessions: prior session ran Ingestor+Editor(7 shards+rebalance)+Proofreader iter1 (FAIL, 27 bridge violations) then died mid-rework. Resume session (this trace) re-gated from the reworked edit_pack.",
+  "spans": [
+    {
+      "persona": "ingestor",
+      "substrate": "deterministic",
+      "status": "ok",
+      "note": "epub preflight; 113,338 body words, 46 chapters",
+      "wall_ms": null,
+      "usage": null
+    },
+    {
+      "persona": "editor",
+      "substrate": "ai",
+      "model": "claude-opus",
+      "status": "ok",
+      "note": "prior session: 7 disjoint shards + rebalance, merged deterministically; telemetry not captured across session boundary",
+      "usage": null,
+      "wall_ms": null
+    },
+    {
+      "persona": "proofreader_iter1",
+      "substrate": "ai",
+      "model": "claude-sonnet",
+      "status": "fail",
+      "note": "27 bridge_unsupported_claim violations (prior session); routed to Editor bridge rework",
+      "usage": null,
+      "wall_ms": null
+    },
+    {
+      "persona": "editor_bridge_rework",
+      "substrate": "ai",
+      "model": "claude-sonnet",
+      "status": "ok",
+      "note": "resume: 15 bridges rewritten/recited (prior) + scoped 6-bridge fix (this session)",
+      "usage": {
+        "subagent_tokens": 67351
+      },
+      "wall_ms": 63295
+    },
+    {
+      "persona": "proofreader_iter2_full",
+      "substrate": "ai",
+      "model": "claude-sonnet",
+      "status": "fail",
+      "note": "resume: full 71-bridge audit, 65 clean / 6 minor ungrounded specifics",
+      "usage": {
+        "subagent_tokens": 103767
+      },
+      "wall_ms": 202388
+    },
+    {
+      "persona": "proofreader_reaudit",
+      "substrate": "ai",
+      "model": "claude-sonnet",
+      "status": "pass",
+      "note": "resume: 6 fixed bridges re-audited, all grounded; gate PASS",
+      "usage": {
+        "subagent_tokens": 38391
+      },
+      "wall_ms": 42310
+    },
+    {
+      "persona": "designer",
+      "substrate": "ai",
+      "model": "claude-sonnet",
+      "status": "ok",
+      "note": "8 views, 9 pullquotes, 1 inline-SVG hero timeline (Channel A only)",
+      "usage": {
+        "subagent_tokens": 48360
+      },
+      "wall_ms": 183141
+    },
+    {
+      "persona": "question_generator",
+      "substrate": "ai",
+      "model": "claude-sonnet",
+      "status": "ok",
+      "note": "10-question comprehension test",
+      "usage": {
+        "subagent_tokens": 126343
+      },
+      "wall_ms": 123358
+    },
+    {
+      "persona": "assembler",
+      "substrate": "deterministic",
+      "status": "ok",
+      "note": "chaptered reader; dedup of 2 shard-merge duplicate anchors; carry-forward chapter assignment for 5 empty-source bridges"
+    },
+    {
+      "persona": "reader",
+      "substrate": "ai",
+      "model": "claude-opus",
+      "status": "pass",
+      "note": "comprehension 10.0/10; books_finished_rate=4",
+      "scores": {
+        "visual_pleasure": 5,
+        "navigation": 5,
+        "comprehension": 5,
+        "illustration": 4,
+        "books_finished_rate": 4
+      },
+      "usage": {
+        "subagent_tokens": 128676
+      },
+      "wall_ms": 153512
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "envelope": "book-to-html-trace/1.0",
+  "build_id": "pom-2026-06-01-003",
+  "book_title": "The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness",
+  "spans": [
+    {
+      "persona": "ingestor",
+      "substrate": "deterministic",
+      "status": "ok",
+      "wall_ms": null
+    },
+    {
+      "persona": "editor",
+      "substrate": "ai",
+      "model": "claude-opus",
+      "status": "ok",
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "wall_ms": 165,
+      "iterations": 3,
+      "notes": "iter1: full edit @ ≥7 (392 anchors, 251 templated bridges). iter2: bridges dropped (boilerplate). iter3: threshold lowered to ≥5, narrative-setup preserved (836 anchors, 36k words)."
+    },
+    {
+      "persona": "proofreader",
+      "substrate": "ai",
+      "model": "claude-sonnet",
+      "status": "pass",
+      "notes": "0 anchor fails, 0 bridge factual violations; bridge_ratio gate triggered Editor rework iter 1, then bridges dropped iter 2 (templated boilerplate)"
+    },
+    {
+      "persona": "designer",
+      "substrate": "ai",
+      "model": "claude-opus",
+      "status": "ok",
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "wall_ms": 43,
+      "illustrations": 22
+    },
+    {
+      "persona": "assembler",
+      "substrate": "deterministic",
+      "status": "ok"
+    },
+    {
+      "persona": "reader",
+      "substrate": "ai",
+      "model": "claude-opus",
+      "status": "pass",
+      "iterations": 2,
+      "final_scores": {
+        "visual_pleasure": 4,
+        "navigation": 4,
+        "comprehension": 5,
+        "illustration": 4,
+        "books_finished_rate": 4
+      },
+      "would_skip_original": true,
+      "usage": {
+        "input_tokens": 22000,
+        "output_tokens": 3600
+      },
+      "wall_ms": 180000
+    }
+  ],
+  "final_status": "pass",
+  "iterations_used": 2,
+  "iterations_cap": 3
+}

@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leadership and the One Minute Manager — Reader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+/* ============ TOKENS ============ */
+:root {
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --paper: #faf7f1; --raised: #fffdf8;
+  --ink: #221d17;  --ink-soft: #5d564a; --ink-faint: #8a8273;
+  --rule: #e6dfd0; --rule-soft: #efe9dc;
+  --accent: #3f6fa3; --accent-ink: #2c537d;
+  --measure: 34rem; --gutter: 15rem; --rad: 10px;
+  --sh: 0 1px 2px rgba(40,32,18,.05), 0 8px 30px rgba(40,32,18,.07);
+}
+@media (prefers-color-scheme: dark) {
+  [data-theme="auto"] {
+    --paper: #14120e; --raised: #1d1a14;
+    --ink: #e9e4d9;  --ink-soft: #a59c8c; --ink-faint: #766e60;
+    --rule: #322d24; --rule-soft: #2a261f;
+    --accent: #86abd6; --accent-ink: #a7c4e6;
+    --sh: 0 1px 2px rgba(0,0,0,.3), 0 8px 34px rgba(0,0,0,.4);
+  }
+}
+[data-theme="dark"] {
+  --paper: #14120e; --raised: #1d1a14;
+  --ink: #e9e4d9;  --ink-soft: #a59c8c; --ink-faint: #766e60;
+  --rule: #322d24; --rule-soft: #2a261f;
+  --accent: #86abd6; --accent-ink: #a7c4e6;
+  --sh: 0 1px 2px rgba(0,0,0,.3), 0 8px 34px rgba(0,0,0,.4);
+}
+[data-theme="light"] {
+  --paper: #faf7f1; --raised: #fffdf8;
+  --ink: #221d17;  --ink-soft: #5d564a; --ink-faint: #8a8273;
+  --rule: #e6dfd0; --rule-soft: #efe9dc;
+  --accent: #3f6fa3; --accent-ink: #2c537d;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--serif); font-size: clamp(1.06rem, .62rem + .9vw, 1.24rem);
+  line-height: 1.62; -webkit-font-smoothing: antialiased;
+  min-height: 100vh; text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+}
+body ::selection { background: color-mix(in srgb, var(--accent) 24%, transparent); }
+
+/* ============ TOP BAR + PROGRESS ============ */
+.scrollprog {
+  position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+  background: var(--accent); z-index: 60; transition: width .12s linear;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; gap: 1rem;
+  padding: .55rem clamp(1rem, 4vw, 2.2rem);
+  background: color-mix(in srgb, var(--paper) 86%, transparent);
+  backdrop-filter: saturate(1.3) blur(12px);
+  border-bottom: 1px solid var(--rule-soft); font-family: var(--ui);
+}
+.brand { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
+.brand b {
+  font-family: var(--serif); font-weight: 600; font-size: .98rem;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.brand span {
+  font-size: .7rem; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.pips { display: flex; gap: .4rem; margin: 0 auto; align-items: center; }
+.pip {
+  appearance: none; border: 0; background: transparent; cursor: pointer;
+  padding: .4rem .15rem;
+}
+.pip i {
+  display: block; width: 1.5rem; height: 4px; border-radius: 99px;
+  background: var(--rule); transition: background .2s, transform .2s;
+}
+.pip[aria-current="true"] i { background: var(--accent); transform: scaleY(1.6); }
+.pip:hover i { background: var(--ink-faint); }
+.pip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.controls { display: flex; gap: .4rem; align-items: center; }
+.btn {
+  font-family: var(--ui); font-size: .82rem; cursor: pointer;
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .42rem .7rem; border-radius: 99px; border: 1px solid var(--rule);
+  background: var(--raised); color: var(--ink); transition: border-color .15s, background .15s;
+}
+.btn:hover { border-color: var(--ink-faint); }
+.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn .ic { font-size: .95rem; line-height: 1; }
+
+/* ============ VIEWS ============ */
+.stage { padding: 0 clamp(1rem, 5vw, 2.4rem); }
+.view { max-width: 64rem; margin: 0 auto; padding: 3.2rem 0 1rem; }
+[hidden] { display: none !important; }
+
+/* ---- COVER ---- */
+.cover { max-width: 46rem; text-align: left; padding-top: clamp(2rem, 7vh, 5rem); }
+.cover .kicker {
+  font-family: var(--ui); font-size: .74rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--accent); margin: 0 0 1rem;
+}
+.cover h1 {
+  font-size: clamp(2.6rem, 1.6rem + 3.4vw, 4rem); line-height: 1.02;
+  font-weight: 600; margin: 0 0 1rem; letter-spacing: -.01em;
+}
+.cover .sub {
+  font-size: clamp(1rem, .8rem + .5vw, 1.2rem); font-style: italic;
+  color: var(--ink-soft); margin: 0 0 1.6rem; font-weight: 400;
+}
+.begin {
+  font-family: var(--ui); font-size: 1rem; cursor: pointer;
+  padding: .85rem 1.6rem; border-radius: 99px; border: 0;
+  background: var(--accent); color: #fff; font-weight: 500;
+  box-shadow: var(--sh); transition: transform .15s, filter .15s;
+}
+.begin:hover { filter: brightness(1.06); transform: translateY(-1px); }
+.begin:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.designnote {
+  margin-top: 2.8rem; border: 1px solid var(--rule);
+  border-radius: var(--rad); background: var(--raised); padding: 1.3rem 1.5rem;
+  box-shadow: var(--sh);
+}
+.designnote h2 {
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 .7rem; font-weight: 400;
+  border: 0; padding: 0;
+}
+.designnote p { font-size: .96rem; line-height: 1.55; color: var(--ink-soft); margin: .5rem 0 0; }
+.designnote p:first-of-type { margin-top: 0; }
+.cover h1:focus { outline: none; }
+
+/* ---- CHAPTER ---- */
+.chead { max-width: var(--measure); margin: 0 auto 2.4rem; }
+.chead .num {
+  font-family: var(--mono); font-size: .78rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--accent); display: block; margin-bottom: .6rem;
+}
+.chead h2 {
+  font-size: clamp(1.9rem, 1.3rem + 2vw, 2.7rem); line-height: 1.08;
+  font-weight: 600; margin: 0; letter-spacing: -.01em; scroll-margin-top: 5rem;
+}
+.chead h2:focus { outline: none; }
+.body {
+  position: relative; max-width: var(--measure); margin: 0 auto; padding-right: 0;
+}
+@media (min-width: 1080px) {
+  .body {
+    max-width: calc(var(--measure) + var(--gutter) + 3rem);
+    padding-right: calc(var(--gutter) + 3rem);
+  }
+}
+.body p { margin: 0 0 1.25rem; text-wrap: pretty; }
+.body h3 {
+  font-size: 1.32rem; font-weight: 600; margin: 2.4rem 0 .9rem;
+  line-height: 1.2; letter-spacing: -.005em;
+}
+.opener::first-letter {
+  float: left; font-weight: 600; font-size: 3.5em;
+  line-height: .74; padding: .06em .1em 0 0; color: var(--accent);
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+/* anchor blockquote (verbatim source) */
+blockquote.anchor {
+  margin: 1.8rem 0; padding: .3rem 0 .3rem 1.5rem;
+  border-left: 2px solid var(--accent); font-style: italic;
+  color: var(--ink-soft); font-size: 1.06rem;
+}
+blockquote.anchor p { margin: 0 0 .5rem; }
+blockquote.anchor cite {
+  display: block; font-style: normal; font-family: var(--mono);
+  font-size: .72rem; letter-spacing: .04em; color: var(--ink-faint);
+  margin-top: .6rem; text-transform: uppercase;
+}
+
+/* pull quote */
+.pullquote {
+  font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2rem); line-height: 1.22;
+  font-style: italic; font-weight: 500; color: var(--ink); text-align: center;
+  max-width: 32ch; margin: 2.6rem auto; padding: 1.6rem 0;
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+}
+
+/* sidenote (Tufte) */
+.body .sidenote {
+  float: right; clear: right; width: var(--gutter);
+  margin-right: calc(-1 * (var(--gutter) + 3rem));
+  font-family: var(--ui); font-size: .82rem; line-height: 1.45;
+  color: var(--ink-soft); position: relative; padding-top: .1rem; text-align: left;
+}
+.body .sidenote .sn { color: var(--accent); font-weight: 600; margin-right: .3em; }
+.snref {
+  color: var(--accent); font-family: var(--ui); font-size: .7em;
+  vertical-align: super; line-height: 0; font-weight: 600; cursor: default;
+}
+@media (max-width: 1079px) {
+  .body .sidenote {
+    float: none; width: auto; margin: 1rem 0; padding: .9rem 1.1rem;
+    background: var(--raised); border: 1px solid var(--rule); border-radius: 8px;
+  }
+}
+
+/* figures */
+figure { margin: 2.4rem 0; max-width: 100%; }
+figure.wide { max-width: none; }
+figcaption {
+  font-family: var(--mono); font-size: .74rem; color: var(--ink-faint);
+  margin-top: .7rem; line-height: 1.4;
+}
+.figframe {
+  border: 1px solid var(--rule); border-radius: var(--rad);
+  background: var(--raised); padding: 1.4rem; overflow: auto; box-shadow: var(--sh);
+}
+.imgph {
+  aspect-ratio: 16/9; border: 1px solid var(--rule); border-radius: var(--rad);
+  background: repeating-linear-gradient(135deg, var(--rule-soft) 0 14px, var(--paper) 14px 28px);
+  display: flex; align-items: center; justify-content: center;
+}
+.imgph span {
+  font-family: var(--mono); font-size: .72rem; color: var(--ink-faint);
+  background: var(--paper); padding: .3rem .65rem; border-radius: 99px;
+  border: 1px solid var(--rule);
+}
+.mermaid { display: flex; justify-content: center; min-height: 40px; }
+.mermaid svg { max-width: 100%; height: auto; }
+
+/* comparison table */
+.tablewrap {
+  margin: 2.2rem 0; overflow-x: auto; border: 1px solid var(--rule);
+  border-radius: var(--rad); box-shadow: var(--sh);
+}
+table.cmp {
+  width: 100%; border-collapse: collapse; font-size: .95rem;
+  font-family: var(--ui); background: var(--raised);
+}
+table.cmp caption {
+  font-family: var(--mono); font-size: .74rem; color: var(--ink-faint);
+  text-align: left; padding: .9rem 1.1rem .2rem; caption-side: top;
+}
+table.cmp th, table.cmp td {
+  text-align: left; padding: .7rem 1.1rem;
+  border-bottom: 1px solid var(--rule-soft); vertical-align: top;
+}
+table.cmp thead th {
+  font-size: .74rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 600; border-bottom: 1px solid var(--rule);
+}
+table.cmp tbody tr:last-child td { border-bottom: 0; }
+table.cmp tbody th { font-weight: 600; color: var(--ink); }
+
+/* xref popover link */
+.xref {
+  color: var(--accent-ink); text-decoration: none;
+  border-bottom: 1px dotted var(--accent); cursor: help;
+}
+.xref:hover, .xref:focus-visible {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  outline: none; border-radius: 3px;
+}
+.xref-pop {
+  position: fixed; z-index: 80; max-width: 20rem;
+  background: var(--raised); border: 1px solid var(--rule); border-radius: 10px;
+  box-shadow: var(--sh); padding: .85rem 1rem; font-family: var(--ui);
+  font-size: .84rem; line-height: 1.45; color: var(--ink-soft);
+  pointer-events: none; opacity: 0; transform: translateY(4px);
+  transition: opacity .14s, transform .14s;
+}
+.xref-pop.on { opacity: 1; transform: translateY(0); }
+.xref-pop b {
+  display: block; font-family: var(--serif); color: var(--ink);
+  font-size: .9rem; margin-bottom: .25rem;
+}
+
+/* ============ CHAPTER NAV FOOTER ============ */
+.chapnav {
+  max-width: var(--measure); margin: 1rem auto 0;
+  padding: 2.4rem clamp(1rem, 5vw, 2.4rem) 4rem;
+  display: flex; gap: 1rem; align-items: stretch; font-family: var(--ui);
+}
+.nav-prev {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding: 0 1.1rem; border: 1px solid var(--rule); border-radius: var(--rad);
+  background: var(--raised); color: var(--ink-soft); cursor: pointer; font-size: .85rem;
+}
+.nav-prev:hover { border-color: var(--ink-faint); color: var(--ink); }
+.nav-next {
+  flex: 1; text-align: left; cursor: pointer; border: 1px solid var(--rule);
+  border-radius: var(--rad); background: var(--raised); padding: 1rem 1.3rem;
+  display: flex; flex-direction: column; gap: .2rem; box-shadow: var(--sh);
+  transition: border-color .15s, transform .15s;
+}
+.nav-next:hover { border-color: var(--accent); transform: translateY(-1px); }
+.nav-next small {
+  font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.nav-next b { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; color: var(--ink); }
+.nav-prev:focus-visible, .nav-next:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+
+/* ============ TOC OVERLAY ============ */
+.toc-overlay {
+  position: fixed; inset: 0; z-index: 90; display: flex;
+  align-items: flex-start; justify-content: center; padding: 6vh 1rem 1rem;
+}
+.toc-scrim {
+  position: absolute; inset: 0; background: rgba(20,16,10,.42);
+  backdrop-filter: blur(3px);
+}
+.toc-panel {
+  position: relative; width: min(42rem, 100%); max-height: 84vh;
+  overflow-y: auto; overflow-x: hidden;
+  background: var(--raised); border: 1px solid var(--rule); border-radius: 14px;
+  box-shadow: 0 24px 80px rgba(20,16,10,.4); padding: 1.4rem 1.4rem 1rem;
+}
+.toc-panel h3 {
+  font-family: var(--ui); font-size: .74rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 1rem; font-weight: 600;
+}
+.toc-list { list-style: none; margin: 0; padding: 0; }
+.toc-list li { margin: 0; }
+.toc-item {
+  width: 100%; text-align: left; display: flex; gap: 1rem; align-items: baseline;
+  padding: .8rem .7rem; border: 0; background: transparent; cursor: pointer;
+  border-radius: 8px; color: var(--ink); font-family: var(--serif);
+}
+.toc-item:hover { background: var(--rule-soft); }
+.toc-item:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.toc-item .tn { font-family: var(--mono); font-size: .78rem; color: var(--ink-faint); min-width: 1.6rem; }
+.toc-item .tt { font-size: 1.08rem; font-weight: 500; flex: 1; }
+.toc-item[aria-current="true"] { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.toc-item[aria-current="true"] .tt { color: var(--accent-ink); }
+.toc-hint {
+  font-family: var(--mono); font-size: .7rem; color: var(--ink-faint);
+  text-align: center; padding: .9rem 0 .3rem;
+}
+.toc-hint kbd {
+  font-family: var(--mono); background: var(--paper); border: 1px solid var(--rule);
+  border-radius: 5px; padding: .05rem .35rem; font-size: .85em;
+}
+
+/* ============ BUILD FOOTER ============ */
+.build-footer {
+  max-width: var(--measure); margin: 0 auto; padding: 0 clamp(1rem,5vw,2.4rem) 2rem;
+  font-family: var(--mono); font-size: .72rem; color: var(--ink-faint); line-height: 1.6;
+}
+
+/* ============ PRINT ============ */
+@media print {
+  .topbar, .scrollprog, .chapnav, .toc-overlay, .begin, .controls, .pips { display: none !important; }
+  .view[hidden] { display: block !important; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .body { max-width: none; padding-right: 0; }
+  .body .sidenote {
+    float: none; width: auto; margin: .8rem 0; font-size: 9pt;
+    border-left: 2px solid #999; padding-left: .8rem; background: none; border: 0;
+  }
+  figure, blockquote.anchor, .tablewrap { break-inside: avoid; }
+  .chead h2 { break-before: page; }
+}
+
+/* bridge prose (v2.2 carry-over) */
+.bridge { color: var(--ink-soft); font-style: italic; margin: 0.75em 0; }
+  </style>
+</head>
+<body data-theme="auto">
+  <div class="scrollprog" id="scrollprog" role="presentation"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <b>Leadership and the One Minute Manager</b>
+      <span>Ken Blanchard, Patricia Zigarmi &amp; Drea Zigarmi</span>
+    </div>
+    <nav class="pips" id="pips" aria-label="Chapter progress"></nav>
+    <div class="controls">
+      <button class="btn" id="tocBtn" aria-haspopup="dialog" aria-expanded="false">
+        <span class="ic">☰</span> Contents
+      </button>
+      <button class="btn" id="themeBtn" aria-label="Switch color theme" title="Theme (auto)">
+        <span class="ic" id="themeIc">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="stage" id="main">
+
+    <section class="view cover" id="cover" aria-label="Cover" data-title="Cover">
+      <h1 tabindex="-1">Leadership and the One Minute Manager</h1>
+      <p class="sub">by Ken Blanchard, Patricia Zigarmi &amp; Drea Zigarmi</p>
+      <p class="sub" style="font-style:normal;font-size:.9rem;color:var(--ink-faint)">Condensed AI reader · Build 20260615-001</p>
+      <button class="begin" id="beginBtn">Begin reading →</button>
+      <aside class="designnote" id="design-note">
+        <h2>Design Note</h2>
+        <p>This is a business <em>parable</em>, and in a parable the sequence <em>is</em> the argument: the entrepreneur cannot understand matching until she has met the people, learned to diagnose development levels, and watched a single style fail in the wrong place. So navigation is strictly <strong>chapter-linear</strong>—a sticky scroll-spy TOC that tracks position rather than invites jumping, because skipping ahead breaks the inductive logic the authors built deliberately. Illustration is <strong>Channel A only</strong> (Mermaid/SVG): the Situational Leadership II model is a system of crisp 2×2 relationships—competence/commitment, directive/supportive, D1→D4 mapped onto S1→S4—that diagrams externalize far more honestly than decorative imagery would; photographs or stock art would add polish without adding comprehension, so they are excluded. Graphic intensity is <strong>standard</strong>: one diagram at each of the eight concept chapters, placed before the anchors so the reader holds the framework in mind while reading the source language, with pull-quotes every few chapters to give the eye a landing and the memory a hook.</p>
+      </aside>
+    </section>
+
+    <section class="view chapter" id="ch-1" data-title="The Three Skills of a Situational Leader" hidden aria-label="Chapter 1">
+      <header class="chead">
+        <span class="num">Chapter One</span>
+        <h2 tabindex="-1">The Three Skills of a Situational Leader</h2>
+      </header>
+      <div class="body">
+        <p class="opener">Written as a parable, this is the story of an overworked entrepreneur who learns to stop doing everything herself—and to lead each person differently, according to what that person actually needs.</p>
+        <blockquote class="anchor" data-source-id="front:introduction">Written as a parable, it tells the story of an overworked entrepreneur who learns from the One Minute Manager how to get the most out of a diverse team by becoming a situational leader.</blockquote>
+
+        <h3>A Visit from an Entrepreneur</h3>
+        <p>The story opens with a familiar trap: the founder who believes the work only gets done if she does it.</p>
+        <p class="bridge">An overworked entrepreneur, certain she must do everything herself, calls the One Minute Manager, who invites her over.</p>
+
+        <h3>Being Successful</h3>
+        <p>His first correction is about effort versus leverage.</p>
+        <blockquote class="anchor" data-source-id="ch2§1¶13-17">Don't Work Harder— Work Smarter</blockquote>
+        <aside class="pullquote">"Don't Work Harder — Work Smarter."</aside>
+
+        <h3>Thinking Differently About Leadership</h3>
+        <p>Working smarter starts with a shift in stance—from boss who directs to leader who serves.</p>
+        <blockquote class="anchor" data-source-id="ch3§1¶19">"When it comes to implementation, if you think your people are responsible and that your job is to be responsive to them, you really work hard to provide them with the resources they need to accomplish the goals you've agreed to.</blockquote>
+        <blockquote class="anchor" data-source-id="ch3§1¶29-31">Different Strokes For Different Folks</blockquote>
+
+        <h3>Different Strokes for Different Folks</h3>
+        <p>If you are going to lead each person differently, you first need a working definition of what a leadership style actually is.</p>
+        <blockquote class="anchor" data-source-id="ch4§1¶7-8">"Your leadership style is the way you work with someone," said the One Minute Manager. "It's how you behave, over time, when you're trying to influence the performance of others, as perceived by them.</blockquote>
+
+        <h3>Leadership Style: Perceptions of Others</h3>
+        <p>To make this concrete, he sends her out to see how his own people experience him.</p>
+        <p class="bridge">He sends her to interview his people: Larry, new to his role, is led directively; Cindy, a seasoned finance director, as an equal.</p>
+        <blockquote class="anchor" data-source-id="ch5§1¶138-139">"A situational leader," said John. "He changes his style, depending on the person he is working with and on the situation."</blockquote>
+
+        <h3>Three Skills of a Situational Leader</h3>
+        <p>Situational leadership is not a personality—it is three repeatable skills that feed each other.</p>
+        <figure class="diagram">
+          <pre class="mermaid">
+flowchart LR
+  A[Goal Setting] --> B[Diagnosis]
+  B --> C[Matching]
+  C --> D[Better Performance]
+  D -.->|next goal| A
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class A,B,C hl;
+          </pre>
+          <figcaption>The three skills of a situational leader form a loop: set the goal, diagnose the person's development level, match the style—then performance improves and the cycle restarts on the next goal.</figcaption>
+        </figure>
+        <blockquote class="anchor" data-source-id="ch6§1¶12-17">So, the three skills are: goal setting, diagnosis, and matching.</blockquote>
+      </div>
+    </section>
+
+    <section class="view chapter" id="ch-2" data-title="Goals and Development Levels" hidden aria-label="Chapter 2">
+      <header class="chead">
+        <span class="num">Chapter Two</span>
+        <h2 tabindex="-1">Goals and Development Levels</h2>
+      </header>
+      <div class="body">
+        <h3>Managing the Performance of Others</h3>
+        <p class="opener">Those skills live inside a larger performance-management loop that runs all year, not just at review time.</p>
+        <figure class="diagram">
+          <pre class="mermaid">
+flowchart LR
+  P[Performance Planning] --> C[Day-to-Day Coaching]
+  C --> E[Performance Evaluation]
+  E -.->|sets up| P
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class P,C,E hl;
+          </pre>
+          <figcaption>Performance management is a continuous loop—plan the goals, coach day to day, then evaluate—where evaluation feeds straight back into the next round of planning.</figcaption>
+        </figure>
+        <blockquote class="anchor" data-source-id="ch7§1¶5-11">We talk about three parts to performance management: 1. Performance Planning 2. Day-to-Day Coaching 3. Performance Evaluation</blockquote>
+        <blockquote class="anchor" data-source-id="ch7§1¶40">Once your people are clear on their goals—they have the final exam questions—it's your job to do everything you can to help them accomplish those goals—learn the answers—so that when it comes to performance evaluation—the final examination—they get high ratings—As."</blockquote>
+
+        <h3>Goal Setting</h3>
+        <p>The loop begins with goals—and good goals are SMART.</p>
+        <figure class="diagram">
+          <pre class="mermaid">
+flowchart TD
+  S["S — Specific: What exactly is the goal? When is it due?"]
+  M["M — Motivating: Is it meaningful for the individual?"]
+  A["A — Attainable: Is it realistic and achievable?"]
+  R["R — Relevant: Is it meaningful work for the organization?"]
+  T["T — Trackable: How is progress measured?"]
+  S --> M --> A --> R --> T
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class S,M,A,R,T hl;
+          </pre>
+          <figcaption>The five tests a goal must pass to be SMART: Specific, Motivating, Attainable, Relevant, and Trackable.</figcaption>
+        </figure>
+        <blockquote class="anchor" data-source-id="ch8§1¶53-70">SMART goals answer these questions: Specific—What exactly is the goal or task? When does it need to be accomplished? Motivating—Is the goal meaningful for the individual? Attainable—Is the goal realistic, reasonable, and achievable? Relevant—Is it meaningful work for the organization? Trackable—How will progress and results be measured and tracked?</blockquote>
+        <blockquote class="anchor" data-source-id="ch8§1¶96-98">"The One Minute Manager now calls it 'seagull management.' After goal setting, seagull managers are never around until you make a mistake. Then they fly in, make a lot of noise, dump on everybody, and fly out."</blockquote>
+
+        <h3>Diagnosing Development Level</h3>
+        <p>Once goals are set, the second skill is diagnosis: reading where each person sits on two axes.</p>
+        <figure class="diagram">
+          <pre class="mermaid">
+flowchart LR
+  D1["D1 — Enthusiastic Beginner<br/>Low competence · High commitment"]
+  D2["D2 — Disillusioned Learner<br/>Some competence · Low commitment"]
+  D3["D3 — Capable but Cautious<br/>High competence · Variable commitment"]
+  D4["D4 — Self-Reliant Achiever<br/>High competence · High commitment"]
+  D1 --> D2 --> D3 --> D4
+  D2 -.->|regression| D1
+  D3 -.->|regression| D2
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class D1,D2,D3,D4 hl;
+          </pre>
+          <figcaption>Development level is read on two factors—competence and commitment—and progresses D1→D4 as someone grows, though regression is always possible.</figcaption>
+        </figure>
+        <blockquote class="anchor" data-source-id="ch9§1¶11">"You need to look at two factors to determine a person's development level: competence and commitment.</blockquote>
+        <blockquote class="anchor" data-source-id="ch9§1¶32-33">Confidence is a measure of a person's self-assuredness—a feeling of being able to do a task well without much direction—whereas motivation is a person's interest in and enthusiasm for doing a task well."</blockquote>
+        <blockquote class="anchor" data-source-id="ch9§1¶54-58">"When you are D1 on a particular goal or task, you are known as an enthusiastic beginner," said Kathy. "Though you have high commitment, you are inexperienced.</blockquote>
+        <blockquote class="anchor" data-source-id="ch9§1¶65">"Don't be surprised if you soon become a D2—or what we call a disillusioned learner," said Kathy with a laugh.</blockquote>
+        <blockquote class="anchor" data-source-id="ch9§1¶80-81">"We call D3s capable but cautious contributors. They have demonstrated some competence and experience in doing the task, but they lack confidence in doing that task by themselves.</blockquote>
+        <blockquote class="anchor" data-source-id="ch9§1¶86-87">"If you become a D4 in your learning to be a situational leader you'll be a self-reliant achiever.</blockquote>
+        <aside class="pullquote">Diagnosis comes before direction: you cannot match a style to a person you have not yet read.</aside>
+      </div>
+    </section>
+
+    <section class="view chapter" id="ch-3" data-title="Matching Style to Development" hidden aria-label="Chapter 3">
+      <header class="chead">
+        <span class="num">Chapter Three</span>
+        <h2 tabindex="-1">Matching Style to Development</h2>
+      </header>
+      <div class="body">
+        <h3>Leadership Style Flexibility</h3>
+        <p class="opener">The third skill is flexibility—having four distinct styles plotted on the directive and supportive axes.</p>
+        <figure class="diagram">
+          <pre class="mermaid">
+quadrantChart
+  title The Four Leadership Styles
+  x-axis Low Directive --> High Directive
+  y-axis Low Supportive --> High Supportive
+  quadrant-1 S2 Coaching
+  quadrant-2 S3 Supporting
+  quadrant-3 S4 Delegating
+  quadrant-4 S1 Directing
+          </pre>
+          <figcaption>The four styles mapped on two axes—directive behavior and supportive behavior: S1 Directing (high directive, low supportive), S2 Coaching (high both), S3 Supporting (low directive, high supportive), S4 Delegating (low both).</figcaption>
+        </figure>
+        <blockquote class="anchor" data-source-id="ch10§1¶23-36">The leader provides specific direction about goals, shows and tells how, and closely monitors the individual's performance in order to provide frequent feedback on results.</blockquote>
+
+        <h3>The Four Basic Leadership Styles</h3>
+        <p>Each axis has its own vocabulary of behaviors.</p>
+        <blockquote class="anchor" data-source-id="ch11§1¶3-4">Four words can be used to define directive behavior: decide, teach, observe, and provide frequent feedback. Different words are used to describe supportive behavior: listen, involve, facilitate, and encourage."</blockquote>
+
+        <h3>Matching Leadership Style to Development Level</h3>
+        <p>Now the two halves of the model meet: a style is right only relative to a person's development level.</p>
+        <blockquote class="anchor" data-source-id="ch12§1¶14">"So an S1 directing style is a good match when a decision has to be made quickly and the stakes are high," said the One Minute Manager.</blockquote>
+        <blockquote class="anchor" data-source-id="ch12§1¶38">I think people lose their commitment only after they realize that good performance doesn't make a difference."</blockquote>
+        <p class="bridge">Coaching fits the disillusioned learner, supporting the cautious performer, delegating the self-reliant achiever; a purely supportive style fails where direction is needed.</p>
+
+        <h3>Think Before You Act</h3>
+        <p>The matching rule pairs each development level with exactly one style.</p>
+        <figure class="diagram">
+          <pre class="mermaid">
+flowchart LR
+  D1["D1"] --> S1["S1 Directing"]
+  D2["D2"] --> S2["S2 Coaching"]
+  D3["D3"] --> S3["S3 Supporting"]
+  D4["D4"] --> S4["S4 Delegating"]
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class S1,S2,S3,S4 hl;
+          </pre>
+          <figcaption>The matching pairs: D1→S1 Directing, D2→S2 Coaching, D3→S3 Supporting, D4→S4 Delegating.</figcaption>
+        </figure>
+        <blockquote class="anchor" data-source-id="ch13§1¶29-37">Delegating (Style 4) is for self-reliant achievers who have both competence and commitment (D4)</blockquote>
+        <blockquote class="anchor" data-source-id="ch13§1¶12">They must have an internal critic who keeps telling them, 'Don't Just Sit There—Do Something!'</blockquote>
+
+        <h3>Different Strokes for the Same Folks</h3>
+        <p>Development level is task-specific—so the same person can need two different styles at once.</p>
+        <p class="bridge">The same person can need different styles: his son Tom was a D4 in reading but a D2 in math, needing directive coaching.</p>
+        <blockquote class="anchor" data-source-id="ch14§1¶95-96">"People do not learn skills by love alone."</blockquote>
+        <aside class="pullquote">"People do not learn skills by love alone."</aside>
+
+        <h3>Developing Competence and Commitment</h3>
+        <p>The leader's job is to move people forward—shifting style as competence and confidence grow.</p>
+        <figure class="diagram">
+          <pre class="mermaid">
+flowchart LR
+  subgraph Growth
+    direction LR
+    G1["D1 → S1 Directing"] --> G2["D2 → S2 Coaching"]
+    G2 --> G3["D3 → S3 Supporting"]
+    G3 --> G4["D4 → S4 Delegating"]
+  end
+  G2 -.->|regression| G1
+  G3 -.->|regression| G2
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class G1,G2,G3,G4 hl;
+          </pre>
+          <figcaption>The development arc: as a person grows D1→D4, the leader moves S1→S4 toward less time-consuming styles—but must be ready to step back if commitment regresses.</figcaption>
+        </figure>
+        <blockquote class="anchor" data-source-id="ch15§1¶5">Your goal as a manager should be to gradually increase the competence and confidence of your people so that you can begin to use less time-consuming styles—supporting and delegating—and still get high quality results."</blockquote>
+        <blockquote class="anchor" data-source-id="ch15§1¶15">Since a D1 has commitment but lacks competence, the leader needs to provide direction (S1-Directing) to help build competence; since a D2 lacks both competence and commitment, the leader has to provide both direction and support (S2-Coaching) to reenergize and re-teach; since a D3 has competence but variable commitment, the leader needs to provide support (S3-Supporting) to build confidence in competence; and since a D4 has both competence and commitment, the leader values their contribution by permitting them to provide their own direction or support (S4-Delegating)."</blockquote>
+        <blockquote class="anchor" data-source-id="ch15§1¶60">If You Want to Develop People, Catch Them Doing Things Right, Not Wrong.</blockquote>
+        <aside class="pullquote">"If You Want to Develop People, Catch Them Doing Things Right, Not Wrong."</aside>
+      </div>
+    </section>
+
+    <section class="view chapter" id="ch-4" data-title="Leading With and Through People" hidden aria-label="Chapter 4">
+      <header class="chead">
+        <span class="num">Chapter Four</span>
+        <h2 tabindex="-1">Leading With and Through People</h2>
+      </header>
+      <div class="body">
+        <h3>Turning Around Performance Problems</h3>
+        <p class="opener">When performance slips, the leader steps back in—adding direction rather than withdrawing it.</p>
+        <blockquote class="anchor" data-source-id="ch16§1¶24-29">If you still don't get results," the One Minute Manager continued, "you should move to a coaching style, where you provide some direction, closer supervision, and shorter timelines.</blockquote>
+
+        <h3>Sharing What You're Doing</h3>
+        <p>The model works best in the open—as something done with people, not to them.</p>
+        <blockquote class="anchor" data-source-id="ch17§1¶6-12">Situational Leadership Is Not Something You Do To People It's Something You Do With People</blockquote>
+        <aside class="pullquote">"Situational Leadership Is Not Something You Do To People — It's Something You Do With People."</aside>
+
+        <h3>Understanding the Six Conversations</h3>
+        <p>Doing it <em>with</em> people means a shared language of structured conversations.</p>
+        <figure class="diagram">
+          <pre class="mermaid">
+flowchart TD
+  AL["Alignment Conversation"] --> SC["Four Style Conversations"]
+  SC --> C1["S1"]
+  SC --> C2["S2"]
+  SC --> C3["S3"]
+  SC --> C4["S4"]
+  C1 --> O["One-on-One Meeting"]
+  C2 --> O
+  C3 --> O
+  C4 --> O
+  classDef hl fill:#b54300,stroke:#b54300,color:#fff;
+  class AL,SC,O hl;
+          </pre>
+          <figcaption>The six conversations: an alignment conversation, four style conversations (S1–S4), and the recurring one-on-one meeting that ties them together.</figcaption>
+        </figure>
+        <blockquote class="anchor" data-source-id="ch18§1¶2-10">"Next are the four types of style conversations—S1, S2, S3, and S4.</blockquote>
+        <blockquote class="anchor" data-source-id="ch18§1¶98-100">"With development level analysis, the nod goes to my direct report.</blockquote>
+        <blockquote class="anchor" data-source-id="ch18§1¶185-189">"The One Minute Manager and I have virtual one-on-one meetings once every two weeks for fifteen to thirty minutes. He schedules these meetings, but I set the agenda.</blockquote>
+
+        <h3>Positive Assumptions About People</h3>
+        <p>Underneath every style lies one constant belief about people.</p>
+        <blockquote class="anchor" data-source-id="ch19§1¶18-19">positive assumptions about people are a given; you believe people have the potential to become high performers. What fluctuates is the leader's behavior, depending on their people's needs for direction and support."</blockquote>
+        <blockquote class="anchor" data-source-id="ch19§1¶29-37">Everyone Is A Potential High Performer. Some People Just Need A Little Help Along The Way</blockquote>
+        <aside class="pullquote">"Everyone Is A Potential High Performer. Some People Just Need A Little Help Along The Way."</aside>
+
+        <h3>Becoming a Situational Leader</h3>
+        <p>The parable closes where it began—with the entrepreneur, now changed not by what she thinks but by what she does.</p>
+        <blockquote class="anchor" data-source-id="ch20§1¶8-10">To Know And Not To Use Is Not Yet To Know!</blockquote>
+        <blockquote class="anchor" data-source-id="ch20§1¶16">She became a situational leader not because she thought like one or talked like one but because she behaved like one.</blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="build-footer">
+    Coverage: 18% of source · Bridge ratio: 0.08 · Build 20260615-001-Leadership-and-the-One-Minute-Manager<br>
+    A condensed chaptered reading experience. Anchor quotations are verbatim from the source and cited by span ID. Bridges (italic) are connective summary, not source text.
+  </div>
+
+  <footer class="chapnav" id="chapnav" hidden>
+    <button class="nav-prev" id="navPrev" aria-label="Previous chapter">←</button>
+    <button class="nav-next" id="navNext">
+      <small id="navNextLabel">Continue</small>
+      <b id="navNextTitle">Next chapter</b>
+    </button>
+  </footer>
+
+  <div class="toc-overlay" id="tocOverlay" role="dialog" aria-modal="true"
+       aria-label="Table of contents" hidden>
+    <div class="toc-scrim" id="tocScrim"></div>
+    <div class="toc-panel">
+      <h3>Contents</h3>
+      <ol class="toc-list" id="tocList"></ol>
+      <p class="toc-hint">Jump with <kbd>↑</kbd><kbd>↓</kbd> · close with
+        <kbd>Esc</kbd> · open anytime with <kbd>t</kbd></p>
+    </div>
+  </div>
+
+  <div class="xref-pop" id="xrefPop" role="tooltip" hidden></div>
+
+  <script type="application/json" id="chapterManifest">
+[{"id":"cover","title":"Cover"},{"id":"ch-1","title":"The Three Skills of a Situational Leader"},{"id":"ch-2","title":"Goals and Development Levels"},{"id":"ch-3","title":"Matching Style to Development"},{"id":"ch-4","title":"Leading With and Through People"}]
+  </script>
+
+  <script>
+/* === Chaptered Reader — vanilla JS === */
+(function () {
+  var views, pipEls, tocItems, idx, tocOpen, lastFocus, prog;
+
+  function init() {
+    views = Array.from(document.querySelectorAll('.view'));
+    idx = 0;
+    tocOpen = false;
+    lastFocus = null;
+    prog = document.getElementById('scrollprog');
+
+    buildPips();
+    buildToc();
+    wireControls();
+    wireScroll();
+    wireKeyboard();
+    wireXref();
+    restoreTheme();
+
+    var hash = (location.hash || '').replace('#', '');
+    var start = views.findIndex(function (v) { return v.id === hash; });
+    go(start > 0 ? start : 0, true);
+
+    loadMermaid();
+  }
+
+  /* ---- pips ---- */
+  function buildPips() {
+    var container = document.getElementById('pips');
+    if (!container) return;
+    views.forEach(function (v, i) {
+      var b = document.createElement('button');
+      b.className = 'pip'; b.type = 'button';
+      b.setAttribute('aria-label', v.dataset.title || ('Section ' + i));
+      b.setAttribute('aria-current', 'false');
+      b.innerHTML = '<i></i>';
+      b.addEventListener('click', function () { go(i); });
+      container.appendChild(b);
+    });
+    pipEls = Array.from(container.children);
+  }
+
+  /* ---- TOC ---- */
+  function buildToc() {
+    var list = document.getElementById('tocList');
+    if (!list) return;
+    views.forEach(function (v, i) {
+      var li = document.createElement('li');
+      var num = v.classList.contains('cover') ? '·' : String(i).padStart(2, '0');
+      var btn = document.createElement('button');
+      btn.className = 'toc-item'; btn.type = 'button';
+      btn.setAttribute('aria-current', 'false');
+      btn.innerHTML =
+        '<span class="tn">' + num + '</span>' +
+        '<span class="tt">' + (v.dataset.title || '') + '</span>';
+      btn.addEventListener('click', function () { closeToc(); go(i); });
+      li.appendChild(btn);
+      list.appendChild(li);
+    });
+    tocItems = Array.from(list.querySelectorAll('.toc-item'));
+  }
+
+  /* ---- controls ---- */
+  function wireControls() {
+    var beginBtn = document.getElementById('beginBtn');
+    if (beginBtn) beginBtn.addEventListener('click', function () { go(1); });
+
+    var prevBtn = document.getElementById('navPrev');
+    if (prevBtn) prevBtn.addEventListener('click', function () { go(idx - 1); });
+
+    var nextBtn = document.getElementById('navNext');
+    if (nextBtn) nextBtn.addEventListener('click', function () {
+      go(idx >= views.length - 1 ? 0 : idx + 1);
+    });
+
+    var tocBtn = document.getElementById('tocBtn');
+    if (tocBtn) tocBtn.addEventListener('click', toggleToc);
+
+    var scrim = document.getElementById('tocScrim');
+    if (scrim) scrim.addEventListener('click', closeToc);
+
+    var themeBtn = document.getElementById('themeBtn');
+    if (themeBtn) themeBtn.addEventListener('click', cycleTheme);
+  }
+
+  /* ---- view switching ---- */
+  function go(i, silent) {
+    i = Math.max(0, Math.min(views.length - 1, i));
+    idx = i;
+    render();
+    if (!silent) {
+      try { history.replaceState(null, '', '#' + views[i].id); } catch (e) {}
+      var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+      var h = views[i].querySelector('h2, h1');
+      if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+    }
+    setTimeout(onScroll, 60);
+  }
+
+  function render() {
+    views.forEach(function (v, k) { v.hidden = k !== idx; });
+
+    if (pipEls) pipEls.forEach(function (p, k) {
+      p.setAttribute('aria-current', k === idx ? 'true' : 'false');
+    });
+    if (tocItems) tocItems.forEach(function (t, k) {
+      t.setAttribute('aria-current', k === idx ? 'true' : 'false');
+    });
+
+    var foot = document.getElementById('chapnav');
+    if (foot) foot.hidden = (idx === 0);
+
+    var prevBtn = document.getElementById('navPrev');
+    if (prevBtn) prevBtn.style.visibility = idx <= 1 ? 'hidden' : 'visible';
+
+    var lbl = document.getElementById('navNextLabel');
+    var tit = document.getElementById('navNextTitle');
+    if (lbl && tit) {
+      if (idx >= views.length - 1) {
+        lbl.textContent = 'You’ve reached the end';
+        tit.textContent = 'Back to cover';
+      } else {
+        lbl.textContent = 'Continue to Chapter ' + idx;
+        tit.textContent = views[idx + 1].dataset.title || '';
+      }
+    }
+  }
+
+  /* ---- scroll progress (within current chapter) ---- */
+  function onScroll() {
+    if (!prog) return;
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var f = max > 0 ? (h.scrollTop || document.body.scrollTop) / max : 0;
+    prog.style.width = (Math.min(1, Math.max(0, f)) * 100) + '%';
+  }
+
+  function wireScroll() {
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  /* ---- keyboard ---- */
+  function wireKeyboard() {
+    window.addEventListener('keydown', function (e) {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      var tag = (e.target.tagName || '').toLowerCase();
+      if (tocOpen) {
+        if (e.key === 'Escape') { e.preventDefault(); closeToc(); }
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+          e.preventDefault(); moveTocFocus(e.key === 'ArrowDown' ? 1 : -1);
+        }
+        return;
+      }
+      if (tag === 'input' || tag === 'textarea') return;
+      if (e.key === 't' || e.key === 'T') { e.preventDefault(); openToc(); }
+      else if (e.key === ']' || e.key === 'ArrowRight') {
+        if (idx < views.length - 1) { e.preventDefault(); go(idx + 1); }
+      } else if (e.key === '[' || e.key === 'ArrowLeft') {
+        if (idx > 0) { e.preventDefault(); go(idx - 1); }
+      }
+    });
+  }
+
+  /* ---- TOC ---- */
+  function toggleToc() { tocOpen ? closeToc() : openToc(); }
+
+  function openToc() {
+    tocOpen = true;
+    lastFocus = document.activeElement;
+    var overlay = document.getElementById('tocOverlay');
+    if (overlay) overlay.hidden = false;
+    var tocBtn = document.getElementById('tocBtn');
+    if (tocBtn) tocBtn.setAttribute('aria-expanded', 'true');
+    var active = tocItems && (tocItems[idx] || tocItems[0]);
+    if (active) active.focus();
+  }
+
+  function closeToc() {
+    tocOpen = false;
+    var overlay = document.getElementById('tocOverlay');
+    if (overlay) overlay.hidden = true;
+    var tocBtn = document.getElementById('tocBtn');
+    if (tocBtn) tocBtn.setAttribute('aria-expanded', 'false');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  function moveTocFocus(dir) {
+    if (!tocItems) return;
+    var cur = tocItems.indexOf(document.activeElement);
+    var n = cur + dir;
+    if (n < 0) n = tocItems.length - 1;
+    if (n >= tocItems.length) n = 0;
+    tocItems[n].focus();
+  }
+
+  /* ---- theme ---- */
+  function restoreTheme() {
+    var saved = localStorage.getItem('bth-theme');
+    if (saved) setTheme(saved);
+  }
+
+  function cycleTheme() {
+    var order = ['auto', 'light', 'dark'];
+    var current = document.body.getAttribute('data-theme') || 'auto';
+    var next = order[(order.indexOf(current) + 1) % 3];
+    setTheme(next);
+    try { localStorage.setItem('bth-theme', next); } catch (e) {}
+  }
+
+  function setTheme(t) {
+    document.body.setAttribute('data-theme', t);
+    var ic = document.getElementById('themeIc');
+    var btn = document.getElementById('themeBtn');
+    if (ic) ic.textContent = t === 'dark' ? '●' : (t === 'light' ? '○' : '◐');
+    if (btn) btn.title = 'Theme (' + t + ')';
+  }
+
+  /* ---- xref popovers ---- */
+  function wireXref() {
+    var pop = document.getElementById('xrefPop');
+    if (!pop) return;
+
+    function show(el) {
+      var id = el.dataset.xref;
+      if (!id) return;
+      var target = document.getElementById(id);
+      if (!target) return;
+      var title = target.dataset.title || '';
+      var firstP = target.querySelector('.body p');
+      var txt = firstP ? firstP.textContent.trim().slice(0, 180) + '…' : '';
+      pop.innerHTML = '<b>' + title + '</b>' + txt;
+      pop.hidden = false;
+      var r = el.getBoundingClientRect();
+      var pw = Math.min(320, window.innerWidth - 24);
+      pop.style.maxWidth = pw + 'px';
+      var left = r.left;
+      if (left + pw > window.innerWidth - 12) left = window.innerWidth - pw - 12;
+      pop.style.left = Math.max(12, left) + 'px';
+      pop.style.top = (r.bottom + 8) + 'px';
+      requestAnimationFrame(function () { pop.classList.add('on'); });
+    }
+
+    function hide() {
+      pop.classList.remove('on');
+      setTimeout(function () { pop.hidden = true; }, 150);
+    }
+
+    document.querySelectorAll('.xref').forEach(function (el) {
+      el.addEventListener('mouseenter', function () { show(el); });
+      el.addEventListener('mouseleave', hide);
+      el.addEventListener('focus', function () { show(el); });
+      el.addEventListener('blur', hide);
+      el.addEventListener('click', function (e) {
+        e.preventDefault(); hide();
+        var i = views.findIndex(function (v) { return v.id === el.dataset.xref; });
+        if (i >= 0) go(i);
+      });
+    });
+
+    /* mobile long-press */
+    var pressTimer;
+    document.addEventListener('touchstart', function (e) {
+      var x = e.target.closest && e.target.closest('.xref');
+      if (!x) return;
+      pressTimer = setTimeout(function () { show(x); }, 400);
+    }, { passive: true });
+    document.addEventListener('touchend', function () { clearTimeout(pressTimer); }, { passive: true });
+  }
+
+  /* ---- mermaid with graceful fallback ---- */
+  function loadMermaid() {
+    var hasMermaid = document.querySelector('.mermaid');
+    if (!hasMermaid) return;
+
+    function fail() {
+      document.querySelectorAll('.mermaid').forEach(function (m) { m.style.display = 'none'; });
+      document.querySelectorAll('.mmd-fallback').forEach(function (f) { f.hidden = false; });
+    }
+
+    var s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js';
+    s.onload = function () {
+      try {
+        if (!window.mermaid) return fail();
+        var style = getComputedStyle(document.body);
+        window.mermaid.initialize({
+          startOnLoad: false, theme: 'base',
+          themeVariables: {
+            fontFamily: 'system-ui',
+            primaryColor: 'transparent',
+            lineColor: style.getPropertyValue('--ink-soft'),
+            primaryTextColor: style.getPropertyValue('--ink'),
+            primaryBorderColor: style.getPropertyValue('--accent')
+          }
+        });
+        window.mermaid.run({ querySelector: '.mermaid' }).catch(fail);
+      } catch (e) { fail(); }
+    };
+    s.onerror = fail;
+    document.head.appendChild(s);
+    setTimeout(function () {
+      document.querySelectorAll('.mermaid').forEach(function (m) {
+        if (!m.querySelector('svg')) fail();
+      });
+    }, 4000);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+  </script>
+</body>
+</html>

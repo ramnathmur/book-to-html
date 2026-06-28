@@ -1,0 +1,113 @@
+{
+  "envelope": "book-to-html-handoff/1.0",
+  "from": "reader",
+  "to": "orchestrator",
+  "iteration": 2,
+  "scores": {
+    "visual_pleasure": 4,
+    "navigation": 4,
+    "comprehension": 5,
+    "illustration": 4,
+    "books_finished_rate": 4
+  },
+  "comprehension_detail": {
+    "questions_correct": 10,
+    "questions_partial": 0,
+    "questions_missed": 0,
+    "raw_score": 1.00,
+    "per_question": [
+      {
+        "q_id": 1,
+        "status": "correct",
+        "key_entities_recalled": ["Ronald Read", "Richard Fuscone", "behavior over intelligence/IQ", "soft skill"],
+        "notes": "All four target anchors present (¶10, ¶12-20 Read biography intact, ¶23-31 Fuscone arc verbatim, ¶38 'soft skill where how you behave is more important than what you know'). Figure 1 reinforces the contrast visually before the prose. Full thesis recoverable."
+      },
+      {
+        "q_id": 2,
+        "status": "correct",
+        "key_entities_recalled": ["0.00000001% of what happened", "80% of how you think the world works", "no one is crazy", "decisions make sense to them"],
+        "notes": "ch2§1¶2 (no one is crazy), ¶11 (0.00000001% / 80%), ¶45 (every financial decision makes sense to them) all present. Figure 2 mindmap of inputs to money beliefs reinforces the chapter's central claim."
+      },
+      {
+        "q_id": 3,
+        "status": "correct",
+        "key_entities_recalled": ["getting the goalpost to stop moving", "enough", "Gupta/Madoff already had everything", "don't risk what you have for what you don't need"],
+        "notes": "ch4§¶2 (Vonnegut/Heller), ¶29 ('threw it all away because they wanted more'), ¶34 ('no reason to risk what you have'), ¶38 ('hardest financial skill is getting the goalpost to stop moving') all verbatim."
+      },
+      {
+        "q_id": 4,
+        "status": "correct",
+        "key_entities_recalled": ["time / longevity", "started investing very young", "22% annual returns", "Shut Up And Wait"],
+        "notes": "ch5§¶24 (22% / retired at 60), ¶30 ('his skill is investing, but his secret is time'), ¶51 ('Shut Up And Wait') all present. Figure 5 of exponential curves makes the compounding visible."
+      },
+      {
+        "q_id": 5,
+        "status": "correct",
+        "key_entities_recalled": ["Jesse Livermore", "Rick Guerin", "getting = optimism / risk-taking", "keeping = humility / frugality / fear", "survival / staying wealthy"],
+        "notes": "Livermore introduced ¶6, ¶28 the getting-vs-keeping pivot, ¶35 (getting traits), ¶36 (keeping traits), ¶42 ('ability to stick around for a long time'), ¶61 (Charlie/Warren/Rick Guerin). Figure 6 visualizes the two skill sets side by side."
+      },
+      {
+        "q_id": 6,
+        "status": "correct",
+        "key_entities_recalled": ["Angus Campbell", "control over your time", "highest dividend money pays", "independence / autonomy"],
+        "notes": "ch8§¶5 (Campbell + 1981 book), ¶8 ('Control over doing what you want, when you want to, with the people you want to'), ¶9 ('independence and autonomy'), ¶57 ('Controlling your time is the highest dividend money pays')."
+      },
+      {
+        "q_id": 7,
+        "status": "correct",
+        "key_entities_recalled": ["valet", "people admire the car, not the driver", "want to be liked/admired", "fancy possessions don't deliver the respect you imagine"],
+        "notes": "ch9 now has 8 anchors (was 5 in iter 1). ¶1 (valet setup), ¶2 (the dream / 'Look at me'), ¶4 ('Wow, if I had that car people would think I'm cool'), ¶5 (paradox formulated), ¶6 (the letter to son), ¶7 (valet POV), ¶13 (humility > horsepower). Figure 9 makes the bypass-the-driver dynamic graphic. The chapter no longer reads like a fragment."
+      },
+      {
+        "q_id": 8,
+        "status": "correct",
+        "key_entities_recalled": ["Harry Markowitz 50/50 portfolio", "Jack Bogle's son ran active funds", "reasonable = endurance / sustainable", "rational = spreadsheet-optimal but not livable"],
+        "notes": "Promoted from partial to correct because Figure 12's caption explicitly states '50/50 to minimize regret' — the named-entity detail iter 1 marked missing is now recoverable from the artifact. Body ¶22, ¶24, ¶28, ¶42 (50/50 historical odds bridges the abstract idea), ¶49 (Bogle's son), ¶50 ('life isn't always consistent') all present. The full Markowitz-portfolio fact lives in the figcaption rather than the verbatim quote, which is an acceptable solution."
+      },
+      {
+        "q_id": 9,
+        "status": "correct",
+        "key_entities_recalled": ["Clarence Hughes / 1931 dentist", "doctor-knows-best vs informed consent", "won't tell you what to do with your money", "time / time horizon is most powerful force"],
+        "notes": "ch20§¶5 now contains the actual Clarence Hughes setup verbatim ('went to the dentist in 1931... 16 fewer teeth and his tonsils removed') — in iter 1 this was missing and the name only appeared as a callback. ¶7 (wife sued), ¶10 (doctor-knows-best), ¶22 ('I can't tell you what to do with your money'), ¶24 ('treat you like a dentist treated Clarence Hughes'), ¶31 ('Time is the most powerful force')."
+      },
+      {
+        "q_id": 10,
+        "status": "correct",
+        "key_entities_recalled": ["post-war gains went to those left behind / gap narrowed", "1980s+ growth became uneven", "lifestyles of rich inflated aspirations of the rest", "median wages flat but houses 50% larger", "inequality fueling political anger / Trump linkage"],
+        "notes": "All seven target anchors confirmed; Postscript is the longest chapter (9.9% of output, mirroring 9.2% of source). Full arc from 1945-1973 broad-based growth through 1980s+ inequality to Trump-era political consequence is recoverable."
+      }
+    ]
+  },
+  "verdict": {
+    "visual_pleasure": "The chrome remains genuinely well-considered (Iowan Old Style serif, 66ch measure, 1.65 leading, warm-grey palette with #b54300 accent, drop-cap on chapter openers, auto dark mode, 3px top progress bar, sticky scroll-spy TOC). What iter 2 changes is the page rhythm: 22 figures break up the 836-anchor vertical stack so the eye gets visual punctuation roughly every 30-40 anchors. Mermaid flowcharts, mindmaps, quadrants render with a quiet two-color classDef palette that matches the body accent rather than fighting it; the SVG curves and bars (compounding, long-tail, margin-of-safety) are restrained and on-brand. The body is no longer barren. The remaining miss: still zero pull-quotes (`aside.pullquote`), zero sidenotes (`.sidenote`), zero in-text cross-references (`.xref`) — the CSS defines them and they're never instantiated. So page rhythm is now varied but not yet *layered*. Net: 4 (above the bar, missing the Tufte-style marginalia that would push it to 5).",
+    "navigation": "Unchanged from iter 1 in approach but better-justified now that the article is longer (165 min / 36k words, up from 69 min / 15k). Sticky left-rail TOC with all 22 entries, IntersectionObserver scroll-spy, accent-underline current marker, 3px top progress bar all working. Click-to-jump from any TOC entry lands on the chapter heading correctly; the figure now sits between heading and first anchor so you arrive on the diagram, which is a deliberate orienting cue. The longer article makes the sticky TOC genuinely useful (it would have been overkill for 15k words; for 36k it's earning its space). Still missing the in-text `.xref` cross-references, so 'as we saw in chapter 4' still requires a TOC trip. Score 4.",
+    "comprehension": "All 10 questions answerable from the artifact alone, no partials. The verbatim-anchor stitching strategy continues to be the right call for a book whose argument lives in memorable phrasings, and the wider net at threshold ≥5 picks up the narrative-setup paragraphs (Heinz Berggruen's biography ch7§¶3-5, Clarence Hughes's actual 1931 dentist visit ch20§¶5, the valet's aspirational fantasy ch9§¶2,4,6) that iter 1 was missing. The one iter-1 partial (Markowitz 50/50) is resolved via the figure caption, which is a clever ancillary channel for a named-entity detail. Compression: 55.6% source coverage with 1.00 comprehension at this question set is, frankly, very strong. Score 5.",
+    "illustration": "Resolved. 22 figures rendered (17 Mermaid + 5 inline SVG), one per chapter as the Design Note promised. Mix of types is appropriate to the claims being illustrated: flowcharts for cause/effect (Read vs Fuscone, Ferrari signal bypass, Rich vs Wealthy), mindmaps for input-cluster claims (money-belief inputs, getting vs keeping), quadrants for skill-vs-luck (Gates/Evans/Buffett/Livermore), and SVG for inherently geometric ideas (exponential curves, long-tail distribution, stacked margin-of-safety bars). Each figure has a numbered figcaption that names what the diagram is doing, and several captions carry secondary facts (e.g. Markowitz 50/50 in Fig 12). Visual register is consistent — neutral Mermaid theme, two-color classDef palette echoing the body accent. Two minor knocks: a handful of Mermaid labels show `&lt;br/&gt;` literal-encoded in source (will still render correctly because Mermaid parses HTML entities, but slightly less robust); and the quadrantChart with bracket coordinates (`[0.85, 0.78]`) is non-standard Mermaid syntax that may render as a syntax warning in older Mermaid builds — worth verifying on the live page. Substantively though: design pack delivered. Score 4 (would be 5 if I could confirm all 22 render without warnings on the CDN Mermaid version).",
+    "books_finished_rate": "Honest answer: yes, this iteration moves me to *would skip the original*. The reason is not the figures (those are nice, not decisive) — it's that the threshold-5 anchor pass now preserves the narrative *setup* paragraphs around the named anecdotes, so the stories actually function as stories. In iter 1, Heinz Berggruen's name appeared with no biography and Clarence Hughes appeared only as a callback to a story that was never told; both are now properly introduced. Ronald Read's compounding arc reads continuously from ¶12 (Wikipedia entry) through ¶31 (patient vs greedy) without the previous gappy jumps. The chapter-9 Ferrari/valet sequence went from a 5-anchor fragment to an 8-anchor mini-essay with the aspirational-fantasy setup ('You're smart. You're rich. You have taste. You're important. Look at me.') restored. At 36k words / 165 min, this is no longer a Kindle-highlights export — it's a condensed-but-coherent reader. For my purposes (extending working knowledge across many books faster than reading originals), I would now read this *instead of* Housel's original and feel I'd captured >80% of what the book has to offer. The only caveat: 36k words is roughly 70% of the source length, so the compression ratio is no longer aggressive — Housel's book is short to begin with, and at this density a reader who actually enjoys Housel's connective prose might still prefer the original. But for the 'expand working knowledge' use case the build envelope targets, this delivers. Score 4 (genuine pass, not a courtesy bump — I'd recommend this to a friend instead of the original)."
+  },
+  "lowest_dimension": "navigation",
+  "would_skip_original": true,
+  "gate_status": "pass",
+  "fail_reasons": [],
+  "iter1_comparison": {
+    "score_deltas": {
+      "visual_pleasure": "+1",
+      "navigation": "0",
+      "comprehension": "0",
+      "illustration": "+3",
+      "books_finished_rate": "+1"
+    },
+    "iter1_issue_resolution": {
+      "illustration_zero_diagrams": "resolved",
+      "narrative_setup_missing": "resolved"
+    },
+    "new_or_remaining_issues": [
+      "Still zero pull-quotes, sidenotes, and in-text cross-references — CSS rules defined but never instantiated. Promoting visual_pleasure to 5 would require the Tufte-style marginalia layer.",
+      "Mermaid quadrantChart uses bracket-coordinate syntax (`Bill Gates: [0.85, 0.78]`) that is non-standard; verify it renders on the current CDN Mermaid build without warnings.",
+      "Compression ratio is now 71% (36k/51k words) — at this density, readers who specifically value Housel's connective prose may still prefer the original. The artifact has shifted from 'aggressive condensation' to 'lightly-pruned highlights with diagrams'; that's the right call for a 51k-word book but worth flagging as a design choice, not a flaw.",
+      "Figure-caption-as-fact-carrier (e.g. Markowitz 50/50 in Fig 12) works for comprehension but blurs the artifact's verbatim-only contract. Acceptable, but worth deciding whether figcaptions count as 'editor commentary' for source-fidelity purposes."
+    ]
+  },
+  "usage": {"input_tokens": 22000, "output_tokens": 3600},
+  "wall_ms": 180000
+}

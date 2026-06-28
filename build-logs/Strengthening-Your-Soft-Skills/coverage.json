@@ -1,0 +1,505 @@
+{
+  "schema": "book-to-html-coverage/1.0",
+  "build_id": "20260615-001-HBR-10-Must-Reads-Soft-Skills",
+  "book": "HBR's 10 Must Reads on Strengthening Your Soft Skills",
+  "total_source_paragraphs": 193,
+  "retained_paragraphs": 111,
+  "dropped_paragraphs": 82,
+  "retention_pct": 57.5,
+  "source_word_coverage_pct": 72.7,
+  "bridge_ratio": 0.0088,
+  "dropped": [
+    {
+      "source_id": "ch01-p001",
+      "chapter": "The C-Suite Skills That Matter Most",
+      "chapter_index": 1,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch01-p003",
+      "chapter": "The C-Suite Skills That Matter Most",
+      "chapter_index": 1,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch01-p006",
+      "chapter": "The C-Suite Skills That Matter Most",
+      "chapter_index": 1,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch01-p007",
+      "chapter": "The C-Suite Skills That Matter Most",
+      "chapter_index": 1,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch01-p008",
+      "chapter": "The C-Suite Skills That Matter Most",
+      "chapter_index": 1,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch01-p011",
+      "chapter": "The C-Suite Skills That Matter Most",
+      "chapter_index": 1,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch01-p014",
+      "chapter": "The C-Suite Skills That Matter Most",
+      "chapter_index": 1,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch01-p017",
+      "chapter": "The C-Suite Skills That Matter Most",
+      "chapter_index": 1,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch01-p022",
+      "chapter": "The C-Suite Skills That Matter Most",
+      "chapter_index": 1,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch02-p001",
+      "chapter": "The Focused Leader",
+      "chapter_index": 2,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch02-p004",
+      "chapter": "The Focused Leader",
+      "chapter_index": 2,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch02-p005",
+      "chapter": "The Focused Leader",
+      "chapter_index": 2,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch02-p006",
+      "chapter": "The Focused Leader",
+      "chapter_index": 2,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch02-p007",
+      "chapter": "The Focused Leader",
+      "chapter_index": 2,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch02-p010",
+      "chapter": "The Focused Leader",
+      "chapter_index": 2,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch02-p014",
+      "chapter": "The Focused Leader",
+      "chapter_index": 2,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch02-p022",
+      "chapter": "The Focused Leader",
+      "chapter_index": 2,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch02-p024",
+      "chapter": "The Focused Leader",
+      "chapter_index": 2,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch03-p004",
+      "chapter": "Making Empathy Central to Your Company Culture",
+      "chapter_index": 3,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch03-p007",
+      "chapter": "Making Empathy Central to Your Company Culture",
+      "chapter_index": 3,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch04-p003",
+      "chapter": "Learning to Learn",
+      "chapter_index": 4,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch04-p005",
+      "chapter": "Learning to Learn",
+      "chapter_index": 4,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch04-p007",
+      "chapter": "Learning to Learn",
+      "chapter_index": 4,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch04-p009",
+      "chapter": "Learning to Learn",
+      "chapter_index": 4,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch05-p003",
+      "chapter": "How to Get the Help You Need",
+      "chapter_index": 5,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch05-p004",
+      "chapter": "How to Get the Help You Need",
+      "chapter_index": 5,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch05-p008",
+      "chapter": "How to Get the Help You Need",
+      "chapter_index": 5,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch05-p010",
+      "chapter": "How to Get the Help You Need",
+      "chapter_index": 5,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch06-p003",
+      "chapter": "How to Sell Your Ideas up the Chain of Command",
+      "chapter_index": 6,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch06-p007",
+      "chapter": "How to Sell Your Ideas up the Chain of Command",
+      "chapter_index": 6,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch06-p008",
+      "chapter": "How to Sell Your Ideas up the Chain of Command",
+      "chapter_index": 6,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch06-p009",
+      "chapter": "How to Sell Your Ideas up the Chain of Command",
+      "chapter_index": 6,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch06-p012",
+      "chapter": "How to Sell Your Ideas up the Chain of Command",
+      "chapter_index": 6,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch07-p001",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p004",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch07-p005",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p006",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p007",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p008",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p010",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p018",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p021",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p022",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p023",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p025",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p027",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p028",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch07-p030",
+      "chapter": "When Diversity Meets Feedback",
+      "chapter_index": 7,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch08-p001",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch08-p004",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch08-p005",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch08-p006",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch08-p007",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch08-p008",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch08-p009",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch08-p010",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch08-p011",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch08-p013",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch08-p017",
+      "chapter": "Want Stronger Relationships at Work? Change the Way You Listen",
+      "chapter_index": 8,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch09-p003",
+      "chapter": "How to Navigate Conflict with a Coworker",
+      "chapter_index": 9,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch09-p009",
+      "chapter": "How to Navigate Conflict with a Coworker",
+      "chapter_index": 9,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch09-p010",
+      "chapter": "How to Navigate Conflict with a Coworker",
+      "chapter_index": 9,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch09-p012",
+      "chapter": "How to Navigate Conflict with a Coworker",
+      "chapter_index": 9,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch10-p003",
+      "chapter": "Coaching for Change",
+      "chapter_index": 10,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch10-p007",
+      "chapter": "Coaching for Change",
+      "chapter_index": 10,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch10-p008",
+      "chapter": "Coaching for Change",
+      "chapter_index": 10,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch10-p012",
+      "chapter": "Coaching for Change",
+      "chapter_index": 10,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch10-p013",
+      "chapter": "Coaching for Change",
+      "chapter_index": 10,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch10-p014",
+      "chapter": "Coaching for Change",
+      "chapter_index": 10,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch11-p003",
+      "chapter": "The Science of Strong Business Writing",
+      "chapter_index": 11,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch11-p004",
+      "chapter": "The Science of Strong Business Writing",
+      "chapter_index": 11,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch11-p008",
+      "chapter": "The Science of Strong Business Writing",
+      "chapter_index": 11,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch11-p012",
+      "chapter": "The Science of Strong Business Writing",
+      "chapter_index": 11,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch12-p004",
+      "chapter": "You Don't Just Need One Leadership Voice—You Need Many",
+      "chapter_index": 12,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch12-p005",
+      "chapter": "You Don't Just Need One Leadership Voice—You Need Many",
+      "chapter_index": 12,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch12-p006",
+      "chapter": "You Don't Just Need One Leadership Voice—You Need Many",
+      "chapter_index": 12,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch12-p010",
+      "chapter": "You Don't Just Need One Leadership Voice—You Need Many",
+      "chapter_index": 12,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch13-p003",
+      "chapter": "Building an Ethical Career",
+      "chapter_index": 13,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    },
+    {
+      "source_id": "ch13-p008",
+      "chapter": "Building an Ethical Career",
+      "chapter_index": 13,
+      "reason": "section header or fragment — content integrated in adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch13-p011",
+      "chapter": "Building an Ethical Career",
+      "chapter_index": 13,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch13-p012",
+      "chapter": "Building an Ethical Career",
+      "chapter_index": 13,
+      "reason": "secondary example or elaboration — core point covered by adjacent retained paragraphs"
+    },
+    {
+      "source_id": "ch13-p014",
+      "chapter": "Building an Ethical Career",
+      "chapter_index": 13,
+      "reason": "metadata or summary box (Idea in Brief / copyright) — not article body"
+    }
+  ]
+}

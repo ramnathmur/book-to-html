@@ -1,0 +1,55 @@
+{
+  "schema": "book-to-html-trace/1.0",
+  "build_id": "836734d2aa",
+  "book": "Agentic AI For Dummies",
+  "author": "Pam Baker",
+  "build_date": "2026-05-31",
+  "iterations": 2,
+  "iteration_root_cause": "Assembler leaked article body before <html> tag due to malformed self-documenting comment in skeleton.html (inner '-->' closed outer comment prematurely). Fixed by stripping doctype-to-<html> preamble before substitution.",
+  "spans": [
+    {"persona": "Ingestor", "substrate": "deterministic", "wall_ms": 1200, "status": "complete",
+     "notes": "ingest-preflight.ps1 extracted 109 HTML splits + ~hundreds of PNGs from EPUB to TEMP"},
+    {"persona": "Editor", "substrate": "ai", "model": "claude-sonnet-4.7", "wall_ms": 615398,
+     "subagent_tokens": 138874, "tool_uses": 45, "status": "complete",
+     "notes": "17 chapters processed, 75,565 output words (86.1% verbatim), 0% bridges, 1,156 paragraphs dropped with reasons"},
+    {"persona": "Proofreader", "substrate": "ai", "model": "claude-sonnet-4.7", "wall_ms": 177760,
+     "subagent_tokens": 58888, "tool_uses": 20, "status": "pass",
+     "notes": "584/1621 anchors verified (full sweep on concept chapters 3/5/11/15, 10% sample elsewhere). 0 violations. Coverage band all-pass."},
+    {"persona": "Designer", "substrate": "ai", "model": "claude-sonnet-4.7", "wall_ms": 340221,
+     "subagent_tokens": 86731, "tool_uses": 15, "status": "complete",
+     "notes": "Navigation=hybrid (6 themes), 38 diagrams (29 mermaid + 9 html_table), 17 chapter heroes, 12 pull-quotes. Style=photographic_realism, accent=#1e5fa8 (ink blue), book_seed=1484186380"},
+    {"persona": "QuestionGenerator", "substrate": "ai", "model": "claude-sonnet-4.7", "wall_ms": 96526,
+     "subagent_tokens": 67112, "tool_uses": 18, "status": "complete",
+     "notes": "Generated 10 comprehension questions covering chapters 1, 2, 3, 7, 10, 12, 13. Weighted toward conceptual spine and named entities."},
+    {"persona": "Assembler_iter1", "substrate": "deterministic", "wall_ms": null, "status": "fail",
+     "notes": "Output had pre-doctype dump — 2088 lines leaked before <html> tag because the skeleton's self-documenting comment contained literal example placeholders and was malformed HTML."},
+    {"persona": "Reader_iter1", "substrate": "ai", "model": "claude-sonnet-4.7", "wall_ms": 253737,
+     "subagent_tokens": 140099, "tool_uses": 38, "status": "fail",
+     "scores": {"visual_pleasure": 2, "navigation": 3, "comprehension": 5, "illustration": 4, "books_finished_rate": 2},
+     "notes": "Caught the Assembler defect. Comprehension 10/10 confirms content is recoverable; visual_pleasure + books_finished_rate fail due to envelope, not content."},
+    {"persona": "Assembler_iter2", "substrate": "deterministic", "wall_ms": null, "status": "complete",
+     "notes": "Strip-preamble fix applied; output is clean single-document HTML (677 KB, 2333 lines, one each of doctype/html/body/article)."},
+    {"persona": "Reader_iter2", "substrate": "ai", "model": "claude-sonnet-4.7", "wall_ms": 240146,
+     "subagent_tokens": 135204, "tool_uses": 29, "status": "pass",
+     "scores": {"visual_pleasure": 3, "navigation": 4, "comprehension": 5, "illustration": 4, "books_finished_rate": 4},
+     "lowest_dimension": "visual_pleasure",
+     "would_skip_original": true,
+     "notes": "Terminal gate cleared (books_finished_rate=4). Lowest dim visual_pleasure reflects the 0% bridge ratio — text is a raw anchor stack with no Editor connective prose."}
+  ],
+  "totals": {
+    "wall_clock_ms": 1723788,
+    "subagent_tokens": 626908,
+    "models_used": ["claude-sonnet-4.7"]
+  },
+  "counters": {
+    "permission_popups": 0,
+    "interview_questions": 6,
+    "interview_popup_events": 4
+  },
+  "outputs": {
+    "html": "C:\\Claude Code\\CLAUDE OUTPUTS\\book-to-html\\Agentic-AI-For-Dummies_Reader_v1.html",
+    "coverage": "C:\\Claude Code\\CLAUDE OUTPUTS\\book-to-html\\Agentic-AI-For-Dummies_coverage.json",
+    "trace": "C:\\Claude Code\\CLAUDE OUTPUTS\\book-to-html\\Agentic-AI-For-Dummies_trace.json",
+    "reader_verdict": "C:\\Claude Code\\CLAUDE OUTPUTS\\book-to-html\\Agentic-AI-For-Dummies_reader_verdict.json"
+  }
+}

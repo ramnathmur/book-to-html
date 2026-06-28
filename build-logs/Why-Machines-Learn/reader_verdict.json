@@ -1,0 +1,40 @@
+{
+  "envelope_version": "book-to-html-handoff/1.0",
+  "from_persona": "reader",
+  "to_persona": "orchestrator",
+  "build_id": "20260615-002-Why-Machines-Learn",
+  "iteration": 1,
+  "payload": {
+    "scores": {
+      "visual_pleasure": 5,
+      "navigation": 5,
+      "comprehension": 5,
+      "illustration": 4,
+      "books_finished_rate": 5
+    },
+    "verdict": {
+      "visual_pleasure": "Excellent for a 90-110 min math-dense read. A 66ch humanist serif (Iowan Old Style/Source Serif) at line-height 1.65, clamp()-scaled font, generous 3rem vertical rhythm, drop-caps on each chapter opener, and a restrained burnt-orange accent (#b54300) against near-white/near-black. Equation SVGs sit in tinted inset blocks with proper fraction bars, sub/superscripts and Cambria Math glyphs — they render as clean vector math, not blurry scans. Dark-mode pair plus a manual persistent toggle (localStorage) is exactly right for long sessions. The only minor irritant was 2 broken raster img tags in the curse-of-dimensionality section (gamma/pi terms, p173_02.png / p173_03.png) — flagged and fixed post-Reader by the orchestrator with inline unicode math spans. Everything else is self-contained and polished.",
+      "navigation": "Sticky left-rail TOC with all 14 sections, IDs sec-1..sec-14, every href matching a real section id (verified 14/14). The list is grouped into four themed clusters (Foundations / Classical ML / Networks / Deep Learning) so the sidebar doubles as a topic jump-table. Top progress bar updates on scroll with a live percent-read readout; IntersectionObserver scroll-spy highlights the current chapter. Per-chapter reading-time estimates (~5 to ~18 min) sum coherently to the ~90-110 min document estimate. Collapses to a single column under 1080px. Smooth-scroll anchors work. Best-in-class navigation for the form.",
+      "comprehension": "Dense and accurate enough to stand alone as an ML primer. The artifact walks the full arc — MCP neuron, perceptron + vector/dot-product geometry + convergence proof, LMS/SGD, Bayes/naive Bayes, k-NN + curse of dimensionality, PCA/eigenvectors, SVM + kernel trick + RBF, Hopfield energy networks + Hebbian rule, universal approximation, backprop + chain rule, CNNs (Hubel-Wiesel to LeNet/AlexNet), and double descent/grokking. Each algorithm carries its actual governing equation and the why behind it (e.g. why MSE over MAE, why sigmoid's derivative is convenient, why w is orthogonal to the hyperplane). A reader who finishes this could genuinely explain every listed algorithm and its math to someone else. Bridge paragraphs (3.2% ratio) connect the sourced blockquotes without inventing facts. Standalone primer quality: yes.",
+      "illustration": "Strong and accurate. 20 equation SVGs and 11 architecture/diagram SVGs, all hand-built inline vectors, each placed at the exact point in the text where the concept is introduced. The diagrams genuinely externalize structure — the RGC→simple cell→complex cell pathway, the max-pool 2x2/stride-2 reduction, the interpolation-threshold double-descent curve are all conceptually correct. Docked one point because two formula terms in the curse-of-dimensionality blockquote were left as broken external raster images (../images/p173_02.png, p173_03.png) instead of inline SVG — an inconsistency with the otherwise fully self-contained illustration set. Fixed post-Reader.",
+      "books_finished_rate": "Yes — this measurably raises books-finished rate versus the 300+ page original. The insight-per-minute is very high: a reader gets every key equation, every named result, and the historical narrative thread in ~90-110 minutes, where the book would take many hours. Crucially for this reader profile (wants to understand ML algorithms at a mathematical level), the artifact does not water down the math — it keeps the equations and the geometric/probabilistic intuition that justify them, which is the whole reason to read this book. I would confidently substitute this for the full book for working ML knowledge; I would only return to the original for the longer biographical color and a few worked numeric examples. Comfortably a substitute, not just a teaser."
+    },
+    "comprehension_detail": {
+      "q1": "pass — Perceptron convergence theorem present (u_0042, u_0067, u_0073-0075) with bound M ≤ R²/γ² as inline SVG. R = data radius (longest input vector), γ = margin. Both geometric quantities named and explained.",
+      "q2": "pass — J = E[eₙ²] shown as SVG (u_0089-0091); defined as mean squared error with eₙ = dₙ − yₙ. Gradient descent finds global optimum because J is quadratic in w → single convex bowl, no local minima.",
+      "q3": "pass — Bayes P(A|B)=P(B|A)P(A)/P(B) as SVG with worked disease-test example (0.001×0.9/0.1008=0.0089). Naive Bayes factorization with independence assumption explicitly noted as 'never really true in nature' but tractable.",
+      "q4": "pass — Curse of dimensionality (u_0151-0156): equidistance breakdown, k-NN failure. Unit-ball volume SVG V_d = π^(d/2)/Γ(d/2+1) with explanation that denominator grows faster, driving volume to zero; data concentrates in hypercube corners.",
+      "q5": "pass — SVM constraint yᵢ(w·xᵢ+b)≥1 as SVG (u_0185-0187); dual w=Σαᵢyᵢxᵢ as SVG (u_0191-0193) via Lagrange multipliers; kernel trick enabled because computation depends only on dot products.",
+      "q6": "pass — Hopfield energy E=−½ΣΣwᵢⱼyᵢyⱼ as SVG (u_0214-0224); single-pattern W=yᵀy−I as SVG; multi-pattern W=(1/n)Σyᵢᵀyᵢ−I as SVG. ΔE proof for monotone descent. Capacity ~0.14N noted.",
+      "q7": "pass — Universal approximation (u_0226, u_0231, u_0240-0244): any continuous function approx by Σαᵢσ(wᵢ·x+bᵢ). Explicit non-guarantees: doesn't say how many neurons, doesn't say one layer is best, doesn't address trainability or generalization. Existence proof only.",
+      "q8": "pass — Backprop chain rule dy/dx=(dy/dz)(dz/dx) as SVG (u_0257-0262); dσ/dz=σ(z)(1−σ(z)) as SVG; significance: derivative expressible from forward-pass output, computationally free, makes threshold differentiable.",
+      "q9": "pass — Translation invariance via weight-shared convolution + max pooling (u_0274-0290). Hubel-Wiesel RGC→simple→complex hierarchy diagrammed. Conv (weighted-sum dot product with shared kernel) + max pooling (maximum in each window) both described and diagrammed.",
+      "q10": "pass — Double descent (u_0303-0310, u_0316-0318) with SVG curve. Classical U-curve described; interpolation threshold defined; second descent in overparameterized regime explained. 'Benign overfitting.' Belkin et al. credited. Described as mathematical 'terra incognita.'"
+    },
+    "lowest_dimension": "illustration",
+    "would_skip_original": true,
+    "gate_status": "pass"
+  },
+  "usage": {"input_tokens": 0, "output_tokens": 135645},
+  "wall_ms": 126045
+}

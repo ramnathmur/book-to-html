@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Know a Person — Reader</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --fg: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #b54300;
+      --rule: #d8d8d8;
+      --measure: 66ch;
+      --leading: 1.65;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1a1a1a; --fg: #e6e6e6; --muted: #9a9a9a; --rule: #333; }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Iowan Old Style", "Source Serif Pro", Charter, Cambria, Georgia, serif;
+      font-size: clamp(1rem, 0.5rem + 1vw, 1.25rem);
+      line-height: var(--leading);
+    }
+    #progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0;
+      background: var(--accent); z-index: 100; transition: width 80ms linear;
+    }
+    .page {
+      display: grid;
+      grid-template-columns: minmax(200px, 1fr) minmax(0, var(--measure)) minmax(180px, 1fr);
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1400px; margin: 0 auto;
+    }
+    @media (max-width: 1080px) {
+      .page { grid-template-columns: 1fr; padding: 1.5rem 1rem; }
+      #toc { position: static; max-height: none; border-right: 0; padding-right: 0; }
+    }
+    #toc {
+      position: sticky; top: 2rem; align-self: start;
+      max-height: calc(100vh - 4rem); overflow-y: auto;
+      font-size: 0.85rem; line-height: 1.4;
+      border-right: 1px solid var(--rule); padding-right: 1rem;
+    }
+    #toc h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 0.5rem; border: 0; padding: 0; }
+    #toc .toc-part { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin: 0.9rem 0 0.3rem; font-weight: 600; }
+    #toc ol { list-style: none; padding: 0; margin: 0; }
+    #toc li { margin: 0.25rem 0; }
+    #toc a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; }
+    #toc a.current { color: var(--fg); border-bottom-color: var(--accent); }
+    #meta { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--rule); }
+    article { max-width: var(--measure); }
+    article h1 { font-size: 2.4rem; line-height: 1.2; margin: 0 0 0.25em; }
+    article h1 + .byline { color: var(--muted); font-style: italic; margin-bottom: 2rem; }
+    article h2 { font-size: 1.6rem; line-height: 1.25; margin-top: 3rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+    article h2 .reading-time { font-size: 0.75rem; color: var(--muted); font-weight: normal; float: right; }
+    article h3 { font-size: 1.15rem; margin-top: 2rem; }
+    article p { margin: 1em 0; }
+    /* Part divider */
+    .part-divider {
+      margin: 4.5rem 0 0; padding: 1.25rem 0 0.5rem;
+      border-top: 2px solid var(--accent); text-align: center;
+    }
+    .part-divider:first-of-type { margin-top: 2rem; }
+    .part-divider .part-label { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); }
+    .part-divider .part-title { display: block; font-size: 1.35rem; font-style: italic; margin-top: 0.25rem; color: var(--fg); }
+    .part-divider + h2 { border-top: 0; margin-top: 1.5rem; padding-top: 0; }
+    /* Drop cap on first paragraph (bridge) after each chapter h2 */
+    article h2 + p::first-letter,
+    article h2 + .part-after p::first-letter {
+      float: left; font-size: 3.6em; line-height: 0.85; padding: 0.1em 0.1em 0 0;
+      font-family: inherit; color: var(--accent); font-weight: 600;
+    }
+    blockquote.anchor {
+      margin: 1.5em 0; padding: 0.25em 1em; border-left: 3px solid var(--accent);
+      color: var(--fg); font-style: normal;
+    }
+    blockquote.anchor[data-source-id]::after {
+      content: " (" attr(data-source-id) ")";
+      font-size: 0.7em; color: var(--muted); font-style: italic;
+    }
+    aside.pullquote {
+      font-size: 1.5em; line-height: 1.35; font-style: italic; color: var(--accent);
+      border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+      padding: 1rem 0; margin: 2.5rem 0;
+    }
+    .sidenote {
+      grid-column: 3; float: right; clear: right;
+      width: 180px; margin-right: -200px; font-size: 0.78rem; color: var(--muted);
+      line-height: 1.4;
+    }
+    @media (max-width: 1080px) {
+      .sidenote { float: none; width: auto; margin: 0.5rem 0; padding: 0.5rem; background: rgba(127,127,127,0.05); display: block; }
+    }
+    .xref { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); position: relative; }
+    .xref:hover .preview, .xref:focus .preview { display: block; }
+    .xref .preview {
+      display: none; position: absolute; bottom: 100%; left: 0;
+      background: var(--bg); border: 1px solid var(--rule); padding: 0.5rem 0.75rem;
+      width: 320px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 0.85rem; line-height: 1.4; z-index: 50;
+    }
+    figure { margin: 2rem 0; }
+    figure figcaption { font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; font-style: italic; }
+    figure figcaption a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+    figure.diagram { background: rgba(127,127,127,0.04); padding: 1.25rem; border-radius: 2px; border: 1px solid var(--rule); }
+    #design-note {
+      background: rgba(181,67,0,0.06); border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem; margin-bottom: 2rem; font-size: 0.9rem; line-height: 1.5;
+    }
+    #design-note h2 { margin: 0 0 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); border: 0; padding: 0; }
+    #design-note code { font-size: 0.85em; background: rgba(127,127,127,0.12); padding: 0 0.25em; border-radius: 2px; }
+    footer { margin-top: 6rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div id="progress"></div>
+  <div class="page">
+    <nav id="toc">
+      <h2>On this page</h2>
+      <div class="toc-part">Part One &mdash; I See You</div>
+<ol>
+<li><a href="#ch-1">1. The Power of Being Seen</a></li>
+<li><a href="#ch-2">2. How Not to See a Person</a></li>
+<li><a href="#ch-3">3. Illumination</a></li>
+<li><a href="#ch-4">4. Accompaniment</a></li>
+<li><a href="#ch-5">5. What Is a Person?</a></li>
+<li><a href="#ch-6">6. Good Talks</a></li>
+<li><a href="#ch-7">7. The Right Questions</a></li>
+</ol>
+<div class="toc-part">Part Two &mdash; I See You in Your Struggles</div>
+<ol>
+<li><a href="#ch-8">8. The Epidemic of Blindness</a></li>
+<li><a href="#ch-9">9. Hard Conversations</a></li>
+<li><a href="#ch-10">10. How Do You Serve a Friend Who Is in Despair?</a></li>
+<li><a href="#ch-11">11. The Art of Empathy</a></li>
+<li><a href="#ch-12">12. How Were You Shaped by Your Sufferings?</a></li>
+</ol>
+<div class="toc-part">Part Three &mdash; I See You with Your Strengths</div>
+<ol>
+<li><a href="#ch-13">13. Personality</a></li>
+<li><a href="#ch-14">14. Life Tasks</a></li>
+<li><a href="#ch-15">15. Life Stories</a></li>
+<li><a href="#ch-16">16. How Do Your Ancestors Show Up in Your Life?</a></li>
+<li><a href="#ch-17">17. What Is Wisdom?</a></li>
+</ol>
+
+      <div id="meta">
+        <div id="reading-time-doc">~25 min &middot; 5,570 words</div>
+        <div id="progress-text">0% read</div>
+      </div>
+    </nav>
+
+    <article>
+      <h1>How to Know a Person</h1>
+      <p class="byline">The Art of Seeing Others Deeply and Being Deeply Seen &middot; by David Brooks &middot; Condensed AI reader &middot; 2026-06-19</p>
+
+      <div id="design-note">
+        <h2>Design Note</h2>
+        <p>I built this as a single linear long-scroll because <em>How to Know a Person</em> is a narrative argument that climbs in three movements&#8212;seeing others, sitting with their struggles, honoring their strengths&#8212;so the sequence <em>is</em> the meaning, and a branching menu would only let readers skip the build-up that makes each later skill land. Every illustration is hand-drawn inline SVG (Channel A only): no external images, no CDN, no network&#8212;the file reads identically offline and inverts cleanly in dark mode because every stroke uses <code>currentColor</code>. At standard graphic intensity I diagram only the eight load-bearing frameworks (Diminisher&#8596;Illuminator, the proclivities that block perception, accompaniment, the loud-listener moves, the three empathy skills, the Big Five, the life-task sequence, paradigmatic vs. narrative thinking) rather than decorating every chapter, because this is a reflective, prose-driven book whose power is in David Brooks&#8217;s voice&#8212;the verbatim anchor quotes carry the weight, and a diagram earns its place only where it externalizes a relationship the text has actually stated. Everything else&#8212;66ch measure, 1.65 leading, a humanist serif, drop caps at each opener, pull-quotes lifted verbatim from nearby anchors, a sticky scroll-spy contents rail and a reading-progress bar&#8212;exists for one metric only: keeping you scrolling to the last line.</p>
+      </div>
+
+<div class="part-divider" id="part-1"><span class="part-label">Part One</span><span class="part-title">I See You</span></div>
+<h2 id="ch-1">1. The Power of Being Seen<span class="reading-time">~2 min</span></h2>
+<p>Brooks opens by confessing he grew up emotionally detached, then set out to learn the skills of seeing others.</p>
+<blockquote id="u_0002" class="anchor" data-source-id="ch1§1¶13">I learned something profound along the way. Being open-hearted is a prerequisite for being a full, kind, and wise human being. But it is not enough. People need social skills. We talk about the importance of “relationships,” “community,” “friendship,” “social connection,” but these words are too abstract. The real act of, say, building a friendship or creating a community involves performing a series of small, concrete social actions well: disagreeing without poisoning the relationship; revealing vulnerability at the appropriate pace; being a good listener; knowing how to end a conversation gracefully; knowing how to ask for and offer forgiveness; knowing how to let someone down without breaking their heart; knowing how to sit with someone who is suffering; knowing how to host a gathering where everyone feels embraced; knowing how to see things from another’s point of view.</blockquote>
+<blockquote id="u_0003" class="anchor" data-source-id="ch1§1¶16">And all these different skills rest on one foundational skill: the ability to understand what another person is going through. There is one skill that lies at the heart of any healthy person, family, school, community organization, or society: the ability to see someone else deeply and make them feel seen—to accurately know another person, to let them feel valued, heard, and understood.</blockquote>
+<aside class="pullquote">&#8220;the ability to see someone else deeply and make them feel seen&#8212;to accurately know another person, to let them feel valued, heard, and understood.&#8221;</aside>
+<p>He gives three reasons to learn this skill: pragmatic, spiritual, and survival.</p>
+<blockquote id="u_0007" class="anchor" data-source-id="ch1§3¶1">In every crowd there are Diminishers and there are Illuminators. Diminishers make people feel small and unseen. They see other people as things to be used, not as persons to be befriended. They stereotype and ignore. They are so involved with themselves that other people are just not on their radar screen.</blockquote>
+<blockquote id="u_0008" class="anchor" data-source-id="ch1§3¶2">Illuminators, on the other hand, have a persistent curiosity about other people. They have been trained or have trained themselves in the craft of understanding others. They know what to look for and how to ask the right questions at the right time. They shine the brightness of their care on people and make them feel bigger, deeper, respected, lit up.</blockquote>
+<figure class="diagram">
+<svg viewBox="0 0 640 280" role="img" aria-label="Diminishers versus Illuminators contrast" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;color:var(--fg)">
+  <rect x="8" y="8" width="300" height="264" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <rect x="332" y="8" width="300" height="264" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+  <text x="158" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="currentColor">DIMINISHERS</text>
+  <text x="482" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="var(--accent)">ILLUMINATORS</text>
+  <line x1="28" y1="52" x2="288" y2="52" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+  <line x1="352" y1="52" x2="612" y2="52" stroke="var(--accent)" stroke-width="0.75" opacity="0.5"/>
+  <text x="28" y="86" font-size="14" fill="currentColor">Make people feel small, unseen</text>
+  <text x="28" y="118" font-size="14" fill="currentColor">See others as things to be used</text>
+  <text x="28" y="150" font-size="14" fill="currentColor">Stereotype and ignore</text>
+  <text x="28" y="182" font-size="14" fill="currentColor">So self-involved others</text>
+  <text x="28" y="200" font-size="14" fill="currentColor">are off the radar</text>
+  <text x="352" y="86" font-size="14" fill="currentColor">Persistent curiosity about others</text>
+  <text x="352" y="118" font-size="14" fill="currentColor">Trained in the craft of</text>
+  <text x="352" y="136" font-size="14" fill="currentColor">understanding</text>
+  <text x="352" y="168" font-size="14" fill="currentColor">Ask the right questions</text>
+  <text x="352" y="200" font-size="14" fill="currentColor">Make people feel bigger,</text>
+  <text x="352" y="218" font-size="14" fill="currentColor">deeper, respected, lit up</text>
+  <text x="320" y="262" text-anchor="middle" font-size="26" fill="var(--muted)">&#8596;</text>
+</svg>
+<figcaption>Illustrating <a href="#u_0007">ch1§3¶1</a></figcaption>
+</figure>
+<p>He illustrates the Illuminator with Bell Labs' Harry Nyquist, whose listening made researchers more productive.</p>
+<h2 id="ch-2">2. How Not to See a Person<span class="reading-time">~1 min</span></h2>
+<p>Brooks first catalogs the Diminisher's tricks that block accurate perception.</p>
+<blockquote id="u_0014" class="anchor" data-source-id="ch2§1¶7"><b>THE LESSER-MINDS PROBLEM.</b> University of Chicago psychologist Nicholas Epley points out that in day-to-day life we have access to the many thoughts that run through our own minds. But we don’t have access to all the thoughts that are running through other people’s minds. We just have access to the tiny portion they speak out loud. This leads to the perception that I am much more complicated than you—deeper, more interesting, more subtle, and more high-minded.</blockquote>
+<figure class="diagram">
+<svg viewBox="0 0 640 330" role="img" aria-label="The Diminisher proclivities that block accurate perception" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;color:var(--fg)">
+  <text x="320" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--accent)">WHAT BLOCKS ACCURATE PERCEPTION</text>
+  <g font-size="14" fill="currentColor">
+    <rect x="20" y="48" width="600" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="34" y="70">Egotism &#8212; the self crowds out the other</text>
+    <rect x="20" y="88" width="600" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="34" y="110">Anxiety &#8212; fear narrows attention to threat</text>
+    <rect x="20" y="128" width="600" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="34" y="150">Na&#239;ve realism &#8212; mistaking my view for objective reality</text>
+    <rect x="20" y="168" width="600" height="34" rx="3" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+    <text x="34" y="190" fill="var(--accent)">The lesser-minds problem &#8212; I am complex, you are simple</text>
+    <rect x="20" y="208" width="600" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="34" y="230">Objectivism &#8212; treating people as data, not persons</text>
+    <rect x="20" y="248" width="600" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="34" y="270">Essentialism &#8212; reducing a person to a category</text>
+    <rect x="20" y="288" width="600" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="34" y="310">Static mindset &#8212; assuming people never change</text>
+  </g>
+</svg>
+<figcaption>Illustrating <a href="#u_0014">ch2§1¶7</a></figcaption>
+</figure>
+<p>He turns to Gornick's <i>Fierce Attachments</i>, where mother and daughter stay locked in lifelong antagonism.</p>
+<blockquote id="u_0018" class="anchor" data-source-id="ch2§2¶17"><i>Fierce Attachments</i> is a brilliant description of seeing but not really seeing. Here are two smart, dynamic, highly verbal women in lifelong communication who are never quite able to understand each other. Gornick’s book is so good because it illustrates that even in cases where we’re devoted to a person, and know a lot about them, it’s still possible to not see them. You can be loved by a person yet not be known by them.</blockquote>
+<blockquote id="u_0019" class="anchor" data-source-id="ch2§3¶1">Being an Illuminator, seeing other people in all their fullness, doesn’t just happen. It’s a craft, a set of skills, a way of life. Other cultures have words for this way of being. The Koreans call it <i>nunchi,</i> the ability to be sensitive to other people’s moods and thoughts. The Germans (of course) have a word for it: <i>herzensbildung,</i> training one’s heart to see the full humanity in another.</blockquote>
+<h2 id="ch-3">3. Illumination<span class="reading-time">~1 min</span></h2>
+<p>In Waco, Jimmy Dorrell greeted a stern elderly woman with such love that a delighted girl appeared—attention calling forth a different person.</p>
+<blockquote id="u_0021" class="anchor" data-source-id="ch3§1¶9">That gaze, that first sight, represents a posture toward the world. A person who is looking for beauty is likely to find wonders, while a person looking for threats will find danger. A person who beams warmth brings out the glowing sides of the people she meets, while a person who conveys formality can meet the same people and find them stiff and detached. “Attention,” the psychiatrist Iain McGilchrist writes, “is a moral act: it creates, brings aspects of things into being.” The quality of your life depends quite a bit on the quality of attention you project out onto the world.</blockquote>
+<blockquote id="u_0022" class="anchor" data-source-id="ch3§2¶5">When you’re practicing Illuminationism, you’re offering a gaze that says, “I want to get to know you and be known by you.” It’s a gaze that positively answers the question everybody is unconsciously asking themselves when they meet you: “Am I a person to you? Do you care about me? Am I a priority for you?” The answers to those questions are conveyed in your gaze before they are conveyed by your words.</blockquote>
+<aside class="pullquote">&#8220;The answers to those questions are conveyed in your gaze before they are conveyed by your words.&#8221;</aside>
+<p>He lists the gaze's features—tenderness, receptivity, curiosity, generosity—then turns to Iris Murdoch's moral philosophy of attention.</p>
+<blockquote id="u_0026" class="anchor" data-source-id="ch3§3¶6">By contrast, the essential moral act for Murdoch is being able to cast a “just and loving attention” on another person. “Love is knowledge of the individual,” she writes. That doesn’t mean you have to romantically swoon for everybody you meet. It means that a good person tries to look at everyone with a patient and discerning regard, tries to resist self-centeredness and overcome prejudice, in order to see another person more deeply and with greater discernment.</blockquote>
+<p>He offers therapist Mary Pipher, who calls attention “the purest form of love.”</p>
+<h2 id="ch-4">4. Accompaniment<span class="reading-time">~1 min</span></h2>
+<blockquote id="u_0028" class="anchor" data-source-id="ch4§2¶1">Ninety percent of life is just going about your business. It’s a meeting at work, a trip to the supermarket, or small talk with another parent while dropping the kids off at school. And usually there are other people around. In these normal moments of life, you’re not staring deeply into another’s eyes or unveiling profound intimacies. You’re just doing stuff together—not face-to-face but side by side. You are accompanying each other.</blockquote>
+<blockquote id="u_0029" class="anchor" data-source-id="ch4§2¶2">When you’re first getting to know someone, you don’t want to try to peer into their souls right away. It’s best to look at something together. What do you think of the weather, Taylor Swift, gardening, or the TV series <i>The Crown</i>? You’re not studying a person, just getting used to them.</blockquote>
+<blockquote id="u_0030" class="anchor" data-source-id="ch4§2¶5">Accompaniment, in this meaning, is an other-centered way of moving through life. When you’re accompanying someone, you’re in a state of relaxed awareness—attentive and sensitive and unhurried. You’re not leading or directing the other person. You’re just riding alongside as they experience the ebbs and flows of daily life. You’re there to be of help, a faithful presence, open to whatever may come. Your movements are marked not by willfulness but by willingness—you’re willing to let the relationship deepen or not deepen, without forcing it either way. You are acting in a way that lets other people be perfectly themselves.</blockquote>
+<p>He names accompaniment's qualities: patience, playfulness, other-centeredness, presence.</p>
+<blockquote id="u_0032" class="anchor" data-source-id="ch4§3¶21">Finally, a person who is good at accompaniment understands the art of <i>presence</i>. Presence is about showing up. Showing up at weddings and funerals, and especially showing up when somebody is grieving or has been laid off or has suffered some setback or humiliation. When someone is going through a hard time, you don’t need to say some wise thing; you just have to be there, with heightened awareness of what they are experiencing at that moment.</blockquote>
+<figure class="diagram">
+<svg viewBox="0 0 640 340" role="img" aria-label="The qualities of accompaniment radiating from a center" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;color:var(--fg)">
+  <circle cx="320" cy="170" r="62" fill="none" stroke="var(--accent)" stroke-width="1.75"/>
+  <text x="320" y="166" text-anchor="middle" font-size="16" font-weight="bold" fill="var(--accent)">ACCOMPANI-</text>
+  <text x="320" y="186" text-anchor="middle" font-size="16" font-weight="bold" fill="var(--accent)">MENT</text>
+  <g stroke="currentColor" stroke-width="1" opacity="0.55">
+    <line x1="320" y1="108" x2="320" y2="56"/>
+    <line x1="382" y1="170" x2="560" y2="170"/>
+    <line x1="320" y1="232" x2="320" y2="300"/>
+    <line x1="258" y1="170" x2="80" y2="170"/>
+  </g>
+  <g font-size="15" fill="currentColor">
+    <rect x="250" y="22" width="140" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="320" y="44" text-anchor="middle">Patience</text>
+    <rect x="492" y="153" width="140" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="562" y="175" text-anchor="middle">Playfulness</text>
+    <rect x="250" y="300" width="140" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="320" y="322" text-anchor="middle">Presence</text>
+    <rect x="8" y="153" width="150" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="83" y="175" text-anchor="middle">Other-centered</text>
+  </g>
+</svg>
+<figcaption>Illustrating <a href="#u_0030">ch4§2¶5</a></figcaption>
+</figure>
+<h2 id="ch-5">5. What Is a Person?<span class="reading-time">~2 min</span></h2>
+<p>Brooks tells of Carrère's group in the 2004 Sri Lankan tsunami, where each person experienced it differently.</p>
+<blockquote id="u_0034" class="anchor" data-source-id="ch5§1¶20">Events happen in our lives, but each person processes and experiences any given event in their own unique way. Aldous Huxley captured the core reality: “Experience is not what happens to you, it’s what you do with what happens to you.”</blockquote>
+<blockquote id="u_0035" class="anchor" data-source-id="ch5§2¶1">In other words, there are two layers of reality. There is the objective reality of what happens, and there is the subjective reality of how what happened is seen, interpreted, made meaningful. That second subjective layer can sometimes be the more important layer. As the Yale psychologist Marc Brackett puts it, “Well-being depends less on objective events than on how those events are perceived, dealt with, and shared with others.”</blockquote>
+<blockquote id="u_0036" class="anchor" data-source-id="ch5§3¶1">If you want to see and understand people well, you have to know what you are looking at. You have to know what a person <i>is</i>. And this traumatic vignette highlights a central truth about what human beings are: A person is a point of view. Every person you meet is a creative artist who takes the events of life and, over time, creates a very personal way of seeing the world.</blockquote>
+<aside class="pullquote">&#8220;A person is a point of view.&#8221;</aside>
+<blockquote id="u_0037" class="anchor" data-source-id="ch5§3¶2">Cognitive scientists call this view of the human person “constructionism.” Constructionism is the recognition, backed up by the last half century of brain research, that people don’t passively take in reality. Each person actively constructs their own perception of reality. That’s not to say there is not an objective reality out there. It’s to say that we have only subjective access to it.</blockquote>
+<blockquote id="u_0038" class="anchor" data-source-id="ch5§3¶7">In other words, seeing is not a passive process of receiving data; it’s an active process of prediction and correction.</blockquote>
+<p>He illustrates with the invisible-gorilla and door studies, where people fail to see what they don't predict.</p>
+<blockquote id="u_0040" class="anchor" data-source-id="ch5§5¶3">If we’re going to become Illuminators, we need to first ask questions and engage with answers. We need to ask: How does this look to you? Do you see the same situation I see? Then we need to ask: What are the experiences and beliefs that cause you to see it that way?</blockquote>
+<h2 id="ch-6">6. Good Talks<span class="reading-time">~2 min</span></h2>
+<blockquote id="u_0041" class="anchor" data-source-id="ch6§1¶5">A good conversation is not a group of people making a series of statements at each other. (In fact, that’s a bad conversation.) A good conversation is an act of joint exploration. Somebody floats a half-formed idea. Somebody else seizes on the nub of the idea, plays with it, offers her own perspective based on her own memories, and floats it back so the other person can respond. A good conversation sparks you to have thoughts you never had before. A good conversation starts in one place and ends up in another.</blockquote>
+<p>He lists nonobvious ways to become a better listener.</p>
+<blockquote id="u_0043" class="anchor" data-source-id="ch6§1¶10">The solution as a listener is to treat attention as all or nothing. If you’re here in this conversation, you’re going to stop doing anything else and just pay attention to <i>this</i>. You’re going to apply what some experts call the SLANT method: sit up, lean forward, ask questions, nod your head, track the speaker. Listen with your eyes. That’s paying attention 100 percent.</blockquote>
+<blockquote id="u_0045" class="anchor" data-source-id="ch6§1¶19"><b>MAKE THEM AUTHORS, NOT WITNESSES.</b> People aren’t specific enough when they tell stories. They tend to leave out the concrete details. But if you ask them specific questions—“Where was your boss sitting when he said that? And what did you say in response?”—they are likely to revisit the moment in a more vivid way.</blockquote>
+<blockquote id="u_0046" class="anchor" data-source-id="ch6§1¶25"><b>DO THE LOOPING.</b> Psychologists have a concept they call looping. That’s when you repeat what someone just said in order to make sure you accurately received what they were trying to project. Conversation experts recommend this somewhat clumsy practice because people tend to believe they are much more transparent than they really are, and that they are being clearer than they really are.</blockquote>
+<figure class="diagram">
+<svg viewBox="0 0 640 250" role="img" aria-label="The skills of a good conversation as a flow" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;color:var(--fg)">
+  <text x="320" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--accent)">BEING A LOUD LISTENER</text>
+  <defs>
+    <marker id="arr6" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="currentColor"/>
+    </marker>
+  </defs>
+  <g font-size="14" fill="currentColor">
+    <rect x="24" y="58" width="160" height="58" rx="4" fill="none" stroke="currentColor" stroke-width="1.25"/>
+    <text x="104" y="84" text-anchor="middle" font-weight="bold">SLANT</text>
+    <text x="104" y="104" text-anchor="middle" font-size="12" fill="var(--muted)">attend 100%</text>
+    <rect x="240" y="58" width="160" height="58" rx="4" fill="none" stroke="currentColor" stroke-width="1.25"/>
+    <text x="320" y="84" text-anchor="middle" font-weight="bold">Looping</text>
+    <text x="320" y="104" text-anchor="middle" font-size="12" fill="var(--muted)">replay to confirm</text>
+    <rect x="456" y="58" width="160" height="58" rx="4" fill="none" stroke="currentColor" stroke-width="1.25"/>
+    <text x="536" y="80" text-anchor="middle" font-weight="bold">Make them</text>
+    <text x="536" y="98" text-anchor="middle" font-weight="bold">authors</text>
+  </g>
+  <g stroke="currentColor" stroke-width="1.25" marker-end="url(#arr6)" fill="none">
+    <line x1="186" y1="87" x2="236" y2="87"/>
+    <line x1="402" y1="87" x2="452" y2="87"/>
+  </g>
+  <line x1="24" y1="150" x2="616" y2="150" stroke="var(--rule)" stroke-width="1"/>
+  <text x="320" y="178" text-anchor="middle" font-size="13" fill="var(--muted)">The midwife stance: draw the idea out &#8212; never top it</text>
+  <g font-size="13" fill="currentColor">
+    <text x="104" y="214" text-anchor="middle">don&#8217;t be a topper</text>
+    <text x="320" y="214" text-anchor="middle">favor familiarity</text>
+    <text x="536" y="214" text-anchor="middle">don&#8217;t fear the pause</text>
+  </g>
+</svg>
+<figcaption>Illustrating <a href="#u_0043">ch6§1¶10</a></figcaption>
+</figure>
+<blockquote id="u_0048" class="anchor" data-source-id="ch6§1¶36"><b>DON’T BE A TOPPER.</b> If somebody tells you they are having trouble with their teenage son, don’t turn around and say, “I know exactly what you mean. I’m having incredible problems with my Steven.” You may think you’re trying to build a shared connection, but what you are really doing is shifting attention back to yourself.</blockquote>
+<h2 id="ch-7">7. The Right Questions<span class="reading-time">~1 min</span></h2>
+<p>If conversation is the medium, questions are the tool; Brooks opens with David Bradley's cards.</p>
+<blockquote id="u_0050" class="anchor" data-source-id="ch7§2¶6">I’ve come to think of questioning as a moral practice. When you are asking a good question, you are adopting a posture of humility. You’re confessing that you don’t know and you want to learn. You’re also honoring a person.</blockquote>
+<blockquote id="u_0051" class="anchor" data-source-id="ch7§2¶7">As the psychologist Nicholas Epley observes, perspective <i>taking</i> is untrustworthy, but perspective <i>receiving</i> works quite well. If I’m going to get to know you, it’s not because I have the magical ability to peer into your soul; it’s because I have the skill of asking the sorts of questions that will give you a chance to tell me about who you are.</blockquote>
+<blockquote id="u_0052" class="anchor" data-source-id="ch7§3¶5">Humble questions are open-ended. They’re encouraging the other person to take control and take the conversation where they want it to go. These are questions that begin with phrases like “How did you…,” “What’s it like…,” “Tell me about…,” and “In what ways…”</blockquote>
+<p>He distinguishes evaluating, closed, and vague questions from humble open ones, and offers big questions.</p>
+<blockquote id="u_0054" class="anchor" data-source-id="ch7§4¶2">While doing the research for this book, I interviewed many people—seminar leaders, conversation facilitators, psychologists and focus group moderators, biographers and journalists—whose job it is to ask other people about their lives. I asked these experts how often somebody looks back at them and says, “None of your damn business.” Every expert I consulted had basically the same answer: “Almost never.” People are longing to be asked questions about who they are.</blockquote>
+<aside class="pullquote">&#8220;People are longing to be asked questions about who they are.&#8221;</aside>
+<blockquote id="u_0054b" class="anchor" data-source-id="ch7§4¶3">“Listen, listen, listen, listen, and if you do, people will talk,” he once observed. “They always talk. Why? Because no one has ever listened to them before in all their lives. Perhaps they’ve not ever even listened to themselves.”</blockquote>
+<div class="part-divider" id="part-2"><span class="part-label">Part Two</span><span class="part-title">I See You in Your Struggles</span></div>
+<h2 id="ch-8">8. The Epidemic of Blindness<span class="reading-time">~1 min</span></h2>
+<blockquote id="u_0055" class="anchor" data-source-id="ch8§2¶3">The percentage of Americans who said they have no close friends quadrupled between 1990 and 2020. In one survey, 54 percent of Americans reported that no one knows them well. The number of American adults without a romantic partner increased by a third. More to the point, 36 percent of Americans reported that they felt lonely frequently or almost all of the time, including 61 percent of young adults and 51 percent of young mothers.</blockquote>
+<p>He documents a wider crisis of connection—surging depression and plummeting time with friends—then traces how disconnection warps the mind.</p>
+<blockquote id="u_0057" class="anchor" data-source-id="ch8§1¶6">The effects of this are ruinous and self-reinforcing. Social disconnection warps the mind. When people feel unseen, they tend to shut down socially. People who are lonely and unseen become suspicious. They start to take offense where none is intended. They become afraid of the very thing they need most, which is intimate contact with other humans.</blockquote>
+<blockquote id="u_0058" class="anchor" data-source-id="ch8§1¶9">Loneliness thus leads to meanness. As the saying goes, pain that is not transformed gets transmitted.</blockquote>
+<aside class="pullquote">&#8220;pain that is not transformed gets transmitted.&#8221;</aside>
+<p>He shows how the unrecognized turn to a politics of recognition, and victimhood curdles into violence.</p>
+<blockquote id="u_0060" class="anchor" data-source-id="ch8§2¶3">Our problem, I believe, is fundamentally moral. As a society, we have failed to teach the skills and cultivate the inclination to treat each other with kindness, generosity, and respect.</blockquote>
+<blockquote id="u_0061" class="anchor" data-source-id="ch8§2¶4">I realize the phrase “moral formation” may sound stuffy and archaic, but moral formation is really about three simple, practical things. First, it is about helping people learn how to restrain their selfishness and incline their heart to care more about others. Second, it’s about helping people find a purpose, so their life has stability, direction, and meaning. Third, it’s about teaching the basic social and emotional skills so you can be kind and considerate to the people around you.</blockquote>
+<h2 id="ch-9">9. Hard Conversations<span class="reading-time">~2 min</span></h2>
+<p>Part Two turns to harsh times: we meet not just as individuals but as members of groups embedded in systems of power.</p>
+<blockquote id="u_0063" class="anchor" data-source-id="ch9§2¶7">Also, for members of dominant or majority groups, there’s usually little or no gap between how others see you and how you see yourself. For people from marginalized or historically oppressed groups, there’s usually a chasm between who you are and how you are perceived. Everybody has to walk into a hard conversation aware of these dynamics.</blockquote>
+<blockquote id="u_0064" class="anchor" data-source-id="ch9§2¶10">The second crucial thing I learned, especially from the authors of <i>Crucial Conversations,</i> is that every conversation takes place on two levels: the official conversation and the actual conversation. The official conversation is represented by the words we say about whatever topic we are nominally discussing: politics, economics, workplace issues—whatever. The actual conversation occurs in the ebb and flow of underlying emotions that get transmitted as we talk.</blockquote>
+<blockquote id="u_0065" class="anchor" data-source-id="ch9§2¶14">As soon as somebody starts talking about times when they felt excluded, betrayed, or wronged, stop and listen. When somebody is talking to you about pain in their life, even in those cases when <i>you</i> may think their pain is performative or exaggerated, it’s best not to try to yank the conversations back to your frame. Your first job is to stay within the other person’s standpoint to more fully understand how the world looks to them.</blockquote>
+<blockquote id="u_0066" class="anchor" data-source-id="ch9§2¶16">The authors of <i>Crucial Conversations</i> observe that in any conversation, respect is like air. When it’s present nobody notices, but when it’s absent it’s all anybody can think about.</blockquote>
+<p>He offers repair moves, showing why people see different worlds.</p>
+<blockquote id="u_0068" class="anchor" data-source-id="ch9§2¶24">In Gibson’s language, we see “affordances.” A hunter with a gun will see a much bigger field than a hunter with a spear because he has a much wider range of action. A police officer who is holding a gun is more likely to “see” other people holding guns than he would if he were holding a shoe, which is partly why 25 percent of police shootings involve unarmed suspects. Proffitt and Baer hammer home the point: “We perceive the world, not as it is but as it is for us.”</blockquote>
+<h2 id="ch-10">10. How Do You Serve a Friend Who Is in Despair?<span class="reading-time">~1 min</span></h2>
+<p>Turning to private suffering, Brooks recounts his oldest friend Pete Marks's descent into severe depression and death by suicide.</p>
+<blockquote id="u_0070" class="anchor" data-source-id="ch10§2¶13">I learned, very gradually, that a friend’s job in these circumstances is not to cheer the person up. It’s to acknowledge the reality of the situation; it’s to hear, respect, and love them; it’s to show them you haven’t given up on them, you haven’t walked away.</blockquote>
+<blockquote id="u_0071" class="anchor" data-source-id="ch10§2¶10">I did not realize that it was energy and desire he lacked, not ideas about things to do. It was only later that I read that when you give a depressed person advice on how they can get better, there’s a good chance all you are doing is telling the person that you just don’t get it.</blockquote>
+<p>He learns the power of staying present and of small touches that say “I'm with you, no response necessary.”</p>
+<blockquote id="u_0072b" class="anchor" data-source-id="ch10§2¶23">Since Pete’s death, I’ve learned more about the power of just staying present. “If you know someone who’s depressed, please resolve to never ask them why,” the actor Stephen Fry once wrote. “Be there for them when they come through the other side. It’s hard to be a friend to someone who’s depressed, but it is one of the kindest, noblest, and best things you will ever do.”</blockquote>
+<blockquote id="u_0073" class="anchor" data-source-id="ch10§3¶1">If I’m ever in a similar situation again, I’ll understand that you don’t have to try to coax somebody out of depression. It’s enough to show that you have some understanding of what they are enduring. It’s enough to create an atmosphere in which they can share their experience. It’s enough to offer them the comfort of being seen.</blockquote>
+<aside class="pullquote">&#8220;It&#8217;s enough to offer them the comfort of being seen.&#8221;</aside>
+<h2 id="ch-11">11. The Art of Empathy<span class="reading-time">~2 min</span></h2>
+<p>Empathy begins in childhood; the Grant Study found success predicted more by a warm family home than by IQ.</p>
+<blockquote id="u_0075" class="anchor" data-source-id="ch11§2¶6">Empathy consists of at least three related skills. First, there is the skill of <i>mirroring</i>. This is the act of accurately catching the emotion of the person in front of you.</blockquote>
+<blockquote id="u_0076" class="anchor" data-source-id="ch11§2¶21">People who are good at mirroring also have what the Northeastern University neuroscientist Lisa Feldman Barrett calls high “emotional granularity,” the ability to finely distinguish between different emotional states.</blockquote>
+<blockquote id="u_0077" class="anchor" data-source-id="ch11§2¶24">The second empathy skill is not mirroring but <i>mentalizing</i>. Most primates can mirror another primate’s emotions at least to some degree. Only humans can figure out <i>why</i> they are experiencing what they are experiencing. We do this by relying on our own experience and memory.</blockquote>
+<blockquote id="u_0078" class="anchor" data-source-id="ch11§2¶27">The third empathy skill is <i>caring</i>. Con artists are very good at reading people’s emotions, but we don’t call them empathetic, because they don’t have genuine concern for the people they are reading.</blockquote>
+<figure class="diagram">
+<svg viewBox="0 0 640 180" role="img" aria-label="The three skills of empathy in sequence" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;color:var(--fg)">
+  <text x="320" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--accent)">THE THREE SKILLS OF EMPATHY</text>
+  <defs>
+    <marker id="arr11" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="currentColor"/>
+    </marker>
+  </defs>
+  <g>
+    <rect x="20" y="58" width="170" height="78" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="105" y="92" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor">MIRRORING</text>
+    <text x="105" y="114" text-anchor="middle" font-size="12" fill="var(--muted)">catch the emotion</text>
+    <rect x="235" y="58" width="170" height="78" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="320" y="92" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor">MENTALIZING</text>
+    <text x="320" y="114" text-anchor="middle" font-size="12" fill="var(--muted)">grasp the why</text>
+    <rect x="450" y="58" width="170" height="78" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.75"/>
+    <text x="535" y="92" text-anchor="middle" font-size="16" font-weight="bold" fill="var(--accent)">CARING</text>
+    <text x="535" y="114" text-anchor="middle" font-size="12" fill="var(--muted)">genuine concern</text>
+  </g>
+  <g stroke="currentColor" stroke-width="1.5" marker-end="url(#arr11)" fill="none">
+    <line x1="192" y1="97" x2="231" y2="97"/>
+    <line x1="407" y1="97" x2="446" y2="97"/>
+  </g>
+</svg>
+<figcaption>Illustrating <a href="#u_0075">ch11§2¶6</a></figcaption>
+</figure>
+<blockquote id="u_0078b" class="anchor" data-source-id="ch11§2¶29">The psychologist Simon Baron-Cohen, one of the leading scholars in this field, argues that there’s an empathy spectrum and that people tend to fall within one of seven categories on it, depending on their genetic inheritance, the way life has treated them, and how hard they’ve worked to become empathetic.</blockquote>
+<p>He reviews childhood defenses and the “sacred flaw,” then offers empathy practices: contact theory, acting, literature, and emotion-spotting.</p>
+<blockquote id="u_0080" class="anchor" data-source-id="ch11§3¶25">She told Kukla, “I think people rush to help me up because they are so uncomfortable with seeing an adult lying on the floor. But what I really need is for someone to get down on the ground with me.” Sometimes you just need to get down on the floor with someone.</blockquote>
+<blockquote id="u_0079b" class="anchor" data-source-id="ch11§3¶18">The truly creative mind in any field is no more than this: A human creature born abnormally, inhumanely sensitive. To them, a touch is a blow, a sound is a noise, a misfortune is a tragedy, a joy is an ecstasy, a friend is a lover, a lover is a god, and failure is death.</blockquote>
+<blockquote id="u_0080b" class="anchor" data-source-id="ch11§3¶24">The playwright Thornton Wilder once described the compelling presence such a person brings to the world: “Without your wound where would your power be? It is your very remorse that makes your low voice tremble into the hearts of men. The very angels themselves cannot persuade the wretched and blundering children on earth as can one human being broken on the wheels of living. In love’s service only the wounded soldiers can serve.”</blockquote>
+<h2 id="ch-12">12. How Were You Shaped by Your Sufferings?<span class="reading-time">~1 min</span></h2>
+<p>Suffering reshapes a person: Lewis called grief a process, and trauma, Joseph writes, challenges our whole meaning system.</p>
+<blockquote id="u_0082" class="anchor" data-source-id="ch12§1¶7">People who are permanently damaged by trauma seek to <i>assimilate</i> what happened into their existing models. People who grow try to <i>accommodate</i> what happened in order to create <i>new</i> models. The person who assimilates says, I survived brain cancer and I’m going to keep on chugging. The person who accommodates says, No, this changes who I am…I’m a cancer survivor….This changes how I want to spend my days.</blockquote>
+<blockquote id="u_0083" class="anchor" data-source-id="ch12§1¶9">To know a person well, you have to know who they were before they suffered their losses and how they remade their whole outlook after them. If a subtext of this book is that experience is not what happens to you, it’s what you do with what happens to you, then one of the subsequent lessons is that to know someone who has grieved, you have to know how they have processed their loss—did they emerge wiser, kinder, and stronger, or broken, stuck, and scared? To be a good friend and a good person you have to know how to accompany someone through this process.</blockquote>
+<aside class="pullquote">&#8220;experience is not what happens to you, it&#8217;s what you do with what happens to you&#8221;</aside>
+<p>Through Frederick Buechner, who sealed up grief after his father's suicide, Brooks shows the pattern of blow, suspension, reckoning.</p>
+<blockquote id="u_0085" class="anchor" data-source-id="ch12§2¶7">“The trouble with steeling yourself against the harshness of reality is that the same steel that secures your life against being destroyed secures your life also against being opened up and transformed by the holy power that life itself comes from.”</blockquote>
+<p>He offers excavation exercises, then contrasts two models of character.</p>
+<blockquote id="u_0087" class="anchor" data-source-id="ch12§6¶4">In the Illuminator model, character building is not something you can do alone. Morality is a social practice. It is trying to be generous and considerate toward a specific other person, who is enmeshed in a specific context.</blockquote>
+<div class="part-divider" id="part-3"><span class="part-label">Part Three</span><span class="part-title">I See You with Your Strengths</span></div>
+<h2 id="ch-13">13. Personality<span class="reading-time">~1 min</span></h2>
+<p>Brooks dismisses Myers-Briggs as invalid and turns to the research-backed Big Five, urging us to become “sommeliers of people.”</p>
+<blockquote id="u_0088b" class="anchor" data-source-id="ch13§2¶5">Personality traits are dispositional signatures. A personality trait is a habitual way of seeing, interpreting, and reacting to a situation. Every personality trait is a gift—it enables its bearer to serve the community in some valuable way.</blockquote>
+<blockquote id="u_0089" class="anchor" data-source-id="ch13§2¶6">The Big Five traits are extroversion, conscientiousness, neuroticism, agreeableness, and openness.</blockquote>
+<blockquote id="u_0090" class="anchor" data-source-id="ch13§2¶8"><b>EXTROVERSION.</b> We often think of extroverts as people who derive energy from other people. In fact, people who score high in extroversion are highly drawn to all positive emotions. They are excited by any chance to experience pleasure, to seek thrills, to win social approval. They are motivated more by the lure of rewards than the fear of punishment.</blockquote>
+<blockquote id="u_0091" class="anchor" data-source-id="ch13§2¶13"><b>NEUROTICISM.</b> If extroverts are drawn to positive emotions, people who score high in neuroticism respond powerfully to negative emotions. They feel fear, anxiety, shame, disgust, and sadness very quickly and very acutely. They are sensitive to potential threats. They are more likely to worry than to be calm, more highly strung than laid-back, more vulnerable than resilient.</blockquote>
+<blockquote id="u_0092" class="anchor" data-source-id="ch13§2¶18"><b>OPENNESS.</b> If agreeableness describes a person’s relationship to other people, openness describes their relationship to information. People who score high on this trait are powerfully motivated to have new experiences and to try on new ideas. They tend to be innovative more than conventional, imaginative and associative rather than linear, curious more than closed-minded.</blockquote>
+<p>The remaining traits, conscientiousness and agreeableness, each carry gifts and downsides.</p>
+<blockquote id="u_0093b" class="anchor" data-source-id="ch13§4¶2">Personality traits certainly don’t tell you everything you might want to know about a person. You can be a conscientious nurse or a conscientious Nazi. But personality traits are a very important part of a person’s makeup. In a paper called “The Power of Personality,” the psychologist Brent Roberts and his colleagues calculated that personality traits predict certain life outcomes about as well as a person’s IQ or socioeconomic status does.</blockquote>
+<figure class="diagram">
+<svg viewBox="0 0 640 360" role="img" aria-label="The Big Five personality traits with gift and downside" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;color:var(--fg)">
+  <text x="320" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--accent)">THE BIG FIVE &#8212; EVERY TRAIT A GIFT</text>
+  <g font-size="14">
+    <line x1="300" y1="44" x2="300" y2="350" stroke="var(--rule)" stroke-width="1"/>
+    <text x="150" y="60" text-anchor="middle" font-size="12" fill="var(--muted)">TRAIT &amp; GIFT</text>
+    <text x="470" y="60" text-anchor="middle" font-size="12" fill="var(--muted)">DOWNSIDE</text>
+
+    <text x="20" y="98" font-weight="bold" fill="currentColor">Extraversion</text>
+    <text x="20" y="116" font-size="12" fill="var(--muted)">drawn to reward &amp; delight</text>
+    <text x="320" y="104" fill="currentColor">thrill-seeking, approval-hungry</text>
+
+    <text x="20" y="150" font-weight="bold" fill="currentColor">Conscientiousness</text>
+    <text x="20" y="168" font-size="12" fill="var(--muted)">disciplined, reliable</text>
+    <text x="320" y="156" fill="currentColor">rigid, controlling</text>
+
+    <text x="20" y="202" font-weight="bold" fill="currentColor">Neuroticism</text>
+    <text x="20" y="220" font-size="12" fill="var(--muted)">alert to threat &amp; pain</text>
+    <text x="320" y="208" fill="currentColor">anxious, easily overwhelmed</text>
+
+    <text x="20" y="254" font-weight="bold" fill="currentColor">Agreeableness</text>
+    <text x="20" y="272" font-size="12" fill="var(--muted)">warm, cooperative</text>
+    <text x="320" y="260" fill="currentColor">conflict-avoidant, deferential</text>
+
+    <text x="20" y="306" font-weight="bold" fill="currentColor">Openness</text>
+    <text x="20" y="324" font-size="12" fill="var(--muted)">imaginative, curious</text>
+    <text x="320" y="312" fill="currentColor">unfocused, impractical</text>
+  </g>
+</svg>
+<figcaption>Illustrating <a href="#u_0089">ch13§2¶6</a></figcaption>
+</figure>
+<h2 id="ch-14">14. Life Tasks<span class="reading-time">~2 min</span></h2>
+<blockquote id="u_0094" class="anchor" data-source-id="ch14§1¶5">The theme of this chapter is that if you want to understand someone well, you have to understand what life task they are in the middle of and how their mind has evolved to complete this task.</blockquote>
+<p>Drawing on Erikson and Kegan, he sketches life tasks as templates, beginning with the imperial task of agency.</p>
+<blockquote id="u_0096" class="anchor" data-source-id="ch14§2¶2">To establish a sense of agency, people develop what Kegan calls an imperial consciousness. People with this mindset can be quite self-centered. Their own desires and interests are paramount. <i>The world is a message about me, about how I am valued</i>. People can also be quite competitive at this stage. They want to win praise, achieve glory.</blockquote>
+<blockquote id="u_0097" class="anchor" data-source-id="ch14§3¶1">For many of us there’s a moment in life, often in adolescence, when the life task is to establish your social identity. Friendships and social status become the central obsessions in our lives. At this point, Erikson notes, the person will either achieve intimacy or suffer isolation.</blockquote>
+<blockquote id="u_0098" class="anchor" data-source-id="ch14§4¶3">At a certain point in life, we have to find the career that we will devote ourselves to, the way we will make a difference in the world—whether it’s a job or parenting or something else entirely. While confronting this task, Erikson argues, a person must achieve career consolidation or experience drift.</blockquote>
+<p>Through Caro's young Lyndon Johnson, he shows the mastery drive of career consolidation, which eventually seals a person up.</p>
+<blockquote id="u_0100" class="anchor" data-source-id="ch14§5¶10">During the generative life task, people try to find some way to be of service to the world. One either achieves generativity, Erikson argues, or one falls into stagnation. Vaillant defines generativity as “the capacity to foster and guide the next generations.”</blockquote>
+<blockquote id="u_0101" class="anchor" data-source-id="ch14§6¶1">The final task Erik Erikson wrote about was the struggle to achieve integrity or endure despair. Integrity is the ability to come to terms with your life in the face of death. It’s a feeling of peace that you have used and are using your time well. You have a sense of accomplishment and acceptance. Despair, by contrast, is marked by a sense of regret.</blockquote>
+<figure class="diagram">
+<svg viewBox="0 0 640 200" role="img" aria-label="The life tasks as a developmental sequence" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;color:var(--fg)">
+  <text x="320" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--accent)">THE LIFE TASKS, IN SEQUENCE</text>
+  <line x1="40" y1="100" x2="600" y2="100" stroke="currentColor" stroke-width="1.5"/>
+  <defs>
+    <marker id="arr14" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+  <line x1="595" y1="100" x2="600" y2="100" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr14)"/>
+  <g font-size="12" fill="currentColor" text-anchor="middle">
+    <circle cx="64" cy="100" r="6" fill="var(--accent)"/>
+    <text x="64" y="80">Imperial</text>
+    <text x="64" y="132" fill="var(--muted)">agency</text>
+    <circle cx="196" cy="100" r="6" fill="currentColor"/>
+    <text x="196" y="80">Interpersonal</text>
+    <text x="196" y="132" fill="var(--muted)">intimacy</text>
+    <circle cx="330" cy="100" r="6" fill="currentColor"/>
+    <text x="330" y="74">Career</text>
+    <text x="330" y="90">consolidation</text>
+    <text x="330" y="132" fill="var(--muted)">mastery</text>
+    <circle cx="464" cy="100" r="6" fill="currentColor"/>
+    <text x="464" y="80">Generative</text>
+    <text x="464" y="132" fill="var(--muted)">service</text>
+    <circle cx="576" cy="100" r="6" fill="var(--accent)"/>
+    <text x="576" y="80">Integrity</text>
+    <text x="576" y="132" fill="var(--muted)">acceptance</text>
+  </g>
+</svg>
+<figcaption>Illustrating <a href="#u_0094">ch14§1¶5</a></figcaption>
+</figure>
+<blockquote id="u_0102" class="anchor" data-source-id="ch14§7¶1">The psychologist Daniel Gilbert has a famous saying about this: “Human beings are works in progress that mistakenly think they are finished.” We are also often blind to the fact that a change in life circumstance often requires a renovation of our entire consciousness.</blockquote>
+<h2 id="ch-15">15. Life Stories<span class="reading-time">~2 min</span></h2>
+<p>Few of us get to tell our stories; Epley's commuter experiments showed people enjoy conversations more than they predict.</p>
+<blockquote id="u_0104" class="anchor" data-source-id="ch15§2¶4">The psychologist Jerome Bruner distinguished between two different modes of thinking, which he called the paradigmatic mode and the narrative mode. The paradigmatic mode is analytical. It’s making an argument.</blockquote>
+<blockquote id="u_0105" class="anchor" data-source-id="ch15§2¶7">I’m no longer content to ask, “What do you think about X?” Instead, I ask, “How did you come to believe X?” This is a framing that invites people to tell a story about what events led them to think the way they do. Similarly, I don’t ask people to tell me about their values; I say, “Tell me about the person who shaped your values most.” That prompts a story.</blockquote>
+<figure class="diagram">
+<svg viewBox="0 0 640 210" role="img" aria-label="Paradigmatic versus narrative modes of thinking" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;color:var(--fg)">
+  <rect x="8" y="8" width="300" height="194" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <rect x="332" y="8" width="300" height="194" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+  <text x="158" y="38" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor">PARADIGMATIC</text>
+  <text x="482" y="38" text-anchor="middle" font-size="16" font-weight="bold" fill="var(--accent)">NARRATIVE</text>
+  <line x1="28" y1="52" x2="288" y2="52" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+  <line x1="352" y1="52" x2="612" y2="52" stroke="var(--accent)" stroke-width="0.75" opacity="0.5"/>
+  <g font-size="14" fill="currentColor">
+    <text x="28" y="84">Analytical</text>
+    <text x="28" y="116">Makes an argument</text>
+    <text x="28" y="148">Asks: &#8220;What do you</text>
+    <text x="28" y="166">think about X?&#8221;</text>
+    <text x="352" y="84">Story-shaped</text>
+    <text x="352" y="116">Gives events meaning</text>
+    <text x="352" y="148">Asks: &#8220;How did you</text>
+    <text x="352" y="166">come to believe X?&#8221;</text>
+  </g>
+</svg>
+<figcaption>Illustrating <a href="#u_0104">ch15§2¶4</a></figcaption>
+</figure>
+<blockquote id="u_0106" class="anchor" data-source-id="ch15§2¶9">You can’t know who you are unless you know how to tell your story. You can’t have a stable identity unless you take the inchoate events of your life and give your life meaning by turning the events into a coherent story. You can know what to do next only if you know what story you are a part of.</blockquote>
+<aside class="pullquote">&#8220;You can&#8217;t know who you are unless you know how to tell your story.&#8221;</aside>
+<p>As people tell their stories, he listens for tone of voice, the imago they inhabit, the plot, and reliability.</p>
+<blockquote id="u_0107b" class="anchor" data-source-id="ch15§3¶3">That inner voice is one of the greatest miracles in all nature. Life itself can often seem like a blizzard of random events: illnesses, accidents, betrayals, strokes of good and bad luck. Yet inside each person there is this little voice trying to make sense of it all. This little voice is trying to take the seemingly scattershot events of a life and organize them into a story that has coherence, meaning, and purpose.</blockquote>
+<blockquote id="u_0108" class="anchor" data-source-id="ch15§4¶3">None of us can have an identity unless it is affirmed and acknowledged by others. So as you are telling me your story, you’re seeing the ways I affirm you and the ways I do not. You’re sensing the parts of the story that work and those that do not. If you feed me empty slogans about yourself, I withdraw. But if you stand more transparently before me, showing both your warts and your gifts, you feel my respectful and friendly gaze upon you, and that brings forth growth.</blockquote>
+<h2 id="ch-16">16. How Do Your Ancestors Show Up in Your Life?<span class="reading-time">~1 min</span></h2>
+<p>Through Zora Neale Hurston, forged in all-Black Eatonville, Brooks shows a person is seen rightly only within their ancestors' line.</p>
+<blockquote id="u_0110" class="anchor" data-source-id="ch16§2¶7">But Hurston, through her example, shows us what the true task of opening your eyes to others involves: How do I see a person as part of their group? And how, at the same time, do I see them as a never-to-be-repeated unique individual, bringing their own unique mind and viewpoint?</blockquote>
+<blockquote id="u_0111" class="anchor" data-source-id="ch16§2¶10">I’ve found it helpful to start with the idea that each of us exists in a state of givenness. Each of us can say, “I am the receiver of gifts. I am part of a long procession of humanity and I have received much from those who came before.” But people are not passive vessels into which culture is poured; each person is a cultural co-creator, embracing some bits of their culture, rejecting others—taking the stories of the past and transforming them with their own lives. To see a person well, you have to see them as culture inheritors and as culture creators.</blockquote>
+<p>He marshals evidence that culture shapes perception: diplomats' parking tickets, Henrich's WEIRD societies, and Fischer's British folkways.</p>
+<blockquote id="u_0113" class="anchor" data-source-id="ch16§5¶1">So when I see you, I want to see back into the deep sources of your self. That means asking certain key questions: Where’s home? What’s the place you spiritually never leave? How do the dead show up in your life? How do I see you embracing or rejecting your culture? How do I see you creating and contributing to your culture? How do I see you transmitting your culture? How do I see you rebelling against your culture? How do I see you caught between cultures?</blockquote>
+<blockquote id="u_0113b" class="anchor" data-source-id="ch16§5¶2">“You live through time, that little piece of time that is yours,” the novelist Robert Penn Warren wrote, “but that piece of time is not only your own life, it is the summing-up of all the other lives that are simultaneous with yours….What you are is an expression of History.”</blockquote>
+<h2 id="ch-17">17. What Is Wisdom?<span class="reading-time">~2 min</span></h2>
+<blockquote id="u_0114" class="anchor" data-source-id="ch17§1¶6">Wisdom isn’t knowing about physics or geography. Wisdom is knowing about people. Wisdom is the ability to see deeply into who people are and how they should move in the complex situations of life. That’s the great gift Illuminators share with those around them.</blockquote>
+<blockquote id="u_0115" class="anchor" data-source-id="ch17§2¶4">I’ve come to believe that wise people don’t tell us what to do; they start by witnessing our story. They take the anecdotes, rationalizations, and episodes we tell, and see us in a noble struggle.</blockquote>
+<p>Brooks closes with four cases of deep seeing: Kidder and Deo, Gottlieb and John, <i>Good Will Hunting</i>, and Schulz's father.</p>
+<blockquote id="u_0116b" class="anchor" data-source-id="ch17§5¶10">The wise person is there not to be walked over but to stand up for the actual truth, to call the other person out when need be, if they are hiding from some hard reality. “Receptivity without confrontation leads to a bland neutrality that serves nobody,” the theologian Henri Nouwen wrote. “Confrontation without receptivity leads to an oppressive aggression which hurts everybody.”</blockquote>
+<blockquote id="u_0116bb" class="anchor" data-source-id="ch17§6¶3">…wisdom is not mostly a trait possessed by an individual. Wisdom is a social skill practiced within a relationship or a system of relationships. Wisdom is practiced when people come together to form what Parker Palmer called a “community of truth.”</blockquote>
+<blockquote id="u_0116c" class="anchor" data-source-id="ch17§6¶7">When we are in a community of truth, we’re trying on each other’s perspectives. We’re taking journeys into each other’s minds. It gets you out of the egotistical mindset—<i>I am normal, what I see is objective, everyone else is odd</i>—and instead gives you the opportunity to take a journey with another person’s eyes.</blockquote>
+<blockquote id="u_0117" class="anchor" data-source-id="ch17§5¶7">This is what our friends do for us. They not only delight us and call forth our best; friends also hold up a mirror so we can see ourselves in ways that would not otherwise be accessible. When we see ourselves that way, we have the opportunity to improve, to become our fuller selves.</blockquote>
+<blockquote id="u_0118" class="anchor" data-source-id="ch17§7¶10">She’s learned, finally, that it’s not only the epic acts of heroism and altruism that define a person’s character; it’s the everyday acts of encounter. It is the simple capacity to make another person feel seen and understood—that hard but essential skill that makes a person a treasured co-worker, citizen, lover, spouse, and friend.</blockquote>
+<aside class="pullquote">&#8220;It is the simple capacity to make another person feel seen and understood.&#8221;</aside>
+
+      <footer>
+        Coverage: 96.0% of source &middot; Bridge ratio: 0.0998 &middot; Build: 20260619-001-How-to-Know-a-Person<br>
+        119 units rendered in order (85 anchors + 34 bridges) &middot; 8 Channel-A inline-SVG diagrams &middot; 9 pull-quotes
+      </footer>
+    </article>
+  </div>
+
+  <script>
+    (function() {
+      var bar = document.getElementById('progress');
+      var pct = document.getElementById('progress-text');
+      function update() {
+        var h = document.documentElement;
+        var max = h.scrollHeight - h.clientHeight;
+        var p = max > 0 ? (h.scrollTop / max) : 0;
+        bar.style.width = (p * 100).toFixed(1) + '%';
+        if (pct) pct.textContent = Math.round(p * 100) + '% read';
+      }
+      document.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    })();
+
+    (function() {
+      var heads = document.querySelectorAll('article h2');
+      var links = document.querySelectorAll('#toc a');
+      if (!heads.length || !links.length) return;
+      var byId = {};
+      links.forEach(function(a) { byId[a.getAttribute('href').slice(1)] = a; });
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            links.forEach(function(a) { a.classList.remove('current'); });
+            var link = byId[e.target.id];
+            if (link) link.classList.add('current');
+          }
+        });
+      }, { rootMargin: '-30% 0% -65% 0%' });
+      heads.forEach(function(h) { io.observe(h); });
+    })();
+
+    (function() {
+      var timer;
+      document.addEventListener('touchstart', function(e) {
+        var x = e.target.closest('.xref');
+        if (!x) return;
+        timer = setTimeout(function() { x.focus(); }, 400);
+      });
+      document.addEventListener('touchend', function() { clearTimeout(timer); });
+    })();
+  </script>
+</body>
+</html>

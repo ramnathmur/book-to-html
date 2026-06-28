@@ -1,0 +1,2836 @@
+{
+  "envelope": "book-to-html-handoff/1.0",
+  "book_title": "The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness",
+  "build_id": "pom-2026-06-01-003",
+  "build_date": "2026-06-01",
+  "source_words": 51122,
+  "output_words": 36354,
+  "source_coverage_pct": 0.5562,
+  "anchors": 836,
+  "bridges": 0,
+  "bridge_words_pct": 0.0,
+  "per_chapter_contribution": [
+    {
+      "ch": 1,
+      "source_pct": 0.0383,
+      "output_pct": 0.04,
+      "ratio": 1.044
+    },
+    {
+      "ch": 2,
+      "source_pct": 0.0565,
+      "output_pct": 0.0612,
+      "ratio": 1.083
+    },
+    {
+      "ch": 3,
+      "source_pct": 0.0596,
+      "output_pct": 0.0673,
+      "ratio": 1.13
+    },
+    {
+      "ch": 4,
+      "source_pct": 0.0386,
+      "output_pct": 0.0389,
+      "ratio": 1.009
+    },
+    {
+      "ch": 5,
+      "source_pct": 0.0359,
+      "output_pct": 0.036,
+      "ratio": 1.002
+    },
+    {
+      "ch": 6,
+      "source_pct": 0.0523,
+      "output_pct": 0.0531,
+      "ratio": 1.015
+    },
+    {
+      "ch": 7,
+      "source_pct": 0.0543,
+      "output_pct": 0.0577,
+      "ratio": 1.062
+    },
+    {
+      "ch": 8,
+      "source_pct": 0.0402,
+      "output_pct": 0.0366,
+      "ratio": 0.91
+    },
+    {
+      "ch": 9,
+      "source_pct": 0.009,
+      "output_pct": 0.0101,
+      "ratio": 1.124
+    },
+    {
+      "ch": 10,
+      "source_pct": 0.0234,
+      "output_pct": 0.0286,
+      "ratio": 1.224
+    },
+    {
+      "ch": 11,
+      "source_pct": 0.0371,
+      "output_pct": 0.0278,
+      "ratio": 0.749
+    },
+    {
+      "ch": 12,
+      "source_pct": 0.0395,
+      "output_pct": 0.0319,
+      "ratio": 0.806
+    },
+    {
+      "ch": 13,
+      "source_pct": 0.0567,
+      "output_pct": 0.0577,
+      "ratio": 1.017
+    },
+    {
+      "ch": 14,
+      "source_pct": 0.0553,
+      "output_pct": 0.0708,
+      "ratio": 1.281
+    },
+    {
+      "ch": 15,
+      "source_pct": 0.0311,
+      "output_pct": 0.0286,
+      "ratio": 0.919
+    },
+    {
+      "ch": 16,
+      "source_pct": 0.0367,
+      "output_pct": 0.0336,
+      "ratio": 0.916
+    },
+    {
+      "ch": 17,
+      "source_pct": 0.0413,
+      "output_pct": 0.0358,
+      "ratio": 0.866
+    },
+    {
+      "ch": 18,
+      "source_pct": 0.0603,
+      "output_pct": 0.0542,
+      "ratio": 0.9
+    },
+    {
+      "ch": 19,
+      "source_pct": 0.0649,
+      "output_pct": 0.0504,
+      "ratio": 0.776
+    },
+    {
+      "ch": 20,
+      "source_pct": 0.03,
+      "output_pct": 0.0317,
+      "ratio": 1.056
+    },
+    {
+      "ch": 21,
+      "source_pct": 0.0467,
+      "output_pct": 0.049,
+      "ratio": 1.05
+    },
+    {
+      "ch": 22,
+      "source_pct": 0.0922,
+      "output_pct": 0.099,
+      "ratio": 1.074
+    }
+  ],
+  "dropped_sections": [
+    {
+      "source_id_range": "ch1§1¶2",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶5",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶18",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶37",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶41",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶42",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶43",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶44",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶45",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶47",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶52",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶53",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶59",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶63",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch1§1¶65",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶1",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶6",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶18",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶25",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶37",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶43",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶46",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶47",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶49",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch2§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶52",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch2§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶56",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶59",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶69",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶70",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch2§1¶71",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶3",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶10",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶14",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶16",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶19",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶28",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶36",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶38",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶39",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch3§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶48",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶49",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶53",
+      "reason": "score=2 (named_entities,repeat_example)"
+    },
+    {
+      "source_id_range": "ch3§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶55",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶58",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶60",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶63",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶67",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶68",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶69",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶70",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶71",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶73",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶74",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶75",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶76",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶78",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶82",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶84",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch3§1¶87",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶5",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶6",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶8",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶19",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶23",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch4§1¶26",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶31",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶37",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶41",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶43",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶46",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶47",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶48",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶49",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶52",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶55",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶56",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶57",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶58",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶59",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶60",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch4§1¶61",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶1",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶5",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶8",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch5§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶12",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch5§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶14",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch5§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶25",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶26",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶27",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶28",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶53",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch5§1¶55",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶1",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶2",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶3",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶12",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶27",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶29",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶31",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶32",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶38",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶41",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶44",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶49",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶52",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶63",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶66",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶68",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶70",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶76",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch6§1¶78",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶79",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶80",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶81",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶82",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶83",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶84",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶85",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶86",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶87",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶88",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶89",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶90",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶91",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶92",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶93",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶94",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶96",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶97",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch6§1¶98",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶10",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶12",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶26",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶27",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶28",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶32",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶44",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶48",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶49",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶52",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶55",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶58",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶59",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶60",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶61",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶64",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶65",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶66",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶67",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶69",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶70",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶71",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶72",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶73",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶75",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶76",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶83",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶92",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch7§1¶93",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶10",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶17",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch8§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶26",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶27",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶32",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶36",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶37",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶38",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶41",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch8§1¶43",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶45",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch8§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch9§1¶3",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch9§1¶8",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch9§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch9§1¶10",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch9§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch9§1¶14",
+      "reason": "score=1 (named_entities,recap)"
+    },
+    {
+      "source_id_range": "ch10§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch10§1¶16",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch10§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch10§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch10§1¶28",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶2",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶3",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶5",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶17",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶19",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶20",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶25",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶26",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶27",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶28",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶29",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶32",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶36",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶37",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶38",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶42",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶44",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶45",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶55",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶57",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶58",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶60",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶64",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶65",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶66",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch11§1¶67",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch12§1¶1",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶2",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶5",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶6",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶8",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶13",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch12§1¶14",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶17",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶19",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶25",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶26",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶27",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶31",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶36",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶38",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶41",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶44",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch12§1¶46",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch12§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶2",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶3",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶6",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶8",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶12",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶16",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶19",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶20",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶25",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶28",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶32",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶40",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch13§1¶41",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch13§1¶44",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶49",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶55",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶57",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶58",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶64",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶65",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶70",
+      "reason": "score=1 (named_entities,recap)"
+    },
+    {
+      "source_id_range": "ch13§1¶73",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶75",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶76",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch13§1¶82",
+      "reason": "score=2 (instruction,recap)"
+    },
+    {
+      "source_id_range": "ch14§1¶3",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶5",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶6",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶29",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶46",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶47",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶48",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶49",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶53",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶55",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶57",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶60",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch14§1¶61",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶1",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶3",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶5",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶6",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶8",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶10",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶12",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶14",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶17",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶19",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶23",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch15§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶28",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶31",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch15§1¶37",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶1",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶2",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶10",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶14",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶16",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶28",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶29",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch16§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶36",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch16§1¶37",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶38",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶41",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶42",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch16§1¶45",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch16§1¶46",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶2",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶3",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶5",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶6",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶10",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶12",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶14",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶17",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶27",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶29",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶32",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶42",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶43",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶47",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch17§1¶49",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶53",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶55",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch17§1¶56",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch17§1¶57",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶1",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶6",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶10",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶16",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶17",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch18§1¶18",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶20",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶25",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶29",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶32",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶36",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶41",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶42",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶43",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶44",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶45",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶46",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶51",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶53",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶54",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶55",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶56",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶59",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶60",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch18§1¶64",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶65",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶67",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶69",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶71",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶74",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶77",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶78",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶81",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶83",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶84",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶85",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶86",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶89",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶90",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶91",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶92",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶93",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶94",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch18§1¶95",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶5",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶7",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶8",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶9",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶16",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶17",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶26",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶29",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶35",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶36",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶38",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶43",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶46",
+      "reason": "score=3 (padding)"
+    },
+    {
+      "source_id_range": "ch19§1¶48",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶52",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶59",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶63",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶64",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶65",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶66",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶68",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶69",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶71",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶72",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶73",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶74",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶75",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶77",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch19§1¶78",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶79",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶80",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶81",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶82",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch19§1¶83",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶85",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶86",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶89",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶93",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶94",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶96",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶97",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶98",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch19§1¶99",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶100",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶102",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶103",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch19§1¶104",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶1",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶3",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶6",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶8",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶13",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶14",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶16",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶17",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶19",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶20",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶23",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶26",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶38",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch20§1¶42",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶2",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶4",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶7",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch21§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶12",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶17",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch21§1¶19",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶22",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶24",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶25",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶27",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶32",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶34",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶36",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶39",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch21§1¶42",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶2",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶8",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶11",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶12",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶14",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶15",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶16",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶17",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶19",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶21",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶28",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶30",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶32",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶33",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶37",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶40",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶41",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶42",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶44",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶45",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶46",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶49",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch22§1¶50",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶56",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶61",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶62",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶65",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶69",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶78",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶79",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶82",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch22§1¶83",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶84",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶85",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶86",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶87",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶89",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶90",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶93",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶98",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶108",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶109",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶112",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶113",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶114",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶118",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶121",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶123",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶127",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶130",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶133",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶139",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶141",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶142",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶143",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶144",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶145",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶149",
+      "reason": "score=4 (named_entities,padding)"
+    },
+    {
+      "source_id_range": "ch22§1¶153",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶154",
+      "reason": "score=4 (neutral)"
+    },
+    {
+      "source_id_range": "ch22§1¶156",
+      "reason": "score=4 (neutral)"
+    }
+  ],
+  "rework_history": [
+    {
+      "iter": 1,
+      "reason": "bridge_ratio_0.1036_over_cap",
+      "bridges_trimmed": 251,
+      "words_cut": 251
+    },
+    {
+      "iter": 2,
+      "reason": "bridges_were_identical_boilerplate_dropped_entirely",
+      "bridges_dropped": 251,
+      "new_total_words": 15199
+    },
+    {
+      "iter": 3,
+      "reason": "books_finished_rate_3_due_to_missing_narrative_setup",
+      "new_threshold": 5,
+      "anchors_added_for_narrative_setup": 4
+    }
+  ]
+}

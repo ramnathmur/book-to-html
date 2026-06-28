@@ -1,0 +1,202 @@
+{
+  "trace_version": "book-to-html-trace/1.1",
+  "build_id": "20260615-001-HBR-10-Must-Reads-Soft-Skills",
+  "book_metadata": {
+    "title": "HBR's 10 Must Reads on Strengthening Your Soft Skills",
+    "author": "Harvard Business Review (anthology)",
+    "total_words": 36945,
+    "chapters": 13
+  },
+  "intake": {
+    "book_kind": "mixed",
+    "depth": "standard",
+    "graphic_intensity": "standard",
+    "illustration_channel_pref": "A_only",
+    "style_anchor_pref": null,
+    "renderer_choice": "native"
+  },
+  "renderer": "native",
+  "htmler_register": null,
+  "started_at": "2026-06-15T16:45:00+05:30",
+  "ended_at": "2026-06-15T19:35:00+05:30",
+  "outcome": "delivered",
+  "approvals": {
+    "permission_popups": 4,
+    "interview_questions": 2
+  },
+  "spans": [
+    {
+      "span_id": "s_001",
+      "persona": "ingestor",
+      "model": "none",
+      "iteration": 1,
+      "started_at": "2026-06-15T16:45:00+05:30",
+      "ended_at": "2026-06-15T18:30:00+05:30",
+      "input_hash": "sha256:epub-source",
+      "output_hash": "sha256:corpus-193-paragraphs",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 105000,
+        "persona_specific": {
+          "corpus_paragraphs": 193,
+          "chapters_detected": 13,
+          "parse_errors": 0,
+          "note": "EPUB extracted via bash unzip (ingest-preflight.ps1 failed on apostrophe in filename). Text extracted deterministically via Python. Classifier pass done by Orchestrator from paragraph inventory."
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_002"
+    },
+    {
+      "span_id": "s_002",
+      "persona": "editor",
+      "model": "none",
+      "iteration": 1,
+      "started_at": "2026-06-15T18:30:00+05:30",
+      "ended_at": "2026-06-15T19:00:00+05:30",
+      "input_hash": "sha256:corpus-193-paragraphs",
+      "output_hash": "sha256:editor-out-111-retained",
+      "metrics": {
+        "input_tokens": 180000,
+        "output_tokens": 12000,
+        "wall_ms": 1800000,
+        "persona_specific": {
+          "bridge_ratio": 0.0088,
+          "retention_mass": 0.727,
+          "output_words": 26854,
+          "units_emitted": 111,
+          "dropped_sections_count": 82,
+          "note": "Opus agents timed out twice on full corpus. Editorial pass performed by Orchestrator directly using deterministic Python selection, informed by paragraph inventory review. 82 drops: 13 title blocks, 13 copyright notices, 26 Idea-in-Brief/summary boxes, 30 secondary examples/fragments."
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_003"
+    },
+    {
+      "span_id": "s_003",
+      "persona": "proofreader",
+      "model": "claude-sonnet-4-6",
+      "iteration": 1,
+      "started_at": "2026-06-15T19:00:00+05:30",
+      "ended_at": "2026-06-15T19:05:00+05:30",
+      "input_hash": "sha256:editor-out-111-retained",
+      "output_hash": "sha256:proofread-pass",
+      "metrics": {
+        "input_tokens": 101065,
+        "output_tokens": 3200,
+        "wall_ms": 89374,
+        "persona_specific": {
+          "violations_count": 1,
+          "anchor_pass_pct": 1.0,
+          "bridge_ratio": 0.0088,
+          "chapter_coverage_min": 0.787,
+          "chapter_coverage_max": 1.184,
+          "note": "1 violation: ch02 bridge 'three distinct domains' not stated in adjacent retained paragraphs. Fixed by Orchestrator before proceeding. Final gate: PASS."
+        }
+      },
+      "gate_status": "pass",
+      "escalation": null,
+      "next_span_id": "s_004"
+    },
+    {
+      "span_id": "s_004",
+      "persona": "designer",
+      "model": "none",
+      "iteration": 1,
+      "started_at": "2026-06-15T19:05:00+05:30",
+      "ended_at": "2026-06-15T19:15:00+05:30",
+      "input_hash": "sha256:editor-out-111-retained",
+      "output_hash": "sha256:html-191kb",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 600000,
+        "persona_specific": {
+          "navigation_shape": "linear-with-article-anchors",
+          "channel_a_count": 13,
+          "channel_b_count": 0,
+          "b_fallbacks": 0,
+          "note": "Designer and Assembler merged — Orchestrator built HTML directly using Python assembler from reading-ux-template. 13 Mermaid Channel A diagrams, one per article. Pull-quotes at ch02, ch09, ch11, ch13."
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_005"
+    },
+    {
+      "span_id": "s_005",
+      "persona": "assembler",
+      "model": "none",
+      "iteration": 1,
+      "started_at": "2026-06-15T19:15:00+05:30",
+      "ended_at": "2026-06-15T19:16:00+05:30",
+      "input_hash": "sha256:html-skeleton",
+      "output_hash": "sha256:reader-v1-html",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 8000,
+        "persona_specific": {
+          "html_bytes": 195584,
+          "units_merged": 111,
+          "images_embedded": 0
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_006"
+    },
+    {
+      "span_id": "s_006",
+      "persona": "reader",
+      "model": "claude-opus-4-6",
+      "iteration": 1,
+      "started_at": "2026-06-15T19:20:00+05:30",
+      "ended_at": "2026-06-15T19:32:00+05:30",
+      "input_hash": "sha256:reader-v1-html",
+      "output_hash": "sha256:reader-verdict-pass",
+      "metrics": {
+        "input_tokens": 195000,
+        "output_tokens": 2800,
+        "wall_ms": 126664,
+        "persona_specific": {
+          "scores_visual_pleasure": 4,
+          "scores_navigation": 5,
+          "scores_comprehension": 5,
+          "scores_illustration": 4,
+          "scores_books_finished_rate": 4,
+          "would_skip_original": true
+        }
+      },
+      "gate_status": "pass",
+      "escalation": null,
+      "next_span_id": null
+    },
+    {
+      "span_id": "s_007",
+      "persona": "orchestrator",
+      "model": "claude-sonnet-4-6",
+      "iteration": 1,
+      "started_at": "2026-06-15T16:45:00+05:30",
+      "ended_at": "2026-06-15T19:35:00+05:30",
+      "input_hash": null,
+      "output_hash": null,
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 10200000,
+        "persona_specific": {
+          "total_iterations": 1,
+          "rework_target_history": [],
+          "note": "Orchestrator (Claude Sonnet 4.6 in main loop) managed pipeline. Two Opus editor agents timed out on full corpus; editorial pass moved to deterministic Python + Orchestrator judgment. Proofreader (Sonnet) found 1 bridge violation, fixed inline. Designer+Assembler merged into Python script. Reader (Opus) passed on iteration 1."
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": null
+    }
+  ]
+}

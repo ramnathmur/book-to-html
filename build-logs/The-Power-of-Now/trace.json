@@ -1,0 +1,72 @@
+{
+  "trace_version": "book-to-html-trace/1.1",
+  "build_id": "20260602-001-the-power-of-now",
+  "book_metadata": {"title": "The Power of Now", "author": "Eckhart Tolle", "total_words": 62820},
+  "intake": {
+    "book_kind_provisional": "self_help",
+    "book_kind": "self_help",
+    "detected_category": "self_help",
+    "detected_confidence": 0.9,
+    "depth": "standard",
+    "graphic_intensity": "standard",
+    "illustration_channel_pref": "A_and_B",
+    "style_anchor_pref": "muted_watercolor",
+    "book_seed": 1660236989
+  },
+  "renderer": "native",
+  "htmler_register": null,
+  "started_at": "2026-06-02T11:16:28Z",
+  "ended_at": "2026-06-02T16:14:56Z",
+  "outcome": "delivered",
+  "approvals": {"permission_popups": 0, "interview_questions": 7},
+  "spans": [
+    {
+      "span_id": "s_001", "persona": "ingestor", "model": "none", "iteration": 1,
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": null,
+        "persona_specific": {"corpus_paragraphs": 799, "chapters_detected": 10, "parse_errors": 0, "ad_chapters_excluded": 10}},
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_002"
+    },
+    {
+      "span_id": "s_002", "persona": "editor", "model": "claude-opus-4-8", "iteration": 1,
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 896929, "subagent_tokens_total": 211455,
+        "persona_specific": {"bridge_ratio": 0.0079, "retention_mass": 1738, "output_words": 16785, "units_emitted": 153, "dropped_sections_count": 13, "multiplier_used": 9.66}},
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_003"
+    },
+    {
+      "span_id": "s_003", "persona": "proofreader", "model": "claude-sonnet-4-6", "iteration": 1,
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 379430, "subagent_tokens_total": 116956,
+        "persona_specific": {"violations_count": 0, "anchor_pass_pct": 1.0, "bridge_ratio": 0.0079, "chapter_coverage_min": 0.78, "chapter_coverage_max": 1.26, "anchors_checked": 72}},
+      "gate_status": "pass", "escalation": null, "next_span_id": "s_004"
+    },
+    {
+      "span_id": "s_004", "persona": "designer", "model": "claude-opus-4-8", "iteration": 1,
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 9833664, "subagent_tokens_total": 94195,
+        "persona_specific": {"navigation_shape": "linear", "channel_a_count": 7, "channel_b_count": 7, "b_fallbacks": 0, "pullquotes": 8, "sidenotes": 5}},
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_005"
+    },
+    {
+      "span_id": "s_005", "persona": "assembler", "model": "none", "iteration": 1,
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": null,
+        "persona_specific": {"html_bytes": 798461, "units_merged": 153, "images_embedded": 7, "image_fetch_fallbacks": 0, "invariant_doctype_html_body_article": "1/1/1/1"}},
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_006"
+    },
+    {
+      "span_id": "s_006", "persona": "question_generator", "model": "claude-sonnet-4-6", "iteration": 1,
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 95288, "subagent_tokens_total": 75745,
+        "persona_specific": {"questions_generated": 10, "practice_targeted_questions": 5}},
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_007"
+    },
+    {
+      "span_id": "s_007", "persona": "reader", "model": "claude-opus-4-8", "iteration": 1,
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 385829, "subagent_tokens_total": 84728,
+        "persona_specific": {"scores_visual_pleasure": 4, "scores_navigation": 4, "scores_comprehension": 5, "scores_illustration": 4, "scores_books_finished_rate": 4, "would_skip_original": true, "comprehension_raw": 1.0}},
+      "gate_status": "pass", "escalation": null, "next_span_id": "s_008"
+    },
+    {
+      "span_id": "s_008", "persona": "orchestrator", "model": "claude-opus-4-8", "iteration": 1,
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": null,
+        "persona_specific": {"total_iterations": 1, "rework_target_history": []}},
+      "gate_status": "pass", "escalation": null, "next_span_id": null
+    }
+  ]
+}

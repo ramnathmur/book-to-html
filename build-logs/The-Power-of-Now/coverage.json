@@ -1,0 +1,79 @@
+{
+  "coverage_version": "book-to-html-coverage/1.1",
+  "build_id": "20260602-001-the-power-of-now",
+  "book_metadata": {
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "source_words": 62820,
+    "output_words": 16785,
+    "book_kind": "self_help",
+    "depth": "standard"
+  },
+  "editor": {
+    "source_coverage_pct": 0.2651,
+    "retention_mass": 1738,
+    "multiplier_used": 9.66,
+    "multiplier_band": "x8-10 (self_help)",
+    "bridge_word_ratio": 0.0079,
+    "n_anchor_units": 143,
+    "n_bridge_units": 10,
+    "quote_table_size": 8,
+    "per_chapter_contribution": [
+      {"ch": "front:foreword", "source_words": 1414, "output_words": 47, "band_ratio": 0.124, "note": "intentionally under-band: ~90% non-Tolle paradigm-survey by foreword author; kept the single thesis line"},
+      {"ch": "front:acknowledgments", "source_words": 215, "output_words": 0, "band_ratio": 0.0, "note": "dropped: name-thanks, no teaching"},
+      {"ch": "front:origin", "source_words": 986, "output_words": 201, "band_ratio": 0.763},
+      {"ch": "front:truth-within", "source_words": 1288, "output_words": 312, "band_ratio": 0.907},
+      {"ch": "ch1", "source_words": 5958, "output_words": 1746, "band_ratio": 1.097},
+      {"ch": "ch2", "source_words": 3977, "output_words": 1339, "band_ratio": 1.26},
+      {"ch": "ch3", "source_words": 6002, "output_words": 1555, "band_ratio": 0.97},
+      {"ch": "ch4", "source_words": 5997, "output_words": 1628, "band_ratio": 1.016},
+      {"ch": "ch5", "source_words": 3714, "output_words": 1102, "band_ratio": 1.11},
+      {"ch": "ch6", "source_words": 5591, "output_words": 1702, "band_ratio": 1.139},
+      {"ch": "ch7", "source_words": 4135, "output_words": 1260, "band_ratio": 1.14},
+      {"ch": "ch8", "source_words": 8752, "output_words": 2141, "band_ratio": 0.916},
+      {"ch": "ch9", "source_words": 7754, "output_words": 1616, "band_ratio": 0.78},
+      {"ch": "ch10", "source_words": 7037, "output_words": 2003, "band_ratio": 1.065},
+      {"ch": "back:end", "source_words": 0, "output_words": 0, "band_ratio": null, "note": "title-only page"}
+    ],
+    "per_chapter_band_target": "0.70-1.30 (self_help)",
+    "all_main_chapters_in_band": true,
+    "dropped_sections": [
+      {"source_id_range": "front:acknowledgments¶1-¶6", "section_heading": "ACKNOWLEDGMENTS", "reason": "name-thanks scaffolding, no teaching"},
+      {"source_id_range": "ch2§3¶1-¶5", "section_heading": "EGO IDENTIFICATION WITH THE PAIN-BODY", "reason": "restated material (pain-body already established)"},
+      {"source_id_range": "ch3§1¶1-¶5", "section_heading": "DON'T SEEK YOUR SELF IN THE MIND", "reason": "restated material"},
+      {"source_id_range": "ch3§7¶1-¶5", "section_heading": "THE INSANITY OF PSYCHOLOGICAL TIME", "reason": "restated material"},
+      {"source_id_range": "ch3§11¶1-¶4", "section_heading": "A QUANTUM LEAP IN THE EVOLUTION OF CONSCIOUSNESS", "reason": "restated material"},
+      {"source_id_range": "ch4§7¶1-¶6", "section_heading": "THE INNER PURPOSE OF YOUR LIFE'S JOURNEY", "reason": "restated material"},
+      {"source_id_range": "ch6§1¶1-¶8", "section_heading": "BEING IS YOUR DEEPEST SELF", "reason": "restated material"},
+      {"source_id_range": "ch6§9¶1-¶9", "section_heading": "YOUR LINK WITH THE UNMANIFESTED", "reason": "restated material"},
+      {"source_id_range": "ch6§10¶1-¶5", "section_heading": "SLOWING DOWN THE AGING PROCESS", "reason": "secondary tangent"},
+      {"source_id_range": "ch6§13¶1-¶3", "section_heading": "CREATIVE USE OF MIND", "reason": "restated material"},
+      {"source_id_range": "ch9§6¶1-¶24", "section_heading": "TOWARD A DIFFERENT ORDER OF REALITY", "reason": "restated/expansive material; low-severity coverage note flagged by Proofreader"},
+      {"source_id_range": "ch10§7¶1-¶10", "section_heading": "THE WAY OF THE CROSS", "reason": "restated material; low-severity coverage note flagged by Proofreader"},
+      {"source_id_range": "back:end", "section_heading": "END", "reason": "title-only page, zero body paragraphs"}
+    ],
+    "editor_design_hints": {
+      "structural_recommendation": "linear",
+      "concept_chapters": [1, 2, 3, 5, 6, 7, 10],
+      "note": "Dialogue-form spiritual self-help; teaching builds cumulatively (mind -> pain-body -> Now -> presence -> inner body -> Unmanifested -> relationships -> peace -> surrender). Practices are the load-bearing spine."
+    }
+  },
+  "proofreader": {
+    "verdict": "pass",
+    "anchors_total": 143,
+    "anchors_checked": 72,
+    "sampling_method": "stratified across all 13 chapter units + front matter; exhaustive coverage of every anchor containing quotation marks or proper names (Buddha, Carl Jung, Marcus Aurelius, Jesus, Tao Te Ching, Bhagavad Gita, A Course in Miracles, Heart Sutra, Banzan, Descartes, Nietzsche)",
+    "grounding_violations": 0,
+    "bridges_checked": 10,
+    "bridges_clean": 10,
+    "coverage_audit": "all ch1-ch10 within 0.70-1.30 band; foreword intentionally under-band (external author); 3 dropped sections flagged low-severity, all logged"
+  },
+  "reader_gate": {
+    "gate_status": "pass",
+    "iteration": 1,
+    "scores": {"visual_pleasure": 4, "navigation": 4, "comprehension": 5, "illustration": 4, "books_finished_rate": 4},
+    "comprehension_raw": 1.0,
+    "lowest_dimension": "books_finished_rate",
+    "would_skip_original": true
+  }
+}

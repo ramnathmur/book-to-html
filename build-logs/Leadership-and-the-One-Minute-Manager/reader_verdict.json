@@ -1,0 +1,40 @@
+{
+  "envelope_version": "book-to-html-handoff/1.0",
+  "from_persona": "reader",
+  "to_persona": "orchestrator",
+  "build_id": "20260615-001-Leadership-and-the-One-Minute-Manager",
+  "iteration": 1,
+  "payload": {
+    "scores": {
+      "visual_pleasure": 4,
+      "navigation": 4,
+      "comprehension": 5,
+      "illustration": 5,
+      "books_finished_rate": 4
+    },
+    "verdict": {
+      "visual_pleasure": "Calm serif stack (Iowan/Source Serif), a true 66ch measure, drop caps at each chapter opener, accent pull-quotes paced every few sections, and a dark-mode-aware palette make this genuinely pleasant to scroll. The pacing is brisk—~24 min for the whole parable—and the eye always has a landing. The weakness is density: many chapters are a single bridge sentence plus one anchor quote, so the experience occasionally feels like a slide outline rather than continuous prose. It reads beautifully but thinly; I'd keep scrolling, but a few openers (sec-2, sec-17) are too sparse to earn their own heading. Solid 4, not a 5 because the rhythm is more checklist than narrative in stretches.",
+      "navigation": "The sticky scroll-spy TOC with per-chapter reading-time estimates, a top progress bar, and a live '% read' meter is exactly right for a linear parable—it tracks position rather than tempting jumps, which the design note correctly argues preserves the inductive sequence. IntersectionObserver highlighting works and the 20-item TOC is scannable. No xref popovers actually appear in the body despite the CSS hook, and sidenotes are defined but unused, so some of the navigation machinery is decorative. Still frictionless for following the story in order—4.",
+      "comprehension": "I could answer 9–10 of the ten questions from the artifact alone. The frameworks are all present and crisply stated: three skills, SMART with each question, D1–D4 with competence/commitment, S1–S4 with the four directive and four supportive words, the D→S matching with the explicit 'why' rationale in sec-15, seagull management, the three-part performance loop with the final-exam analogy, the with-not-to principle, and the regression sequence. The only soft spot is Q7's confidence-vs-commitment distinction—the text defines confidence and motivation but doesn't sharply separate confidence from commitment as a standalone contrast. Comprehension equivalence is the strongest dimension; a clear 5.",
+      "illustration": "The Mermaid diagrams genuinely externalize the model rather than decorate it. The quadrant chart for S1–S4 on directive/supportive axes, the D1→D4 progression with regression arrows, the explicit D→S matching map, the SMART flow, the performance-management loop, and the six-conversations tree all carry structural load the prose can't show as efficiently. They sit before the anchors so the framework is in mind while reading source language, exactly as intended. Channel-A-only was the right call for a 2x2 system. A 5—the diagrams are the comprehension backbone, not redundant.",
+      "books_finished_rate": "Yes, I would skip the original 16,000-word parable and trust this for working knowledge. In ~24 minutes I walked away able to apply SLII—diagnose a person's development level on a task and select the matching style—which is 80%+ of why anyone reads this book. The narrative texture (the entrepreneur's arc, the specific characters like Larry/Cindy/Tom) is compressed to bridge sentences, so I'd lose the story's emotional pull, but for a knowledge-expansion read that's an acceptable trade. This measurably increases my books-finished rate: it converts a full evening into a coffee break with the framework intact. A confident 4—not a 5 only because the thinnest chapters leave me slightly wanting the connective prose."
+    },
+    "comprehension_detail": {
+      "q1": "pass — goal setting, diagnosis, matching (sec-6, loop diagram + anchor)",
+      "q2": "pass — Specific (what/when), Motivating (meaningful to individual), Attainable (realistic), Relevant (meaningful to org), Trackable (how measured)",
+      "q3": "pass — D1 enthusiastic beginner (low comp/high commit), D2 disillusioned learner (some comp/low commit), D3 capable but cautious (high comp/variable commit), D4 self-reliant achiever (high/high)",
+      "q4": "pass — S1 Directing, S2 Coaching, S3 Supporting, S4 Delegating; directive = decide/teach/observe/provide frequent feedback; supportive = listen/involve/facilitate/encourage",
+      "q5": "pass — managers absent after goal-setting, fly in on a mistake, make noise, dump on everyone, fly out (sec-8)",
+      "q6": "pass — D1→S1, D2→S2, D3→S3, D4→S4 with rationale in sec-15 (direction/both/support/delegation)",
+      "q7": "pass — two factors are competence and commitment; confidence = self-assuredness without direction, motivation = interest/enthusiasm; confidence-vs-commitment contrast only partially crisp",
+      "q8": "pass — performance planning, day-to-day coaching, performance evaluation; final exam = goals are exam questions, leader helps learn answers, evaluation is the exam where they should get A's",
+      "q9": "pass — shared, open practice: alignment + style conversations + one-on-ones; direct report sets agenda, dev-level nod goes to report (sec-17/18)",
+      "q10": "pass — when performance slips, add direction: step back from delegating toward supporting then coaching (S4→S3→S2), with closer supervision and shorter timelines (sec-15/16)"
+    },
+    "lowest_dimension": "visual_pleasure",
+    "would_skip_original": true,
+    "gate_status": "pass"
+  },
+  "usage": {"input_tokens": 0, "output_tokens": 45190},
+  "wall_ms": 42809
+}

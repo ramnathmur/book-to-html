@@ -1,0 +1,84 @@
+{
+  "envelope": "book-to-html-handoff/1.0",
+  "book_title": "1929",
+  "comprehension_answered": 10.0,
+  "comprehension_total": 10,
+  "per_question": [
+    {
+      "id": "q1",
+      "my_answer": "Monday, October 28, 1929 closed down about 13 percent (the greatest fall to that point); the next day, Tuesday, October 29, 1929, was what Galbraith called the most devastating day in the history of markets, with over 16 million shares traded.",
+      "score": 1.0,
+      "note": "Both dates, the 13% figure, the Galbraith quote, and the 16M-share volume are all verbatim in the Prologue and Crash Week views."
+    },
+    {
+      "id": "q2",
+      "my_answer": "Charles 'Sunshine Charlie' Mitchell, optimistic chairman of National City Bank (largest in the US) and a Fed NY board member. He secretly, personally borrowed $12 million (Morgan paid out ~$10.4M against his own credit) to buy National City stock from the bank, bailing out his own company after it over-committed to ~71,000 of its own shares it could not afford.",
+      "score": 1.0,
+      "note": "Exact $12M figure, the 71,000 shares, the $10.4M Morgan payout, and the secrecy motive are all present in the Prologue and Crash Week."
+    },
+    {
+      "id": "q3",
+      "my_answer": "Mitchell opposed the Fed Board's February 1929 advisory discouraging margin loans, believing Washington's economists misunderstood markets and would cause a crash. In late March 1929, during a panic, he had National City publicly announce it would lend to investors no questions asked, defying the Fed, briefly making him a Wall Street hero and enraging the Fed and Carter Glass.",
+      "score": 1.0,
+      "note": "The Feb 2 advisory, Mitchell's 'no questions asked' public defiance, the hero framing, and Glass's fury are fully rendered across The Confidence Men and The Bull Runs Wild."
+    },
+    {
+      "id": "q4",
+      "my_answer": "On Black Thursday Lamont (effectively running J.P. Morgan with Jack in England) convened top bankers (Mitchell, Wiggin, Potter, Prosser, Whitney, George Whitney, later Baker) at 23 Wall Street and pooled an initial $120 million, later more than doubled to $250 million, to buy hard-hit stocks. Richard Whitney strode onto the floor and loudly bid $205 for 10,000 shares of U.S. Steel, deploying the pool; the rout was halted and Whitney was hailed 'Wall Street's White Knight.'",
+      "score": 1.0,
+      "note": "The $120M-to-$250M pool, the participants, the $205 U.S. Steel bid, and the White Knight sobriquet are all verbatim in Crash Week."
+    },
+    {
+      "id": "q5",
+      "my_answer": "Margin buying let investors put down as little as 10-20 percent and borrow the rest. Mitchell and National City aggressively extended this credit to ordinary Americans; margin loans grew from about $1 billion at the decade's start to nearly $6 billion, inflating the bubble. Debt 'draws the wealth of tomorrow into the present,' and when prices fell, margin calls forced cascading selling.",
+      "score": 1.0,
+      "note": "The 10-20% mechanic, the $1B-to-$6B growth, and the debt-as-future-wealth thesis are all anchored verbatim; the Groucho Marx margin-call vignette reinforces it."
+    },
+    {
+      "id": "q6",
+      "my_answer": "Carter Glass, Virginia senator and self-taught banking authority, co-author of the original Federal Reserve Act, on the Senate Banking and Currency Committee. He waged war on Mitchell because Mitchell defied the Fed by lending into the speculative frenzy in March 1929; Glass branded it 'mutiny' and 'insubordination,' said Mitchell should be disciplined and removed from the Fed board, and called him the chief offender.",
+      "score": 1.0,
+      "note": "Glass's identity, his Fed Act authorship, and the mutiny/insubordination/discipline language are all verbatim in The Bull Runs Wild ('Carter Glass had just declared war on Charles Mitchell')."
+    },
+    {
+      "id": "q7",
+      "my_answer": "Jesse Livermore, the famous speculator nicknamed the 'Boy Plunger,' known for short selling. Skeptical of the boom, he bet against the market; in late March 1929 a massive short assault made him about $8 million in under 28 hours, and his short positions made him a fortune during the crash.",
+      "score": 1.0,
+      "note": "Boy Plunger ID, short-selling reputation, and the ~$8M late-March short profit are all present. The ~$100M total-fortune figure is not stated in the HTML, but the question's core (who he was + made money shorting) is fully answerable."
+    },
+    {
+      "id": "q8",
+      "my_answer": "William Crapo Durant, founder of General Motors and perhaps the nation's most famous stock speculator. Convinced the Fed was choking prosperity, he made a secret nighttime visit to the White House on April 8, 1929 to warn Hoover that the Fed's clampdown threatened the market; he later bought CBS radio airtime to publicly attack the Federal Reserve Board and praise Mitchell.",
+      "score": 1.0,
+      "note": "Durant's GM/speculator identity, the secret April 8 White House visit, and the CBS radio broadside praising Mitchell are all rendered in dedicated chapters."
+    },
+    {
+      "id": "q9",
+      "my_answer": "On the eve of FDR's inauguration, lame-duck Hoover pressed Roosevelt to jointly act and proclaim emergency powers under the Trading with the Enemy Act to restrict gold and currency outflows. Roosevelt refused ('Like hell I will'), not wanting to ratify Hoover's program and wanting a clean slate, telling Glass he planned to close the banks. After inauguration FDR declared a national bank holiday and in his first fireside chat (March 12, 1933) reassured Americans that reopened banks were safe.",
+      "score": 1.0,
+      "note": "The Trading with the Enemy Act request, FDR's refusal and clean-slate logic, 'Planning to close them, of course,' and the fireside-chat reassurance are all verbatim in Pecora and the New Deal."
+    },
+    {
+      "id": "q10",
+      "my_answer": "The 1933 (second) Glass-Steagall Act separated commercial from investment banking and created federal deposit insurance protecting the first $2,500 of deposits. Glass opposed deposit insurance, believing it rewarded reckless banks and created moral hazard; it was Representative Steagall's insistence on deposit guarantees, backed by rural representatives and popular demand, that got it included, and Glass reluctantly/grudgingly signed on.",
+      "score": 1.0,
+      "note": "The bank separation, the $2,500 deposit-insurance figure, Glass's moral-hazard opposition, and Steagall's rural-backed insistence are all explicit, capped by the closing line crediting Steagall's deposit insurance for winning rural support."
+    }
+  ],
+  "scores": {
+    "visual_pleasure": 5,
+    "navigation": 5,
+    "comprehension": 5,
+    "illustration": 4,
+    "books_finished_rate": 4
+  },
+  "reader_gate_score": 4,
+  "verdict": "PASS",
+  "lowest_dim": "books_finished_rate",
+  "lowest_dim_note": "At a perfect 10/10 comprehension and ~33-minute read this clears the gate, but it lands at 4 rather than 5 because the artifact is verbatim-anchor-heavy: roughly 90%+ of body text is quoted blockquotes with only thin one-line bridges between them. The dense block-after-block quoting in long chapters (especially The Confidence Men and The Reckoning) can read as a high-quality excerpt anthology rather than a propulsive narrative, and a reader who struggles to finish long books may still feel a slight 'reading a sourcebook' fatigue in the middle views. Ram will very likely finish and feel he read 1929 — but the emotional momentum of Sorkin's original prose is mildly diluted by the quote-stacking rhythm.",
+  "would_skip_original": true,
+  "strengths": "Comprehension is flawless: all ten test questions are fully answerable from the artifact alone, with the precise figures ($12M, 71,000 shares, $120M-to-$250M pool, $205 Steel bid, $1B-to-$6B margin, $2,500 deposit insurance) intact. Typography and pacing are excellent: Newsreader serif, generous measure, drop-caps, tasteful pull-quotes, small-caps date heads, and clean dark-mode tokens make it genuinely pleasant to scroll. Navigation is complete and humane: 9 progress pips, a summoned keyboard-accessible TOC overlay, prev/next chapter footer, hash deep-links, and a within-chapter scroll progress bar.",
+  "weaknesses": "Bridge ratio is very low (0.042) and the prose leans almost entirely on stacked verbatim blockquotes, so connective narrative voice is thin and the middle chapters can feel like an excerpt anthology rather than a story; adding a few more genuine bridge sentences (not just one-line setups) between anchor clusters would restore momentum. The single hero SVG timeline is clear and dark-mode legible but is the only graphic across ~44k words and 8 views; a second light orienting visual (e.g., a Dow arc or a cast-of-characters card) in a later view would aid retention without violating the minimal-graphics design. Two anchors are duplicated (ch10 paragraph 28 appears twice; ch13 paragraphs 24/25 repeat), a minor assembler artifact worth cleaning.",
+  "usage": {"input_tokens": 0, "output_tokens": 0},
+  "wall_ms": 0
+}

@@ -1,0 +1,96 @@
+{
+  "trace_version": "book-to-html-trace/1.1",
+  "build_id": "20260602-001-thinking-fast-and-slow",
+  "book_metadata": {"title": "Thinking, Fast and Slow", "author": "Daniel Kahneman", "total_words": 165138},
+  "intake": {
+    "book_kind_provisional": "expository_nonfic",
+    "detected_category": "expository_nonfic",
+    "detection_confidence": "high",
+    "book_kind": "expository_nonfic",
+    "depth": "deep",
+    "graphic_intensity": "graphic_heavy",
+    "illustration_channel_pref": "A_only",
+    "style_anchor_pref": null
+  },
+  "renderer": "native",
+  "htmler_register": null,
+  "started_at": "2026-06-02T16:40:00Z",
+  "ended_at": "2026-06-02T17:30:00Z",
+  "outcome": "delivered",
+  "approvals": {"permission_popups": 0, "interview_questions": 7},
+  "spans": [
+    {
+      "span_id": "s_001", "persona": "ingestor", "model": "none", "iteration": 1,
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_002",
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": null,
+        "persona_specific": {"corpus_paragraphs": 3443, "chapters_detected": 40, "parse_errors": 1,
+          "note": "TFAS-specific ingester; stale navMap anchors + identical head titles forced segmentation by embedded <h2>. split_023 (ch16) recovered via regex fallback after a corrupted calibre tag. Appendices A/B, Notes, Index routed to droppable back matter."}}
+    },
+    {
+      "span_id": "s_002", "persona": "editor", "model": "claude-opus-4-8", "iteration": 1,
+      "gate_status": "pass", "escalation": null, "next_span_id": "s_003",
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": null,
+        "subagent_tokens_total": 1374352,
+        "persona_specific": {"bridge_ratio": 0.0512, "retention_mass": "proportional-target method (~27% of source)",
+          "output_words": 46526, "units_emitted": 559, "anchors": 361, "bridges": 72, "headings": 126,
+          "dropped_sections_count": 541, "parallel_groups": 8, "all_chapters_in_band": true}}
+    },
+    {
+      "span_id": "s_003", "persona": "proofreader", "model": "claude-sonnet-4-6", "iteration": 1,
+      "gate_status": "fail", "escalation": null, "next_span_id": "s_004",
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 420540, "subagent_tokens_total": 95546,
+        "persona_specific": {"violations_count": 12, "anchor_pass_pct": 1.0, "bridge_ratio": 0.0511,
+          "chapter_coverage_min": 0.8, "chapter_coverage_max": 1.3,
+          "note": "anchor verbatim 361/361 deterministic; 12 bridge_unsupported_claim flagged (6 under-citation, 6 distortion/fabrication)"}}
+    },
+    {
+      "span_id": "s_004", "persona": "editor", "model": "claude-opus-4-8", "iteration": 2,
+      "gate_status": "pass", "escalation": null, "next_span_id": "s_005",
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 180108, "subagent_tokens_total": 60342,
+        "persona_specific": {"bridges_reworked": 12, "fix_widen": 6, "fix_rewrite": 6}}
+    },
+    {
+      "span_id": "s_005", "persona": "proofreader", "model": "claude-sonnet-4-6", "iteration": 2,
+      "gate_status": "pass", "escalation": null, "next_span_id": "s_006",
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 75506, "subagent_tokens_total": 28364,
+        "persona_specific": {"violations_count": 0, "anchor_pass_pct": 1.0, "bridge_ratio": 0.0512,
+          "note": "re-audit: 11 clean; 1 residual (g2_u0021 'six traits opposite order') resolved by Orchestrator citation-widen to ch7§1¶16/¶18"}}
+    },
+    {
+      "span_id": "s_006", "persona": "designer", "model": "claude-opus-4-8", "iteration": 1,
+      "gate_status": "pass", "escalation": null, "next_span_id": "s_007",
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 242359, "subagent_tokens_total": 112128,
+        "persona_specific": {"navigation_shape": "hybrid", "channel_a_count": 20, "channel_b_count": 0, "b_fallbacks": 0,
+          "diagram_kinds": {"svg": 17, "table": 3}, "pullquotes": 14,
+          "self_contained": "inline SVG only, no CDN/Mermaid"}}
+    },
+    {
+      "span_id": "s_007", "persona": "assembler", "model": "none", "iteration": 1,
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_008",
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": null,
+        "persona_specific": {"html_bytes": 389349, "units_merged": 559, "images_embedded": 20,
+          "structural_assert": "doctype=1 html=1 body=1 article=1; no external script/link"}}
+    },
+    {
+      "span_id": "s_008", "persona": "orchestrator", "model": "none", "iteration": 1,
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_009",
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": null,
+        "persona_specific": {"comprehension_test_generator_tokens": 41441, "questions_generated": 10,
+          "chapters_covered": [2, 5, 7, 11, 12, 15, 17, 20, 21, 35]}}
+    },
+    {
+      "span_id": "s_009", "persona": "reader", "model": "claude-opus-4-8", "iteration": 1,
+      "gate_status": "pass", "escalation": null, "next_span_id": null,
+      "metrics": {"input_tokens": null, "output_tokens": null, "wall_ms": 308248, "subagent_tokens_total": 102896,
+        "persona_specific": {"scores_visual_pleasure": 4, "scores_navigation": 5, "scores_comprehension": 5,
+          "scores_illustration": 5, "scores_books_finished_rate": 4, "would_skip_original": true,
+          "comprehension_correct": "10/10", "lowest_dimension": "visual_pleasure"}}
+    }
+  ],
+  "orchestrator_summary": {
+    "total_iterations": 2,
+    "rework_target_history": ["proofreader_bridge_entailment (iter1->editor bridge rework)"],
+    "source_note": "Source EPUB carried scattered OCR corruption (~0.2% of tokens). Per user instruction, verbatim anchors preserve source text exactly; appendices/notes/index intentionally out of scope.",
+    "tokens_total_approx": 1815069
+  }
+}

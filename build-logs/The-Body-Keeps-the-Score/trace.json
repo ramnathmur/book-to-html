@@ -1,0 +1,154 @@
+{
+  "trace_version": "book-to-html-trace/1.1",
+  "build_id": "20260621-001-body-keeps-the-score",
+  "book_metadata": {
+    "title": "The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",
+    "author": "Bessel van der Kolk",
+    "total_words": 138458
+  },
+  "intake": {
+    "book_kind": "expository_nonfic",
+    "depth": "deep",
+    "graphic_intensity": "graphic_heavy",
+    "illustration_channel_pref": "A_only"
+  },
+  "renderer": "native",
+  "htmler_register": null,
+  "started_at": "2026-06-21T17:56:00Z",
+  "ended_at": "2026-06-21T23:00:00Z",
+  "outcome": "delivered",
+  "cross_session": false,
+  "session_gap_min": 0,
+  "approvals": {
+    "permission_popups": 0,
+    "interview_questions": 3
+  },
+  "spans": [
+    {
+      "span_id": "s_001",
+      "persona": "ingestor",
+      "model": "none",
+      "iteration": 1,
+      "metrics": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "wall_ms": null,
+        "persona_specific": {
+          "corpus_paragraphs": 1614,
+          "chapters_detected": 22,
+          "parse_errors": 0
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_002"
+    },
+    {
+      "span_id": "s_002",
+      "persona": "editor",
+      "model": "claude-opus-4-8",
+      "iteration": 1,
+      "metrics": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "wall_ms": 1459447,
+        "persona_specific": {
+          "bridge_ratio": 0.02,
+          "retention_mass": null,
+          "output_words": 56597,
+          "units_emitted": 726,
+          "dropped_sections_count": 292,
+          "shards": 9
+        }
+      },
+      "gate_status": "pass",
+      "escalation": null,
+      "next_span_id": "s_003"
+    },
+    {
+      "span_id": "s_003",
+      "persona": "proofreader",
+      "model": "claude-sonnet-4-6",
+      "iteration": 1,
+      "metrics": {
+        "input_tokens": 47000,
+        "output_tokens": 2600,
+        "wall_ms": 147783,
+        "persona_specific": {
+          "violations_count": 0,
+          "anchor_pass_pct": 1.0,
+          "bridge_ratio": 0.02,
+          "chapter_coverage_min": 0.0106,
+          "chapter_coverage_max": 0.0736,
+          "fabricated_bridge_count": 0,
+          "resolved_violations": 1
+        }
+      },
+      "gate_status": "pass",
+      "escalation": null,
+      "next_span_id": "s_004"
+    },
+    {
+      "span_id": "s_004",
+      "persona": "designer",
+      "model": "claude-opus-4-8",
+      "iteration": 1,
+      "metrics": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "wall_ms": 268862,
+        "persona_specific": {
+          "navigation_shape": "chaptered-linear",
+          "channel_a_count": 20,
+          "channel_b_count": 0,
+          "b_fallbacks": 0,
+          "pullquotes": 12
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_005"
+    },
+    {
+      "span_id": "s_005",
+      "persona": "assembler",
+      "model": "none",
+      "iteration": 1,
+      "metrics": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "wall_ms": null,
+        "persona_specific": {
+          "html_bytes": 453150,
+          "units_merged": 726,
+          "images_embedded": 0
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_006"
+    },
+    {
+      "span_id": "s_006",
+      "persona": "reader",
+      "model": "claude-opus-4-8",
+      "iteration": 1,
+      "metrics": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "wall_ms": 143679,
+        "persona_specific": {
+          "scores_visual_pleasure": 5,
+          "scores_navigation": 5,
+          "scores_comprehension": 5,
+          "scores_illustration": 5,
+          "scores_books_finished_rate": 5,
+          "would_skip_original": true
+        }
+      },
+      "gate_status": "pass",
+      "escalation": null,
+      "next_span_id": null
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schema": "book-to-html-coverage/1.0",
+  "book": {
+    "title": "Co-Intelligence",
+    "author": "Ethan Mollick",
+    "total_words": 51031,
+    "chapters": [
+      {
+        "no": 0,
+        "title": "Introduction: Three Sleepless Nights",
+        "words": 2352
+      },
+      {
+        "no": 1,
+        "title": "Creating Alien Minds",
+        "words": 5220
+      },
+      {
+        "no": 2,
+        "title": "Aligning the Alien",
+        "words": 4428
+      },
+      {
+        "no": 3,
+        "title": "Four Rules for Co-Intelligence",
+        "words": 4028
+      },
+      {
+        "no": 4,
+        "title": "AI as a Person",
+        "words": 6466
+      },
+      {
+        "no": 5,
+        "title": "AI as a Creative",
+        "words": 7469
+      },
+      {
+        "no": 6,
+        "title": "AI as a Coworker",
+        "words": 8618
+      },
+      {
+        "no": 7,
+        "title": "AI as a Tutor",
+        "words": 4491
+      },
+      {
+        "no": 8,
+        "title": "AI as a Coach",
+        "words": 3437
+      },
+      {
+        "no": 9,
+        "title": "AI as Our Future",
+        "words": 4175
+      },
+      {
+        "no": 10,
+        "title": "Epilogue: AI as Us",
+        "words": 347
+      }
+    ]
+  },
+  "book_kind": "ai_topical",
+  "depth": "deep",
+  "graphic_intensity": "graphic_heavy",
+  "channel": "A_only",
+  "retention_mass": 888,
+  "target_word_budget": {
+    "low": 12432,
+    "high": 15984,
+    "chosen": 14204
+  },
+  "output_words_actual": 14204,
+  "source_coverage_pct": 0.2783,
+  "per_chapter_contribution": [
+    {
+      "ch": 0,
+      "pct": 0.0532
+    },
+    {
+      "ch": 1,
+      "pct": 0.1064
+    },
+    {
+      "ch": 2,
+      "pct": 0.0825
+    },
+    {
+      "ch": 3,
+      "pct": 0.079
+    },
+    {
+      "ch": 4,
+      "pct": 0.1164
+    },
+    {
+      "ch": 5,
+      "pct": 0.1271
+    },
+    {
+      "ch": 6,
+      "pct": 0.1457
+    },
+    {
+      "ch": 7,
+      "pct": 0.1135
+    },
+    {
+      "ch": 8,
+      "pct": 0.0831
+    },
+    {
+      "ch": 9,
+      "pct": 0.0815
+    },
+    {
+      "ch": 10,
+      "pct": 0.0117
+    }
+  ],
+  "dropped_sections": [
+    {
+      "source_id_range": "front matter: titlepage, copyright (split_001), dedication (split_002), Contents (split_004)",
+      "reason": "Front matter excluded per spec."
+    },
+    {
+      "source_id_range": "ch1§7 (limerick examples, GPT-3/3.5/4 sample limericks, ch1 p27-p63)",
+      "reason": "Repeated illustrative limericks of one already-illustrated point (AI generates verse); kept the framing data point, dropped the verse blocks (score <=3, recap/padding)."
+    },
+    {
+      "source_id_range": "ch2§6 (napalm pirate dialogue lines, ch2 p29-p35)",
+      "reason": "Multi-paragraph transcript of a single jailbreak example; one anchor captures the mechanism, remaining script lines are descriptive padding."
+    },
+    {
+      "source_id_range": "ch3§3 (smartwatch + slogan sample outputs, ch3 p31-p37)",
+      "reason": "Sample AI outputs illustrating persona principle already anchored; low-score example fragments."
+    },
+    {
+      "source_id_range": "ch4§2-4 (ELIZA/PARRY transcript and the three-conversations verbatim AI replies, ch4 p18-p26, p40-p67)",
+      "reason": "Long verbatim AI dialogue transcripts; the concept (imitation, anthropomorphized sentience) is anchored once, the transcripts are 2nd+ illustration / padding."
+    },
+    {
+      "source_id_range": "ch5§4 + ch5§6 (cheese-shop slogans p35-p54, superhero espresso p58-p59)",
+      "reason": "Enumerated sample AI outputs; the creativity mechanism and data are anchored, the lists score <=3."
+    },
+    {
+      "source_id_range": "ch6§5-6 (Ozymandias/Mnemosyne/Steve persona transcripts, ch6 p37-p49)",
+      "reason": "Extended AI-editor transcript; Cyborg/Centaur framework anchored, transcripts are illustrative padding."
+    },
+    {
+      "source_id_range": "ch7§4 (analogy sample outputs p25-p26)",
+      "reason": "Sample prompt outputs; chain-of-thought mechanism anchored."
+    },
+    {
+      "source_id_range": "misc per-chapter recap/transition sentences across all chapters",
+      "reason": "Sentences scoring <=3 (recap, 'what we'll cover', descriptive padding) folded into adjacent bridges or dropped."
+    }
+  ],
+  "proofreader": {
+    "anchor_pass_pct": 1.0,
+    "bridge_ratio": 0.0868,
+    "gate_status_final": "pass",
+    "note": "u_0002 bridge reworked (iter 2) per proofreader violation; re-verified clean"
+  }
+}

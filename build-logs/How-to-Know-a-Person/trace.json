@@ -1,0 +1,66 @@
+{
+  "trace_version": "book-to-html-trace/1.1",
+  "build_id": "20260619-001-How-to-Know-a-Person",
+  "book_metadata": { "title": "How to Know a Person", "author": "David Brooks", "total_words": 78500 },
+  "intake": { "book_kind": "narrative_nonfic", "depth": "standard", "graphic_intensity": "standard", "illustration_channel_pref": "A_only", "style_anchor_pref": null },
+  "renderer": "native",
+  "htmler_register": null,
+  "started_at": "2026-06-19T06:38:03+05:30",
+  "ended_at": "2026-06-19T16:08:48+05:30",
+  "outcome": "delivered",
+  "approvals": { "permission_popups": 0, "interview_questions": 6 },
+  "telemetry_note": "The harness does not expose per-call input/output token splits to sub-agents; metrics.total_tokens per span is the agent's reported total. Cost is estimated assuming an ~85/15 input/output split. Wall window includes a multi-hour pause for a Max-plan session-limit reset (resumed cleanly); active per-span wall is ~100 min.",
+  "spans": [
+    {
+      "span_id": "s_001", "persona": "ingestor", "model": "none", "iteration": 1,
+      "metrics": { "total_tokens": 0, "wall_ms": null, "persona_specific": { "corpus_paragraphs": "17 chapters (c001-c017) + front/back matter", "chapters_detected": 17, "parse_errors": 0 } },
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_002"
+    },
+    {
+      "span_id": "s_002", "persona": "editor", "model": "claude-opus-4-8", "iteration": 1,
+      "metrics": { "total_tokens": 391974, "wall_ms": 2761819, "persona_specific": { "bridge_ratio": 0.0998, "retention_mass": 506, "output_words": 5570, "units_emitted": 119, "dropped_sections_count": 59, "detected_category": "narrative_nonfic", "classifier_confidence": 0.85 } },
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_003"
+    },
+    {
+      "span_id": "s_003", "persona": "proofreader", "model": "claude-sonnet-4-6", "iteration": 1,
+      "metrics": { "total_tokens": 89235, "wall_ms": 1776265, "persona_specific": { "violations_count": 12, "anchor_pass_pct": 1.0, "bridge_ratio": 0.0996, "chapter_coverage_min": 0.0443, "chapter_coverage_max": 0.0731 } },
+      "gate_status": "fail", "escalation": null, "next_span_id": "s_004"
+    },
+    {
+      "span_id": "s_004", "persona": "editor", "model": "claude-opus-4-8", "iteration": 2,
+      "metrics": { "total_tokens": 223172, "wall_ms": 498137, "persona_specific": { "rework_kind": "bridge_citation_fix", "bridges_recited": 12, "bridge_ratio": 0.0998, "output_words": 5570, "units_emitted": 119, "anchors_touched": 0 } },
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_005"
+    },
+    {
+      "span_id": "s_005", "persona": "proofreader", "model": "claude-sonnet-4-6", "iteration": 2,
+      "metrics": { "total_tokens": 143358, "wall_ms": 547667, "persona_specific": { "violations_count": 0, "anchor_pass_pct": 1.0, "bridges_rechecked": 12, "bridges_failed": 0, "bridge_ratio": 0.0996, "chapter_coverage_min": 0.0443, "chapter_coverage_max": 0.0731 } },
+      "gate_status": "pass", "escalation": null, "next_span_id": "s_006"
+    },
+    {
+      "span_id": "s_006", "persona": "designer", "model": "claude-opus-4-8", "iteration": 2,
+      "metrics": { "total_tokens": 102860, "wall_ms": 324715, "persona_specific": { "navigation_shape": "linear", "channel_a_count": 8, "channel_b_count": 0, "b_fallbacks": 0 } },
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_007"
+    },
+    {
+      "span_id": "s_007", "persona": "assembler", "model": "none", "iteration": 2,
+      "metrics": { "total_tokens": 0, "wall_ms": null, "persona_specific": { "html_bytes": 70322, "units_merged": 119, "images_embedded": 8, "structure_assertions": "exactly one each of doctype/html/body/article; 85 anchor blockquotes; no external network URLs (8 svg xmlns only); no leaked body before <html>" } },
+      "gate_status": "pass", "escalation": null, "next_span_id": "s_008"
+    },
+    {
+      "span_id": "s_008", "persona": "orchestrator", "model": "none", "iteration": 2,
+      "metrics": { "total_tokens": 55987, "wall_ms": 60335, "persona_specific": { "subtask": "comprehension_question_generation", "questions": 10, "model": "claude-sonnet-4-6" } },
+      "gate_status": "n/a", "escalation": null, "next_span_id": "s_009"
+    },
+    {
+      "span_id": "s_009", "persona": "reader", "model": "claude-opus-4-8", "iteration": 2,
+      "metrics": { "total_tokens": 64250, "wall_ms": 65480, "persona_specific": { "scores_visual_pleasure": 4, "scores_navigation": 4, "scores_comprehension": 5, "scores_illustration": 4, "scores_books_finished_rate": 4, "would_skip_original": true, "comprehension_correct": "10/10", "note": "One prior Reader attempt failed on a stream idle timeout before writing; re-dispatched fresh." } },
+      "gate_status": "pass", "escalation": null, "next_span_id": null
+    },
+    {
+      "span_id": "s_000", "persona": "orchestrator", "model": "none", "iteration": 2,
+      "metrics": { "total_tokens": 0, "wall_ms": null, "persona_specific": { "total_iterations": 2, "rework_target_history": ["editor (proofreader bridge-citation fail, iter1->2)"], "retries_absorbed": ["stale proofreader on pre-rebalance editor draft (stopped)", "editor rework killed by session-limit (re-run after reset)", "reader stream-timeout (re-run)"] } },
+      "gate_status": "n/a", "escalation": null, "next_span_id": null
+    }
+  ],
+  "cost_estimate_usd": { "value": 20.2, "basis": "Opus spans (editor x2, designer, reader) ~782k tok + Sonnet spans (proofreader x2, questiongen) ~289k tok, est. 85/15 input/output split at Opus $15/$75 and Sonnet $3/$15 per Mtok", "confidence": "rough" }
+}

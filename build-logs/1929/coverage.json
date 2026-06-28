@@ -1,0 +1,453 @@
+{
+  "envelope": "book-to-html-handoff/1.0",
+  "book_title": "1929",
+  "build_id": "20260620-001-1929",
+  "build_date": "2026-06-20",
+  "source_words": 113338,
+  "output_words": 43946,
+  "source_coverage_pct": 0.3877,
+  "anchors": 551,
+  "bridges": 71,
+  "bridge_words_pct": 0.0416,
+  "views": 8,
+  "per_chapter_contribution": [
+    {
+      "ch": 1,
+      "pct": 0.0427
+    },
+    {
+      "ch": 2,
+      "pct": 0.0428
+    },
+    {
+      "ch": 3,
+      "pct": 0.0422
+    },
+    {
+      "ch": 4,
+      "pct": 0.0193
+    },
+    {
+      "ch": 5,
+      "pct": 0.0267
+    },
+    {
+      "ch": 6,
+      "pct": 0.0361
+    },
+    {
+      "ch": 7,
+      "pct": 0.0183
+    },
+    {
+      "ch": 8,
+      "pct": 0.0181
+    },
+    {
+      "ch": 9,
+      "pct": 0.0216
+    },
+    {
+      "ch": 10,
+      "pct": 0.0148
+    },
+    {
+      "ch": 11,
+      "pct": 0.0303
+    },
+    {
+      "ch": 12,
+      "pct": 0.0134
+    },
+    {
+      "ch": 13,
+      "pct": 0.0222
+    },
+    {
+      "ch": 14,
+      "pct": 0.0177
+    },
+    {
+      "ch": 15,
+      "pct": 0.0309
+    },
+    {
+      "ch": 16,
+      "pct": 0.0276
+    },
+    {
+      "ch": 17,
+      "pct": 0.006
+    },
+    {
+      "ch": 18,
+      "pct": 0.0161
+    },
+    {
+      "ch": 19,
+      "pct": 0.0256
+    },
+    {
+      "ch": 20,
+      "pct": 0.0433
+    },
+    {
+      "ch": 21,
+      "pct": 0.0324
+    },
+    {
+      "ch": 22,
+      "pct": 0.006
+    },
+    {
+      "ch": 23,
+      "pct": 0.011
+    },
+    {
+      "ch": 24,
+      "pct": 0.0158
+    },
+    {
+      "ch": 25,
+      "pct": 0.007
+    },
+    {
+      "ch": 26,
+      "pct": 0.0114
+    },
+    {
+      "ch": 27,
+      "pct": 0.008
+    },
+    {
+      "ch": 28,
+      "pct": 0.0139
+    },
+    {
+      "ch": 29,
+      "pct": 0.0061
+    },
+    {
+      "ch": 30,
+      "pct": 0.026
+    },
+    {
+      "ch": 31,
+      "pct": 0.0327
+    },
+    {
+      "ch": 32,
+      "pct": 0.0211
+    },
+    {
+      "ch": 33,
+      "pct": 0.0202
+    },
+    {
+      "ch": 34,
+      "pct": 0.0181
+    },
+    {
+      "ch": 35,
+      "pct": 0.0203
+    },
+    {
+      "ch": 36,
+      "pct": 0.0126
+    },
+    {
+      "ch": 37,
+      "pct": 0.0133
+    },
+    {
+      "ch": 38,
+      "pct": 0.0178
+    },
+    {
+      "ch": 39,
+      "pct": 0.0138
+    },
+    {
+      "ch": 40,
+      "pct": 0.0223
+    },
+    {
+      "ch": 41,
+      "pct": 0.0218
+    },
+    {
+      "ch": 42,
+      "pct": 0.0343
+    },
+    {
+      "ch": 43,
+      "pct": 0.005
+    },
+    {
+      "ch": 44,
+      "pct": 0.0106
+    },
+    {
+      "ch": 45,
+      "pct": 0.059
+    },
+    {
+      "ch": 46,
+      "pct": 0.0199
+    }
+  ],
+  "dropped_sections": [
+    {
+      "source_id_range": "ch1§2¶28-ch1§2¶38",
+      "reason": "Mitchell's commute, mansion description, dinner-party logistics and newspaper-scan padding; scene-setting after crisis stakes are established"
+    },
+    {
+      "source_id_range": "ch2§1¶86-ch2§1¶96",
+      "reason": "Aquitania amenities and arrival logistics; descriptive padding once voyage and Alleghany scheme are set"
+    },
+    {
+      "source_id_range": "ch3§1¶47-ch3§1¶60",
+      "reason": "Mitchell's estates, staff, and Gershwin/opera anecdotes; lifestyle color secondary to the Fed-credit spine"
+    },
+    {
+      "source_id_range": "ch4§1¶20-ch4§1¶22",
+      "reason": "Durant's villa, apartment, and jewels; luxury detail after character and stakes are drawn"
+    },
+    {
+      "source_id_range": "ch5§1¶16-ch5§1¶21",
+      "reason": "Inauguration-morning dressing, weather, and motorcade logistics; procedural padding"
+    },
+    {
+      "source_id_range": "ch6§1¶1-2, ¶4-10, ¶13-19",
+      "reason": "scene-setting on Livermore's office grandeur and biography padding; spine carried by anchored myth, ticker obsession, and the 1906 turn"
+    },
+    {
+      "source_id_range": "ch6§1¶22-24, ¶26-31, ¶35-41, ¶44-47",
+      "reason": "bucket-shop backstory and dialogue beats restating the short-bet decision already shown by anchors"
+    },
+    {
+      "source_id_range": "ch7§1¶1-4, ¶6, ¶8, ¶11-15, ¶20-23, ¶26-29",
+      "reason": "Palm Beach setup, Fed real-estate-minutes digression, and press-reaction recap after Mitchell's decision is established"
+    },
+    {
+      "source_id_range": "ch8§1¶1-4, ¶6, ¶8-9, ¶11-16, ¶20-21, ¶23, ¶27-29, ¶31-34",
+      "reason": "radio-history background and reparations-conference recap; pool mechanics and merger stakes carried by anchors"
+    },
+    {
+      "source_id_range": "ch9§1¶1-2, ¶4, ¶6, ¶9-18",
+      "reason": "Glass biography and temperament padding after his banking authority and war on Mitchell are established"
+    },
+    {
+      "source_id_range": "ch10§1¶1-6, ¶10, ¶12-27, ¶29, ¶32",
+      "reason": "travel logistics and the running national debate (Owen, Warburg, Norris, Fletcher) restating positions; Durant-Hoover spine kept"
+    },
+    {
+      "source_id_range": "ch11§1¶1-2, ¶6, ¶9-17, ¶19, ¶21, ¶23-24, ¶26, ¶28-32, ¶34",
+      "reason": "extended Raskob/Smith campaign chronicle and DuPont/GM backstory; arc preserved via key turns"
+    },
+    {
+      "source_id_range": "ch12§1¶1-5, ¶8-12, ¶15-19, ¶21-22",
+      "reason": "speech logistics and quotations duplicating Durant's already-anchored argument and the Couzens/Glass reaction"
+    },
+    {
+      "source_id_range": "ch13§1¶1-4, ¶6-8, ¶11-14, ¶16-17, ¶20-23, ¶26-30",
+      "reason": "office description, installment-plan mechanics, and Michelson biography padding after his hire and method are established"
+    },
+    {
+      "source_id_range": "ch14§1¶4-12, ¶14-17, ¶19, ¶21, ¶23-28, ¶31-34, ¶38-42",
+      "reason": "conference logistics, Schacht backstory dialogue, and parade/optics beats; Young Plan close and Sarnoff turn carried by anchors"
+    },
+    {
+      "source_id_range": "ch15§1¶5-13",
+      "reason": "color and minor characters (Adams seer, arriving diners) restate the euphoria already established"
+    },
+    {
+      "source_id_range": "ch15§1¶26-36",
+      "reason": "Glass-amendment elaboration and Livermore lawsuit thread; payoff captured by later bridges"
+    },
+    {
+      "source_id_range": "ch15§1¶44-50",
+      "reason": "Glass-vs-Mitchell screed restates earlier feud; descriptive padding"
+    },
+    {
+      "source_id_range": "ch16§1¶16-27",
+      "reason": "Hoover-Mellon tension and Lamont's courtship of Hoover; developed more sharply in chapter 19"
+    },
+    {
+      "source_id_range": "ch16§1¶38-44",
+      "reason": "Mitchell vacation color and Livermore book backstory; padding after deal established"
+    },
+    {
+      "source_id_range": "ch17§1¶8-12",
+      "reason": "skyscraper-boom history and Raskob's ego motives; scene-setting after symbol is established"
+    },
+    {
+      "source_id_range": "ch18§1¶9-29",
+      "reason": "Churchill's cross-country travelogue (Hearst's castle, Hollywood) is descriptive padding once his market fever is established"
+    },
+    {
+      "source_id_range": "ch19§1¶17",
+      "reason": "Mitchell's healthy-market reassurance echoes Fisher; redundant with later quotes"
+    },
+    {
+      "source_id_range": "ch21§1¶6,10-12,14,17,20-21,23-24,26-30,32-33,37-41,45,48-49,51-53,55,59,62-63,67-74,77-79,81",
+      "reason": "Crash-day procedural meetings, descriptive scene-setting (smoke-filled cellar, dinner-party color), and dialogue beats restating action; spine and key voice kept via anchors and bridges."
+    },
+    {
+      "source_id_range": "ch22§1¶3,4,6,7,9",
+      "reason": "Merger-collapse retelling and secondary Lamont/Morgan quotes; gist carried by kept anchors."
+    },
+    {
+      "source_id_range": "ch23§1¶3,5,6,8,12-27,29-31",
+      "reason": "Riordan biographical color, press-conference Q&A, and Livermore threat fragments; payoff kept at 28 and 32."
+    },
+    {
+      "source_id_range": "ch24§1¶2,4-6,8-11,13-14,16-27,30-41",
+      "reason": "Hoover press/letter procedural padding, Mellon-lobby recap, and Durant interview detail compressed to bridge plus anchors."
+    },
+    {
+      "source_id_range": "ch25§1¶4-12",
+      "reason": "Procedural steps and dialogue of the wife-sale already conveyed by the three interiority/plot anchors and the closing voice anchor."
+    },
+    {
+      "source_id_range": "ch26§1¶1-2,4-6,8-16",
+      "reason": "Year-end scene-setting, Walker color, NYSE-close pageantry, and duplicate split of the Egan memo; mood kept via E. B. White, Raskob essay, and closing anchors."
+    },
+    {
+      "source_id_range": "ch27§1¶2-3,5-7",
+      "reason": "Hoover-market color, Whitney/Keynes asides, and Smoot-Hawley appeal; Depression framing and gold-standard foreshadow retained."
+    },
+    {
+      "source_id_range": "ch28§1¶1-5,7,9-20,22-23,25-26",
+      "reason": "Lamont domestic/biographical color and long journalism backstory; spine kept via the deflation admission and Sherrod's Scapegoats anchors."
+    },
+    {
+      "source_id_range": "ch29§1¶1-2,4-6,8-11,13",
+      "reason": "Radio-setup, smear-report quotes, and policy-aside padding; the exposure and Hoover-blame turns retained at 3, 7, and 12."
+    },
+    {
+      "source_id_range": "ch30§1¶2-6,10-13,15-21,24-27,32,35-37,39-40",
+      "reason": "Procedural midterm/FDR biography and Hoover-policy recap; chronological spine and Bank of United States failure payoff retained."
+    },
+    {
+      "source_id_range": "ch31§1¶5-6,12,15-16,22-23",
+      "reason": "rhetorical wondering and procedural flattery; payoff covered by anchors"
+    },
+    {
+      "source_id_range": "ch31§1¶28-29,38,40-41,45-47,50,58,62-67,70-71,73-74,76-79",
+      "reason": "columnist praise and Churchill scene-setting/recovery beats; padding after setting established"
+    },
+    {
+      "source_id_range": "ch32§1¶9-10,12,17,19-20,26-27,30-31,33-38,42",
+      "reason": "connective recap and convention procedural padding"
+    },
+    {
+      "source_id_range": "ch33§1¶1,8,10,12,16,18,20,24",
+      "reason": "scene-setting, restated gold/inflation anxiety, eugenics aside, duplicate letter"
+    },
+    {
+      "source_id_range": "ch34§1¶2,4-5,7,12,14-16,18,20,22-23,25",
+      "reason": "letter framing and repeated health/sound-money beats"
+    },
+    {
+      "source_id_range": "ch35§1¶4-5,7,10-11,14-16,18-19,21,26-32,35-36,38,43-46,48,51,54-55",
+      "reason": "long Q&A restating the coffee/salesman exchanges; descriptive padding"
+    },
+    {
+      "source_id_range": "ch36§1¶2-8,10-23,25-26,28-29,32,39,42-44",
+      "reason": "granular Q&A restating the morale-fund and own-stock-trading points"
+    },
+    {
+      "source_id_range": "ch37§1¶3,5,10-12,18-21,23",
+      "reason": "transitional beats and second half of inaugural quote"
+    },
+    {
+      "source_id_range": "ch38§1¶2,4,5,6-9,12,14,22,24-29",
+      "reason": "biographical and procedural padding around Aldrich and the Long fracas"
+    },
+    {
+      "source_id_range": "ch39§1¶3,5,7,10-11,18-21,23-25,27-28,30",
+      "reason": "arraignment logistics and point-by-point Lamont/FDR exchange restated by anchors"
+    },
+    {
+      "source_id_range": "ch40§1¶11-ch40§1¶24",
+      "reason": "Procedural accounting testimony (Barrett ledger details, redirect mechanics) compressed into one bridge; restates intent already established."
+    },
+    {
+      "source_id_range": "ch40§1¶31-ch40§1¶64",
+      "reason": "Extended verbatim trial Q&A and collateral/Morgan-loan exchange; representative interiority kept via bridge, rest is repetitive courtroom back-and-forth."
+    },
+    {
+      "source_id_range": "ch41§1¶3-ch41§1¶7",
+      "reason": "Glass's correspondence reiterating the Aldrich-drafted section; single quote retained, duplicative letters dropped."
+    },
+    {
+      "source_id_range": "ch41§1¶23-ch41§1¶32",
+      "reason": "House/Senate procedural maneuvering on deposit insurance; substance carried by surrounding anchors and one bridge."
+    },
+    {
+      "source_id_range": "ch42§1¶42-ch42§1¶56",
+      "reason": "Lya Graf circus aftermath and Glass-defense color; the stunt itself retained, surrounding reaction beats trimmed."
+    },
+    {
+      "source_id_range": "ch42§1¶59-ch42§1¶74",
+      "reason": "Whitney tax-return and interlocking-board cross-examination; representative bribe document kept, remaining Q&A is restatement."
+    },
+    {
+      "source_id_range": "ch43§1¶3-ch43§1¶11",
+      "reason": "Bill-signing ceremony color (veterans timing, pens, FDR quips); crowning-achievement beat preserved by anchors."
+    },
+    {
+      "source_id_range": "ch44§1¶7-ch44§1¶20",
+      "reason": "Minute-by-minute verdict-watch staging; tension preserved via the jury-question anchor and the verdict anchor."
+    },
+    {
+      "source_id_range": "ch45§2¶15-ch45§2¶26",
+      "reason": "Mechanics of George Whitney covering his brother and the Bartow confession; key turns kept, intermediate steps trimmed."
+    },
+    {
+      "source_id_range": "ch45§2¶43-ch45§2¶49",
+      "reason": "Durant decline detail (auctions, daughter's aviation); arc compressed to a bridge plus the closing penniless-death anchor."
+    },
+    {
+      "source_id_range": "ch45§2¶78-ch45§2¶90",
+      "reason": "Mitchell's post-acquittal financial reconstruction and Hamlin report build-up; the report's conclusion and exoneration kept."
+    },
+    {
+      "source_id_range": "ch46§2¶5-ch46§2¶10",
+      "reason": "Institutional-weakness exposition (Fed, NYSE, fragmented banks); thesis carried by adjacent payoff anchors."
+    },
+    {
+      "source_id_range": "ch3§1¶1,ch3§1¶2,ch3§1¶3,ch3§1¶6,ch3§1¶8,ch3§1¶12,ch3§1¶13,ch3§1¶15,ch3§1¶19,ch3§1¶21,ch3§1¶22,ch3§1¶23,ch3§1¶24,ch3§1¶27,ch3§1¶30,ch3§1¶32,ch3§1¶35,ch3§1¶36,ch3§1¶37,ch3§1¶38,ch3§1¶39,ch3§1¶40,ch3§1¶41,ch3§1¶42,ch3§1¶43,ch3§1¶44,ch3§1¶45,ch3§1¶46,ch3§1¶47,ch3§1¶48,ch3§1¶49,ch3§1¶50,ch3§1¶51,ch3§1¶52,ch3§1¶53,ch3§1¶54,ch3§1¶55,ch3§1¶56,ch3§1¶57,ch3§1¶58,ch3§1¶59,ch3§1¶60,ch3§1¶61,ch3§1¶63,ch3§1¶65,ch3§1¶68,ch3§1¶69,ch3§1¶71",
+      "reason": "ch3 EXPAND: kept high-value Fed-conflict spine, Mitchell character core (incl. signature quotes), and the Feb 16 climax; dropped lower-scoring building/society/biography detail to land near 1900w."
+    },
+    {
+      "source_id_range": "ch18§1¶3,ch18§1¶5,ch18§1¶6,ch18§1¶7,ch18§1¶10,ch18§1¶11,ch18§1¶12,ch18§1¶13,ch18§1¶14,ch18§1¶15,ch18§1¶17,ch18§1¶18,ch18§1¶19,ch18§1¶20,ch18§1¶21,ch18§1¶22,ch18§1¶23,ch18§1¶24,ch18§1¶26,ch18§1¶27,ch18§1¶28,ch18§1¶29,ch18§1¶31,ch18§1¶32,ch18§1¶33,ch18§1¶34,ch18§1¶35,ch18§1¶36,ch18§1¶39,ch18§1¶41,ch18§1¶42",
+      "reason": "ch18 EXPAND: kept arrival, debts, signature diary quotes, Baruch's fortune story, capitalism observation and foreshadow; dropped travelogue and minor scene detail."
+    },
+    {
+      "source_id_range": "ch20§1¶3,ch20§1¶4,ch20§1¶5,ch20§1¶7,ch20§1¶8,ch20§1¶9,ch20§1¶13,ch20§1¶15,ch20§1¶16,ch20§1¶17,ch20§1¶19,ch20§1¶22,ch20§1¶23,ch20§1¶24,ch20§1¶25,ch20§1¶26,ch20§1¶27,ch20§1¶31,ch20§1¶34,ch20§1¶35,ch20§1¶37,ch20§1¶38,ch20§1¶39,ch20§1¶40,ch20§1¶41,ch20§1¶42,ch20§1¶43,ch20§1¶44,ch20§1¶47,ch20§1¶49,ch20§1¶50,ch20§1¶51,ch20§1¶52,ch20§1¶53,ch20§1¶54,ch20§1¶55,ch20§1¶56,ch20§1¶59,ch20§1¶60,ch20§1¶61,ch20§1¶62,ch20§1¶63,ch20§1¶64,ch20§1¶65,ch20§1¶66,ch20§1¶67,ch20§1¶68,ch20§1¶69,ch20§1¶70,ch20§1¶71,ch20§1¶72,ch20§1¶73,ch20§1¶74,ch20§1¶75,ch20§1¶76,ch20§1¶77,ch20§1¶79,ch20§1¶80,ch20§1¶81,ch20§1¶83,ch20§1¶84",
+      "reason": "ch20 CONTRACT: kept the dramatic peak beats (dawn crowd, the bell, panic, Steel collapse, bankers' pool, Whitney's Steel bid, record close, Hoover line); trimmed the Cockburn lunch digression, Livermore, the astrologer, Durant/Berengaria and procedural scene-setting."
+    },
+    {
+      "source_id_range": "ch24§1¶1,ch24§1¶2,ch24§1¶5,ch24§1¶8,ch24§1¶9,ch24§1¶10,ch24§1¶12,ch24§1¶13,ch24§1¶14,ch24§1¶16,ch24§1¶17,ch24§1¶18,ch24§1¶19,ch24§1¶21,ch24§1¶22,ch24§1¶23,ch24§1¶24,ch24§1¶25,ch24§1¶26,ch24§1¶27,ch24§1¶31,ch24§1¶32,ch24§1¶33,ch24§1¶34,ch24§1¶35,ch24§1¶36,ch24§1¶37,ch24§1¶38,ch24§1¶39,ch24§1¶40,ch24§1¶41",
+      "reason": "ch24 EXPAND: kept Mellon liquidationism, Hearst/Hoover statements, Glass-vs-Mitchell climax and the Durant coda; dropped procedural meeting logistics and secondary letters."
+    },
+    {
+      "source_id_range": "ch27§1¶2,ch27§1¶5,ch27§1¶6,ch27§1¶7,ch27§1¶8,ch27§1¶9",
+      "reason": "ch27 CONTRACT to ~330: kept only the core Depression-framing (the relentless unraveling, the credit collapse, 'the Great Depression had begun', the dramatic transition); dropped Hoover-market, Keynes, Smoot-Hawley and gold-standard policy detail."
+    },
+    {
+      "source_id_range": "ch28§1¶2,ch28§1¶3,ch28§1¶4,ch28§1¶5,ch28§1¶9,ch28§1¶10,ch28§1¶11,ch28§1¶12,ch28§1¶13,ch28§1¶14,ch28§1¶15,ch28§1¶16,ch28§1¶17,ch28§1¶18,ch28§1¶19,ch28§1¶22,ch28§1¶25,ch28§1¶26",
+      "reason": "ch28 EXPAND: kept the Lamont birthday frame, the private deflation verdict, 'slower than death', the changing Street, and the Sherrod/Scapegoats explosion; dropped the Josephson/Tarbell/Time press-history detour."
+    },
+    {
+      "source_id_range": "ch29§1¶1,ch29§1¶2,ch29§1¶4,ch29§1¶5,ch29§1¶6,ch29§1¶8,ch29§1¶10,ch29§1¶11,ch29§1¶13",
+      "reason": "ch29 EXPAND to ~290: kept the exposure of Raskob's anti-Hoover smear, the 'all Raskob's fault' editorial, his on-air rebuttal and the blame-shift; dropped radio logistics and policy proposals."
+    },
+    {
+      "source_id_range": "ch37§1¶3,ch37§1¶4,ch37§1¶5,ch37§1¶9,ch37§1¶10,ch37§1¶11,ch37§1¶12,ch37§1¶14,ch37§1¶15,ch37§1¶18,ch37§1¶19,ch37§1¶20,ch37§1¶21,ch37§1¶22,ch37§1¶23,ch37§1¶24,ch37§1¶25,ch37§1¶26",
+      "reason": "ch37 CONTRACT to ~640: kept the Hoover/FDR confrontation core (tea ambush, 'No, no, no!', emergency-powers request, 'Like hell I will!', 'close them, of course', the inaugural indictment); dropped Lamont letters, call logs and the bank-reopening procedural tail."
+    }
+  ]
+}

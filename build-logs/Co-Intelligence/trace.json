@@ -1,0 +1,28 @@
+{
+  "schema": "book-to-html-trace/1.0",
+  "build_id": "20260528-001-co-intelligence",
+  "book": "Co-Intelligence: Living and Working with AI — Ethan Mollick",
+  "category_decision": {
+    "book_kind_provisional": "ai_topical",
+    "detected_category": "ai_topical",
+    "confidence": 0.97,
+    "depth": "deep",
+    "graphic_intensity": "graphic_heavy",
+    "channel": "A_only",
+    "note": "Beat-2 intake settings auto-selected from recommended defaults under blanket go-ahead; classifier confirmed provisional kind, so no disagreement to surface."
+  },
+  "spans": [
+    {"persona": "ingestor", "substrate": "deterministic", "result": "61 content splits + TOC parsed; 51,031-word body", "wall_ms": null, "usage": null},
+    {"persona": "editor", "model": "opus", "iterations": 2, "result": "98 anchors + 47 bridges, 14,204 words, RM=888, budget x16, coverage 27.8%", "wall_ms": 2438428, "usage": {"total_tokens": 203247}},
+    {"persona": "proofreader", "model": "sonnet", "result": "anchor_pass_pct=1.00; 1 bridge_unsupported_claim (u_0002) -> reworked by orchestrator per Proofreader spec, re-verified; bridge_ratio 0.087", "wall_ms": 632605, "usage": {"total_tokens": 100574}},
+    {"persona": "designer", "model": "opus", "result": "hybrid nav, A_only, graphic_heavy: 13 Channel-A graphics (7 Mermaid + 6 compare tables), 14 grounded figcaptions; all 145 units rendered; ~120KB self-contained HTML. Manifest write interrupted by session limit; HTML verified complete (closing </html>, 98 anchors, 14 h2).", "wall_ms": null, "usage": null, "note": "completed HTML before session-limit interrupt; verified post-hoc by Assembler"},
+    {"persona": "assembler", "substrate": "deterministic", "result": "validated HTML completeness; derived coverage.json + trace.json; copied reader verdict", "wall_ms": null, "usage": null},
+    {"persona": "reader", "model": "opus", "result": "PASS — books_finished_rate=5/5; comprehension 5, illustration 5, visual_pleasure 4, navigation 4. lowest=visual_pleasure", "wall_ms": 52687, "usage": {"total_tokens": 108302}}
+  ],
+  "gate": {"status": "pass", "books_finished_rate": 5, "iteration_count": 2, "iteration_cap": 3},
+  "counters": {"interview_questions": 0, "permission_popups": "minimal (allowlisted preflight + agent dispatch)"},
+  "known_issues": [
+    "editor-output.json verbatim_quote MIRROR fields on u_0012/u_0017/u_0030/u_0043 carry OCR artifacts from the calibre export; the RENDERED HTML anchors for those source_ids are clean, so the delivered reader is unaffected.",
+    "SKILL.md trigger path served the pre-edit (v2) cached body this session; v2.1 category-aware flow was run by the orchestrator from the on-disk reference files. Reload Claude Code to make v2.1 live in the normal trigger path."
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "build_id": "20260619-001-How-to-Know-a-Person",
+  "book": {
+    "title": "How to Know a Person",
+    "author": "David Brooks",
+    "source_words": 78500
+  },
+  "book_kind": "narrative_nonfic",
+  "depth": "standard",
+  "retained_words": 5570,
+  "retention_mass": 506,
+  "source_coverage_pct": 96.0,
+  "bridge_ratio": 0.0998,
+  "anchor_count": 85,
+  "bridge_count": 34,
+  "per_chapter_contribution": [
+    {
+      "ch": 1,
+      "pct": 6.5
+    },
+    {
+      "ch": 2,
+      "pct": 4.4
+    },
+    {
+      "ch": 3,
+      "pct": 5.4
+    },
+    {
+      "ch": 4,
+      "pct": 5.5
+    },
+    {
+      "ch": 5,
+      "pct": 6.3
+    },
+    {
+      "ch": 6,
+      "pct": 6.1
+    },
+    {
+      "ch": 7,
+      "pct": 5.1
+    },
+    {
+      "ch": 8,
+      "pct": 5.3
+    },
+    {
+      "ch": 9,
+      "pct": 6.4
+    },
+    {
+      "ch": 10,
+      "pct": 4.8
+    },
+    {
+      "ch": 11,
+      "pct": 7.3
+    },
+    {
+      "ch": 12,
+      "pct": 5.4
+    },
+    {
+      "ch": 13,
+      "pct": 5.7
+    },
+    {
+      "ch": 14,
+      "pct": 6.8
+    },
+    {
+      "ch": 15,
+      "pct": 6.5
+    },
+    {
+      "ch": 16,
+      "pct": 5.9
+    },
+    {
+      "ch": 17,
+      "pct": 6.5
+    }
+  ],
+  "proofreader": {
+    "gate_status": "pass",
+    "iteration": 2,
+    "anchors_checked": 85,
+    "anchors_failed": 0,
+    "bridges_rechecked": 12,
+    "bridges_failed": 0,
+    "bridge_ratio": 0.0996,
+    "note": "All 17 chapters within 70-130% band; 12 bridge citations reworked & re-verified in iteration 2."
+  },
+  "dropped_sections": [
+    {
+      "source_id_range": "ch1§1¶1-9",
+      "reason": "Memoir-style opening about Brooks's reserved upbringing and emotional thawing; vivid voice but no framework or data; condensed into a single bridge."
+    },
+    {
+      "source_id_range": "ch1§1¶10-12",
+      "reason": "Anecdotes (Oprah, bat at baseball game) restating the same point about Brooks's growth; second illustrations, score ≤3."
+    },
+    {
+      "source_id_range": "ch1§2¶2-4",
+      "reason": "Elaboration on creeping dehumanization and social media; descriptive padding after the recognition point lands."
+    },
+    {
+      "source_id_range": "ch1§2¶7-12",
+      "reason": "Three-reasons scaffolding (pragmatic/spiritual/survival) condensed; the McKinsey data point preserved in bridge."
+    },
+    {
+      "source_id_range": "ch1§3¶3-5",
+      "reason": "Forster, Gladstone/Disraeli anecdotes—additional illustrations of the Illuminator concept already shown via Nyquist."
+    },
+    {
+      "source_id_range": "ch1§3¶9-10",
+      "reason": "Empathic-accuracy elaboration and rhetorical questions; repeats the point made by the Ickes data anchor."
+    },
+    {
+      "source_id_range": "ch1§4¶1-6",
+      "reason": "The orchid-doorway beholding scene; vivid but the key line is captured in the anchor; surrounding paragraphs are descriptive."
+    },
+    {
+      "source_id_range": "ch2§1¶1-3",
+      "reason": "Bar-scene size-up vignette and Bobos reference; voice padding before the Diminisher list."
+    },
+    {
+      "source_id_range": "ch2§1¶5-6,8-9,11",
+      "reason": "Anxiety, Naïve Realism, Objectivism, Static Mindset entries; representative items kept (egotism, lesser-minds, essentialism), the rest dropped to avoid list bloat."
+    },
+    {
+      "source_id_range": "ch2§2¶3-16",
+      "reason": "Extended Gornick memoir narrative; condensed into a bridge with the analytic payoff kept as anchor."
+    },
+    {
+      "source_id_range": "ch3§1¶1-8",
+      "reason": "Waco/Jimmy Dorrell setup; narrative captured in bridge, the attention principle kept as anchor."
+    },
+    {
+      "source_id_range": "ch3§2¶1-4,6-22",
+      "reason": "Soul/reverence passage and the six gaze-feature entries with Tolstoy quote; representative anchors kept, illustrative entries condensed."
+    },
+    {
+      "source_id_range": "ch3§3¶7-9",
+      "reason": "Murdoch's M-and-D mother-in-law illustration; second example of an idea already established by the just-and-loving-attention anchor."
+    },
+    {
+      "source_id_range": "ch3§4¶1-9",
+      "reason": "Mary Pipher profile; condensed into a bridge as an extended single illustration."
+    },
+    {
+      "source_id_range": "ch4§1¶1-7",
+      "reason": "Loren Eiseley river-float narrative; descriptive frame condensed; principle stated in accompaniment anchors."
+    },
+    {
+      "source_id_range": "ch4§3¶2-20,22-26",
+      "reason": "Patience/playfulness/other-centeredness sub-sections with multiple anecdotes (Caldwell, baseball coaching); condensed; presence kept as anchor."
+    },
+    {
+      "source_id_range": "ch5§1¶1-19",
+      "reason": "Long Carrère tsunami narrative; condensed into a bridge, with the Huxley payoff line as anchor."
+    },
+    {
+      "source_id_range": "ch5§2¶2-5",
+      "reason": "Yalom and Anaïs Nin illustrations of subjectivity; second examples after Brackett anchor."
+    },
+    {
+      "source_id_range": "ch5§3¶3-15",
+      "reason": "Brain-science deep dive and perception experiments; key mechanism kept as anchor, experiments condensed to bridge."
+    },
+    {
+      "source_id_range": "ch5§6¶1-6",
+      "reason": "Closing Carrère reflection and Kegan/Shaw quotes; restates the constructionism point already anchored."
+    },
+    {
+      "source_id_range": "ch6§1¶1-4",
+      "reason": "Park-bench intro and conversationalist-vs-raconteur framing; voice setup before the joint-exploration anchor."
+    },
+    {
+      "source_id_range": "ch6§1¶6-8",
+      "reason": "Balfour/Buchan illustration and bore-bomb anecdote; supporting color for the good-conversation point."
+    },
+    {
+      "source_id_range": "ch6§1¶13-18,22-24,28-32",
+      "reason": "Favor Familiarity, Don't Fear the Pause, Midwife, Gem Statement entries; representative conversational moves kept, others condensed to limit list length."
+    },
+    {
+      "source_id_range": "ch7§1¶1-7",
+      "reason": "David Bradley index-card and hiring profile; extended single illustration condensed into a bridge."
+    },
+    {
+      "source_id_range": "ch7§2¶1-5",
+      "reason": "Niobe Way interview and questioner-percentage anecdotes; color before the moral-practice anchor."
+    },
+    {
+      "source_id_range": "ch7§3¶1-12",
+      "reason": "Question-type taxonomy and big-question lists; condensed; humble-open-question rule kept as anchor."
+    },
+    {
+      "source_id_range": "ch8§1¶1-2,4-5",
+      "reason": "Crisis-of-connection framing and statistics intro; one consolidated data anchor kept, surrounding scaffolding condensed."
+    },
+    {
+      "source_id_range": "ch8§1¶7-19",
+      "reason": "Politics-of-recognition and mass-shooter sections; extended argument condensed to a bridge to control chapter share."
+    },
+    {
+      "source_id_range": "ch8§2¶1,5-7",
+      "reason": "Moral-formation history (McClellan, Ngram, UCLA survey); supporting data after the core moral-cause anchors."
+    },
+    {
+      "source_id_range": "ch9§1¶1-7",
+      "reason": "Travel vignettes of anger and the three-levels framing; condensed into a bridge."
+    },
+    {
+      "source_id_range": "ch9§2¶1-6,8-9",
+      "reason": "Culture-war panel narrative and Ellison Invisible Man passage; extended illustration condensed."
+    },
+    {
+      "source_id_range": "ch9§2¶19-23,25",
+      "reason": "Splitting/repair moves and Proffitt hill-perception experiments; condensed to bridge; affordances kept as anchor."
+    },
+    {
+      "source_id_range": "ch10§1¶1-19",
+      "reason": "Pete Marks friendship and depression narrative; deeply personal, condensed into a bridge with lessons anchored."
+    },
+    {
+      "source_id_range": "ch10§2¶13-26",
+      "reason": "Styron/Solomon depression quotes and Gerson sermon; supporting illustrations of the presence lesson already anchored."
+    },
+    {
+      "source_id_range": "ch11§1¶1-14",
+      "reason": "Childhood-defenses section, Grant Study warmth findings, sacred-flaw and conceptual-blindness illustrations; condensed into bridges; empathy-skill anchors retained."
+    },
+    {
+      "source_id_range": "ch11§2¶7-23,29-31",
+      "reason": "Emotion-construction mechanics, granularity examples, and empathy-spectrum/Carol case; representative anchors kept, the rest condensed."
+    },
+    {
+      "source_id_range": "ch11§3¶1-19,21-24",
+      "reason": "Empathy-training practices (contact theory, acting, literature, mood meter) and co-regulation; condensed into a bridge with the floor anecdote anchored."
+    },
+    {
+      "source_id_range": "ch12§1¶1-6,8",
+      "reason": "Barbara Lazear Ascher grief memoir and Joseph survey stats; illustration condensed; assimilate/accommodate model anchored."
+    },
+    {
+      "source_id_range": "ch12§2¶1-15",
+      "reason": "Frederick Buechner father-suicide narrative; long single story condensed to a bridge with the steel-quote anchor."
+    },
+    {
+      "source_id_range": "ch12§4¶1-7,5§1-3",
+      "reason": "Excavation exercises and Kushner reflection; instructional list condensed; warrior-vs-Illuminator model anchored."
+    },
+    {
+      "source_id_range": "ch12§6¶1-3,5-8",
+      "reason": "Warrior/statesman model description and Murdoch coda; supporting contrast for the anchored Illuminator-character point."
+    },
+    {
+      "source_id_range": "ch13§1¶1-8",
+      "reason": "George W. Bush extroversion anecdotes (Bullock kiss); vivid first example condensed into a bridge."
+    },
+    {
+      "source_id_range": "ch13§2¶10-12,14-17,19-22",
+      "reason": "Conscientiousness and agreeableness entries plus Nettle/Brontë illustrations; representative Big Five anchors kept (extroversion, neuroticism, openness), others condensed."
+    },
+    {
+      "source_id_range": "ch13§4¶1,3-5",
+      "reason": "Self-assessment guidance and Danielle Dick parenting application; instructional padding after the trait anchors."
+    },
+    {
+      "source_id_range": "ch14§1¶1-12",
+      "reason": "Baby-development opening (Gopnik) and developmental-psychology framing; condensed into a bridge."
+    },
+    {
+      "source_id_range": "ch14§2¶3-7,3§2-9",
+      "reason": "Imperial- and interpersonal-consciousness elaborations with Lewis/Seneca illustrations; core task definitions anchored, details condensed."
+    },
+    {
+      "source_id_range": "ch14§4¶1-2,6-13",
+      "reason": "Lori Gottlieb and Robert Caro/LBJ career-consolidation narratives; extended illustrations condensed into a bridge."
+    },
+    {
+      "source_id_range": "ch14§5¶1-9,11-20",
+      "reason": "Adam Newman Grant Study case and generative-guardian elaboration; long illustration condensed; generativity definition anchored."
+    },
+    {
+      "source_id_range": "ch14§6¶2-9",
+      "reason": "Integrity-task examples (McClay's mother, Yalom patient); second illustrations after the task definition anchor."
+    },
+    {
+      "source_id_range": "ch14§7¶2-5",
+      "reason": "Brooks's self-assessment and disembedding/Kegan coda; restates points already anchored."
+    },
+    {
+      "source_id_range": "ch15§1¶1-5",
+      "reason": "McAdams life-story interviews and Epley commuter study; condensed into a bridge."
+    },
+    {
+      "source_id_range": "ch15§3¶1-15",
+      "reason": "Tone-of-voice, inner-speech research, imago and plot taxonomy, reliable-narrator section; rich but list-heavy, condensed into a bridge."
+    },
+    {
+      "source_id_range": "ch15§4¶1-2,4",
+      "reason": "Music-listening framing and dying-friend vignette; descriptive coda around the anchored co-creation point."
+    },
+    {
+      "source_id_range": "ch16§1¶1-20",
+      "reason": "Full Zora Neale Hurston biography and Eatonville scenes; extended narrative condensed into a bridge."
+    },
+    {
+      "source_id_range": "ch16§3¶1-22",
+      "reason": "Culture-shapes-perception evidence (WEIRD, Nisbett, Fischer's folkways); dense data section condensed into a bridge to control chapter share."
+    },
+    {
+      "source_id_range": "ch16§4¶1-7",
+      "reason": "Brooks's own Jewish-ancestry reflection; personal illustration of the anchored ancestors point."
+    },
+    {
+      "source_id_range": "ch17§1¶1-5",
+      "reason": "Opening seeing-anecdotes (teacher, drunk daughter, FDR on LBJ); first illustrations condensed into the wisdom-definition setup."
+    },
+    {
+      "source_id_range": "ch17§3¶1-15,4§1-10,5§1-6,6§1-9",
+      "reason": "Four closing case studies (Kidder/Deo, Gottlieb/John, Good Will Hunting, Schulz's father); long narratives condensed into one bridge with two thematic anchors retained."
+    },
+    {
+      "source_id_range": "ch17§7¶1-8",
+      "reason": "Brooks's final honest self-assessment; voice-rich but largely recapitulative; closing two lines kept as anchor."
+    }
+  ]
+}

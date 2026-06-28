@@ -1,0 +1,250 @@
+{
+  "trace_version": "book-to-html-trace/1.1",
+  "build_id": "20260615-001-Leadership-and-the-One-Minute-Manager",
+  "book_metadata": {
+    "title": "Leadership and the One Minute Manager",
+    "author": "Ken Blanchard, Patricia Zigarmi, Drea Zigarmi",
+    "total_words": 16240
+  },
+  "intake": {
+    "book_kind_provisional": "self_help",
+    "book_kind": "self_help",
+    "depth": "standard",
+    "graphic_intensity": "standard",
+    "illustration_channel_pref": "A_only",
+    "style_anchor_pref": null
+  },
+  "renderer": "native",
+  "htmler_register": null,
+  "started_at": "2026-06-15T01:41:49Z",
+  "ended_at": "2026-06-15T02:13:00Z",
+  "outcome": "delivered",
+  "approvals": {
+    "permission_popups": 0,
+    "interview_questions": 3
+  },
+  "spans": [
+    {
+      "span_id": "s_001",
+      "persona": "ingestor",
+      "model": "none",
+      "iteration": 1,
+      "started_at": "2026-06-15T01:41:49Z",
+      "ended_at": "2026-06-15T01:41:52Z",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 2761,
+        "persona_specific": {
+          "corpus_paragraphs": "not measured",
+          "chapters_detected": 21,
+          "parse_errors": 0,
+          "format": "epub",
+          "extracted_files": 48
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_002"
+    },
+    {
+      "span_id": "s_002",
+      "persona": "editor",
+      "model": "claude-opus-4-6",
+      "iteration": 1,
+      "started_at": "2026-06-15T01:43:00Z",
+      "ended_at": "2026-06-15T01:48:38Z",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 338953,
+        "persona_specific": {
+          "detected_category": "self_help",
+          "classifier_confidence": 0.94,
+          "bridge_ratio": 0.08,
+          "retention_mass": "not measured",
+          "output_words": 950,
+          "units_emitted": 40,
+          "anchors": 36,
+          "bridges": 4,
+          "dropped_sections_count": 10
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_003"
+    },
+    {
+      "span_id": "s_003",
+      "persona": "proofreader",
+      "model": "claude-sonnet-4-6",
+      "iteration": 1,
+      "started_at": "2026-06-15T01:48:38Z",
+      "ended_at": "2026-06-15T01:52:16Z",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 217715,
+        "persona_specific": {
+          "violations_count": 1,
+          "anchor_pass_pct": 0.972,
+          "bridge_ratio": 0.16,
+          "chapter_coverage_min": 0.010,
+          "chapter_coverage_max": 0.175,
+          "violation_summary": "u_0030 verbatim_quote starts with spurious leading double-quote not present in source"
+        }
+      },
+      "gate_status": "fail",
+      "escalation": null,
+      "next_span_id": "s_004"
+    },
+    {
+      "span_id": "s_004",
+      "persona": "editor",
+      "model": "claude-opus-4-6",
+      "iteration": 2,
+      "started_at": "2026-06-15T02:00:00Z",
+      "ended_at": "2026-06-15T02:00:42Z",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 42041,
+        "persona_specific": {
+          "rework_scope": "targeted",
+          "units_changed": 5,
+          "u0030_fix": "removed spurious leading double-quote from verbatim_quote",
+          "bridge_tightening": "4 bridges trimmed from ~120-170 words to 83 words total",
+          "bridge_ratio_post_rework": 0.08
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_005"
+    },
+    {
+      "span_id": "s_005",
+      "persona": "proofreader",
+      "model": "claude-sonnet-4-6",
+      "iteration": 2,
+      "started_at": "2026-06-15T02:00:42Z",
+      "ended_at": "2026-06-15T02:03:12Z",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 150725,
+        "persona_specific": {
+          "violations_count": 0,
+          "anchor_pass_pct": 1.0,
+          "bridge_ratio": 0.08,
+          "units_rechecked": 5,
+          "chapter_coverage_min": 0.010,
+          "chapter_coverage_max": 0.175
+        }
+      },
+      "gate_status": "pass",
+      "escalation": null,
+      "next_span_id": "s_006"
+    },
+    {
+      "span_id": "s_006",
+      "persona": "designer",
+      "model": "claude-opus-4-6",
+      "iteration": 1,
+      "started_at": "2026-06-15T02:06:00Z",
+      "ended_at": "2026-06-15T02:08:15Z",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 135769,
+        "persona_specific": {
+          "navigation_shape": "linear",
+          "channel_a_count": 8,
+          "channel_b_count": 0,
+          "b_fallbacks": 0,
+          "pull_quotes": 5,
+          "mermaid_diagrams": 8,
+          "concept_chapters_covered": [6, 7, 8, 9, 10, 13, 15, 18]
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_007"
+    },
+    {
+      "span_id": "s_007",
+      "persona": "assembler",
+      "model": "none",
+      "iteration": 1,
+      "started_at": "2026-06-15T02:08:15Z",
+      "ended_at": "2026-06-15T02:08:16Z",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 1000,
+        "persona_specific": {
+          "html_bytes": 28530,
+          "units_merged": 40,
+          "images_embedded": 0
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": "s_008"
+    },
+    {
+      "span_id": "s_008",
+      "persona": "reader",
+      "model": "claude-opus-4-6",
+      "iteration": 1,
+      "started_at": "2026-06-15T02:09:00Z",
+      "ended_at": "2026-06-15T02:09:42Z",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 42809,
+        "persona_specific": {
+          "scores_visual_pleasure": 4,
+          "scores_navigation": 4,
+          "scores_comprehension": 5,
+          "scores_illustration": 5,
+          "scores_books_finished_rate": 4,
+          "would_skip_original": true,
+          "comprehension_answered": 9.5,
+          "comprehension_total": 10
+        }
+      },
+      "gate_status": "pass",
+      "escalation": null,
+      "next_span_id": null
+    },
+    {
+      "span_id": "s_meta",
+      "persona": "orchestrator",
+      "model": "claude-sonnet-4-6",
+      "iteration": 1,
+      "started_at": "2026-06-15T01:41:49Z",
+      "ended_at": "2026-06-15T02:13:00Z",
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_ms": 1871000,
+        "persona_specific": {
+          "total_iterations": 2,
+          "rework_target_history": ["proofreader_fail_iter1_u0030_bridge_ratio"]
+        }
+      },
+      "gate_status": "n/a",
+      "escalation": null,
+      "next_span_id": null
+    }
+  ],
+  "tokens_by_persona": {
+    "editor_iter1": 236507,
+    "proofreader_iter1": 141840,
+    "editor_rework_iter2": 37019,
+    "proofreader_iter2": 33325,
+    "designer": 51335,
+    "reader": 45190
+  },
+  "tokens_total": 545216
+}

@@ -1,0 +1,25 @@
+{
+  "scores": {
+    "visual_pleasure": 4,
+    "navigation": 5,
+    "comprehension": 5,
+    "illustration": 5,
+    "books_finished_rate": 4
+  },
+  "comprehension_detail": {
+    "answered_correct": 10,
+    "of": 10,
+    "missed_q_ids": []
+  },
+  "verdict": {
+    "visual_pleasure": "The Stripe/Distill/Gwern chrome lands. Serif body at a clamp-scaled 1-1.25rem on a 66ch measure, 1.65 leading, drop caps in burnt-orange (#b54300) at chapter openers, Tufte sidenotes, pull-quotes with rule borders, and a working dark mode make this genuinely pleasant to scroll. The accent color is disciplined and the three-column grid (TOC | text | margin) breathes. Two things hold it back from a 5: the page is overwhelmingly a stack of verbatim blockquote.anchor passages with thin connective prose, so the rhythm is quote-quote-quote rather than a fluid editorial flow; and the source EPUB's preserved OCR corruption ('indigits onby one', 'thypical denstration', 'JghtA5 a at Jght') surfaces inside otherwise gorgeous quotes and visibly snags the eye several times per chapter. That is the source's fault per the Design Note, not the design's, but as a reader it still costs me momentum. Solidly a 4.",
+    "navigation": "Best dimension. The hybrid TOC is exactly right for this book: a strict linear order grouped under the five Parts (Two Systems -> Heuristics -> Overconfidence -> Choices -> Two Selves), with Part labels in accent caps so I can both read front-to-back and hunt a single bias by topic. Scroll-spy via IntersectionObserver highlights the current section, the top progress bar plus a live '% read' counter and a per-document '~211 min / 46,526 words' estimate set expectations, and every h2 carries its own reading-time chip (~5 min). Sticky TOC collapses cleanly under 1080px. Nothing distracts; everything serves orientation in a 40-section document. 5.",
+    "comprehension": "10/10 answerable from the HTML alone, and not superficially — the artifact carries the exact load-bearing entities for every question: pupil dilation as the second-by-second effort index and the flashed letter K missed nearly half the time at peak (Q1); cognitive ease and the 'Becoming Famous Overnight' mere-exposure mechanism (Q2); WYSIATI spelled out verbatim (Q3); the rigged 10/65 wheel yielding 25%/45% estimates and the random-anchor point (Q4); the twelve-vs-six assertiveness study with 'fluency trumped number' (Q5); Linda, both ranked options, and the subset/Venn conjunction violation (Q6); the flight-instructor regression eureka (Q7); the leaderless-group log task and the named 'illusion of validity' persisting against overwhelming disconfirming feedback (Q8); Meehl's disturbing little book with Bordeaux-wine prices and parole as replicated domains (Q9); and the Redelmeier cold-hand/colonoscopy peak-end rule with experiencing-vs-remembering selves (Q10). Maps to 5.",
+    "illustration": "The ~20 inline-SVG and HTML-table diagrams genuinely externalize relationships rather than decorate. The fourfold-pattern 2x2 puts risk-averse/risk-seeking in each cell with the concrete behavior (buy the lottery ticket / buy the insurance) — that is the single hardest table in the book made legible at a glance. The value-function curve shows the steeper loss limb encoding loss aversion; the Linda Venn nests feminist-bank-tellers inside bank-tellers so the subset rule is visual; the inverted-V pupil/effort curve, the regression-to-the-mean crossing lines, the availability fluency-substitution flow, and the two-patient colonoscopy pain profiles all encode mechanism, not vibe. Every figcaption cites a source span ([ch29 sec3 par1]) and captions honestly flag 'qualitative shape' where numbers are not in the source — no invented data. 5.",
+    "books_finished_rate": "This clears the terminal gate but does not blow past it. At 28.2% source coverage (per the footer) across all 40 sections plus a full conclusion, the deep-depth condensation preserves the actual arguments and the named experiments, not just headlines — I finished it in roughly a quarter of the original's reading time and came away able to teach the fourfold pattern, prospect theory's two pillars, regression-to-the-mean, and the two-selves conflict cold. That measurably raises my books-per-week and I would skip the original for working knowledge. What keeps it at 4 rather than 5: the artifact leans so heavily on long verbatim anchor quotes (bridge ratio 0.051 — very little synthesizing prose) that reading it is closer to reading a curated 28% of Kahneman's own sentences than reading a true distillation, and the recurring OCR garble inside those quotes makes me momentarily distrust the text and want to check the source. Confident enough to skip, not quite confident enough to feel the original is fully retired. 4."
+  },
+  "lowest_dimension": "visual_pleasure",
+  "would_skip_original": true,
+  "gate_status": "pass",
+  "renderer": "native"
+}

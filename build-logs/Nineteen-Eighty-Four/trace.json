@@ -1,0 +1,54 @@
+{
+  "envelope": "book-to-html-trace/1.0",
+  "build_id": "20260621-001-nineteen-eighty-four",
+  "book_title": "Nineteen Eighty-Four",
+  "spans": [
+    {
+      "persona": "ingestor",
+      "substrate": "deterministic",
+      "status": "ok"
+    },
+    {
+      "persona": "editor",
+      "substrate": "ai",
+      "model": "claude-opus",
+      "status": "ok",
+      "shards": 4,
+      "rework": "ch18 contracted iter1"
+    },
+    {
+      "persona": "proofreader",
+      "substrate": "ai",
+      "model": "claude-sonnet",
+      "status": "pass"
+    },
+    {
+      "persona": "designer",
+      "substrate": "ai",
+      "model": "claude-sonnet",
+      "status": "ok",
+      "illustrations": 18
+    },
+    {
+      "persona": "assembler",
+      "substrate": "deterministic",
+      "status": "ok",
+      "reader_views": 14,
+      "output_words": 33995
+    },
+    {
+      "persona": "reader",
+      "substrate": "ai",
+      "model": "claude-opus",
+      "status": "pass",
+      "scores": {
+        "visual_pleasure": 5,
+        "navigation": 5,
+        "comprehension": 5,
+        "illustration": 4,
+        "books_finished_rate": 4
+      },
+      "lowest_dimension": "illustration"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "book-to-html-handoff/1.0",
+  "stage": "reader-verdict",
+  "build_id": "20260615-001-HBR-10-Must-Reads-Soft-Skills",
+  "iteration": 1,
+  "renderer": "native",
+  "scores": {
+    "visual_pleasure": 4,
+    "navigation": 5,
+    "comprehension": 5,
+    "illustration": 4,
+    "books_finished_rate": 4
+  },
+  "verdict": {
+    "visual_pleasure": "Solid typography — 66ch measure, 1.65 leading, humanist serif, dark-mode support — creates a calm reading environment. The anchor blockquote construction is honest to the source but produces occasional walls of text when a long HBR paragraph is presented verbatim. A few source artifacts survive (article titles embedded in retained p001 paragraphs, occasional cross-references to cut sidebars), which briefly jar the reader. Pull-quotes at chapters 2, 9, 11, 13 provide good visual breathing room. Overall: comfortable but not flowing.",
+    "navigation": "The sticky side TOC with 13 numbered articles, per-section reading-time badges, scroll-spy highlighting, 3 px progress bar, and percent-read meter all function correctly. Finding any specific article is instant. The linear-with-article-anchors shape is the right call for an anthology — readers can jump to the skill they need without losing their place in the overall reading flow. This is the strongest dimension of the build.",
+    "comprehension": "All 10 comprehension questions were answerable from the HTML alone without ambiguity: Goleman's empathy triad types, Andersen's four learning attributes, Grant's reinforcement cues and the 48% compliance research, Meyer's upgrader/downgrader linguistics, the 5x cross-gender advice-giving ratio, Boyatzis neuroimaging finding, the 18-254 day habit range, all eight S's, all five leadership voices with character description, and all three ethical tests. Factual fidelity is high because the body is built directly from source spans with minimal bridge prose.",
+    "illustration": "13 Mermaid diagrams — one per article — externalize real models rather than decorating. Standouts: the empathy-triad hierarchy graph (ch02), the cross-cultural feedback quadrant chart (ch07), the intentional-change coaching flowchart (ch10), the eight-S mindmap (ch11), and the three-stage ethics flowchart (ch13). The simpler diagrams (ch03 empathy culture cycle, ch12 five-voice mindmap) add spatial encoding without adding information the prose lacks. The quadrant chart for ch07 has the highest information density. No Channel B decoration.",
+    "books_finished_rate": "I would confidently skip the original. The key frameworks from all 13 articles are present and answerable — I could reconstruct the core argument of each article and apply its main tools. The one-point deduction: condensation is achieved primarily by selection (removing summary boxes, secondary examples, and metadata) rather than by rewriting, which means the retained spans carry the full density of the original HBR prose. The build runs about 30% longer than it could if bridges replaced the most formulaic setup paragraphs. For the target use case (working-knowledge expansion, not academic review), this is still a strong 4."
+  },
+  "comprehension_answers": [
+    {"q_id": 1, "answered": true, "note": "ch02 empathy triad section — cognitive vs emotional empathy distinction present with brain region detail"},
+    {"q_id": 2, "answered": true, "note": "ch04-p001 lists aspiration, self-awareness, curiosity, vulnerability explicitly"},
+    {"q_id": 3, "answered": true, "note": "ch05 three reinforcements section covers all three: in-group, positive identity, effectiveness"},
+    {"q_id": 4, "answered": true, "note": "ch07-p013 defines upgraders and downgraders with examples"},
+    {"q_id": 5, "answered": true, "note": "ch07 gender section contains the 5x ratio finding"},
+    {"q_id": 6, "answered": true, "note": "ch10-p006 contains the neuroimaging finding about compassion vs compliance coaching"},
+    {"q_id": 7, "answered": true, "note": "ch10-p011 cites Lally: 18 to 254 days"},
+    {"q_id": 8, "answered": true, "note": "ch11-p001 lists all eight S's"},
+    {"q_id": 9, "answered": true, "note": "ch12 section names all five voices; ch12-p002 defines voice of character"},
+    {"q_id": 10, "answered": true, "note": "ch13-p010 states the publicity test, generalizability test, and mirror test"}
+  ],
+  "lowest_dimension": "visual_pleasure",
+  "would_skip_original": true,
+  "gate_status": "pass",
+  "notes": "Minor issues for future iteration: (1) some p001 paragraphs include embedded article title text that is redundant with the h2 heading; (2) a handful of retained paragraphs contain cross-references to cut sidebars ('See the exhibit', 'See the sidebar') that could confuse readers. Neither issue fails the gate.",
+  "usage": {"input_tokens": 195000, "output_tokens": 2800},
+  "wall_ms": 126664
+}

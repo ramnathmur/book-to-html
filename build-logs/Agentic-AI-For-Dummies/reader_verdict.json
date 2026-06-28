@@ -1,0 +1,74 @@
+{
+  "schema": "book-to-html-reader-verdict/1.0",
+  "iteration": 2,
+  "scores": {
+    "visual_pleasure": 3,
+    "navigation": 4,
+    "comprehension": 5,
+    "illustration": 4,
+    "books_finished_rate": 4
+  },
+  "answers": [
+    {
+      "q_id": 1,
+      "answer": "Perception, memory, logic, and coordination. The book states (ch3§5¶10): 'The core technologies involved combine perception, memory, logic, and coordination to create the foundation for collective intelligence in agentic systems' — combining contextual awareness with situational reasoning.",
+      "found_in_html": true
+    },
+    {
+      "q_id": 2,
+      "answer": "Model Context Protocol (MCP), Agent Network Protocol (ANP), Agent-to-Agent (A2A) protocol, and Agent Communication Protocol (ACP). The book (ch3§2¶11) describes these as the four lightweight protocols the industry is currently leaning toward.",
+      "found_in_html": true
+    },
+    {
+      "q_id": 3,
+      "answer": "ANP stands for Agent Network Protocol. It solves the problem of enabling secure multi-agent collaboration across organizations and domains by providing identity, authentication, and trust mechanisms — often using decentralized identifiers (DIDs) — so agents can discover one another, share tasks or data, and coordinate while maintaining verifiable provenance and privacy boundaries. Its differentiator vs MCP is sustained decentralization / peer-to-peer structure with no central authority.",
+      "found_in_html": true
+    },
+    {
+      "q_id": 4,
+      "answer": "MCP was created by Anthropic (described as 'AI safety and research company Anthropic') and open-sourced in late 2024. The book's analogy is that MCP 'acts like a USB-C cable for AI: a universal connector that allows different AI systems to plug into tools, apps, and data sources without needing a custom setup each time' (also described as a 'USB-C port for AI').",
+      "found_in_html": true
+    },
+    {
+      "q_id": 5,
+      "answer": "Title: 'The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity' (Apple 2025). Central claim: today's reasoning models don't actually reason — they replay patterns from training data; they look brilliant on simple/familiar tasks but their 'thinking' breaks down as problems get harder or move out of distribution. True reasoning (cause/effect, spotting breaks in logic, adapting on the fly) is something these models still can't do.",
+      "found_in_html": true
+    },
+    {
+      "q_id": 6,
+      "answer": "Two examples named (ch2§0¶7-12): (a) LangChain — a framework that helps AI agents interact with external data by 'chains of reasoning,' chaining together multiple steps/components to accomplish complex tasks requiring sequential processing and decision-making. (b) OpenAI function calling — lets agents access and retrieve live data from external APIs by defining functions in code (e.g., a weather chatbot calling a weather API). AutoGen is also named alongside them as a third example.",
+      "found_in_html": true
+    },
+    {
+      "q_id": 7,
+      "answer": "Hierarchical planning and goal-conditioned reinforcement learning (ch3§0¶44). Hierarchical planning decomposes large tasks into subgoals when a problem is too big for a single agent (e.g., a delivery drone breaking a long route into smaller waypoints). Goal-conditioned reinforcement learning lets agents adjust plans when environments or other agents behave differently than expected — reassigning priorities or modifying strategies via what-if reasoning so the team still hits the overall goal (e.g., an autonomous drone simulating different flight paths in milliseconds to avoid bad weather and conserve battery).",
+      "found_in_html": true
+    },
+    {
+      "q_id": 8,
+      "answer": "Chapter 12 recommends the 70-20-10 learning model adapted for the agentic age (70% on-the-job experience, 20% learning from others/social, 10% formal structured learning). Figure 12-1's caption states: 'A learning feedback loop system embedded in the 70-20-10 learning model' — i.e., a continuous feedback loop is embedded inside the 70-20-10 structure to keep learning intentional and aligned with changing job needs.",
+      "found_in_html": true
+    },
+    {
+      "q_id": 9,
+      "answer": "Swarm Agentic AI is defined (ch13§3¶46) as 'a distributed system that comprises multiple autonomous agents acting independently but working together toward a single goal' — networks of coordinated autonomous agents without a central control mechanism. Inspiration cited (ch13§4¶7): natural systems such as ant colonies and bee hives — featuring distributed intelligence, dynamic coordination, and emergent behavior that exceeds what individual agents could do.",
+      "found_in_html": true
+    },
+    {
+      "q_id": 10,
+      "answer": "NIST's AI Risk Management Framework (in the U.S.) and ISO's AI Management System Standard (ISO/IEC 42001). The book (ch7§0¶50) explicitly states: 'Governance frameworks seek to resolve this issue by making responsibility explicit and non-transferable. NIST's AI Risk Management Framework in the U.S. and ISO's AI Management System Standard (ISO/IEC 42001) both stress that humans, whether they're regulators, institutions, or operators, remain accountable for system outcomes.'",
+      "found_in_html": true
+    }
+  ],
+  "verdict": {
+    "visual_pleasure": "Typography is calm and well-tuned for long-form reading — ink-blue accent, serif body, generous measure, drop caps at chapter openers, dark-mode support. But two persistent issues hold this to a 3: (a) the article body is dominated by raw <blockquote class='anchor'> stacks rather than condensed prose — many chapters read as an annotated source extract rather than a written-through condensation, which kills scrolling momentum; (b) several h3 section headings are mid-sentence fragments (e.g. 'Allow agents (in newer systems) to communicate by using more' / 'natural, human-readable language (known as natural language'), visually jarring at chapter scale. The chrome is polished; the body text is not.",
+    "navigation": "Sticky left TOC with chapter-level + by-theme grouping is genuinely useful, the top progress bar and percent-read indicator work, scroll-spy highlights the active chapter, and source-ID anchors on every blockquote let you trace any claim back to its source span. The mid-sentence h3 fragments fragment the scroll-spy state slightly but don't break it. Solid 4.",
+    "comprehension": "Answered 10/10 with high confidence from the HTML alone. The four protocols (MCP/ANP/A2A/ACP) are named in full multiple times, MCP's Anthropic+2024+USB-C analogy is intact, the Apple 2025 study title is verbatim including subtitle, the 70-20-10 model + embedded feedback loop is fully rendered (including the pie-chart figure), the NIST RMF + ISO/IEC 42001 accountability pairing is a single clean sentence in ch7, and the swarm definition + ant colony / bee hive inspiration are both present. Hits the 5 band cleanly.",
+    "illustration": "55 figures: ~30 mermaid diagrams (concept flows, decision trees, the protocol scaling problem, the alignment cascade, the 70-20-10 pie, the agentic-skills stack) plus per-chapter Pollinations hero images. The mermaid diagrams genuinely externalize relationships (e.g., 'why APIs strain at multi-agent scale' makes the ANP/A2A/MCP motivation click instantly; the flash-crash cascade visualizes the failure mode). Captions cite source IDs, so each figure is anchored to a specific claim. Heroes are atmospheric but generic. 4.",
+    "books_finished_rate": "Yes — I would skip the original. Every named entity I'd want from a Dummies-level briefing on agentic AI is in here: the four protocols with creators and analogies, the Apple study with its central claim, the named frameworks (LangChain/AutoGen/function calling), the planning techniques (hierarchical planning + goal-conditioned RL), the governance frameworks (NIST RMF + ISO/IEC 42001 + EU AI Act + OECD), the swarm definition with biological analogies, and the 70-20-10 upskilling model with embedded feedback loops. The condensation isn't elegant — it's blockquote-heavy and the Editor clearly punted on rewriting many spans — but the SUBSTANCE is complete and comprehensible. For 80% of working-knowledge purposes I would trust this over reading the original. 4. (Would be a 5 if the Editor had rewritten the blockquote stacks into proper condensed prose.)"
+  },
+  "lowest_dimension": "visual_pleasure",
+  "would_skip_original": true,
+  "gate_status": "pass",
+  "notes_on_prior_iteration": "Prior pre-doctype dump bug fixed; HTML now opens with a single clean <!doctype html> + <html> + <head> + <body> + <article>, no leaked pre-doctype text. Re-scored against the repaired 677 KB artifact. Remaining weakness is editorial (blockquote-heavy substrate, mid-sentence h3 fragments), not structural — does NOT block the gate. All five thresholds met: visual>=3, navigation>=3, comprehension>=3, illustration>=3, books_finished_rate>=4."
+}

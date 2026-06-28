@@ -1,0 +1,377 @@
+{
+  "schema": "book-to-html-coverage/1.0",
+  "book": {
+    "title": "Agentic AI For Dummies",
+    "author": "Pam Baker",
+    "slug": "Agentic-AI-For-Dummies"
+  },
+  "source_words": 87783,
+  "output_words": 75565,
+  "coverage_pct": 86.1,
+  "anchor_words": 75565,
+  "bridge_words": 0,
+  "bridge_ratio": 0.0,
+  "chapters": [
+    {
+      "no": 0,
+      "title": "Introduction",
+      "source_words": 1430,
+      "output_words": 1094,
+      "retention_mass": 131,
+      "density": 0.765034965034965
+    },
+    {
+      "no": 1,
+      "title": "Introducing Agentic AI",
+      "source_words": 5900,
+      "output_words": 5305,
+      "retention_mass": 475,
+      "density": 0.8991525423728813
+    },
+    {
+      "no": 2,
+      "title": "Peeking Inside the AI Agent Mind",
+      "source_words": 6143,
+      "output_words": 5341,
+      "retention_mass": 536,
+      "density": 0.8694448966303109
+    },
+    {
+      "no": 3,
+      "title": "Meeting Agentic AI Core Technologies",
+      "source_words": 9983,
+      "output_words": 8517,
+      "retention_mass": 1024,
+      "density": 0.8531503556045277
+    },
+    {
+      "no": 4,
+      "title": "Interacting with Agentic AI",
+      "source_words": 8404,
+      "output_words": 7505,
+      "retention_mass": 674,
+      "density": 0.8930271299381247
+    },
+    {
+      "no": 5,
+      "title": "Planning for the Shift to Agentic AI Systems",
+      "source_words": 8055,
+      "output_words": 6844,
+      "retention_mass": 760,
+      "density": 0.8496585971446307
+    },
+    {
+      "no": 6,
+      "title": "Sampling Sector Use Cases for AI Agents",
+      "source_words": 6648,
+      "output_words": 5568,
+      "retention_mass": 477,
+      "density": 0.8375451263537906
+    },
+    {
+      "no": 7,
+      "title": "Considering Risks, Ethics, and Hard Questions",
+      "source_words": 7476,
+      "output_words": 6816,
+      "retention_mass": 547,
+      "density": 0.9117174959871589
+    },
+    {
+      "no": 8,
+      "title": "Reshaping Work with Agentic AI",
+      "source_words": 5325,
+      "output_words": 4582,
+      "retention_mass": 381,
+      "density": 0.8604694835680751
+    },
+    {
+      "no": 9,
+      "title": "Predicting Agentic AI\u2019s Economic Impact",
+      "source_words": 4511,
+      "output_words": 4105,
+      "retention_mass": 393,
+      "density": 0.9099977831966305
+    },
+    {
+      "no": 10,
+      "title": "Building Agentic Systems Responsibly",
+      "source_words": 6088,
+      "output_words": 4970,
+      "retention_mass": 512,
+      "density": 0.8163600525624178
+    },
+    {
+      "no": 11,
+      "title": "Dispelling Common Agentic AI Misconceptions",
+      "source_words": 4842,
+      "output_words": 3953,
+      "retention_mass": 516,
+      "density": 0.8163981825691863
+    },
+    {
+      "no": 12,
+      "title": "Upskilling for the Agentic Age",
+      "source_words": 5572,
+      "output_words": 4471,
+      "retention_mass": 367,
+      "density": 0.8024048815506102
+    },
+    {
+      "no": 13,
+      "title": "Scoping the Future of Agency",
+      "source_words": 4933,
+      "output_words": 4509,
+      "retention_mass": 353,
+      "density": 0.9140482465031421
+    },
+    {
+      "no": 14,
+      "title": "Ten Surprising Ways Agentic AI Can Change Daily Life",
+      "source_words": 487,
+      "output_words": 379,
+      "retention_mass": 36,
+      "density": 0.7782340862422998
+    },
+    {
+      "no": 15,
+      "title": "Ten Things Agentic AI Is Terrible at Doing",
+      "source_words": 305,
+      "output_words": 237,
+      "retention_mass": 28,
+      "density": 0.7770491803278688
+    },
+    {
+      "no": 16,
+      "title": "Ten Bold Predictions about the Future of Agentic AI",
+      "source_words": 1681,
+      "output_words": 1369,
+      "retention_mass": 149,
+      "density": 0.8143961927424153
+    }
+  ],
+  "dropped_sections_total": 1156,
+  "dropped_splits": [
+    {
+      "split": "index_split_000.html",
+      "reason": "front_matter: Agentic AI For Dummies\u00ae"
+    },
+    {
+      "split": "index_split_001.html",
+      "reason": "front_matter: Cover"
+    },
+    {
+      "split": "index_split_002.html",
+      "reason": "front_matter: Title Page"
+    },
+    {
+      "split": "index_split_003.html",
+      "reason": "front_matter: Driving Multi-Agent Coordination and Planning"
+    },
+    {
+      "split": "index_split_004.html",
+      "reason": "front_matter: Mistaking AI as a Colleague Creates Errors"
+    },
+    {
+      "split": "index_split_005.html",
+      "reason": "front_matter: Systems"
+    },
+    {
+      "split": "index_split_006.html",
+      "reason": "front_matter: Developing Healthcare, Diagnostics, and Pharmaceuticals"
+    },
+    {
+      "split": "index_split_007.html",
+      "reason": "front_matter: Questions"
+    },
+    {
+      "split": "index_split_008.html",
+      "reason": "front_matter: Shaping Human Minds and Mindsets"
+    },
+    {
+      "split": "index_split_009.html",
+      "reason": "front_matter: Predicting Productivity Gains and Automation Impacts"
+    },
+    {
+      "split": "index_split_010.html",
+      "reason": "front_matter: Developing Design Principles for Safe Autonomy"
+    },
+    {
+      "split": "index_split_011.html",
+      "reason": "front_matter: Misconceptions"
+    },
+    {
+      "split": "index_split_012.html",
+      "reason": "front_matter: Knowing What to Learn and Unlearn"
+    },
+    {
+      "split": "index_split_013.html",
+      "reason": "front_matter: Consciousness, Intent, and Artificial Goals"
+    },
+    {
+      "split": "index_split_014.html",
+      "reason": "front_matter: Change Daily Life"
+    },
+    {
+      "split": "index_split_015.html",
+      "reason": "front_matter: Doing"
+    },
+    {
+      "split": "index_split_016.html",
+      "reason": "front_matter: of Agentic AI"
+    },
+    {
+      "split": "index_split_017.html",
+      "reason": "front_matter: TABLE 2-1 Interacting with GenAI versus Agentic AI"
+    },
+    {
+      "split": "index_split_018.html",
+      "reason": "front_matter: TABLE 3-1 ANP at a Glance: Pros and Cons"
+    },
+    {
+      "split": "index_split_019.html",
+      "reason": "front_matter: TABLE 4-1 Challenges in Context Engineering for Agentic AI"
+    },
+    {
+      "split": "index_split_020.html",
+      "reason": "front_matter: TABLE 5-1 Comparison of GenAI and Agentic AI"
+    },
+    {
+      "split": "index_split_021.html",
+      "reason": "front_matter: TABLE 11-1 GenAI Chatbot versus Agentic AI Systems"
+    },
+    {
+      "split": "index_split_022.html",
+      "reason": "front_matter: TABLE 13-1 Agentic AI versus AI Swarm Systems"
+    },
+    {
+      "split": "index_split_023.html",
+      "reason": "front_matter: FIGURE 1-1: A screenshot of ChatGPT chatbot user interface."
+    },
+    {
+      "split": "index_split_024.html",
+      "reason": "front_matter: FIGURE 4-1: A side-by-side comparison of prompt engineering and context"
+    },
+    {
+      "split": "index_split_025.html",
+      "reason": "front_matter: FIGURE 5-1: A decision flowchart for choosing a pilot project."
+    },
+    {
+      "split": "index_split_026.html",
+      "reason": "front_matter: FIGURE 6-1: Agentic AI for upskilling robotic surgery comparison chart."
+    },
+    {
+      "split": "index_split_027.html",
+      "reason": "front_matter: FIGURE 8-1: The aiApply interface and its claims."
+    },
+    {
+      "split": "index_split_028.html",
+      "reason": "front_matter: FIGURE 12-1: A learning feedback loop system embedded in the 70-20-10"
+    },
+    {
+      "split": "index_split_029.html",
+      "reason": "front_matter: FIGURE 13-1: A screenshot from Anthropic\u2019s internal evaluation of its"
+    },
+    {
+      "split": "index_split_030.html",
+      "reason": "front_matter: Agentic AI For Dummies \u00ae"
+    },
+    {
+      "split": "index_split_034.html",
+      "reason": "part divider: IN THIS PART \u2026"
+    },
+    {
+      "split": "index_split_050.html",
+      "reason": "part divider: IN THIS PART \u2026"
+    },
+    {
+      "split": "index_split_059.html",
+      "reason": "part divider: IN THIS PART \u2026"
+    },
+    {
+      "split": "index_split_069.html",
+      "reason": "part divider: IN THIS PART \u2026"
+    },
+    {
+      "split": "index_split_083.html",
+      "reason": "part divider: IN THIS PART \u2026"
+    },
+    {
+      "split": "index_split_090.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_091.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_092.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_093.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_094.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_095.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_096.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_097.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_098.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_099.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_100.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_101.html",
+      "reason": "index: "
+    },
+    {
+      "split": "index_split_102.html",
+      "reason": "back matter: About the Author"
+    },
+    {
+      "split": "index_split_103.html",
+      "reason": "back matter: Dedication"
+    },
+    {
+      "split": "index_split_104.html",
+      "reason": "back matter: Author\u2019s Acknowledgments"
+    },
+    {
+      "split": "index_split_105.html",
+      "reason": "back matter: Publisher\u2019s Acknowledgments"
+    },
+    {
+      "split": "index_split_106.html",
+      "reason": "back matter: everywhere you go!"
+    },
+    {
+      "split": "index_split_107.html",
+      "reason": "back matter: Create your own Dummies book cover"
+    },
+    {
+      "split": "index_split_108.html",
+      "reason": "back matter: AGREEMENT"
+    }
+  ],
+  "front_matter_paragraphs_dropped": 1079,
+  "back_matter_paragraphs_dropped": 29
+}

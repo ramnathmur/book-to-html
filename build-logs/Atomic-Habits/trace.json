@@ -1,0 +1,57 @@
+{
+  "schema_version": "trace/1.0",
+  "book": "Atomic Habits",
+  "started_at": "2026-05-28T02:05:03.892756Z",
+  "ended_at": "2026-05-28T02:05:03.898684Z",
+  "spans": [
+    {
+      "persona": "Ingestor",
+      "substrate": "deterministic",
+      "input": "epub",
+      "output": "corpus.json,chapter_map.json,quote_table.json,image_hints.json",
+      "duration_ms": 85947,
+      "result": "ok"
+    },
+    {
+      "persona": "Editor",
+      "substrate": "AI",
+      "model": "opus",
+      "input": "corpus.json",
+      "output": "editor_output.json,coverage.json",
+      "duration_ms": 243242,
+      "result": "ok",
+      "retained_words": 14483,
+      "bridge_ratio_pct": 0.0
+    },
+    {
+      "persona": "Proofreader",
+      "substrate": "AI",
+      "model": "sonnet",
+      "input": "editor_output.json,corpus.json,quote_table.json",
+      "output": "proofreader_verdict.json",
+      "duration_ms": 131105,
+      "result": "PASS"
+    },
+    {
+      "persona": "Designer",
+      "substrate": "AI",
+      "model": "opus",
+      "input": "editor_output.json,chapter_map.json,image_hints.json",
+      "output": "designer_output.json",
+      "duration_ms": 570154,
+      "result": "ok",
+      "channel_a_count": 12,
+      "channel_b_count": 5
+    },
+    {
+      "persona": "Assembler",
+      "substrate": "deterministic",
+      "input": "editor_output.json,designer_output.json,coverage.json",
+      "output": "Atomic-Habits_Reader_v1.html,Atomic-Habits_coverage.json,Atomic-Habits_trace.json,Atomic-Habits_reader_verdict.json",
+      "duration_ms": 7,
+      "result": "ok"
+    }
+  ],
+  "iteration": 1,
+  "iteration_cap": 3
+}

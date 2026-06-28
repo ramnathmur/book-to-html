@@ -1,0 +1,1429 @@
+{
+  "envelope": "book-to-html-handoff/1.0",
+  "book_title": "The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",
+  "build_id": "20260621-001-body-keeps-the-score",
+  "build_date": "2026-06-21",
+  "source_words": 138458,
+  "output_words": 56597,
+  "source_coverage_pct": 0.4088,
+  "anchors": 674,
+  "bridges": 52,
+  "bridge_words_pct": 0.02,
+  "per_chapter_contribution": [
+    {
+      "ch": 0,
+      "pct": 0.0106
+    },
+    {
+      "ch": 1,
+      "pct": 0.0493
+    },
+    {
+      "ch": 2,
+      "pct": 0.0392
+    },
+    {
+      "ch": 3,
+      "pct": 0.0182
+    },
+    {
+      "ch": 4,
+      "pct": 0.0603
+    },
+    {
+      "ch": 5,
+      "pct": 0.0483
+    },
+    {
+      "ch": 6,
+      "pct": 0.0386
+    },
+    {
+      "ch": 7,
+      "pct": 0.0519
+    },
+    {
+      "ch": 8,
+      "pct": 0.0312
+    },
+    {
+      "ch": 9,
+      "pct": 0.0438
+    },
+    {
+      "ch": 10,
+      "pct": 0.0599
+    },
+    {
+      "ch": 11,
+      "pct": 0.0352
+    },
+    {
+      "ch": 12,
+      "pct": 0.0415
+    },
+    {
+      "ch": 13,
+      "pct": 0.0693
+    },
+    {
+      "ch": 14,
+      "pct": 0.0585
+    },
+    {
+      "ch": 15,
+      "pct": 0.0369
+    },
+    {
+      "ch": 16,
+      "pct": 0.0306
+    },
+    {
+      "ch": 17,
+      "pct": 0.0713
+    },
+    {
+      "ch": 18,
+      "pct": 0.0445
+    },
+    {
+      "ch": 19,
+      "pct": 0.0736
+    },
+    {
+      "ch": 20,
+      "pct": 0.0551
+    },
+    {
+      "ch": 21,
+      "pct": 0.0322
+    }
+  ],
+  "per_chapter_band_check": [
+    {
+      "ch": 0,
+      "share_pct": 0.0106,
+      "proportional_target": 0.0,
+      "ratio": null,
+      "band_status": "pass"
+    },
+    {
+      "ch": 1,
+      "share_pct": 0.0493,
+      "proportional_target": 0.0478,
+      "ratio": 1.031,
+      "band_status": "pass"
+    },
+    {
+      "ch": 2,
+      "share_pct": 0.0392,
+      "proportional_target": 0.0508,
+      "ratio": 0.772,
+      "band_status": "expand"
+    },
+    {
+      "ch": 3,
+      "share_pct": 0.0182,
+      "proportional_target": 0.0243,
+      "ratio": 0.749,
+      "band_status": "expand"
+    },
+    {
+      "ch": 4,
+      "share_pct": 0.0603,
+      "proportional_target": 0.0583,
+      "ratio": 1.034,
+      "band_status": "pass"
+    },
+    {
+      "ch": 5,
+      "share_pct": 0.0483,
+      "proportional_target": 0.0356,
+      "ratio": 1.357,
+      "band_status": "pass"
+    },
+    {
+      "ch": 6,
+      "share_pct": 0.0386,
+      "proportional_target": 0.0475,
+      "ratio": 0.813,
+      "band_status": "pass"
+    },
+    {
+      "ch": 7,
+      "share_pct": 0.0519,
+      "proportional_target": 0.0511,
+      "ratio": 1.014,
+      "band_status": "pass"
+    },
+    {
+      "ch": 8,
+      "share_pct": 0.0312,
+      "proportional_target": 0.0387,
+      "ratio": 0.808,
+      "band_status": "pass"
+    },
+    {
+      "ch": 9,
+      "share_pct": 0.0438,
+      "proportional_target": 0.0371,
+      "ratio": 1.181,
+      "band_status": "pass"
+    },
+    {
+      "ch": 10,
+      "share_pct": 0.0599,
+      "proportional_target": 0.0569,
+      "ratio": 1.053,
+      "band_status": "pass"
+    },
+    {
+      "ch": 11,
+      "share_pct": 0.0352,
+      "proportional_target": 0.0378,
+      "ratio": 0.932,
+      "band_status": "pass"
+    },
+    {
+      "ch": 12,
+      "share_pct": 0.0415,
+      "proportional_target": 0.0485,
+      "ratio": 0.855,
+      "band_status": "pass"
+    },
+    {
+      "ch": 13,
+      "share_pct": 0.0693,
+      "proportional_target": 0.0783,
+      "ratio": 0.885,
+      "band_status": "pass"
+    },
+    {
+      "ch": 14,
+      "share_pct": 0.0585,
+      "proportional_target": 0.0519,
+      "ratio": 1.127,
+      "band_status": "pass"
+    },
+    {
+      "ch": 15,
+      "share_pct": 0.0369,
+      "proportional_target": 0.0451,
+      "ratio": 0.818,
+      "band_status": "pass"
+    },
+    {
+      "ch": 16,
+      "share_pct": 0.0306,
+      "proportional_target": 0.0386,
+      "ratio": 0.793,
+      "band_status": "expand"
+    },
+    {
+      "ch": 17,
+      "share_pct": 0.0713,
+      "proportional_target": 0.0602,
+      "ratio": 1.183,
+      "band_status": "pass"
+    },
+    {
+      "ch": 18,
+      "share_pct": 0.0445,
+      "proportional_target": 0.0413,
+      "ratio": 1.076,
+      "band_status": "pass"
+    },
+    {
+      "ch": 19,
+      "share_pct": 0.0736,
+      "proportional_target": 0.0593,
+      "ratio": 1.241,
+      "band_status": "pass"
+    },
+    {
+      "ch": 20,
+      "share_pct": 0.0551,
+      "proportional_target": 0.0503,
+      "ratio": 1.095,
+      "band_status": "pass"
+    },
+    {
+      "ch": 21,
+      "share_pct": 0.0322,
+      "proportional_target": 0.0307,
+      "ratio": 1.049,
+      "band_status": "pass"
+    }
+  ],
+  "out_of_band_chapters_note": "ch2/ch3/ch16 sit at 0.75-0.79 vs the strict expository 0.80 floor; all pass the general 70-130% per-chapter law. Accepted as marginal; no end-load bias.",
+  "dropped_sections": [
+    {
+      "source_id_range": "ch0§1¶0_h,ch0§2¶0_h",
+      "reason": "chapter/section headings, not body prose"
+    },
+    {
+      "source_id_range": "ch0§2¶3",
+      "reason": "restated point — secondary ripple effects of trauma, covered more vividly elsewhere"
+    },
+    {
+      "source_id_range": "ch0§2¶6",
+      "reason": "typographic section break (• • •)"
+    },
+    {
+      "source_id_range": "ch0§2¶7-8",
+      "reason": "autobiographical framing and naming of three disciplines; scaffolding superseded by ¶9 mechanism summary"
+    },
+    {
+      "source_id_range": "ch0§2¶11-12",
+      "reason": "credentials and grant-funding recap; condensed into a bridge"
+    },
+    {
+      "source_id_range": "ch0§2¶14",
+      "reason": "closing invitation — rhetoric, no new fact"
+    },
+    {
+      "source_id_range": "ch1§2¶1-4",
+      "reason": "epigraph quotations (Hosseini, Stern) — not author's prose"
+    },
+    {
+      "source_id_range": "ch1§2¶8",
+      "reason": "Tom's pre-war biography; second-tier backstory, spine carried by ¶6-7,9"
+    },
+    {
+      "source_id_range": "ch1§2¶10-12",
+      "reason": "author's family backstory; condensed into a bridge to keep voice without the full retelling"
+    },
+    {
+      "source_id_range": "ch1§2¶16-18",
+      "reason": "restated 'trauma transformed everything' point plus VA-rage and toddler-comparison digressions"
+    },
+    {
+      "source_id_range": "ch1§2¶22-26",
+      "reason": "rhetorical 'we don't want to know' passage and repeated study setup/Alex-friendship detail; spine carried by the ambush anchor"
+    },
+    {
+      "source_id_range": "ch1§2¶30-31",
+      "reason": "forward-pointing 'we will return to this' scaffolding and one-word heading"
+    },
+    {
+      "source_id_range": "ch1§2¶33-34",
+      "reason": "second/third illustration of numbing-and-thrill (mob case, Harley ride); first instance retained"
+    },
+    {
+      "source_id_range": "ch1§2¶37,ch1§2¶39,ch1§2¶41",
+      "reason": "misdiagnosis setup, Rorschach methodology explainer, and reaction recap; findings retained in ¶40,42-44"
+    },
+    {
+      "source_id_range": "ch1§2¶46-48,ch1§2¶50-51,ch1§2¶54,ch1§2¶56,ch1§2¶60,ch1§2¶62-63",
+      "reason": "restated perception point, Patton-group anecdote, repeated treatment-failure and symptom-overlap recaps, and 'new understanding' scaffolding"
+    },
+    {
+      "source_id_range": "ch2§2¶1-4",
+      "reason": "epigraph quotations (Chang, Penn Warren)"
+    },
+    {
+      "source_id_range": "ch2§2¶7-9,ch2§2¶12-16,ch2§2¶18,ch2§2¶20-22",
+      "reason": "ward-attendant color, electroshock vignette, Bleuler hallucination digression, coordination observations, training-program backstory and Semrad anecdotes — voice/atmosphere, not load-bearing science"
+    },
+    {
+      "source_id_range": "ch2§2¶26,ch2§2¶28,ch2§2¶30,ch2§2¶33,ch2§2¶35,ch2§2¶37",
+      "reason": "lithium/Clozaril vignette, neurotransmitter-isolation setup, headings, and restated stress-hormone/fight-flight points"
+    },
+    {
+      "source_id_range": "ch2§2¶39-40,ch2§2¶43-44,ch2§2¶48,ch2§2¶51,ch2§2¶53,ch2§2¶55,ch2§2¶57,ch2§2¶59-60,ch2§2¶62,ch2§2¶66-67,ch2§2¶69",
+      "reason": "section headings, Solomon opponent-process explainer, L-tryptophan aside, second Prozac patient, placebo discussion, SSRI mechanism recap, pharmacology-triumph atmosphere, and brain-disease-model wrap-up rhetoric"
+    },
+    {
+      "source_id_range": "ch3§2¶1-4",
+      "reason": "epigraph quotations (Pavlov, Yogi Berra)"
+    },
+    {
+      "source_id_range": "ch3§2¶7,ch3§2¶9-11,ch3§2¶13,ch3§2¶15-17",
+      "reason": "study-recruitment scaffolding, sample script, scanning-procedure mechanics, Marsha's post-trauma biography, distress observation, photo caption, and refrigerator-scan anecdote"
+    },
+    {
+      "source_id_range": "ch3§2¶22-23,ch3§2¶25,ch3§2¶28,ch3§2¶30,ch3§2¶34,ch3§2¶37-38,ch3§2¶40-41",
+      "reason": "restated speechless-trauma points, cover-story digression, right/left-brain primer, forward references, Marsha-in-scanner recap, treatment-perspectives enumeration, and EMDR foreshadow"
+    },
+    {
+      "source_id_range": "ch4§2¶1-2",
+      "reason": "epigraph quotation (Roger Sperry)"
+    },
+    {
+      "source_id_range": "ch4§2¶5-6,ch4§2¶9,ch4§2¶11-12,ch4§2¶14-16,ch4§2¶18-19,ch4§2¶21,ch4§2¶23,ch4§2¶26,ch4§2¶29,ch4§2¶31",
+      "reason": "caregiver-cue note, photo caption, restated whole-organism point, headings, photo credits, Katrina caption, chapter-roadmap scaffolding, neocortex/age-of-reason and housekeeping-functions elaborations, toddler-exploration and frontal-lobe-culture color"
+    },
+    {
+      "source_id_range": "ch4§2¶32,ch4§2¶35-38,ch4§2¶41-44,ch4§2¶46-47,ch4§2¶49,ch4§2¶51-53,ch4§2¶56-58,ch4§2¶60-62,ch4§2¶64,ch4§2¶67-70,ch4§2¶72,ch4§2¶74-77,ch4§2¶79,ch4§2¶82,ch4§2¶86,ch4§2¶88,ch4§2¶90,ch4§2¶95-96",
+      "reason": "headings, triune-brain caption, frontal-lobe-relationship and impulse elaborations, duplicate low-road/high-road caption, misreading-danger recap, executive-capacity restatement, rider-horse setup, chapter-preview scaffolding, crash rescue/aftermath detail and fMRI-method note, two-systems primer, repeated flashback/numbing/trigger/shame passages, captions, and Ute-recovery aside"
+    },
+    {
+      "source_id": "ch5§2¶3",
+      "reason": "Atmospheric voice intro (Darwin published The Expression of the Emotions in 1872, contrasted with Origin and Descent). Carries no mechanism or study; the chapter's argument begins cleanly at ch5§2¶6 where Darwin's biological theory of emotion is stated. Removed to tighten over-retained chapter."
+    },
+    {
+      "source_id": "ch5§2¶12",
+      "reason": "Authorial voice reflection ('The first time I encountered this passage, I reread it with growing excitement...'). A personal-resonance passage that restates the gut/heart visceral-emotion point already established by the Darwin pneumogastric-nerve mechanism in ch5§2¶11. No new study, data, or named mechanism."
+    },
+    {
+      "source_id": "ch5§2¶24",
+      "reason": "Restated framing that 'almost all mental suffering involves relationships or arousal regulation.' Conceptually redundant with the social-safety and neuroception material retained in ch5§2¶26 and ch5§2¶32. No study finding or named mechanism."
+    },
+    {
+      "source_id": "ch5§2¶27",
+      "reason": "Voice passage reinforcing 'social support is not the same as being in the presence of others / reciprocity.' Restates the social-support point already carried by the study-bearing unit ch5§2¶26 (disaster-response studies; Kagan). Cut as redundancy."
+    },
+    {
+      "source_id": "ch5§2¶62",
+      "reason": "Restatement of the voice-tone/safety-signal mechanism ('yelling leads to dysregulation; dogs respond to tone'). Redundant with the mirror-neuron/facial-attunement mechanism (ch5§2¶22) and the polyvagal synthesis on vocal/facial communication (ch5§2¶65). No unique mechanism or data."
+    },
+    {
+      "source_id_range": "ch6§1¶0_h, ch6§2¶0_h, ch7§1¶0_h, ch7§2¶0_h",
+      "reason": "Chapter/section title headings; structural, rendered separately."
+    },
+    {
+      "source_id_range": "ch6§2¶1, ch6§2¶2",
+      "reason": "Rilke epigraph and attribution; rhetorical scaffolding."
+    },
+    {
+      "source_id_range": "ch6§2¶4 (opening)",
+      "reason": "Foster-home backstory narration; kept the mother's load-bearing quote."
+    },
+    {
+      "source_id_range": "ch6§2¶6",
+      "reason": "Kidnapping/rape backstory; second trauma anecdote for the same patient, condensed."
+    },
+    {
+      "source_id_range": "ch6§2¶8",
+      "reason": "Recap of prior chapter on co-regulation; restated point."
+    },
+    {
+      "source_id_range": "ch6§2¶9",
+      "reason": "Restates the self-soothing-through-self-harm idea kept in ¶7."
+    },
+    {
+      "source_id_range": "ch6§2¶12, ch6§2¶17, ch6§2¶28, ch6§2¶36, ch6§2¶40, ch6§2¶53, ch6§2¶61, ch6§2¶66, ch6§2¶72",
+      "reason": "Section headings."
+    },
+    {
+      "source_id_range": "ch6§2¶15",
+      "reason": "Long William James 1884 case quotation; vivid but a second illustration of the muffled-senses point in ¶13-14."
+    },
+    {
+      "source_id_range": "ch6§2¶16",
+      "reason": "Rhetorical transition question."
+    },
+    {
+      "source_id_range": "ch6§2¶19",
+      "reason": "Methods detail (sample sizes/breathing instruction); the finding is carried by ¶18/¶23."
+    },
+    {
+      "source_id_range": "ch6§2¶21 (tail)",
+      "reason": "Detailed connectivity list of midline structures; kept the core Mohawk description."
+    },
+    {
+      "source_id_range": "ch6§2¶22",
+      "reason": "Figure caption duplicating ¶21/¶23 anatomy."
+    },
+    {
+      "source_id_range": "ch6§2¶26",
+      "reason": "Mirror-recognition aside; restates loss of self-experience in ¶24-25."
+    },
+    {
+      "source_id_range": "ch6§2¶29",
+      "reason": "Sherry massage-progress recap; repeated treatment beat."
+    },
+    {
+      "source_id_range": "ch6§2¶30, ch6§2¶31",
+      "reason": "Biographical framing of meeting Damasio and the 'screen' metaphor; kept the primordial-feelings quote in ¶32."
+    },
+    {
+      "source_id_range": "ch6§2¶33 (tail), ch6§2¶34",
+      "reason": "Restates brain-monitoring mechanism covered elsewhere."
+    },
+    {
+      "source_id_range": "ch6§2¶39",
+      "reason": "Rhetorical question pair; scaffolding."
+    },
+    {
+      "source_id_range": "ch6§2¶43",
+      "reason": "March of the Penguins analogy; rhetorical flourish."
+    },
+    {
+      "source_id_range": "ch6§2¶44",
+      "reason": "Forward-reference to Part V somatic therapies; scaffolding."
+    },
+    {
+      "source_id_range": "ch6§2¶45, ch6§2¶47, ch6§2¶49",
+      "reason": "Restate the gut-feeling / fear-of-fear / self-regulation points kept in ¶42/¶46/¶48."
+    },
+    {
+      "source_id_range": "ch6§2¶51",
+      "reason": "Sandy treatment-outcome tail; the case is made by ¶50."
+    },
+    {
+      "source_id_range": "ch6§2¶54",
+      "reason": "Widowed-aunt alexithymia anecdote; second example, condensed via the mechanism in ¶55-56."
+    },
+    {
+      "source_id_range": "ch6§2¶57",
+      "reason": "Henry Krystal Holocaust-survivor passage; another alexithymia illustration, redundant with ¶55/¶58."
+    },
+    {
+      "source_id_range": "ch6§2¶59 (tail), ch6§2¶60",
+      "reason": "Colorblind analogy and revictimization restatement; redundant."
+    },
+    {
+      "source_id_range": "ch6§2¶63",
+      "reason": "Author's self-commentary on his own mugging; voice flourish, secondary."
+    },
+    {
+      "source_id_range": "ch6§2¶64",
+      "reason": "Schilder 1928 depersonalization quote; second illustration of ¶62."
+    },
+    {
+      "source_id_range": "ch6§2¶68, ch6§2¶69, ch6§2¶70",
+      "reason": "Therapy-procedure detail and medication aside; treatment scaffolding deferred to Part V."
+    },
+    {
+      "source_id_range": "ch6§2¶73 (tail), ch6§2¶74, ch6§2¶75",
+      "reason": "Setup and apparatus description for the eye-gaze scan; finding carried by ¶76 via a bridge."
+    },
+    {
+      "source_id_range": "ch6§2¶77",
+      "reason": "Closing rhetorical questions; scaffolding into next chapter."
+    },
+    {
+      "source_id_range": "ch7§2¶1, ch7§2¶2",
+      "reason": "Fosha epigraph and attribution; rhetorical scaffolding."
+    },
+    {
+      "source_id_range": "ch7§2¶4, ch7§2¶5",
+      "reason": "Biographical framing of Nina Fish-Murray and Henry Murray; backstory."
+    },
+    {
+      "source_id_range": "ch7§2¶6 (opening)",
+      "reason": "General description of the TAT; kept the children's-cards study itself."
+    },
+    {
+      "source_id_range": "ch7§2¶8",
+      "reason": "Control-group violence-exposure framing; the contrast is made by the card responses."
+    },
+    {
+      "source_id_range": "ch7§2¶9 (control-ending clause)",
+      "reason": "Benign-ending half kept in compressed form; gruesome contrast retained."
+    },
+    {
+      "source_id_range": "ch7§2¶10",
+      "reason": "ADHD/Ritalin aside on the clinic kids' arousal."
+    },
+    {
+      "source_id_range": "ch7§2¶11",
+      "reason": "Pregnant-woman card anecdote; second example of the same trigger finding in ¶9/¶13."
+    },
+    {
+      "source_id_range": "ch7§2¶12",
+      "reason": "Restates that control children trusted a benign universe; carried by the contrast in ¶9/¶13."
+    },
+    {
+      "source_id_range": "ch7§2¶15",
+      "reason": "Rhetorical framing questions."
+    },
+    {
+      "source_id_range": "ch7§2¶16, ch7§2¶20, ch7§2¶26, ch7§2¶34, ch7§2¶39, ch7§2¶44, ch7§2¶53, ch7§2¶63, ch7§2¶69, ch7§2¶75",
+      "reason": "Section headings / figure copyright line."
+    },
+    {
+      "source_id_range": "ch7§2¶17 (opening)",
+      "reason": "Boarding-school portrait-gallery framing; kept the substantive attachment-theory claim."
+    },
+    {
+      "source_id_range": "ch7§2¶18",
+      "reason": "'Me-search' aside on the psychiatrists' biographies; voice color."
+    },
+    {
+      "source_id_range": "ch7§2¶19 (opening)",
+      "reason": "Bowlby aristocratic biography; kept the WWII-evacuation research and theory founding."
+    },
+    {
+      "source_id_range": "ch7§2¶21",
+      "reason": "Janet 'every life is a piece of art' lyrical opening; rhetorical."
+    },
+    {
+      "source_id_range": "ch7§2¶22 (opening), ch7§2¶24 (tail)",
+      "reason": "Restated self-care framing and the neighbor-distraction detail; core kept."
+    },
+    {
+      "source_id_range": "ch7§2¶27 (Trevarthen quote)",
+      "reason": "Trevarthen quote restates the attunement-musicality point."
+    },
+    {
+      "source_id_range": "ch7§2¶28 (tail)",
+      "reason": "Mirror-neuron recap from chapter 4; kept the Meltzoff newborn finding."
+    },
+    {
+      "source_id_range": "ch7§2¶29",
+      "reason": "Setup sentence for the Tronick observation; the 12-second sequence carries it."
+    },
+    {
+      "source_id_range": "ch7§2¶30 (opening)",
+      "reason": "Cooing setup; kept the rupture-repair sequence."
+    },
+    {
+      "source_id_range": "ch7§2¶31 (tail), ch7§2¶32 (opening)",
+      "reason": "Physiology-restoration restatement and 'mothers stroke, fathers poke' aside."
+    },
+    {
+      "source_id_range": "ch7§2¶37",
+      "reason": "Long recap of securely-attached children's lifelong template; restates ¶25/¶33."
+    },
+    {
+      "source_id_range": "ch7§2¶40",
+      "reason": "Elaboration of how abused kids get shunned; restates the hyperalert-to-anger finding in ¶38."
+    },
+    {
+      "source_id_range": "ch7§2¶41",
+      "reason": "'Need for attachment never lessens' generalization; carried by the Jack case in ¶43."
+    },
+    {
+      "source_id_range": "ch7§2¶42",
+      "reason": "Setup narration for the Jack anecdote; payoff in ¶43."
+    },
+    {
+      "source_id_range": "ch7§2¶45 retained; ch7§2¶47",
+      "reason": "Transitional setup for the two insecure patterns detailed in ¶48-49."
+    },
+    {
+      "source_id_range": "ch7§2¶50 (tail)",
+      "reason": "Bully/victim and non-linearity caveat; core adult-outcome contrast kept."
+    },
+    {
+      "source_id_range": "ch7§2¶54 (opening)",
+      "reason": "Reassurance to conscientious parents; kept the 'viscerally safe' criterion."
+    },
+    {
+      "source_id_range": "ch7§2¶57",
+      "reason": "Restates that traumatized parents need help; redundant with ¶56/¶59."
+    },
+    {
+      "source_id_range": "ch7§2¶62",
+      "reason": "Second-person riff on internal insecurity; restates the disorganized self-perception mechanism."
+    },
+    {
+      "source_id_range": "ch7§2¶64",
+      "reason": "Methods detail of Lyons-Ruth's longitudinal sample; findings carried by ¶65/¶67/¶68."
+    },
+    {
+      "source_id_range": "ch7§2¶66",
+      "reason": "Author's reflection on how abuse begins; the dynamic is shown in ¶58/¶65."
+    },
+    {
+      "source_id_range": "ch7§2¶71",
+      "reason": "Restates the dissociation-as-coping mechanism kept in ¶72."
+    },
+    {
+      "source_id_range": "ch7§2¶74",
+      "reason": "Treatment-implication restatement of ¶73's caregiving-quality finding."
+    },
+    {
+      "source_id_range": "ch7§2¶77",
+      "reason": "Forward-reference to Part V healing approaches; scaffolding."
+    },
+    {
+      "source_id_range": "ch8§2¶1",
+      "reason": "Stephen Cope epigraph; rhetorical framing, no factual content."
+    },
+    {
+      "source_id_range": "ch8§2¶2",
+      "reason": "Epigraph attribution line."
+    },
+    {
+      "source_id_range": "ch8§2¶3",
+      "reason": "Marilyn setup/scene-setting; the vivid attack in ¶4 carries the case."
+    },
+    {
+      "source_id_range": "ch8§2¶5",
+      "reason": "Scaffolding on therapeutic patience; restated elsewhere."
+    },
+    {
+      "source_id_range": "ch8§2¶6",
+      "reason": "Repetition/scaffolding; non-load-bearing for argument."
+    },
+    {
+      "source_id_range": "ch8§2¶7",
+      "reason": "Restates the spaced-out/lost-control pattern already shown in ¶4."
+    },
+    {
+      "source_id_range": "ch8§2¶9",
+      "reason": "Childhood-blank biography; condensed into bridge."
+    },
+    {
+      "source_id_range": "ch8§2¶11",
+      "reason": "Auden poem lead-in."
+    },
+    {
+      "source_id_range": "ch8§2¶12",
+      "reason": "Auden poem fragment; rhetorical."
+    },
+    {
+      "source_id_range": "ch8§2¶13",
+      "reason": "Auden poem fragment; rhetorical."
+    },
+    {
+      "source_id_range": "ch8§2¶15",
+      "reason": "Group-meeting process narrative; not load-bearing for the argument."
+    },
+    {
+      "source_id_range": "ch8§2¶16",
+      "reason": "Failing-eyesight setup; the diagnosis in ¶17 carries the point."
+    },
+    {
+      "source_id_range": "ch8§2¶21",
+      "reason": "Section header / transition."
+    },
+    {
+      "source_id_range": "ch8§2¶22",
+      "reason": "Rhetorical lead-in to the inner-map idea developed in ¶23."
+    },
+    {
+      "source_id_range": "ch8§2¶27",
+      "reason": "Recap of prior chapter's attachment material."
+    },
+    {
+      "source_id_range": "ch8§2¶29",
+      "reason": "Restates that recognizing irrational thought is a first step; redundant."
+    },
+    {
+      "source_id_range": "ch8§2¶31",
+      "reason": "Section header."
+    },
+    {
+      "source_id_range": "ch8§2¶32",
+      "reason": "Mary case setup; her disclosure in ¶33 carries it."
+    },
+    {
+      "source_id_range": "ch8§2¶36",
+      "reason": "Process detail of starting individual therapy; redundant."
+    },
+    {
+      "source_id_range": "ch8§2¶40",
+      "reason": "Repetition of clinician disbelief and patient self-blame."
+    },
+    {
+      "source_id_range": "ch8§2¶42",
+      "reason": "Extended dissociation anecdote; mechanism kept via ¶35/¶38."
+    },
+    {
+      "source_id_range": "ch8§2¶43",
+      "reason": "Section header."
+    },
+    {
+      "source_id_range": "ch8§2¶44",
+      "reason": "Restates children's dependence on caregivers; redundant with ¶46."
+    },
+    {
+      "source_id_range": "ch8§2¶45",
+      "reason": "Restates non-disclosure; condensed into bridge before ¶46."
+    },
+    {
+      "source_id_range": "ch8§2¶48",
+      "reason": "Additional trust-email anecdote; redundant with retained material."
+    },
+    {
+      "source_id_range": "ch8§2¶49",
+      "reason": "Further patient anecdote; repetition of non-disclosure theme."
+    },
+    {
+      "source_id_range": "ch8§2¶50",
+      "reason": "Patient email; rhetorical reinforcement."
+    },
+    {
+      "source_id_range": "ch8§2¶52",
+      "reason": "Section header."
+    },
+    {
+      "source_id_range": "ch8§2¶53",
+      "reason": "Choking-dream anecdote; mechanism captured by ¶55."
+    },
+    {
+      "source_id_range": "ch9§2¶1",
+      "reason": "Roland Summit epigraph (already quoted verbatim in ch8 ¶39)."
+    },
+    {
+      "source_id_range": "ch9§2¶2",
+      "reason": "Epigraph attribution."
+    },
+    {
+      "source_id_range": "ch9§2¶4",
+      "reason": "General remarks on imprecision of psychiatry; scaffolding."
+    },
+    {
+      "source_id_range": "ch9§2¶7",
+      "reason": "Restates that diagnoses ignore patients' talents; redundant."
+    },
+    {
+      "source_id_range": "ch9§2¶8",
+      "reason": "Dictionary definition of diagnosis; scaffolding."
+    },
+    {
+      "source_id_range": "ch9§2¶9",
+      "reason": "Section header; folded into bridge."
+    },
+    {
+      "source_id_range": "ch9§2¶11",
+      "reason": "Funding/logistics of the BPD study; method detail kept in ¶10/¶18."
+    },
+    {
+      "source_id_range": "ch9§2¶13",
+      "reason": "Childhood-relocation questions; representative answers kept in ¶15."
+    },
+    {
+      "source_id_range": "ch9§2¶16",
+      "reason": "Interpretive recap of BPD coping origins; redundant with ¶18/¶21."
+    },
+    {
+      "source_id_range": "ch9§2¶19",
+      "reason": "One-line lead-in to Bowlby quote."
+    },
+    {
+      "source_id_range": "ch9§2¶20",
+      "reason": "Bowlby paraphrase on origins of fear/rage; ¶21 carries the key claim."
+    },
+    {
+      "source_id_range": "ch9§2¶22",
+      "reason": "Transitional summary of study's implications."
+    },
+    {
+      "source_id_range": "ch9§2¶23",
+      "reason": "Section header."
+    },
+    {
+      "source_id_range": "ch9§2¶25",
+      "reason": "Follow-up logistics; finding condensed into ¶24/¶26."
+    },
+    {
+      "source_id_range": "ch9§2¶27",
+      "reason": "Section header."
+    },
+    {
+      "source_id_range": "ch9§2¶33",
+      "reason": "Restates DSM's failure of abuse victims; redundant with ¶32."
+    },
+    {
+      "source_id_range": "ch9§2¶34",
+      "reason": "Section header; folded into bridge."
+    },
+    {
+      "source_id_range": "ch9§2¶38",
+      "reason": "Felitti's second incest case; pattern established by ¶36/¶37."
+    },
+    {
+      "source_id_range": "ch9§2¶43",
+      "reason": "Restates that adverse experiences cluster; data carried by ¶42/¶44."
+    },
+    {
+      "source_id_range": "ch9§2¶50",
+      "reason": "Section header."
+    },
+    {
+      "source_id_range": "ch9§2¶54",
+      "reason": "Repetition/scaffolding; non-load-bearing for argument."
+    },
+    {
+      "source_id_range": "ch10§2¶1-2",
+      "reason": "APA rejection epigraph and attribution; the rejected claim is quoted later in context (¶47), so the standalone epigraph is redundant."
+    },
+    {
+      "source_id_range": "ch10§2¶4-5",
+      "reason": "Teicher attribution line and rhetorical 'they fill our jails' framing; the substantive Teicher claim is retained as the chapter's opening anchor (¶3)."
+    },
+    {
+      "source_id_range": "ch10§2¶7",
+      "reason": "Anthony's mother's backstory; vivid but the diagnostic point (¶6, ¶8) carries the case. Retained core, dropped extended retelling."
+    },
+    {
+      "source_id_range": "ch10§2¶9",
+      "reason": "Maria's intake description; her decisive turnaround via equine therapy (¶10) is kept as the load-bearing example."
+    },
+    {
+      "source_id_range": "ch10§2¶11-13",
+      "reason": "Virginia case and 'Bad Genes?' heading; third consecutive intake vignette—redundant with Anthony/Maria. Diagnostic-label point already made."
+    },
+    {
+      "source_id_range": "ch10§2¶18 ch10§2¶20 ch10§2¶22-23 ch10§2¶26",
+      "reason": "Monkey section headings, attachment-pattern recap, aggressive-mother detail, and summary restatement; mechanism captured in ¶19,21,24,25."
+    },
+    {
+      "source_id_range": "ch10§2¶27-30",
+      "reason": "NCTSN founding narrative (Cummings call, think tank, Kennedy staff); the outcome and scale (¶31) is the load-bearing fact."
+    },
+    {
+      "source_id_range": "ch10§2¶33 ch10§2¶35-36",
+      "reason": "Section heading, DSM PTSD definition recap, and single-incident-PTSD note; covered by surrounding mechanism anchors."
+    },
+    {
+      "source_id_range": "ch10§2¶38 ch10§2¶41-45 ch10§2¶47-48 ch10§2¶50-51",
+      "reason": "DTD methodology, self-loathing restatement, cover-letter and commissioners'-letter excerpts, study-design procedural detail; profile and rejection kept (¶39,40,46)."
+    },
+    {
+      "source_id_range": "ch10§2¶53-54 ch10§2¶56 ch10§2¶61-63 ch10§2¶65",
+      "reason": "Sroufe arousal-regulation elaboration, incest heading, friendship-development passages, and Ayesha vignette; core findings retained (¶52,55,59,60,64)."
+    },
+    {
+      "source_id_range": "ch10§2¶66-67 ch10§2¶71 ch10§2¶74-77 ch10§2¶79 ch10§2¶81",
+      "reason": "DSM-5 smorgasbord list, BPS/professional-protest paragraph, social-animal restatement, Sroufe quote, field-trial fundraising, social-support reprise, Scandinavian-ministries anecdote; argument carried by retained critique anchors."
+    },
+    {
+      "source_id_range": "ch11§2¶1-2 ch11§2¶4-6",
+      "reason": "Remarque epigraph, pseudonym note, and framing paragraphs; case proper begins at ¶3,7."
+    },
+    {
+      "source_id_range": "ch11§2¶9-14 ch11§2¶16-17",
+      "reason": "Julian's biography (discharge, family, high school, steroids) and additional abuse-memory fragments; the essential fragmented-memory profile is kept (¶7,8,15)."
+    },
+    {
+      "source_id_range": "ch11§2¶20-22 ch11§2¶24-25",
+      "reason": "Daubert-hearing procedure, fickle-memory framing, 9/11 illustration, and adrenaline-engraving recap; memory mechanism carried by ¶23,26,27."
+    },
+    {
+      "source_id_range": "ch11§2¶28-29 ch11§2¶31 ch11§2¶33-34 ch11§2¶36 ch11§2¶40-41 ch11§2¶43 ch11§2¶45 ch11§2¶48-50 ch11§2¶52-53 ch11§2¶56",
+      "reason": "Railway-spine note, Charcot politics, painting captions, Irène hypnosis recovery, trigger-mechanism recap, dissociation-cost elaboration, talking-cure heading and Breuer/Freud quotations, Cocoanut Grove case, recognition-question recap, and forward-reference; history and mechanism preserved in retained anchors."
+    },
+    {
+      "source_id_range": "ch12§2¶1-2 ch12§2¶4 ch12§2¶6 ch12§2¶9-12",
+      "reason": "Cannon epigraph, film-of-soldiers note, Somme casualty detail, US WWI bonus march narrative, and All Quiet literary history; the denial-of-trauma arc is carried by ¶3,5,7,8,13."
+    },
+    {
+      "source_id_range": "ch12§2¶14-15 ch12§2¶17 ch12§2¶19-23 ch12§2¶26-28",
+      "reason": "Section headings, Myers/Kardiner publication note, Greer passage, Marshall Plan/GI Bill paragraph, 1974 textbook quote (covered ch2), feminist-movement context, Church-testimony framing; core history retained in ¶16,18,24,25,29."
+    },
+    {
+      "source_id_range": "ch12§2¶33 ch12§2¶35 ch12§2¶37-38 ch12§2¶40 ch12§2¶44-46 ch12§2¶48-50 ch12§2¶52 ch12§2¶54 ch12§2¶57-62 ch12§2¶64-65 ch12§2¶67 ch12§2¶69-75",
+      "reason": "Junk-science framing, eyewitness-testimony research, profitability aside, positive-memory interview detail, narrative-piecing recap, Langer/Holocaust framing and concluding quote, Nancy headings and the bulk of her flashback emails; Nancy's arc is preserved through key anchors (¶55,56,63,66,68,76)."
+    },
+    {
+      "source_id_range": "ch13§2¶1-7",
+      "reason": "Dar Williams song-lyric epigraph; not expository content."
+    },
+    {
+      "source_id_range": "ch13§2¶10-12 ch13§2¶14-15 ch13§2¶17 ch13§2¶19-22 ch13§2¶24-25 ch13§2¶28-29 ch13§2¶31 ch13§2¶33 ch13§2¶36-38 ch13§2¶40 ch13§2¶43 ch13§2¶45-47 ch13§2¶49-51 ch13§2¶53-54 ch13§2¶56-60 ch13§2¶62 ch13§2¶65-68 ch13§2¶70-74 ch13§2¶76-79 ch13§2¶84 ch13§2¶86 ch13§2¶88-89 ch13§2¶92-94 ch13§2¶97 ch13§2¶100 ch13§2¶102 ch13§2¶104 ch13§2¶106 ch13§2¶109-113 ch13§2¶117-119 ch13§2¶121 ch13§2¶123-125 ch13§2¶128-129 ch13§2¶131-132",
+      "reason": "Section headings, road-map/preview paragraphs, breathing-practice how-to detail, image captions, Kabat-Zinn quote, therapist-selection elaboration, Self-as-newborn passages, theater/improv recommendations, Licia Sky bodywork procedural detail, hypnosis-comeback note, flooding-minutes detail, Decety desensitization aside, MDMA caveats, benzodiazepine/anticonvulsant prescribing detail, and Bill biographical connective tissue; each chapter principle (mindfulness, relationships, action, integration, CBT critique, MDMA, medications, Bill's arc) is represented by retained mechanism/study/example anchors."
+    },
+    {
+      "source_id_range": "ch15§2¶1-2",
+      "reason": "Keats epigraph; rhetorical framing, no clinical content."
+    },
+    {
+      "source_id_range": "ch15§2¶4-5",
+      "reason": "David backstory and EMDR setup; condensed into bridge."
+    },
+    {
+      "source_id_range": "ch15§2¶9",
+      "reason": "David one-year follow-up; restated recovery arc, redundant after ¶7-8."
+    },
+    {
+      "source_id_range": "ch15§2¶10,17,28,38,44,59,68",
+      "reason": "Section subheadings."
+    },
+    {
+      "source_id_range": "ch15§2¶11-13",
+      "reason": "Maggie biography and Bessel's initial skepticism; scaffolding, kept reprocessing moment instead."
+    },
+    {
+      "source_id_range": "ch15§2¶16",
+      "reason": "Maggie's later improvement; restated outcome."
+    },
+    {
+      "source_id_range": "ch15§2¶19-24",
+      "reason": "Bessel's training anecdotes (clinic closure, distressed co-trainee); voice/scaffolding, kept ¶21 trial and ¶25 admonition."
+    },
+    {
+      "source_id_range": "ch15§2¶26-27",
+      "reason": "List intro and multilingual aside; scaffolding."
+    },
+    {
+      "source_id_range": "ch15§2¶29",
+      "reason": "Trauma Clinic funding rescue; administrative aside."
+    },
+    {
+      "source_id_range": "ch15§2¶31",
+      "reason": "Patient quotes echoing ¶7/¶69 'it's over' theme; redundant testimony."
+    },
+    {
+      "source_id_range": "ch15§2¶34",
+      "reason": "Drug-relapse elaboration; restates ¶33 finding."
+    },
+    {
+      "source_id_range": "ch15§2¶39,41,43",
+      "reason": "Exposure-vs-integration recap and modality list; restated mechanism kept in ¶40/¶42."
+    },
+    {
+      "source_id_range": "ch15§2¶46,48-50",
+      "reason": "Kathy framing and EMDR procedure description; scaffolding, kept the session transcript."
+    },
+    {
+      "source_id_range": "ch15§2¶53,55-56",
+      "reason": "Further Kathy session excerpts; vivid but repetitive of integration already shown in ¶51-52,54."
+    },
+    {
+      "source_id_range": "ch15§2¶58",
+      "reason": "Recap of EMDR reassembly mechanism; restated."
+    },
+    {
+      "source_id_range": "ch15§2¶60-61",
+      "reason": "Sleep-lab introduction and cat-death anecdote; condensed into bridge."
+    },
+    {
+      "source_id_range": "ch15§2¶63,66",
+      "reason": "VA REM-waking detail and creativity/frozen-associations elaboration; secondary, kept core REM findings."
+    },
+    {
+      "source_id_range": "ch15§2¶70",
+      "reason": "'We don't know how Prozac works either' aside; rhetorical."
+    },
+    {
+      "source_id_range": "ch16§2¶1-2",
+      "reason": "Stephen Cope epigraph; rhetorical framing."
+    },
+    {
+      "source_id_range": "ch16§2¶7",
+      "reason": "Early calming techniques (EFT) detail; secondary technique aside."
+    },
+    {
+      "source_id_range": "ch16§2¶8,12,17,30,36,42,51,55",
+      "reason": "Section subheadings."
+    },
+    {
+      "source_id_range": "ch16§2¶9,11",
+      "reason": "Amygdala/alarm recap and compartmentalization elaboration; restates earlier-chapter mechanism, kept the excitement-terror flashback (¶10)."
+    },
+    {
+      "source_id_range": "ch16§2¶13-16",
+      "reason": "Numbing/sensation-seeking and chronic-pain elaboration plus therapy framing; restated, kept HRV mechanism instead."
+    },
+    {
+      "source_id_range": "ch16§2¶20",
+      "reason": "Why-HRV-matters elaboration; restates ¶19/¶21 mechanism."
+    },
+    {
+      "source_id_range": "ch16§2¶23-26",
+      "reason": "Figure captions for HRV illustrations."
+    },
+    {
+      "source_id_range": "ch16§2¶27,29",
+      "reason": "Breath/yoga medical-effects citations and HRV-device aside; secondary."
+    },
+    {
+      "source_id_range": "ch16§2¶32,34",
+      "reason": "Marine program note and posture-rhythm detail; restated program description."
+    },
+    {
+      "source_id_range": "ch16§2¶39-40",
+      "reason": "Additional Annie yoga letters; vivid but repetitive of ¶38 body-listening theme."
+    },
+    {
+      "source_id_range": "ch16§2¶43,46-47",
+      "reason": "Interoception framing and 'Notice that' restatement; mechanism kept in ¶44-45/¶48."
+    },
+    {
+      "source_id_range": "ch16§2¶50,53-54",
+      "reason": "Figure caption and survey framing lines."
+    },
+    {
+      "source_id_range": "ch16§2¶57",
+      "reason": "Long Annie yoga-studio letter; repetitive of ¶38/¶58 arc."
+    },
+    {
+      "source_id_range": "ch17§1¶0_h, ch17§2¶0_h",
+      "reason": "Duplicate chapter-title headings; structural scaffolding."
+    },
+    {
+      "source_id_range": "ch17§2¶1, ch17§2¶2",
+      "reason": "Rumi epigraph; rhetorical/decorative, not load-bearing argument. Retained the William James epigraph as the more on-point voice anchor."
+    },
+    {
+      "source_id_range": "ch17§2¶4",
+      "reason": "Attribution line for the James epigraph; redundant once the quote is anchored."
+    },
+    {
+      "source_id_range": "ch17§2¶7",
+      "reason": "Section header 'DESPERATE TIMES REQUIRE DESPERATE MEASURES'; scaffolding."
+    },
+    {
+      "source_id_range": "ch17§2¶8 (opening)",
+      "reason": "Opening sentences restate the familiar 'when humiliated we protect ourselves' setup; cut as rhetoric, kept the mechanism on adaptations and drug-regimen narrowing."
+    },
+    {
+      "source_id_range": "ch17§2¶10",
+      "reason": "Generalized 'every survivor is resilient' reflection; voice flourish, redundant with the mechanism paragraphs kept."
+    },
+    {
+      "source_id_range": "ch17§2¶11 (closing)",
+      "reason": "Closing sentences ('Many adults...Pushing away intense feelings...') restate the short-run adaptiveness point; trimmed as redundancy, mechanism core retained."
+    },
+    {
+      "source_id_range": "ch17§2¶12 (closing)",
+      "reason": "Last two sentences recap isolation outcome and 'helping these parts' thesis already covered; trimmed redundancy."
+    },
+    {
+      "source_id_range": "ch17§2¶13",
+      "reason": "Recap of chapter 13 plus restated thesis 'revisit the parts'; scaffolding/redundancy with the model paragraphs."
+    },
+    {
+      "source_id_range": "ch17§2¶14",
+      "reason": "Section header 'THE MIND IS A MOSAIC'; scaffolding."
+    },
+    {
+      "source_id_range": "ch17§2¶15 (closing)",
+      "reason": "Family-vacation reminiscence sentence; extra example trimmed, core 'we all have parts' voice kept."
+    },
+    {
+      "source_id_range": "ch17§2¶16 (opening)",
+      "reason": "Boss-storm-cloud illustration restates the same point about a part's tone/posture; kept the definitional sentence."
+    },
+    {
+      "source_id_range": "ch17§2¶17 (closing)",
+      "reason": "Margaret/Joe illustration of a part obscuring other feelings; second illustrative example, trimmed for length while keeping the principle."
+    },
+    {
+      "source_id_range": "ch17§2¶19 (closing)",
+      "reason": "Tail of Minsky quote ('Like members of a family...') restates the society-of-minds metaphor already established."
+    },
+    {
+      "source_id_range": "ch17§2¶20",
+      "reason": "Catalogue of other treatment models (structural dissociation, van der Hart, Nijenhuis, Steel, Kluft); reference scaffolding tangential to the IFS spine. Trade-off noted: drops named modalities but preserves the chapter's deep IFS thread."
+    },
+    {
+      "source_id_range": "ch17§2¶26",
+      "reason": "Restates that mislabeled/controlled children's parts fail to integrate; redundant with the exiles/managers/firefighters mechanism."
+    },
+    {
+      "source_id_range": "ch17§2¶28",
+      "reason": "Restates the nonpathologizing framing already carried by the Schwartz quote in ¶29."
+    },
+    {
+      "source_id_range": "ch17§2¶30, ch17§2¶32",
+      "reason": "'SELF-LEADERSHIP' header and 'As Richard Schwartz explains:' lead-in; scaffolding."
+    },
+    {
+      "source_id_range": "ch17§2¶31",
+      "reason": "General leadership-of-systems analogy (families/organizations/nations); rhetoric restating the Self-leadership thesis kept in ¶35-37."
+    },
+    {
+      "source_id_range": "ch17§2¶33",
+      "reason": "Schwartz block quote on absent leadership in abuse systems; overlaps the mechanism already established about polarized, outdated parts."
+    },
+    {
+      "source_id_range": "ch17§2¶38, ch17§2¶43, ch17§2¶51, ch17§2¶58, ch17§2¶63, ch17§2¶67, ch17§2¶75 (header portion), ch17§2¶85",
+      "reason": "Section headers; structural scaffolding."
+    },
+    {
+      "source_id_range": "ch17§2¶40",
+      "reason": "Restates the image-arising technique with extra examples; method core is carried by ¶39 and ¶41."
+    },
+    {
+      "source_id_range": "ch17§2¶42",
+      "reason": "Catalogue of optional therapist follow-up questions; procedural redundancy after ¶41."
+    },
+    {
+      "source_id_range": "ch17§2¶45",
+      "reason": "Joan's furniture-critiquing/defensiveness setup; vivid but the critic-as-manager dynamic is captured in ¶46."
+    },
+    {
+      "source_id_range": "ch17§2¶47",
+      "reason": "Additional detail on Joan's molestation and affairs pattern; the reenactment mechanism is captured more sharply in ¶48."
+    },
+    {
+      "source_id_range": "ch17§2¶49, ch17§2¶50",
+      "reason": "Pendulation recap (chapter 13) and 'don't fill the holes' therapist stance; both restated elsewhere and tangential to the parts spine."
+    },
+    {
+      "source_id_range": "ch17§2¶53",
+      "reason": "Restates manager burden/energy cost with a flirtatious-comment example; redundant with ¶52."
+    },
+    {
+      "source_id_range": "ch17§2¶55, ch17§2¶56, ch17§2¶57",
+      "reason": "Extended blow-by-blow of Joan's mid-treatment setback (negative evaluation, bingeing, managers re-blending); the firefighter rampage in ¶59 carries the same dynamic vividly. Trade-off: compresses the Joan arc but preserves its spread of parts."
+    },
+    {
+      "source_id_range": "ch17§2¶61",
+      "reason": "List of firefighter behaviors (shop, drink, games, affairs, exercise); illustrative redundancy after the firefighter definition in ¶60."
+    },
+    {
+      "source_id_range": "ch17§2¶65",
+      "reason": "Restates exile-blending ('we are nothing but that rejected child') with a Schwartz quote; mechanism carried by ¶64 and ¶66."
+    },
+    {
+      "source_id_range": "ch17§2¶68",
+      "reason": "Process narration of accessing Joan's exiled girl; the resolution in ¶69 carries the payoff."
+    },
+    {
+      "source_id_range": "ch17§2¶70, ch17§2¶71, ch17§2¶72, ch17§2¶73, ch17§2¶74",
+      "reason": "Brian/couples subplot (his alcoholic family, panicked/caretaker/exile parts); a parallel parts exploration that repeats the model already demonstrated through Joan and Peter. Trade-off: drops a secondary case to stay within the light hand and word budget."
+    },
+    {
+      "source_id_range": "ch17§2¶77",
+      "reason": "Background on what RA is; medical context not central to the IFS-outcome argument kept in ¶78-83."
+    },
+    {
+      "source_id_range": "ch17§2¶79",
+      "reason": "Restates the IFS group's instructional goal already implied by ¶78 and ¶81."
+    },
+    {
+      "source_id_range": "ch17§2¶81, ch17§2¶82",
+      "reason": "Process detail of the RA group sessions and one individual vignette; the study's design (¶78), the alexithymia obstacle (¶80), and the results (¶83) carry the evidence."
+    },
+    {
+      "source_id_range": "ch17§2¶84",
+      "reason": "Comparison to prior CBT/mindfulness RA studies and an open immune-system question; tangential to the IFS result."
+    },
+    {
+      "source_id_range": "ch17§2¶87, ch17§2¶88",
+      "reason": "Further detail on Peter's bravado and contempt for psychiatry; characterization redundant with ¶86 and ¶89."
+    },
+    {
+      "source_id_range": "ch17§2¶91",
+      "reason": "Peter's wife's catalogue of complaints; the divorce stakes are carried by ¶95."
+    },
+    {
+      "source_id_range": "ch17§2¶93",
+      "reason": "Transitional process beat (locating the angry part in the chest); the witnessing payoff is in ¶94."
+    },
+    {
+      "source_id_range": "ch17§2¶97, ch17§2¶99",
+      "reason": "Intermediate process beats of Peter's unburdening (interruptions; taking the boy to the campground); the care moment in ¶98 and the unburdening summary in ¶100 carry the arc."
+    },
+    {
+      "source_id_range": "ch18§2¶1-4",
+      "reason": "William James and Carl Jung epigraphs plus attributions; rhetorical framing, not load-bearing."
+    },
+    {
+      "source_id_range": "ch18§2¶8",
+      "reason": "Conference-attendance scene-setting; the substantive encounter with Pesso is carried by ¶9 and a bridge."
+    },
+    {
+      "source_id_range": "ch18§2¶11",
+      "reason": "Restated contact-person detail already established by the witness/microtracking anchors."
+    },
+    {
+      "source_id_range": "ch18§2¶14",
+      "reason": "Travel/setup scaffolding before van der Kolk's own structure; condensed to a bridge."
+    },
+    {
+      "source_id_range": "ch18§2¶18 ch18§2¶24 ch18§2¶38 ch18§2¶48 ch18§2¶56",
+      "reason": "Section subheadings; navigational, not prose content."
+    },
+    {
+      "source_id_range": "ch18§2¶21-22",
+      "reason": "Restates the safety/witness mechanism already captured in ¶19-20 and ¶28."
+    },
+    {
+      "source_id_range": "ch18§2¶26-27 ch18§2¶29",
+      "reason": "Maria warm-up dialogue; representative beats retained via ¶28 and ¶30, rest is repetition of the witness technique."
+    },
+    {
+      "source_id_range": "ch18§2¶32-34",
+      "reason": "Extended real-mother dialogue; the emotional turn and ideal-mother payoff are retained in ¶35, avoiding redundant grief beats."
+    },
+    {
+      "source_id_range": "ch18§2¶36",
+      "reason": "Ideal-father enrollment closely parallels the ideal-mother scene already anchored at ¶35."
+    },
+    {
+      "source_id_range": "ch18§2¶39-41",
+      "reason": "General developmental-deficit recap of earlier chapters; restated points."
+    },
+    {
+      "source_id_range": "ch18§2¶43-44 ch18§2¶46-47",
+      "reason": "Repeated summaries of the structures mechanism already stated in ¶19-20, ¶23, ¶45."
+    },
+    {
+      "source_id_range": "ch18§2¶50-51",
+      "reason": "Mark setup/tableau staging; the confrontation and repair are the load-bearing beats (¶52-53)."
+    },
+    {
+      "source_id_range": "ch18§2¶54",
+      "reason": "Aunt-confrontation beat parallels the father confrontation already anchored at ¶52."
+    },
+    {
+      "source_id_range": "ch19§2¶1-2 ch19§2¶4",
+      "reason": "Hawthorne/James epigraphs and attributions; rhetorical framing."
+    },
+    {
+      "source_id_range": "ch19§2¶5-7",
+      "reason": "Sleep-lab reminiscence; atmosphere, condensed to a bridge to the EEG history."
+    },
+    {
+      "source_id_range": "ch19§2¶8 ch19§2¶20 ch19§2¶28 ch19§2¶34 ch19§2¶50 ch19§2¶57 ch19§2¶61 ch19§2¶65 ch19§2¶70 ch19§2¶75 ch19§2¶81 ch19§2¶86 ch19§2¶93 ch19§2¶98",
+      "reason": "Section subheadings; navigational only."
+    },
+    {
+      "source_id_range": "ch19§2¶9",
+      "reason": "Brief framing that pharmacology eclipsed electrophysiology; absorbed into surrounding anchors."
+    },
+    {
+      "source_id_range": "ch19§2¶11",
+      "reason": "Early-career 'nonspecific abnormalities' anecdote; superseded by the McFarlane study that rekindled interest (¶12)."
+    },
+    {
+      "source_id_range": "ch19§2¶13",
+      "reason": "Figure caption restating the normal-vs-PTSD pattern detailed in the ¶14 anchor."
+    },
+    {
+      "source_id_range": "ch19§2¶19",
+      "reason": "Single-sentence reaction to the boy's drawings; the data is in ¶18."
+    },
+    {
+      "source_id_range": "ch19§2¶21-22",
+      "reason": "Equipment description and a figure caption; mechanism carried by ¶23-24."
+    },
+    {
+      "source_id_range": "ch19§2¶25-26",
+      "reason": "Conversation-analogy and electrode-placement detail; redundant with the spaceship demo and ¶27 mechanism."
+    },
+    {
+      "source_id_range": "ch19§2¶32",
+      "reason": "Recaps the 1970s drug-model shift; restated point about pharmacology's dominance."
+    },
+    {
+      "source_id_range": "ch19§2¶35",
+      "reason": "Praise of Lisa's resilience; her clinical history (¶36) and own words carry the case."
+    },
+    {
+      "source_id_range": "ch19§2¶38-41 ch19§2¶43-45",
+      "reason": "Extended Lisa backstory and dissociation detail; representative beats kept (¶37,¶42,¶46), rest is layered repetition of the same chaos/dissociation."
+    },
+    {
+      "source_id_range": "ch19§2¶48-49",
+      "reason": "Further Lisa attachment quotes and a one-line transition; the breakthrough is anchored at ¶46-47."
+    },
+    {
+      "source_id_range": "ch19§2¶60",
+      "reason": "EEG figure caption duplicating the temporal-lobe point made in anchors."
+    },
+    {
+      "source_id_range": "ch19§2¶66 ch19§2¶68",
+      "reason": "Performance-enhancement framing and music-student study; AC Milan/Olympics study (¶67) is the representative performance evidence."
+    },
+    {
+      "source_id_range": "ch19§2¶73-74",
+      "reason": "qEEG explanatory benefit and an Ed Hamlin quote; mechanism already in ¶71-72."
+    },
+    {
+      "source_id_range": "ch19§2¶77 ch19§2¶80",
+      "reason": "Additional qEEG pattern variants and McFarlane caveat; the core deployment finding is anchored at ¶78-79."
+    },
+    {
+      "source_id_range": "ch19§2¶82 ch19§2¶85",
+      "reason": "General statements on learning-disability wiring; Lisa's concrete example (¶83) carries it."
+    },
+    {
+      "source_id_range": "ch19§2¶84",
+      "reason": "Second Lisa learning-disability anecdote; redundant with ¶83."
+    },
+    {
+      "source_id_range": "ch19§2¶89",
+      "reason": "Restates the alpha/theta twilight-state mechanism already in ¶87-88."
+    },
+    {
+      "source_id_range": "ch19§2¶94 ch19§2¶96",
+      "reason": "Substance-abuse prevalence framing and a cocaine anecdote; the controlled Peniston study (¶97) is the retained evidence."
+    },
+    {
+      "source_id_range": "ch19§2¶101",
+      "reason": "Collins quote elaborating 'connectome'; Insel's reorientation (¶100) carries the paradigm shift."
+    },
+    {
+      "source_id_range": "ch20§2¶2 ch20§2¶7 ch20§2¶15 ch20§2¶23 ch20§2¶29 ch20§2¶37 ch20§2¶49 ch20§2¶61 ch20§2¶79",
+      "reason": "Epigraph attribution and section subheadings; navigational only."
+    },
+    {
+      "source_id_range": "ch20§2¶11",
+      "reason": "Aeschylus/Oresteia detail; the Ajax/Theater of War evidence (¶12-13) is the representative Greek-drama case."
+    },
+    {
+      "source_id_range": "ch20§2¶14",
+      "reason": "Doerries one-line coda; the reading scene (¶13) already conveys the impact."
+    },
+    {
+      "source_id_range": "ch20§2¶16",
+      "reason": "List of religious rhythmic rituals; rhetorical enumeration, point made by ¶17-18."
+    },
+    {
+      "source_id_range": "ch20§2¶19 ch20§2¶21",
+      "reason": "McNeill/Dutch-war setup and close-order-drill spread; the load-bearing Plutarch passage is anchored at ¶20."
+    },
+    {
+      "source_id_range": "ch20§2¶26 ch20§2¶28",
+      "reason": "Restates that traumatized people fear feeling/conflict; same point as ¶25 and ¶27."
+    },
+    {
+      "source_id_range": "ch20§2¶30 ch20§2¶32-33",
+      "reason": "Additional engagement and eye-contact exercise detail; Coleman's incremental method (¶31) is representative."
+    },
+    {
+      "source_id_range": "ch20§2¶35-36",
+      "reason": "Trust/blindfold exercise and a director-role summary; mirroring mechanism (¶34) carries the technique."
+    },
+    {
+      "source_id_range": "ch20§2¶38",
+      "reason": "How van der Kolk came to lead the UI study; condensed to a bridge."
+    },
+    {
+      "source_id_range": "ch20§2¶40 ch20§2¶42",
+      "reason": "Follow-up volunteer detail and puberty speculation; the freeze-frame method (¶39) and the trauma-exposure finding (¶43) are retained."
+    },
+    {
+      "source_id_range": "ch20§2¶44-45 ch20§2¶48",
+      "reason": "Program-development logistics and bureaucratic-resistance coda; the redesigned-program outcome is carried by ¶46-47."
+    },
+    {
+      "source_id_range": "ch20§2¶50 ch20§2¶52-53 ch20§2¶55-57 ch20§2¶59",
+      "reason": "Possibility Project structure and foster-care framing; representative beats kept (¶51,¶54,¶58,¶60), rest restates the agency/relationship theme."
+    },
+    {
+      "source_id_range": "ch20§2¶63",
+      "reason": "Swordplay-as-contained-aggression detail; language-discovery point captured at ¶64."
+    },
+    {
+      "source_id_range": "ch20§2¶67-70 ch20§2¶72-73",
+      "reason": "Brutus speech lines and intermediate rehearsal beats; Larry's case is carried by ¶66, ¶71, ¶74."
+    },
+    {
+      "source_id_range": "ch20§2¶75 ch20§2¶77-78",
+      "reason": "Section-break glyph, en-languaging follow-up, and Ophelia anecdote; the core 'name the feeling' method is anchored at ¶76."
+    },
+    {
+      "source_id_range": "ch20§2¶81-85 ch20§2¶87 ch20§2¶89",
+      "reason": "Edward's extended birth-trauma narrative; the load-bearing turn (Tina's reframe, ¶86) and his reflection (¶88) are retained."
+    },
+    {
+      "source_id_range": "ch21§2¶0",
+      "reason": "Section subheading; navigational only."
+    },
+    {
+      "source_id_range": "ch21§2¶10-12",
+      "reason": "Rhetorical question-cascade on drug treatment and the family-photo/boat vignette; the policy argument is carried by ¶9, ¶13-14."
+    },
+    {
+      "source_id_range": "ch21§2¶16",
+      "reason": "NCTSN site-rollout logistics; the network's scope is anchored at ¶15."
+    },
+    {
+      "source_id_range": "ch21§2¶18 ch21§2¶21 ch21§2¶23 ch21§2¶25",
+      "reason": "Teacher-onboarding and classroom-routine elaborations; representative practice anchors kept (¶19,¶20,¶22,¶24)."
+    },
+    {
+      "source_id_range": "ch21§2¶27-30",
+      "reason": "Emotional-intelligence, mirroring, and beach-ball/HRV classroom exercises; the curricular principle is anchored at ¶26 and the agency point at ¶31."
+    },
+    {
+      "source_id_range": "ch21§2¶32-33",
+      "reason": "Capoeira/El Sistema examples and a Julius Caesar classroom vignette; the agency-through-community thesis is carried by ¶31 and ¶34."
+    },
+    {
+      "source_id_range": "ch21§2¶36",
+      "reason": "List of trauma-shaped visionaries; rhetorical enumeration, the societal point is made by ¶35 and ¶37."
+    }
+  ]
+}
